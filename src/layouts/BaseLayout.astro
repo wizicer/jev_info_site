@@ -94,7 +94,8 @@ const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
   .search-result-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: var(--line); font-size: 28px; font-weight: 750; letter-spacing: -.08em; }
   .search-result-media { pointer-events: none; position: relative; width: 100%; height: 100%; display: block; object-fit: cover; background: var(--surface-soft); transition: transform .35s ease; }
   .search-result:hover .search-result-media { transform: scale(1.015); }
-  .search-result p { min-height: 3em; margin: 13px 1px 0; font-size: 14px; line-height: 1.48; }
+  .search-result p { min-height: 3em; margin: 6px 1px 0; font-size: 14px; line-height: 1.48; }
+  .search-result-context { margin: 12px 1px 0; overflow: hidden; color: var(--muted); font-size: 12px; font-weight: 650; letter-spacing: .035em; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
   .search-result:hover p, .search-result:focus-visible p { color: var(--accent); }
   .search-result:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }

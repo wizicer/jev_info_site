@@ -260,10 +260,13 @@ export function initSite() {
       media.addEventListener('error', () => { media.hidden = true; });
     }
     frame.append(media);
+    const context = document.createElement('div');
+    context.className = 'search-result-context';
+    context.textContent = `${demo.groupName} / ${demo.categoryName} · @${demo.author.handle}`;
     const description = document.createElement('p');
     description.className = 'line-clamp-2';
     description.textContent = demo.description;
-    link.append(frame, description);
+    link.append(frame, context, description);
     return link;
   };
   input?.addEventListener('input', () => {
