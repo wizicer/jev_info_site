@@ -34,7 +34,7 @@ const visibleCategories = group
       </header>
       <nav class="category-nav" aria-label="Categories in this group">
         {visibleCategories.map((category) => (
-          <a href={`#category-${category.code}`}>{category.enName}</a>
+          <a href={`/use-cases/${group.code}#category-${category.code}`}>{category.enName}</a>
         ))}
       </nav>
       {visibleCategories.map((category) => {
