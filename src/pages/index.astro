@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import UseCaseCard from '../components/UseCaseCard.astro';
-import { demos, groups } from '../lib/content';
+import { demos, demosForGroup, groups } from '../lib/content';
 
 const recent = [...demos]
   .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
@@ -32,7 +32,12 @@ const updated = new Intl.DateTimeFormat('en', {
       </form>
 
       <div class="collection-links" aria-label="Use case collections">
-        {groups.map((group) => <a href={'/use-cases/' + group.code}>{group.enName}</a>)}
+        {groups.map((group) => (
+          <a href={'/use-cases/' + group.code}>
+            <span>{group.enName}</span>
+            <small>{demosForGroup(group).length}</small>
+          </a>
+        ))}
       </div>
       <a class="browse-all" href="/use-cases">Browse all use cases <span aria-hidden="true">→</span></a>
     </section>
