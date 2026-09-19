@@ -1,0 +1,135 @@
+---
+import SiteHeader from '../components/SiteHeader.astro';
+import UseCaseCard from '../components/UseCaseCard.astro';
+import { demos, getDemoContext } from '../lib/content';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'jev.info — Use cases for fast, typed decisions',
+  description = 'Explore real-world Jev use cases across software, games, robotics, research, and more.',
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const searchDemos = demos.map((demo) => {
+  const { category, group } = getDemoContext(demo);
+  return { ...demo, searchText: `${demo.description} ${demo.author.name} ${demo.author.handle} ${category?.enName ?? ''} ${group?.enName ?? ''}`.toLowerCase() };
+});
+const caseJson = JSON.stringify(demos).replaceAll('<', '\\u003c');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f7f7f4" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={canonical} />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%23171716%22/><text x=%2250%22 y=%2267%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>j</text></svg>" />
+    <title>{title}</title>
+    <script is:inline>
+      (() => {
+        const saved = localStorage.getItem('jev-theme');
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      })();
+    </script>
+  </head>
+  <body>
+    <SiteHeader />
+    <slot />
+
+    <dialog class="case-dialog" aria-labelledby="case-dialog-description">
+      <button class="dialog-close" type="button" aria-label="Close details">×</button>
+      <article class="dialog-layout">
+        <div class="dialog-media"><div class="dialog-placeholder">jev</div></div>
+        <div class="dialog-info">
+          <div class="dialog-taxonomy"></div>
+          <p id="case-dialog-description" class="dialog-description"></p>
+          <div class="dialog-author">
+            <img alt="" width="42" height="42" />
+            <div><strong></strong><span></span></div>
+          </div>
+          <dl>
+            <div><dt>Published</dt><dd class="dialog-date"></dd></div>
+            <div><dt>Source</dt><dd><a class="dialog-source" target="_blank" rel="noreferrer">View original post ↗</a></dd></div>
+          </dl>
+          <div class="dialog-embed" aria-live="polite"></div>
+        </div>
+      </article>
+    </dialog>
+
+    <dialog class="search-dialog" aria-labelledby="search-title">
+      <div class="search-bar">
+        <h2 id="search-title">Search use cases</h2>
+        <button class="search-close" type="button" aria-label="Close search">×</button>
+        <label>
+          <span class="sr-only">Search use cases</span>
+          <input type="search" placeholder="Search descriptions, authors, or categories…" autocomplete="off" />
+        </label>
+        <p class="search-status">{searchDemos.length} use cases</p>
+      </div>
+      <div class="search-results">
+        {searchDemos.map((demo) => <div data-search={demo.searchText}><UseCaseCard demo={demo} searchCard /></div>)}
+      </div>
+      <div class="search-empty" hidden>No use cases found.</div>
+    </dialog>
+
+    <script id="case-data" type="application/json" set:html={caseJson}></script>
+    <script>
+      import { initSite } from '../scripts/site';
+      initSite();
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  dialog { color: var(--ink); }
+  dialog::backdrop { background: rgb(8 9 8 / .66); backdrop-filter: blur(4px); }
+  .case-dialog { width: min(1220px, calc(100% - 30px)); max-height: calc(100dvh - 30px); padding: 0; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 25px 100px rgb(0 0 0 / .35); }
+  .dialog-close, .search-close { position: absolute; z-index: 2; top: 12px; right: 14px; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; font-size: 26px; line-height: 1; }
+  .dialog-layout { display: grid; min-height: min(720px, calc(100dvh - 32px)); grid-template-columns: minmax(0, 1.65fr) minmax(330px, .85fr); }
+  .dialog-media { position: sticky; top: 0; min-height: 520px; display: grid; place-items: center; align-self: start; background: #090a09; overflow: hidden; }
+  .dialog-media img, .dialog-media video { width: 100%; height: 100%; max-height: calc(100dvh - 32px); object-fit: contain; display: block; }
+  .dialog-placeholder { color: #30322f; font-size: clamp(52px, 10vw, 130px); font-weight: 750; letter-spacing: -.08em; }
+  .dialog-info { padding: 68px 30px 40px; overflow-wrap: anywhere; }
+  .dialog-taxonomy { margin-bottom: 22px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .dialog-description { margin: 0 0 30px; font-size: clamp(19px, 2vw, 26px); line-height: 1.32; letter-spacing: -.03em; }
+  .dialog-author { display: flex; align-items: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .dialog-author img { width: 42px; height: 42px; border-radius: 50%; background: var(--surface-soft); }
+  .dialog-author strong, .dialog-author span { display: block; font-size: 13px; }
+  .dialog-author span { margin-top: 3px; color: var(--muted); }
+  dl { margin: 0; }
+  dl > div { display: grid; grid-template-columns: 95px 1fr; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  .dialog-source { color: var(--accent); }
+  .dialog-embed { min-height: 80px; margin-top: 22px; color: var(--muted); font-size: 12px; }
+  .search-dialog { width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: 0; border: 0; background: var(--paper); }
+  .search-dialog::backdrop { background: var(--paper); }
+  .search-bar { position: sticky; z-index: 3; top: 0; padding: 24px max(16px, calc((100% - 1480px) / 2)); border-bottom: 1px solid var(--line); background: var(--header); backdrop-filter: blur(14px); }
+  .search-bar h2 { margin: 0 0 18px; font-size: 14px; font-weight: 650; }
+  .search-bar label { display: block; padding-right: 55px; }
+  .search-bar input { width: 100%; padding: 0 0 10px; border: 0; border-bottom: 1px solid var(--ink); border-radius: 0; outline: 0; background: transparent; color: var(--ink); font-size: clamp(25px, 4vw, 50px); letter-spacing: -.045em; }
+  .search-bar input::placeholder { color: var(--muted); opacity: .55; }
+  .search-status { margin: 10px 0 0; color: var(--muted); font-size: 11px; }
+  .search-results { width: min(100% - 32px, 1480px); margin: 34px auto 80px; display: grid; grid-template-columns: 1fr; gap: 35px 18px; }
+  .search-empty { padding: 80px 20px; text-align: center; color: var(--muted); }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  @media (min-width: 620px) { .search-results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 900px) { .search-results { width: min(100% - 64px, 1480px); grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
+  @media (min-width: 1320px) { .search-results { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (max-width: 760px) {
+    .case-dialog { width: 100%; height: 100%; max-height: none; border: 0; }
+    .dialog-layout { display: block; min-height: 100%; }
+    .dialog-media { position: relative; min-height: 0; aspect-ratio: 16 / 9; }
+    .dialog-media img, .dialog-media video { height: 100%; object-fit: contain; }
+    .dialog-info { padding: 28px 18px 50px; }
+    .dialog-close { position: fixed; top: 10px; right: 10px; }
+  }
+</style>
+

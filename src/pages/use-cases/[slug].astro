@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import UseCaseCard from '../../components/UseCaseCard.astro';
+import DetailContent from '../../components/DetailContent.astro';
+import { demos, demosForCategory, demosForGroup, getDemoContext, groups } from '../../lib/content';
+import type { Demo, Group } from '../../types';
+
+export function getStaticPaths() {
+  return [
+    ...groups.map((group) => ({ params: { slug: group.code }, props: { kind: 'group', group } })),
+    ...demos.map((demo) => ({ params: { slug: demo.id }, props: { kind: 'demo', demo } })),
+  ];
+}
+
+const props = Astro.props as { kind: 'group'; group: Group } | { kind: 'demo'; demo: Demo };
+const isGroup = props.kind === 'group';
+const group = isGroup ? props.group : undefined;
+const demo = !isGroup ? props.demo : undefined;
+const context = demo ? getDemoContext(demo) : undefined;
+const title = group ? `${group.enName} use cases — jev.info` : `Use case ${demo?.id} — jev.info`;
+const description = demo?.description ?? `Explore ${group?.enName} use cases built with Jev.`;
+---
+
+<BaseLayout title={title} description={description}>
+  {group ? (
+    <main class="shell group-page">
+      <header class="group-header">
+        <a href="/">← All use cases</a>
+        <p>{demosForGroup(group).length} examples</p>
+        <h1>{group.enName}</h1>
+      </header>
+      {group.categories.map((category) => {
+        const items = demosForCategory(category.code);
+        return items.length > 0 && (
+          <section class="category-section" aria-labelledby={`category-${category.code}`}>
+            <div class="category-heading">
+              <h2 id={`category-${category.code}`}>{category.enName}</h2>
+              <span>{items.length}</span>
+            </div>
+            <div class="category-grid">{items.map((item) => <UseCaseCard demo={item} />)}</div>
+          </section>
+        );
+      })}
+    </main>
+  ) : demo ? (
+    <main><DetailContent demo={demo} category={context?.category} group={context?.group} /></main>
+  ) : null}
+</BaseLayout>
+
+<style>
+  .group-page { padding-block: 40px 90px; }
+  .group-header { padding: clamp(15px, 4vw, 55px) 0 clamp(50px, 8vw, 110px); }
+  .group-header a, .group-header p { color: var(--muted); font-size: 11px; }
+  .group-header p { margin: 45px 0 9px; text-transform: uppercase; letter-spacing: .1em; }
+  h1 { max-width: 1050px; margin: 0; font-size: clamp(55px, 10vw, 140px); font-weight: 580; line-height: .84; letter-spacing: -.075em; }
+  .category-section { padding: 28px 0 65px; border-top: 1px solid var(--line); }
+  .category-heading { margin-bottom: 28px; display: flex; justify-content: space-between; align-items: baseline; }
+  h2 { margin: 0; font-size: clamp(25px, 3vw, 40px); font-weight: 590; letter-spacing: -.045em; }
+  .category-heading span { color: var(--muted); font-size: 11px; }
+  .category-grid { display: grid; grid-template-columns: 1fr; gap: 34px 18px; }
+  @media (min-width: 620px) { .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 900px) { .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
+  @media (min-width: 1320px) { .category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+</style>
+

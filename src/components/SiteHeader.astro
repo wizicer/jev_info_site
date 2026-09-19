@@ -1,0 +1,80 @@
+---
+import { Icon } from 'astro-icon/components';
+const { pathname } = Astro.url;
+const nav = [
+  { label: 'Use Cases', href: '/', active: pathname === '/' || pathname.startsWith('/use-cases') },
+  { label: 'Recipes', href: '/recipes', active: pathname.startsWith('/recipes') },
+  { label: 'Benchmarks', href: '/benchmarks', active: pathname.startsWith('/benchmarks') },
+  { label: 'Information', href: '/information', active: pathname.startsWith('/information') },
+];
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="/" aria-label="jev.info home">jev.info</a>
+    <nav aria-label="Primary navigation">
+      {nav.map((item) => (
+        <a href={item.href} aria-current={item.active ? 'page' : undefined} class:list={{ active: item.active }}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-trigger" type="button" aria-label="Search use cases">
+        <Icon name="material-symbols:search-rounded" size={22} />
+        <span class="search-label">Search</span>
+      </button>
+      <div class="language">
+        <button class="text-button" type="button" aria-expanded="false" aria-controls="language-menu">
+          EN <Icon name="material-symbols:keyboard-arrow-down-rounded" size={18} />
+        </button>
+        <div id="language-menu" class="language-menu" hidden>
+          <a href="/" aria-current="page">English</a>
+          <span>中文 <small>Coming soon</small></span>
+          <span>日本語 <small>Coming soon</small></span>
+        </div>
+      </div>
+      <button class="icon-button theme-toggle" type="button" aria-label="Change color theme">
+        <Icon class="theme-icon" name="material-symbols:contrast-rounded" size={22} />
+      </button>
+      <button class="icon-button mobile-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <Icon name="material-symbols:menu-rounded" size={24} />
+      </button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header { position: sticky; z-index: 40; top: 0; height: 68px; border-bottom: 1px solid var(--line); background: var(--header); backdrop-filter: blur(14px); }
+  .header-inner { width: min(100% - 32px, 1480px); height: 100%; margin-inline: auto; display: flex; align-items: center; gap: 30px; }
+  .wordmark { font-size: 19px; font-weight: 720; letter-spacing: -0.04em; white-space: nowrap; }
+  nav { display: flex; align-self: stretch; align-items: center; gap: 2px; }
+  nav a { height: 100%; padding: 0 13px; display: grid; place-items: center; color: var(--muted); font-size: 14px; position: relative; }
+  nav a:hover, nav a.active { color: var(--ink); }
+  nav a.active::after { content: ''; position: absolute; right: 13px; bottom: -1px; left: 13px; height: 2px; background: var(--accent); }
+  .header-actions { margin-left: auto; display: flex; align-items: center; gap: 5px; }
+  button { color: inherit; }
+  .icon-button, .text-button { border: 0; background: transparent; cursor: pointer; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+  .icon-button { min-width: 40px; }
+  .text-button { gap: 2px; padding: 0 8px; font-size: 13px; font-weight: 650; }
+  .search-trigger { gap: 8px; padding-inline: 10px; }
+  .search-label { font-size: 13px; color: var(--muted); }
+  .language { position: relative; }
+  .language-menu { position: absolute; top: calc(100% + 9px); right: 0; width: 190px; padding: 7px; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 18px 45px rgb(0 0 0 / .14); }
+  .language-menu a, .language-menu span { display: flex; justify-content: space-between; padding: 10px; font-size: 13px; }
+  .language-menu a { background: var(--surface-soft); }
+  .language-menu span { color: var(--muted); }
+  .language-menu small { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; }
+  .mobile-nav-toggle { display: none; }
+  @media (min-width: 768px) { .header-inner { width: min(100% - 64px, 1480px); } }
+  @media (max-width: 850px) {
+    nav { display: none; position: fixed; top: 68px; right: 0; left: 0; height: auto; padding: 8px 16px 18px; background: var(--surface); border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; }
+    nav.open { display: flex; }
+    nav a { height: 46px; display: flex; padding-inline: 10px; }
+    nav a.active::after { top: 10px; right: auto; bottom: 10px; left: 0; width: 2px; height: auto; }
+    .mobile-nav-toggle { display: inline-flex; }
+    .search-label { display: none; }
+  }
+  @media (max-width: 420px) { .header-inner { gap: 10px; } .language { display: none; } }
+</style>
+
