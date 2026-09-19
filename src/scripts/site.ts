@@ -276,7 +276,8 @@ export function initSite() {
     const matches = query ? demos.filter((demo) =>
       `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName}`.toLowerCase().includes(query),
     ) : [];
-    const visible = matches.slice(0, 24);
+    const resultLimit = matchMedia('(max-width: 760px)').matches ? 12 : 16;
+    const visible = matches.slice(0, resultLimit);
     searchResults.replaceChildren(...visible.map(createSearchResult));
     searchStatus.textContent = query
       ? `${matches.length} use case${matches.length === 1 ? '' : 's'}${matches.length > visible.length ? ` · showing first ${visible.length}` : ''}`
