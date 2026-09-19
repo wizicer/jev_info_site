@@ -247,7 +247,7 @@ export function initSite() {
     const demo = demoMap.get(link.dataset.id || '');
     if (!demo) return;
     event.preventDefault();
-    if (searchDialog?.open) searchDialog.close();
+    if (searchDialog?.open) closeSearch();
     openCase(demo);
   });
   caseDialog?.querySelector('.dialog-close')?.addEventListener('click', () => closeCase());
@@ -261,12 +261,18 @@ export function initSite() {
 
   const openSearch = () => {
     searchDialog?.showModal(); body.classList.add('no-scroll');
+    input?.dispatchEvent(new Event('input'));
     window.setTimeout(() => searchDialog?.querySelector('input')?.focus(), 30);
   };
   document.querySelectorAll('.search-trigger, .home-search-trigger').forEach((trigger) => {
     trigger.addEventListener('click', openSearch);
   });
-  const closeSearch = () => { searchDialog?.close(); body.classList.remove('no-scroll'); };
+  const closeSearch = () => {
+    searchResults?.querySelectorAll<HTMLVideoElement>('video').forEach((video) => videoObserver.unobserve(video));
+    searchResults?.replaceChildren();
+    searchDialog?.close();
+    body.classList.remove('no-scroll');
+  };
   searchDialog?.querySelector('.search-close')?.addEventListener('click', closeSearch);
   searchDialog?.addEventListener('cancel', (event) => { event.preventDefault(); closeSearch(); });
   const input = searchDialog?.querySelector<HTMLInputElement>('input');
