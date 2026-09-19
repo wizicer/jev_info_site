@@ -138,7 +138,7 @@ export function initSite() {
     }
     taxonomy.append(document.createTextNode(demo.categoryName));
     const embed = caseDialog.querySelector<HTMLElement>('.dialog-embed')!;
-    embed.innerHTML = `<a href="${demo.url}" target="_blank" rel="noreferrer">Loading original post…</a>`;
+    embed.innerHTML = `<div class="embed-loading" role="status"><span aria-hidden="true"></span><strong>Loading original post…</strong><small>This may take a few seconds.</small><a href="${demo.url}" target="_blank" rel="noreferrer">Open directly ↗</a></div>`;
     if (!caseDialog.open) caseDialog.showModal();
     body.classList.add('no-scroll');
     document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => video.pause());

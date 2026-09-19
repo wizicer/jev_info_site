@@ -41,6 +41,13 @@
   .dialog-primary-label { width: 100%; margin-bottom: 14px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
   .dialog-embed { width: min(100%, 590px); min-height: 360px; display: grid; place-items: center; color: var(--muted); font-size: 12px; }
   .dialog-embed :global(.twitter-tweet), .dialog-embed :global(.twitter-tweet-rendered) { margin: 0 auto !important; }
+  .dialog-embed :global(.embed-loading) { display: grid; justify-items: center; gap: 9px; text-align: center; }
+  .dialog-embed :global(.embed-loading > span) { width: 24px; height: 24px; margin-bottom: 4px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: embed-spin .8s linear infinite; }
+  .dialog-embed :global(.embed-loading strong) { color: var(--ink); font-size: 14px; font-weight: 650; }
+  .dialog-embed :global(.embed-loading small) { color: var(--muted); font-size: 12px; }
+  .dialog-embed :global(.embed-loading a) { margin-top: 5px; color: var(--accent); font-size: 12px; }
+  @keyframes embed-spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .dialog-embed :global(.embed-loading > span) { animation: none; } }
   .dialog-side { min-width: 0; overflow: auto; }
   .dialog-media { position: relative; width: 100%; aspect-ratio: 16 / 9; display: none; place-items: center; overflow: hidden; background: #090a09; }
   .case-dialog.tweet-failed .dialog-embed { display: none; }
