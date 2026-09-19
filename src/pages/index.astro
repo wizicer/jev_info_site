@@ -2,13 +2,11 @@
 import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import UseCaseCard from '../components/UseCaseCard.astro';
-import { categories, demos, groups } from '../lib/content';
+import { demos, groups } from '../lib/content';
 
 const recent = [...demos]
   .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
   .slice(0, 8);
-const usedCategories = new Set(demos.map((demo) => demo.category));
-const categoryCount = categories.filter((category) => usedCategories.has(category.code)).length;
 const latestDate = new Date(Math.max(...demos.map((demo) => new Date(demo.createdAt).getTime())));
 const updated = new Intl.DateTimeFormat('en', {
   month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC',
@@ -23,9 +21,7 @@ const updated = new Intl.DateTimeFormat('en', {
 
       <div class="stats" aria-label="Catalog statistics">
         <div><strong>{demos.length}</strong><span>Use cases</span></div>
-        <div><strong>{categoryCount}</strong><span>Categories</span></div>
-        <div><strong>{groups.length}</strong><span>Collections</span></div>
-        <div><strong class="date">{updated}</strong><span>Catalog updated</span></div>
+        <div><strong class="date">{updated}</strong><span>Latest post</span></div>
       </div>
 
       <form class="hero-search" role="search">
@@ -52,21 +48,21 @@ const updated = new Intl.DateTimeFormat('en', {
 </BaseLayout>
 
 <style>
-  .hero { padding-top: clamp(55px, 8vw, 118px); padding-bottom: clamp(70px, 9vw, 125px); }
+  .hero { padding-top: clamp(44px, 6vw, 82px); padding-bottom: clamp(58px, 7vw, 90px); }
   .eyebrow { margin: 0 0 18px; color: var(--accent); font-size: 12px; font-weight: 720; letter-spacing: .12em; text-transform: uppercase; }
   h1 { max-width: 940px; margin: 0; font-size: clamp(26px, 3vw, 32px); font-weight: 560; line-height: .99; letter-spacing: -.065em; }
-  .stats { margin-top: clamp(45px, 7vw, 88px); display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--ink); }
-  .stats > div { min-height: 118px; padding: 24px 26px 20px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--line); }
+  .stats { width: min(100%, 700px); margin-top: clamp(32px, 4vw, 52px); display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--ink); }
+  .stats > div { min-height: 78px; padding: 15px 18px 14px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--line); }
   .stats > div:last-child { border-right: 0; }
-  .stats strong { font-size: clamp(20px, 2.2vw, 28px); line-height: 1; letter-spacing: -.05em; }
-  .stats strong.date { font-size: clamp(17px, 2vw, 25px); letter-spacing: -.035em; }
+  .stats strong { font-size: clamp(19px, 2vw, 24px); line-height: 1; letter-spacing: -.045em; }
+  .stats strong.date { font-size: clamp(17px, 1.8vw, 22px); letter-spacing: -.03em; }
   .stats span { color: var(--muted); font-size: 12px; font-weight: 720; letter-spacing: .09em; text-transform: uppercase; }
-  .hero-search { margin-top: 42px; min-height: 112px; padding: 14px 14px 14px 27px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 22px; border: 1px solid var(--ink); }
+  .hero-search { margin-top: 24px; min-height: 68px; padding: 8px 8px 8px 18px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; border: 1px solid var(--ink); }
   .hero-search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
-  .hero-search input { min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: clamp(18px, 2.4vw, 28px); letter-spacing: -.04em; }
+  .hero-search input { min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 16px; letter-spacing: -.015em; }
   .hero-search input::placeholder { color: var(--muted); opacity: .72; }
   .hero-search button, .browse-all { border: 0; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
-  .hero-search button { height: 72px; padding-inline: 33px; cursor: pointer; }
+  .hero-search button { height: 50px; padding-inline: 24px; cursor: pointer; }
   .hero-search button span, .browse-all span { margin-left: 16px; font-size: 18px; }
   .collection-links { margin-top: 35px; display: flex; flex-wrap: wrap; gap: 10px; }
   .collection-links a { padding: 15px 18px; border: 1px solid var(--ink); font-size: 12px; font-weight: 720; letter-spacing: .06em; text-transform: uppercase; transition: background .15s, color .15s; }
@@ -82,11 +78,11 @@ const updated = new Intl.DateTimeFormat('en', {
   @media (min-width: 900px) { .recent-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
   @media (min-width: 1320px) { .recent-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 760px) {
-    .stats { grid-template-columns: repeat(2, 1fr); }
-    .stats > div { min-height: 100px; padding: 19px; border-bottom: 1px solid var(--line); }
-    .stats > div:nth-child(2) { border-right: 0; } .stats > div:nth-child(n+3) { border-bottom: 0; }
-    .hero-search { min-height: 0; padding: 17px; grid-template-columns: auto 1fr; gap: 12px; }
-    .hero-search button { grid-column: 1 / -1; width: 100%; height: 56px; }
+    .stats > div { min-height: 76px; padding: 14px; }
+    .hero-search { min-height: 62px; padding: 7px 7px 7px 14px; gap: 9px; }
+    .hero-search button { width: 48px; height: 48px; padding: 0; font-size: 0; }
+    .hero-search button span { margin: 0; font-size: 20px; }
+    .collection-links { margin-top: 24px; }
     .collection-links a { flex: 1 1 calc(50% - 10px); text-align: center; }
   }
 </style>
