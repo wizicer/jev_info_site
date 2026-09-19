@@ -7,17 +7,18 @@ import { demosForGroup, groups } from '../../lib/content';
 <BaseLayout title="All use cases — jev.info">
   <main class="shell home-main">
     <div class="page-intro">
-      <p>Real-world examples of fast, typed decisions.</p>
       <span>Use cases</span>
+      <p>Real-world examples of fast, typed decisions.</p>
     </div>
     {groups.map((group) => <GroupSection group={group} demos={demosForGroup(group)} />)}
   </main>
 </BaseLayout>
 
 <style>
-  .home-main { padding-top: clamp(34px, 6vw, 88px); }
-  .page-intro { min-height: 100px; padding-bottom: 32px; display: flex; align-items: flex-end; justify-content: space-between; color: var(--muted); font-size: 14px; }
-  .page-intro p { margin: 0; } .page-intro span { text-transform: uppercase; letter-spacing: .06em; }
-  @media (max-width: 550px) { .page-intro p { max-width: 190px; line-height: 1.45; } }
+  .home-main { padding-top: clamp(28px, 4vw, 56px); }
+  .page-intro { min-height: 72px; padding-bottom: 24px; display: flex; align-items: baseline; gap: 12px; font-size: 14px; }
+  .page-intro p { margin: 0; color: var(--muted); }
+  .page-intro span { color: var(--ink); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  @media (max-width: 550px) { .page-intro { min-height: 86px; flex-direction: column; justify-content: flex-end; gap: 6px; } .page-intro p { line-height: 1.45; } }
 </style>
 
