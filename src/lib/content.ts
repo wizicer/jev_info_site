@@ -4,15 +4,6 @@ import type { Category, Demo, Group } from '../types';
 
 export const demos = demosData as Demo[];
 
-const groupNames: Record<string, string> = {
-  automation: 'Software Automation',
-  interaction: 'Human Interaction',
-  gaming: 'Game Worlds',
-  physical: 'Physical',
-  creative: 'Creative',
-  parked: 'To Be Classified',
-};
-
 const usedCategoryCodes = new Set(demos.map((demo) => demo.category));
 
 export const groups: Group[] = taxonomyData.layers
@@ -20,7 +11,7 @@ export const groups: Group[] = taxonomyData.layers
   .filter((group) => group.categories.some((category) => usedCategoryCodes.has(category.code)))
   .map((group) => ({
     ...group,
-    enName: groupNames[group.code] ?? group.code,
+    enName: group.enName ?? group.name,
   }));
 
 export const categories = groups.flatMap((group) => group.categories) as Category[];
