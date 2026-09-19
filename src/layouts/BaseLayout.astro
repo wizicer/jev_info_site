@@ -1,5 +1,6 @@
 ---
 import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import UseCaseCard from '../components/UseCaseCard.astro';
 import CaseDialog from '../components/CaseDialog.astro';
 import { demos, getDemoContext } from '../lib/content';
@@ -43,11 +44,7 @@ const caseJson = JSON.stringify(demos).replaceAll('<', '\\u003c');
   <body>
     <SiteHeader />
     <slot />
-    <footer class="site-footer">
-      <div class="shell site-footer-inner">
-        <strong>jev.info</strong><span>Independent community reference</span><a href="/use-cases">Explore all use cases ↗</a>
-      </div>
-    </footer>
+    <SiteFooter />
 
     <CaseDialog />
 
@@ -89,10 +86,6 @@ const caseJson = JSON.stringify(demos).replaceAll('<', '\\u003c');
   .search-status { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
   .search-results { width: min(100% - 32px, 1480px); margin: 34px auto 80px; display: grid; grid-template-columns: 1fr; gap: 35px 18px; }
   .search-empty { padding: 80px 20px; text-align: center; color: var(--muted); }
-  .site-footer { border-top: 1px solid var(--line); }
-  .site-footer-inner { min-height: 112px; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 14px; }
-  .site-footer-inner span { color: var(--muted); }
-  .site-footer-inner a { color: var(--accent); }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
   @media (min-width: 620px) { .search-results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 900px) { .search-results { width: min(100% - 64px, 1480px); grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }

@@ -1,0 +1,102 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const quickLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Use Cases', href: '/use-cases' },
+  { label: 'Recipes', href: '/recipes' },
+  { label: 'Benchmarks', href: '/benchmarks' },
+];
+
+const aboutLinks = [
+  { label: 'GitHub', href: 'https://github.com/wizicer/jev_info_site', external: true },
+  { label: 'Information', href: '/information' },
+  { label: 'Sponsor', href: '/sponsor' },
+  { label: 'Terms & Conditions', href: '/terms' },
+];
+
+const bugUrl = 'https://github.com/wizicer/jev_info_site/issues/new?title=%5BBug%5D%20Brief%20description&body=%23%23%20What%20happened%3F%0A%0A%23%23%20Steps%20to%20reproduce%0A1.%20%0A2.%20%0A3.%20%0A%0A%23%23%20Expected%20behaviour%0A%0A%23%23%20Browser%20or%20device%0A';
+const contactUrl = 'https://github.com/wizicer/jev_info_site/issues/new?title=%5BContact%5D%20Your%20topic&body=%23%23%20How%20can%20we%20help%3F%0A%0A%23%23%20Relevant%20links%20or%20context%0A';
+---
+
+<footer class="site-footer">
+  <div class="shell footer-main">
+    <div class="footer-intro">
+      <a class="footer-wordmark" href="/" aria-label="jev.info home">jev.info</a>
+      <p>An independent community index collecting people, projects, and real-world use cases around Jev.</p>
+      <h2>Stay updated</h2>
+      <div class="subscribe-stub">
+        <label>
+          <span class="sr-only">Email address</span>
+          <input type="email" placeholder="Enter your email" aria-describedby="subscribe-note" />
+        </label>
+        <button type="button" disabled aria-label="Subscriptions are coming soon">
+          <Icon name="material-symbols:send-rounded" size={22} />
+        </button>
+      </div>
+      <small id="subscribe-note">Updates subscription coming soon.</small>
+    </div>
+
+    <nav class="footer-column" aria-label="Quick links">
+      <h2>Quick links</h2>
+      {quickLinks.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+
+    <nav class="footer-column" aria-label="About">
+      <h2>About</h2>
+      {aboutLinks.map((item) => (
+        <a href={item.href} target={item.external ? '_blank' : undefined} rel={item.external ? 'noreferrer' : undefined}>
+          {item.label}{item.external && <Icon name="material-symbols:arrow-outward-rounded" size={16} />}
+        </a>
+      ))}
+    </nav>
+
+    <div class="footer-column">
+      <h2>Contact</h2>
+      <a class="contact-link bug-link" href={bugUrl} target="_blank" rel="noreferrer">
+        <Icon name="material-symbols:bug-report-outline-rounded" size={19} />Report bug
+      </a>
+      <a class="contact-link" href={contactUrl} target="_blank" rel="noreferrer">
+        <Icon name="material-symbols:mail-outline-rounded" size={19} />Contact us
+      </a>
+    </div>
+  </div>
+
+  <div class="shell footer-bottom">
+    <span>Content links to original posts. Copyright belongs to the respective authors.</span>
+    <span>© 2026 jev.info · Independent community project</span>
+  </div>
+</footer>
+
+<style>
+  .site-footer { border-top: 1px solid var(--ink); }
+  .footer-main { padding-block: 46px 52px; display: grid; grid-template-columns: 1fr; gap: 42px; }
+  .footer-intro { max-width: 520px; }
+  .footer-wordmark { display: inline-block; margin-bottom: 18px; font-size: 24px; font-weight: 760; letter-spacing: -.045em; }
+  .footer-intro > p { max-width: 480px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+  .footer-intro h2, .footer-column h2 { margin: 30px 0 12px; color: var(--muted); font-size: 12px; font-weight: 760; letter-spacing: .18em; text-transform: uppercase; }
+  .subscribe-stub { width: min(100%, 470px); min-height: 56px; border: 1px solid var(--ink); display: flex; align-items: stretch; }
+  .subscribe-stub label { flex: 1; min-width: 0; }
+  .subscribe-stub input { width: 100%; height: 100%; padding: 0 18px; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 14px; }
+  .subscribe-stub input::placeholder { color: var(--muted); }
+  .subscribe-stub button { width: 58px; border: 0; display: grid; place-items: center; background: var(--accent); color: var(--paper); opacity: .72; cursor: not-allowed; }
+  .footer-intro > small { display: block; margin-top: 9px; color: var(--muted); font-size: 12px; }
+  .footer-column { display: flex; flex-direction: column; align-items: flex-start; gap: 17px; }
+  .footer-column h2 { margin: 0 0 5px; }
+  .footer-column a { display: inline-flex; align-items: center; gap: 5px; font-size: 14px; font-weight: 650; }
+  .footer-column a:hover { color: var(--accent); }
+  .footer-column .contact-link { color: var(--accent); }
+  .footer-column .bug-link { color: #df4c4c; }
+  .footer-bottom { min-height: 72px; padding-block: 20px; border-top: 1px solid var(--ink); display: flex; flex-direction: column; gap: 10px; color: var(--muted); font-size: 12px; font-weight: 650; letter-spacing: .055em; line-height: 1.5; text-transform: uppercase; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  @media (min-width: 640px) {
+    .footer-main { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .footer-intro { grid-column: 1 / -1; }
+  }
+  @media (min-width: 980px) {
+    .footer-main { padding-block: 62px 64px; grid-template-columns: minmax(360px, 1.55fr) repeat(3, minmax(150px, .7fr)); gap: 54px; }
+    .footer-intro { grid-column: auto; }
+    .footer-bottom { min-height: 78px; flex-direction: row; align-items: center; justify-content: space-between; gap: 30px; }
+    .footer-bottom span:last-child { text-align: right; }
+  }
+</style>
