@@ -12,6 +12,7 @@ export interface Demo {
   score: number;
   category: string;
   description: string;
+  cover: string;
   author: Author;
   mediaType: 'video' | 'image';
   src: string;

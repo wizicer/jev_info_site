@@ -4,7 +4,7 @@ import { formatDate } from '../lib/content';
 const { demo, category, group } = Astro.props as { demo: Demo; category?: Category; group?: Group };
 ---
 
-<article class="detail-layout" data-detail-root data-id={demo.id} data-src={demo.src} data-media-type={demo.mediaType}>
+<article class="detail-layout" data-detail-root data-id={demo.id} data-src={demo.src} data-cover={demo.cover} data-media-type={demo.mediaType}>
   <section class="detail-primary" aria-label="Original post">
     <span class="section-label">Original post</span>
     <div class="standalone-tweet"><a href={demo.url} target="_blank" rel="noreferrer">Loading original post…</a></div>
@@ -40,6 +40,7 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
       media.src = root.dataset.src ?? '';
       if (media instanceof HTMLVideoElement) {
         media.muted = true; media.autoplay = true; media.playsInline = true; media.controls = true;
+        media.poster = root.dataset.cover ?? '';
       } else media.alt = '';
       mediaHost.replaceChildren(media);
     };

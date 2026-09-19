@@ -111,6 +111,7 @@ export function initSite() {
       media.muted = true; media.autoplay = true; media.playsInline = true; media.controls = true;
       attachPlaybackEasing(media);
     } else media.alt = '';
+      media.poster = demo.cover;
     mediaHost.replaceChildren(media);
   };
 
@@ -248,6 +249,7 @@ export function initSite() {
       media.classList.add('case-video');
       media.muted = true;
       media.playsInline = true;
+      media.poster = demo.cover;
       media.preload = 'none';
       media.setAttribute('aria-label', demo.description);
       attachPlaybackEasing(media);

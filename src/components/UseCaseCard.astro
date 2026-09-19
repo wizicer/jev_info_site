@@ -19,6 +19,7 @@ const { demo, eager = false, searchCard = false } = Astro.props as { demo: Demo;
         width={demo.width}
         height={demo.height}
         muted
+        poster={demo.cover}
         playsinline
         preload={eager ? 'metadata' : 'none'}
         aria-label={demo.description}
