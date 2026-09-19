@@ -64,6 +64,7 @@ const visibleCategories = group
   .category-nav { position: sticky; z-index: 20; top: 68px; margin-bottom: 22px; padding: 12px 0; display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); scrollbar-width: thin; }
   .category-nav a { flex: 0 0 auto; padding: 10px 12px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 650; }
   .category-nav a:hover { border-color: var(--accent); color: var(--accent); }
+  .category-nav a.active { border-color: var(--accent); background: var(--accent); color: var(--paper); }
   .category-nav a:focus-visible { border-color: var(--accent); }
   .category-section { padding: 28px 0 65px; border-top: 1px solid var(--line); }
   .category-heading { margin-bottom: 28px; display: flex; justify-content: space-between; align-items: baseline; }

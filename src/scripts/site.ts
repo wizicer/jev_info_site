@@ -43,6 +43,28 @@ export function initSite() {
     languageButton.setAttribute('aria-expanded', String(opening));
   });
 
+  const categoryLinks = [...document.querySelectorAll<HTMLAnchorElement>('.category-nav a')];
+  const categoryHeadings = [...document.querySelectorAll<HTMLElement>('.category-section h2[id]')];
+  if (categoryLinks.length && categoryHeadings.length) {
+    const setActiveCategory = (id: string) => {
+      categoryLinks.forEach((link) => {
+        const active = link.hash === `#${id}`;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    setActiveCategory(categoryHeadings[0].id);
+    const categoryObserver = new IntersectionObserver((entries) => {
+      const current = entries.find((entry) => entry.isIntersecting);
+      if (current) setActiveCategory((current.target as HTMLElement).id);
+    }, { rootMargin: '-135px 0px -65% 0px', threshold: 0 });
+    categoryHeadings.forEach((heading) => categoryObserver.observe(heading));
+    categoryLinks.forEach((link) => link.addEventListener('click', () => {
+      const id = decodeURIComponent(link.hash.slice(1));
+      if (id) setActiveCategory(id);
+    }));
+  }
   const navToggle = document.querySelector<HTMLButtonElement>('.mobile-nav-toggle');
   const nav = document.querySelector<HTMLElement>('.site-header nav');
   navToggle?.addEventListener('click', () => {
