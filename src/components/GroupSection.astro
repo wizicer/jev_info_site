@@ -32,5 +32,9 @@ const { group, demos } = Astro.props as { group: Group; demos: Demo[] };
   @media (min-width: 620px) { .case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 900px) { .case-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } .preview-grid > :global(*:nth-child(3)) { display: block; } }
   @media (min-width: 1320px) { .case-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } .preview-grid > :global(*:nth-child(4)) { display: block; } }
+  @media (max-width: 619px) {
+    .group-section { padding-block: 21px 40px; }
+    .preview-grid > :global(*:nth-child(n+2)) { display: none; }
+  }
 </style>
 
