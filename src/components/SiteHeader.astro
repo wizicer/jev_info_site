@@ -2,7 +2,8 @@
 import { Icon } from 'astro-icon/components';
 const { pathname } = Astro.url;
 const nav = [
-  { label: 'Use Cases', href: '/', active: pathname === '/' || pathname.startsWith('/use-cases') },
+  { label: 'Recent', href: '/', active: pathname === '/' },
+  { label: 'Use Cases', href: '/use-cases', active: pathname.startsWith('/use-cases') },
   { label: 'Recipes', href: '/recipes', active: pathname.startsWith('/recipes') },
   { label: 'Benchmarks', href: '/benchmarks', active: pathname.startsWith('/benchmarks') },
   { label: 'Information', href: '/information', active: pathname.startsWith('/information') },

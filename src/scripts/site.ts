@@ -44,6 +44,20 @@ export function initSite() {
     navToggle.setAttribute('aria-expanded', String(open));
   });
 
+
+  const attachPlaybackEasing = (video: HTMLVideoElement) => {
+    video.addEventListener('timeupdate', () => {
+      if (!Number.isFinite(video.duration) || video.duration <= 0) return;
+      const progress = video.currentTime / video.duration;
+      if (progress < 0.75) {
+        video.playbackRate = 1;
+        return;
+      }
+      const finalQuarter = Math.min(1, (progress - 0.75) / 0.25);
+      video.playbackRate = Math.max(0.18, 1 - 0.82 * finalQuarter * finalQuarter);
+    });
+  };
+
   const replayTimers = new WeakMap<HTMLVideoElement, number>();
   const videoObserver = new IntersectionObserver((entries) => {
     if (reduceMotion) return;
@@ -61,10 +75,12 @@ export function initSite() {
 
   document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => {
     videoObserver.observe(video);
+    attachPlaybackEasing(video);
     video.addEventListener('ended', () => {
       const timer = window.setTimeout(() => {
         if (!document.hidden && !caseDialog?.open) {
           video.currentTime = 0;
+          video.playbackRate = 1;
           video.play().catch(() => undefined);
         }
       }, 3000);
@@ -94,6 +110,7 @@ export function initSite() {
     media.src = demo.src;
     if (media instanceof HTMLVideoElement) {
       media.muted = true; media.autoplay = true; media.playsInline = true; media.controls = true;
+      attachPlaybackEasing(media);
     } else media.alt = '';
     mediaHost.replaceChildren(media);
     caseDialog.querySelector<HTMLElement>('.dialog-description')!.textContent = demo.description;
@@ -172,6 +189,18 @@ export function initSite() {
     });
     searchDialog.querySelector<HTMLElement>('.search-status')!.textContent = `${count} use case${count === 1 ? '' : 's'}`;
     searchDialog.querySelector<HTMLElement>('.search-empty')!.hidden = count !== 0;
+  });
+
+  const heroForm = document.querySelector<HTMLFormElement>('.hero-search');
+  heroForm?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!searchDialog || !input) return;
+    const heroInput = heroForm.querySelector<HTMLInputElement>('input');
+    input.value = heroInput?.value.trim() ?? '';
+    input.dispatchEvent(new Event('input'));
+    searchDialog.showModal();
+    body.classList.add('no-scroll');
+    window.setTimeout(() => input.focus(), 30);
   });
 }
 

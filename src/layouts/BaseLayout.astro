@@ -1,6 +1,7 @@
 ---
 import SiteHeader from '../components/SiteHeader.astro';
 import UseCaseCard from '../components/UseCaseCard.astro';
+import CaseDialog from '../components/CaseDialog.astro';
 import { demos, getDemoContext } from '../lib/content';
 import '../styles/global.css';
 
@@ -43,25 +44,7 @@ const caseJson = JSON.stringify(demos).replaceAll('<', '\\u003c');
     <SiteHeader />
     <slot />
 
-    <dialog class="case-dialog" aria-labelledby="case-dialog-description">
-      <button class="dialog-close" type="button" aria-label="Close details">×</button>
-      <article class="dialog-layout">
-        <div class="dialog-media"><div class="dialog-placeholder">jev</div></div>
-        <div class="dialog-info">
-          <div class="dialog-taxonomy"></div>
-          <p id="case-dialog-description" class="dialog-description"></p>
-          <div class="dialog-author">
-            <img alt="" width="42" height="42" />
-            <div><strong></strong><span></span></div>
-          </div>
-          <dl>
-            <div><dt>Published</dt><dd class="dialog-date"></dd></div>
-            <div><dt>Source</dt><dd><a class="dialog-source" target="_blank" rel="noreferrer">View original post ↗</a></dd></div>
-          </dl>
-          <div class="dialog-embed" aria-live="polite"></div>
-        </div>
-      </article>
-    </dialog>
+    <CaseDialog />
 
     <dialog class="search-dialog" aria-labelledby="search-title">
       <div class="search-bar">
@@ -90,27 +73,9 @@ const caseJson = JSON.stringify(demos).replaceAll('<', '\\u003c');
 <style is:global>
   dialog { color: var(--ink); }
   dialog::backdrop { background: rgb(8 9 8 / .66); backdrop-filter: blur(4px); }
-  .case-dialog { width: min(1220px, calc(100% - 30px)); max-height: calc(100dvh - 30px); padding: 0; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 25px 100px rgb(0 0 0 / .35); }
-  .dialog-close, .search-close { position: absolute; z-index: 2; top: 12px; right: 14px; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; font-size: 26px; line-height: 1; }
-  .dialog-layout { display: grid; min-height: min(720px, calc(100dvh - 32px)); grid-template-columns: minmax(0, 1.65fr) minmax(330px, .85fr); }
-  .dialog-media { position: sticky; top: 0; min-height: 520px; display: grid; place-items: center; align-self: start; background: #090a09; overflow: hidden; }
-  .dialog-media img, .dialog-media video { width: 100%; height: 100%; max-height: calc(100dvh - 32px); object-fit: contain; display: block; }
-  .dialog-placeholder { color: #30322f; font-size: clamp(52px, 10vw, 130px); font-weight: 750; letter-spacing: -.08em; }
-  .dialog-info { padding: 68px 30px 40px; overflow-wrap: anywhere; }
-  .dialog-taxonomy { margin-bottom: 22px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-  .dialog-description { margin: 0 0 30px; font-size: clamp(19px, 2vw, 26px); line-height: 1.32; letter-spacing: -.03em; }
-  .dialog-author { display: flex; align-items: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .dialog-author img { width: 42px; height: 42px; border-radius: 50%; background: var(--surface-soft); }
-  .dialog-author strong, .dialog-author span { display: block; font-size: 13px; }
-  .dialog-author span { margin-top: 3px; color: var(--muted); }
-  dl { margin: 0; }
-  dl > div { display: grid; grid-template-columns: 95px 1fr; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
-  dt { color: var(--muted); }
-  dd { margin: 0; }
-  .dialog-source { color: var(--accent); }
-  .dialog-embed { min-height: 80px; margin-top: 22px; color: var(--muted); font-size: 12px; }
   .search-dialog { width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: 0; border: 0; background: var(--paper); }
   .search-dialog::backdrop { background: var(--paper); }
+  .search-close { position: absolute; z-index: 4; top: 18px; right: 18px; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; font-size: 26px; line-height: 1; }
   .search-bar { position: sticky; z-index: 3; top: 0; padding: 24px max(16px, calc((100% - 1480px) / 2)); border-bottom: 1px solid var(--line); background: var(--header); backdrop-filter: blur(14px); }
   .search-bar h2 { margin: 0 0 18px; font-size: 14px; font-weight: 650; }
   .search-bar label { display: block; padding-right: 55px; }
@@ -124,12 +89,6 @@ const caseJson = JSON.stringify(demos).replaceAll('<', '\\u003c');
   @media (min-width: 900px) { .search-results { width: min(100% - 64px, 1480px); grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
   @media (min-width: 1320px) { .search-results { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 760px) {
-    .case-dialog { width: 100%; height: 100%; max-height: none; border: 0; }
-    .dialog-layout { display: block; min-height: 100%; }
-    .dialog-media { position: relative; min-height: 0; aspect-ratio: 16 / 9; }
-    .dialog-media img, .dialog-media video { height: 100%; object-fit: contain; }
-    .dialog-info { padding: 28px 18px 50px; }
-    .dialog-close { position: fixed; top: 10px; right: 10px; }
   }
 </style>
 
