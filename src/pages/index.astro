@@ -52,10 +52,10 @@ const updated = new Intl.DateTimeFormat('en', {
 </BaseLayout>
 
 <style>
-  .hero { padding-top: clamp(44px, 6vw, 82px); padding-bottom: clamp(58px, 7vw, 90px); }
-  .eyebrow { margin: 0 0 18px; color: var(--accent); font-size: 12px; font-weight: 720; letter-spacing: .12em; text-transform: uppercase; }
+  .hero { padding-top: clamp(36px, 4vw, 58px); padding-bottom: clamp(38px, 5vw, 60px); }
+  .eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 12px; font-weight: 720; letter-spacing: .12em; text-transform: uppercase; }
   h1 { max-width: 940px; margin: 0; font-size: clamp(26px, 3vw, 32px); font-weight: 560; line-height: .99; letter-spacing: -.065em; }
-  .stats { width: min(100%, 700px); margin-top: clamp(32px, 4vw, 52px); display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--ink); }
+  .stats { width: min(100%, 700px); margin-top: clamp(26px, 3vw, 38px); display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--ink); }
   .stats > div { min-height: 78px; padding: 15px 18px 14px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--line); }
   .stats > div:last-child { border-right: 0; }
   .stats strong { font-size: clamp(19px, 2vw, 24px); line-height: 1; letter-spacing: -.045em; }
@@ -66,12 +66,12 @@ const updated = new Intl.DateTimeFormat('en', {
   .search-placeholder { color: var(--muted); font-size: 16px; letter-spacing: -.015em; opacity: .72; }
   .search-action { height: 50px; padding-inline: 24px; display: inline-flex; align-items: center; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
   .search-action span { margin-left: 16px; font-size: 18px; }
-  .collection-links { margin-top: 35px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .collection-links { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
   .collection-links a { min-width: 150px; padding: 14px 16px; border: 1px solid var(--ink); display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; font-size: 12px; font-weight: 720; letter-spacing: .06em; text-transform: uppercase; transition: background .15s, color .15s; }
   .collection-links small { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: 0; transition: color .15s; }
   .collection-links a:hover { background: var(--ink); color: var(--paper); }
   .collection-links a:hover small { color: var(--paper); }
-  .browse-all { width: fit-content; margin-top: 18px; padding: 8px 0; display: inline-flex; align-items: center; color: var(--accent); font-size: 14px; font-weight: 650; }
+  .browse-all { width: fit-content; margin-top: 12px; padding: 8px 0; display: inline-flex; align-items: center; color: var(--accent); font-size: 14px; font-weight: 650; }
   .browse-all span { margin-left: 10px; font-size: 18px; }
   .recent { padding-bottom: 105px; }
   .recent-heading { padding: 28px 0 26px; border-top: 1px solid var(--line); display: flex; align-items: flex-end; justify-content: space-between; }
