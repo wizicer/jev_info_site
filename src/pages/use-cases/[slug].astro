@@ -73,5 +73,9 @@ const visibleCategories = group
   @media (min-width: 620px) { .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 900px) { .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
   @media (min-width: 1320px) { .category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (max-width: 760px) {
+    .category-nav { padding-right: 30px; -webkit-mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 30px), transparent 100%); mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 30px), transparent 100%); }
+    .category-nav a { scroll-snap-align: start; }
+  }
 </style>
 
