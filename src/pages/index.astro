@@ -7,10 +7,6 @@ import { demos, demosForGroup, groups } from '../lib/content';
 const recent = [...demos]
   .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
   .slice(0, 8);
-const latestDate = new Date(Math.max(...demos.map((demo) => new Date(demo.createdAt).getTime())));
-const updated = new Intl.DateTimeFormat('en', {
-  month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC',
-}).format(latestDate);
 ---
 
 <BaseLayout title="jev.info — The independent Jev information index">
@@ -18,11 +14,6 @@ const updated = new Intl.DateTimeFormat('en', {
     <section class="shell hero">
       <p class="eyebrow">An independent community index</p>
       <h1>The independent index of Jev projects and use cases.</h1>
-
-      <div class="stats" aria-label="Catalog statistics">
-        <div><strong>{demos.length}</strong><span>Use cases</span></div>
-        <div><strong class="date">{updated}</strong><span>Latest post</span></div>
-      </div>
 
       <button class="hero-search home-search-trigger" type="button" aria-label="Search the Jev use case collection">
         <Icon name="material-symbols:search-rounded" size={35} />
@@ -54,12 +45,6 @@ const updated = new Intl.DateTimeFormat('en', {
   .hero { padding-top: clamp(36px, 4vw, 58px); padding-bottom: clamp(38px, 5vw, 60px); }
   .eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 12px; font-weight: 720; letter-spacing: .12em; text-transform: uppercase; }
   h1 { max-width: 940px; margin: 0; font-size: clamp(26px, 3vw, 32px); font-weight: 560; line-height: .99; letter-spacing: -.065em; }
-  .stats { width: min(100%, 700px); margin-top: clamp(26px, 3vw, 38px); display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--ink); }
-  .stats > div { min-height: 78px; padding: 15px 18px 14px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--line); }
-  .stats > div:last-child { border-right: 0; }
-  .stats strong { font-size: clamp(19px, 2vw, 24px); line-height: 1; letter-spacing: -.045em; }
-  .stats strong.date { font-size: clamp(17px, 1.8vw, 22px); letter-spacing: -.03em; }
-  .stats span { color: var(--muted); font-size: 12px; font-weight: 720; letter-spacing: .09em; text-transform: uppercase; }
   .hero-search { width: 100%; margin-top: 24px; min-height: 68px; padding: 8px 8px 8px 18px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; border: 1px solid var(--ink); background: transparent; color: var(--ink); text-align: left; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
   .hero-search:hover, .hero-search:focus-visible { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); outline: 0; }
   .search-placeholder { color: var(--muted); font-size: 16px; letter-spacing: -.015em; opacity: .72; }
@@ -81,7 +66,6 @@ const updated = new Intl.DateTimeFormat('en', {
   @media (min-width: 900px) { .recent-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
   @media (min-width: 1320px) { .recent-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 760px) {
-    .stats > div { min-height: 76px; padding: 14px; }
     .hero-search { min-height: 62px; padding: 7px 7px 7px 14px; gap: 9px; }
     .search-action { width: 48px; height: 48px; padding: 0; justify-content: center; font-size: 0; }
     .search-action span { margin: 0; font-size: 20px; }
