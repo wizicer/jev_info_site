@@ -5,18 +5,19 @@ import type { Category, Demo, Group } from '../types';
 export const demos = demosData as Demo[];
 
 const groupNames: Record<string, string> = {
-  logic_control: 'Logic Control',
-  task_routing: 'Task Routing',
-  data_labeling: 'Data Labeling',
-  information_retrieval: 'Information Retrieval',
-  discrete_decision: 'General Decision Making',
-  gaming: 'Game Decisions',
-  embodied_intelligence: 'Embodied Intelligence',
+  automation: 'Software Automation',
+  interaction: 'Human Interaction',
+  gaming: 'Game Worlds',
+  physical: 'Physical',
+  creative: 'Creative',
+  parked: 'To Be Classified',
 };
 
+const usedCategoryCodes = new Set(demos.map((demo) => demo.category));
+
 export const groups: Group[] = taxonomyData.layers
-  .filter((layer) => layer.code !== 'exploratory_hacks')
   .flatMap((layer) => layer.groups)
+  .filter((group) => group.categories.some((category) => usedCategoryCodes.has(category.code)))
   .map((group) => ({
     ...group,
     enName: groupNames[group.code] ?? group.code,
