@@ -1,7 +1,6 @@
 ---
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
-import UseCaseCard from '../components/UseCaseCard.astro';
 import CaseDialog from '../components/CaseDialog.astro';
 import { demos, getDemoContext } from '../lib/content';
 import '../styles/global.css';
@@ -25,10 +24,6 @@ const clientDemos = demos.map((demo) => {
     groupCode: group?.code ?? '',
   };
 });
-const searchDemos = clientDemos.map((demo) => ({
-  ...demo,
-  searchText: `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName}`.toLowerCase(),
-}));
 const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
 ---
 
@@ -65,12 +60,10 @@ const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
           <span class="sr-only">Search use cases</span>
           <input type="search" placeholder="Search descriptions, authors, or categories…" autocomplete="off" />
         </label>
-        <p class="search-status">{searchDemos.length} use cases</p>
+        <p class="search-status">Search {clientDemos.length} use cases</p>
       </div>
-      <div class="search-results">
-        {searchDemos.map((demo) => <div data-search={demo.searchText}><UseCaseCard demo={demo} searchCard /></div>)}
-      </div>
-      <div class="search-empty" hidden>No use cases found.</div>
+      <div class="search-results"></div>
+      <div class="search-empty">Start typing to find a use case.</div>
     </dialog>
 
     <script id="case-data" type="application/json" set:html={caseJson}></script>
@@ -95,6 +88,15 @@ const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
   .search-status { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
   .search-results { width: min(100% - 32px, 1480px); margin: 34px auto 80px; display: grid; grid-template-columns: 1fr; gap: 35px 18px; }
   .search-empty { padding: 80px 20px; text-align: center; color: var(--muted); }
+  .search-result { display: block; min-width: 0; }
+  .search-result-frame { position: relative; overflow: hidden; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: var(--surface-soft); transition: border-color .18s, box-shadow .18s; }
+  .search-result:hover .search-result-frame, .search-result:focus-visible .search-result-frame { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .search-result-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: var(--line); font-size: 28px; font-weight: 750; letter-spacing: -.08em; }
+  .search-result-media { pointer-events: none; position: relative; width: 100%; height: 100%; display: block; object-fit: cover; background: var(--surface-soft); transition: transform .35s ease; }
+  .search-result:hover .search-result-media { transform: scale(1.015); }
+  .search-result p { min-height: 3em; margin: 13px 1px 0; font-size: 14px; line-height: 1.48; }
+  .search-result:hover p, .search-result:focus-visible p { color: var(--accent); }
+  .search-result:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
   @media (min-width: 620px) { .search-results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 900px) { .search-results { width: min(100% - 64px, 1480px); grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
