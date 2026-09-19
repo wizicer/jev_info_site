@@ -4,7 +4,7 @@
     "url": "https://x.com/harshagundal/status/2100044305536889015",
     "createdAt": "2026-09-16T02:09:14.000Z",
     "score": 4,
-    "category": "signal_extraction",
+    "category": "categorization",
     "description": "Open-sourced Qwen-2.5-1B-RLCD achieves 5x faster on-device inference for type-safe JSON workloads by batching all JSON keys simultaneously and generating categorical probabilities without new training, demoed on an M4 MacBook and available on Hugging Face.",
     "author": {
       "name": "Harsha Gundala",
@@ -22,7 +22,7 @@
     "url": "https://x.com/ryanvogel/status/2100068006592123055",
     "createdAt": "2026-09-16T03:43:24.000Z",
     "score": 1,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "A Jev-powered codebase classifier that detects and flags overengineered, agent-generated code, with an open call for next test targets.",
     "author": {
       "name": "vogel",
@@ -40,7 +40,7 @@
     "url": "https://x.com/faadilhshaik/status/2100086301894881578",
     "createdAt": "2026-09-16T04:56:06.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "The new Jev model plays Super Mario Bros. in real time, combining fast inference with structured outputs to generate responsive, low-latency gameplay actions.",
     "author": {
       "name": "Faadil Shaik",
@@ -58,7 +58,7 @@
     "url": "https://x.com/oswalpalash/status/2100125657795834343",
     "createdAt": "2026-09-16T07:32:29.000Z",
     "score": 1,
-    "category": "evaluation_scoring",
+    "category": "workflow_guardrails",
     "description": "A typesafe \"system one\" model was tested doing file-by-file vulnerability review of the Linux 6.12 LTS kernel tree, delivering striking speed and lower false-positive rates than Luna and other small fast models.",
     "author": {
       "name": "Palash Oswal",
@@ -72,11 +72,29 @@
     "height": 480
   },
   {
+    "id": "2100141659933856192",
+    "url": "https://x.com/princecaarlo/status/2100141659933856192",
+    "createdAt": "2026-09-16T08:36:05.000Z",
+    "score": 3,
+    "category": "text_generation",
+    "description": "A hack that turns Jev into a conversational agent you can chat with directly.",
+    "author": {
+      "name": "joogie",
+      "handle": "princecaarlo",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1981874316502237184/Qfle1MFt_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100141659933856192.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100162790061113634",
     "url": "https://x.com/arifcodes/status/2100162790061113634",
     "createdAt": "2026-09-16T10:00:02.000Z",
     "score": 4,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "A social simulation gave 24 AI agents their own memories, relationships, and limited visibility inside a flooding town, letting each decide over 237 real API calls whether to escape, help strangers, or search for family.",
     "author": {
       "name": "arif ☁︎",
@@ -94,7 +112,7 @@
     "url": "https://x.com/PhilYoussef/status/2100186640149033457",
     "createdAt": "2026-09-16T11:34:49.000Z",
     "score": 4,
-    "category": "tactical_strategy",
+    "category": "realtime_gameplay",
     "description": "A coding agent wired a game-playing harness into StarCraft on the first attempt and autonomously won the mission, demonstrating one-shot tactical strategy execution.",
     "author": {
       "name": "Phil Youssef",
@@ -108,11 +126,29 @@
     "height": 480
   },
   {
+    "id": "2100218045549412499",
+    "url": "https://x.com/ryanvogel/status/2100218045549412499",
+    "createdAt": "2026-09-16T13:39:36.000Z",
+    "score": 3,
+    "category": "text_generation",
+    "description": "An LLM built from first principles: a classifier answers 29 yes/no questions per character to pick the next key (a–z, space, comma, or period), appends the highest probability, and feeds the updated text back in an autoregressive loop.",
+    "author": {
+      "name": "vogel",
+      "handle": "ryanvogel",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2096969684159770624/pZG4RQhy_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100218045549412499.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100230707297878339",
     "url": "https://x.com/tosa_now/status/2100230707297878339",
     "createdAt": "2026-09-16T14:29:55.000Z",
     "score": 3,
-    "category": "item_triage",
+    "category": "categorization",
     "description": "Drag-and-drop item triage demo that automatically suggests the correct destination for each dropped item — the first inference is slightly slow, then subsequent sorts run snappy.",
     "author": {
       "name": "とさ",
@@ -126,11 +162,29 @@
     "height": 480
   },
   {
+    "id": "2100246929611411501",
+    "url": "https://x.com/anshuc/status/2100246929611411501",
+    "createdAt": "2026-09-16T15:34:23.000Z",
+    "score": 3,
+    "category": "multimodal_generation",
+    "description": "An image-generation demo that draws pictures by predicting every pixel in parallel instead of decoding them sequentially.",
+    "author": {
+      "name": "Anshu",
+      "handle": "anshuc",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2062938542280712192/gds8Qtn8_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100246929611411501.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100249086209241213",
     "url": "https://x.com/alexgetmancom/status/2100249086209241213",
     "createdAt": "2026-09-16T15:42:57.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "A new Jev model plugged into Minecraft autonomously dodged zombies at nightfall with zero extra prompting, using 150K tokens for 2 minutes of gameplay at just one cent.",
     "author": {
       "name": "alex getman",
@@ -148,7 +202,7 @@
     "url": "https://x.com/MartinSWDev/status/2100278904447475920",
     "createdAt": "2026-09-16T17:41:26.000Z",
     "score": 3,
-    "category": "tool_selection",
+    "category": "pipeline_routing",
     "description": "A realtime generative-UI demo where an LLM streams JSON-driven decisions to instantly pick and render the best shadcn component—e.g., choosing between a data table and a donut chart—for the given data.",
     "author": {
       "name": "Martin William",
@@ -162,11 +216,29 @@
     "height": 480
   },
   {
+    "id": "2100281474943779254",
+    "url": "https://x.com/rrriviannn/status/2100281474943779254",
+    "createdAt": "2026-09-16T17:51:39.000Z",
+    "score": 3,
+    "category": "multimodal_generation",
+    "description": "Coaxing a coding assistant into \"generating an image\" yields a recognizable sunflower rendered purely through code — a hacky demo of how far general-purpose agents can stretch beyond their intended tasks.",
+    "author": {
+      "name": "it’s rivian",
+      "handle": "rrriviannn",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2021237472521584640/9ilyMPIL_normal.jpg",
+      "isVerified": false
+    },
+    "mediaType": "video",
+    "src": "/previews/2100281474943779254.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100281651930513460",
     "url": "https://x.com/vinnylarouge/status/2100281651930513460",
     "createdAt": "2026-09-16T17:52:21.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "A single RL architecture designed for state-dependent action sets plays both Doom and chess (poorly) using two different controllers.",
     "author": {
       "name": "Vincent Wang-Maścianica",
@@ -184,7 +256,7 @@
     "url": "https://x.com/Neriousy/status/2100287208166969746",
     "createdAt": "2026-09-16T18:14:26.000Z",
     "score": 2,
-    "category": "quality_gating",
+    "category": "workflow_guardrails",
     "description": "A demo showcases rapid AI-driven app testing by pairing the Jev typesafe testing library with the OpenCode agent, promising dramatically faster test iteration for quality gating.",
     "author": {
       "name": "Filip",
@@ -202,7 +274,7 @@
     "url": "https://x.com/stevekrouse/status/2100287368221659289",
     "createdAt": "2026-09-16T18:15:04.000Z",
     "score": 3,
-    "category": "conditional_branching",
+    "category": "pipeline_routing",
     "description": "Live demo of Jev, a decision-only model that returns typed probabilistic answers in parallel instead of generating text, responding in ~0.11s—roughly 75x faster than GPT-5.6 Terra—at about $42 per billion input tokens.",
     "author": {
       "name": "Steve Krouse",
@@ -220,7 +292,7 @@
     "url": "https://x.com/injaneity/status/2100290364657848538",
     "createdAt": "2026-09-16T18:26:59.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "Jev plays the turn-based game 2048 5x faster and 1000x cheaper than astra, though its reasoning clearly lags state-of-the-art models like astra and fable.",
     "author": {
       "name": "Zane Chee",
@@ -238,7 +310,7 @@
     "url": "https://x.com/gergomoricz/status/2100301843507159443",
     "createdAt": "2026-09-16T19:12:35.000Z",
     "score": 3,
-    "category": "interface_actions",
+    "category": "browser_use",
     "description": "Jev Ultrafast is an open-source browser agent that swaps screenshot-driven loops for a dynamic indexed DOM action space with one decision per request, completing a Google Flights search in 7.1s for $0.0039.",
     "author": {
       "name": "Gergő Móricz",
@@ -256,7 +328,7 @@
     "url": "https://x.com/princecaarlo/status/2100313645116952701",
     "createdAt": "2026-09-16T19:59:29.000Z",
     "score": 2,
-    "category": "interface_actions",
+    "category": "browser_use",
     "description": "A browser-use agent autonomously plays Wiki Race, navigating from the \"Coffee\" Wikipedia page to \"Artificial Intelligence\" via an agent–browser interaction loop.",
     "author": {
       "name": "joogie",
@@ -274,7 +346,7 @@
     "url": "https://x.com/mdlahfir/status/2100314182201802811",
     "createdAt": "2026-09-16T20:01:37.000Z",
     "score": 2,
-    "category": "model_dispatch",
+    "category": "pipeline_routing",
     "description": "Jev is a deterministic Claude Code hook that routes tasks by complexity—mechanical work to Haiku, intelligent tasks to Opus sub-agents, long-running jobs to external harnesses like Codex—replacing brittle system-prompt-enforced routing.",
     "author": {
       "name": "Lahfir",
@@ -292,7 +364,7 @@
     "url": "https://x.com/marcus_lowe/status/2100315518930661861",
     "createdAt": "2026-09-16T20:06:56.000Z",
     "score": 4,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "A real-time demo shows the Jev model playing Tetris, generating moves fast enough to actively push blocks downward.",
     "author": {
       "name": "Marcus Lowe",
@@ -306,11 +378,47 @@
     "height": 480
   },
   {
+    "id": "2100319351610245565",
+    "url": "https://x.com/yoimnotkesku/status/2100319351610245565",
+    "createdAt": "2026-09-16T20:22:10.000Z",
+    "score": 1,
+    "category": "text_generation",
+    "description": "Hack bolting an autoregressive decoder onto Jev—a typed decision model architecturally restricted from freeform output—to force it to generate unconstrained text anyway.",
+    "author": {
+      "name": "kes",
+      "handle": "yoimnotkesku",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1943020978923077633/9i4TyhW4_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100319351610245565.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
+    "id": "2100320242895552791",
+    "url": "https://x.com/kylejeong/status/2100320242895552791",
+    "createdAt": "2026-09-16T20:25:42.000Z",
+    "score": 3,
+    "category": "text_generation",
+    "description": "A 254-token vocabulary derived from a pruned GPT-2 tokenizer (dropping fragments like \"ing\" that caused repetitive loops) turns Jev auto-regressive, though the tiny token budget leaves output often incoherent.",
+    "author": {
+      "name": "Kyle Jeong",
+      "handle": "kylejeong",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2059342964816809984/YvJ9VY7X_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100320242895552791.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100321685081559542",
     "url": "https://x.com/stevekrouse/status/2100321685081559542",
     "createdAt": "2026-09-16T20:31:26.000Z",
     "score": 1,
-    "category": "interface_actions",
+    "category": "browser_use",
     "description": "A demo pairing jev with kernel-level browser use delivers blazing-fast, real-time in-browser agent actions.",
     "author": {
       "name": "Steve Krouse",
@@ -328,7 +436,7 @@
     "url": "https://x.com/SigGravitas/status/2100325221932958134",
     "createdAt": "2026-09-16T20:45:29.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "autonomous_transit",
     "description": "JEV controls a driving simulator's raw vehicle inputs in true realtime, making decisions fast enough to steer a continuously moving car with no pauses while it \"thinks\" — not just rendering 50ms-per-step actions into a fake realtime video.",
     "author": {
       "name": "Toran Bruce Richards",
@@ -346,7 +454,7 @@
     "url": "https://x.com/daniel_mac8/status/2100335929273524541",
     "createdAt": "2026-09-16T21:28:02.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "Astra strategizes Pac-Man gameplay while 'Jev' executes its plans in milliseconds, showing a real-time strategy/action split with potential to pair fast executors with larger reasoning models.",
     "author": {
       "name": "Dan McAteer",
@@ -364,7 +472,7 @@
     "url": "https://x.com/RomanSlack1/status/2100335978229690683",
     "createdAt": "2026-09-16T21:28:14.000Z",
     "score": 3,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "Jev built a working drone application demo in just 15 minutes for $0.10, showcasing fast, ultra-low-cost prototyping for autonomous vehicle applications.",
     "author": {
       "name": "Roman Slack",
@@ -382,7 +490,7 @@
     "url": "https://x.com/mattsimpsn/status/2100342554394865771",
     "createdAt": "2026-09-16T21:54:22.000Z",
     "score": 2,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "An AI agent batch-processes messy bank transactions in YNAB—normalizing payees, auto-categorizing each entry, flagging uncertain ones for human review, and writing cleaned results back.",
     "author": {
       "name": "Matt Simpson",
@@ -400,7 +508,7 @@
     "url": "https://x.com/SamGCoder/status/2100346121239544184",
     "createdAt": "2026-09-16T22:08:32.000Z",
     "score": 1,
-    "category": "npc_behavior",
+    "category": "virtual_behaviors",
     "description": "TypeSafe acts as the decision layer for an AI game companion, parsing player messages and game context to return a structured action, destination, and confidence score while game code executes and dialogue stays prewritten.",
     "author": {
       "name": "SamG",
@@ -418,7 +526,7 @@
     "url": "https://x.com/jpschroeder/status/2100347770867458384",
     "createdAt": "2026-09-16T22:15:05.000Z",
     "score": 4,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "Tesla Full Self-Driving was rebuilt from scratch in under an hour using a single model, a claimed major unlock for rapid autonomous driving development.",
     "author": {
       "name": "Justin Schroeder",
@@ -436,7 +544,7 @@
     "url": "https://x.com/maybe_im_sam/status/2100353122850001398",
     "createdAt": "2026-09-16T22:36:21.000Z",
     "score": 1,
-    "category": "realtime_actions",
+    "category": "virtual_behaviors",
     "description": "A ~1-hour Three.js demo wires TypeSafeAI into a co-op bot that reads game state in real time to choose intents—engage, regroup, survive, or escape—with a live decision log, at ~$0.02 per 10 minutes of playtesting.",
     "author": {
       "name": "Sam Enoka",
@@ -454,7 +562,7 @@
     "url": "https://x.com/jarrodwatts/status/2100356151468585346",
     "createdAt": "2026-09-16T22:48:23.000Z",
     "score": 4,
-    "category": "financial_trading",
+    "category": "financial",
     "description": "AI trading agent reads an asset-pair price feed, decides buy/sell, and executes real orders on Kuru’s on-chain order book via Monad within each 300ms block.",
     "author": {
       "name": "Jarrod Watts",
@@ -472,7 +580,7 @@
     "url": "https://x.com/ajohnclark/status/2100358880702181435",
     "createdAt": "2026-09-16T22:59:14.000Z",
     "score": 1,
-    "category": "conditional_branching",
+    "category": "virtual_behaviors",
     "description": "A \"typesafe\" AI brain conditionally decides whether each of three virtual plants grows, blooms, or rests, while Three.js animates the results—built with Astra as an early experiment for future branching-behavior ideas.",
     "author": {
       "name": "John Clark",
@@ -490,7 +598,7 @@
     "url": "https://x.com/mdlahfir/status/2100359236924637349",
     "createdAt": "2026-09-16T23:00:39.000Z",
     "score": 3,
-    "category": "interface_actions",
+    "category": "computer_use",
     "description": "A faster headless Computer Use loop: the LLM keeps memory/context, agent-desktop captures snapshots, and Jev selects the exact UI element to actuate—cursor-enabled with opencode.",
     "author": {
       "name": "Lahfir",
@@ -508,7 +616,7 @@
     "url": "https://x.com/ericmartznyc/status/2100360029366784320",
     "createdAt": "2026-09-16T23:03:48.000Z",
     "score": 3,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI chess engine (\"Jev\") plays at roughly 950 Elo with sub-second move latency.",
     "author": {
       "name": "Eric Martz",
@@ -522,11 +630,29 @@
     "height": 480
   },
   {
+    "id": "2100363928492790078",
+    "url": "https://x.com/SamGCoder/status/2100363928492790078",
+    "createdAt": "2026-09-16T23:19:18.000Z",
+    "score": 1,
+    "category": "benchmark",
+    "description": "TypesafeAI demo built in ~20 minutes for enterprise use cases, consuming 1.5M tokens over an hour of experimentation for roughly $0.05 in cost.",
+    "author": {
+      "name": "SamG",
+      "handle": "SamGCoder",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2084094212321206273/rYXcnVHk_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100363928492790078.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100364868733812987",
     "url": "https://x.com/BuildWithKhalil/status/2100364868733812987",
     "createdAt": "2026-09-16T23:23:02.000Z",
     "score": 3,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "A demo where \"jev,\" a single AI model, plays 3D chess against itself — developing a self-rivalry — with a live stream to watch or jump in and disrupt the match.",
     "author": {
       "name": "Khalil",
@@ -544,7 +670,7 @@
     "url": "https://x.com/iredsc/status/2100365075500404885",
     "createdAt": "2026-09-16T23:23:51.000Z",
     "score": 3,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "A non-generative decision model that scores every legal chess move in a single forward pass goes head-to-head with Stockfish, picking each move via one API call in ~2.6s at roughly $0.0015 per game.",
     "author": {
       "name": "iRedSC",
@@ -562,7 +688,7 @@
     "url": "https://x.com/secondfret/status/2100365587709112817",
     "createdAt": "2026-09-16T23:25:53.000Z",
     "score": 2,
-    "category": "dual_speed_decoupling",
+    "category": "pipeline_routing",
     "description": "Wender demo shows dual-speed LLM pipeline: a fast \"Jev\" pass instantly selects the relevant div to edit while the slower \"Luna\" model regenerates only that fragment, making small UI changes near-instant instead of re-rendering the full HTML.",
     "author": {
       "name": "Josh Johnson",
@@ -580,7 +706,7 @@
     "url": "https://x.com/aimlapi/status/2100372930282573876",
     "createdAt": "2026-09-16T23:55:04.000Z",
     "score": 4,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "A decision-only (non-LLM) model played 5+0 blitz chess at ~2.6s/move—one API call per move—flagging Fable 5.1 despite being down 16 material, but got mated in 18 moves by Astra.",
     "author": {
       "name": "AI/ML API",
@@ -594,20 +720,20 @@
     "height": 480
   },
   {
-    "id": "2100381128733667383",
-    "url": "https://x.com/somi_ai/status/2100381128733667383",
-    "createdAt": "2026-09-17T00:27:38.000Z",
+    "id": "2100378132226203895",
+    "url": "https://x.com/jrosenfeld13/status/2100378132226203895",
+    "createdAt": "2026-09-17T00:15:44.000Z",
     "score": 3,
-    "category": "realtime_actions",
-    "description": "Two demos show LLM agents that score candidate actions in parallel instead of generating text to play Doom on a MacBook: a closed waitlisted model claims 20–200x speedup at ~10 decisions/sec for ~$7/hr, while an open-weights 1B model runs on M4 at 150ms/decision (~7/sec) for $0.",
+    "category": "text_generation",
+    "description": "A decoder-free LLM hack that generates text by hand-rolling beam search decoding, using the model itself as an iterative self-judge to score and select the best tokens.",
     "author": {
-      "name": "Somi",
-      "handle": "somi_ai",
-      "avatarUrl": "https://pbs.twimg.com/profile_images/1937022514137374720/-y9Y42z2_normal.jpg",
+      "name": "Jason Rosenfeld",
+      "handle": "jrosenfeld13",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1918836225139445760/65WhkyBc_normal.jpg",
       "isVerified": true
     },
     "mediaType": "video",
-    "src": "/previews/2100381128733667383.webm",
+    "src": "/previews/2100378132226203895.webm",
     "width": 854,
     "height": 480
   },
@@ -616,7 +742,7 @@
     "url": "https://x.com/iamAliAgha/status/2100384606818333011",
     "createdAt": "2026-09-17T00:41:28.000Z",
     "score": 2,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "A 100-agent society simulation where all agents think in one batched API call — 100 decisions per request at ~250ms — running 20,000 decisions for 11 cents, ~240x cheaper than a frontier model.",
     "author": {
       "name": "Ali Agha",
@@ -634,7 +760,7 @@
     "url": "https://x.com/ravikml/status/2100389642994323513",
     "createdAt": "2026-09-17T01:01:28.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI agent plays the puzzle game 2048 but struggles to make progress, repeatedly getting stuck at the 128 tile.",
     "author": {
       "name": "Ravi",
@@ -652,7 +778,7 @@
     "url": "https://x.com/m_iraji/status/2100394212743159944",
     "createdAt": "2026-09-17T01:19:38.000Z",
     "score": 3,
-    "category": "npc_behavior",
+    "category": "virtual_behaviors",
     "description": "A Claude-driven game where an AI agent replaces traditional utility AI and smart-object systems, evaluating each NPC's needs and dynamically selecting the right in-environment tool to satisfy them.",
     "author": {
       "name": "Mohamad Iraji",
@@ -670,7 +796,7 @@
     "url": "https://x.com/ai_agent_dev/status/2100396115808190792",
     "createdAt": "2026-09-17T01:27:12.000Z",
     "score": 1,
-    "category": "model_dispatch",
+    "category": "pipeline_routing",
     "description": "Jev is a cheap, fast classification model emitting calibrated probabilities to gate human-in-the-loop or smarter-model dispatch, demoed via a site that answers questions with source URLs from a pre-loaded page.",
     "author": {
       "name": "遠藤巧巳 - AIネイティブな会社の作り方",
@@ -688,7 +814,7 @@
     "url": "https://x.com/channelrevenge/status/2100401460337135864",
     "createdAt": "2026-09-17T01:48:26.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "Claude autonomously plays a real-time game of Pac-Man via a type-safe integration, demonstrating live agentic control of interactive gameplay.",
     "author": {
       "name": "a",
@@ -706,7 +832,7 @@
     "url": "https://x.com/_shubhankar/status/2100402012194218231",
     "createdAt": "2026-09-17T01:50:37.000Z",
     "score": 1,
-    "category": "interface_actions",
+    "category": "browser_use",
     "description": "A browser agent sprinted from Lionel Messi to Sam Altman on Browserbase in 9.7 seconds, beating a rival agent’s 20.4-second run at one-third the cost.",
     "author": {
       "name": "Shubhankar",
@@ -720,11 +846,29 @@
     "height": 480
   },
   {
+    "id": "2100403581451210897",
+    "url": "https://x.com/Sybuilds/status/2100403581451210897",
+    "createdAt": "2026-09-17T01:56:52.000Z",
+    "score": 1,
+    "category": "input_assistance",
+    "description": "A hack built with Jev turns a microphone into a BS detector that automatically mutes you the moment you start spouting nonsense.",
+    "author": {
+      "name": "Sy",
+      "handle": "Sybuilds",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2092791908619943936/CLVkNE2b_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "image",
+    "src": "/previews/2100403581451210897.webp",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100404532119269426",
     "url": "https://x.com/rileybrown/status/2100404532119269426",
     "createdAt": "2026-09-17T02:00:38.000Z",
     "score": 3,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "Jev classified 500 emails in seconds for just 3.5 cents.",
     "author": {
       "name": "Riley Brown",
@@ -742,7 +886,7 @@
     "url": "https://x.com/Meliwat93/status/2100404711283188181",
     "createdAt": "2026-09-17T02:01:21.000Z",
     "score": 1,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "AI agent Jev plays NES Tetris in real time, autonomously controlling gameplay end-to-end.",
     "author": {
       "name": "Muhammed Eliwat",
@@ -756,11 +900,29 @@
     "height": 480
   },
   {
+    "id": "2100408276949385668",
+    "url": "https://x.com/hi_im_isaac_/status/2100408276949385668",
+    "createdAt": "2026-09-17T02:15:31.000Z",
+    "score": 2,
+    "category": "text_generation",
+    "description": "Got a model that \"can't generate text\" to talk anyway by constraining its output to a few hundred common English words plus punctuation.",
+    "author": {
+      "name": "Isaac Tai 🧇",
+      "handle": "hi_im_isaac_",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1664356523865432064/o_vRzLxa_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "image",
+    "src": "/previews/2100408276949385668.webp",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100411066966749359",
     "url": "https://x.com/gregpr07/status/2100411066966749359",
     "createdAt": "2026-09-17T02:26:36.000Z",
     "score": 1,
-    "category": "interface_actions",
+    "category": "browser_use",
     "description": "A tiny open-source browser agent that regenerates its action space every step from live DOM state—falling back to a small LLM for typing—finds flights in 7 seconds for $0.0039, demoed in real time at 1x speed.",
     "author": {
       "name": "Gregor Zunic",
@@ -778,7 +940,7 @@
     "url": "https://x.com/theokramer_/status/2100413257370800309",
     "createdAt": "2026-09-17T02:35:19.000Z",
     "score": 3,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "I built a domain name finder with Jev!\n\nThe brightness of the dot shows how suitable Jev thinks the domain name is for a business. \n\nWhat do you think about this use case? \n\n@types",
     "author": {
       "name": "Theo Kramer",
@@ -796,7 +958,7 @@
     "url": "https://x.com/haiderTheDev/status/2100419750459519156",
     "createdAt": "2026-09-17T03:01:07.000Z",
     "score": 1,
-    "category": "npc_behavior",
+    "category": "virtual_behaviors",
     "description": "A TypeSafe AI Jev demo runs a village of NPCs that emit typed per-tick decisions — actions, feelings toward you, and whether they believe you — instead of generating dialogue, making every behavior inspectable and deterministic.",
     "author": {
       "name": "haider",
@@ -814,7 +976,7 @@
     "url": "https://x.com/bennyautomatic/status/2100421526155657680",
     "createdAt": "2026-09-17T03:08:10.000Z",
     "score": 1,
-    "category": "signal_extraction",
+    "category": "search",
     "description": "Jev is a tool for rapidly extracting answers from long, complex documents.",
     "author": {
       "name": "Ben",
@@ -832,7 +994,7 @@
     "url": "https://x.com/Trtd6Trtd/status/2100424918118863111",
     "createdAt": "2026-09-17T03:21:39.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "Jev, a typesafe AI agent, pilots Lunar Lander in real time and gets benchmarked against fast cost-efficient models like Luna and Haiku.",
     "author": {
       "name": "t.toda",
@@ -850,7 +1012,7 @@
     "url": "https://x.com/hegargarcia/status/2100425426514350456",
     "createdAt": "2026-09-17T03:23:40.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "i thought that Jev was going to good a playing state machine games, but odd enough, it's really bad a tic tac toe 🤔\n\nastra (high) vs jev | told astra to play odd moves https://t.c",
     "author": {
       "name": "Hegar",
@@ -868,7 +1030,7 @@
     "url": "https://x.com/rileybrown/status/2100425868053008758",
     "createdAt": "2026-09-17T03:25:25.000Z",
     "score": 2,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "A live viral-post analyzer built with Jev that scores a tweet's viral potential and auto-categorizes it in real time after just 0.5s of typing idle, with planned Twitter-data scraping and similar-tweet surfacing for inspiration.",
     "author": {
       "name": "Riley Brown",
@@ -886,7 +1048,7 @@
     "url": "https://x.com/nutlope/status/2100426999546184123",
     "createdAt": "2026-09-17T03:29:55.000Z",
     "score": 1,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "A multi-model pipeline classified 1,018 AI research papers via DeepSeek V4 Flash summaries plus Jev topic classification—about $4 total inference at 256ms median end-to-end latency per paper—powering a live visualization site.",
     "author": {
       "name": "Hassan",
@@ -904,7 +1066,7 @@
     "url": "https://x.com/BuildAtScale/status/2100440976640876925",
     "createdAt": "2026-09-17T04:25:27.000Z",
     "score": 1,
-    "category": "quality_gating",
+    "category": "workflow_guardrails",
     "description": "A Jev-based linter that quality-gates marketing copy by flagging clichéd filler phrases like \"trusted by thousands\" before publication.",
     "author": {
       "name": "Build at Scale",
@@ -922,7 +1084,7 @@
     "url": "https://x.com/hegargarcia/status/2100441983357472917",
     "createdAt": "2026-09-17T04:29:27.000Z",
     "score": 3,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "A test of whether an AI agent could model a turn-based board game as a state machine unexpectedly revealed that Gemini 3.5 is a strong board game player.",
     "author": {
       "name": "Hegar",
@@ -936,11 +1098,29 @@
     "height": 480
   },
   {
+    "id": "2100448352424853666",
+    "url": "https://x.com/mykhailen/status/2100448352424853666",
+    "createdAt": "2026-09-17T04:54:46.000Z",
+    "score": 1,
+    "category": "benchmark",
+    "description": "A benchmark comparing Jev against gpt-oss-120b running on Cerebras, evaluating both models on the same code across 100 examples with a side-by-side video and full experiment source code released.",
+    "author": {
+      "name": "Evgen Mykhailenko",
+      "handle": "mykhailen",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2100273561172631552/RYn-zR53_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100448352424853666.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100451279222755616",
     "url": "https://x.com/soya_da_yoot/status/2100451279222755616",
     "createdAt": "2026-09-17T05:06:24.000Z",
     "score": 2,
-    "category": "tactical_strategy",
+    "category": "turn_strategy",
     "description": "An autonomous AI agent runs a simulated coffee shop with a $500 budget—setting prices, hiring staff, buying supplies, and picking upgrades under a user-chosen philosophy—ending in profit or bankruptcy within 4 minutes.",
     "author": {
       "name": "Soya ⚡ AI Automation Builder",
@@ -954,11 +1134,29 @@
     "height": 480
   },
   {
+    "id": "2100451281013969078",
+    "url": "https://x.com/dustin_podell/status/2100451281013969078",
+    "createdAt": "2026-09-17T05:06:24.000Z",
+    "score": 3,
+    "category": "hacks",
+    "description": "A working Ben Eater–style 8-bit computer where every logic gate is controlled by Jev — a delightfully unnecessary hardware hack built purely for the fun of it.",
+    "author": {
+      "name": "Dustin Podell",
+      "handle": "dustin_podell",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1998266800795176961/Iu4uDf0I_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100451281013969078.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100454070536351824",
     "url": "https://x.com/ephraimduncan/status/2100454070536351824",
     "createdAt": "2026-09-17T05:17:29.000Z",
     "score": 3,
-    "category": "model_dispatch",
+    "category": "pipeline_routing",
     "description": "A demo of Jev, a model router that analyzes each request and automatically dispatches it to the best-fitting model.",
     "author": {
       "name": "Duncan",
@@ -976,7 +1174,7 @@
     "url": "https://x.com/kenwheeler/status/2100454623446278178",
     "createdAt": "2026-09-17T05:19:41.000Z",
     "score": 2,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "An AI agent autonomously flies a drone, demonstrating agentic control of a real aerial vehicle with no human piloting required.",
     "author": {
       "name": "patagucci perf papi",
@@ -990,11 +1188,29 @@
     "height": 480
   },
   {
+    "id": "2100457458514976840",
+    "url": "https://x.com/svatsa159/status/2100457458514976840",
+    "createdAt": "2026-09-17T05:30:57.000Z",
+    "score": 3,
+    "category": "multimodal_generation",
+    "description": "A probability-picking classifier was steered into composing music: 20–30 note-by-note queries (~370 ms each) produced a wistful 8-bar Andante in C (I–ii–IV–vi–ii–IV–V7–I), sampled so every run differs and rendered live with VexFlow.",
+    "author": {
+      "name": "Srivatsa Rampalli",
+      "handle": "svatsa159",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2100186123863781376/FgGT5--U_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "image",
+    "src": "/previews/2100457458514976840.webp",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100457614073327754",
     "url": "https://x.com/crislenta/status/2100457614073327754",
     "createdAt": "2026-09-17T05:31:34.000Z",
     "score": 2,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "Jev ran 500 real-time LLM agents in parallel inside a 3D environment at ~500ms average latency and 35 API calls/s with a completely naive, zero-optimization implementation.",
     "author": {
       "name": "Cris Lenta",
@@ -1012,7 +1228,7 @@
     "url": "https://x.com/dustin_podell/status/2100458335405588607",
     "createdAt": "2026-09-17T05:34:26.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "virtual_behaviors",
     "description": "A rebuilt Doom demo swaps all enemy logic for an AI agent (\"Jev\"), letting you fight AI-controlled enemies or watch multiple Jev agents battle each other in real time.",
     "author": {
       "name": "Dustin Podell",
@@ -1030,7 +1246,7 @@
     "url": "https://x.com/opaisOfficial/status/2100462234434421208",
     "createdAt": "2026-09-17T05:49:56.000Z",
     "score": 1,
-    "category": "quality_gating",
+    "category": "workflow_guardrails",
     "description": "Inspired by @hackgoofer &amp; @rauchg to use AI for real workflows.\n\nGot access to @typesafeai and built an autonomous DB Migration Guardian. 🛡️\n\nIt intercepts Prisma SQL plans. I",
     "author": {
       "name": "OpaisOfficial",
@@ -1048,7 +1264,7 @@
     "url": "https://x.com/niazmorshed_/status/2100465662867218857",
     "createdAt": "2026-09-17T06:03:33.000Z",
     "score": 1,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "`jev-review` is an experimental, local-first MCP plugin that gives coding agents a quality-scoring feedback loop across multiple metrics — agents call it mid-task, get scored, improve, and repeat.",
     "author": {
       "name": "Niaz Morshed",
@@ -1066,7 +1282,7 @@
     "url": "https://x.com/chalkers/status/2100466530459017458",
     "createdAt": "2026-09-17T06:07:00.000Z",
     "score": 1,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "An AI game-playing agent so fast at real-time action that it had to be deliberately throttled down to play Sonic at watchable speed.",
     "author": {
       "name": "Chalkers",
@@ -1080,11 +1296,29 @@
     "height": 480
   },
   {
+    "id": "2100467548298899918",
+    "url": "https://x.com/iamMrDuncan/status/2100467548298899918",
+    "createdAt": "2026-09-17T06:11:02.000Z",
+    "score": 1,
+    "category": "benchmark",
+    "description": "A Cerebras-hosted Qwen-3-27B rebuild of a type-safe structured LLM demo matched the original's quality and performance but cost far more, with the original remaining cheaper and faster.",
+    "author": {
+      "name": "Shannon 🤖☠️",
+      "handle": "iamMrDuncan",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2043475873505087489/vqRhURko_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100467548298899918.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100473581251748216",
     "url": "https://x.com/chetaslua/status/2100473581251748216",
     "createdAt": "2026-09-17T06:35:01.000Z",
     "score": 3,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "A live BS meter scored every sentence from both Trump–Kamala debate candidates against 5 identical yes/no questions each, running 1,191 calls / 1.18M tokens at 415ms median for $0.0497, with clips selected by one fixed rule.",
     "author": {
       "name": "Chetaslua",
@@ -1102,7 +1336,7 @@
     "url": "https://x.com/ytiskw/status/2100474943154827344",
     "createdAt": "2026-09-17T06:40:26.000Z",
     "score": 3,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "A persona-simulation pipeline queries 150 synthetic personas with 12 product-adoption questions each via API, finishing in ~5 seconds for just ¥1.8 despite trans-Pacific Japan–US network latency inflating the true runtime.",
     "author": {
       "name": "石川陽太 Yota Ishikawa",
@@ -1120,7 +1354,7 @@
     "url": "https://x.com/_trou3/status/2100481938016669917",
     "createdAt": "2026-09-17T07:08:13.000Z",
     "score": 3,
-    "category": "financial_trading",
+    "category": "financial",
     "description": "Jev demonstrates an AI trading agent that ingests dozens of structured market signals and converts them into intelligent, real-time trading decisions.",
     "author": {
       "name": "trou",
@@ -1138,7 +1372,7 @@
     "url": "https://x.com/redp314/status/2100489858951073858",
     "createdAt": "2026-09-17T07:39:42.000Z",
     "score": 3,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "I got a rubik's cube to solve itself with @typesafeai 's Jev and it solves it like a person does, 94 moves, not the 22 move optimal solution.\n\nJev isn't an LLM, it just answers one",
     "author": {
       "name": "Paolo Rosson",
@@ -1156,7 +1390,7 @@
     "url": "https://x.com/abolbuild/status/2100509548339408972",
     "createdAt": "2026-09-17T08:57:56.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "A tiny real-time game where Jev—an AI that goes beyond a normal LLM—directly controls the player character in real time with one objective: don't get hit.",
     "author": {
       "name": "Abol",
@@ -1174,7 +1408,7 @@
     "url": "https://x.com/marcelpociot/status/2100520134481735729",
     "createdAt": "2026-09-17T09:40:00.000Z",
     "score": 3,
-    "category": "content_filtering",
+    "category": "feed_cleanup",
     "description": "A browser extension that hides or collapses X posts via natural-language rules, running fast enough to be imperceptible and cheap enough to point to a future of LLM-powered ad blockers and content firewalls.",
     "author": {
       "name": "Marcel Pociot 🧪",
@@ -1192,7 +1426,7 @@
     "url": "https://x.com/krzysztoffduda/status/2100521764451131610",
     "createdAt": "2026-09-17T09:46:29.000Z",
     "score": 3,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "Jev turns bookmark-collection decisions into calibrated probabilities—auto-filing above 0.85, dropping below 0.35, escalating the middle to humans—sweeping 500 bookmarks in 13s for $0.017 instead of 1–3s per parsed LLM call.",
     "author": {
       "name": "Krzysztof Duda",
@@ -1210,7 +1444,7 @@
     "url": "https://x.com/tarat_211/status/2100523142754050072",
     "createdAt": "2026-09-17T09:51:57.000Z",
     "score": 1,
-    "category": "robotic_manipulation",
+    "category": "robotic_arms",
     "description": "A zero-shot robot manipulation API converts plain-English goals into chained hard-coded primitives, letting a robotic arm execute tasks without training.",
     "author": {
       "name": "TaraT",
@@ -1228,7 +1462,7 @@
     "url": "https://x.com/ephraimduncan/status/2100524915007144289",
     "createdAt": "2026-09-17T09:59:00.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "An LLM plays Pac-Man in realtime, consuming the maze state as JSON and deciding which direction to turn at each junction.",
     "author": {
       "name": "Duncan",
@@ -1246,7 +1480,7 @@
     "url": "https://x.com/iam_zachi/status/2100529273186472318",
     "createdAt": "2026-09-17T10:16:19.000Z",
     "score": 4,
-    "category": "content_filtering",
+    "category": "feed_cleanup",
     "description": "A typesafe browser extension acts as an undetectable realtime adblocker by classifying every DOM element as ad or non-ad and removing flagged elements on the fly.",
     "author": {
       "name": "Zachi",
@@ -1264,7 +1498,7 @@
     "url": "https://x.com/LukeParkerDev/status/2100533086912139585",
     "createdAt": "2026-09-17T10:31:28.000Z",
     "score": 3,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "Jev can play and beat the hardest gamemode in BTD6 (CHIMPS) with no outside help.\n\n- realtime, fast forwarded\n- rounds automatically start with no pause between rounds\n- self learn",
     "author": {
       "name": "Luke Parker",
@@ -1278,11 +1512,29 @@
     "height": 480
   },
   {
+    "id": "2100534723177263336",
+    "url": "https://x.com/R0u9h/status/2100534723177263336",
+    "createdAt": "2026-09-17T10:37:58.000Z",
+    "score": 4,
+    "category": "input_assistance",
+    "description": "A hacked-together Next Edit Suggestion feature implemented in Jev, resurrecting the Copilot-style predictive editing capability most people forgot existed.",
+    "author": {
+      "name": "LaPh",
+      "handle": "R0u9h",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1960327428133556224/3PqmrZVt_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100534723177263336.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100539883836018697",
     "url": "https://x.com/0xBOYD/status/2100539883836018697",
     "createdAt": "2026-09-17T10:58:29.000Z",
     "score": 2,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI agent playing Pokémon has made 8,000+ decisions for just $1.21, defeating Brock for the first gym badge and now leveling up inside Mt. Moon.",
     "author": {
       "name": "Boyd",
@@ -1300,7 +1552,7 @@
     "url": "https://x.com/alexpsouthwell/status/2100543705694560657",
     "createdAt": "2026-09-17T11:13:40.000Z",
     "score": 3,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "A Sudoku playground where the Jev agent takes a difficulty brief and picks moves you can watch live or slowed down, while a local engine validates every move and guarantees each puzzle stays uniquely solvable.",
     "author": {
       "name": "Alex Southwell (he/him)",
@@ -1318,7 +1570,7 @@
     "url": "https://x.com/norbertbodziony/status/2100544998391349310",
     "createdAt": "2026-09-17T11:18:48.000Z",
     "score": 2,
-    "category": "compliance_auditing",
+    "category": "workflow_guardrails",
     "description": "A live demo of a fast, accurate AI content moderation guard built on typesafe's jev library, showcased for compliance and auditing workflows.",
     "author": {
       "name": "Norbert Bodziony 🇵🇱",
@@ -1336,7 +1588,7 @@
     "url": "https://x.com/gabrycina/status/2100545285659480128",
     "createdAt": "2026-09-17T11:19:57.000Z",
     "score": 3,
-    "category": "robotic_manipulation",
+    "category": "robotic_arms",
     "description": "A robot-arm agent autonomously improvised tool use—grabbing a hook to drag an out-of-reach cube within range before completing the pick-and-place—running fast enough for real-time robot control.",
     "author": {
       "name": "gabrycina",
@@ -1354,7 +1606,7 @@
     "url": "https://x.com/savboj/status/2100545295201288678",
     "createdAt": "2026-09-17T11:19:59.000Z",
     "score": 2,
-    "category": "interface_actions",
+    "category": "computer_use",
     "description": "A computer-use agent demo performing interface actions 100x faster than LLM-based approaches, showcasing near-instant GUI automation.",
     "author": {
       "name": "sav",
@@ -1372,7 +1624,7 @@
     "url": "https://x.com/danmana/status/2100545412780220877",
     "createdAt": "2026-09-17T11:20:27.000Z",
     "score": 3,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "Batch-classifying 323 full chat sessions (2M tokens) from a Vercel AI agent by failure reason in 14 seconds for just $0.08.",
     "author": {
       "name": "Dan Manastireanu",
@@ -1390,7 +1642,7 @@
     "url": "https://x.com/ku/status/2100545849759805807",
     "createdAt": "2026-09-17T11:22:11.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "An offline RL agent for Chrome's Dino game achieved stable, indefinite jumping after past jump history was added to its state inputs.",
     "author": {
       "name": "ku",
@@ -1408,7 +1660,7 @@
     "url": "https://x.com/abhiserjam/status/2100546231554760841",
     "createdAt": "2026-09-17T11:23:42.000Z",
     "score": 3,
-    "category": "signal_extraction",
+    "category": "financial",
     "description": "A demo site built on Jev that ingests every new SEC 8-K filing in real time and classifies what happened and whether it's good news in ~300ms per filing.",
     "author": {
       "name": "Abhishek Serjam",
@@ -1426,7 +1678,7 @@
     "url": "https://x.com/josh_larsen/status/2100554525849391602",
     "createdAt": "2026-09-17T11:56:40.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "An AI agent plays the Chrome dino-runner game in real time, reacting fast enough to clear obstacles competently.",
     "author": {
       "name": "Josh Larsen",
@@ -1444,7 +1696,7 @@
     "url": "https://x.com/v_sattinger/status/2100561859581456838",
     "createdAt": "2026-09-17T12:25:48.000Z",
     "score": 1,
-    "category": "item_triage",
+    "category": "search",
     "description": "TypesafeAI's Jev model powers realtime help-center classification—mapping user queries to the best-matching article—at 2–4x faster and ~25x cheaper than Claude Haiku 4.5.",
     "author": {
       "name": "Valentin Sattinger",
@@ -1462,7 +1714,7 @@
     "url": "https://x.com/kelamoaba/status/2100562951304270189",
     "createdAt": "2026-09-17T12:30:08.000Z",
     "score": 1,
-    "category": "content_filtering",
+    "category": "feed_cleanup",
     "description": "Demo shows Jev re-classifying unstructured log lines and re-scoring them to drop noise before it hits paid storage, cutting log ingestion costs.",
     "author": {
       "name": "kelvin",
@@ -1480,7 +1732,7 @@
     "url": "https://x.com/coolish/status/2100570517954838897",
     "createdAt": "2026-09-17T13:00:12.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "Jev, a new model built for high-frequency decision-making, plays Slay the Spire 2 with just 0.7s per action—superhuman gaming speed that outpaces the stronger-but-slower GPT-6 Astra.",
     "author": {
       "name": "paulwei",
@@ -1498,7 +1750,7 @@
     "url": "https://x.com/BrianBolze/status/2100571948145058009",
     "createdAt": "2026-09-17T13:05:53.000Z",
     "score": 1,
-    "category": "content_reranking",
+    "category": "search",
     "description": "Jev is a \"Ctrl-F for meaning\" demo that finds and reranks items by semantic meaning rather than keywords, delivering super-fast, super-cheap semantic search.",
     "author": {
       "name": "Brian Bolze",
@@ -1516,7 +1768,7 @@
     "url": "https://x.com/thibault_mthh/status/2100572184435417305",
     "createdAt": "2026-09-17T13:06:50.000Z",
     "score": 2,
-    "category": "content_filtering",
+    "category": "feed_cleanup",
     "description": "A Chrome extension uses a cheap, fast LLM API to read your feed and hide posts matching custom filters, at near-zero cost.",
     "author": {
       "name": "Thibault Mthh",
@@ -1534,7 +1786,7 @@
     "url": "https://x.com/threepointone/status/2100576921629163848",
     "createdAt": "2026-09-17T13:25:39.000Z",
     "score": 3,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "A town sim where you write a terrible law, Claude invents reactions and directs the set pieces, a second model decides each of 40 citizens' responses, and the fallout renders as tomorrow's front page.",
     "author": {
       "name": "sunil pai",
@@ -1548,11 +1800,29 @@
     "height": 480
   },
   {
+    "id": "2100577481698734255",
+    "url": "https://x.com/j_lamberts/status/2100577481698734255",
+    "createdAt": "2026-09-17T13:27:53.000Z",
+    "score": 1,
+    "category": "benchmark",
+    "description": "TypeSafe's Jev model races Claude Haiku at drawing a picture pixel by pixel — and wins by far more than \"a tiny bit.\"",
+    "author": {
+      "name": "Jeroen - bezichtiging.app",
+      "handle": "j_lamberts",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2055959608930291712/-aZOky3y_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100577481698734255.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100579680428736981",
     "url": "https://x.com/xyz04274951/status/2100579680428736981",
     "createdAt": "2026-09-17T13:36:37.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "LLM agent \"jev\" plays Banished as mayor—one call per tick sets town priority plus a job for all 6 villagers—keeping 6/6 alive through two winters with 3 fields and 5 harvests in just 43 calls totaling 377ms.",
     "author": {
       "name": "Aditya Singh",
@@ -1570,7 +1840,7 @@
     "url": "https://x.com/shion_takk/status/2100580054401241525",
     "createdAt": "2026-09-17T13:38:06.000Z",
     "score": 3,
-    "category": "constraint_solving",
+    "category": "hacks",
     "description": "Jevでマスモデルの探索デモ\n\n課題が簡素なのでまだまだ実用性についてはわからんけど、最適化探索には良いんじゃないか？\n\nもうちょいいろいろやらないとわからん。 https://t.co/URRFzWMswN",
     "author": {
       "name": "KOBATAKA｜Vibe Modeling",
@@ -1588,7 +1858,7 @@
     "url": "https://x.com/redp314/status/2100585126652481915",
     "createdAt": "2026-09-17T13:58:15.000Z",
     "score": 3,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "A PR-review API that scores a pasted diff in ~0.5s for $0.00007 per call (~200x cheaper than Claude), returning 14 typed checks as probabilities mapped to a BLOCK/security-review/nits/merge verdict, with ambiguous scores escalated to humans or larger models.",
     "author": {
       "name": "Paolo Rosson",
@@ -1602,11 +1872,29 @@
     "height": 480
   },
   {
+    "id": "2100587614927741435",
+    "url": "https://x.com/imarikchakma/status/2100587614927741435",
+    "createdAt": "2026-09-17T14:08:09.000Z",
+    "score": 3,
+    "category": "input_assistance",
+    "description": "A Jev-powered syntax highlighter that can highlight any programming language — including one invented on the spot.",
+    "author": {
+      "name": "Arik Chakma",
+      "handle": "imarikchakma",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1485575513318256641/q4uMCram_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100587614927741435.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100590289521951094",
     "url": "https://x.com/dmnpop/status/2100590289521951094",
     "createdAt": "2026-09-17T14:18:46.000Z",
     "score": 3,
-    "category": "dual_speed_decoupling",
+    "category": "pipeline_routing",
     "description": "An AI fitness coach rebuilt so a deterministic engine makes all coaching decisions while the LLM only renders natural-language text — cutting latency 8.2× (26.02s→3.16s) and cost 4.8× ($0.0032→$0.00065) per workout.",
     "author": {
       "name": "Damian",
@@ -1624,7 +1912,7 @@
     "url": "https://x.com/vammu920/status/2100591409447174261",
     "createdAt": "2026-09-17T14:23:13.000Z",
     "score": 1,
-    "category": "interface_actions",
+    "category": "browser_use",
     "description": "A typesafe Jev-powered browser extension auto-completes entire job applications for $0.0013 each, enabling 1,000 applications for under a dollar.",
     "author": {
       "name": "Venkata Vamsi",
@@ -1642,7 +1930,7 @@
     "url": "https://x.com/WMjjRpISUEt2QZZ/status/2100597575829385694",
     "createdAt": "2026-09-17T14:47:43.000Z",
     "score": 3,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "An LLM-driven foot-traffic simulation of a restaurant interior that renders customer flow in ~1.5 seconds even at high token counts.",
     "author": {
       "name": "ぱぷりか炒め",
@@ -1660,7 +1948,7 @@
     "url": "https://x.com/GeyzsoN/status/2100598525470048646",
     "createdAt": "2026-09-17T14:51:30.000Z",
     "score": 1,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "TypeSafe's Jev model plays Red Alert 2 end-to-end in real time — scouting, optimizing economy and base placement, timing expansions/attacks/superweapons, and emergently microing armies and split-pushing tanks around enemy defenses.",
     "author": {
       "name": "Geyzson Kristoffer",
@@ -1678,7 +1966,7 @@
     "url": "https://x.com/rory_builds/status/2100606378184171682",
     "createdAt": "2026-09-17T15:22:42.000Z",
     "score": 1,
-    "category": "model_dispatch",
+    "category": "pipeline_routing",
     "description": "An interactive demo where editing inputs live-updates classifications, showcasing a \"combination input\" approach that decomposes statements into classifications and routes each to the right model instead of brute-forcing everything through one LLM.",
     "author": {
       "name": "Rory Garton-Smith",
@@ -1696,7 +1984,7 @@
     "url": "https://x.com/shreypandya/status/2100606445758898287",
     "createdAt": "2026-09-17T15:22:58.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "A computer-use agent demonstrates high-skill real-time gameplay in Mario Kart 64, outperforming Astra's computer-use capabilities.",
     "author": {
       "name": "Shrey Pandya",
@@ -1714,7 +2002,7 @@
     "url": "https://x.com/rishi_raj_jain_/status/2100606501501169726",
     "createdAt": "2026-09-17T15:23:11.000Z",
     "score": 2,
-    "category": "compliance_auditing",
+    "category": "workflow_guardrails",
     "description": "Content-aware PII redaction runs inside Postgres via a `redact()` SQL function, using Jev to tag names, emails, phones, addresses, and IDs so only sensitive spans are masked per role (guest/support/admin) while the rest of each message stays readable and uncleared data never leaves the database.",
     "author": {
       "name": "Rishi Raj Jain",
@@ -1732,7 +2020,7 @@
     "url": "https://x.com/nawtayei/status/2100607727978369138",
     "createdAt": "2026-09-17T15:28:04.000Z",
     "score": 1,
-    "category": "workflow_progression",
+    "category": "turn_strategy",
     "description": "A quick repo mod gets a TypeSafe-rule-driven agent playing Final Fantasy, with an audio agent next to dynamically rewrite rules at runtime—recovering from stuck states without restarting or recompiling.",
     "author": {
       "name": "nawtayei",
@@ -1750,7 +2038,7 @@
     "url": "https://x.com/uezochan/status/2100608556823388486",
     "createdAt": "2026-09-17T15:31:22.000Z",
     "score": 1,
-    "category": "conditional_branching",
+    "category": "input_assistance",
     "description": "Voice turn-end detection demo using Jev: 0.5s after speech ends, the model scores whether the turn finished and conditionally adds hold time (e.g., timeout=3.0s vs None), with ~0.22s inference latency—still rough but promising.",
     "author": {
       "name": "うえぞう@うな技研代表",
@@ -1768,7 +2056,7 @@
     "url": "https://x.com/anthonyriera/status/2100611323562233976",
     "createdAt": "2026-09-17T15:42:21.000Z",
     "score": 1,
-    "category": "content_reranking",
+    "category": "search",
     "description": "A tool that scans Reddit plus Google and ChatGPT rankings in under 5 minutes to surface keyword opportunities where you can promote your product or outrank existing Reddit posts.",
     "author": {
       "name": "Anthony Riera",
@@ -1786,7 +2074,7 @@
     "url": "https://x.com/anshnanda/status/2100611596859093082",
     "createdAt": "2026-09-17T15:43:26.000Z",
     "score": 4,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "Four AI models compete head-to-head playing Flappy Bird in real time, benchmarking live action and game-playing performance across models.",
     "author": {
       "name": "Ansh Nanda",
@@ -1804,7 +2092,7 @@
     "url": "https://x.com/Kashiwa_XR/status/2100615718463295984",
     "createdAt": "2026-09-17T15:59:49.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "Two AI agents play Othello against each other at real-time speed, with future demos of Smash Bros. and Minecraft hinging on how much game-system context can fit.",
     "author": {
       "name": "かしわ@AI動画・VRゲーム開発　「Steel Runner」開発中！",
@@ -1822,7 +2110,7 @@
     "url": "https://x.com/miiura/status/2100615772053877164",
     "createdAt": "2026-09-17T16:00:02.000Z",
     "score": 3,
-    "category": "tool_selection",
+    "category": "pipeline_routing",
     "description": "Speculative function calling that parses intent and arguments while you type and pre-executes the tool call the moment all parameters resolve — firing answers without waiting for an Enter keypress.",
     "author": {
       "name": "Yoshiki Miura",
@@ -1840,7 +2128,7 @@
     "url": "https://x.com/kavehmz/status/2100616111771238881",
     "createdAt": "2026-09-17T16:01:23.000Z",
     "score": 3,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "A self-driving car simulator demo where a typed \"System One\" LLM ingests structured sensor state and emits typed driving decisions—steer, brake, overtake—while handling pedestrians and speed limits, now publicly accessible via prompt.",
     "author": {
       "name": "Kaveh Mousavi Zamani",
@@ -1858,7 +2146,7 @@
     "url": "https://x.com/mizuameisgod/status/2100616458493685840",
     "createdAt": "2026-09-17T16:02:45.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "An AI agent plays SuperTuxKart in real time, perceiving the screen and steering the kart autonomously through live gameplay.",
     "author": {
       "name": "みずあめ",
@@ -1876,7 +2164,7 @@
     "url": "https://x.com/WanderSamsara/status/2100616464437055916",
     "createdAt": "2026-09-17T16:02:47.000Z",
     "score": 1,
-    "category": "tactical_strategy",
+    "category": "realtime_gameplay",
     "description": "A browser-based real-time strategy game demo combining SpacetimeDB-powered multiplayer with an AI-agent opponent that plays matches live in the browser.",
     "author": {
       "name": "Konner",
@@ -1894,7 +2182,7 @@
     "url": "https://x.com/DagmawiBabi/status/2100618066459553796",
     "createdAt": "2026-09-17T16:09:09.000Z",
     "score": 1,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "An open-source local Telegram analyzer uses a configurable Jev classifier on exported JSON to score each channel post’s intent, quality, sentiment, and reaction tone, plus DM/group topics, intentions, emotions, and per-speaker tone.",
     "author": {
       "name": "Dagmawi Babi",
@@ -1912,7 +2200,7 @@
     "url": "https://x.com/tarat_211/status/2100625153109504483",
     "createdAt": "2026-09-17T16:37:18.000Z",
     "score": 1,
-    "category": "robotic_manipulation",
+    "category": "robotic_arms",
     "description": "A zero-shot robot-arm demo turns plain-English goals into chained hardcoded motion primitives via an API, executing tasks without any training.",
     "author": {
       "name": "TaraT",
@@ -1930,7 +2218,7 @@
     "url": "https://x.com/jagenaujagenau/status/2100625252346745193",
     "createdAt": "2026-09-17T16:37:42.000Z",
     "score": 1,
-    "category": "signal_extraction",
+    "category": "categorization",
     "description": "Ground Truth is an open-source browser extension that classifies the news article you're reading — political framing, article type, topic, and language loadedness — using TypeSafe's fast, cheap probabilistic Jev model instead of a big LLM.",
     "author": {
       "name": "D",
@@ -1944,11 +2232,29 @@
     "height": 480
   },
   {
+    "id": "2100625650927210738",
+    "url": "https://x.com/bitfalls/status/2100625650927210738",
+    "createdAt": "2026-09-17T16:39:17.000Z",
+    "score": 1,
+    "category": "text_generation",
+    "description": "JevGPT is a hack that bolts a conversational chat interface onto the non-chat Jev AI tool, enabled via an \"Ogden mode\" toggle.",
+    "author": {
+      "name": "Bruno Skvorc",
+      "handle": "bitfalls",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2048270620543373312/CbqdbRDU_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100625650927210738.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100625826559537379",
     "url": "https://x.com/cristicrtu/status/2100625826559537379",
     "createdAt": "2026-09-17T16:39:59.000Z",
     "score": 4,
-    "category": "content_filtering",
+    "category": "feed_cleanup",
     "description": "A Chrome extension that filters the internet in plain English: pick a post, describe what you don't want to see, and it hides similar content as you scroll, applying the same rules across every site.",
     "author": {
       "name": "cristi",
@@ -1966,7 +2272,7 @@
     "url": "https://x.com/chetanankola/status/2100626211731046819",
     "createdAt": "2026-09-17T16:41:31.000Z",
     "score": 2,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "A full-self-driving stack retrofitted onto an ordinary bicycle attempts autonomous steering but struggles to hold a straight line.",
     "author": {
       "name": "Chetan Ankola",
@@ -1984,7 +2290,7 @@
     "url": "https://x.com/vayungodara/status/2100626286687211589",
     "createdAt": "2026-09-17T16:41:49.000Z",
     "score": 2,
-    "category": "signal_extraction",
+    "category": "financial",
     "description": "A single LLM call extracts asset, direction, and strike—each with a probability—from a Polymarket question in 640 ms, auditing 9,916 questions for $0.46 and flagging 2,015 candidate misses in a regex parser.",
     "author": {
       "name": "Vayun",
@@ -2002,7 +2308,7 @@
     "url": "https://x.com/objectgraph/status/2100626348725207104",
     "createdAt": "2026-09-17T16:42:03.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI agent plays SameGame with zero search or lookahead — code enumerates every legal move's outcome each turn and the model picks one, clearing boards at ~0.3s per move and ~$0.001 per game.",
     "author": {
       "name": "ObjectGraph",
@@ -2020,7 +2326,7 @@
     "url": "https://x.com/camsoft2000/status/2100629073542218203",
     "createdAt": "2026-09-17T16:52:53.000Z",
     "score": 3,
-    "category": "interface_actions",
+    "category": "computer_use",
     "description": "AXe pairs the Jev model with natural-language instructions to autonomously drive an iOS simulator—opening Calendar, navigating to a target date, and creating and saving a named event—for just $0.006 per task, with further efficiency gains expected.",
     "author": {
       "name": "camsoft2000",
@@ -2038,7 +2344,7 @@
     "url": "https://x.com/_MaxBlade/status/2100634359099232678",
     "createdAt": "2026-09-17T17:13:53.000Z",
     "score": 3,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "Jev is a real-time action agent demoed playing Subway Surfers at superhuman speed across 50 simultaneous games for under a cent per run, unlocking new capabilities beyond LLMs like Astra or Fable.",
     "author": {
       "name": "Max Blade",
@@ -2056,7 +2362,7 @@
     "url": "https://x.com/play_syllabyte/status/2100635102464069714",
     "createdAt": "2026-09-17T17:16:50.000Z",
     "score": 2,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "In the turn-based word game Yapello, Jev and GPT-6 Astra played a real private multiplayer match (30s turns, 24 unlabeled candidate moves each): Astra won 105–72, but Jev was 12x faster (2.02s vs 24.29s API time) at <$0.01 vs $0.32.",
     "author": {
       "name": "Syllabyte",
@@ -2074,7 +2380,7 @@
     "url": "https://x.com/screenlessdad/status/2100635248773967985",
     "createdAt": "2026-09-17T17:17:25.000Z",
     "score": 2,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "Jev, a new state-aware model architecture, autonomously directs airplanes in a small-scale simulation with sub-300ms decisions, beating Luna while promising machine-grade tool-call accuracy at near-unmeterable inference cost.",
     "author": {
       "name": "David Szabo-Stuban",
@@ -2092,7 +2398,7 @@
     "url": "https://x.com/jan__kubica/status/2100636176457642139",
     "createdAt": "2026-09-17T17:21:07.000Z",
     "score": 1,
-    "category": "model_dispatch",
+    "category": "pipeline_routing",
     "description": "A tabular document-review demo where a cheap router model assigns pre-set category tags, escalates to a more expensive model only when warranted, and explicitly abstains rather than hallucinating a label when no tag fits.",
     "author": {
       "name": "Jan Kubica",
@@ -2110,7 +2416,7 @@
     "url": "https://x.com/atomic_chat_hq/status/2100644221279424925",
     "createdAt": "2026-09-17T17:53:05.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "Jev v1.13 uses a non-LLM decision-returning model to compute a safe tile every 330 ms during falling rocket attacks, surviving 25 of 26 trials for under one cent via API.",
     "author": {
       "name": "atomic.chat",
@@ -2128,7 +2434,7 @@
     "url": "https://x.com/Aizkmusic/status/2100645966785478932",
     "createdAt": "2026-09-17T18:00:01.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "A Gemma-4 classifier endpoint served via Featherless is wired into libmelee to read Super Smash Bros. Melee game state and issue approach/attack decisions every 500ms, piloting Fox competitively against CPU level 3 as a cheap, fast real-time decision loop.",
     "author": {
       "name": "aizk ✡️",
@@ -2142,11 +2448,29 @@
     "height": 480
   },
   {
+    "id": "2100646448324833512",
+    "url": "https://x.com/reczko_konrad/status/2100646448324833512",
+    "createdAt": "2026-09-17T18:01:56.000Z",
+    "score": 1,
+    "category": "multimodal_generation",
+    "description": "A local real-time pipeline runs three zero-copy GPU neural net inferences (Moonshine speech, YOLO26 vision, DepthART depth) plus rendering together, with an LLM injecting semantics to drive live lights, shadows, and bloom.",
+    "author": {
+      "name": "Konrad Reczko",
+      "handle": "reczko_konrad",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2084641376411525120/CwaVj_Ep_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100646448324833512.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100646513412292873",
     "url": "https://x.com/hr98w/status/2100646513412292873",
     "createdAt": "2026-09-17T18:02:11.000Z",
     "score": 3,
-    "category": "robotic_manipulation",
+    "category": "robotic_arms",
     "description": "Local \"Jev\"-style vision inference hack: maps candidate outputs to fixed labels, prefills then samples with capped tokens, running a 4-bit multimodal Qwen-3.5-0.8B on a 16GB M4 MacBook Pro to perform three-color item sorting in 200ms.",
     "author": {
       "name": "Haoran | 公众号：独立开发",
@@ -2164,7 +2488,7 @@
     "url": "https://x.com/Neel490/status/2100654628396233118",
     "createdAt": "2026-09-17T18:34:26.000Z",
     "score": 1,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "I'll try resolving the t.co link to see what the demo actually is.",
     "author": {
       "name": "Neel Patel",
@@ -2182,7 +2506,7 @@
     "url": "https://x.com/TheMattBerman/status/2100654891756589230",
     "createdAt": "2026-09-17T18:35:29.000Z",
     "score": 3,
-    "category": "signal_extraction",
+    "category": "categorization",
     "description": "AI agent \"jev\" dissected 724 live ads from 37 brands in 40 seconds—extracting every hook, format, offer, CTA, awareness stage, and landing-page mismatch—for just $0.09 in tokens, with MCP support coming.",
     "author": {
       "name": "Matthew Berman",
@@ -2200,7 +2524,7 @@
     "url": "https://x.com/iannuttall/status/2100668908227162567",
     "createdAt": "2026-09-17T19:31:10.000Z",
     "score": 1,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "An AI analyzed 3,282 X posts across 100M views—scoring each on hook, tone, and teaching value in one 8m34s run costing $0.1282 across 4.25M tokens—finding how-to posts earn 150 median likes vs. 44 baseline, AI+coding is a 1.9x topic multiplier, and the optimal formula is AI coding + teach something + provocative.",
     "author": {
       "name": "Ian Nuttall",
@@ -2218,7 +2542,7 @@
     "url": "https://x.com/iamzhe/status/2100670692811284602",
     "createdAt": "2026-09-17T19:38:16.000Z",
     "score": 3,
-    "category": "model_dispatch",
+    "category": "pipeline_routing",
     "description": "Minirouter/Fusion now classifies each request by task type and complexity to route it to a handpicked model, while Codex exposes presets/routers in the model picker and Claude Code auto-caches long prompts.",
     "author": {
       "name": "Zhe",
@@ -2236,7 +2560,7 @@
     "url": "https://x.com/MovsesHarut/status/2100672542386102339",
     "createdAt": "2026-09-17T19:45:37.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "A 1v1 turn-based fighting game built on Jev where players attack with written arguments and the Jev AI itself acts as judge, scoring each verbal blow.",
     "author": {
       "name": "Movses",
@@ -2254,7 +2578,7 @@
     "url": "https://x.com/yelkhayami/status/2100673493452914908",
     "createdAt": "2026-09-17T19:49:24.000Z",
     "score": 1,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "A real-time browser extension built on jev that scores/judges tweets on every keystroke with near-instant latency at negligible cost — roughly half a cent per hour of continuous use.",
     "author": {
       "name": "Youssef 🚜",
@@ -2272,7 +2596,7 @@
     "url": "https://x.com/iam_zachi/status/2100679300756435135",
     "createdAt": "2026-09-17T20:12:28.000Z",
     "score": 3,
-    "category": "batch_tagging",
+    "category": "search",
     "description": "jev(), a PostgreSQL extension, enables natural-language filtering across an entire database—no indexes or embeddings required—judging 129 rows in ~1s for $0.0009, with cached reruns in 6ms.",
     "author": {
       "name": "Zachi",
@@ -2290,7 +2614,7 @@
     "url": "https://x.com/chiziaruhoma/status/2100679584878325861",
     "createdAt": "2026-09-17T20:13:36.000Z",
     "score": 3,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "A small typed-odds model called Jev drove a 432-creature, 14-generation evolution simulation with two opposite-DNA species and an ice age, deciding every survival, mating, and cause of death.",
     "author": {
       "name": "Chizi",
@@ -2308,7 +2632,7 @@
     "url": "https://x.com/zahlekhan/status/2100681083176226921",
     "createdAt": "2026-09-17T20:19:33.000Z",
     "score": 1,
-    "category": "interface_actions",
+    "category": "input_assistance",
     "description": "Jev board is an experimental GenUI keyboard that uses fast, reliable model inference to embed subtle ambient intelligence directly into typing interactions.",
     "author": {
       "name": "Zahle Khan",
@@ -2326,7 +2650,7 @@
     "url": "https://x.com/0xironyAditya/status/2100689091058921635",
     "createdAt": "2026-09-17T20:51:22.000Z",
     "score": 1,
-    "category": "financial_trading",
+    "category": "financial",
     "description": "An AI agent treats binary event-contract prices as probabilities, disagrees with the book via sub-second reactive onchain events, tracks 70K events in 10s, and improves Brier from 0.311 to 0.212 on testnet.",
     "author": {
       "name": "irony.somi",
@@ -2344,7 +2668,7 @@
     "url": "https://x.com/uttkarsh_42/status/2100690568947159309",
     "createdAt": "2026-09-17T20:57:15.000Z",
     "score": 1,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "An LLM autonomously piloted a simulated Falcon-9-class booster through full launch-to-landing in MuJoCo—with real atmosphere, Mach-dependent drag, wind, and propellant depletion—making ~1Hz control decisions (engine count, burn timing, legs, touchdown) with no autopilot or safety veto, landing after 12 runs for just 245 calls and $0.04 in API costs.",
     "author": {
       "name": "Utkarsh Agrawal",
@@ -2362,7 +2686,7 @@
     "url": "https://x.com/tamarajtran/status/2100694549362553153",
     "createdAt": "2026-09-17T21:13:04.000Z",
     "score": 4,
-    "category": "tool_selection",
+    "category": "pipeline_routing",
     "description": "Jev replaces prompt-based context compaction with instant relevance scoring of every tool call, dropping irrelevant ones to compress context at near-zero latency.",
     "author": {
       "name": "tamara",
@@ -2380,7 +2704,7 @@
     "url": "https://x.com/hosicix/status/2100699124945326537",
     "createdAt": "2026-09-17T21:31:15.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "Two AI agents played 20 hands of heads-up poker with hidden cards and 1,000 chips each, making 153 decisions (both caught bluffing) before one took all 2,000 chips—for a total match cost of $0.02.",
     "author": {
       "name": "Cobi Marcheline",
@@ -2398,7 +2722,7 @@
     "url": "https://x.com/iam_zachi/status/2100700176444731780",
     "createdAt": "2026-09-17T21:35:25.000Z",
     "score": 1,
-    "category": "signal_extraction",
+    "category": "search",
     "description": "A SQL extension adds a `jev()` natural-language predicate that semantically evaluates every row in a `WHERE` clause—no indexes or embeddings required.",
     "author": {
       "name": "Zachi",
@@ -2416,7 +2740,7 @@
     "url": "https://x.com/OpeOginni/status/2100702649834188855",
     "createdAt": "2026-09-17T21:45:15.000Z",
     "score": 1,
-    "category": "quality_gating",
+    "category": "workflow_guardrails",
     "description": "An intent-aware opencode permissions plugin that enforces natural-language rules — e.g., blocking every domain except Google — catching all routes an agent tries without predicting each shell command.",
     "author": {
       "name": "OpeOginni",
@@ -2434,7 +2758,7 @@
     "url": "https://x.com/jamiepinheiro/status/2100704841786114215",
     "createdAt": "2026-09-17T21:53:58.000Z",
     "score": 4,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI agent plays a real-time \"Hot or Cold\" word game, instantly scoring each guess and categorizing player questions with visibly low latency.",
     "author": {
       "name": "Jamie",
@@ -2452,7 +2776,7 @@
     "url": "https://x.com/riku720720/status/2100705558512963602",
     "createdAt": "2026-09-17T21:56:49.000Z",
     "score": 2,
-    "category": "interface_actions",
+    "category": "input_assistance",
     "description": "A real-time emoji-suggestion demo returns candidates in 100–200ms, with latency staying flat whether choosing from 3 or 200 emoji.",
     "author": {
       "name": "Rikuo",
@@ -2470,7 +2794,7 @@
     "url": "https://x.com/naawwwal/status/2100709591537598666",
     "createdAt": "2026-09-17T22:12:50.000Z",
     "score": 2,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI agent autonomously plays a full game of Catan against itself in real time, brute-forcing moves with a preference for development cards over cities at mind-boggling, un-sped-up speed.",
     "author": {
       "name": "aditya",
@@ -2484,11 +2808,29 @@
     "height": 480
   },
   {
+    "id": "2100717184259334592",
+    "url": "https://x.com/cocktailpeanut/status/2100717184259334592",
+    "createdAt": "2026-09-17T22:43:00.000Z",
+    "score": 3,
+    "category": "multimodal_generation",
+    "description": "Jevthoven demos an AI agent composing a complete song through sequential structured decisions—tempo, instruments, chords, and rhythm—made one at a time.",
+    "author": {
+      "name": "cocktail peanut",
+      "handle": "cocktailpeanut",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1904994154658373632/CKBBVmtg_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100717184259334592.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100725570590126399",
     "url": "https://x.com/vishy1027/status/2100725570590126399",
     "createdAt": "2026-09-17T23:16:20.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI agent played 1,000 hands of heads-up poker against GTO Wizard with a median 141ms decision latency, losing $1,800 at -94.2bb/100 (-72.9bb/100 luck-adjusted, still better than always folding).",
     "author": {
       "name": "Vishaal Ram",
@@ -2502,29 +2844,11 @@
     "height": 480
   },
   {
-    "id": "2100727923942805869",
-    "url": "https://x.com/t_andou/status/2100727923942805869",
-    "createdAt": "2026-09-17T23:25:41.000Z",
-    "score": 2,
-    "category": "turn_based_games",
-    "description": "A Qwen2.5-1.5B model autonomously played a turn-based game to a 10,000-point score over roughly 4 hours of continuous play.",
-    "author": {
-      "name": "あんどう@AI開発者",
-      "handle": "t_andou",
-      "avatarUrl": "https://pbs.twimg.com/profile_images/1330856508041568257/bWjf2hnl_normal.jpg",
-      "isVerified": false
-    },
-    "mediaType": "video",
-    "src": "/previews/2100727923942805869.webm",
-    "width": 854,
-    "height": 480
-  },
-  {
     "id": "2100734646824902713",
     "url": "https://x.com/tsuyoshi_osiire/status/2100734646824902713",
     "createdAt": "2026-09-17T23:52:24.000Z",
     "score": 2,
-    "category": "signal_extraction",
+    "category": "categorization",
     "description": "A real-time conversation sensor that updates exploration↔convergence, resolved↔unresolved, and disagreement↔consensus axes on every utterance to visualize meeting state—extensible to live user-interview analysis.",
     "author": {
       "name": "かねこつよし",
@@ -2542,7 +2866,7 @@
     "url": "https://x.com/dvrosalesm/status/2100734784049729694",
     "createdAt": "2026-09-17T23:52:56.000Z",
     "score": 1,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "An autonomous robot navigates a warehouse environment to deliver packages to designated safe zones while avoiding spills, but struggles with harder scenarios involving complex spill patterns and intricate wall structures.",
     "author": {
       "name": "Vladimir",
@@ -2560,7 +2884,7 @@
     "url": "https://x.com/arielweinberger/status/2100734952274907166",
     "createdAt": "2026-09-17T23:53:37.000Z",
     "score": 1,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "Jev, an AI agent, autonomously pilots a simulated aircraft end-to-end—handling takeoff, waypoint navigation, terrain avoidance, and safe landing using full access to live flight telemetry.",
     "author": {
       "name": "Ariel Weinberger",
@@ -2578,7 +2902,7 @@
     "url": "https://x.com/DXhusni/status/2100735141039747159",
     "createdAt": "2026-09-17T23:54:22.000Z",
     "score": 1,
-    "category": "robotic_manipulation",
+    "category": "robotic_arms",
     "description": "A spatial-reasoning AI agent successfully placed a cube into the correct bin blind — using only geometry, contact feedback, and available controls with no image or scene description — showcasing zero-shot robotic manipulation potential.",
     "author": {
       "name": "dhul",
@@ -2596,7 +2920,7 @@
     "url": "https://x.com/JonPTaylor/status/2100736122502390211",
     "createdAt": "2026-09-17T23:58:16.000Z",
     "score": 3,
-    "category": "dual_speed_decoupling",
+    "category": "pipeline_routing",
     "description": "A Pipecat-orchestrated voice-driven UI decouples a fast command agent that manipulates the interface from a slower voice agent handling generation, staying snappy even across a London-to-us-west hop.",
     "author": {
       "name": "Jon Taylor",
@@ -2614,7 +2938,7 @@
     "url": "https://x.com/riku720720/status/2100736854928806233",
     "createdAt": "2026-09-18T00:01:10.000Z",
     "score": 1,
-    "category": "social_simulation",
+    "category": "virtual_behaviors",
     "description": "A cellular automaton runs agents in parallel to simulate emotional contagion across a crowd—agents surrounded by anger or sadness sink into depression, while nearby panic cascades into collective panic.",
     "author": {
       "name": "Rikuo",
@@ -2632,7 +2956,7 @@
     "url": "https://x.com/jaredkim/status/2100743263414280676",
     "createdAt": "2026-09-18T00:26:38.000Z",
     "score": 2,
-    "category": "realtime_actions",
+    "category": "virtual_behaviors",
     "description": "A Jev-powered enemy squad AI for a prototype browser FPS runs inference server-side while the game client renders in-browser.",
     "author": {
       "name": "Jared Kim ",
@@ -2646,11 +2970,47 @@
     "height": 480
   },
   {
+    "id": "2100743740549702044",
+    "url": "https://x.com/OpenDevLog/status/2100743740549702044",
+    "createdAt": "2026-09-18T00:28:32.000Z",
+    "score": 1,
+    "category": "hacks",
+    "description": "A \"Reverse CAPTCHA\" demo uses an LLM classifier to pose five questions that prove you're *not* human, detects the user's humanity from their answers, and prints a physical rejection receipt.",
+    "author": {
+      "name": "Open Dev Log",
+      "handle": "OpenDevLog",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1715344079465132034/Qp8yBhCR_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100743740549702044.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
+    "id": "2100752206601560198",
+    "url": "https://x.com/furoku/status/2100752206601560198",
+    "createdAt": "2026-09-18T01:02:10.000Z",
+    "score": 3,
+    "category": "multimodal_generation",
+    "description": "A continuous-intuition AI music demo predicts each next note from prior audio by limiting inputs to structured musical state, actions to expressive composition tools, and movement to high-confidence moments.",
+    "author": {
+      "name": "Mojofull",
+      "handle": "furoku",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1993240036381540353/J5h8rVA5_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100752206601560198.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100756930054504776",
     "url": "https://x.com/dabit3/status/2100756930054504776",
     "createdAt": "2026-09-18T01:20:56.000Z",
     "score": 1,
-    "category": "content_reranking",
+    "category": "search",
     "description": "Jev, an intent-aware launcher reranker, turns keystrokes like \"the pdf I just downloaded\" into correctly ranked results with per-keystroke confidence scores in ~100 ms, instead of relying on aliases, fuzzy match, and habits.",
     "author": {
       "name": "nader dabit",
@@ -2664,11 +3024,47 @@
     "height": 480
   },
   {
+    "id": "2100773901597061515",
+    "url": "https://x.com/adammichaelwood/status/2100773901597061515",
+    "createdAt": "2026-09-18T02:28:23.000Z",
+    "score": 1,
+    "category": "multimodal_generation",
+    "description": "Using Jev to play piano — a playful experiment probing the AI's grasp of music theory (it knows some, less than hoped).",
+    "author": {
+      "name": "Adam Michael Wood",
+      "handle": "adammichaelwood",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1209152386666647554/IZvtVJ4t_normal.jpg",
+      "isVerified": false
+    },
+    "mediaType": "video",
+    "src": "/previews/2100773901597061515.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
+    "id": "2100779833546453376",
+    "url": "https://x.com/iamMrDuncan/status/2100779833546453376",
+    "createdAt": "2026-09-18T02:51:57.000Z",
+    "score": 1,
+    "category": "benchmark",
+    "description": "A local benchmark of Needle 3 on an M4 Pro found it delivered worse quality and much slower speed than JEV, Qwen3.8 27B, and OSS 120B—though it's free.",
+    "author": {
+      "name": "Shannon 🤖☠️",
+      "handle": "iamMrDuncan",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2043475873505087489/vqRhURko_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100779833546453376.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100780008193020049",
     "url": "https://x.com/dabit3/status/2100780008193020049",
     "createdAt": "2026-09-18T02:52:39.000Z",
     "score": 1,
-    "category": "item_triage",
+    "category": "categorization",
     "description": "A demo of Jev's predictive spreadsheet that infers column intent as you type — labeling a column \"Urgency\" auto-rates every row from \"no follow-up needed\" to \"urgent\" in ~100 ms.",
     "author": {
       "name": "nader dabit",
@@ -2686,7 +3082,7 @@
     "url": "https://x.com/kienhmd/status/2100781515131047971",
     "createdAt": "2026-09-18T02:58:38.000Z",
     "score": 1,
-    "category": "evaluation_scoring",
+    "category": "benchmark",
     "description": "Jev, a classification-only model, scored 87.5% on 1,273 MedQA-USMLE questions at 177ms median latency and ~$0.023 per 1,000 queries — reportedly trained on 100% synthetic data.",
     "author": {
       "name": "Kien Hang, MD",
@@ -2704,7 +3100,7 @@
     "url": "https://x.com/otani_ai_memo/status/2100781822959571004",
     "createdAt": "2026-09-18T02:59:51.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "An AI engine for a turn-based puzzle game now autonomously builds and executes up to 6-chain combos, though with clear headroom for further optimization.",
     "author": {
       "name": "オータニ@AI駆動開発",
@@ -2722,7 +3118,7 @@
     "url": "https://x.com/mtropolis_chris/status/2100811463048810560",
     "createdAt": "2026-09-18T04:57:38.000Z",
     "score": 1,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "A tool that batch-classifies your last 200 posts as SLOP or HUMAN and ranks \"certified humans\" on a global leaderboard.",
     "author": {
       "name": "Christopher",
@@ -2736,11 +3132,29 @@
     "height": 480
   },
   {
+    "id": "2100820581444980736",
+    "url": "https://x.com/amagitakayosi/status/2100820581444980736",
+    "createdAt": "2026-09-18T05:33:52.000Z",
+    "score": 1,
+    "category": "categorization",
+    "description": "Jev demo streams a live Bluesky feed with real-time emotion detection, rendering avatars matched to each user's profile.",
+    "author": {
+      "name": "𝘼𝙈𝘼𝙂𝙄",
+      "handle": "amagitakayosi",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1746474082403856384/twFWp7RI_normal.jpg",
+      "isVerified": false
+    },
+    "mediaType": "video",
+    "src": "/previews/2100820581444980736.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100826409115758722",
     "url": "https://x.com/mikegee/status/2100826409115758722",
     "createdAt": "2026-09-18T05:57:02.000Z",
     "score": 1,
-    "category": "interface_actions",
+    "category": "input_assistance",
     "description": "Voice-controlled Figma manipulation demo built with the Jev agent framework, going from first line of code to a working recorded demo for just $0.01 total cost.",
     "author": {
       "name": "mikegee",
@@ -2758,7 +3172,7 @@
     "url": "https://x.com/kylejeong/status/2100827289349132657",
     "createdAt": "2026-09-18T06:00:31.000Z",
     "score": 3,
-    "category": "content_filtering",
+    "category": "feed_cleanup",
     "description": "A nanocode fork showing a small agent that greps a searchable memory.md file and applies Jev compaction to automatically prune unnecessary memories.",
     "author": {
       "name": "Kyle Jeong",
@@ -2776,7 +3190,7 @@
     "url": "https://x.com/JonyShaik/status/2100827590781214981",
     "createdAt": "2026-09-18T06:01:43.000Z",
     "score": 1,
-    "category": "workflow_progression",
+    "category": "robotic_arms",
     "description": "Jev runs a multi-stage manipulation task where an agent handles high-level task transitions and confidence gating at each boundary while deterministic physics guards manage execution, demonstrating reliable agentic control.",
     "author": {
       "name": "Jony Shaik",
@@ -2790,11 +3204,29 @@
     "height": 480
   },
   {
+    "id": "2100829343954173965",
+    "url": "https://x.com/usutaku_channel/status/2100829343954173965",
+    "createdAt": "2026-09-18T06:08:41.000Z",
+    "score": 1,
+    "category": "categorization",
+    "description": "A speed test pitted the fast model \"Jev\" against rival low-latency models Luna, Sonnet, and Flash on an email-classification task, with Jev winning by a landslide.",
+    "author": {
+      "name": "usutaku",
+      "handle": "usutaku_channel",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1917122204917239812/8b380viX_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100829343954173965.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100846091281506370",
     "url": "https://x.com/juminoz/status/2100846091281506370",
     "createdAt": "2026-09-18T07:15:14.000Z",
     "score": 1,
-    "category": "realtime_actions",
+    "category": "realtime_gameplay",
     "description": "An AI agent plays the original Resident Evil in real time—navigating 3D space, fighting zombies, solving puzzles, and pursuing objectives—though it got bitten early and refused to shoot the zombie dogs.",
     "author": {
       "name": "Jack Vinijtrongjit",
@@ -2812,7 +3244,7 @@
     "url": "https://x.com/thilakbhat95/status/2100846150056309107",
     "createdAt": "2026-09-18T07:15:28.000Z",
     "score": 1,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "A Jev-powered job-description roaster that translates each JD line into its brutally honest meaning (\"wear many hats\" → \"you are 3 employees\"), scoring postings in ~1 second for ~0.1¢ per run.",
     "author": {
       "name": "Thilak Bhat",
@@ -2830,7 +3262,7 @@
     "url": "https://x.com/tspy/status/2100864234523685146",
     "createdAt": "2026-09-18T08:27:20.000Z",
     "score": 1,
-    "category": "batch_tagging",
+    "category": "categorization",
     "description": "A Chrome extension tags X posts in real time with intent labels (persuasion, provocation, promotion, AI-generated, etc.) using Jev, which responds near-instantly — far faster than LLMs — and classifies accurately with zero fine-tuning.",
     "author": {
       "name": "yishan",
@@ -2844,11 +3276,29 @@
     "height": 480
   },
   {
+    "id": "2100873520951808403",
+    "url": "https://x.com/thekitze/status/2100873520951808403",
+    "createdAt": "2026-09-18T09:04:14.000Z",
+    "score": 1,
+    "category": "input_assistance",
+    "description": "A smart calculator notebook built with jev that can compute anything, showcased as a quick hack demo.",
+    "author": {
+      "name": "kitze 🛠️ tinkerer.club",
+      "handle": "thekitze",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/2086828789896519680/roL3Zqe2_normal.jpg",
+      "isVerified": true
+    },
+    "mediaType": "video",
+    "src": "/previews/2100873520951808403.webm",
+    "width": 854,
+    "height": 480
+  },
+  {
     "id": "2100882207879434359",
     "url": "https://x.com/rafalwilinski/status/2100882207879434359",
     "createdAt": "2026-09-18T09:38:45.000Z",
     "score": 1,
-    "category": "quality_gating",
+    "category": "workflow_guardrails",
     "description": "A massively parallel browser-based adversarial testing suite automatically stress-tests every release for just pennies per run.",
     "author": {
       "name": "Rafal Wilinski",
@@ -2866,7 +3316,7 @@
     "url": "https://x.com/techs44576/status/2100882869334003767",
     "createdAt": "2026-09-18T09:41:23.000Z",
     "score": 1,
-    "category": "autonomous_vehicles",
+    "category": "autonomous_transit",
     "description": "A demo shows the Jev robot autonomously navigating a signalized crosswalk by observing oncoming traffic to decide when to move or stop, successfully crossing to the other side — though with some nerve-wracking moments.",
     "author": {
       "name": "techs_targe",
@@ -2884,7 +3334,7 @@
     "url": "https://x.com/ppweni/status/2100891358223388966",
     "createdAt": "2026-09-18T10:15:07.000Z",
     "score": 3,
-    "category": "quality_gating",
+    "category": "workflow_guardrails",
     "description": "A native Rust app watches live computer network traffic and flags anomalies in real time using a low-latency model where an LLM would be too slow, shipped with a purpose-built Rust SDK.",
     "author": {
       "name": "Phillip",
@@ -2902,7 +3352,7 @@
     "url": "https://x.com/romanbuildsaas/status/2100891604735099103",
     "createdAt": "2026-09-18T10:16:05.000Z",
     "score": 1,
-    "category": "item_triage",
+    "category": "ranking_evaluation",
     "description": "JEV predicted outreach performance for 700 leads in 40 seconds for $0.09, assigning confidence scores, detecting lead-message mismatches, scoring buying signals, and matching prospects to best-fit messages.",
     "author": {
       "name": "Romàn",
@@ -2920,7 +3370,7 @@
     "url": "https://x.com/timche_/status/2100893095147565523",
     "createdAt": "2026-09-18T10:22:01.000Z",
     "score": 2,
-    "category": "quality_gating",
+    "category": "workflow_guardrails",
     "description": "tenet is an agentic code review gate that evaluates commits, commit messages, and PRs against plain-language rules (sourced from community anti-slop skills, auto-generated from AGENTS.md/CLAUDE.md, or custom presets), blocking an agent's four violations in 1.07s for $0.0003 so it self-corrects.",
     "author": {
       "name": "Tim Cheung",
@@ -2938,7 +3388,7 @@
     "url": "https://x.com/theRaz0r/status/2100898307186864593",
     "createdAt": "2026-09-18T10:42:43.000Z",
     "score": 3,
-    "category": "quality_gating",
+    "category": "financial",
     "description": "jevscan is a Chrome extension that uses Jev from @typesafeai to flag malicious addresses and transactions on Etherscan in real time.",
     "author": {
       "name": "Raz0r",
@@ -2956,7 +3406,7 @@
     "url": "https://x.com/furoku/status/2100900293928173682",
     "createdAt": "2026-09-18T10:50:37.000Z",
     "score": 1,
-    "category": "content_filtering",
+    "category": "feed_cleanup",
     "description": "A prototype \"time-performance mode\" for a Twitter/X client scores each timeline post's reading-worthiness (0–100%) and auto-fades noise, complaints, and shallow tweets to 35% opacity, binning them into \"worth reading\" vs \"skip.\"",
     "author": {
       "name": "Mojofull",
@@ -2974,7 +3424,7 @@
     "url": "https://x.com/imom39a/status/2100902242970636610",
     "createdAt": "2026-09-18T10:58:22.000Z",
     "score": 2,
-    "category": "turn_based_games",
+    "category": "turn_strategy",
     "description": "A head-to-head Minesweeper showdown pits a human player against Mistral Nemo on Expert mode, scaling up to a massive 200x200 board.",
     "author": {
       "name": "Vino",
@@ -2992,7 +3442,7 @@
     "url": "https://x.com/Tyler_RNG/status/2100920115181019407",
     "createdAt": "2026-09-18T12:09:23.000Z",
     "score": 1,
-    "category": "turn_based_games",
+    "category": "benchmark",
     "description": "A visual demo benchmarks Jev—a decision-making model that directly returns choices, scores, and probabilities instead of generating text token-by-token—claiming up to 193.6x faster performance than LLMs on certain workflows.",
     "author": {
       "name": "Generic Crypto Enthusiast",
@@ -3010,7 +3460,7 @@
     "url": "https://x.com/0xkaushik_k/status/2100928490367230201",
     "createdAt": "2026-09-18T12:42:40.000Z",
     "score": 1,
-    "category": "evaluation_scoring",
+    "category": "ranking_evaluation",
     "description": "JevScope has Jev semantically score every agent step for alignment, progress, repetition, and stuckness, plotting a live curve that exposes stuck loops—like repeated edit-test-revert cycles on one file—invisible in raw tool traces.",
     "author": {
       "name": "Kaushik",

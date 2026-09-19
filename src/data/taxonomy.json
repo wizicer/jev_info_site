@@ -1,230 +1,170 @@
 {
-  "version": "2.1.0",
-  "description": "Twitter Demos Taxonomy with fine-grained Level-2 categories and 3-layer view mapping",
+  "version": "3.0.0",
+  "description": "Twitter Demos Taxonomy organized by primary use case",
   "layers": [
     {
-      "code": "computational_and_control",
-      "name": "计算范式与系统控制层",
+      "code": "use_cases",
+      "name": "应用场景",
       "groups": [
         {
-          "code": "logic_control",
-          "name": "逻辑控制",
+          "code": "automation",
+          "name": "软件与工作流",
           "categories": [
             {
-              "code": "conditional_branching",
-              "name": "条件分支",
-              "enName": "Conditional Branching",
-              "description": "语义化 if-else、状态机跳转、根据上下文判断业务路径"
+              "code": "browser_use",
+              "name": "网页自动化",
+              "enName": "Browser Use",
+              "description": "网页自动化、自动填表、网页游戏交互"
             },
             {
-              "code": "quality_gating",
-              "name": "质量门禁",
-              "enName": "Quality Gating",
-              "description": "CI/CD 测试断言、高危 Shell 拦截、置信度阈值熔断"
+              "code": "computer_use",
+              "name": "计算机操作",
+              "enName": "Computer Use",
+              "description": "桌面与移动端 UI 点击、系统应用调度、快捷启动"
             },
             {
-              "code": "item_triage",
-              "name": "事务分拣",
-              "enName": "Item Triage",
-              "description": "邮件多路分诊、工单自动派单、线索优先级判定"
+              "code": "workflow_guardrails",
+              "name": "工作流门禁",
+              "enName": "Workflow Guardrails",
+              "description": "系统流程阻断、权限拦截、数据库保护、代码合规门禁"
             },
             {
-              "code": "workflow_progression",
-              "name": "流程流转",
-              "enName": "Workflow Progression",
-              "description": "自动化多步骤状态跃迁、自适应诊断流推进、无硬编码 UI 导航"
+              "code": "financial",
+              "name": "金融自动化",
+              "enName": "Financial",
+              "description": "高频量化交易、链上套利、实时风控拦截、市场信号转执行"
+            },
+            {
+              "code": "pipeline_routing",
+              "name": "管线路由",
+              "enName": "Pipeline Routing",
+              "description": "快慢模型分流、工具预调用、子智能体派发"
             }
           ]
         },
         {
-          "code": "task_routing",
-          "name": "任务路由",
+          "code": "interaction",
+          "name": "人机交互",
           "categories": [
             {
-              "code": "dual_speed_decoupling",
-              "name": "快慢解耦",
-              "enName": "Dual-Speed Decoupling",
-              "description": "轻量决策模型高频出决策 + 重量生成模型仅做文本合成"
+              "code": "feed_cleanup",
+              "name": "信息流净化",
+              "enName": "Feed Cleanup",
+              "description": "信息流净化、屏蔽广告、隐藏低质水帖、敏感内容遮盖"
             },
             {
-              "code": "tool_selection",
-              "name": "工具选择",
-              "enName": "Tool Selection",
-              "description": "Agent 意图识别并精准路由至特定 Tool/Skill、节省 Prompt Token"
+              "code": "categorization",
+              "name": "分类整理",
+              "enName": "Categorization",
+              "description": "邮件分类、书签归档、推文意图识别、账单清洗归类"
             },
             {
-              "code": "model_dispatch",
-              "name": "模型分流",
-              "enName": "Model Dispatch",
-              "description": "按任务复杂度分流至不同梯队模型（Easy / Medium / Hard）"
+              "code": "ranking_evaluation",
+              "name": "排序与评估",
+              "enName": "Ranking & Evaluation",
+              "description": "文案质量打分、推文爆款概率评分、代码 PR 审核打分、候选域名优劣评判"
+            },
+            {
+              "code": "search",
+              "name": "搜索",
+              "enName": "Search",
+              "description": "自然语言查库、按语义找文件、上下文检索重排"
+            },
+            {
+              "code": "input_assistance",
+              "name": "输入辅助",
+              "enName": "Input Assistance",
+              "description": "语音控制与轮替检测、键盘输入建议、编辑预测、实时候选推荐"
             }
           ]
         },
-        {
-          "code": "data_labeling",
-          "name": "数据标注",
-          "categories": [
-            {
-              "code": "batch_tagging",
-              "name": "离线打标",
-              "enName": "Batch Tagging",
-              "description": "存量数据集批量赋予离散标签或特征"
-            },
-            {
-              "code": "signal_extraction",
-              "name": "信号抽取",
-              "enName": "Signal Extraction",
-              "description": "从高密度非结构化文本中抽取结构化关键字段或逐字 span"
-            },
-            {
-              "code": "compliance_auditing",
-              "name": "合规审查",
-              "enName": "Compliance Auditing",
-              "description": "敏感信息拦截、Prompt 注入防御、法律与会计规则核验"
-            },
-            {
-              "code": "evaluation_scoring",
-              "name": "评测裁决",
-              "enName": "Evaluation & Scoring",
-              "description": "代码审查质量打分、Rubric 细则多维评分、LLM-as-a-Judge 裁判替代、事件胜率评估"
-            }
-          ]
-        },
-        {
-          "code": "information_retrieval",
-          "name": "信息检索",
-          "categories": [
-            {
-              "code": "evidence_pinpointing",
-              "name": "证据定位",
-              "enName": "Evidence Pinpointing",
-              "description": "长上下文中关键代码元素定位、逆向反汇编函数溯源"
-            },
-            {
-              "code": "content_filtering",
-              "name": "内容过滤",
-              "enName": "Content Filtering",
-              "description": "爬虫噪音清洗、知识召回前置低质内容剔除"
-            },
-            {
-              "code": "content_reranking",
-              "name": "内容重排",
-              "enName": "Content Reranking",
-              "description": "上下文事实偏好重排、多候选列表依据规则重新排序"
-            }
-          ]
-        },
-        {
-          "code": "discrete_decision",
-          "name": "通用离散决策",
-          "categories": [
-            {
-              "code": "interface_actions",
-              "name": "数字界面交互",
-              "enName": "Interface Actions",
-              "description": "Computer Use、Browser Use、macOS 桌面受控点击与键盘输入"
-            },
-            {
-              "code": "constraint_solving",
-              "name": "约束与空间布局求解",
-              "enName": "Constraint Solving",
-              "description": "AST 语法树剪枝选择、3D 模型几何放置、UI 空间排布求解"
-            },
-            {
-              "code": "social_simulation",
-              "name": "宏观人口与文明演化仿真",
-              "enName": "Social Simulation",
-              "description": "复杂社会系统涌现、大规模 Persona 民调与政策推演"
-            },
-            {
-              "code": "financial_trading",
-              "name": "金融交易",
-              "enName": "Financial Trading",
-              "description": "市场量化因子决策、BTC/标的买卖观望离散抉择、投资组合高频调仓"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "code": "vertical_industry",
-      "name": "垂直落地产业层",
-      "groups": [
         {
           "code": "gaming",
-          "name": "游戏决策",
+          "name": "游戏世界",
           "categories": [
             {
-              "code": "realtime_actions",
-              "name": "即时动作",
-              "enName": "Realtime Actions",
-              "description": "Doom 走位与开火、Minecraft 跑酷避障、高频动作反应"
+              "code": "realtime_gameplay",
+              "name": "即时游戏",
+              "enName": "Realtime Gameplay",
+              "description": "吃豆人、超级马里奥、俄罗斯方块等即时操控"
             },
             {
-              "code": "tactical_strategy",
-              "name": "策略战术",
-              "enName": "Tactical Strategy",
-              "description": "星际争霸宏观调度、EVE 战场态势战术分析、MOBA AI 教练"
+              "code": "turn_strategy",
+              "name": "回合与策略",
+              "enName": "Turn Strategy",
+              "description": "下棋、卡牌对决、大富翁式回合制决策"
             },
             {
-              "code": "turn_based_games",
-              "name": "回合博弈",
-              "enName": "Turn-based Games",
-              "description": "宝可梦对战出招、Balatro 牌局决策、万智牌 (MTG)、通用桌游"
-            },
-            {
-              "code": "npc_behavior",
-              "name": "角色行为",
-              "enName": "NPC Behavior",
-              "description": "MMO 开源 Bot 行为树接管、开放世界非玩家角色剧情行为决策"
+              "code": "virtual_behaviors",
+              "name": "虚拟行为",
+              "enName": "Virtual Behaviors",
+              "description": "NPC 自主行为、多智能体社会模拟、环境群控"
             }
           ]
         },
         {
-          "code": "embodied_intelligence",
-          "name": "具身智能",
+          "code": "physical",
+          "name": "现实与机载控制",
           "categories": [
             {
-              "code": "robotic_manipulation",
-              "name": "机械作业",
-              "enName": "Robotic Manipulation",
-              "description": "工业机械臂抓取、末端执行器空间作业、装配决策"
+              "code": "robotic_arms",
+              "name": "机械臂",
+              "enName": "Robotic Arms",
+              "description": "机械臂抓取、零样本工具利用、工件分类"
             },
             {
-              "code": "autonomous_vehicles",
-              "name": "载具控制",
-              "enName": "Autonomous Vehicles",
-              "description": "无人机自主飞控与避障、自动驾驶小车航路点决策"
-            },
-            {
-              "code": "control_loop",
-              "name": "回路响应",
-              "enName": "Control Loop",
-              "description": "10Hz 控制回路高频闭环、硬件传感器遥测阈值响应与紧急降级"
+              "code": "autonomous_transit",
+              "name": "自主运载",
+              "enName": "Autonomous Transit",
+              "description": "无人机飞控、自驾车路径转向、运载车避障"
             }
           ]
-        }
-      ]
-    },
-    {
-      "code": "exploratory_hacks",
-      "name": "探索性层",
-      "groups": [
+        },
         {
-          "code": "hacks",
-          "name": "极客探索与暂存",
+          "code": "creative",
+          "name": "创意与极限玩法",
           "categories": [
             {
-              "code": "hacks",
-              "name": "黑客玩法 / 极客变通",
-              "enName": "Hacks & Novel Exploits",
-              "description": "像素画 JevPixelArt、逐字符打字、音符奏乐、模拟自回归采样等极客变通做法"
+              "code": "multimodal_generation",
+              "name": "多模态生成",
+              "enName": "Multimodal Generation",
+              "description": "逐像素绘图、音乐与五线谱编排、实时情绪变色"
             },
             {
-              "code": "parked",
-              "name": "搁置备选 / 暂不归类",
-              "enName": "Parked / Unclassified",
-              "description": "现有分类均不适用的特殊用例、待观察探索或暂存条目"
+              "code": "text_generation",
+              "name": "文本生成",
+              "enName": "Text Generation",
+              "description": "文本生成"
+            },
+            {
+              "code": "hacks",
+              "name": "黑客实验",
+              "enName": "Hacks",
+              "description": "给决策模型强行接解码器以生成对话、反向验证码等黑客实验"
+            },
+            {
+              "code": "benchmark",
+              "name": "基准测试",
+              "enName": "Benchmark",
+              "description": "模型与系统能力的基准测试"
+            }
+          ]
+        },
+        {
+          "code": "parked",
+          "name": "待分类",
+          "categories": [
+            {
+              "code": "inference_engineering",
+              "name": "推理工程",
+              "enName": "Inference Engineering",
+              "description": "模型推理、约束解码、轻量适配头与决策专用引擎等底层工程实验"
+            },
+            {
+              "code": "uncategorized",
+              "name": "未分类",
+              "enName": "Uncategorized",
+              "description": "暂时无法归入现有分类的项目"
             }
           ]
         }
