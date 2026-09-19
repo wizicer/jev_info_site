@@ -12,6 +12,15 @@ const { demo, eager = false, searchCard = false } = Astro.props as { demo: Demo;
 >
   <div class="media-frame">
     <div class="media-fallback" aria-hidden="true"><span>jev</span></div>
+      <img
+        class="case-cover"
+        src={demo.cover}
+        width={demo.width}
+        height={demo.height}
+        loading={eager ? 'eager' : 'lazy'}
+        alt=""
+        aria-hidden="true"
+      />
     {demo.mediaType === 'video' ? (
       <video
         class="case-media case-video"
@@ -46,8 +55,11 @@ const { demo, eager = false, searchCard = false } = Astro.props as { demo: Demo;
   .media-fallback { position: absolute; inset: 0; display: grid; place-items: center; background: linear-gradient(135deg, var(--surface-soft), var(--surface)); color: var(--line); }
   .media-fallback::before { content: ''; position: absolute; inset: 13%; border: 1px solid currentColor; transform: rotate(-4deg); }
   .media-fallback span { font-weight: 750; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.08em; }
-  .case-media { pointer-events: none; position: relative; width: 100%; height: 100%; display: block; object-fit: cover; background: var(--surface-soft); transition: transform .35s ease, opacity .2s ease; }
-  .use-case-card:hover .case-media { transform: scale(1.015); }
+  .case-cover, .case-media { pointer-events: none; position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; background: var(--surface-soft); transition: transform .35s ease, opacity .2s ease; }
+  .case-cover { z-index: 1; }
+  .case-video { z-index: 2; opacity: 0; }
+  .case-video.is-playing { opacity: 1; }
+  .use-case-card:hover .case-cover, .use-case-card:hover .case-media { transform: scale(1.015); }
   p { min-height: 3em; margin: 13px 1px 0; color: var(--ink); font-size: 14px; line-height: 1.48; letter-spacing: -.01em; transition: color .18s; }
   .use-case-card:hover p, .use-case-card:focus-visible p { color: var(--accent); }
   .use-case-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
