@@ -210,9 +210,12 @@ export function initSite() {
     else closeCase(false);
   });
 
-  document.querySelector('.search-trigger')?.addEventListener('click', () => {
+  const openSearch = () => {
     searchDialog?.showModal(); body.classList.add('no-scroll');
     window.setTimeout(() => searchDialog?.querySelector('input')?.focus(), 30);
+  };
+  document.querySelectorAll('.search-trigger, .home-search-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', openSearch);
   });
   const closeSearch = () => { searchDialog?.close(); body.classList.remove('no-scroll'); };
   searchDialog?.querySelector('.search-close')?.addEventListener('click', closeSearch);
@@ -230,16 +233,5 @@ export function initSite() {
     searchDialog.querySelector<HTMLElement>('.search-empty')!.hidden = count !== 0;
   });
 
-  const heroForm = document.querySelector<HTMLFormElement>('.hero-search');
-  heroForm?.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (!searchDialog || !input) return;
-    const heroInput = heroForm.querySelector<HTMLInputElement>('input');
-    input.value = heroInput?.value.trim() ?? '';
-    input.dispatchEvent(new Event('input'));
-    searchDialog.showModal();
-    body.classList.add('no-scroll');
-    window.setTimeout(() => input.focus(), 30);
-  });
 }
 
