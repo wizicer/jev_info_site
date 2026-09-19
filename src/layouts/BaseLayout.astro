@@ -91,9 +91,13 @@ const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
   .search-result { display: block; min-width: 0; }
   .search-result-frame { position: relative; overflow: hidden; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: var(--surface-soft); transition: border-color .18s, box-shadow .18s; }
   .search-result:hover .search-result-frame, .search-result:focus-visible .search-result-frame { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-  .search-result-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: var(--line); font-size: 28px; font-weight: 750; letter-spacing: -.08em; }
-  .search-result-media { pointer-events: none; position: relative; width: 100%; height: 100%; display: block; object-fit: cover; background: var(--surface-soft); transition: transform .35s ease; }
-  .search-result:hover .search-result-media { transform: scale(1.015); }
+  .search-result-fallback { position: absolute; z-index: 0; inset: 0; display: grid; place-items: center; color: var(--line); font-size: 28px; font-weight: 750; letter-spacing: -.08em; }
+  .search-result-cover, .search-result-media { pointer-events: none; position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; background: var(--surface-soft); transition: transform .35s ease, opacity .2s ease; }
+  .search-result-cover { z-index: 1; }
+  .search-result-media { z-index: 2; }
+  .search-result-media.case-video { opacity: 0; }
+  .search-result-media.case-video.is-playing { opacity: 1; }
+  .search-result:hover .search-result-cover, .search-result:hover .search-result-media { transform: scale(1.015); }
   .search-result p { min-height: 3em; margin: 6px 1px 0; font-size: 14px; line-height: 1.48; }
   .search-result-context { margin: 12px 1px 0; overflow: hidden; color: var(--muted); font-size: 12px; font-weight: 650; letter-spacing: .035em; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
   .search-result:hover p, .search-result:focus-visible p { color: var(--accent); }
