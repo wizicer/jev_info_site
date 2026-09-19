@@ -28,7 +28,7 @@ const contactUrl = 'https://github.com/wizicer/jev_info_site/issues/new?title=%5
       <div class="subscribe-stub">
         <label>
           <span class="sr-only">Email address</span>
-          <input type="email" placeholder="Enter your email" aria-describedby="subscribe-note" />
+          <input type="email" placeholder="Email updates coming soon" aria-describedby="subscribe-note" disabled />
         </label>
         <button type="button" disabled aria-label="Subscriptions are coming soon">
           <Icon name="material-symbols:send-rounded" size={22} />
@@ -89,6 +89,12 @@ const contactUrl = 'https://github.com/wizicer/jev_info_site/issues/new?title=%5
   .footer-column .bug-link { color: #df4c4c; }
   .footer-bottom { min-height: 72px; padding-block: 20px; border-top: 1px solid var(--ink); display: flex; flex-direction: column; gap: 10px; color: var(--muted); font-size: 12px; font-weight: 650; letter-spacing: .055em; line-height: 1.5; text-transform: uppercase; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  @media (max-width: 639px) {
+    .footer-main { padding-block: 38px 42px; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; row-gap: 34px; }
+    .footer-intro { grid-column: 1 / -1; }
+    .footer-column { gap: 13px; }
+    .footer-bottom { min-height: 0; padding-block: 17px; }
+  }
   @media (min-width: 640px) {
     .footer-main { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .footer-intro { grid-column: 1 / -1; }
