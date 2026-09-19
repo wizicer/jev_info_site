@@ -59,12 +59,20 @@ export function initSite() {
         else link.removeAttribute('aria-current');
       });
     };
-    setActiveCategory(categoryHeadings[0].id);
-    const categoryObserver = new IntersectionObserver((entries) => {
-      const current = entries.find((entry) => entry.isIntersecting);
-      if (current) setActiveCategory((current.target as HTMLElement).id);
-    }, { rootMargin: '-135px 0px -65% 0px', threshold: 0 });
-    categoryHeadings.forEach((heading) => categoryObserver.observe(heading));
+    const updateActiveCategory = () => {
+      const current = [...categoryHeadings].reverse().find((heading) => heading.getBoundingClientRect().top <= 150) ?? categoryHeadings[0];
+      setActiveCategory(current.id);
+    };
+    let categoryUpdateScheduled = false;
+    addEventListener('scroll', () => {
+      if (categoryUpdateScheduled) return;
+      categoryUpdateScheduled = true;
+      requestAnimationFrame(() => {
+        categoryUpdateScheduled = false;
+        updateActiveCategory();
+      });
+    }, { passive: true });
+    updateActiveCategory();
     categoryLinks.forEach((link) => link.addEventListener('click', () => {
       const id = decodeURIComponent(link.hash.slice(1));
       if (id) setActiveCategory(id);
