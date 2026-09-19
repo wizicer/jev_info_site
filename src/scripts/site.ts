@@ -58,7 +58,6 @@ export function initSite() {
     });
   };
 
-  const replayTimers = new WeakMap<HTMLVideoElement, number>();
   const videoObserver = new IntersectionObserver((entries) => {
     if (reduceMotion) return;
     entries.forEach((entry) => {
@@ -67,8 +66,6 @@ export function initSite() {
         video.play().catch(() => undefined);
       } else {
         video.pause();
-        const timer = replayTimers.get(video);
-        if (timer) window.clearTimeout(timer);
       }
     });
   }, { threshold: [0, 0.55, 1] });
@@ -77,14 +74,9 @@ export function initSite() {
     videoObserver.observe(video);
     attachPlaybackEasing(video);
     video.addEventListener('ended', () => {
-      const timer = window.setTimeout(() => {
-        if (!document.hidden && !caseDialog?.open) {
-          video.currentTime = 0;
-          video.playbackRate = 1;
-          video.play().catch(() => undefined);
-        }
-      }, 3000);
-      replayTimers.set(video, timer);
+      video.currentTime = 0;
+      video.playbackRate = 1;
+      if (!document.hidden && !caseDialog?.open) video.play().catch(() => undefined);
     });
   });
   document.addEventListener('visibilitychange', () => {
@@ -101,11 +93,12 @@ export function initSite() {
     if (restoreHistory && location.pathname.startsWith('/use-cases/')) history.pushState({}, '', previousUrl);
   };
 
-  const openCase = (demo: Demo, push = true) => {
+  const showMediaFallback = (demo: Demo, host: HTMLElement) => {
     if (!caseDialog) return;
-    previousUrl = push ? location.pathname : previousUrl;
-    activeDemoId = demo.id;
+    caseDialog.classList.add('tweet-failed');
+    host.innerHTML = '<p>Original post could not be embedded. Showing the preview instead.</p>';
     const mediaHost = caseDialog.querySelector<HTMLElement>('.dialog-media')!;
+    mediaHost.hidden = false;
     const media = demo.mediaType === 'video' ? document.createElement('video') : document.createElement('img');
     media.src = demo.src;
     if (media instanceof HTMLVideoElement) {
@@ -113,6 +106,13 @@ export function initSite() {
       attachPlaybackEasing(media);
     } else media.alt = '';
     mediaHost.replaceChildren(media);
+  };
+
+  const openCase = (demo: Demo, push = true) => {
+    if (!caseDialog) return;
+    previousUrl = push ? location.pathname : previousUrl;
+    activeDemoId = demo.id;
+    caseDialog.classList.remove('tweet-failed');
     caseDialog.querySelector<HTMLElement>('.dialog-description')!.textContent = demo.description;
     caseDialog.querySelector<HTMLImageElement>('.dialog-author img')!.src = demo.author.avatarUrl;
     caseDialog.querySelector<HTMLElement>('.dialog-author strong')!.textContent = demo.author.name;
@@ -128,16 +128,36 @@ export function initSite() {
     body.classList.add('no-scroll');
     document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => video.pause());
     if (push) history.pushState({ caseId: demo.id }, '', `/use-cases/${demo.id}`);
-    loadTweet(demo.id, embed);
+    loadTweet(demo, embed);
   };
 
-  async function loadTweet(id: string, host: HTMLElement) {
+  const tweetExists = (id: string) => new Promise<boolean>((resolve) => {
+    const callback = '__jevOembed' + id + Math.random().toString(36).slice(2);
+    const jsonpWindow = window as unknown as Record<string, unknown>;
+    const script = document.createElement('script');
+    let settled = false;
+    const finish = (available: boolean) => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timer);
+      script.remove();
+      delete jsonpWindow[callback];
+      resolve(available);
+    };
+    jsonpWindow[callback] = () => finish(true);
+    script.onerror = () => finish(false);
+    script.src = `https://publish.x.com/oembed?url=${encodeURIComponent('https://x.com/i/status/' + id)}&omit_script=true&dnt=true&callback=${callback}`;
+    const timer = window.setTimeout(() => finish(false), 6000);
+    document.head.append(script);
+  });
+  async function loadTweet(demo: Demo, host: HTMLElement) {
     type TwitterWindow = Window & { twttr?: { widgets: { createTweet: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
     const twitterWindow = window as TwitterWindow;
+    if (!(await tweetExists(demo.id))) { if (activeDemoId === demo.id) showMediaFallback(demo, host); return; }
     if (!twitterWindow.twttr) {
       await new Promise<void>((resolve) => {
         const existing = document.querySelector<HTMLScriptElement>('script[data-twitter-widget]');
-        if (existing) { existing.addEventListener('load', () => resolve(), { once: true }); return; }
+        if (existing) { existing.addEventListener('load', () => resolve(), { once: true }); existing.addEventListener('error', () => resolve(), { once: true }); return; }
         const script = document.createElement('script');
         script.src = 'https://platform.twitter.com/widgets.js';
         script.async = true; script.dataset.twitterWidget = 'true';
@@ -146,11 +166,15 @@ export function initSite() {
         document.head.append(script);
       });
     }
-    if (activeDemoId !== id) return;
+    if (activeDemoId !== demo.id) return;
     host.replaceChildren();
-    twitterWindow.twttr?.widgets.createTweet(id, host, { theme: root.dataset.theme === 'dark' ? 'dark' : 'light', dnt: true }).catch(() => {
-      host.innerHTML = '<p>Original post could not be embedded. Use the source link above.</p>';
-    });
+    if (!twitterWindow.twttr) { showMediaFallback(demo, host); return; }
+    try {
+      const result = await twitterWindow.twttr.widgets.createTweet(demo.id, host, { theme: root.dataset.theme === 'dark' ? 'dark' : 'light', dnt: true });
+      if (!result) throw new Error('Tweet unavailable');
+    } catch {
+      if (activeDemoId === demo.id) showMediaFallback(demo, host);
+    }
   }
 
   document.addEventListener('click', (event) => {

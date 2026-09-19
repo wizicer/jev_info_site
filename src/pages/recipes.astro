@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ComingSoon from '../components/ComingSoon.astro';
 ---
-<BaseLayout title="Recipes — jev.info"><main class="soon"><span>Coming soon</span><h1>Recipes</h1><p>Practical patterns and implementation guides for Jev.</p></main></BaseLayout>
-<style>.soon{min-height:calc(100dvh - 68px);padding:clamp(60px,12vw,180px) max(16px,calc((100% - 1480px)/2));}.soon span{color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.1em}h1{margin:15px 0;font-size:clamp(70px,15vw,210px);font-weight:580;line-height:.82;letter-spacing:-.08em}p{color:var(--muted);font-size:14px}</style>
+<BaseLayout title="Recipes — jev.info"><ComingSoon name="Recipes" description="Practical patterns and implementation guides for Jev." /></BaseLayout>
+

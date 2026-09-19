@@ -7,9 +7,9 @@
     <section class="dialog-primary" aria-label="Original post">
       <div class="dialog-primary-label">Original post</div>
       <div class="dialog-embed" aria-live="polite"></div>
+      <div class="dialog-media" hidden><div class="dialog-placeholder">jev</div></div>
     </section>
     <aside class="dialog-side">
-      <div class="dialog-media"><div class="dialog-placeholder">jev</div></div>
       <div class="dialog-info">
         <div class="dialog-taxonomy"></div>
         <p id="case-dialog-description" class="dialog-description"></p>
@@ -36,24 +36,26 @@
   }
   .case-dialog::backdrop { background: rgb(8 9 8 / .7); backdrop-filter: blur(5px); }
   .dialog-close { position: absolute; z-index: 5; top: 12px; right: 14px; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; font-size: 26px; line-height: 1; }
-  .dialog-layout { height: 100%; display: grid; grid-template-columns: minmax(460px, 1.42fr) minmax(340px, .88fr); }
+  .dialog-layout { height: 100%; display: grid; grid-template-columns: minmax(520px, 1.55fr) minmax(320px, .75fr); }
   .dialog-primary { min-width: 0; padding: 26px; overflow: auto; display: flex; flex-direction: column; align-items: center; background: var(--surface-soft); border-right: 1px solid var(--line); }
-  .dialog-primary-label { width: 100%; margin-bottom: 14px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .dialog-primary-label { width: 100%; margin-bottom: 14px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
   .dialog-embed { width: min(100%, 590px); min-height: 360px; display: grid; place-items: center; color: var(--muted); font-size: 12px; }
   .dialog-embed :global(.twitter-tweet), .dialog-embed :global(.twitter-tweet-rendered) { margin: 0 auto !important; }
   .dialog-side { min-width: 0; overflow: auto; }
-  .dialog-media { position: relative; aspect-ratio: 16 / 9; display: grid; place-items: center; overflow: hidden; background: #090a09; }
+  .dialog-media { position: relative; width: 100%; aspect-ratio: 16 / 9; display: none; place-items: center; overflow: hidden; background: #090a09; }
+  .case-dialog.tweet-failed .dialog-embed { display: none; }
+  .case-dialog.tweet-failed .dialog-media { display: grid; }
   .dialog-media img, .dialog-media video { position: relative; width: 100%; height: 100%; object-fit: contain; display: block; }
-  .dialog-placeholder { color: #30322f; font-size: clamp(44px, 7vw, 90px); font-weight: 750; letter-spacing: -.08em; }
+  .dialog-placeholder { color: #30322f; font-size: 32px; font-weight: 750; letter-spacing: -.08em; }
   .dialog-info { padding: 28px 28px 38px; overflow-wrap: anywhere; }
-  .dialog-taxonomy { margin-bottom: 17px; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .dialog-taxonomy { margin-bottom: 17px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
   .dialog-description { margin: 0 0 24px; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.34; letter-spacing: -.025em; }
   .dialog-author { display: flex; align-items: center; gap: 12px; padding: 17px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .dialog-author img { width: 42px; height: 42px; border-radius: 50%; background: var(--surface-soft); }
   .dialog-author strong, .dialog-author span { display: block; font-size: 12px; }
   .dialog-author span { margin-top: 3px; color: var(--muted); }
   dl { margin: 0; }
-  dl > div { display: grid; grid-template-columns: 85px 1fr; gap: 10px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 11px; }
+  dl > div { display: grid; grid-template-columns: 85px 1fr; gap: 10px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
   dt { color: var(--muted); } dd { margin: 0; } .dialog-source { color: var(--accent); }
   @media (max-width: 800px) {
     .case-dialog { width: 100%; height: 100%; max-height: none; border: 0; }

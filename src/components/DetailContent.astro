@@ -1,21 +1,20 @@
 ---
-import type { Demo } from '../types';
-import type { Category, Group } from '../types';
+import type { Category, Demo, Group } from '../types';
 import { formatDate } from '../lib/content';
 const { demo, category, group } = Astro.props as { demo: Demo; category?: Category; group?: Group };
 ---
 
-<article class="detail-layout">
-  <div class="detail-media">
-    <div class="fallback" aria-hidden="true">jev</div>
-    {demo.mediaType === 'video' ? (
-      <video src={demo.src} controls muted playsinline autoplay width={demo.width} height={demo.height} />
-    ) : (
-      <img src={demo.src} alt="" width={demo.width} height={demo.height} data-fallback-media />
-    )}
-  </div>
-  <div class="detail-copy">
-    <p class="taxonomy"><a href={`/use-cases/${group?.code}`}>{group?.enName}</a> <span>/</span> {category?.enName}</p>
+<article class="detail-layout" data-detail-root data-id={demo.id} data-src={demo.src} data-media-type={demo.mediaType}>
+  <section class="detail-primary" aria-label="Original post">
+    <span class="section-label">Original post</span>
+    <div class="standalone-tweet"><a href={demo.url} target="_blank" rel="noreferrer">Loading original post…</a></div>
+    <div class="detail-fallback" hidden>
+      <p>The original post is unavailable. Showing the preview instead.</p>
+      <div class="fallback-media"></div>
+    </div>
+  </section>
+  <aside class="detail-copy">
+    <p class="taxonomy"><a href={'/use-cases/' + group?.code}>{group?.enName}</a> <span>/</span> {category?.enName}</p>
     <p class="description">{demo.description}</p>
     <div class="author">
       <img src={demo.author.avatarUrl} alt="" width="44" height="44" />
@@ -25,32 +24,90 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
       <div><dt>Published</dt><dd>{formatDate(demo.createdAt)}</dd></div>
       <div><dt>Source</dt><dd><a href={demo.url} target="_blank" rel="noreferrer">View original post ↗</a></dd></div>
     </dl>
-    <div class="tweet-wrap">
-      <blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><a href={demo.url}>View the original post on X</a></blockquote>
-    </div>
-  </div>
+  </aside>
 </article>
 
-<script is:inline src="https://platform.twitter.com/widgets.js" async charset="utf-8"></script>
+<script>
+  const root = document.querySelector<HTMLElement>('[data-detail-root]');
+  if (root) {
+    const host = root.querySelector<HTMLElement>('.standalone-tweet')!;
+    const fallback = root.querySelector<HTMLElement>('.detail-fallback')!;
+    const mediaHost = root.querySelector<HTMLElement>('.fallback-media')!;
+    const showFallback = () => {
+      host.hidden = true;
+      fallback.hidden = false;
+      const media = root.dataset.mediaType === 'video' ? document.createElement('video') : document.createElement('img');
+      media.src = root.dataset.src ?? '';
+      if (media instanceof HTMLVideoElement) {
+        media.muted = true; media.autoplay = true; media.playsInline = true; media.controls = true;
+      } else media.alt = '';
+      mediaHost.replaceChildren(media);
+    };
+    type TwitterWindow = Window & { twttr?: { widgets: { createTweet: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
+    const twitterWindow = window as TwitterWindow;
+    const tweetExists = (id: string) => new Promise<boolean>((resolve) => {
+      const callback = '__jevOembed' + id + Math.random().toString(36).slice(2);
+      const jsonpWindow = window as unknown as Record<string, unknown>;
+      const script = document.createElement('script');
+      let settled = false;
+      const finish = (available: boolean) => {
+        if (settled) return;
+        settled = true;
+        window.clearTimeout(timer);
+        script.remove();
+        delete jsonpWindow[callback];
+        resolve(available);
+      };
+      jsonpWindow[callback] = () => finish(true);
+      script.onerror = () => finish(false);
+      script.src = `https://publish.x.com/oembed?url=${encodeURIComponent('https://x.com/i/status/' + id)}&omit_script=true&dnt=true&callback=${callback}`;
+      const timer = window.setTimeout(() => finish(false), 6000);
+      document.head.append(script);
+    });
+    const load = async () => {
+      if (!(await tweetExists(root.dataset.id ?? ''))) { showFallback(); return; }
+      if (!twitterWindow.twttr) {
+        await new Promise<void>((resolve) => {
+          const script = document.createElement('script');
+          script.src = 'https://platform.twitter.com/widgets.js';
+          script.async = true;
+          script.onload = () => resolve();
+          script.onerror = () => resolve();
+          document.head.append(script);
+        });
+      }
+      if (!twitterWindow.twttr) { showFallback(); return; }
+      host.replaceChildren();
+      try {
+        const result = await twitterWindow.twttr.widgets.createTweet(root.dataset.id ?? '', host, { dnt: true });
+        if (!result) showFallback();
+      } catch { showFallback(); }
+    };
+    load();
+  }
+</script>
 
 <style>
-  .detail-layout { display: grid; min-height: calc(100dvh - 68px); grid-template-columns: minmax(0, 1.55fr) minmax(350px, .8fr); }
-  .detail-media { position: sticky; top: 68px; height: calc(100dvh - 68px); display: grid; place-items: center; overflow: hidden; background: #090a09; }
-  .detail-media video, .detail-media img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; }
-  .fallback { position: absolute; color: #30322f; font-size: clamp(70px, 12vw, 170px); font-weight: 750; letter-spacing: -.08em; }
-  .detail-copy { padding: clamp(42px, 6vw, 88px) clamp(24px, 4vw, 58px); }
-  .taxonomy { margin: 0 0 28px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
-  .taxonomy a { color: var(--accent); } .taxonomy span { margin-inline: 7px; }
-  .description { margin: 0 0 38px; font-size: clamp(22px, 2.25vw, 34px); line-height: 1.28; letter-spacing: -.04em; }
-  .author { display: flex; align-items: center; gap: 12px; padding: 20px 0; border-block: 1px solid var(--line); }
+  .detail-layout { min-height: calc(100dvh - 68px); display: grid; grid-template-columns: minmax(520px, 1.5fr) minmax(320px, .75fr); }
+  .detail-primary { padding: 32px; display: flex; flex-direction: column; align-items: center; background: var(--surface-soft); border-right: 1px solid var(--line); }
+  .section-label { width: 100%; margin-bottom: 18px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .standalone-tweet { width: min(100%, 590px); min-height: 480px; display: grid; place-items: center; color: var(--muted); font-size: 14px; }
+  .detail-fallback { width: min(100%, 760px); }
+  .detail-fallback p { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+  .fallback-media { aspect-ratio: 16 / 9; display: grid; place-items: center; overflow: hidden; background: var(--ink); }
+  .fallback-media :global(video), .fallback-media :global(img) { width: 100%; height: 100%; object-fit: contain; }
+  .detail-copy { padding: clamp(36px, 5vw, 72px) clamp(24px, 4vw, 52px); }
+  .taxonomy { margin: 0 0 24px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+  .taxonomy a, dd a { color: var(--accent); } .taxonomy span { margin-inline: 7px; }
+  .description { margin: 0 0 32px; font-size: clamp(20px, 2vw, 28px); line-height: 1.32; letter-spacing: -.035em; }
+  .author { display: flex; align-items: center; gap: 12px; padding: 18px 0; border-block: 1px solid var(--line); }
   .author img { width: 44px; height: 44px; border-radius: 50%; background: var(--surface-soft); }
-  .author strong, .author span { display: block; font-size: 13px; } .author span { margin-top: 3px; color: var(--muted); }
-  dl { margin: 0; } dl > div { display: grid; grid-template-columns: 100px 1fr; padding: 15px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
-  dt { color: var(--muted); } dd { margin: 0; } dd a { color: var(--accent); }
-  .tweet-wrap { margin-top: 28px; min-height: 100px; }
+  .author strong, .author span { display: block; font-size: 14px; } .author span { margin-top: 3px; color: var(--muted); }
+  dl { margin: 0; } dl > div { display: grid; grid-template-columns: 100px 1fr; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+  dt { color: var(--muted); } dd { margin: 0; }
   @media (max-width: 820px) {
-    .detail-layout { display: block; }
-    .detail-media { position: relative; top: 0; height: auto; aspect-ratio: 16 / 9; }
+    .detail-layout { display: flex; flex-direction: column; }
+    .detail-primary { min-height: 520px; padding: 24px 14px; border-right: 0; border-bottom: 1px solid var(--line); }
     .detail-copy { padding: 30px 18px 60px; }
   }
 </style>

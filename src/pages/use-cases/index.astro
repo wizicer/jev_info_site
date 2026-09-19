@@ -12,14 +12,12 @@ import { demosForGroup, groups } from '../../lib/content';
     </div>
     {groups.map((group) => <GroupSection group={group} demos={demosForGroup(group)} />)}
   </main>
-  <footer class="shell"><span>jev.info</span><span>Independent community reference</span></footer>
 </BaseLayout>
 
 <style>
   .home-main { padding-top: clamp(34px, 6vw, 88px); }
-  .page-intro { min-height: 100px; padding-bottom: 32px; display: flex; align-items: flex-end; justify-content: space-between; color: var(--muted); font-size: 12px; }
-  .page-intro p { margin: 0; } .page-intro span { text-transform: uppercase; letter-spacing: .1em; }
-  footer { padding-block: 25px 40px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
+  .page-intro { min-height: 100px; padding-bottom: 32px; display: flex; align-items: flex-end; justify-content: space-between; color: var(--muted); font-size: 14px; }
+  .page-intro p { margin: 0; } .page-intro span { text-transform: uppercase; letter-spacing: .06em; }
   @media (max-width: 550px) { .page-intro p { max-width: 190px; line-height: 1.45; } }
 </style>
 

@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 const { pathname } = Astro.url;
 const nav = [
-  { label: 'Recent', href: '/', active: pathname === '/' },
+  { label: 'Home', href: '/', active: pathname === '/' },
   { label: 'Use Cases', href: '/use-cases', active: pathname.startsWith('/use-cases') },
   { label: 'Recipes', href: '/recipes', active: pathname.startsWith('/recipes') },
   { label: 'Benchmarks', href: '/benchmarks', active: pathname.startsWith('/benchmarks') },
@@ -65,7 +65,7 @@ const nav = [
   .language-menu a, .language-menu span { display: flex; justify-content: space-between; padding: 10px; font-size: 13px; }
   .language-menu a { background: var(--surface-soft); }
   .language-menu span { color: var(--muted); }
-  .language-menu small { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; }
+  .language-menu small { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
   .mobile-nav-toggle { display: none; }
   @media (min-width: 768px) { .header-inner { width: min(100% - 64px, 1480px); } }
   @media (max-width: 850px) {
