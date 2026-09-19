@@ -44,7 +44,6 @@ const updated = new Intl.DateTimeFormat('en', {
     <section class="recent shell" aria-labelledby="recent-title">
       <div class="recent-heading">
         <div><span>Latest additions</span><h2 id="recent-title">Recent</h2></div>
-        <a href="/use-cases">View all use cases ↗</a>
       </div>
       <div class="recent-grid">{recent.map((demo, index) => <UseCaseCard demo={demo} eager={index < 2} />)}</div>
     </section>
@@ -77,7 +76,6 @@ const updated = new Intl.DateTimeFormat('en', {
   .recent-heading { padding: 28px 0 26px; border-top: 1px solid var(--line); display: flex; align-items: flex-end; justify-content: space-between; }
   .recent-heading span { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
   h2 { margin: 8px 0 0; font-size: clamp(26px, 3vw, 32px); font-weight: 560; line-height: .9; letter-spacing: -.065em; }
-  .recent-heading a { color: var(--accent); font-size: 12px; }
   .recent-grid { display: grid; grid-template-columns: 1fr; gap: 34px 18px; }
   @media (min-width: 620px) { .recent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 900px) { .recent-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap-inline: 22px; } }
