@@ -7,8 +7,8 @@ const { group, demos } = Astro.props as { group: Group; demos: Demo[] };
 <section class="group-section" aria-labelledby={`group-${group.code}`}>
   <div class="section-heading">
     <div>
-      <span class="section-index">{String(group.categories.length).padStart(2, '0')} categories</span>
-      <h2 id={`group-${group.code}`}>{group.enName}</h2>
+      <span class="section-index">{group.categories.length} subcategories · {demos.length} use cases</span>
+      <h2 id={`group-${group.code}`}><a href={`/use-cases/${group.code}`}>{group.enName}</a></h2>
     </div>
     <a href={`/use-cases/${group.code}`}>
       View all <span aria-hidden="true">↗</span>
@@ -24,7 +24,9 @@ const { group, demos } = Astro.props as { group: Group; demos: Demo[] };
   .section-heading { margin-bottom: 25px; display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; }
   .section-index { display: block; margin-bottom: 8px; color: var(--muted); font-size: 14px; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; }
   h2 { margin: 0; font-size: clamp(24px, 2.5vw, 32px); font-weight: 610; line-height: .98; letter-spacing: -.055em; }
-  .section-heading a { color: var(--accent); font-size: 14px; white-space: nowrap; }
+  h2 a { transition: color .15s; }
+  h2 a:hover { color: var(--accent); }
+  .section-heading > a { min-height: 40px; padding-left: 18px; display: inline-flex; align-items: center; color: var(--accent); font-size: 14px; white-space: nowrap; }
   .case-grid { display: grid; grid-template-columns: 1fr; gap: 30px 18px; }
   .preview-grid > :global(*:nth-child(n+3)) { display: none; }
   @media (min-width: 620px) { .case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
