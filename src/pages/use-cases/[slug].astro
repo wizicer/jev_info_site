@@ -31,12 +31,12 @@ const visibleCategories = group
         <a href="/use-cases">← All use cases</a>
         <p>{demosForGroup(group).length} examples</p>
         <h1>{group.enName}</h1>
-        <nav class="category-nav" aria-label="Categories in this group">
-          {visibleCategories.map((category) => (
-            <a href={`#category-${category.code}`}>{category.enName}</a>
-          ))}
-        </nav>
       </header>
+      <nav class="category-nav" aria-label="Categories in this group">
+        {visibleCategories.map((category) => (
+          <a href={`#category-${category.code}`}>{category.enName}</a>
+        ))}
+      </nav>
       {visibleCategories.map((category) => {
         const items = demosForCategory(category.code);
         return items.length > 0 && (
@@ -57,17 +57,17 @@ const visibleCategories = group
 
 <style>
   .group-page { padding-block: 40px 90px; }
-  .group-header { padding: clamp(15px, 4vw, 55px) 0 clamp(50px, 8vw, 110px); }
+  .group-header { padding: clamp(15px, 4vw, 55px) 0 clamp(34px, 5vw, 65px); }
   .group-header a, .group-header p { color: var(--muted); font-size: 12px; }
   .group-header p { margin: 45px 0 9px; text-transform: uppercase; letter-spacing: .1em; }
   h1 { max-width: 1050px; margin: 0; font-size: clamp(28px, 4vw, 32px); font-weight: 580; line-height: .84; letter-spacing: -.075em; }
-  .category-nav { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 8px; }
-  .category-nav a { padding: 10px 12px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 650; }
+  .category-nav { position: sticky; z-index: 20; top: 68px; margin-bottom: 22px; padding: 12px 0; display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); scrollbar-width: thin; }
+  .category-nav a { flex: 0 0 auto; padding: 10px 12px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 650; }
   .category-nav a:hover { border-color: var(--accent); color: var(--accent); }
   .category-nav a:focus-visible { border-color: var(--accent); }
   .category-section { padding: 28px 0 65px; border-top: 1px solid var(--line); }
   .category-heading { margin-bottom: 28px; display: flex; justify-content: space-between; align-items: baseline; }
-  h2 { margin: 0; font-size: clamp(22px, 2.5vw, 28px); font-weight: 590; letter-spacing: -.045em; }
+  h2 { margin: 0; scroll-margin-top: 145px; font-size: clamp(22px, 2.5vw, 28px); font-weight: 590; letter-spacing: -.045em; }
   .category-heading span { color: var(--muted); font-size: 12px; }
   .category-grid { display: grid; grid-template-columns: 1fr; gap: 34px 18px; }
   @media (min-width: 620px) { .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
