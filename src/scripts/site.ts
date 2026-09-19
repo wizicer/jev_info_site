@@ -221,16 +221,63 @@ export function initSite() {
   searchDialog?.querySelector('.search-close')?.addEventListener('click', closeSearch);
   searchDialog?.addEventListener('cancel', (event) => { event.preventDefault(); closeSearch(); });
   const input = searchDialog?.querySelector<HTMLInputElement>('input');
+  const searchResults = searchDialog?.querySelector<HTMLElement>('.search-results');
+  const searchStatus = searchDialog?.querySelector<HTMLElement>('.search-status');
+  const searchEmpty = searchDialog?.querySelector<HTMLElement>('.search-empty');
+  const createSearchResult = (demo: ClientDemo) => {
+    const link = document.createElement('a');
+    link.className = 'search-result';
+    link.href = `/use-cases/${demo.id}`;
+    link.dataset.caseLink = '';
+    link.dataset.id = demo.id;
+
+    const frame = document.createElement('div');
+    frame.className = 'search-result-frame';
+    const fallback = document.createElement('div');
+    fallback.className = 'search-result-fallback';
+    fallback.ariaHidden = 'true';
+    fallback.textContent = 'jev';
+    frame.append(fallback);
+
+    const media = demo.mediaType === 'video' ? document.createElement('video') : document.createElement('img');
+    media.className = 'search-result-media';
+    media.src = demo.src;
+    media.width = demo.width;
+    media.height = demo.height;
+    if (media instanceof HTMLVideoElement) {
+      media.classList.add('case-video');
+      media.muted = true;
+      media.playsInline = true;
+      media.preload = 'none';
+      media.setAttribute('aria-label', demo.description);
+      attachPlaybackEasing(media);
+      videoObserver.observe(media);
+    } else {
+      media.alt = '';
+      media.loading = 'lazy';
+      media.addEventListener('error', () => { media.hidden = true; });
+    }
+    frame.append(media);
+    const description = document.createElement('p');
+    description.className = 'line-clamp-2';
+    description.textContent = demo.description;
+    link.append(frame, description);
+    return link;
+  };
   input?.addEventListener('input', () => {
-    if (!searchDialog) return;
+    if (!searchDialog || !searchResults || !searchStatus || !searchEmpty) return;
     const query = input.value.trim().toLowerCase();
-    let count = 0;
-    searchDialog.querySelectorAll<HTMLElement>('.search-results > [data-search]').forEach((item) => {
-      const visible = !query || item.dataset.search?.includes(query);
-      item.hidden = !visible; if (visible) count++;
-    });
-    searchDialog.querySelector<HTMLElement>('.search-status')!.textContent = `${count} use case${count === 1 ? '' : 's'}`;
-    searchDialog.querySelector<HTMLElement>('.search-empty')!.hidden = count !== 0;
+    searchResults.querySelectorAll<HTMLVideoElement>('video').forEach((video) => videoObserver.unobserve(video));
+    const matches = query ? demos.filter((demo) =>
+      `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName}`.toLowerCase().includes(query),
+    ) : [];
+    const visible = matches.slice(0, 24);
+    searchResults.replaceChildren(...visible.map(createSearchResult));
+    searchStatus.textContent = query
+      ? `${matches.length} use case${matches.length === 1 ? '' : 's'}${matches.length > visible.length ? ` · showing first ${visible.length}` : ''}`
+      : `Search ${demos.length} use cases`;
+    searchEmpty.textContent = query ? 'No use cases found.' : 'Start typing to find a use case.';
+    searchEmpty.hidden = visible.length !== 0;
   });
 
 }
