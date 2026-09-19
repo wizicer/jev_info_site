@@ -1,5 +1,11 @@
 import type { Demo } from '../types';
 
+type ClientDemo = Demo & {
+  categoryName: string;
+  groupName: string;
+  groupCode: string;
+};
+
 let initialized = false;
 
 export function initSite() {
@@ -9,7 +15,7 @@ export function initSite() {
   const root = document.documentElement;
   const body = document.body;
   const caseData = document.querySelector<HTMLScriptElement>('#case-data');
-  const demos: Demo[] = caseData ? JSON.parse(caseData.textContent || '[]') : [];
+  const demos: ClientDemo[] = caseData ? JSON.parse(caseData.textContent || '[]') : [];
   const demoMap = new Map(demos.map((demo) => [demo.id, demo]));
   const caseDialog = document.querySelector<HTMLDialogElement>('.case-dialog');
   const searchDialog = document.querySelector<HTMLDialogElement>('.search-dialog');
@@ -108,7 +114,7 @@ export function initSite() {
     mediaHost.replaceChildren(media);
   };
 
-  const openCase = (demo: Demo, push = true) => {
+  const openCase = (demo: ClientDemo, push = true) => {
     if (!caseDialog) return;
     previousUrl = push ? location.pathname : previousUrl;
     activeDemoId = demo.id;
@@ -121,7 +127,16 @@ export function initSite() {
     const source = caseDialog.querySelector<HTMLAnchorElement>('.dialog-source')!;
     source.href = demo.url;
     const taxonomy = caseDialog.querySelector<HTMLElement>('.dialog-taxonomy')!;
-    taxonomy.textContent = demo.category.replaceAll('_', ' ');
+    taxonomy.replaceChildren();
+    if (demo.groupName && demo.groupCode) {
+      const groupLink = document.createElement('a');
+      groupLink.href = `/use-cases/${demo.groupCode}`;
+      groupLink.textContent = demo.groupName;
+      const separator = document.createElement('span');
+      separator.textContent = '/';
+      taxonomy.append(groupLink, separator);
+    }
+    taxonomy.append(document.createTextNode(demo.categoryName));
     const embed = caseDialog.querySelector<HTMLElement>('.dialog-embed')!;
     embed.innerHTML = `<a href="${demo.url}" target="_blank" rel="noreferrer">Loading original post…</a>`;
     if (!caseDialog.open) caseDialog.showModal();

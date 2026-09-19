@@ -16,11 +16,20 @@ const {
   description = 'Explore real-world Jev use cases across software, games, robotics, research, and more.',
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const searchDemos = demos.map((demo) => {
+const clientDemos = demos.map((demo) => {
   const { category, group } = getDemoContext(demo);
-  return { ...demo, searchText: `${demo.description} ${demo.author.name} ${demo.author.handle} ${category?.enName ?? ''} ${group?.enName ?? ''}`.toLowerCase() };
+  return {
+    ...demo,
+    categoryName: category?.enName ?? demo.category,
+    groupName: group?.enName ?? '',
+    groupCode: group?.code ?? '',
+  };
 });
-const caseJson = JSON.stringify(demos).replaceAll('<', '\\u003c');
+const searchDemos = clientDemos.map((demo) => ({
+  ...demo,
+  searchText: `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName}`.toLowerCase(),
+}));
+const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
 ---
 
 <!doctype html>
