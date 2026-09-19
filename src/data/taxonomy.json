@@ -9,6 +9,7 @@
         {
           "code": "automation",
           "name": "软件与工作流",
+          "enName": "Software Automation",
           "categories": [
             {
               "code": "browser_use",
@@ -45,6 +46,7 @@
         {
           "code": "interaction",
           "name": "人机交互",
+          "enName": "Interaction",
           "categories": [
             {
               "code": "feed_cleanup",
@@ -81,6 +83,7 @@
         {
           "code": "gaming",
           "name": "游戏世界",
+          "enName": "Gaming Worlds",
           "categories": [
             {
               "code": "realtime_gameplay",
@@ -105,6 +108,7 @@
         {
           "code": "physical",
           "name": "现实与机载控制",
+          "enName": "Physical Control",
           "categories": [
             {
               "code": "robotic_arms",
@@ -123,6 +127,7 @@
         {
           "code": "creative",
           "name": "创意与极限玩法",
+          "enName": "Creative",
           "categories": [
             {
               "code": "multimodal_generation",
@@ -153,6 +158,7 @@
         {
           "code": "parked",
           "name": "待分类",
+          "enName": "Parked",
           "categories": [
             {
               "code": "inference_engineering",
