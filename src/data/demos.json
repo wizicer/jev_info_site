@@ -14,6 +14,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100044305536889015.webm",
+    "cover": "/covers/2100044305536889015.webp",
     "width": 426,
     "height": 240
   },
@@ -30,8 +31,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2096969684159770624/pZG4RQhy_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100068006592123055.webp",
+    "mediaType": "video",
+    "src": "/previews/2100068006592123055.webm",
+    "cover": "/covers/2100068006592123055.webp",
     "width": 426,
     "height": 240
   },
@@ -50,6 +52,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100086301894881578.webm",
+    "cover": "/covers/2100086301894881578.webp",
     "width": 426,
     "height": 240
   },
@@ -68,6 +71,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100125657795834343.webm",
+    "cover": "/covers/2100125657795834343.webp",
     "width": 426,
     "height": 240
   },
@@ -86,6 +90,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100141659933856192.webm",
+    "cover": "/covers/2100141659933856192.webp",
     "width": 426,
     "height": 240
   },
@@ -104,6 +109,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100162790061113634.webm",
+    "cover": "/covers/2100162790061113634.webp",
     "width": 426,
     "height": 240
   },
@@ -122,6 +128,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100186640149033457.webm",
+    "cover": "/covers/2100186640149033457.webp",
     "width": 426,
     "height": 240
   },
@@ -140,6 +147,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100218045549412499.webm",
+    "cover": "/covers/2100218045549412499.webp",
     "width": 426,
     "height": 240
   },
@@ -158,6 +166,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100230707297878339.webm",
+    "cover": "/covers/2100230707297878339.webp",
     "width": 426,
     "height": 240
   },
@@ -176,6 +185,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100246929611411501.webm",
+    "cover": "/covers/2100246929611411501.webp",
     "width": 426,
     "height": 240
   },
@@ -192,8 +202,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2090028872683110400/hDb2_sdU_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100249086209241213.webp",
+    "mediaType": "video",
+    "src": "/previews/2100249086209241213.webm",
+    "cover": "/covers/2100249086209241213.webp",
     "width": 426,
     "height": 240
   },
@@ -212,6 +223,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100278904447475920.webm",
+    "cover": "/covers/2100278904447475920.webp",
     "width": 426,
     "height": 240
   },
@@ -230,6 +242,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100281474943779254.webm",
+    "cover": "/covers/2100281474943779254.webp",
     "width": 426,
     "height": 240
   },
@@ -248,6 +261,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100281651930513460.webm",
+    "cover": "/covers/2100281651930513460.webp",
     "width": 426,
     "height": 240
   },
@@ -264,8 +278,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2053168723775602688/3gVy4y_E_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100287208166969746.webp",
+    "mediaType": "video",
+    "src": "/previews/2100287208166969746.webm",
+    "cover": "/covers/2100287208166969746.webp",
     "width": 426,
     "height": 240
   },
@@ -284,6 +299,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100287368221659289.webm",
+    "cover": "/covers/2100287368221659289.webp",
     "width": 426,
     "height": 240
   },
@@ -302,6 +318,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100290364657848538.webm",
+    "cover": "/covers/2100290364657848538.webp",
     "width": 426,
     "height": 240
   },
@@ -318,8 +335,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2065606807624773632/KP6eaDhA_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100301843507159443.webp",
+    "mediaType": "video",
+    "src": "/previews/2100301843507159443.webm",
+    "cover": "/covers/2100301843507159443.webp",
     "width": 426,
     "height": 240
   },
@@ -336,8 +354,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/1981874316502237184/Qfle1MFt_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100313645116952701.webp",
+    "mediaType": "video",
+    "src": "/previews/2100313645116952701.webm",
+    "cover": "/covers/2100313645116952701.webp",
     "width": 426,
     "height": 240
   },
@@ -354,8 +373,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2067437579251978240/sCczd797_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100314182201802811.webp",
+    "mediaType": "video",
+    "src": "/previews/2100314182201802811.webm",
+    "cover": "/covers/2100314182201802811.webp",
     "width": 426,
     "height": 240
   },
@@ -374,6 +394,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100315518930661861.webm",
+    "cover": "/covers/2100315518930661861.webp",
     "width": 426,
     "height": 240
   },
@@ -392,6 +413,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100319351610245565.webm",
+    "cover": "/covers/2100319351610245565.webp",
     "width": 426,
     "height": 240
   },
@@ -410,6 +432,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100320242895552791.webm",
+    "cover": "/covers/2100320242895552791.webp",
     "width": 426,
     "height": 240
   },
@@ -426,8 +449,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/920962798590595074/MHJaRnhd_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100321685081559542.webp",
+    "mediaType": "video",
+    "src": "/previews/2100321685081559542.webm",
+    "cover": "/covers/2100321685081559542.webp",
     "width": 426,
     "height": 240
   },
@@ -444,8 +468,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/1295403867157467137/R5zebTY__normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100325221932958134.webp",
+    "mediaType": "video",
+    "src": "/previews/2100325221932958134.webm",
+    "cover": "/covers/2100325221932958134.webp",
     "width": 426,
     "height": 240
   },
@@ -462,8 +487,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/1972999017551249408/kNdZGnUv_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100335929273524541.webp",
+    "mediaType": "video",
+    "src": "/previews/2100335929273524541.webm",
+    "cover": "/covers/2100335929273524541.webp",
     "width": 426,
     "height": 240
   },
@@ -482,6 +508,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100335978229690683.webm",
+    "cover": "/covers/2100335978229690683.webp",
     "width": 426,
     "height": 240
   },
@@ -500,6 +527,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100342554394865771.webm",
+    "cover": "/covers/2100342554394865771.webp",
     "width": 426,
     "height": 240
   },
@@ -518,6 +546,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100346121239544184.webm",
+    "cover": "/covers/2100346121239544184.webp",
     "width": 426,
     "height": 240
   },
@@ -536,6 +565,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100347770867458384.webm",
+    "cover": "/covers/2100347770867458384.webp",
     "width": 426,
     "height": 240
   },
@@ -554,6 +584,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100353122850001398.webm",
+    "cover": "/covers/2100353122850001398.webp",
     "width": 426,
     "height": 240
   },
@@ -572,6 +603,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100356151468585346.webm",
+    "cover": "/covers/2100356151468585346.webp",
     "width": 426,
     "height": 240
   },
@@ -590,6 +622,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100358880702181435.webm",
+    "cover": "/covers/2100358880702181435.webp",
     "width": 426,
     "height": 240
   },
@@ -608,6 +641,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100359236924637349.webm",
+    "cover": "/covers/2100359236924637349.webp",
     "width": 426,
     "height": 240
   },
@@ -626,6 +660,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100360029366784320.webm",
+    "cover": "/covers/2100360029366784320.webp",
     "width": 426,
     "height": 240
   },
@@ -644,6 +679,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100363928492790078.webm",
+    "cover": "/covers/2100363928492790078.webp",
     "width": 426,
     "height": 240
   },
@@ -662,6 +698,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100364868733812987.webm",
+    "cover": "/covers/2100364868733812987.webp",
     "width": 426,
     "height": 240
   },
@@ -680,6 +717,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100365075500404885.webm",
+    "cover": "/covers/2100365075500404885.webp",
     "width": 426,
     "height": 240
   },
@@ -698,6 +736,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100365587709112817.webm",
+    "cover": "/covers/2100365587709112817.webp",
     "width": 426,
     "height": 240
   },
@@ -716,6 +755,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100372930282573876.webm",
+    "cover": "/covers/2100372930282573876.webp",
     "width": 426,
     "height": 240
   },
@@ -734,6 +774,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100378132226203895.webm",
+    "cover": "/covers/2100378132226203895.webp",
     "width": 426,
     "height": 240
   },
@@ -752,6 +793,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100384606818333011.webm",
+    "cover": "/covers/2100384606818333011.webp",
     "width": 426,
     "height": 240
   },
@@ -770,6 +812,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100389642994323513.webm",
+    "cover": "/covers/2100389642994323513.webp",
     "width": 426,
     "height": 240
   },
@@ -788,6 +831,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100394212743159944.webm",
+    "cover": "/covers/2100394212743159944.webp",
     "width": 426,
     "height": 240
   },
@@ -804,8 +848,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2045072909153255426/hZhG5PBv_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100396115808190792.webp",
+    "mediaType": "video",
+    "src": "/previews/2100396115808190792.webm",
+    "cover": "/covers/2100396115808190792.webp",
     "width": 426,
     "height": 240
   },
@@ -824,6 +869,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100401460337135864.webm",
+    "cover": "/covers/2100401460337135864.webp",
     "width": 426,
     "height": 240
   },
@@ -842,6 +888,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100402012194218231.webm",
+    "cover": "/covers/2100402012194218231.webp",
     "width": 426,
     "height": 240
   },
@@ -858,8 +905,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2092791908619943936/CLVkNE2b_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100403581451210897.webp",
+    "mediaType": "video",
+    "src": "/previews/2100403581451210897.webm",
+    "cover": "/covers/2100403581451210897.webp",
     "width": 426,
     "height": 240
   },
@@ -878,6 +926,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100404532119269426.webm",
+    "cover": "/covers/2100404532119269426.webp",
     "width": 426,
     "height": 240
   },
@@ -896,6 +945,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100404711283188181.webm",
+    "cover": "/covers/2100404711283188181.webp",
     "width": 426,
     "height": 240
   },
@@ -912,8 +962,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/1664356523865432064/o_vRzLxa_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100408276949385668.webp",
+    "mediaType": "video",
+    "src": "/previews/2100408276949385668.webm",
+    "cover": "/covers/2100408276949385668.webp",
     "width": 426,
     "height": 240
   },
@@ -932,6 +983,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100411066966749359.webm",
+    "cover": "/covers/2100411066966749359.webp",
     "width": 426,
     "height": 240
   },
@@ -950,6 +1002,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100413257370800309.webm",
+    "cover": "/covers/2100413257370800309.webp",
     "width": 426,
     "height": 240
   },
@@ -966,8 +1019,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/1920019854100254720/KoBSpyy__normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100419750459519156.webp",
+    "mediaType": "video",
+    "src": "/previews/2100419750459519156.webm",
+    "cover": "/covers/2100419750459519156.webp",
     "width": 426,
     "height": 240
   },
@@ -984,8 +1038,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2095916068208246791/Oj_aUq3s_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100421526155657680.webp",
+    "mediaType": "video",
+    "src": "/previews/2100421526155657680.webm",
+    "cover": "/covers/2100421526155657680.webp",
     "width": 426,
     "height": 240
   },
@@ -1004,6 +1059,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100424918118863111.webm",
+    "cover": "/covers/2100424918118863111.webp",
     "width": 426,
     "height": 240
   },
@@ -1022,6 +1078,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100425426514350456.webm",
+    "cover": "/covers/2100425426514350456.webp",
     "width": 426,
     "height": 240
   },
@@ -1040,6 +1097,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100425868053008758.webm",
+    "cover": "/covers/2100425868053008758.webp",
     "width": 426,
     "height": 240
   },
@@ -1056,8 +1114,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/1727415759859552256/9rqaxXUR_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100426999546184123.webp",
+    "mediaType": "video",
+    "src": "/previews/2100426999546184123.webm",
+    "cover": "/covers/2100426999546184123.webp",
     "width": 426,
     "height": 240
   },
@@ -1076,6 +1135,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100440976640876925.webm",
+    "cover": "/covers/2100440976640876925.webp",
     "width": 426,
     "height": 240
   },
@@ -1092,8 +1152,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2008978282704760833/IW5OL9-w_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100441983357472917.webp",
+    "mediaType": "video",
+    "src": "/previews/2100441983357472917.webm",
+    "cover": "/covers/2100441983357472917.webp",
     "width": 426,
     "height": 240
   },
@@ -1112,6 +1173,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100448352424853666.webm",
+    "cover": "/covers/2100448352424853666.webp",
     "width": 426,
     "height": 240
   },
@@ -1128,8 +1190,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2033584797881110528/RfJ2iHpq_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100451279222755616.webp",
+    "mediaType": "video",
+    "src": "/previews/2100451279222755616.webm",
+    "cover": "/covers/2100451279222755616.webp",
     "width": 426,
     "height": 240
   },
@@ -1148,6 +1211,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100451281013969078.webm",
+    "cover": "/covers/2100451281013969078.webp",
     "width": 426,
     "height": 240
   },
@@ -1166,6 +1230,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100454070536351824.webm",
+    "cover": "/covers/2100454070536351824.webp",
     "width": 426,
     "height": 240
   },
@@ -1184,6 +1249,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100454623446278178.webm",
+    "cover": "/covers/2100454623446278178.webp",
     "width": 426,
     "height": 240
   },
@@ -1200,8 +1266,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2100186123863781376/FgGT5--U_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100457458514976840.webp",
+    "mediaType": "video",
+    "src": "/previews/2100457458514976840.webm",
+    "cover": "/covers/2100457458514976840.webp",
     "width": 426,
     "height": 240
   },
@@ -1220,6 +1287,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100457614073327754.webm",
+    "cover": "/covers/2100457614073327754.webp",
     "width": 426,
     "height": 240
   },
@@ -1238,6 +1306,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100458335405588607.webm",
+    "cover": "/covers/2100458335405588607.webp",
     "width": 426,
     "height": 240
   },
@@ -1256,6 +1325,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100462234434421208.webm",
+    "cover": "/covers/2100462234434421208.webp",
     "width": 426,
     "height": 240
   },
@@ -1274,6 +1344,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100465662867218857.webm",
+    "cover": "/covers/2100465662867218857.webp",
     "width": 426,
     "height": 240
   },
@@ -1290,8 +1361,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2090043817454145536/zbiwD88o_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100466530459017458.webp",
+    "mediaType": "video",
+    "src": "/previews/2100466530459017458.webm",
+    "cover": "/covers/2100466530459017458.webp",
     "width": 426,
     "height": 240
   },
@@ -1310,6 +1382,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100467548298899918.webm",
+    "cover": "/covers/2100467548298899918.webp",
     "width": 426,
     "height": 240
   },
@@ -1328,6 +1401,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100473581251748216.webm",
+    "cover": "/covers/2100473581251748216.webp",
     "width": 426,
     "height": 240
   },
@@ -1346,6 +1420,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100474943154827344.webm",
+    "cover": "/covers/2100474943154827344.webp",
     "width": 426,
     "height": 240
   },
@@ -1362,8 +1437,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/1862409363349975040/lDimQ__t_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100481938016669917.webp",
+    "mediaType": "video",
+    "src": "/previews/2100481938016669917.webm",
+    "cover": "/covers/2100481938016669917.webp",
     "width": 426,
     "height": 240
   },
@@ -1382,6 +1458,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100489858951073858.webm",
+    "cover": "/covers/2100489858951073858.webp",
     "width": 426,
     "height": 240
   },
@@ -1400,6 +1477,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100509548339408972.webm",
+    "cover": "/covers/2100509548339408972.webp",
     "width": 426,
     "height": 240
   },
@@ -1418,6 +1496,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100520134481735729.webm",
+    "cover": "/covers/2100520134481735729.webp",
     "width": 426,
     "height": 240
   },
@@ -1436,6 +1515,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100521764451131610.webm",
+    "cover": "/covers/2100521764451131610.webp",
     "width": 426,
     "height": 240
   },
@@ -1452,8 +1532,9 @@
       "avatarUrl": "https://pbs.twimg.com/profile_images/2047478459514175488/3DTGbkTt_normal.jpg",
       "isVerified": true
     },
-    "mediaType": "image",
-    "src": "/previews/2100523142754050072.webp",
+    "mediaType": "video",
+    "src": "/previews/2100523142754050072.webm",
+    "cover": "/covers/2100523142754050072.webp",
     "width": 426,
     "height": 240
   },
@@ -1472,6 +1553,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100524915007144289.webm",
+    "cover": "/covers/2100524915007144289.webp",
     "width": 426,
     "height": 240
   },
@@ -1490,6 +1572,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100529273186472318.webm",
+    "cover": "/covers/2100529273186472318.webp",
     "width": 426,
     "height": 240
   },
@@ -1508,6 +1591,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100533086912139585.webm",
+    "cover": "/covers/2100533086912139585.webp",
     "width": 426,
     "height": 240
   },
@@ -1526,6 +1610,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100534723177263336.webm",
+    "cover": "/covers/2100534723177263336.webp",
     "width": 426,
     "height": 240
   },
@@ -1544,6 +1629,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100539883836018697.webm",
+    "cover": "/covers/2100539883836018697.webp",
     "width": 426,
     "height": 240
   },
@@ -1562,6 +1648,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100543705694560657.webm",
+    "cover": "/covers/2100543705694560657.webp",
     "width": 426,
     "height": 240
   },
@@ -1580,6 +1667,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100544998391349310.webm",
+    "cover": "/covers/2100544998391349310.webp",
     "width": 426,
     "height": 240
   },
@@ -1598,6 +1686,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100545285659480128.webm",
+    "cover": "/covers/2100545285659480128.webp",
     "width": 426,
     "height": 240
   },
@@ -1616,6 +1705,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100545295201288678.webm",
+    "cover": "/covers/2100545295201288678.webp",
     "width": 426,
     "height": 240
   },
@@ -1634,6 +1724,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100545412780220877.webm",
+    "cover": "/covers/2100545412780220877.webp",
     "width": 426,
     "height": 240
   },
@@ -1652,6 +1743,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100545849759805807.webm",
+    "cover": "/covers/2100545849759805807.webp",
     "width": 426,
     "height": 240
   },
@@ -1670,6 +1762,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100546231554760841.webm",
+    "cover": "/covers/2100546231554760841.webp",
     "width": 426,
     "height": 240
   },
@@ -1688,6 +1781,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100554525849391602.webm",
+    "cover": "/covers/2100554525849391602.webp",
     "width": 426,
     "height": 240
   },
@@ -1706,6 +1800,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100561859581456838.webm",
+    "cover": "/covers/2100561859581456838.webp",
     "width": 426,
     "height": 240
   },
@@ -1724,6 +1819,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100562951304270189.webm",
+    "cover": "/covers/2100562951304270189.webp",
     "width": 426,
     "height": 240
   },
@@ -1742,6 +1838,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100570517954838897.webm",
+    "cover": "/covers/2100570517954838897.webp",
     "width": 426,
     "height": 240
   },
@@ -1760,6 +1857,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100571948145058009.webm",
+    "cover": "/covers/2100571948145058009.webp",
     "width": 426,
     "height": 240
   },
@@ -1778,6 +1876,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100572184435417305.webm",
+    "cover": "/covers/2100572184435417305.webp",
     "width": 426,
     "height": 240
   },
@@ -1796,6 +1895,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100576921629163848.webm",
+    "cover": "/covers/2100576921629163848.webp",
     "width": 426,
     "height": 240
   },
@@ -1814,6 +1914,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100577481698734255.webm",
+    "cover": "/covers/2100577481698734255.webp",
     "width": 426,
     "height": 240
   },
@@ -1832,6 +1933,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100579680428736981.webm",
+    "cover": "/covers/2100579680428736981.webp",
     "width": 426,
     "height": 240
   },
@@ -1850,6 +1952,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100580054401241525.webm",
+    "cover": "/covers/2100580054401241525.webp",
     "width": 426,
     "height": 240
   },
@@ -1868,6 +1971,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100585126652481915.webm",
+    "cover": "/covers/2100585126652481915.webp",
     "width": 426,
     "height": 240
   },
@@ -1886,6 +1990,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100587614927741435.webm",
+    "cover": "/covers/2100587614927741435.webp",
     "width": 426,
     "height": 240
   },
@@ -1904,6 +2009,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100590289521951094.webm",
+    "cover": "/covers/2100590289521951094.webp",
     "width": 426,
     "height": 240
   },
@@ -1922,6 +2028,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100591409447174261.webm",
+    "cover": "/covers/2100591409447174261.webp",
     "width": 426,
     "height": 240
   },
@@ -1940,6 +2047,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100597575829385694.webm",
+    "cover": "/covers/2100597575829385694.webp",
     "width": 426,
     "height": 240
   },
@@ -1958,6 +2066,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100598525470048646.webm",
+    "cover": "/covers/2100598525470048646.webp",
     "width": 426,
     "height": 240
   },
@@ -1976,6 +2085,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100606378184171682.webm",
+    "cover": "/covers/2100606378184171682.webp",
     "width": 426,
     "height": 240
   },
@@ -1994,6 +2104,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100606445758898287.webm",
+    "cover": "/covers/2100606445758898287.webp",
     "width": 426,
     "height": 240
   },
@@ -2012,6 +2123,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100606501501169726.webm",
+    "cover": "/covers/2100606501501169726.webp",
     "width": 426,
     "height": 240
   },
@@ -2030,6 +2142,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100607727978369138.webm",
+    "cover": "/covers/2100607727978369138.webp",
     "width": 426,
     "height": 240
   },
@@ -2048,6 +2161,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100608556823388486.webm",
+    "cover": "/covers/2100608556823388486.webp",
     "width": 426,
     "height": 240
   },
@@ -2066,6 +2180,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100611323562233976.webm",
+    "cover": "/covers/2100611323562233976.webp",
     "width": 426,
     "height": 240
   },
@@ -2084,6 +2199,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100611596859093082.webm",
+    "cover": "/covers/2100611596859093082.webp",
     "width": 426,
     "height": 240
   },
@@ -2102,6 +2218,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100615718463295984.webm",
+    "cover": "/covers/2100615718463295984.webp",
     "width": 426,
     "height": 240
   },
@@ -2120,6 +2237,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100615772053877164.webm",
+    "cover": "/covers/2100615772053877164.webp",
     "width": 426,
     "height": 240
   },
@@ -2138,6 +2256,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100616111771238881.webm",
+    "cover": "/covers/2100616111771238881.webp",
     "width": 426,
     "height": 240
   },
@@ -2156,6 +2275,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100616458493685840.webm",
+    "cover": "/covers/2100616458493685840.webp",
     "width": 426,
     "height": 240
   },
@@ -2174,6 +2294,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100616464437055916.webm",
+    "cover": "/covers/2100616464437055916.webp",
     "width": 426,
     "height": 240
   },
@@ -2192,6 +2313,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100618066459553796.webm",
+    "cover": "/covers/2100618066459553796.webp",
     "width": 426,
     "height": 240
   },
@@ -2210,6 +2332,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100625153109504483.webm",
+    "cover": "/covers/2100625153109504483.webp",
     "width": 426,
     "height": 240
   },
@@ -2228,6 +2351,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100625252346745193.webm",
+    "cover": "/covers/2100625252346745193.webp",
     "width": 426,
     "height": 240
   },
@@ -2246,6 +2370,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100625650927210738.webm",
+    "cover": "/covers/2100625650927210738.webp",
     "width": 426,
     "height": 240
   },
@@ -2264,6 +2389,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100625826559537379.webm",
+    "cover": "/covers/2100625826559537379.webp",
     "width": 426,
     "height": 240
   },
@@ -2282,6 +2408,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100626211731046819.webm",
+    "cover": "/covers/2100626211731046819.webp",
     "width": 426,
     "height": 240
   },
@@ -2300,6 +2427,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100626286687211589.webm",
+    "cover": "/covers/2100626286687211589.webp",
     "width": 426,
     "height": 240
   },
@@ -2318,6 +2446,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100626348725207104.webm",
+    "cover": "/covers/2100626348725207104.webp",
     "width": 426,
     "height": 240
   },
@@ -2336,6 +2465,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100629073542218203.webm",
+    "cover": "/covers/2100629073542218203.webp",
     "width": 426,
     "height": 240
   },
@@ -2354,6 +2484,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100634359099232678.webm",
+    "cover": "/covers/2100634359099232678.webp",
     "width": 426,
     "height": 240
   },
@@ -2372,6 +2503,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100635102464069714.webm",
+    "cover": "/covers/2100635102464069714.webp",
     "width": 426,
     "height": 240
   },
@@ -2390,6 +2522,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100635248773967985.webm",
+    "cover": "/covers/2100635248773967985.webp",
     "width": 426,
     "height": 240
   },
@@ -2408,6 +2541,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100636176457642139.webm",
+    "cover": "/covers/2100636176457642139.webp",
     "width": 426,
     "height": 240
   },
@@ -2426,6 +2560,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100644221279424925.webm",
+    "cover": "/covers/2100644221279424925.webp",
     "width": 426,
     "height": 240
   },
@@ -2444,6 +2579,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100645966785478932.webm",
+    "cover": "/covers/2100645966785478932.webp",
     "width": 426,
     "height": 240
   },
@@ -2462,6 +2598,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100646448324833512.webm",
+    "cover": "/covers/2100646448324833512.webp",
     "width": 426,
     "height": 240
   },
@@ -2480,6 +2617,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100646513412292873.webm",
+    "cover": "/covers/2100646513412292873.webp",
     "width": 426,
     "height": 240
   },
@@ -2498,6 +2636,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100654628396233118.webm",
+    "cover": "/covers/2100654628396233118.webp",
     "width": 426,
     "height": 240
   },
@@ -2516,6 +2655,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100654891756589230.webm",
+    "cover": "/covers/2100654891756589230.webp",
     "width": 426,
     "height": 240
   },
@@ -2534,6 +2674,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100668908227162567.webm",
+    "cover": "/covers/2100668908227162567.webp",
     "width": 426,
     "height": 240
   },
@@ -2552,6 +2693,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100670692811284602.webm",
+    "cover": "/covers/2100670692811284602.webp",
     "width": 426,
     "height": 240
   },
@@ -2570,6 +2712,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100672542386102339.webm",
+    "cover": "/covers/2100672542386102339.webp",
     "width": 426,
     "height": 240
   },
@@ -2588,6 +2731,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100673493452914908.webm",
+    "cover": "/covers/2100673493452914908.webp",
     "width": 426,
     "height": 240
   },
@@ -2606,6 +2750,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100679300756435135.webm",
+    "cover": "/covers/2100679300756435135.webp",
     "width": 426,
     "height": 240
   },
@@ -2624,6 +2769,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100679584878325861.webm",
+    "cover": "/covers/2100679584878325861.webp",
     "width": 426,
     "height": 240
   },
@@ -2642,6 +2788,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100681083176226921.webm",
+    "cover": "/covers/2100681083176226921.webp",
     "width": 426,
     "height": 240
   },
@@ -2660,6 +2807,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100689091058921635.webm",
+    "cover": "/covers/2100689091058921635.webp",
     "width": 426,
     "height": 240
   },
@@ -2678,6 +2826,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100690568947159309.webm",
+    "cover": "/covers/2100690568947159309.webp",
     "width": 426,
     "height": 240
   },
@@ -2696,6 +2845,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100694549362553153.webm",
+    "cover": "/covers/2100694549362553153.webp",
     "width": 426,
     "height": 240
   },
@@ -2714,6 +2864,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100699124945326537.webm",
+    "cover": "/covers/2100699124945326537.webp",
     "width": 426,
     "height": 240
   },
@@ -2732,6 +2883,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100700176444731780.webm",
+    "cover": "/covers/2100700176444731780.webp",
     "width": 426,
     "height": 240
   },
@@ -2750,6 +2902,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100702649834188855.webm",
+    "cover": "/covers/2100702649834188855.webp",
     "width": 426,
     "height": 240
   },
@@ -2768,6 +2921,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100704841786114215.webm",
+    "cover": "/covers/2100704841786114215.webp",
     "width": 426,
     "height": 240
   },
@@ -2786,6 +2940,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100705558512963602.webm",
+    "cover": "/covers/2100705558512963602.webp",
     "width": 426,
     "height": 240
   },
@@ -2804,6 +2959,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100709591537598666.webm",
+    "cover": "/covers/2100709591537598666.webp",
     "width": 426,
     "height": 240
   },
@@ -2822,6 +2978,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100717184259334592.webm",
+    "cover": "/covers/2100717184259334592.webp",
     "width": 426,
     "height": 240
   },
@@ -2840,6 +2997,26 @@
     },
     "mediaType": "video",
     "src": "/previews/2100725570590126399.webm",
+    "cover": "/covers/2100725570590126399.webp",
+    "width": 426,
+    "height": 240
+  },
+  {
+    "id": "2100727923942805869",
+    "url": "https://x.com/t_andou/status/2100727923942805869",
+    "createdAt": "2026-09-17T23:25:41.000Z",
+    "score": 2,
+    "category": "turn_strategy",
+    "description": "A Qwen2.5-1.5B model autonomously played a turn-based game to a 10,000-point score over roughly 4 hours of continuous play.",
+    "author": {
+      "name": "あんどう@AI開発者",
+      "handle": "t_andou",
+      "avatarUrl": "https://pbs.twimg.com/profile_images/1330856508041568257/bWjf2hnl_normal.jpg",
+      "isVerified": false
+    },
+    "mediaType": "video",
+    "src": "/previews/2100727923942805869.webm",
+    "cover": "/covers/2100727923942805869.webp",
     "width": 426,
     "height": 240
   },
@@ -2858,6 +3035,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100734646824902713.webm",
+    "cover": "/covers/2100734646824902713.webp",
     "width": 426,
     "height": 240
   },
@@ -2876,6 +3054,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100734784049729694.webm",
+    "cover": "/covers/2100734784049729694.webp",
     "width": 426,
     "height": 240
   },
@@ -2894,6 +3073,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100734952274907166.webm",
+    "cover": "/covers/2100734952274907166.webp",
     "width": 426,
     "height": 240
   },
@@ -2912,6 +3092,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100735141039747159.webm",
+    "cover": "/covers/2100735141039747159.webp",
     "width": 426,
     "height": 240
   },
@@ -2930,6 +3111,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100736122502390211.webm",
+    "cover": "/covers/2100736122502390211.webp",
     "width": 426,
     "height": 240
   },
@@ -2948,6 +3130,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100736854928806233.webm",
+    "cover": "/covers/2100736854928806233.webp",
     "width": 426,
     "height": 240
   },
@@ -2966,6 +3149,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100743263414280676.webm",
+    "cover": "/covers/2100743263414280676.webp",
     "width": 426,
     "height": 240
   },
@@ -2984,6 +3168,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100743740549702044.webm",
+    "cover": "/covers/2100743740549702044.webp",
     "width": 426,
     "height": 240
   },
@@ -3002,6 +3187,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100752206601560198.webm",
+    "cover": "/covers/2100752206601560198.webp",
     "width": 426,
     "height": 240
   },
@@ -3020,6 +3206,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100756930054504776.webm",
+    "cover": "/covers/2100756930054504776.webp",
     "width": 426,
     "height": 240
   },
@@ -3038,6 +3225,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100773901597061515.webm",
+    "cover": "/covers/2100773901597061515.webp",
     "width": 426,
     "height": 240
   },
@@ -3056,6 +3244,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100779833546453376.webm",
+    "cover": "/covers/2100779833546453376.webp",
     "width": 426,
     "height": 240
   },
@@ -3074,6 +3263,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100780008193020049.webm",
+    "cover": "/covers/2100780008193020049.webp",
     "width": 426,
     "height": 240
   },
@@ -3092,6 +3282,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100781515131047971.webm",
+    "cover": "/covers/2100781515131047971.webp",
     "width": 426,
     "height": 240
   },
@@ -3110,6 +3301,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100781822959571004.webm",
+    "cover": "/covers/2100781822959571004.webp",
     "width": 426,
     "height": 240
   },
@@ -3128,6 +3320,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100811463048810560.webm",
+    "cover": "/covers/2100811463048810560.webp",
     "width": 426,
     "height": 240
   },
@@ -3146,6 +3339,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100820581444980736.webm",
+    "cover": "/covers/2100820581444980736.webp",
     "width": 426,
     "height": 240
   },
@@ -3164,6 +3358,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100826409115758722.webm",
+    "cover": "/covers/2100826409115758722.webp",
     "width": 426,
     "height": 240
   },
@@ -3182,6 +3377,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100827289349132657.webm",
+    "cover": "/covers/2100827289349132657.webp",
     "width": 426,
     "height": 240
   },
@@ -3200,6 +3396,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100827590781214981.webm",
+    "cover": "/covers/2100827590781214981.webp",
     "width": 426,
     "height": 240
   },
@@ -3218,6 +3415,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100829343954173965.webm",
+    "cover": "/covers/2100829343954173965.webp",
     "width": 426,
     "height": 240
   },
@@ -3236,6 +3434,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100846091281506370.webm",
+    "cover": "/covers/2100846091281506370.webp",
     "width": 426,
     "height": 240
   },
@@ -3254,6 +3453,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100846150056309107.webm",
+    "cover": "/covers/2100846150056309107.webp",
     "width": 426,
     "height": 240
   },
@@ -3272,6 +3472,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100864234523685146.webm",
+    "cover": "/covers/2100864234523685146.webp",
     "width": 426,
     "height": 240
   },
@@ -3290,6 +3491,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100873520951808403.webm",
+    "cover": "/covers/2100873520951808403.webp",
     "width": 426,
     "height": 240
   },
@@ -3308,6 +3510,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100882207879434359.webm",
+    "cover": "/covers/2100882207879434359.webp",
     "width": 426,
     "height": 240
   },
@@ -3326,6 +3529,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100882869334003767.webm",
+    "cover": "/covers/2100882869334003767.webp",
     "width": 426,
     "height": 240
   },
@@ -3344,6 +3548,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100891358223388966.webm",
+    "cover": "/covers/2100891358223388966.webp",
     "width": 426,
     "height": 240
   },
@@ -3362,6 +3567,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100891604735099103.webm",
+    "cover": "/covers/2100891604735099103.webp",
     "width": 426,
     "height": 240
   },
@@ -3380,6 +3586,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100893095147565523.webm",
+    "cover": "/covers/2100893095147565523.webp",
     "width": 426,
     "height": 240
   },
@@ -3398,6 +3605,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100898307186864593.webm",
+    "cover": "/covers/2100898307186864593.webp",
     "width": 426,
     "height": 240
   },
@@ -3416,6 +3624,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100900293928173682.webm",
+    "cover": "/covers/2100900293928173682.webp",
     "width": 426,
     "height": 240
   },
@@ -3434,6 +3643,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100902242970636610.webm",
+    "cover": "/covers/2100902242970636610.webp",
     "width": 426,
     "height": 240
   },
@@ -3452,6 +3662,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100920115181019407.webm",
+    "cover": "/covers/2100920115181019407.webp",
     "width": 426,
     "height": 240
   },
@@ -3470,6 +3681,7 @@
     },
     "mediaType": "video",
     "src": "/previews/2100928490367230201.webm",
+    "cover": "/covers/2100928490367230201.webp",
     "width": 426,
     "height": 240
   }
