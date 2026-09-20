@@ -33,7 +33,10 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
       <ol class="tool-list" data-tool-list>
         {initialTools.map((tool) => (
           <li class="tool-row">
-            <a class="tool-name" href={tool.url} target="_blank" rel="noreferrer"><span class="tool-identity"><strong>{tool.name}</strong><small>{tool.url}</small></span><Icon name="material-symbols:arrow-outward-rounded" size={16} aria-hidden="true" /></a>
+            <div class="tool-identity">
+              <button class="tool-detail-trigger" type="button"><strong>{tool.name}</strong></button>
+              <a class="tool-external" href={tool.url} target="_blank" rel="noreferrer" aria-label={`Open ${tool.name} repository`}><small>{tool.url}</small><Icon name="material-symbols:arrow-outward-rounded" size={12} aria-hidden="true" /></a>
+            </div>
             <p class="tool-description line-clamp-2">{tool.description}</p>
             <div class="tool-stats" aria-label={formatCount(tool.stars) + ' GitHub stars and ' + formatCount(tool.forks) + ' forks'}>
               <span title="GitHub stars"><Icon name="material-symbols:star-rounded" size={16} aria-hidden="true" />{formatCount(tool.stars)}</span>
@@ -68,14 +71,17 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     };
     const makeRow = (tool: ClientTool) => {
       const row = document.createElement('li'); row.className = 'tool-row';
-      const name = document.createElement('a'); name.className = 'tool-name'; name.href = tool.url; name.target = '_blank'; name.rel = 'noreferrer';
-      const identity = document.createElement('span'); identity.className = 'tool-identity';
+      const name = document.createElement('button'); name.className = 'tool-detail-trigger'; name.type = 'button';
       const title = document.createElement('strong'); title.textContent = tool.name;
-      const url = document.createElement('small'); url.textContent = tool.url; identity.append(title, url);
-      const arrow = document.createElement('span'); arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true'); name.append(identity, arrow);
+      name.append(title);
+      const external = document.createElement('a'); external.className = 'tool-external'; external.href = tool.url; external.target = '_blank'; external.rel = 'noreferrer'; external.setAttribute('aria-label', 'Open ' + tool.name + ' repository');
+      const url = document.createElement('small'); url.textContent = tool.url;
+      const arrow = document.createElement('span'); arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true');
+      external.append(url, arrow);
+      const identity = document.createElement('span'); identity.className = 'tool-identity'; identity.append(name, external);
       const description = document.createElement('p'); description.className = 'tool-description line-clamp-2'; description.textContent = tool.description;
       const stats = document.createElement('div'); stats.className = 'tool-stats'; stats.textContent = '★ ' + count(tool.stars) + '  ⑂ ' + count(tool.forks); stats.setAttribute('aria-label', count(tool.stars) + ' GitHub stars and ' + count(tool.forks) + ' forks');
-      row.append(name, description, stats); return row;
+      row.append(identity, description, stats); return row;
     };
     const render = () => {
       if (!list || !summary || !empty || !pagination) return;
@@ -104,11 +110,11 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     const dialogLink = toolDialog.querySelector("a");
     let toolReturnFocus: HTMLElement | null = null;
     const showToolDetails = (row: HTMLElement, trigger: HTMLElement) => {
-      const link = row.querySelector<HTMLAnchorElement>(".tool-name");
+      const link = row.querySelector<HTMLAnchorElement>(".tool-external");
       const description = row.querySelector(".tool-description");
       if (!link || !dialogTitle || !dialogDescription || !dialogLink) return;
       toolReturnFocus = trigger;
-      dialogTitle.textContent = link.querySelector("strong")?.textContent || "";
+      dialogTitle.textContent = row.querySelector(".tool-detail-trigger strong")?.textContent || "";
       dialogDescription.textContent = description?.textContent || "";
       dialogLink.href = link.href;
       toolDialog.showModal();
@@ -118,10 +124,10 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
       if (!(target instanceof HTMLElement)) return;
       const row = target.closest<HTMLElement>(".tool-row");
       if (!row) return;
-      const link = target.closest<HTMLAnchorElement>(".tool-name");
-      if (link && target.closest("svg")) return;
+      if (target.closest(".tool-external")) return;
+      const trigger = target.closest<HTMLElement>(".tool-detail-trigger");
       event.preventDefault();
-      showToolDetails(row, link || row);
+      showToolDetails(row, trigger || row);
     });
     toolDialog.querySelector("button")?.addEventListener("click", () => toolDialog.close());
     toolDialog.addEventListener("click", (event) => { if (event.target === toolDialog) toolDialog.close(); });
@@ -147,13 +153,13 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
   [data-tool-summary] { margin: 0; flex: none; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
   .tool-list { margin: 0; padding: 0; list-style: none; }
   .tool-row { min-height: 94px; padding: 16px 0; display: grid; grid-template-columns: minmax(180px, .78fr) minmax(0, 2fr) auto; align-items: center; gap: 20px; border-bottom: 1px solid var(--line); }
-  .tool-name { min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 5px; letter-spacing: -.015em; }
   .tool-identity { min-width: 0; display: grid; gap: 3px; }
-  .tool-identity strong, .tool-identity small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .tool-identity strong { font-size: 14px; font-weight: 700; }
-  .tool-identity small { color: var(--muted); font-size: 11px; font-weight: 600; }
-  .tool-name:hover { color: var(--accent); }
-  .tool-name:hover small { color: currentColor; }
+  .tool-detail-trigger { min-width: 0; padding: 0; border: 0; background: transparent; color: inherit; display: block; cursor: pointer; overflow: hidden; text-align: left; text-overflow: ellipsis; white-space: nowrap; letter-spacing: -.015em; }
+  .tool-detail-trigger strong { font-size: 14px; font-weight: 700; }
+  .tool-external { min-width: 0; display: inline-flex; align-items: center; gap: 4px; overflow: hidden; color: var(--muted); }
+  .tool-external small { overflow: hidden; font-size: 11px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+  .tool-external span { flex: none; font-size: 12px; }
+  .tool-detail-trigger:hover, .tool-detail-trigger:focus-visible, .tool-external:hover, .tool-external:focus-visible { color: var(--accent); }
   .tool-description { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
   .tool-stats { min-width: 100px; display: flex; justify-content: flex-end; gap: 12px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: pre; }
   .pagination { margin-top: 26px; display: flex; align-items: center; gap: 6px; }
@@ -162,5 +168,5 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
   .pagination button:disabled { opacity: .4; cursor: not-allowed; }
   .empty-state { margin: 48px 0; color: var(--muted); text-align: center; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-  @media (max-width: 720px) { .tools-page { padding-block: 38px 58px; } .directory-toolbar { min-height: 64px; } .tool-row { min-height: 0; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 14px; } .tool-description { grid-column: 1 / -1; } .tool-stats { min-width: 0; } }
+  @media (max-width: 720px) { .tools-page { padding-block: 38px 58px; } .directory-toolbar { min-height: 64px; } .tool-row { min-height: 0; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 14px; } .tool-external { grid-column: 1; } .tool-description { grid-column: 1 / -1; } .tool-stats { min-width: 0; } }
 </style>
