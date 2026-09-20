@@ -5,7 +5,13 @@ import awesomeData from '../data/awesome.json';
 
 type Resource = { id: string; name: string; url: string; description: string };
 const decodeName = (value: string) => value.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"');
-const resources = [...(awesomeData as Resource[])].sort((a, b) => decodeName(a.name).localeCompare(decodeName(b.name), 'en'));
+const faviconIds = new Set(['awesome_10891cc23225ffb6', 'awesome_11ae781c8586e39b', 'awesome_1e65d16fa94d1749', 'awesome_4a7e5475763d0192', 'awesome_6bf2c1edd7dea1f8', 'awesome_7e265230bdf11e22']);
+const resources = [...(awesomeData as Resource[])]
+  .map((resource) => {
+    const hostname = new URL(resource.url).hostname.replace(/^www\./, '');
+    return { ...resource, title: decodeName(resource.name), hostname, github: hostname === 'github.com', favicon: faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
+  })
+  .sort((a, b) => a.title.localeCompare(b.title, 'en'));
 ---
 
 <BaseLayout title="Information — jev.info" description="References and community resources for the Jev ecosystem.">
@@ -19,9 +25,8 @@ const resources = [...(awesomeData as Resource[])].sort((a, b) => decodeName(a.n
       <div>
         <p class="section-label">01 / ABOUT JEV</p>
         <h2 id="about-heading">A practical introduction is on its way.</h2>
-        <p>This section will explain what Jev is and how it is used.</p>
       </div>
-      <div class="construction-mark" aria-label="Under construction"><Icon name="material-symbols:construction-rounded" size={30} aria-hidden="true" /></div>
+      <div class="construction-mark" aria-label="Under construction"><Icon name="material-symbols:construction-rounded" size={26} aria-hidden="true" /></div>
     </section>
 
     <section class="resources" aria-labelledby="resources-heading">
@@ -32,12 +37,18 @@ const resources = [...(awesomeData as Resource[])].sort((a, b) => decodeName(a.n
         </div>
         <span>{resources.length} links</span>
       </div>
-      <ul>
+      <ul class="resource-list">
         {resources.map((resource) => (
           <li>
-            <a href={resource.url} target="_blank" rel="noreferrer" title={decodeName(resource.name)}>
-              <span>{decodeName(resource.name)}</span>
-              <Icon name="material-symbols:arrow-outward-rounded" size={18} aria-hidden="true" />
+            <a href={resource.url} target="_blank" rel="noreferrer" title={resource.title}>
+              <span class="resource-icon" aria-hidden="true">
+                {resource.github ? <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.67 7.67 0 0 1 8 4.86c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg> : resource.favicon ? <img src={resource.favicon} alt="" width="18" height="18" loading="lazy" /> : <span>{resource.hostname.slice(0, 1).toUpperCase()}</span>}
+              </span>
+              <span class="resource-copy">
+                <strong>{resource.title}</strong>
+                <small>{resource.hostname}</small>
+              </span>
+              <Icon class="resource-arrow" name="material-symbols:arrow-outward-rounded" size={17} aria-hidden="true" />
             </a>
           </li>
         ))}
@@ -53,17 +64,22 @@ const resources = [...(awesomeData as Resource[])].sort((a, b) => decodeName(a.n
   h1, h2 { margin: 0; letter-spacing: -.055em; }
   h1 { font-size: clamp(28px, 4vw, 32px); }
   h2 { font-size: clamp(20px, 3vw, 26px); line-height: 1.13; }
-  .about-panel { min-height: 212px; padding: 26px 0; display: flex; justify-content: space-between; gap: 28px; border-bottom: 1px solid var(--line); }
+  .about-panel { min-height: 156px; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; border-bottom: 1px solid var(--line); }
   .about-panel h2 { max-width: 480px; }
-  .about-panel p:not(.section-label) { max-width: 440px; margin: 12px 0 0; color: var(--muted); line-height: 1.55; }
-  .construction-mark { width: 76px; height: 76px; flex: none; display: grid; place-items: center; border: 1px solid var(--line); color: var(--muted); }
-  .resources { margin-top: 58px; }
+  .construction-mark { width: 52px; height: 52px; flex: none; display: grid; place-items: center; border: 1px solid var(--line); color: var(--muted); }
+  .resources { margin-top: 50px; }
   .resources-heading { padding-bottom: 20px; display: flex; align-items: end; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--ink); }
   .resources-heading > span { flex: none; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-  ul { margin: 0; padding: 0; list-style: none; }
-  li { border-bottom: 1px solid var(--line); }
-  li a { min-height: 57px; padding: 12px 1px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-  li a:hover { color: var(--accent); }
-  li a span { overflow: hidden; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
-  @media (max-width: 720px) { .information-page { padding-block: 38px 58px; } .about-panel { min-height: 190px; } .resources { margin-top: 42px; } }
+  .resource-list { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; border-left: 1px solid var(--line); }
+  .resource-list li { min-width: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .resource-list a { min-height: 66px; padding: 11px 13px; display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+  .resource-list a:hover { background: var(--surface); color: var(--accent); }
+  .resource-icon { width: 24px; height: 24px; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; color: var(--muted); font-size: 11px; font-weight: 750; }
+  .resource-icon img, .github-icon { width: 18px; height: 18px; object-fit: contain; }
+  .resource-copy { min-width: 0; display: grid; gap: 3px; }
+  .resource-copy strong, .resource-copy small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .resource-copy strong { font-size: 13px; font-weight: 680; }
+  .resource-copy small { color: var(--muted); font-size: 12px; }
+  .resource-arrow { color: var(--muted); }
+  @media (max-width: 720px) { .information-page { padding-block: 38px 58px; } .resources { margin-top: 42px; } .resource-list { grid-template-columns: 1fr; } }
 </style>
