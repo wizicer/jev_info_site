@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "update:metrics": "node scripts/update-repository-metrics.mjs"
+    "update:metrics": "node --env-file=../.env scripts/update-repository-metrics.mjs"
   },
   "dependencies": {
     "@iconify-json/material-symbols": "^1.2.20",
