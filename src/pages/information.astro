@@ -7,6 +7,7 @@ import metricsData from '../data/repository-metrics.json';
 type Resource = { id: string; name: string; url: string; description: string };
 type ResourceMetrics = Record<string, { stars: number; forks: number }>;
 const resourceMetrics = (metricsData.awesome || {}) as ResourceMetrics;
+const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
 const decodeName = (value: string) => value.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"');
 const faviconIds = new Set(['awesome_10891cc23225ffb6', 'awesome_11ae781c8586e39b', 'awesome_1e65d16fa94d1749', 'awesome_4a7e5475763d0192', 'awesome_6bf2c1edd7dea1f8', 'awesome_7e265230bdf11e22']);
 const resources = [...(awesomeData as Resource[])]
@@ -51,6 +52,7 @@ const resources = [...(awesomeData as Resource[])]
                 <strong>{resource.title}</strong>
                 <small>{resource.displayUrl}</small>
               </span>
+              {resource.github && resource.stars >= 0 && <span class="resource-stars" title="GitHub stars"><Icon name="material-symbols:star-rounded" size={13} aria-hidden="true" />{formatCount(resource.stars)}</span>}
               <Icon class="resource-arrow" name="material-symbols:arrow-outward-rounded" size={17} aria-hidden="true" />
             </a>
           </li>
@@ -86,7 +88,7 @@ const resources = [...(awesomeData as Resource[])]
   .resource-list { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; border-left: 1px solid var(--line); }
   .resource-group-label { grid-column: 1 / -1; padding: 12px 11px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 760; letter-spacing: .1em; text-transform: uppercase; }
   .resource-list li { min-width: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .resource-list a { min-height: 50px; padding: 8px 11px; display: grid; grid-template-columns: 26px minmax(0, .9fr) minmax(0, 1fr) auto; align-items: center; gap: 9px; }
+  .resource-list a { min-height: 50px; padding: 8px 11px; display: grid; grid-template-columns: 26px minmax(0, .9fr) minmax(0, 1fr) auto auto; align-items: center; gap: 9px; }
   .resource-list a:hover { background: var(--surface); color: var(--accent); }
   .resource-icon { width: 24px; height: 24px; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; color: var(--muted); font-size: 11px; font-weight: 750; }
   .resource-icon img, .github-icon { width: 18px; height: 18px; object-fit: contain; }
@@ -94,6 +96,7 @@ const resources = [...(awesomeData as Resource[])]
   .resource-copy strong, .resource-copy small { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .resource-copy strong { font-size: 13px; font-weight: 680; }
   .resource-copy small { color: var(--muted); font-size: 11px; }
+  .resource-stars { display: inline-flex; align-items: center; gap: 3px; padding: 3px 5px; border: 1px solid var(--line); color: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .resource-arrow { color: var(--muted); }
   @media (max-width: 720px) { .information-page { padding-block: 38px 58px; } .resources { margin-top: 42px; } .resource-list { grid-template-columns: 1fr; } }
 </style>
