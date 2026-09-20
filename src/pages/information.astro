@@ -15,7 +15,7 @@ const primaryResourceId = 'site_jev_info';
 const resources = [siteMetadata.communityResources.primary as Resource, ...(awesomeData as Resource[])]
   .map((resource) => {
     const hostname = new URL(resource.url).hostname.replace(/^www\./, '');
-    return { ...resource, stars: resourceMetrics[resource.id]?.stars ?? -1, forks: resourceMetrics[resource.id]?.forks ?? -1, title: decodeName(resource.name), hostname, displayUrl: resource.url.replace(/^https?:\/\//, '').replace(/\/$/, ''), github: hostname === 'github.com', favicon: faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
+    return { ...resource, stars: resourceMetrics[resource.id]?.stars ?? -1, forks: resourceMetrics[resource.id]?.forks ?? -1, title: decodeName(resource.name), hostname, displayUrl: resource.url.replace(/^https?:\/\//, '').replace(/\/$/, ''), github: hostname === 'github.com', favicon: resource.id === primaryResourceId ? '/favicon/' + primaryResourceId + '.svg' : faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
   })
   .sort((a, b) => Number(a.id !== primaryResourceId) - Number(b.id !== primaryResourceId) || Number(a.github) - Number(b.github) || (!a.github ? a.title.localeCompare(b.title, 'en') : b.stars - a.stars || b.forks - a.forks || a.title.localeCompare(b.title, 'en')));
 ---
