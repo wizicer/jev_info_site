@@ -1,0 +1,123 @@
+---
+import { Icon } from 'astro-icon/components';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import toolsData from '../data/tools.json';
+
+type Tool = { id: string; name: string; url: string; description: string; stars: number; forks: number };
+const tools = [...(toolsData as Tool[])].sort((a, b) => b.stars - a.stars || b.forks - a.forks || a.name.localeCompare(b.name, 'en'));
+const pageSize = 30;
+const initialTools = tools.slice(0, pageSize);
+const toolJson = JSON.stringify(tools).replaceAll('<', '\\u003c');
+const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
+---
+
+<BaseLayout title="Tools — jev.info" description="Open-source tools built with Jev, ranked by GitHub stars and forks.">
+  <main class="tools-page shell">
+    <header class="directory-intro">
+      <p class="eyebrow">OPEN-SOURCE CATALOG</p>
+      <h1>Tools</h1>
+      <p>Browse community tools built with Jev. Ranked by GitHub stars, then forks, then name.</p>
+    </header>
+    <section class="tool-directory" aria-labelledby="tools-heading">
+      <div class="directory-toolbar">
+        <label class="tool-search" for="tool-search">
+          <Icon name="material-symbols:search-rounded" size={20} aria-hidden="true" />
+          <span class="sr-only">Search tools</span>
+          <input id="tool-search" type="search" placeholder="Search tools…" autocomplete="off" data-tool-search />
+        </label>
+        <p id="tools-heading" data-tool-summary>{tools.length} tools</p>
+      </div>
+      <ol class="tool-list" data-tool-list>
+        {initialTools.map((tool) => (
+          <li class="tool-row">
+            <a class="tool-name" href={tool.url} target="_blank" rel="noreferrer"><span>{tool.name}</span><Icon name="material-symbols:arrow-outward-rounded" size={16} aria-hidden="true" /></a>
+            <p class="tool-description line-clamp-2">{tool.description}</p>
+            <div class="tool-stats" aria-label={formatCount(tool.stars) + ' GitHub stars and ' + formatCount(tool.forks) + ' forks'}>
+              <span title="GitHub stars"><Icon name="material-symbols:star-rounded" size={16} aria-hidden="true" />{formatCount(tool.stars)}</span>
+              <span title="GitHub forks"><Icon name="material-symbols:account-tree-rounded" size={16} aria-hidden="true" />{formatCount(tool.forks)}</span>
+            </div>
+          </li>
+        ))}
+      </ol>
+      <nav class="pagination" aria-label="Tools pages" data-tool-pagination></nav>
+      <p class="empty-state" data-tool-empty hidden>No tools match that search.</p>
+    </section>
+  </main>
+  <script id="tool-data" type="application/json" set:html={toolJson}></script>
+  <script>
+    type ClientTool = { id: string; name: string; url: string; description: string; stars: number; forks: number };
+    const data = JSON.parse(document.querySelector<HTMLScriptElement>('#tool-data')?.textContent || '[]') as ClientTool[];
+    const pageSize = 30;
+    const input = document.querySelector<HTMLInputElement>('[data-tool-search]');
+    const list = document.querySelector<HTMLOListElement>('[data-tool-list]');
+    const summary = document.querySelector<HTMLElement>('[data-tool-summary]');
+    const pagination = document.querySelector<HTMLElement>('[data-tool-pagination]');
+    const empty = document.querySelector<HTMLElement>('[data-tool-empty]');
+    const params = new URLSearchParams(location.search);
+    let query = params.get('q') || '';
+    let currentPage = Math.max(1, Number(params.get('page')) || 1);
+    const count = (value: number) => new Intl.NumberFormat('en').format(value);
+    const updateUrl = () => {
+      const next = new URLSearchParams();
+      if (query) next.set('q', query);
+      if (currentPage > 1) next.set('page', String(currentPage));
+      history.replaceState({}, '', location.pathname + (next.size ? '?' + next.toString() : ''));
+    };
+    const makeRow = (tool: ClientTool) => {
+      const row = document.createElement('li'); row.className = 'tool-row';
+      const name = document.createElement('a'); name.className = 'tool-name'; name.href = tool.url; name.target = '_blank'; name.rel = 'noreferrer';
+      const title = document.createElement('span'); title.textContent = tool.name;
+      const arrow = document.createElement('span'); arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true'); name.append(title, arrow);
+      const description = document.createElement('p'); description.className = 'tool-description line-clamp-2'; description.textContent = tool.description;
+      const stats = document.createElement('div'); stats.className = 'tool-stats'; stats.textContent = '★ ' + count(tool.stars) + '  ⑂ ' + count(tool.forks); stats.setAttribute('aria-label', count(tool.stars) + ' GitHub stars and ' + count(tool.forks) + ' forks');
+      row.append(name, description, stats); return row;
+    };
+    const render = () => {
+      if (!list || !summary || !empty || !pagination) return;
+      const needle = query.trim().toLowerCase();
+      const matches = needle ? data.filter((tool) => (tool.name + ' ' + tool.description).toLowerCase().includes(needle)) : data;
+      const pages = Math.max(1, Math.ceil(matches.length / pageSize)); currentPage = Math.min(currentPage, pages);
+      list.replaceChildren(...matches.slice((currentPage - 1) * pageSize, currentPage * pageSize).map(makeRow));
+      summary.textContent = needle ? matches.length + ' matching tool' + (matches.length === 1 ? '' : 's') : data.length + ' tools'; empty.hidden = matches.length !== 0;
+      pagination.replaceChildren();
+      if (pages > 1) {
+        const button = (label: string, page: number, disabled = false) => { const node = document.createElement('button'); node.type = 'button'; node.textContent = label; node.disabled = disabled; if (page === currentPage) node.setAttribute('aria-current', 'page'); node.addEventListener('click', () => { currentPage = page; render(); document.querySelector('.directory-toolbar')?.scrollIntoView({ block: 'start' }); }); pagination.append(node); };
+        button('Previous', Math.max(1, currentPage - 1), currentPage === 1);
+        const start = Math.max(1, Math.min(currentPage - 2, pages - 4));
+        for (let page = start; page <= Math.min(pages, start + 4); page += 1) button(String(page), page);
+        button('Next', Math.min(pages, currentPage + 1), currentPage === pages);
+      }
+      updateUrl();
+    };
+    if (input) { input.value = query; input.addEventListener('input', () => { query = input.value; currentPage = 1; render(); }); }
+    render();
+  </script>
+</BaseLayout>
+
+<style>
+  .tools-page { padding-block: 58px 88px; }
+  .directory-intro { max-width: 680px; margin-bottom: 34px; }
+  .eyebrow { margin: 0 0 11px; color: var(--muted); font-size: 12px; font-weight: 760; letter-spacing: .15em; }
+  h1 { margin: 0; font-size: clamp(28px, 4vw, 32px); letter-spacing: -.055em; }
+  .directory-intro > p:last-child { max-width: 540px; margin: 13px 0 0; color: var(--muted); line-height: 1.6; }
+  .tool-directory { border-top: 1px solid var(--ink); }
+  .directory-toolbar { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
+  .tool-search { flex: 1; max-width: 560px; display: flex; align-items: center; gap: 9px; color: var(--muted); }
+  .tool-search input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--ink); font-size: 16px; }
+  .tool-search input::placeholder { color: var(--muted); }
+  [data-tool-summary] { margin: 0; flex: none; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .tool-list { margin: 0; padding: 0; list-style: none; }
+  .tool-row { min-height: 86px; padding: 16px 0; display: grid; grid-template-columns: minmax(180px, .78fr) minmax(0, 2fr) auto; align-items: center; gap: 20px; border-bottom: 1px solid var(--line); }
+  .tool-name { min-width: 0; display: inline-flex; align-items: center; gap: 5px; font-weight: 700; letter-spacing: -.015em; }
+  .tool-name > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tool-name:hover { color: var(--accent); }
+  .tool-description { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+  .tool-stats { min-width: 100px; display: flex; justify-content: flex-end; gap: 12px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: pre; }
+  .pagination { margin-top: 26px; display: flex; align-items: center; gap: 6px; }
+  .pagination button { min-width: 34px; height: 34px; padding: 0 9px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; font-size: 12px; }
+  .pagination button:hover:not(:disabled), .pagination button[aria-current='page'] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+  .pagination button:disabled { opacity: .4; cursor: not-allowed; }
+  .empty-state { margin: 48px 0; color: var(--muted); text-align: center; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  @media (max-width: 720px) { .tools-page { padding-block: 38px 58px; } .directory-toolbar { min-height: 64px; } .tool-row { min-height: 0; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 14px; } .tool-description { grid-column: 1 / -1; } .tool-stats { min-width: 0; } }
+</style>
