@@ -30,7 +30,7 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
       <ol class="tool-list" data-tool-list>
         {initialTools.map((tool) => (
           <li class="tool-row">
-            <a class="tool-name" href={tool.url} target="_blank" rel="noreferrer"><span>{tool.name}</span><Icon name="material-symbols:arrow-outward-rounded" size={16} aria-hidden="true" /></a>
+            <a class="tool-name" href={tool.url} target="_blank" rel="noreferrer"><span class="tool-identity"><strong>{tool.name}</strong><small>{tool.url}</small></span><Icon name="material-symbols:arrow-outward-rounded" size={16} aria-hidden="true" /></a>
             <p class="tool-description line-clamp-2">{tool.description}</p>
             <div class="tool-stats" aria-label={formatCount(tool.stars) + ' GitHub stars and ' + formatCount(tool.forks) + ' forks'}>
               <span title="GitHub stars"><Icon name="material-symbols:star-rounded" size={16} aria-hidden="true" />{formatCount(tool.stars)}</span>
@@ -66,8 +66,10 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     const makeRow = (tool: ClientTool) => {
       const row = document.createElement('li'); row.className = 'tool-row';
       const name = document.createElement('a'); name.className = 'tool-name'; name.href = tool.url; name.target = '_blank'; name.rel = 'noreferrer';
-      const title = document.createElement('span'); title.textContent = tool.name;
-      const arrow = document.createElement('span'); arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true'); name.append(title, arrow);
+      const identity = document.createElement('span'); identity.className = 'tool-identity';
+      const title = document.createElement('strong'); title.textContent = tool.name;
+      const url = document.createElement('small'); url.textContent = tool.url; identity.append(title, url);
+      const arrow = document.createElement('span'); arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true'); name.append(identity, arrow);
       const description = document.createElement('p'); description.className = 'tool-description line-clamp-2'; description.textContent = tool.description;
       const stats = document.createElement('div'); stats.className = 'tool-stats'; stats.textContent = '★ ' + count(tool.stars) + '  ⑂ ' + count(tool.forks); stats.setAttribute('aria-label', count(tool.stars) + ' GitHub stars and ' + count(tool.forks) + ' forks');
       row.append(name, description, stats); return row;
@@ -107,10 +109,14 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
   .tool-search input::placeholder { color: var(--muted); }
   [data-tool-summary] { margin: 0; flex: none; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
   .tool-list { margin: 0; padding: 0; list-style: none; }
-  .tool-row { min-height: 86px; padding: 16px 0; display: grid; grid-template-columns: minmax(180px, .78fr) minmax(0, 2fr) auto; align-items: center; gap: 20px; border-bottom: 1px solid var(--line); }
-  .tool-name { min-width: 0; display: inline-flex; align-items: center; gap: 5px; font-weight: 700; letter-spacing: -.015em; }
-  .tool-name > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tool-row { min-height: 94px; padding: 16px 0; display: grid; grid-template-columns: minmax(180px, .78fr) minmax(0, 2fr) auto; align-items: center; gap: 20px; border-bottom: 1px solid var(--line); }
+  .tool-name { min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 5px; letter-spacing: -.015em; }
+  .tool-identity { min-width: 0; display: grid; gap: 3px; }
+  .tool-identity strong, .tool-identity small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tool-identity strong { font-size: 14px; font-weight: 700; }
+  .tool-identity small { color: var(--muted); font-size: 11px; font-weight: 600; }
   .tool-name:hover { color: var(--accent); }
+  .tool-name:hover small { color: currentColor; }
   .tool-description { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
   .tool-stats { min-width: 100px; display: flex; justify-content: flex-end; gap: 12px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: pre; }
   .pagination { margin-top: 26px; display: flex; align-items: center; gap: 6px; }
