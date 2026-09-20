@@ -76,7 +76,7 @@
               "code": "input_assistance",
               "name": "输入辅助",
               "enName": "Input Assistance",
-              "description": "语音控制与轮替检测、键盘输入建议、编辑预测、实时候选推荐"
+              "description": "语音控制与轮替检测、键盘输入建议、编辑预测、实时候选推荐、甚至包括图像识别控制"
             }
           ]
         },
@@ -85,6 +85,12 @@
           "name": "游戏世界",
           "enName": "Gaming Worlds",
           "categories": [
+            {
+              "code": "native_play",
+              "name": "原生游戏",
+              "enName": "Native Play",
+              "description": "利用 AI 能力创造全新的游戏品类或原生玩法，而不是操控已有游戏"
+            },
             {
               "code": "realtime_gameplay",
               "name": "即时游戏",
@@ -151,7 +157,8 @@
               "code": "benchmark",
               "name": "基准测试",
               "enName": "Benchmark",
-              "description": "模型与系统能力的基准测试"
+              "description": "模型与系统能力的基准测试",
+              "export": false
             }
           ]
         },
@@ -164,15 +171,25 @@
               "code": "inference_engineering",
               "name": "推理工程",
               "enName": "Inference Engineering",
-              "description": "模型推理、约束解码、轻量适配头与决策专用引擎等底层工程实验"
+              "description": "模型推理、约束解码、轻量适配头与决策专用引擎等底层工程实验",
+              "export": false
+            },
+            {
+              "code": "tutorial",
+              "name": "教程",
+              "enName": "Tutorials",
+              "description": "具备具体应用场景的教学内容（而不仅是介绍卖点，或单纯说明如何申请账号 / 配置 API Key / 安装 SDK）",
+              "export": false
             },
             {
               "code": "uncategorized",
               "name": "未分类",
               "enName": "Uncategorized",
-              "description": "暂时无法归入现有分类的项目"
+              "description": "暂时无法归入现有分类的项目",
+              "export": false
             }
-          ]
+          ],
+          "export": false
         }
       ]
     }
