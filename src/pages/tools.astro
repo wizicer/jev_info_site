@@ -102,9 +102,9 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     const dialogTitle = toolDialog.querySelector("h2");
     const dialogDescription = toolDialog.querySelector(".tool-quick-description");
     const dialogLink = toolDialog.querySelector("a");
-    let toolReturnFocus = null;
-    const showToolDetails = (row, trigger) => {
-      const link = row.querySelector(".tool-name");
+    let toolReturnFocus: HTMLElement | null = null;
+    const showToolDetails = (row: HTMLElement, trigger: HTMLElement) => {
+      const link = row.querySelector<HTMLAnchorElement>(".tool-name");
       const description = row.querySelector(".tool-description");
       if (!link || !dialogTitle || !dialogDescription || !dialogLink) return;
       toolReturnFocus = trigger;
@@ -116,9 +116,9 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     list?.addEventListener("click", (event) => {
       const target = event.target;
       if (!(target instanceof HTMLElement)) return;
-      const row = target.closest(".tool-row");
+      const row = target.closest<HTMLElement>(".tool-row");
       if (!row) return;
-      const link = target.closest(".tool-name");
+      const link = target.closest<HTMLAnchorElement>(".tool-name");
       if (link && target.closest("svg")) return;
       event.preventDefault();
       showToolDetails(row, link || row);
