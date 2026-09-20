@@ -8,6 +8,14 @@
     "forks": 0
   },
   {
+    "id": "tool_012c5a1dc3245033",
+    "name": "dlq_inspector",
+    "url": "https://github.com/HalxDocs/dlq_inspector",
+    "description": "Local-first CLI for inspecting RabbitMQ and Redis Streams dead-letter queues: it groups failures by cause, then recovers messages only through dry-run plans, explicit --confirm, and rate limits—snapshotting replays for rollback and logging every action to a local audit trail.",
+    "stars": 5,
+    "forks": 1
+  },
+  {
     "id": "tool_033dd46699b0fb5e",
     "name": "skills",
     "url": "https://github.com/typesafe-ai/skills",
@@ -40,6 +48,38 @@
     "forks": 2
   },
   {
+    "id": "tool_08dc210761e0fdc3",
+    "name": "jev-demo",
+    "url": "https://github.com/nabendu82/jev-demo",
+    "description": "A Next.js demo dashboard that triages GitHub issues into five typed Jev-1.13 decisions—category, severity, urgency, team, and actionability—with calibrated confidence thresholds, live timing/cost metrics, and Kanban or action-based views for automatic routing versus human review.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_0dd1527606f88854",
+    "name": "hermes-jev-skills",
+    "url": "https://github.com/kerpopule/hermes-jev-skills",
+    "description": "Eight agent-agnostic skills and a Hermes plugin that delegate per-turn decisions—model routing, memory filtering, compaction, skill selection, triage, GUI/browser actions—to TypeSafe's Jev decision model (~0.4 s, ~$0.00006), with redacted payloads and fail-open fallbacks.",
+    "stars": 159,
+    "forks": 9
+  },
+  {
+    "id": "tool_0de1bf63efbec719",
+    "name": "winnow",
+    "url": "https://github.com/GhalebDweikat/winnow",
+    "description": "Winnow is a Claude Code plugin that intercepts large Read/Bash/Grep outputs, uses a calibrated probability judge to hide blocks unlikely to matter for the current task—replacing them with summarized stubs restorable via a recall key—and injects prompt-relevant memory files, cutting token costs without losing content.",
+    "stars": 28,
+    "forks": 0
+  },
+  {
+    "id": "tool_0e6628aa6f2e5890",
+    "name": "system-one-benchmark",
+    "url": "https://github.com/mallahyari/system-one-benchmark",
+    "description": "A benchmarking suite that compares TypeSafe Jev's cloud \"System One\" decision model against local MLX parallel constrained decoding and autoregressive Qwen baselines on adversarial and intent prompts, measuring latency, accuracy, safety precision/recall, calibration, and schema-error rates.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
     "id": "tool_0f346d2fb05f44fd",
     "name": "jev-preflight",
     "url": "https://github.com/muse0509/jev-preflight",
@@ -48,11 +88,75 @@
     "forks": 0
   },
   {
+    "id": "tool_0f7989d56a92698c",
+    "name": "jev-tetris",
+    "url": "https://github.com/thelau/jev-tetris",
+    "description": "A dependency-free Node/browser Tetris played by a textless multiple-choice model: the engine enumerates every legal placement, describes each in prose, JEV returns per-option probabilities, and the board visualizes preference and confidence, with mock mode, tests, and benchmark controls included.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_1027f6f87a7c5cc3",
+    "name": "jevs-kitchen-chaos",
+    "url": "https://github.com/bebe0307mz/jevs-kitchen-chaos",
+    "description": "Jev's Kitchen Chaos is a live Overcooked-style 3D benchmark arena where four AI chefs make streamed API decisions, letting users swap decision models/LLMs and compare score, latency, policy, confidence, token cost, and downloadable decision logs.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_1096e24c7b0fc096",
+    "name": "jevscan-evm",
+    "url": "https://github.com/devtooligan/jevscan-evm",
+    "description": "A Python CLI that scans Solidity/EVM repos via TypeSafe's Jev, running 343 detectors across 14 vulnerability categories to output a color-coded HEATMAP.md scoring each file's bug likelihood and flagging suspect functions with confidence percentages for fast, cheap pre-audit triage.",
+    "stars": 19,
+    "forks": 0
+  },
+  {
+    "id": "tool_1683b6a1b66691da",
+    "name": "neo4jev",
+    "url": "https://github.com/jexp/neo4jev",
+    "description": "neo4jev is a schema-agnostic Python library (with notebooks and a Streamlit app) that navigates any Neo4j graph one hop at a time via TypeSafe's `system_one` API, using beam search over per-hop Choice/Noul probability distributions to find best-scoring paths and render them with `neo4j-viz`.",
+    "stars": 43,
+    "forks": 5
+  },
+  {
+    "id": "tool_1721571e9e7a7d87",
+    "name": "jev-market-reflex",
+    "url": "https://github.com/zzsong1023/jev-market-reflex",
+    "description": "A Bun/TypeScript demo that streams live Kraken BTC/ETH/SOL market data into TypeSafe AI Jev, converts compact market features into typed BUY/SELL/HOLD decisions with confidence and probabilities, and applies deterministic risk-gated paper execution with simulated P&L to a browser dashboard—no real funds or exchange credentials required.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_19eb4f63a69440f5",
+    "name": "llm-rankers",
+    "url": "https://github.com/ielab/llm-rankers",
+    "description": "A Python toolkit for LLM-based document reranking implementing pointwise (yes/no, QLM), listwise sliding-window, pairwise, and efficient Setwise sorting methods over pyserini BM25 runs, supporting FLAN-T5, monoT5/duoT5, OpenAI models, and Rank-R1, with TREC DL/BEIR examples.",
+    "stars": 211,
+    "forks": 23
+  },
+  {
     "id": "tool_1de86d2752741849",
     "name": "eslint-plugin-jev",
     "url": "https://github.com/ShahriarBijoy/eslint-plugin-jev",
     "description": "An ESLint plugin that goes beyond conventional linters' structural checks by analyzing what code actually means, enabling it to catch semantic issues that shape-only linting cannot detect.",
     "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_1ebe6b7869df885b",
+    "name": "jev-block-android-ad",
+    "url": "https://github.com/ufec/jev-block-android-ad",
+    "description": "An Android noise gate that funnels notifications and SMS through one pipeline — local OTP gate and sender blacklist first, then a model given channel history and user rules — suppressing only flagged ads while every uncertain path fails open.",
+    "stars": 3,
+    "forks": 0
+  },
+  {
+    "id": "tool_1f5f27083e4d1f18",
+    "name": "typesafe-jev-tools",
+    "url": "https://github.com/wotai-dev/typesafe-jev-tools",
+    "description": "A Claude Code PreToolUse hook that scans JS/TS/Python writes and edits for LLM calls and hand-written classifiers, then injects a three-way test—plain code, frontier model, or a fast uncertainty-aware judgment model like Jev—so decisions that a regex could answer don't silently ship as brittle heuristics or overqualified model calls.",
+    "stars": 1,
     "forks": 0
   },
   {
@@ -104,12 +208,36 @@
     "forks": 0
   },
   {
+    "id": "tool_262e98bccc52f06a",
+    "name": "laterhook",
+    "url": "https://github.com/pedrogmbh/laterhook",
+    "description": "Laterhook is a self-hosted webhook inbox that captures every request sent to zero-setup endpoints, then lets you inspect, search, replay, tag, secure, and permanently forward matching traffic through regex routes before your real backend is ready.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
     "id": "tool_26b54cc86c32f739",
     "name": "jarviscore-framework",
     "url": "https://github.com/Prescott-Data/jarviscore-framework",
     "description": "JarvisCore is an Apache-2.0 Python runtime for multi-agent systems: agents discover each other over a SWIM gossip mesh, claim crash-durable workflow steps from Redis (surviving `kill -9`), and invoke 150+ services through a zero-trust credential vault — no central orchestrator.",
     "stars": 13,
     "forks": 1
+  },
+  {
+    "id": "tool_26d3b7dadacea8d9",
+    "name": "feedwall",
+    "url": "https://github.com/abhixhek/feedwall",
+    "description": "Feedwall is a dependency-free Manifest V3 browser extension for Chrome-based browsers that filters feeds on X, YouTube, Reddit, LinkedIn, and Hacker News by sending each post to a fast yes/no-probability model (TypeSafe's Jev) under your own API key, letting you define custom plain-English topics with Keep/Hide/Dim/Highlight actions, per-site focus mode, a test-on-recent-posts preview, mistake fee",
+    "stars": 2,
+    "forks": 0
+  },
+  {
+    "id": "tool_26ef3e4378472204",
+    "name": "pi-warden",
+    "url": "https://github.com/DevMortimer/pi-warden",
+    "description": "pi-warden supervises Pi coding sessions by checking commands, edits, replies, and subagent reports for risky actions, rule violations, stuck loops, unverified “done” claims, secrets, runaway output, and noise, steering the agent to self-correct or holding irreversible steps.",
+    "stars": 100,
+    "forks": 10
   },
   {
     "id": "tool_27e6c543753c0fe7",
@@ -128,6 +256,14 @@
     "forks": 1
   },
   {
+    "id": "tool_29071908ea70c25d",
+    "name": "jev-macos-loop",
+    "url": "https://github.com/jcpsimmons/jev-macos-loop",
+    "description": "Jev macOS Loop is an open-source Apple-silicon tool for native macOS GUI automation that uses local CoreML detection, OCR, and accessibility with Jev decisions while keeping screenshots and coordinates on-device.",
+    "stars": 13,
+    "forks": 0
+  },
+  {
     "id": "tool_2a25c6cac260690d",
     "name": "jev-311-heatmap",
     "url": "https://github.com/CompleteTech-LLC-AI-Research/jev-311-heatmap",
@@ -144,10 +280,50 @@
     "forks": 28
   },
   {
+    "id": "tool_2c62b1518fc02bd0",
+    "name": "mobile-jev",
+    "url": "https://github.com/droidrun/mobile-jev",
+    "description": "Mobile Jev is a standalone agent that drives a real Android phone through the Mobilerun API (no ADB), with TypeSafe's Jev choosing each action toward a natural-language goal, plus a live React studio, CLI, execution traces, and latency measurements for verification.",
+    "stars": 260,
+    "forks": 34
+  },
+  {
+    "id": "tool_2eebd097c021a2c0",
+    "name": "typesafe-sdk-python",
+    "url": "https://github.com/typesafe-ai/typesafe-sdk-python",
+    "description": "Python SDK for TypeSafe AI that installs via `uv add typesafe-sdk` and provides a `TypeSafeClient` (authenticated via `TYPESAFE_API_KEY`) whose `system_one` method classifies input state into structured `Choice` categories defined by instructions and criteria, returning typed results.",
+    "stars": 141,
+    "forks": 15
+  },
+  {
+    "id": "tool_3024d10f5eb358ba",
+    "name": "tg_accessor",
+    "url": "https://github.com/solovieff/tg_accessor",
+    "description": "CLI toolkit that exports Telegram group history to CSV, narrows it to one user's messages plus context, uses TypeSafe to stitch messages into topical threads scored for conflict and convincingness, and rolls it up into a per-user PROFILE.md.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "id": "tool_30a1487741f1997f",
     "name": "jev-browser-qa",
     "url": "https://github.com/jonymusky/jev-browser-qa",
     "description": "A Playwright browser-QA toolkit where the fast Jev model answers yes/no and one-of questions to power natural-language assertions, intent-based element picking, and goal-driven click loops, with a JSON CLI, recorded video/traces, and a local run-history dashboard.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_31951a9ce225ab22",
+    "name": "JevFish",
+    "url": "https://github.com/8dazo/JevFish",
+    "description": "JevFish is an OASIS-based social-simulation runtime that turns seed inputs into agent societies, uses TypeSafe Jev for fast typed multi-action decisions, invokes generative models only when needed, and provides A/B benchmarks and metrics for scalable outcome analysis.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_32a4b268a55cfb81",
+    "name": "typesafe-ai-php",
+    "url": "https://github.com/sanmai/typesafe-ai-php",
+    "description": "A PHP 8.2+ client for the TypeSafe AI evaluation API that lets you send a state plus typed questions (yes/no \"noul\", multiple-choice, ordered \"score\") via a fluent `EvaluationRequest` and read back typed answers with probabilities, confidence, and token usage—handling retries, errors, and debug logging automatically.",
     "stars": 0,
     "forks": 0
   },
@@ -168,6 +344,38 @@
     "forks": 0
   },
   {
+    "id": "tool_36d7b40e027a2796",
+    "name": "mcp_typesafe",
+    "url": "https://github.com/sf-stav/mcp_typesafe",
+    "description": "An MCP server exposing TypeSafe's System One (Jev) API as 12 tools that return fast (~100 ms), calibrated, structured judgments—probabilities, choices, scores, and confidence—enabling agents to filter, rank, classify, dedupe, verify, and select items in bulk without text generation or parsing.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_3a3ba539824f2e91",
+    "name": "jev-tweet-radar",
+    "url": "https://github.com/DDnim/jev-tweet-radar",
+    "description": "A Chrome MV3 extension that scores each X timeline post and your drafts with one Jev (TypeSafe System One) API call, showing calibrated probabilities for engagement-worthiness and tags like spam/buzz/AI-ish, with goal-aware judging, opacity-based timeline filtering, reply-context scoring, and per-day cost tracking.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_3c410093cd9afc92",
+    "name": "vercel-jev-mcp",
+    "url": "https://github.com/moto-taka/vercel-jev-mcp",
+    "description": "A Hono-based remote MCP server deployable to Vercel that relays Bearer-authenticated evaluation calls (jev_ask, jev_classify, jev_score, jev_check) through Vercel AI Gateway to TypeSafe Jev, letting multiple AI clients share one URL without Jev API keys.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_3c57772cef2044e7",
+    "name": "JEV-EFMW-Syncretic-Layer",
+    "url": "https://github.com/enuminous/JEV-EFMW-Syncretic-Layer",
+    "description": "Reproducible synthetic testbed simulating a Jev-like typed decision layer with an EFMW-style recursive coherence monitor, providing three controlled experiments—calibration degradation, closed-loop trajectory instability, and an equal-information anti-circularity comparison—run via pip, Python scripts, and pytest under frozen null-calibrated thresholds.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "id": "tool_3d41711b9992b9fe",
     "name": "jev-1.13-mini-benchmark",
     "url": "https://github.com/alperenerol/jev-1.13-mini-benchmark",
@@ -176,12 +384,60 @@
     "forks": 0
   },
   {
+    "id": "tool_3e05017bae98493d",
+    "name": "jev-gamepilot",
+    "url": "https://github.com/newuser7171/jev-gamepilot",
+    "description": "jev-gamepilot is an autonomous AI gaming agent that captures any live Windows game (browser, Steam, or emulator) at 60+ FPS, queries TypeSafe's Jev System One model for tactical decisions via built-in or custom profiles, and executes real keyboard/mouse inputs with emergency stop fail-safes.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_3f3575e3f301fd33",
+    "name": "jev-mcp",
+    "url": "https://github.com/jkudish/jev-mcp",
+    "description": "MCP server exposing ten fast, low-cost judgment tools (verify, screen, find, rerank, classify, decide, compare, extract, review, gate) that return typed probabilities and confidence scores so agents can fact-check claims, detect prompt injection, rank candidates, and validate diffs without a frontier model.",
+    "stars": 134,
+    "forks": 20
+  },
+  {
+    "id": "tool_3fa6a808bda07704",
+    "name": "jeff",
+    "url": "https://github.com/logan-markewich/jeff",
+    "description": "jeff is a self-hosted implementation of TypeSafe's jev System One API powered by the 400M-parameter GLiFormer model, serving SDK-compatible choice, score, and noul classification endpoints more cheaply than jev, though less accurately on reasoning-heavy tasks.",
+    "stars": 147,
+    "forks": 7
+  },
+  {
     "id": "tool_3fefe762e87ca06b",
     "name": "jev-adblocker",
     "url": "https://github.com/taruo/jev-adblocker",
     "description": "jev-adblocker is an ad-blocking tool that filters or suppresses advertisements, helping users reduce unwanted ad content during browsing or related workflows.",
     "stars": 0,
     "forks": 0
+  },
+  {
+    "id": "tool_3ffeee45f9980a34",
+    "name": "oxlint-plugin-jev",
+    "url": "https://github.com/wobsoriano/oxlint-plugin-jev",
+    "description": "An oxlint plugin that turns plain-English yes/no questions about functions, calls, JSX elements, or whole files into lint rules—TypeSafe Jev returns a probability per match and reports an error at your configured cutoff, with per-file batching, answer caching, and CI fail/skip controls.",
+    "stars": 25,
+    "forks": 0
+  },
+  {
+    "id": "tool_4099d2c6f0e0c50d",
+    "name": "OpenWhisper",
+    "url": "https://github.com/Knuckles92/OpenWhisper",
+    "description": "OpenWhisper is a cross-platform desktop app for Windows, macOS, and Linux that provides hotkey-driven dictation, audio-file transcription, and meeting capture with live dashboards using local speech models (Whisper, Parakeet, Qwen3-ASR, Moonshine) or the OpenAI API, plus AI text cleanup, searchable history, and export.",
+    "stars": 185,
+    "forks": 25
+  },
+  {
+    "id": "tool_420adfc4fc1c20ac",
+    "name": "unclutter",
+    "url": "https://github.com/kitze/unclutter",
+    "description": "WXT browser extension for Chrome/Chromium and Firefox that uses the Jev AI model (with your own Vercel AI Gateway or TypeSafe AI key) to hide nonessential page elements via reusable per-template rules cached locally, with manual or on-visit analysis and pause/resume controls.",
+    "stars": 141,
+    "forks": 10
   },
   {
     "id": "tool_4370817a23722b84",
@@ -205,6 +461,30 @@
     "url": "https://github.com/newuser7171/jev-vpn",
     "description": "Jev-VPN is a Windows privacy proxy that blocks ads, trackers, telemetry, and malvertising at the socket layer using static blocklists and AI domain triage, with one-click system-wide routing, an encrypted tunnel, and GUI/CLI live metrics.",
     "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_45d8c7e4d710f3de",
+    "name": "thiscita-typesafe",
+    "url": "https://github.com/robertfrontend/thiscita-typesafe",
+    "description": "OBRA is a Next.js 15/TypeScript workspace demonstrating typed AI decisions via the TypeSafe SDK across three bilingual tools—government services search, PDF/DOCX/TXT proposal review with deterministic readiness scoring, and a voice-enabled personal agenda—keeping LLM classification separate from rule-based execution with server-side key handling and no document persistence.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_464255a213d32499",
+    "name": "jev-downloads-sorter",
+    "url": "https://github.com/jolehuit/jev-downloads-sorter",
+    "description": "A macOS launchd agent that watches ~/Downloads and uses Jev decisions, with an offline extension-map fallback, to route each finished file or folder into your configured folders without overwrites using filename, type, size, source URL, and content hints.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_46c15d56a9b70ce5",
+    "name": "jev-k8s-awareness",
+    "url": "https://github.com/minhnghia2k3/jev-k8s-awareness",
+    "description": "A proof-of-concept real-time Kubernetes cluster awareness dashboard that uses an informer to watch pods in a namespace, evaluates unhealthy pods via TypeSafe Jev for severity, remediation, and escalation, and streams results to a browser UI over SSE.",
+    "stars": 3,
     "forks": 0
   },
   {
@@ -232,12 +512,36 @@
     "forks": 4
   },
   {
+    "id": "tool_4d3c5754f1acdc03",
+    "name": "Jev-StepPilot",
+    "url": "https://github.com/NischalGautam8/Jev-StepPilot",
+    "description": "A Windows-only Tauri desktop agent that autonomously carries out a typed goal by watching the active window and asking Jev for each next step—launching apps via Start-menu search, pausing on uncertain or hard-to-undo actions, and aborting when the mouse hits a screen corner.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "id": "tool_50e8fb5b97160470",
     "name": "hunch",
     "url": "https://github.com/carldaws/hunch",
     "description": "A Ruby gem providing probabilistic control flow primitives—`chance`, `pick`, and `rate`—that let programs branch, select, and sample randomly, powered by TypeSafe's Jev.",
     "stars": 1,
     "forks": 0
+  },
+  {
+    "id": "tool_532f7b36567d9686",
+    "name": "jev-mcp",
+    "url": "https://github.com/burnigtm/jev-mcp",
+    "description": "jev-mcp is a local stdio MCP server that gives hosts like Cursor and Codex nine typed TypeSafe Jev judgment tools — for routing steps, selecting prepared tool calls, reviewing patches, verifying claims, screening content, ranking candidates, and gating — returning Choice/Score/Noul answers with confidence and auto/review/escalate actions while the host executes tools itself.",
+    "stars": 21,
+    "forks": 2
+  },
+  {
+    "id": "tool_5338b7a70a80222d",
+    "name": "doc-router",
+    "url": "https://github.com/misbahsy/doc-router",
+    "description": "doc-router is a Rust CLI/library that inspects PDFs page-by-page to extract text-layer pages locally while sending only genuinely scanned pages to an OCR provider via LiteLLM, merging results into a page-ordered output that cut measured OCR cost 1.74x and latency 1.72x.",
+    "stars": 24,
+    "forks": 5
   },
   {
     "id": "tool_5352ba19fff50b3b",
@@ -256,6 +560,14 @@
     "forks": 3
   },
   {
+    "id": "tool_5a5268c57ccc01b7",
+    "name": "jev-cli",
+    "url": "https://github.com/Nasrallah-AL/jev-cli",
+    "description": "jev-cli (`jev`, npm package `jevctl`) wraps TypeSafe's Jev model to return fast, cheap probabilistic judgments—verify claims, screen for prompt injection, classify, extract, rerank, match, route—via scriptable commands with JSON output and exit codes for gating CI.",
+    "stars": 11,
+    "forks": 1
+  },
+  {
     "id": "tool_5b3b8e207b69bd0c",
     "name": "AssertLens",
     "url": "https://github.com/danielscoffee/AssertLens",
@@ -270,6 +582,14 @@
     "description": "Open-source, Jev-compatible \"System One\" decision server: answers typed questions (yes/no, choice, score) about a state or images with calibrated probabilities in tens of milliseconds, plus OpenAI-compatible text generation, served by DiffusionGemma via vLLM.",
     "stars": 151,
     "forks": 13
+  },
+  {
+    "id": "tool_5ce12217451454a3",
+    "name": "mario-never-dies",
+    "url": "https://github.com/superradcompany/mario-never-dies",
+    "description": "A demo that uses microsandbox VM snapshots to checkpoint a running Mario game every 150 frames and, on each death, branches the last checkpoint into four VM copies racing different recoveries so the survivor becomes the run, while the Jev API picks moves from parsed RAM state and a browser visualizes the branching timelines.",
+    "stars": 3,
+    "forks": 0
   },
   {
     "id": "tool_5dbd5c3231910a70",
@@ -288,10 +608,26 @@
     "forks": 125
   },
   {
+    "id": "tool_5e5e06b1e8ce0db5",
+    "name": "book-aurora",
+    "url": "https://github.com/dani1005/book-aurora",
+    "description": "Book Aurora converts a plain-text novel into an \"emotional weather\" poster by sending each ~90-word passage to the Jev decision model for calibrated 0–3 scores across nine emotions, then rendering every passage as a feathered row of colour curtains.",
+    "stars": 5,
+    "forks": 0
+  },
+  {
     "id": "tool_5eb9db87ae609db9",
     "name": "FlyJev2048",
     "url": "https://github.com/EnesYilmazcode/FlyJev2048",
     "description": "A toolkit that simulates all 166,700 fruit fly brain neurons as a spiking network to play 2048, benchmarks it against the Jev AI model on identical seeded games, and ships the game engine, expectimax teacher bot, readout trainer, controls, and video renderer.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_60514120f52df7e1",
+    "name": "system-one-sdk",
+    "url": "https://github.com/ziyu/system-one-sdk",
+    "description": "System One SDK is a modular TypeScript toolkit for typed decisions over shared state, providing an evaluate client, choice/score/boolean question types, pluggable transports and hosted, LLM, local ONNX, and browser WebGPU adapters, plus batching, policies, and evaluation harnesses.",
     "stars": 0,
     "forks": 0
   },
@@ -310,6 +646,38 @@
     "description": "Local-first app that sorts documents into configured folders via typesafe-ai/jev on Vercel AI Gateway, quarantining unreadable, low-confidence, or injection-suspect files, with bounded 4,500-char local profiles, batched requests, preview, undo, and cost audits.",
     "stars": 2,
     "forks": 0
+  },
+  {
+    "id": "tool_64b45d3b3eb20ace",
+    "name": "jev-browser",
+    "url": "https://github.com/MaTriXy/jev-browser",
+    "description": "Headless browser agent (MCP, CLI, or library) in which TypeSafe's Jev model chooses one action per step from a page's interactive elements and scores goal/stuck probability, returning the final page, step trace, console errors, and screenshot at sub-cent cost.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_64c15cae9661ed20",
+    "name": "cultivar",
+    "url": "https://github.com/pinecone-io/cultivar",
+    "description": "Cultivar is a CLI tool for testing agent skills against YAML-defined tasks, running evals locally or in isolated Modal sandboxes across Claude, Copilot, and Gemini runners, grading results against criteria, and iterating via traces, benchmarks, and parallel repeats.",
+    "stars": 40,
+    "forks": 2
+  },
+  {
+    "id": "tool_6642db325a900631",
+    "name": "TypeAR",
+    "url": "https://github.com/TypeAR-AI/TypeAR",
+    "description": "TypeAR is a constrained-decoding client for SGLang-served open autoregressive LLMs that yields type-safe outputs (single-token enum/boolean choices, bounded numeric values, free text) via sequential or prefix-cached batch execution, with optional thinking, sampling, and per-choice probabilities.",
+    "stars": 13,
+    "forks": 1
+  },
+  {
+    "id": "tool_684b2e7aea1592dd",
+    "name": "abide",
+    "url": "https://github.com/coldteadotai/abide",
+    "description": "Abide is a CLI that hooks Claude Code, Codex, and OpenCode to check every edit or turn against repository instruction rules via TypeSafe’s Jev decision model, catching violations linters miss, prompting in-turn repairs, and providing audit, calibration, cost, and reporting commands.",
+    "stars": 175,
+    "forks": 9
   },
   {
     "id": "tool_68bc607da2343a41",
@@ -336,11 +704,35 @@
     "forks": 0
   },
   {
+    "id": "tool_6d111270a61d7680",
+    "name": "jev-extraction-marker-recovery",
+    "url": "https://github.com/chrismoseley/jev-extraction-marker-recovery",
+    "description": "A Python script that recovers footnote and citation markers lost when OCR flattens superscripts, using a recall-heavy tokenizer to surface suspicious tokens and Jev (TypeSafe) to classify each as citation, footnote, section label, unit/exponent, or non-marker for reinsertion.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "id": "tool_6d68f056f8621bfd",
     "name": "TypeSafe",
     "url": "https://github.com/krzyzanowskim/TypeSafe",
     "description": "TypeSafe is a SwiftPM client for the TypeSafe System One API mirroring the official JavaScript SDK, letting Swift code ask typed noul, choice, and score questions and decode structured answers via an async client configured with TYPESAFE_API_KEY.",
     "stars": 14,
+    "forks": 0
+  },
+  {
+    "id": "tool_6f8ad2398f5e294d",
+    "name": "fast-jev-opencode",
+    "url": "https://github.com/nrdz-labs/fast-jev-opencode",
+    "description": "An OpenCode v2 plugin that prunes stale tool calls and bulky results from outgoing model requests via TypeSafe's Jev through the `context` hook—leaving stored history untouched, failing open on errors, caching decisions across requests, and defaulting to observe-only dry-run mode.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_705796390a8fc743",
+    "name": "jev-playground",
+    "url": "https://github.com/ClemannD/jev-playground",
+    "description": "An interactive playground of eight widgets for learning TypeSafe's Jev model, which answers typed choice, score, and boolean questions over given state with directly usable probabilities, showing raw request/response, latency, and cost for routing, triage, scoring, agent, and guardrail experiments.",
+    "stars": 0,
     "forks": 0
   },
   {
@@ -350,6 +742,14 @@
     "description": "jev-vtuber-ime-core is a TypeScript resolver/CLI that turns a Japanese reading into a canonical VTuber name by searching the web for evidence, extracting name candidates, and using Jev’s probability-only judgments to select a threshold-passing match—without bundling a dictionary or returning non-VTubers.",
     "stars": 1,
     "forks": 0
+  },
+  {
+    "id": "tool_714e9d8c3fcdc354",
+    "name": "polar_llama",
+    "url": "https://github.com/pnthn-ai/polar_llama",
+    "description": "Polar Llama is a Python library that runs parallel LLM inference (OpenAI, Anthropic, Gemini, Groq, Bedrock) directly on Polars dataframe columns, adding structured Pydantic outputs, tool calling, prompt caching, checkpointing, per-row cost tracking, and vector search.",
+    "stars": 30,
+    "forks": 2
   },
   {
     "id": "tool_728a7c810d77780a",
@@ -384,6 +784,30 @@
     "forks": 1
   },
   {
+    "id": "tool_77593bb215845ea7",
+    "name": "JevVSPolymarket",
+    "url": "https://github.com/Tobi1chi/JevVSPolymarket",
+    "description": "JevVSPolymarket is a Node.js/pnpm toolkit that benchmarks the Jev model's probability forecasts on settled Polymarket sports/esports markets—scoring Brier and accuracy against historical market-price baselines via batch, repeat, and background-ablation experiments without trading.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_77818d74d66a7361",
+    "name": "openagents",
+    "url": "https://github.com/OpenAgentsInc/openagents",
+    "description": "OpenAgents is a Rust monorepo home to Coder, a terminal coding agent that routes turns through typed Jev judgments and a model-agnostic generative door, runs a bounded shell loop, and talks to a self-hostable Nostr relay for account-free, inspectable job transport.",
+    "stars": 450,
+    "forks": 60
+  },
+  {
+    "id": "tool_78e0a625d8d9a379",
+    "name": "dinostomp",
+    "url": "https://github.com/collapseindex/dinostomp",
+    "description": "dinostomp is a local-first verification layer for AI evals that audits datasets and eval pods—recomputing summaries from records—to catch leakage, biased keys, scorer defects, seed noise, and unsupported claims, emitting a scoped verdict and CI-gateable report.",
+    "stars": 5,
+    "forks": 1
+  },
+  {
     "id": "tool_7923063588616fb8",
     "name": "jevchat",
     "url": "https://github.com/kyle-pena-nlp/jevchat",
@@ -397,6 +821,30 @@
     "url": "https://github.com/nemke82/jev-ops",
     "description": "A Rust CLI that pipes unstructured operational signals (logs, journal entries, Kubernetes events, cloud telemetry) through declarative, security-sandboxed YAML diagnostic packs to TypeSafe Jev inference, returning typed probabilistic decisions (category, severity, attention) with confidence scores for gating alerts and auto-remediation.",
     "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_7b20b3a9b21020b9",
+    "name": "foreman",
+    "url": "https://github.com/thruwire/foreman",
+    "description": "Foreman is a Python asyncio supervisory runtime that pairs Codex coding workers with TypeSafe's Jev decision model, streaming factory events into ten probabilistic assessments so a deterministic policy can steer, retry, verify, finish, or escalate work without interrupting the agent.",
+    "stars": 416,
+    "forks": 29
+  },
+  {
+    "id": "tool_7b7a551f646f9a15",
+    "name": "typesafe-chess",
+    "url": "https://github.com/Dimesio/typesafe-chess",
+    "description": "Local app that tests TypeSafe Jev as a chess decision-maker: chess.js lists the legal moves, Jev picks one, and Stockfish grades it, with configurable prompt setups, an adaptive Stockfish ladder, mock mode, a stats dashboard, and headless benchmarks.",
+    "stars": 2,
+    "forks": 0
+  },
+  {
+    "id": "tool_7f1e88b4c156c681",
+    "name": "jev-tetris",
+    "url": "https://github.com/trungdq88/jev-tetris",
+    "description": "jev-tetris is a dependency-free Node.js app that pits TypeSafe's Jev model against Claude Haiku or Gemini Flash in real-time versus Tetris—shared seeded pieces, rising gravity, garbage rows for cleared lines—plus human-vs-Jev and solo modes with per-move stats, latency, and cost tracking.",
+    "stars": 5,
     "forks": 0
   },
   {
@@ -432,12 +880,68 @@
     "forks": 22
   },
   {
+    "id": "tool_84c9991b405c0752",
+    "name": "HA-Jev",
+    "url": "https://github.com/AboveColin/HA-Jev",
+    "description": "A Home Assistant integration that turns typed questions for the TypeSafe Jev decision model into sensors and automation actions returning probabilities, choices, or scores, plus an Assist conversation agent, with daily token budgets and cost tracking.",
+    "stars": 28,
+    "forks": 0
+  },
+  {
+    "id": "tool_863ae362806dc71a",
+    "name": "pi-jev",
+    "url": "https://github.com/madeye/pi-jev",
+    "description": "A Pi extension that pairs local coding models with hosted TypeSafe Jev judgments to cut end-to-end latency via ranked file-excerpt retrieval, large-tool-output focusing, optional skill hints and Qwen thinking control, plus caching and outage cooldowns.",
+    "stars": 11,
+    "forks": 2
+  },
+  {
+    "id": "tool_86a5e1aa4712855a",
+    "name": "intelliprompter",
+    "url": "https://github.com/finetuningsingh/intelliprompter",
+    "description": "A browser teleprompter that scores each talking point against a live transcript via Jev, checks off covered topics in any order, supports manual typing, browser-local API keys, and terminal replay, keeping improvised presentations complete for fractions of a cent per run.",
+    "stars": 2,
+    "forks": 1
+  },
+  {
+    "id": "tool_89aeb08a838996f7",
+    "name": "omp-auto-mode",
+    "url": "https://github.com/alexsatch/omp-auto-mode",
+    "description": "An oh-my-pi plugin and CLI that pre-classifies every agent tool call as safe, ask, or unsafe by scoring it against seven independent hazard probabilities via the TypeSafe Jev API, enforcing code-owned policy with configurable thresholds and pattern-based allow/deny rules.",
+    "stars": 2,
+    "forks": 0
+  },
+  {
+    "id": "tool_89baa073e317b4ca",
+    "name": "jev-trader",
+    "url": "https://github.com/jarrodwatts/jev-trader",
+    "description": "A Monad trading bot that asks a TypeSafe Jev model (or mock heuristic) to call buy/sell every ~300ms block, posts a post-only limit order one tick inside the touch on Kuru's MON-USDC book to earn the spread, and streams fills, positions, and P&L to a dashboard via SSE.",
+    "stars": 1422,
+    "forks": 269
+  },
+  {
     "id": "tool_8a14c268051d458b",
     "name": "jev-skill-suggester",
     "url": "https://github.com/win4r/jev-skill-suggester",
     "description": "jev-skill-suggester is a Python CLI (also packaged as a Codex skill) that uses TypeSafe Jev to recommend relevant skills from those already installed, helping you pick the right capability for a task, with bilingual docs and live examples.",
     "stars": 7,
     "forks": 0
+  },
+  {
+    "id": "tool_8a31f68f845c1b04",
+    "name": "jev-compactor",
+    "url": "https://github.com/edwardyen724-g/jev-compactor",
+    "description": "jev-compactor is an open-source TypeScript library, CLI, and MCP server that compacts AI agent context by dropping messages the Jev model rates irrelevant—keeping survivors byte-for-byte verbatim—and flagging destructive commands in the same ~300 ms pass.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_8b7fa81bb537b09d",
+    "name": "youtube-sponsor-detection",
+    "url": "https://github.com/trungdq88/youtube-sponsor-detection",
+    "description": "A Chrome extension and companion web app that detect sponsor reads in YouTube videos using TypeSafe's Jev model over transcripts or live audio (via Deepgram), auto-skipping them with code-controlled timestamps and confidence thresholds so model uncertainty never cuts into actual content.",
+    "stars": 74,
+    "forks": 11
   },
   {
     "id": "tool_8cadb35dab5fd7e0",
@@ -472,12 +976,28 @@
     "forks": 0
   },
   {
+    "id": "tool_8ffc2daae6499841",
+    "name": "jev-oscillator-playground",
+    "url": "https://github.com/kurogedelic/jev-oscillator-playground",
+    "description": "A dependency-free Node.js playground that turns Jev's answers to 32 Choice questions (amplitudes 0–15, sent in one System One request to TypeSafe via a local proxy that keeps the API key server-side) into a 32×4-bit wavetable you can draw, edit, and play in the browser with Web Audio.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "id": "tool_909f6fe7e695e953",
     "name": "jev-ultrafast",
     "url": "https://github.com/browser-use/jev-ultrafast",
     "description": "jev-ultrafast is a browser-use tool built for maximum speed, providing ultra-fast browser operations when execution latency is the priority.",
     "stars": 8848,
     "forks": 557
+  },
+  {
+    "id": "tool_90a59395e5b57c2f",
+    "name": "Jevs-Garage",
+    "url": "https://github.com/JGalego/Jevs-Garage",
+    "description": "Jev's Garage is a Python 3.11+/uv workshop of 26 runnable demos and a local gallery showing how TypeSafe System One models turn realistic state into typed probabilistic judgments (Choice, Score, Noul) that deterministic policies convert into bounded actions or safe fallbacks across critical, orchestration, and casual scenarios.",
+    "stars": 1,
+    "forks": 1
   },
   {
     "id": "tool_90fb9ad586609513",
@@ -528,6 +1048,30 @@
     "forks": 0
   },
   {
+    "id": "tool_9cf4fe3353bd1d9a",
+    "name": "antseed",
+    "url": "https://github.com/AntSeed/antseed",
+    "description": "Antseed is a peer-to-peer AI services network where providers announce LLM capacity via DHT and buyers proxy requests through encrypted P2P connections via a local HTTP endpoint that drop-in replaces ANTHROPIC_BASE_URL/OPENAI_BASE_URL, with on-chain USDC payments.",
+    "stars": 57,
+    "forks": 29
+  },
+  {
+    "id": "tool_9ecae8234d8b07c5",
+    "name": "plugins",
+    "url": "https://github.com/cline/plugins",
+    "description": "Curated Cline CLI plugins installable via `cline plugin install <slug>` from `plugins/<slug>` directories, each adding tools, hooks, skills, or subagents such as Exa web search, Linear scripting, browser automation, `.env` access guards, text-to-speech, and macOS completion notifications.",
+    "stars": 28,
+    "forks": 11
+  },
+  {
+    "id": "tool_9f64f56e3a2fbc93",
+    "name": "Nemotron_Jev",
+    "url": "https://github.com/pst2154/Nemotron_Jev",
+    "description": "Experimental Dockerized Nemotron-Labs-Diffusion-14B service that exposes a browser Decision Lab and TypeSafe-shaped API for typed choice/Noul/score questions over text or JSON, returning masked-token softmax distributions, selections, weighted scores, and confidence for local probability inspection.",
+    "stars": 11,
+    "forks": 1
+  },
+  {
     "id": "tool_a046104d330644f8",
     "name": "jevspire",
     "url": "https://github.com/Ethics03/jevspire",
@@ -544,12 +1088,68 @@
     "forks": 1
   },
   {
+    "id": "tool_a787a5c10edf945b",
+    "name": "AskJev",
+    "url": "https://github.com/ranjan2829/AskJev",
+    "description": "AskJev is an MCP server and optional browser extension that lets Claude Desktop drive Brave/Chrome via CDP from plain-English goals, with TypeSafe Jev making on-page action decisions and a Guard freezing irreversible clicks (pay, delete, send, publish) at risk ≥ 0.65.",
+    "stars": 6,
+    "forks": 2
+  },
+  {
+    "id": "tool_a8c5672d4e4b5a37",
+    "name": "ruleraven",
+    "url": "https://github.com/ddalcero/ruleraven",
+    "description": "RuleRaven is a read-only Kubernetes incident-triage controller that turns workload state and Events into deterministic, explainable incident decisions, persists them in MongoDB, and sends signed at-least-once webhook alerts without changing workloads.",
+    "stars": 2,
+    "forks": 0
+  },
+  {
+    "id": "tool_acb9a95538bc97d2",
+    "name": "jev-telop-live",
+    "url": "https://github.com/ponyo877/jev-telop-live",
+    "description": "A macOS tool that turns live camera-and-microphone speech into automatic Japanese variety-show captions, sound-effect words, manga visual effects, and mood-driven sunglasses/voice changes, by sending transcripts to the Jev API with 30 typed questions and firing effects under code-controlled timing rules.",
+    "stars": 5,
+    "forks": 2
+  },
+  {
+    "id": "tool_ad8a03b6029ac27e",
+    "name": "jev-software-decision-benchmark",
+    "url": "https://github.com/scarif-labs/jev-software-decision-benchmark",
+    "description": "Independent benchmark measuring whether TypeSafe's JEV probabilistic decision primitive extracts transferable ranking, calibration, and safe-automation signal from pre-merge dependency-update metadata, versus static rules and DeepSeek Flash across 1,102 in-distribution and 185 OOD cases.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
     "id": "tool_ae120119d6943556",
     "name": "jev-align",
     "url": "https://github.com/sutro-sh/jev-align",
     "description": "jev-align is an experimental CLI that iteratively improves TypeSafe Jev AI Functions by surfacing uncertain dataset rows for human labeling, running GEPA optimization with configurable reflection models and providers (TypeSafe, Vercel, Cloudflare), and resumable runs that can keep learning from captured production examples.",
     "stars": 183,
     "forks": 14
+  },
+  {
+    "id": "tool_af21796e298d0332",
+    "name": "jev-security-scan",
+    "url": "https://github.com/win4r/jev-security-scan",
+    "description": "A Python 3.10+ CLI and Agent skill that statically audits Agent Skills, MCP configs and source code before installation or execution, combining offline pattern checks with optional TypeSafe Jev model analysis to flag prompt injection, credential theft, exfiltration, and supply-chain risks with file/line evidence, verdicts, exit codes, and explicit coverage gaps.",
+    "stars": 5,
+    "forks": 0
+  },
+  {
+    "id": "tool_b09e5a4dd097d0da",
+    "name": "jev-profanity",
+    "url": "https://github.com/LukasCaha/jev-profanity",
+    "description": "A Czech-first benchmark lab that detects and star-censors unsafe review text—vulgar, rude, or coded attacks—comparing Jev (TypeSafe System One) against lexicon and token_scorer baselines, with v3.0.0 coverage of algospeak, short codes, semantic weapons, and coded hate, runnable via Node scripts with a TypeSafe API key.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_b150d42391837bca",
+    "name": "jev-mac-voice",
+    "url": "https://github.com/brudarko/jev-mac-voice",
+    "description": "Jev Mac Voice is a local macOS Electron app that lets you control your Mac through natural spoken English conversations using the OpenAI Realtime API, combining React UI, native accessibility automation, optional screen sharing, and approval-gated actions.",
+    "stars": 18,
+    "forks": 0
   },
   {
     "id": "tool_b2eb7137bbfc9172",
@@ -568,12 +1168,52 @@
     "forks": 0
   },
   {
+    "id": "tool_b4d4e4874ec96936",
+    "name": "typesafe-java-sdk",
+    "url": "https://github.com/QAInsights/typesafe-java-sdk",
+    "description": "An unofficial Java 21+ Maven SDK for TypeSafe AI's System One API (`POST /v1/systemone`), providing sync and async clients with automatic `Retry-After`-aware retries, client-side request validation, fluent question builders, sealed answer hierarchies with forward-compatible unknown types, and typed accessors plus metadata on responses.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_b713860c5810162c",
+    "name": "quackd",
+    "url": "https://github.com/rokbenko/quackd",
+    "description": "quackd is a Python CLI that registers robots via adapter manifests declaring their capabilities, then lets an LLM pilot them toward natural-language goals—singly or in flocks that divide work—under a contract fixing which skills the model may call, step limits, and when a human must approve.",
+    "stars": 217,
+    "forks": 24
+  },
+  {
+    "id": "tool_b7c326a62ab563a8",
+    "name": "jev-watch",
+    "url": "https://github.com/akanthed/jev-watch",
+    "description": "jev-watch is a Node.js CLI that catches silent behavioral drift in TypeSafe's Jev model by replaying committed baseline test cases—choice and score questions with tolerance-based confidence checks—against the live API directly or via OpenRouter, exiting nonzero so CI flags changed answers before they reach users.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_be691f45d8cf7d3e",
+    "name": "jev-rs",
+    "url": "https://github.com/abeldzan/jev-rs",
+    "description": "jev-rs is an async-first Rust SDK for the TypeSafe AI API that provides a typed System One question builder (Noul, Choice, Score), model discovery, configurable retries and timeouts, structured errors with raw-response diagnostics and tracing, and an optional blocking client.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
     "id": "tool_bf87e0118ca61c7d",
     "name": "jev-code",
     "url": "https://github.com/rhighs/jev-code",
     "description": "jev-code is a TypeScript SDK and CLI that lets the decision-only Jev model pick among finite alternatives to build validated AST programs in many languages, run coding sessions, and power a `decide` command whose exit codes let scripts branch on labels, probabilities, or scores.",
     "stars": 9,
     "forks": 1
+  },
+  {
+    "id": "tool_bfcbb805e298e6f0",
+    "name": "typesafe-screening-mcp",
+    "url": "https://github.com/masa-med-ai/typesafe-screening-mcp",
+    "description": "An MCP server that takes a PubMed query, PMIDs, or title/abstract records and returns calibrated include/maybe/exclude probabilities per article against a research question using TypeSafe's Jev model, screening hundreds in seconds without abstracts entering the LLM context.",
+    "stars": 2,
+    "forks": 0
   },
   {
     "id": "tool_c42a5812bf813899",
@@ -616,6 +1256,14 @@
     "forks": 3
   },
   {
+    "id": "tool_c920dfb2341a1dce",
+    "name": "experiments",
+    "url": "https://github.com/phuryn/experiments",
+    "description": "Reproducible LLM experiment receipts: exact scripts, unedited logs, and method/caveat READMEs backing Product Compass claims, covering model benchmarks, cost and latency comparisons, benchmarks like a 105-bug coding rig and blind AI-slop judging.",
+    "stars": 52,
+    "forks": 6
+  },
+  {
     "id": "tool_cb0375f57353b0ab",
     "name": "jev-skill-gate",
     "url": "https://github.com/ShivamPansuriya/jev-skill-gate",
@@ -630,6 +1278,22 @@
     "description": "A Claude Code plugin that runs TypeSafe's Jev on Bash stdout exceeding ~10,000 estimated tokens, scoring line-chunks against session history to omit noise as `[N lines omitted]` markers while preserving diagnostics, whole documents, and a full-output archive—reducing context carried into later turns without summarizing.",
     "stars": 119,
     "forks": 8
+  },
+  {
+    "id": "tool_cd01cb521a73a8d4",
+    "name": "Jev-cu",
+    "url": "https://github.com/Sac-Y/Jev-cu",
+    "description": "Jev-cu is an installable Codex skill plus scripts that delegate Computer Use's next-step choice to Jev, which selects element, action, completion, and risk from text-only UI candidates while Codex executes, behind a dry-run-first local policy gate requiring human confirmation for sensitive operations.",
+    "stars": 423,
+    "forks": 39
+  },
+  {
+    "id": "tool_ce8a6887d378229a",
+    "name": "jev-rules",
+    "url": "https://github.com/EliaAlberti/jev-rules",
+    "description": "A Claude Code plugin that asks the Jev decision model, per prompt and per edited file, which of a project's Markdown rules and codebase-map documents apply, injecting only the matches in under a second and failing open to all rules on any error.",
+    "stars": 39,
+    "forks": 5
   },
   {
     "id": "tool_cff26a5c4174d164",
@@ -664,6 +1328,14 @@
     "forks": 3
   },
   {
+    "id": "tool_d5879bafd2c63063",
+    "name": "jot",
+    "url": "https://github.com/runta-dev/jot",
+    "description": "Jot is a Node.js/TypeScript agent that runs the tool-calling loop for the Jev model — Jev picks tools and arguments while Jot executes calls, feeds results back into context, and iterates until a reply — shipping a chat UI with visible tool-call traces, a provider-independent core, and a loopback server that keeps credentials server-side and chats in the browser.",
+    "stars": 16,
+    "forks": 1
+  },
+  {
     "id": "tool_d58afedac2867a16",
     "name": "openclaw-smart-router",
     "url": "https://github.com/mykclawd/openclaw-smart-router",
@@ -680,6 +1352,22 @@
     "forks": 0
   },
   {
+    "id": "tool_d79ef022b9a4741b",
+    "name": "jev-review",
+    "url": "https://github.com/NiazMorshed2007/jev-review",
+    "description": "Jev Review is a local MCP server (stdio, Node.js 20+) that gives AI coding agents like Claude Code, Codex, Cursor, and OpenCode a `jev_review` tool that submits a task, focused diff, and optional file context to the Jev API and returns per-dimension 1–10 quality scores with confidence levels, rubric hints, and deltas versus a previous evaluation, enabling a repeated score-driven improvement loop",
+    "stars": 177,
+    "forks": 16
+  },
+  {
+    "id": "tool_dabebdfff7d53d7b",
+    "name": "seems-lang",
+    "url": "https://github.com/kavehmz/seems-lang",
+    "description": "Seems is a Python superset language where `if` conditions can be plain-English judgments answered by the TypeSafe Jev API, with three-valued yes/no/unsure logic, lazy batched requests, caching, and line-preserving translation to ordinary Python.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
     "id": "tool_db3f0554b5cf603e",
     "name": "jev-spring-boot-starter",
     "url": "https://github.com/danvega/jev-spring-boot-starter",
@@ -693,6 +1381,14 @@
     "url": "https://github.com/geranitin/TYPESAFE_JEV",
     "description": "Python demo tooling for TypeSafe AI's Jev \"System One\" endpoint, which returns typed decisions (choice, score, or yes/no probability) with calibrated confidence, including a user-upgrade triage script that repeats calls to measure stability and gates on confidence, plus seven example scenarios for routing uncertain cases to human review.",
     "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_de62d8871cd9e274",
+    "name": "jev-chatbot",
+    "url": "https://github.com/finetuningsingh/jev-chatbot",
+    "description": "An experimental chatbot harness that turns TypeSafe’s non-generative Jev choice model into a next-word or reply selector over 30k words, with browser and Node CLI interfaces, seven comparison modes, cached embedding-built trees, and measured speed, cost, and quality tradeoffs.",
+    "stars": 1,
     "forks": 0
   },
   {
@@ -720,12 +1416,44 @@
     "forks": 0
   },
   {
+    "id": "tool_e78a445eac60358d",
+    "name": "triage-bot",
+    "url": "https://github.com/TheEleventhAvatar/triage-bot",
+    "description": "A Node.js demo tool that triages support tickets in real time by using Jev's typed questions (choice/score/noul) to route each ticket to a specialist agent, score urgency, and decide on human escalation, then has Cerebras draft the reply with per-call latency timing.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
     "id": "tool_ee1ee4b072e2ab8b",
     "name": "jev-gmail-ai-spam-filter-and-labeling",
     "url": "https://github.com/ilyamk/jev-gmail-ai-spam-filter-and-labeling",
     "description": "jevMail is a self-hosted Google Apps Script tool that uses the Jev AI model to label Gmail messages by meaning against custom natural-language criteria, with confidence-based second-pass review, optional auto-archiving, spend limits, and preview mode—no external backend required.",
     "stars": 5,
     "forks": 1
+  },
+  {
+    "id": "tool_ee3ae9a7be39ce14",
+    "name": "jev-commit",
+    "url": "https://github.com/valentynkit/jev-commit",
+    "description": "A commit-msg hook that sends the staged diff and message to TypeSafe's Jev decision model, which scores five checks—filler message, diff contradiction, debug leftovers, unmentioned work, secrets—and blocks only credentials (or findings under --strict), failing open on errors.",
+    "stars": 5,
+    "forks": 0
+  },
+  {
+    "id": "tool_ee652ff4c586e62b",
+    "name": "jev-audit",
+    "url": "https://github.com/MagicBeansAI/jev-audit",
+    "description": "jev-audit is a zero-dependency, fully local CLI that scans a codebase for LLM call sites, flags those that are really decisions (classify, route, score, verify), and—via an installable agent skill—produces a JEV_AUDIT.md report tiering each call as Replace, Hybrid, Keep LLM, or Pure code with savings math, draft Jev question JSON, and a migration plan to TypeSafe AI's System One model.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_ee7c7b39d200e231",
+    "name": "jev-sandbox",
+    "url": "https://github.com/amr05008/jev-sandbox",
+    "description": "A repo of six experiments testing when TypeSafe's Jev decision model can replace an LLM—covering email triage and gluten-label detection—with shared tooling for agreement, confidence-threshold, latency, and cost scoring plus reproducible run scripts and datasets.",
+    "stars": 1,
+    "forks": 0
   },
   {
     "id": "tool_f4c16c9d1ced3f8b",
@@ -736,11 +1464,43 @@
     "forks": 0
   },
   {
+    "id": "tool_f4c6842f3f7bfd2f",
+    "name": "jevis",
+    "url": "https://github.com/jaewgwon/jevis",
+    "description": "Jevis is a Dart package for Flutter's integration_test framework that uses TypeSafe's Jev model to drive UI tests: you register available actions, state a goal and action budget, and the model observes the current screen, picks the next action, and evaluates whether the goal is reached.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_f5efbe9913ce0edf",
+    "name": "typesafe-ai-ruby",
+    "url": "https://github.com/hnegishi/typesafe-ai-ruby",
+    "description": "A dependency-free Ruby client for the TypeSafe System One API that sends state plus typed questions (yes/no Nouls, multi-option Choices, ordinal Scores) to the Jev model and returns structured answers with probabilities and confidence scores, plus retries, instrumentation, and per-call configuration.",
+    "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_f87211dea3685af0",
+    "name": "gavel",
+    "url": "https://github.com/gregb100/gavel",
+    "description": "An OpenClaw plugin exposing a `jev_decide` tool that lets agents make structured decisions — probabilities, option picks, and rubric scores with calibrated confidence — via TypeSafe's Jev model on OpenRouter in ~200ms for ~$0.00002, replacing slower, costlier LLM calls.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
     "id": "tool_fb5fbbc5df150906",
     "name": "pi-jev-wiki",
     "url": "https://github.com/xAndreiLi/pi-jev-wiki",
     "description": "pi-jev-wiki is an agent-managed wiki that maintains a project's conceptual space, using Jev to keep its accumulated knowledge legitimate, relevant, and robust as it scales.",
     "stars": 0,
+    "forks": 0
+  },
+  {
+    "id": "tool_fbd815d7718b7b04",
+    "name": "pi-jev-guard",
+    "url": "https://github.com/Reindeer-AI/pi-jev-guard",
+    "description": "Pi extension that pre-reviews proposed code edits against Markdown-defined rules via the TypeSafe Jev API, reporting each violation's exact rule text and source line range, with an enforcement mode that blocks noncompliant writes within the configured repository scope.",
+    "stars": 5,
     "forks": 0
   },
   {
@@ -760,11 +1520,35 @@
     "forks": 0
   },
   {
+    "id": "tool_fc5eadd7d41d790b",
+    "name": "jev-robotics-demo",
+    "url": "https://github.com/FazalAAli/jev-robotics-demo",
+    "description": "A MuJoCo simulation demo where a Franka arm with an Allegro hand stacks cubes, comparing an LLM agent that reasons step-by-step via low-level tools against Jev, a fast typed-probability model that picks pre-simulated moves — achieving the same result ~8x faster at ~1/1000th the cost.",
+    "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_fcd0417d6c049d2b",
+    "name": "hermes-jev-plugin",
+    "url": "https://github.com/ajensenwaud/hermes-jev-plugin",
+    "description": "A Hermes Agent plugin exposing TypeSafe Jev’s calibrated Noul/Choice/Score judgments as four tools—jev_evaluate, jev_check, jev_route, jev_score—for batched atomic decisions, failure triage, review gates, task routing, and severity scoring in coding-agent workflows, plus a bundled question-design skill.",
+    "stars": 3,
+    "forks": 0
+  },
+  {
     "id": "tool_fe8c5327482693a2",
     "name": "jev-one",
     "url": "https://github.com/thezem/jev-one",
     "description": "Jev One is a TypeScript/ESM library for building stateful applications where TypeSafe AI's Jev model answers by pointing to developer-supplied choices—vocabularies, numbered items, capabilities, controls—whose effects a runtime applies and observes until a goal is verified.",
     "stars": 1,
+    "forks": 0
+  },
+  {
+    "id": "tool_fe8f8b2c85c67fc3",
+    "name": "invalidate",
+    "url": "https://github.com/chopratejas/invalidate",
+    "description": "invalidate is a Python library that continuously checks every stored agent memory against each new event—using the ~150 ms, $0.00006-per-check Jev yes/no model plus fixed rules—to mark stale facts superseded or contradicted without editing them, route uncertain cases to human review, and layer onto existing stores like Mem0, Chroma, or pgvector so agents stop answering from outdated memories.",
+    "stars": 13,
     "forks": 0
   },
   {

@@ -12,6 +12,18 @@
     "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
   },
   {
+    "id": "model_671e9fa5db7555df",
+    "name": "decider-2b",
+    "url": "https://huggingface.co/Mapika/decider-2b",
+    "description": "decider-2b is a 1.9B-parameter model that returns calibrated probability distributions over explicit option lists for multiple typed questions in one forward pass—no text generation—for fast routing, classification, judgments, and agent decisions."
+  },
+  {
+    "id": "model_7f71daedf17b157a",
+    "name": "gliguard-LLMGuardrails-300M",
+    "url": "https://huggingface.co/fastino/gliguard-LLMGuardrails-300M",
+    "description": "gliguard-LLMGuardrails-300M is a compact 0.3B-parameter encoder guardrail model that scores prompt/response safety, toxicity, jailbreak attacks, and refusals in one schema-conditioned pass, matching guardrails 23–90x larger at up to 16x faster inference on CPU."
+  },
+  {
     "id": "model_b114b3ecc62345fb",
     "name": "sales-conversion-model-reinf-learning",
     "url": "https://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning",
@@ -30,10 +42,34 @@
     "description": "A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and probability calibration, at the cost of worse phishing detection and option-name routing stability."
   },
   {
+    "id": "model_d1c27286d44aab59",
+    "name": "potion-base-8M",
+    "url": "https://huggingface.co/minishlab/potion-base-8M",
+    "description": "potion-base-8M is an 8M-parameter static embedding model distilled from bge-base-en-v1.5 via Model2Vec and Tokenlearn, producing sentence embeddings orders of magnitude faster on CPU and GPU while retaining ~92% of all-MiniLM-L6-v2's average MTEB performance for resource-constrained or real-time applications."
+  },
+  {
     "id": "model_d3949119d53bac57",
     "name": "laya-vision-smolvlm-256m",
     "url": "https://huggingface.co/thaitea/laya-vision-smolvlm-256m",
     "description": "A SmolVLM-256M-based vision-language decision model that produces calibrated multiple-choice and yes/no probabilities for an image plus optional text in one non-generative forward pass, enabling fast confidence-aware visual question answering (~71 ms on an NVIDIA L4)."
+  },
+  {
+    "id": "model_d3e32be1a4d88a59",
+    "name": "Jeff-1",
+    "url": "https://huggingface.co/GestaltLabs/Jeff-1",
+    "description": "Jeff-1 is an Apache-2.0 LoRA adapter for Qwen3-4B-Instruct-2507 that scores caller-supplied labels to return typed decisions—choice, yes/no, and ordinal scores with probabilities and confidence—for local inference tasks like fact-checking without parsing generated text."
+  },
+  {
+    "id": "model_d811fe7a3defe5a6",
+    "name": "Bespoke-Nimble-9B",
+    "url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
+    "description": "Bespoke-Nimble-9B is a 165 MiB Apache-2.0 LoRA adapter for Qwen3.5-9B that scores allowed boolean, enum, and integer-rubric tokens for context-grounded structured predictions without free-form generation, with tokenizer, prompt builder, inference helper, and evaluation results."
+  },
+  {
+    "id": "model_f6b0b70c523bf85e",
+    "name": "gliner2-privacy-filter-PII-multi",
+    "url": "https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi",
+    "description": "A 205M-parameter GLiNER2 fine-tune that detects and masks PII across 42 entity types in 7 languages, achieving the highest span-level F1 and recall on the SPY benchmark for redaction, compliance, and data-hygiene workflows."
   },
   {
     "id": "model_fc6c1d1792b4d4c4",
