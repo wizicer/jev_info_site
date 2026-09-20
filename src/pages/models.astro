@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import modelsData from '../data/models.json';
 
 type Model = { id: string; name: string; url: string; description: string };
-const models = [...(modelsData as Model[])].sort((a, b) => a.name.localeCompare(b.name, 'en'));
+const models = [...(modelsData as Model[])].sort((a, b) => a.name.localeCompare(b.name, 'en')).map((model) => ({ ...model, displayUrl: model.url }));
 ---
 
 <BaseLayout title="Models — jev.info" description="Models in the Jev ecosystem.">
@@ -22,7 +22,7 @@ const models = [...(modelsData as Model[])].sort((a, b) => a.name.localeCompare(
             <Icon name="material-symbols:arrow-outward-rounded" size={18} aria-hidden="true" />
           </div>
           <p class="line-clamp-3">{model.description}</p>
-          <span class="model-source">{new URL(model.url).hostname.replace(/^www\./, '')}</span>
+          <span class="model-source">{model.displayUrl}</span>
         </a>
       ))}
     </section>
@@ -42,7 +42,7 @@ const models = [...(modelsData as Model[])].sort((a, b) => a.name.localeCompare(
   h2 { margin: 0; font-size: 18px; line-height: 1.2; letter-spacing: -.03em; overflow-wrap: anywhere; }
   .model-card > p { margin: 18px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; transition: color .18s; }
   .model-card:hover > p, .model-card:hover .model-source { color: color-mix(in srgb, var(--paper) 82%, transparent); }
-  .model-source { margin-top: auto; padding-top: 21px; color: var(--muted); font-size: 12px; font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .model-source { margin-top: auto; padding-top: 21px; color: var(--muted); font-size: 11px; font-weight: 650; line-height: 1.35; overflow-wrap: anywhere; }
   @media (min-width: 660px) { .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1020px) { .model-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 720px) { .models-page { padding-block: 38px 58px; } .model-card { min-height: 184px; } }
