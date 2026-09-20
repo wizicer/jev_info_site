@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CommunitySummaryAnimation from '../components/CommunitySummaryAnimation.astro';
 import awesomeData from '../data/awesome.json';
 import metricsData from '../data/repository-metrics.json';
 import siteMetadata from '../data/site-metadata.json';
@@ -28,11 +29,11 @@ const resources = [siteMetadata.communityResources.primary as Resource, ...(awes
     </header>
 
     <section class="about-panel" aria-labelledby="about-heading">
-      <div>
+      <div class="about-heading">
         <p class="section-label">01 / ABOUT JEV</p>
-        <h2 id="about-heading">A practical introduction is on its way.</h2>
+        <h2 id="about-heading">Traditional LLM generation vs. Jev evaluation.</h2>
       </div>
-      <div class="construction-mark" aria-label="Under construction"><Icon name="material-symbols:construction-rounded" size={26} aria-hidden="true" /></div>
+      <CommunitySummaryAnimation />
     </section>
 
     <section class="resources" aria-labelledby="resources-heading">
@@ -80,9 +81,9 @@ const resources = [siteMetadata.communityResources.primary as Resource, ...(awes
   h1, h2 { margin: 0; letter-spacing: -.055em; }
   h1 { font-size: clamp(28px, 4vw, 32px); }
   h2 { font-size: clamp(20px, 3vw, 26px); line-height: 1.13; }
-  .about-panel { min-height: 156px; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; border-bottom: 1px solid var(--line); }
-  .about-panel h2 { max-width: 480px; }
-  .construction-mark { width: 52px; height: 52px; flex: none; display: grid; place-items: center; border: 1px solid var(--line); color: var(--muted); }
+  .about-panel { padding: 26px 0 36px; border-bottom: 1px solid var(--line); }
+  .about-heading { max-width: 760px; }
+  .about-heading h2 { max-width: 650px; }
   .resources { margin-top: 50px; }
   .resources-heading { padding-bottom: 20px; display: flex; align-items: end; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--ink); }
   .resources-heading > span { flex: none; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
