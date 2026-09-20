@@ -28,11 +28,17 @@ export function initSite() {
   });
 
   const themeToggle = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  const themeColor = document.querySelector<HTMLMetaElement>('meta[data-theme-color]');
+  const syncThemeColor = () => {
+    if (themeColor) themeColor.content = getComputedStyle(root).getPropertyValue('--paper').trim();
+  };
+  syncThemeColor();
   themeToggle?.addEventListener('click', () => {
     const computedDark = root.dataset.theme === 'dark' || (!root.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
     const next = computedDark ? 'light' : 'dark';
     root.dataset.theme = next;
     localStorage.setItem('jev-theme', next);
+    syncThemeColor();
   });
 
   const languageButton = document.querySelector<HTMLButtonElement>('.language button');
