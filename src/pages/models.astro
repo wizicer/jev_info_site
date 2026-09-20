@@ -2,9 +2,13 @@
 import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import modelsData from '../data/models.json';
+import metricsData from '../data/repository-metrics.json';
 
 type Model = { id: string; name: string; url: string; description: string };
-const models = [...(modelsData as Model[])].sort((a, b) => a.name.localeCompare(b.name, 'en')).map((model) => ({ ...model, displayUrl: model.url }));
+type ModelMetrics = Record<string, { likes: number }>;
+const modelMetrics = (metricsData.models || {}) as ModelMetrics;
+const models = [...(modelsData as Model[])].map((model) => ({ ...model, likes: modelMetrics[model.id]?.likes, displayUrl: model.url })).sort((a, b) => (b.likes ?? -1) - (a.likes ?? -1) || a.name.localeCompare(b.name, 'en'));
+const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
 ---
 
 <BaseLayout title="Models — jev.info" description="Models in the Jev ecosystem.">
@@ -22,7 +26,10 @@ const models = [...(modelsData as Model[])].sort((a, b) => a.name.localeCompare(
             <Icon name="material-symbols:arrow-outward-rounded" size={18} aria-hidden="true" />
           </div>
           <p class="line-clamp-3">{model.description}</p>
-          <span class="model-source">{model.displayUrl}</span>
+          <div class="model-card-footer">
+            <span class="model-source">{model.displayUrl}</span>
+            {model.likes !== undefined && <span class="model-likes" title="Hugging Face likes"><Icon name="material-symbols:favorite-rounded" size={15} aria-hidden="true" />{formatCount(model.likes)}</span>}
+          </div>
         </a>
       ))}
     </section>
@@ -41,8 +48,10 @@ const models = [...(modelsData as Model[])].sort((a, b) => a.name.localeCompare(
   .model-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
   h2 { margin: 0; font-size: 18px; line-height: 1.2; letter-spacing: -.03em; overflow-wrap: anywhere; }
   .model-card > p { margin: 18px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; transition: color .18s; }
-  .model-card:hover > p, .model-card:hover .model-source { color: color-mix(in srgb, var(--paper) 82%, transparent); }
-  .model-source { margin-top: auto; padding-top: 21px; color: var(--muted); font-size: 11px; font-weight: 650; line-height: 1.35; overflow-wrap: anywhere; }
+  .model-card-footer { margin-top: auto; padding-top: 21px; display: flex; align-items: end; justify-content: space-between; gap: 12px; }
+  .model-source { color: var(--muted); font-size: 11px; font-weight: 650; line-height: 1.35; overflow-wrap: anywhere; }
+  .model-likes { flex: none; display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .model-card:hover > p, .model-card:hover .model-source, .model-card:hover .model-likes { color: color-mix(in srgb, var(--paper) 82%, transparent); }
   @media (min-width: 660px) { .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1020px) { .model-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 720px) { .models-page { padding-block: 38px 58px; } .model-card { min-height: 184px; } }
