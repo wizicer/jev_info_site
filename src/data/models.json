@@ -6,6 +6,12 @@
     "description": "Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or JSON states with calibrated probabilities in a single ~33 ms forward pass, auto-routing across three checkpoints covering 100+ languages."
   },
   {
+    "id": "model_276656a74cb6f7af",
+    "name": "gliformer-large-v1",
+    "url": "https://huggingface.co/knowledgator/gliformer-large-v1",
+    "description": "GLiFormer Large v1 is a 575.6M-parameter layout-aware DeBERTa encoder that performs named entity recognition, text classification, joint relation extraction, nested structured extraction, and text embeddings using task labels and schemas provided at inference time."
+  },
+  {
     "id": "model_482f7d2641ab3321",
     "name": "cua-s1-forms",
     "url": "https://huggingface.co/cua-ai/cua-s1-forms",
@@ -42,6 +48,12 @@
     "description": "A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and probability calibration, at the cost of worse phishing detection and option-name routing stability."
   },
   {
+    "id": "model_c749a841cc7ce152",
+    "name": "gliner2.5-cua-grounder-macos-v1",
+    "url": "https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v1",
+    "description": "A merged FP32 GLiNER2.5 fine-tune that chooses an action ID, `reobserve`, or `abstain` from a bounded action menu for local macOS CUA automation—without screenshots or tool calls—and is verified on browser DOM and native AppKit fixtures with low-latency MPS inference."
+  },
+  {
     "id": "model_d1c27286d44aab59",
     "name": "potion-base-8M",
     "url": "https://huggingface.co/minishlab/potion-base-8M",
@@ -64,6 +76,12 @@
     "name": "Bespoke-Nimble-9B",
     "url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
     "description": "Bespoke-Nimble-9B is a 165 MiB Apache-2.0 LoRA adapter for Qwen3.5-9B that scores allowed boolean, enum, and integer-rubric tokens for context-grounded structured predictions without free-form generation, with tokenizer, prompt builder, inference helper, and evaluation results."
+  },
+  {
+    "id": "model_ed6149e37efb290e",
+    "name": "chessjev-minilm-v1",
+    "url": "https://huggingface.co/gopalanj/chessjev-minilm-v1",
+    "description": "A chess option scorer that finetunes MiniLM-L6 with an attention head to emit logits for all legal moves from a FEN context in one forward pass, distilled from Stockfish 19 (0.445 teacher agreement, 0.667 on tactics) for fast move ranking rather than verified playing strength."
   },
   {
     "id": "model_f6b0b70c523bf85e",
