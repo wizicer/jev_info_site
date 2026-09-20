@@ -20,20 +20,57 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     </header>
     <section class="model-grid" aria-label="Models">
       {models.map((model) => (
-        <a class="model-card" href={model.url} target="_blank" rel="noreferrer">
-          <div class="model-card-top">
+        <article class="model-card">
+          <button class="model-details" type="button" data-model-details data-name={model.name} data-url={model.url} data-description={model.description} data-likes={model.likes ?? ''}>
             <h2>{model.name}</h2>
-            <Icon name="material-symbols:arrow-outward-rounded" size={18} aria-hidden="true" />
-          </div>
-          <p class="line-clamp-3">{model.description}</p>
-          <div class="model-card-footer">
-            <span class="model-source">{model.displayUrl}</span>
-            {model.likes !== undefined && <span class="model-likes" title="Hugging Face likes"><Icon name="material-symbols:favorite-rounded" size={15} aria-hidden="true" />{formatCount(model.likes)}</span>}
-          </div>
-        </a>
+            <p class="line-clamp-3">{model.description}</p>
+            <div class="model-card-footer">
+              <span class="model-source">{model.displayUrl}</span>
+              {model.likes !== undefined && <span class="model-likes" title="Hugging Face likes"><Icon name="material-symbols:favorite-rounded" size={15} aria-hidden="true" />{formatCount(model.likes)}</span>}
+            </div>
+          </button>
+          <a class="model-external" href={model.url} target="_blank" rel="noreferrer" aria-label={`Open ${model.name} on Hugging Face`}><Icon name="material-symbols:arrow-outward-rounded" size={18} aria-hidden="true" /></a>
+        </article>
       ))}
     </section>
   </main>
+
+  <dialog class="model-dialog" data-model-dialog aria-labelledby="model-dialog-title">
+    <button class="model-dialog-close" type="button" data-model-dialog-close aria-label="Close model details">×</button>
+    <p class="dialog-eyebrow">MODEL</p>
+    <h2 id="model-dialog-title" data-model-dialog-title></h2>
+    <p class="model-dialog-description" data-model-dialog-description></p>
+    <dl>
+      <div><dt>Source</dt><dd><a data-model-dialog-url target="_blank" rel="noreferrer"></a></dd></div>
+      <div data-model-dialog-likes-row><dt>Likes</dt><dd data-model-dialog-likes></dd></div>
+    </dl>
+    <a class="model-dialog-open" data-model-dialog-open target="_blank" rel="noreferrer">Open on Hugging Face ↗</a>
+  </dialog>
+
+  <script>
+    const dialog = document.querySelector<HTMLDialogElement>("[data-model-dialog]");
+    const title = dialog?.querySelector<HTMLElement>("[data-model-dialog-title]");
+    const description = dialog?.querySelector<HTMLElement>("[data-model-dialog-description]");
+    const url = dialog?.querySelector<HTMLAnchorElement>("[data-model-dialog-url]");
+    const open = dialog?.querySelector<HTMLAnchorElement>("[data-model-dialog-open]");
+    const likes = dialog?.querySelector<HTMLElement>("[data-model-dialog-likes]");
+    const likesRow = dialog?.querySelector<HTMLElement>("[data-model-dialog-likes-row]");
+    let returnFocus: HTMLButtonElement | null = null;
+    document.querySelectorAll<HTMLButtonElement>("[data-model-details]").forEach((button) => button.addEventListener("click", () => {
+      if (!dialog || !title || !description || !url || !open) return;
+      returnFocus = button;
+      title.textContent = button.dataset.name ?? "";
+      description.textContent = button.dataset.description ?? "";
+      url.href = button.dataset.url ?? ""; url.textContent = button.dataset.url ?? "";
+      open.href = button.dataset.url ?? "";
+      const value = button.dataset.likes;
+      if (likesRow && likes) { likesRow.hidden = !value; likes.textContent = value ? Number(value).toLocaleString("en") : ""; }
+      dialog.showModal();
+    }));
+    dialog?.querySelector("[data-model-dialog-close]")?.addEventListener("click", () => dialog.close());
+    dialog?.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+    dialog?.addEventListener("close", () => returnFocus?.focus());
+  </script>
 </BaseLayout>
 
 <style>
@@ -43,16 +80,27 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
   h1 { margin: 0; font-size: clamp(28px, 4vw, 32px); letter-spacing: -.055em; }
   .models-intro > span { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
   .model-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); border-left: 1px solid var(--line); }
-  .model-card { min-height: 212px; padding: 20px; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); transition: background .18s, color .18s; }
+  .model-card { position: relative; min-height: 212px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); transition: background .18s, color .18s; }
   .model-card:hover { background: var(--accent); color: var(--paper); }
-  .model-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+  .model-details { width: 100%; min-height: 212px; padding: 20px; border: 0; background: transparent; color: inherit; display: flex; flex-direction: column; cursor: pointer; text-align: left; }
+  .model-details:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+  .model-external { position: absolute; z-index: 1; top: 16px; right: 16px; width: 34px; height: 34px; display: grid; place-items: center; color: var(--muted); }
+  .model-external:hover, .model-external:focus-visible { color: var(--accent); }
   h2 { margin: 0; font-size: 18px; line-height: 1.2; letter-spacing: -.03em; overflow-wrap: anywhere; }
-  .model-card > p { margin: 18px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; transition: color .18s; }
+  .model-details > p { margin: 18px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; transition: color .18s; }
   .model-card-footer { margin-top: auto; padding-top: 21px; display: flex; align-items: end; justify-content: space-between; gap: 12px; }
   .model-source { color: var(--muted); font-size: 11px; font-weight: 650; line-height: 1.35; overflow-wrap: anywhere; }
   .model-likes { flex: none; display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
-  .model-card:hover > p, .model-card:hover .model-source, .model-card:hover .model-likes { color: color-mix(in srgb, var(--paper) 82%, transparent); }
+  .model-card:hover .model-details > p, .model-card:hover .model-source, .model-card:hover .model-likes { color: color-mix(in srgb, var(--paper) 82%, transparent); }
   @media (min-width: 660px) { .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1020px) { .model-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (max-width: 720px) { .models-page { padding-block: 38px 58px; } .model-card { min-height: 184px; } }
+  .model-dialog { width: min(100% - 32px, 620px); max-height: min(720px, calc(100dvh - 32px)); padding: 30px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+  .model-dialog::backdrop { background: rgb(8 9 8 / .66); backdrop-filter: blur(4px); }
+  .model-dialog-close { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; font-size: 22px; line-height: 1; }
+  .dialog-eyebrow { margin: 0 0 12px; color: var(--muted); font-size: 12px; font-weight: 760; letter-spacing: .12em; }
+  .model-dialog h2 { max-width: calc(100% - 42px); margin: 0; font-size: clamp(22px, 4vw, 30px); }
+  .model-dialog-description { margin: 20px 0 28px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+  .model-dialog dl { margin: 0; border-top: 1px solid var(--line); } .model-dialog dl > div { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 12px; } .model-dialog dt { color: var(--muted); } .model-dialog dd { min-width: 0; margin: 0; overflow-wrap: anywhere; } .model-dialog dd a { color: var(--accent); }
+  .model-dialog-open { width: fit-content; margin-top: 24px; padding: 10px 13px; display: inline-flex; border: 1px solid var(--ink); font-size: 13px; font-weight: 700; } .model-dialog-open:hover { background: var(--ink); color: var(--paper); }
+  @media (max-width: 720px) { .models-page { padding-block: 38px 58px; } .model-card, .model-details { min-height: 184px; } .model-dialog { padding: 24px 18px; } }
 </style>
