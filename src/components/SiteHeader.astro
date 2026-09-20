@@ -4,8 +4,8 @@ const { pathname } = Astro.url;
 const nav = [
   { label: 'Home', href: '/', active: pathname === '/' },
   { label: 'Use Cases', href: '/use-cases', active: pathname.startsWith('/use-cases') },
-  { label: 'Recipes', href: '/recipes', active: pathname.startsWith('/recipes') },
-  { label: 'Benchmarks', href: '/benchmarks', active: pathname.startsWith('/benchmarks') },
+  { label: 'Tools', href: '/tools', active: pathname.startsWith('/tools') },
+  { label: 'Models', href: '/models', active: pathname.startsWith('/models') },
   { label: 'Information', href: '/information', active: pathname.startsWith('/information') },
 ];
 ---
