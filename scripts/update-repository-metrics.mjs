@@ -12,6 +12,7 @@ try {
 }
 const toolsPath = resolve(root, 'src/data/tools.json');
 const modelsPath = resolve(root, 'src/data/models.json');
+const awesomePath = resolve(root, 'src/data/awesome.json');
 const metricsPath = resolve(root, 'src/data/repository-metrics.json');
 const githubToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 const huggingFaceToken = process.env.HF_TOKEN;
@@ -67,7 +68,7 @@ function isCount(value) {
 }
 
 async function main() {
-  const [tools, models, previous] = await Promise.all([readJson(toolsPath), readJson(modelsPath), readJson(metricsPath)]);
+  const [tools, models, awesome, previous] = await Promise.all([readJson(toolsPath), readJson(modelsPath), readJson(awesomePath), readJson(metricsPath)]);
   const now = new Date().toISOString();
   const failures = [];
   if (!githubToken) console.warn('Warning: GITHUB_TOKEN is not set. GitHub allows only 60 unauthenticated requests/hour; this catalog has more repositories.');
@@ -81,6 +82,15 @@ async function main() {
       return { id: tool.id, metrics: { stars: data.stargazers_count, forks: data.forks_count, updatedAt: now } };
     } catch (error) { return { id: tool.id, error: error.message }; }
   });
+  const awesomeResults = await mapWithConcurrency(awesome, async (resource) => {
+    const repository = repositoryFromUrl(resource.url, 'github.com');
+    if (!repository) return { id: resource.id };
+    try {
+      const data = await fetchJson(`https://api.github.com/repos/${repository}`, { Accept: 'application/vnd.github+json', 'User-Agent': 'jev-info-metrics-updater', ...(githubToken ? { Authorization: `Bearer ${githubToken}` } : {}) }, repository);
+      if (!isCount(data.stargazers_count) || !isCount(data.forks_count)) throw new Error(`${repository}: response did not include valid counts`);
+      return { id: resource.id, metrics: { stars: data.stargazers_count, forks: data.forks_count, updatedAt: now } };
+    } catch (error) { return { id: resource.id, error: error.message }; }
+  });
   const modelResults = await mapWithConcurrency(models, async (model) => {
     const repository = repositoryFromUrl(model.url, 'huggingface.co');
     if (!repository) return { id: model.id, error: `Unsupported Hugging Face URL: ${model.url}` };
@@ -90,8 +100,9 @@ async function main() {
       return { id: model.id, metrics: { likes: data.likes, updatedAt: now } };
     } catch (error) { return { id: model.id, error: error.message }; }
   });
-  const next = { version: 1, updatedAt: now, tools: { ...(previous.tools || {}) }, models: { ...(previous.models || {}) } };
+  const next = { version: 1, updatedAt: now, tools: { ...(previous.tools || {}) }, models: { ...(previous.models || {}) }, awesome: { ...(previous.awesome || {}) } };
   for (const result of toolResults) { if (result.metrics) next.tools[result.id] = result.metrics; else failures.push(`GitHub ${result.error}`); }
+  for (const result of awesomeResults) { if (result.metrics) next.awesome[result.id] = result.metrics; else if (result.error) failures.push(`GitHub ${result.error}`); }
   for (const result of modelResults) { if (result.metrics) next.models[result.id] = result.metrics; else failures.push(`Hugging Face ${result.error}`); }
   const temporaryPath = `${metricsPath}.tmp`;
   await mkdir(dirname(metricsPath), { recursive: true });
