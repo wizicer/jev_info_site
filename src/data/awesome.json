@@ -26,6 +26,12 @@
     "favicon": "/favicon/awesome_0aa087b3b8dd9a5c.png"
   },
   {
+    "id": "awesome_0caef023d0d0f5ee",
+    "name": "The Jev Registry — a daily watch",
+    "url": "https://radar.mowglissh.dev/",
+    "description": "A bilingual (FR/EN) daily-updated registry cataloging GitHub projects related to the Jev type-safe decision model, tracking star counts, verification statuses, categories, and locally generated descriptions to monitor the ecosystem's daily activity."
+  },
+  {
     "id": "awesome_0f33d966321c488f",
     "name": "awesome-jev",
     "url": "https://github.com/cobanov/awesome-jev",
@@ -117,6 +123,12 @@
     "name": "pg-jev",
     "url": "https://github.com/realZachi/pg-jev",
     "description": "pg-jev is a PostgreSQL extension that lets you filter, rank, and classify table rows with plain-language conditions via SQL functions (`jev`, `jev_prob`, `jev_score`, `jev_choice`) backed by TypeSafe's Jev model, which returns calibrated probabilities per row—using batched API requests, read-ahead streaming, and session caching—without indexes or embeddings."
+  },
+  {
+    "id": "awesome_3acb6e213bfba0b4",
+    "name": "building-with-jev-skill",
+    "url": "https://github.com/dbreunig/building-with-jev-skill",
+    "description": "An agent skill for writing and improving programs that call Jev, TypeSafe's System One model, covering question design (Choice, Score, Noul), state structure, answer composition, confidence thresholds, and diagnosing wrong or low-confidence answers, targeting `jev-1.13` and installable via Claude Code plugin, skills CLI, or manual copy."
   },
   {
     "id": "awesome_3fda11a46ce1f3cf",
@@ -370,6 +382,12 @@
     "description": "Autonomous Skydio X2 quadrotor in MuJoCo that flies a five-station obstacle course on camera alone, with a ~3 Hz JSON judgment model supplying tactical maneuvers (climb, gap, brake, reacquire) that its classical perception and 50 Hz safety-reflex veto layer cannot express."
   },
   {
+    "id": "awesome_e08b3018685f5552",
+    "name": "jev",
+    "url": "https://github.com/BorisLeMeec/jev",
+    "description": "A Claude Code plugin that answers codebase questions without loading files into the agent's context: `jev find` locates code semantically, `jev ask` runs yes/no audits across directories, and a Read hook narrows large files—cutting billed tokens ~30–41% in measured runs."
+  },
+  {
     "id": "awesome_e25d428b424e8dd9",
     "name": "pg-jev: query Postgres in plain English",
     "url": "https://pgjev.zachi.dev/",
@@ -381,6 +399,12 @@
     "name": "awesome-jev-use-cases",
     "url": "https://github.com/walidboulanouar/awesome-jev-use-cases",
     "description": "A ranked catalog of demos built with Jev, TypeSafe's typed-decision model, with per-demo likes, reposts, and reach grouped by application area, plus documented limits, patterns, and cost/latency figures, so builders can see what Jev actually handles before building."
+  },
+  {
+    "id": "awesome_eeeb820b9afd050a",
+    "name": "awesome-jev-by-typesafe",
+    "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
+    "description": "An evidence-backed community guide to TypeSafe’s Jev System One model, curating practical use cases, decision patterns, prompts, SDK quickstarts, API facts, limits, and integration paths for building typed classification, routing, scoring, verification, and gated automation."
   },
   {
     "id": "awesome_fd74cbf62f4cb581",

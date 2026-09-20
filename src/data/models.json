@@ -12,6 +12,12 @@
     "description": "GLiFormer Large v1 is a 575.6M-parameter layout-aware DeBERTa encoder that performs named entity recognition, text classification, joint relation extraction, nested structured extraction, and text embeddings using task labels and schemas provided at inference time."
   },
   {
+    "id": "model_2b4eef82fb932cad",
+    "name": "open-jev-deberta-v3-large",
+    "url": "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large",
+    "description": "A DeBERTa-v3-large encoder that maps one input state plus any number of typed questions (choice, ordered score, or yes/no) to calibrated per-question probability distributions in a single forward pass, reaching 0.854 in-domain accuracy at 0.022 ECE with zero structured-output errors."
+  },
+  {
     "id": "model_482f7d2641ab3321",
     "name": "cua-s1-forms",
     "url": "https://huggingface.co/cua-ai/cua-s1-forms",
