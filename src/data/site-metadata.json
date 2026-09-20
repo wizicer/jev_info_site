@@ -1,0 +1,11 @@
+{
+  "communityResources": {
+    "primary": {
+      "id": "site_jev_info",
+      "name": "jev.info",
+      "url": "https://jev.info",
+      "description": "An independent community index for Jev information and real-world use cases.",
+      "featured": true
+    }
+  }
+}
