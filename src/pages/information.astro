@@ -11,7 +11,7 @@ const resources = [...(awesomeData as Resource[])]
     const hostname = new URL(resource.url).hostname.replace(/^www\./, '');
     return { ...resource, title: decodeName(resource.name), hostname, displayUrl: resource.url.replace(/^https?:\/\//, ''), github: hostname === 'github.com', favicon: faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
   })
-  .sort((a, b) => a.title.localeCompare(b.title, 'en'));
+  .sort((a, b) => Number(a.github) - Number(b.github) || a.title.localeCompare(b.title, 'en'));
 ---
 
 <BaseLayout title="Information — jev.info" description="References and community resources for the Jev ecosystem.">
@@ -55,6 +55,16 @@ const resources = [...(awesomeData as Resource[])]
       </ul>
     </section>
   </main>
+  <script>
+    const list = document.querySelector('.resource-list');
+    if (list) {
+      const rows = [...list.children];
+      const firstGitHub = rows.find((row) => row.querySelector('a[href*="github.com"]'));
+      const label = (text: string) => { const item = document.createElement('li'); item.className = 'resource-group-label'; item.textContent = text; return item; };
+      list.prepend(label('Non-GitHub resources'));
+      if (firstGitHub) list.insertBefore(label('GitHub resources'), firstGitHub);
+    }
+  </script>
 </BaseLayout>
 
 <style>
@@ -71,6 +81,7 @@ const resources = [...(awesomeData as Resource[])]
   .resources-heading { padding-bottom: 20px; display: flex; align-items: end; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--ink); }
   .resources-heading > span { flex: none; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
   .resource-list { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; border-left: 1px solid var(--line); }
+  .resource-group-label { grid-column: 1 / -1; padding: 12px 11px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 760; letter-spacing: .1em; text-transform: uppercase; }
   .resource-list li { min-width: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .resource-list a { min-height: 50px; padding: 8px 11px; display: grid; grid-template-columns: 26px minmax(0, .9fr) minmax(0, 1fr) auto; align-items: center; gap: 9px; }
   .resource-list a:hover { background: var(--surface); color: var(--accent); }
