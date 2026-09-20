@@ -94,7 +94,7 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
   .model-card:hover .model-details > p, .model-card:hover .model-source, .model-card:hover .model-likes { color: color-mix(in srgb, var(--paper) 82%, transparent); }
   @media (min-width: 660px) { .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1020px) { .model-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  .model-dialog { width: min(100% - 32px, 620px); max-height: min(720px, calc(100dvh - 32px)); padding: 30px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+  .model-dialog { position: fixed; inset: 0; margin: auto; width: min(100% - 32px, 620px); max-height: min(720px, calc(100dvh - 32px)); padding: 30px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
   .model-dialog::backdrop { background: rgb(8 9 8 / .66); backdrop-filter: blur(4px); }
   .model-dialog-close { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; font-size: 22px; line-height: 1; }
   .dialog-eyebrow { margin: 0 0 12px; color: var(--muted); font-size: 12px; font-weight: 760; letter-spacing: .12em; }
