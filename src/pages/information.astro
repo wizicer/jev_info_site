@@ -9,7 +9,7 @@ const faviconIds = new Set(['awesome_10891cc23225ffb6', 'awesome_11ae781c8586e39
 const resources = [...(awesomeData as Resource[])]
   .map((resource) => {
     const hostname = new URL(resource.url).hostname.replace(/^www\./, '');
-    return { ...resource, title: decodeName(resource.name), hostname, github: hostname === 'github.com', favicon: faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
+    return { ...resource, title: decodeName(resource.name), hostname, displayUrl: resource.url.replace(/^https?:\/\//, ''), github: hostname === 'github.com', favicon: faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
   })
   .sort((a, b) => a.title.localeCompare(b.title, 'en'));
 ---
@@ -46,7 +46,7 @@ const resources = [...(awesomeData as Resource[])]
               </span>
               <span class="resource-copy">
                 <strong>{resource.title}</strong>
-                <small>{resource.hostname}</small>
+                <small>{resource.displayUrl}</small>
               </span>
               <Icon class="resource-arrow" name="material-symbols:arrow-outward-rounded" size={17} aria-hidden="true" />
             </a>
@@ -72,14 +72,14 @@ const resources = [...(awesomeData as Resource[])]
   .resources-heading > span { flex: none; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
   .resource-list { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; border-left: 1px solid var(--line); }
   .resource-list li { min-width: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .resource-list a { min-height: 66px; padding: 11px 13px; display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+  .resource-list a { min-height: 50px; padding: 8px 11px; display: grid; grid-template-columns: 26px minmax(0, .9fr) minmax(0, 1fr) auto; align-items: center; gap: 9px; }
   .resource-list a:hover { background: var(--surface); color: var(--accent); }
   .resource-icon { width: 24px; height: 24px; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; color: var(--muted); font-size: 11px; font-weight: 750; }
   .resource-icon img, .github-icon { width: 18px; height: 18px; object-fit: contain; }
-  .resource-copy { min-width: 0; display: grid; gap: 3px; }
-  .resource-copy strong, .resource-copy small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .resource-copy { display: contents; }
+  .resource-copy strong, .resource-copy small { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .resource-copy strong { font-size: 13px; font-weight: 680; }
-  .resource-copy small { color: var(--muted); font-size: 12px; }
+  .resource-copy small { color: var(--muted); font-size: 11px; }
   .resource-arrow { color: var(--muted); }
   @media (max-width: 720px) { .information-page { padding-block: 38px 58px; } .resources { margin-top: 42px; } .resource-list { grid-template-columns: 1fr; } }
 </style>
