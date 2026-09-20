@@ -44,7 +44,7 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
       } else media.alt = '';
       mediaHost.replaceChildren(media);
     };
-    type TwitterWindow = Window & { twttr?: { widgets: { createTweet: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
+    type TwitterWindow = Window & { twttr?: { widgets: { createVideo: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
     const twitterWindow = window as TwitterWindow;
     const tweetExists = (id: string) => new Promise<boolean>((resolve) => {
       const callback = '__jevOembed' + id + Math.random().toString(36).slice(2);
@@ -80,7 +80,7 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
       if (!twitterWindow.twttr) { showFallback(); return; }
       host.replaceChildren();
       try {
-        const result = await twitterWindow.twttr.widgets.createTweet(root.dataset.id ?? '', host, { dnt: true });
+        const result = await twitterWindow.twttr.widgets.createVideo(root.dataset.id ?? '', host, { dnt: true });
         if (!result) showFallback();
       } catch { showFallback(); }
     };

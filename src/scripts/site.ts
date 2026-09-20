@@ -252,7 +252,7 @@ export function initSite() {
     document.head.append(script);
   });
   async function loadTweet(demo: Demo, host: HTMLElement) {
-    type TwitterWindow = Window & { twttr?: { widgets: { createTweet: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
+    type TwitterWindow = Window & { twttr?: { widgets: { createVideo: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
     const twitterWindow = window as TwitterWindow;
     if (!(await tweetExists(demo.id))) { if (activeDemoId === demo.id) showMediaFallback(demo, host); return; }
     if (!twitterWindow.twttr) {
@@ -271,7 +271,7 @@ export function initSite() {
     host.replaceChildren();
     if (!twitterWindow.twttr) { showMediaFallback(demo, host); return; }
     try {
-      const result = await twitterWindow.twttr.widgets.createTweet(demo.id, host, { theme: root.dataset.theme === 'dark' ? 'dark' : 'light', dnt: true });
+      const result = await twitterWindow.twttr.widgets.createVideo(demo.id, host, { theme: root.dataset.theme === 'dark' ? 'dark' : 'light', dnt: true });
       if (!result) throw new Error('Tweet unavailable');
     } catch {
       if (activeDemoId === demo.id) showMediaFallback(demo, host);
