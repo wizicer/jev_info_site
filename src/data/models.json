@@ -1,0 +1,44 @@
+[
+  {
+    "id": "model_0fdb3d13bcc9496b",
+    "name": "laya",
+    "url": "https://huggingface.co/convaiinnovations/laya",
+    "description": "Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or JSON states with calibrated probabilities in a single ~33 ms forward pass, auto-routing across three checkpoints covering 100+ languages."
+  },
+  {
+    "id": "model_482f7d2641ab3321",
+    "name": "cua-s1-forms",
+    "url": "https://huggingface.co/cua-ai/cua-s1-forms",
+    "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
+  },
+  {
+    "id": "model_b114b3ecc62345fb",
+    "name": "sales-conversion-model-reinf-learning",
+    "url": "https://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning",
+    "description": "A Stable Baselines3 PPO reinforcement-learning model that predicts sales conversion probability turn-by-turn (96.7% accuracy, 85ms inference) from conversation embeddings and LLM-derived engagement/effectiveness metrics, enabling real-time sales coaching and quantitative A/B testing of scripts."
+  },
+  {
+    "id": "model_b783be89a3779b10",
+    "name": "Arch-Router-1.5B",
+    "url": "https://huggingface.co/katanemo/Arch-Router-1.5B",
+    "description": "Arch-Router-1.5B is a compact Qwen2.5-1.5B-Instruct-based text-generation model that maps conversation intent to user-defined domain/action routes and outputs JSON route selections, enabling transparent, configurable, low-latency routing to preferred LLMs."
+  },
+  {
+    "id": "model_c342c61f28aaa3bd",
+    "name": "laya-grounded",
+    "url": "https://huggingface.co/Luni/laya-grounded",
+    "description": "A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and probability calibration, at the cost of worse phishing detection and option-name routing stability."
+  },
+  {
+    "id": "model_d3949119d53bac57",
+    "name": "laya-vision-smolvlm-256m",
+    "url": "https://huggingface.co/thaitea/laya-vision-smolvlm-256m",
+    "description": "A SmolVLM-256M-based vision-language decision model that produces calibrated multiple-choice and yes/no probabilities for an image plus optional text in one non-generative forward pass, enabling fast confidence-aware visual question answering (~71 ms on an NVIDIA L4)."
+  },
+  {
+    "id": "model_fc6c1d1792b4d4c4",
+    "name": "gliclass-modern-base-v2.0-init",
+    "url": "https://huggingface.co/knowledgator/gliclass-modern-base-v2.0-init",
+    "description": "A 151M-parameter ModernBERT-based GLiClass model that performs efficient zero-shot multi-label text labeling in a single forward pass, supporting topic tagging, sentiment analysis, NLI-style premise–hypothesis scoring, and RAG reranking with cross-encoder-level accuracy at lower compute."
+  }
+]

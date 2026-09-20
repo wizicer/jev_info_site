@@ -1,0 +1,128 @@
+[
+  {
+    "id": "awesome_10891cc23225ffb6",
+    "name": "Jev Apps, Libraries &amp; Examples · JevList",
+    "url": "https://jevlist.ai/",
+    "description": "A reviewed directory of 110 apps, libraries, integrations, and runnable examples built on Jev—TypeSafe AI's typed-decision model—where each guide explains what Jev decides, the shortest real setup path, and the exact upstream commit or commands checked."
+  },
+  {
+    "id": "awesome_11ae781c8586e39b",
+    "name": "Benchmark Heaven — Model benchmarks &amp; costs",
+    "url": "https://benchmarkheaven.com/",
+    "description": "Benchmark Heaven is an interactive cost–capability tracker ranking hundreds of LLMs across 119 benchmarks, computing modeled per-task prices from actual provider rates, caching and token efficiency, filterable by region, provider, lab, and data-use policy."
+  },
+  {
+    "id": "awesome_1e65d16fa94d1749",
+    "name": "jevusecases",
+    "url": "https://www.jevusecases.com/",
+    "description": "A searchable catalog of 1,355 real projects built with Jev—spanning dev tooling, agents, security, games, and trading—where each entry shows what it replaced, measured latency or cost gains versus baselines, and a copyable account of how it was built."
+  },
+  {
+    "id": "awesome_2263e6d536e76ff3",
+    "name": "awesome-jev-typesafe",
+    "url": "https://github.com/valentynkit/awesome-jev-typesafe",
+    "description": "A curated awesome list of 325 entries cataloging SDKs, gateways, coding-agent integrations, replicas, and real-world projects built on TypeSafe's Jev, a fast \"System One\" model that answers typed Choice/Score/Noul questions with calibrated probabilities instead of generating text."
+  },
+  {
+    "id": "awesome_247e1875678cb6e3",
+    "name": "Jev Directory — 50 evals, 726 community builds",
+    "url": "https://jev-directory.netlify.app/",
+    "description": "A curated directory for the typesafe-ai/jev model bundling 50 runnable judge-model evals with exact experimental_evaluate prompts, 726 community builds linked to their projects and source posts, and a copyable agent capability pack for matching requests to proven use cases."
+  },
+  {
+    "id": "awesome_3fda11a46ce1f3cf",
+    "name": "awesome-jev-usecases",
+    "url": "https://github.com/anandi1989/awesome-jev-usecases",
+    "description": "An evidence-backed curated index of real-world use cases for Jev (TypeSafe AI System One), linking to repos, patterns, benchmarks, and measured results across LLM agents, routing, guardrails, RAG, reranking, calibration, structured output, and browser agents to help engineers evaluate proven applications."
+  },
+  {
+    "id": "awesome_4a7e5475763d0192",
+    "name": "Jevable — Discover what people build with Jev",
+    "url": "https://jevable.com/",
+    "description": "Jevable is a curated gallery of 359 real projects built with the Jev model—spanning agents, browser extensions, developer tools, games, and productivity apps—with demos, maker profiles, and category/sort filters that help developers evaluate Jev's practical capabilities and find implementation ideas."
+  },
+  {
+    "id": "awesome_61927d2fab33947e",
+    "name": "Made with Jev — What people are building with Jev",
+    "url": "https://madewithjev.com/",
+    "description": "A curated directory of 328 projects, posts, and guides built with Jev — TypeSafe AI's fast, low-cost System One decision model — organized by use case (agents, games, triage, content, research, tools), with each entry linking to its source and reporting measured cost and latency."
+  },
+  {
+    "id": "awesome_6bf2c1edd7dea1f8",
+    "name": "Awesome Jev",
+    "url": "https://awesomejev.vercel.app/",
+    "description": "A searchable directory of 325 projects across 254 repos built on TypeSafe's Jev—spanning SDKs, coding agents, browser automation, open models, benchmarks, games, and more—with star counts, use-case and language filters, weekly link checks, and Jev-ranked search."
+  },
+  {
+    "id": "awesome_6eea6db8cea994f8",
+    "name": "jev.directory",
+    "url": "https://jev.directory/",
+    "description": "A community directory of real systems built on TypeSafe's Jev primitives (Noul, Score, Choice), showing the primitives and source code each one uses, tagged by domain, with entries that can be copied into the TypeSafe Playground."
+  },
+  {
+    "id": "awesome_7dd7b9d9da88249f",
+    "name": "minirouter — pay with crypto, no KYC",
+    "url": "https://minirouter.sh/",
+    "description": "MiniRouter is an OpenAI-compatible API gateway routing one key to 237+ open models with provider failover and 0% platform fees, payable in USDC, SOL, or any Solana token from $0.50 with no account or KYC."
+  },
+  {
+    "id": "awesome_7e265230bdf11e22",
+    "name": "Learn Jev — Tutorials for TypeSafe AI&#x27;s System One model",
+    "url": "https://learnjev.com/",
+    "description": "Independent, source-cited tutorials for TypeSafe AI's Jev System One model covering first call through production use, typed decision-making, confidence gating, and real cost math, while correcting overstated launch claims about hallucination, speed, and calibration."
+  },
+  {
+    "id": "awesome_824c5590abd218a0",
+    "name": "awesome-jev",
+    "url": "https://github.com/AppitStudio/awesome-jev",
+    "description": "A curated directory for TypeSafe AI's Jev decision model, collecting official SDKs and API docs, community-built apps and integrations, runnable offline examples and starters, plus cookbooks covering routing, retrieval, extraction, and evaluation patterns."
+  },
+  {
+    "id": "awesome_8caeaa4817ab1e6b",
+    "name": "skills",
+    "url": "https://github.com/typesafe-ai/skills",
+    "description": "Agent skills (installable as a Claude Code plugin or via skills.sh) that teach coding agents to design TypeSafe workflows and compose typed judgments — decisions with probabilities from System One models — with pointers to current docs and cookbooks."
+  },
+  {
+    "id": "awesome_91f51e2d18ade5b8",
+    "name": "Awesome Jev",
+    "url": "https://awesomejev.com/",
+    "description": "Awesome Jev is a daily-refreshed community directory of 561 projects built on TypeSafe AI's Jev System One model, cataloging official docs and SDKs, community clients across many languages, integrations, agent tooling, demos, benchmarks, and articles with live GitHub star counts."
+  },
+  {
+    "id": "awesome_9723f8c4a6c42a32",
+    "name": "Awesome-jev-use",
+    "url": "https://github.com/AiPersonacademy/Awesome-jev-use",
+    "description": "A curated list of Jev / TypeSafe System One applications, libraries, and resources for developers building with that ecosystem."
+  },
+  {
+    "id": "awesome_a3c944e1cd463fa1",
+    "name": "ModelBench — Independent AI Model Catalog: Pricing, Context &amp; Benchmarks",
+    "url": "https://model.kyssta.lol/",
+    "description": "ModelBench is a free, no-account catalog of 4,500+ AI models across 225 providers, offering source-linked API pricing, context windows, capabilities, and versioned benchmarks with side-by-side comparison, cost estimation, and rankings tools."
+  },
+  {
+    "id": "awesome_b4f671821d88e5c4",
+    "name": "Jev on the Farm | Fullstack Ag",
+    "url": "https://fullstack-ag-jev-field-guide.nickhorob.chatgpt.site/",
+    "description": "A slide-based field guide from Fullstack Ag presenting Jev, an AI decision model, through eight realistic workflows demonstrating its practical application to grain and row crop farm operations."
+  },
+  {
+    "id": "awesome_b9b4a8e797d25788",
+    "name": "Jev Quest — Zero to Expert",
+    "url": "https://jev-0-to-expert.netlify.app/",
+    "description": "An interactive, gamified course that teaches the \"Jev\" mental model—separating generation, judgment, and control layers in AI systems—through decision scenarios, an architecture builder, a confidence-threshold calibration simulator, and an eight-question expert test."
+  },
+  {
+    "id": "awesome_dbafca5363523774",
+    "name": "open-alternative-jev",
+    "url": "https://github.com/ikermoel/open-alternative-jev",
+    "description": "An open-source alternative to TypeSafe’s Jev, it provides a System One-style model layer that turns any open-weights LLM (via Hugging Face or vLLM) into a single-forward-pass engine for typed, calibrated decisions, with benchmarks to evaluate its claims."
+  },
+  {
+    "id": "awesome_e821539c5cd85ed4",
+    "name": "awesome-jev-use-cases",
+    "url": "https://github.com/walidboulanouar/awesome-jev-use-cases",
+    "description": "A ranked catalog of demos built with Jev, TypeSafe's typed-decision model, with per-demo likes, reposts, and reach grouped by application area, plus documented limits, patterns, and cost/latency figures, so builders can see what Jev actually handles before building."
+  }
+]
