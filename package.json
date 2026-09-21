@@ -8,6 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "deploy:dev": "npm run build && npx wrangler pages deploy ./dist --project-name=jev-info-site --branch=dev",
+    "deploy:main": "npm run build && npx wrangler pages deploy ./dist --project-name=jev-info-site --branch=main",
     "update:metrics": "node --env-file=../.env scripts/update-repository-metrics.mjs"
   },
   "dependencies": {
