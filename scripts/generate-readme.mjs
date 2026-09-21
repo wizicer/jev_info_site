@@ -112,6 +112,8 @@ async function main() {
     '',
     `**[jev.info](${siteUrl}) is the canonical home of this catalog.** Browse it there for full-text search, video demos, category filters, and live repository metrics. This README is generated from the same dataset by \`scripts/generate-readme.mjs\` — do not edit it by hand.`,
     '',
+    'While this README is generated from an automated pipeline, every use case is hand-curated and verified before making the list.',
+    '',
     '## Contents',
     '',
     '- [Community Resources](#community-resources)',
