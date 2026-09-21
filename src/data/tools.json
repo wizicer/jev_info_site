@@ -392,14 +392,6 @@
     "forks": 23
   },
   {
-    "id": "tool_1a602632135b7202",
-    "name": "trpc",
-    "url": "https://github.com/trpc/trpc",
-    "description": "tRPC is a zero-dependency TypeScript library for building and consuming end-to-end typesafe APIs—delivering full static typesafety, autocompletion, subscriptions, and request batching without schemas or code generation—via adapters for React, Next.js, Express, Fastify, and more.",
-    "stars": 40627,
-    "forks": 1679
-  },
-  {
     "id": "tool_1af3ef0fabf389a4",
     "name": "openevals",
     "url": "https://github.com/memovai/openevals",
