@@ -68,7 +68,7 @@ const resources = [siteMetadata.communityResources.primary as Resource, ...(awes
       const rows = [...list.children];
       const firstGitHub = rows.find((row) => row.querySelector('a[href*="github.com"]'));
       const label = (text: string) => { const item = document.createElement('li'); item.className = 'resource-group-label'; item.textContent = text; return item; };
-      list.prepend(label('Non-GitHub resources'));
+      list.prepend(label('Community resources'));
       if (firstGitHub) list.insertBefore(label('GitHub resources'), firstGitHub);
     }
   </script>
