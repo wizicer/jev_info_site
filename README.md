@@ -1,0 +1,337 @@
+# Awesome Jev · jev.info
+
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Site](https://img.shields.io/badge/site-jev.info-0a7ea4)](https://jev.info)
+![Use cases](https://img.shields.io/badge/use%20cases-427-blue)
+![Tools](https://img.shields.io/badge/tools-436-blue)
+![Models](https://img.shields.io/badge/models-11-blue)
+![Resources](https://img.shields.io/badge/resources-52-blue)
+
+> A community-maintained index of projects, SDKs, models, tools, and real-world use cases built on **Jev** — TypeSafe AI's System One model for typed probabilistic decisions.
+
+**[jev.info](https://jev.info) is the canonical home of this catalog.** Browse it there for full-text search, video demos, category filters, and live repository metrics. This README is generated from the same dataset by `scripts/generate-readme.mjs` — do not edit it by hand.
+
+## Contents
+
+- [Community Resources](#community-resources)
+- [Models](#models)
+- [Tools](#tools)
+- [Use Cases](#use-cases)
+  - [Software Automation](#automation)
+    - [Browser Use](#browser_use)
+    - [Computer Use](#computer_use)
+    - [Workflow Guardrails](#workflow_guardrails)
+    - [Financial](#financial)
+    - [Pipeline Routing](#pipeline_routing)
+  - [Interaction](#interaction)
+    - [Feed Cleanup](#feed_cleanup)
+    - [Categorization](#categorization)
+    - [Ranking & Evaluation](#ranking_evaluation)
+    - [Search](#search)
+    - [Input Assistance](#input_assistance)
+  - [Gaming Worlds](#gaming)
+    - [Native Play](#native_play)
+    - [Realtime Gameplay](#realtime_gameplay)
+    - [Turn Strategy](#turn_strategy)
+    - [Virtual Behaviors](#virtual_behaviors)
+  - [Physical Control](#physical)
+    - [Robotic Arms](#robotic_arms)
+    - [Autonomous Transit](#autonomous_transit)
+  - [Creative](#creative)
+    - [Multimodal Generation](#multimodal_generation)
+    - [Text Generation](#text_generation)
+    - [Hacks](#hacks)
+
+## Community Resources
+
+Curated lists, articles, and community hubs about Jev — mirrored on [jev.info/information](https://jev.info/information).
+
+- [awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) ★731 — An evidence-backed community guide to TypeSafe’s Jev System One model, curating practical use cases, decision patterns, prompts, SDK…
+- [awesome-jev](https://github.com/yibie/awesome-jev) ★720 — A curated awesome list cataloging real public projects and practices that use TypeSafe AI's Jev model to turn unstructured state into typed…
+- [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe) ★408 — A curated index of official docs, SDKs, patterns, cookbooks, and research for TypeSafe's System One model Jev—plus community clients,…
+- [jev-experiments](https://github.com/dabit3/jev-experiments) ★350 — A collection of TypeSafe/Jev latency-focused demo applications, each in its own top-level directory with a README, TESTING.md, and…
+- [awesome-jev](https://github.com/cobanov/awesome-jev) ★281 — A source-backed catalog of 100+ projects, SDKs, provider integrations, and tools built on Jev, TypeSafe AI's System One model for typed…
+- [awesome-jev-projects](https://github.com/logicrw/awesome-jev-projects) ★252 — A commit-pinned reference of 326+ open-source implementations showing how TypeSafe Jev delivers sub-100ms typed discrete decisions for tool…
+- [awesome-jev](https://github.com/fatwang2/awesome-jev) ★185 — A curated index of 71 open-source projects built on TypeSafe Jev's typed decision API, spanning SDKs for many languages,…
+- [awesome-jev](https://github.com/AnotiaWang/awesome-jev) ★140 — A curated awesome list for Jev, TypeSafe's System One evaluation model, cataloging official docs and API, community SDKs across…
+- [awesome-jev-typesafe](https://github.com/valentynkit/awesome-jev-typesafe) ★113 — A curated awesome list of 325 entries cataloging SDKs, gateways, coding-agent integrations, replicas, and real-world projects built on…
+- [awesome-jev](https://github.com/hellogumbo/awesome-jev) ★108 — A curated directory of 656 projects built on Jev — TypeSafe AI's System One model that returns typed answers with calibrated probabilities…
+- [awesome-jev](https://github.com/AppitStudio/awesome-jev) ★65 — A curated directory for TypeSafe AI's Jev decision model, collecting official SDKs and API docs, community-built apps and integrations,…
+- [awesome-jev-use-cases](https://github.com/walidboulanouar/awesome-jev-use-cases) ★24 — A ranked catalog of demos built with Jev, TypeSafe's typed-decision model, with per-demo likes, reposts, and reach grouped by application…
+- [jev-hub](https://github.com/mizzlelover/jev-hub) ★22 — A link directory aggregating 714 X posts about TypeSafe AI's "System One" decision model Jev—226 demo videos, 114 long-form articles, and…
+- [awesome-jev-usecases](https://github.com/anandi1989/awesome-jev-usecases) ★15 — An evidence-backed curated index of real-world use cases for Jev (TypeSafe AI System One), linking to repos, patterns, benchmarks, and…
+- [jev-directory](https://github.com/everyai-com/jev-directory) ★13 — A static, browsable directory of 50 runnable Jev judge-model evals with exact prompts and pass-rule manifests plus 1,300+ linked community…
+- [awesome-jev](https://github.com/ckaraca/awesome-jev) ★8 — A curated list of tools, integrations, and experiments built on Jev—TypeSafe AI's System One model that returns typed, confidence-aware…
+- [awesome-jev](https://github.com/daftAI2026/awesome-jev) ★5 — Curated index of 356 TypeSafe Jev / System One ecosystem projects — official SDKs, agent skills, game and computer-use agents, MCP…
+- [Awesome-jev-use](https://github.com/AiPersonacademy/Awesome-jev-use) ★2 — A curated list of Jev / TypeSafe System One applications, libraries, and resources for developers building with that ecosystem.
+- [awesome-jev-examples](https://github.com/evan87863/awesome-jev-examples) ★1 — A curated index of 72 resources for TypeSafe AI's Jev decision model—official guides, SDKs, cookbooks, and community projects—organized by…
+- [typesafe-arena](https://github.com/DeepBlueDynamics/typesafe-arena) ★1 — typesafe-arena provides a local Markdown mirror of docs.typesafe.ai plus Lume, a Rust CLI that builds BM25 and tag-graph indexes for…
+- [What New AI in X · What New AI in X](https://x.yrzhe.top/) — A curated archive organizing 7,748 public X posts about AI into 10 themed collections grouped by model and product (e.g., GPT-6 Astra…
+- [Learn Jev — Tutorials for TypeSafe AI's System One model](https://learnjev.com/) — Independent, source-cited tutorials for TypeSafe AI's Jev System One model covering first call through production use, typed…
+- [Jev Board — What should we build next?](https://jevboard.com/) — Jev Board is an independent, community-ranked directory where users browse product ideas for Jev and heart the ones they want built,…
+- [Hollow Creek](https://hollow-creek-sigma.vercel.app/) — Hollow Creek is a browser-based social-simulation game where you type freeform speech, gesture, give, threaten, or steal, and autonomous…
+- [Jev Directory — 50 evals, 726 community builds](https://jev-directory.netlify.app/) — A curated directory for the typesafe-ai/jev model bundling 50 runnable judge-model evals with exact experimental_evaluate prompts, 726…
+- [What Can Jev Do? Real TypeSafe AI Examples and Use Cases](https://typesafeai.app/) — An independent, evidence-verified index of 32 real-world Jev capabilities—covering coding-agent gating, device control, game playing,…
+- [Jev Quest — Zero to Expert](https://jev-0-to-expert.netlify.app/) — An interactive, gamified course that teaches the "Jev" mental model—separating generation, judgment, and control layers in AI…
+- [ModelBench — Independent AI Model Catalog: Pricing, Context & Benchmarks](https://model.kyssta.lol/) — ModelBench is a free, no-account catalog of 4,500+ AI models across 225 providers, offering source-linked API pricing, context windows,…
+- [TypeSafe Pixels](https://jevpixel.vercel.app/) — TypeSafe Pixels renders pixel art by asking TypeSafe's Jev model one Score question per RGB(A) channel per pixel on a 1–256 anchor scale,…
+- [Jev Directory — 50 evals, 1328 community builds](https://jev.magicteams.ai/) — A searchable directory for the Jev judge model containing 50 runnable evals with exact prompts and pass rules plus 1328 community builds…
+- [Made with Jev — What people are building with Jev](https://madewithjev.com/) — A curated directory of 328 projects, posts, and guides built with Jev — TypeSafe AI's fast, low-cost System One decision model — organized…
+- [Jevbox — a box of tools with common sense](https://jevbox.qolso.com/) — Jevbox is a toolkit built on Jev, a fast "common-sense" judgment model, offering Manyhands for plain-language agentic control of apps,…
+- [pg-jev: query Postgres in plain English](https://pgjev.zachi.dev/) — An open-source PostgreSQL extension that turns plain-English conditions into WHERE-clause predicates by batching table rows to a language…
+- [Jev Radar](https://jev.agentik-os.com/) — Jev Radar is an unofficial, independent hourly tracker of public X posts about Jev and TypeSafe, transcribing videos and aggregating live…
+- [jevusecases](https://www.jevusecases.com/) — A searchable catalog of 1,355 real projects built with Jev—spanning dev tooling, agents, security, games, and trading—where each entry…
+- [The Jev Registry — a daily watch](https://radar.mowglissh.dev/) — A bilingual (FR/EN) daily-updated registry cataloging GitHub projects related to the Jev type-safe decision model, tracking star counts,…
+- [Jevable — Discover what people build with Jev](https://jevable.com/) — Jevable is a curated gallery of 359 real projects built with the Jev model—spanning agents, browser extensions, developer tools, games, and…
+- [Benchmark Heaven — Model benchmarks & costs](https://benchmarkheaven.com/) — Benchmark Heaven is an interactive cost–capability tracker ranking hundreds of LLMs across 119 benchmarks, computing modeled per-task…
+- [System One Models: the independent hub for AI decision models](https://systemonemodels.org/) — An independent directory for System One AI decision models—models like Jev that return typed answers with calibrated probabilities instead…
+- [Jev — 100 ציוצים לפי נושאים](https://jev-tweets.surge.sh/) — A Hebrew-language guide curating 100 real X posts organized by topic about Jev, TypeSafe AI's "System One" decision model that returns…
+- [TypeSafe // Parallel Judgment Lab](https://typesafe-parallel-judgment-lab.every-4573.chatgpt.site/) — Eleven measured experiments where a model returns probabilities instead of prose—code search, agent navigation, inbox triage, a 100-persona…
+- [pgjev - ask your Postgres tables questions in plain language](https://pgjev.com/) — pgjev is a PostgreSQL extension (14–17, plpython3u, TypeSafe API key) that lets SQL queries filter, rank, score, and classify rows with…
+- [minirouter — pay with crypto, no KYC](https://minirouter.sh/) — MiniRouter is an OpenAI-compatible API gateway routing one key to 237+ open models with provider failover and 0% platform fees, payable in…
+- [Awesome Jev](https://awesomejev.vercel.app/) — A searchable directory of 325 projects across 254 repos built on TypeSafe's Jev—spanning SDKs, coding agents, browser automation, open…
+- [Awesome JEV · free TypeSafe Jev / System One AI directory](https://awesomejev.cc/) — A free curated directory cataloging TypeSafe JEV / System One AI projects, linking GitHub repositories, X posts, and YouTube explainers in…
+- [jev.directory](https://jev.directory/) — A community directory of real systems built on TypeSafe's Jev primitives (Noul, Score, Choice), showing the primitives and source code each…
+- [Decision Models — What They Are and Who Is Building Them](https://decisionmodels.ai/) — A vendor-neutral field guide to decision models — systems returning typed, bounded, probabilistic choices rather than generated text —…
+- [Awesome Jev](https://awesomejev.com/) — Awesome Jev is a daily-refreshed community directory of 561 projects built on TypeSafe AI's Jev System One model, cataloging official docs…
+- [OpenRouter Model Hub — Compare AI Models: Pricing, Context & Benchmarks](https://www.hunteralphahub.com/) — An independent, daily-verified reference comparing 15+ OpenRouter AI models side-by-side on pricing, context windows, modality support, and…
+- [YFarmX | Frontier Tech News: AI, Crypto & Quantum Computing](https://yfarmx.com/) — YFarmX is an independent news site covering frontier technology — AI, crypto, quantum computing, space and security — that pairs fully…
+- [Jev on the Farm | Fullstack Ag](https://fullstack-ag-jev-field-guide.nickhorob.chatgpt.site/) — A slide-based field guide from Fullstack Ag presenting Jev, an AI decision model, through eight realistic workflows demonstrating its…
+- [Jev Apps, Libraries & Examples · JevList](https://jevlist.ai/) — A reviewed directory of 110 apps, libraries, integrations, and runnable examples built on Jev—TypeSafe AI's typed-decision model—where each…
+
+## Models
+
+Fine-tunes and derivatives of the Jev family on Hugging Face — mirrored on [jev.info/models](https://jev.info/models).
+
+- [laya](https://huggingface.co/convaiinnovations/laya) ♥1.3k — Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or…
+- [openjev](https://huggingface.co/AlexWortega/openjev) ♥346 — openjev fine-tunes Qwen3.5 into a zero-shot NLI cross-encoder (4B text+image v2, plus a 35B-A3B MoE variant) that scores premise–hypothesis…
+- [cua-s1-forms](https://huggingface.co/cua-ai/cua-s1-forms) ♥85 — cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity,…
+- [decider-2b](https://huggingface.co/Mapika/decider-2b) ♥57 — decider-2b is a 1.9B-parameter model that returns calibrated probability distributions over explicit option lists for multiple typed…
+- [open-jev-deberta-v3-large](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large) ♥38 — A DeBERTa-v3-large encoder that maps one input state plus any number of typed questions (choice, ordered score, or yes/no) to calibrated…
+- [rlcd-modernbert-151m](https://huggingface.co/heman10x/rlcd-modernbert-151m) ♥17 — A 151M-parameter ModernBERT-based decision engine delivering calibrated choices, scores, and probabilities—plus an explicit abstention…
+- [Jeff-1](https://huggingface.co/GestaltLabs/Jeff-1) ♥8 — Jeff-1 is an Apache-2.0 LoRA adapter for Qwen3-4B-Instruct-2507 that scores caller-supplied labels to return typed decisions—choice,…
+- [jev-schema-scorer-deberta-v3-large](https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large) ♥7 — A fine-tuned DeBERTa-v3-large encoder with a scalar head that scores (state, question + candidate) pairs, decoding grouped logits via…
+- [gliner2.5-cua-grounder-macos-v1](https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v1) ♥2 — A merged FP32 GLiNER2.5 fine-tune that chooses an action ID, `reobserve`, or `abstain` from a bounded action menu for local macOS CUA…
+- [laya-grounded](https://huggingface.co/Luni/laya-grounded) ♥1 — A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and…
+- [chessjev-minilm-v1](https://huggingface.co/gopalanj/chessjev-minilm-v1) — A chess option scorer that finetunes MiniLM-L6 with an attention head to emit logits for all legal moves from a FEN context in one forward…
+
+## Tools
+
+Top 30 of 436 open-source tools and integrations by GitHub stars — browse the full catalog on [jev.info/tools](https://jev.info/tools).
+
+- [jev-ultrafast](https://github.com/browser-use/jev-ultrafast) ★13.1k — jev-ultrafast is a browser-use tool built for maximum speed, providing ultra-fast browser operations when execution latency is the priority.
+- [laya](https://github.com/NandhaKishorM/laya) ★5.8k — Laya is a non-autoregressive decision engine that answers typed questions (choice, score, noul) over text or JSON states in a single ~33 ms…
+- [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) ★5.5k — A Claude Code plugin that replaces standard compaction summaries with Jev decision-making, scoring every tool call and result in a single…
+- [SemIf](https://github.com/TheoLeeCJ/SemIf) ★2.6k — SemIf adds semantic if-condition evaluation backed by open models running locally on a home NVIDIA RTX 3090, enabling meaning-based…
+- [jev-trader](https://github.com/jarrodwatts/jev-trader) ★1.6k — A Monad trading bot that queries a TypeSafe Jev model each ~300 ms block for a buy/sell call on Kuru's MON-USDC book and posts a post-only…
+- [NanoJev](https://github.com/TianyuCodings/NanoJev) ★1.6k — NanoJev is a 0.6B-parameter parallel decision model (Qwen3-0.6B backbone plus decision heads) that maps states, questions, and 2–255…
+- [skills](https://github.com/typesafe-ai/skills) ★1.3k — A collection of agent skills for building with TypeSafe's System One API, giving coding agents reusable guidance and workflows that make it…
+- [kev](https://github.com/jaredpalmer/kev) ★1.2k — kev is a local decision-model server — a LoRA adapter plus pointer readout head on a Qwen base (0.5B–8B) — that answers many typed…
+- [jevlike](https://github.com/vinnylarouge/jevlike) ★1.1k — Jevlike is a research starter for training a small one-pass model that scores N text options against a context via per-option attention…
+- [typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) ★677 — A macOS computer-use tool that automates GUI interactions for roughly $0.0002 per step by OCR-ing the screen, classifying the next action…
+- [localjev](https://github.com/githubnext/localjev) ★644 — LocalJev is a Bun/TypeScript server exposing a Jev-compatible `POST /v1/systemone` decision API that runs typed questions on DiffusionGemma…
+- [Jev-cu](https://github.com/Sac-Y/Jev-cu) ★503 — Jev-cu is an installable Codex skill plus scripts that delegate Computer Use's next-step choice to Jev, which selects element, action,…
+- [openagents](https://github.com/OpenAgentsInc/openagents) ★450 — OpenAgents is a Rust monorepo home to Coder, a terminal coding agent that routes turns through typed Jev judgments and a model-agnostic…
+- [foreman](https://github.com/thruwire/foreman) ★443 — Foreman is a Python asyncio supervisory runtime that pairs Codex coding workers with TypeSafe's Jev decision model, streaming factory…
+- [jev-review](https://github.com/devagrawal09/jev-review) ★429 — A TypeSafe Jev–based code-review tool that orchestrates staged model judgments (file profiling, evidence selection, mechanism…
+- [simple-jev](https://github.com/featherless-ai/simple-jev) ★417 — Simple Jev is a local Hugging Face/PyTorch server that turns shared context plus choice, rubric-score, or truth questions into JSON answers…
+- [jev-search](https://github.com/superagents-lab/jev-search) ★341 — A self-hostable Cloudflare Workers app that turns plain-language requests into Search1API queries across web and vertical engines, then…
+- [tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) ★309 — An open-source TypeScript library that classifies each PDF page of a tax document into 261 IRS form IDs and 7 page kinds with calibrated…
+- [hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) ★308 — Eight agent-agnostic skills and a Hermes plugin that delegate per-turn decisions—model routing, memory filtering, compaction, skill…
+- [typesafe-mario](https://github.com/fhshaik/typesafe-mario) ★306 — TypeSafe Mario is a Python harness that lets TypeSafe's Jev model play Super Mario Bros. by parsing emulator RAM into structured JSON…
+- [mobile-jev](https://github.com/droidrun/mobile-jev) ★291 — A standalone mobile agent that drives a real Android phone through the Mobilerun API using TypeSafe's Jev model for per-step decisions—no…
+- [jev-router](https://github.com/gargpratyush/jev-router) ★270 — jev-router is a loopback proxy that wraps the Claude Code and OpenAI Codex CLIs, sending each fresh user turn to a Jev routing call that…
+- [pg-jev](https://github.com/realZachi/pg-jev) ★255 — pg-jev is a PostgreSQL extension that lets you filter, rank, and classify table rows with plain-language conditions via SQL functions…
+- [jev-align](https://github.com/sutro-sh/jev-align) ★249 — jev-align is an experimental CLI that iteratively improves TypeSafe Jev AI Functions by surfacing uncertain dataset rows for human…
+- [openjev-sglang](https://github.com/ekzhang/openjev-sglang) ★240 — FastAPI server exposing the TypeSafe/Jev evaluation API backed by Qwen3.6-35B-A3B on SGLang (Modal-deployable on B200), answering up to 64…
+- [openjev](https://github.com/razorback16/openjev) ★234 — Open-source, Jev-compatible "System One" decision server: answers typed questions (yes/no, choice, score) about a state or images with…
+- [skillbox](https://github.com/kitze/skillbox) ★219 — Skillbox is a self-hosted, versioned skills library for AI agents that combines Markdown editing, immutable revisions, scoped permissions,…
+- [system-one-adapter-python](https://github.com/typesafe-ai/system-one-adapter-python) ★211 — Drop-in replacement for typesafe_sdk's `system_one` evaluation API backed by OpenAI/Anthropic LLMs instead of TypeSafe, enabling…
+- [jev-browser](https://github.com/jkudish/jev-browser) ★202 — Jev-browser drives a headless browser via MCP server, CLI, or library, with TypeSafe's Jev model choosing one action per step while code…
+- [abide](https://github.com/coldteadotai/abide) ★196 — Abide is a CLI that hooks Claude Code, Codex, and OpenCode to check every edit or turn against repository instruction rules via TypeSafe’s…
+
+→ [All 436 tools](https://jev.info/tools)
+
+## Use Cases
+
+Real-world demos of Jev in action, grouped by application area — browse all 427 with video previews on [jev.info/use-cases](https://jev.info/use-cases).
+
+### Software Automation <a id="automation"></a>
+
+[Browse all 75 on jev.info →](https://jev.info/use-cases/automation)
+
+#### Browser Use (13) <a id="browser_use"></a>
+
+| <a href="https://jev.info/use-cases/2100301843507159443"><img src="https://jev.info/covers/2100301843507159443.webp" width="260" alt="Browser Use demo"></a> | <a href="https://jev.info/use-cases/2100313645116952701"><img src="https://jev.info/covers/2100313645116952701.webp" width="260" alt="Browser Use demo"></a> | <a href="https://jev.info/use-cases/2101041218251559032"><img src="https://jev.info/covers/2101041218251559032.webp" width="260" alt="Browser Use demo"></a> |
+|:---:|:---:|:---:|
+| [Jev Ultrafast is an open-source browser agent that swaps…](https://jev.info/use-cases/2100301843507159443)<br>@gergomoricz | [A browser-use agent autonomously plays Wiki Race, navigating from the…](https://jev.info/use-cases/2100313645116952701)<br>@princecaarlo | [A smart clipboard agent that reads clipboard contents and web page…](https://jev.info/use-cases/2101041218251559032)<br>@Nomandsign |
+
+[+ 10 more →](https://jev.info/use-cases/automation)
+
+#### Computer Use (8) <a id="computer_use"></a>
+
+| <a href="https://jev.info/use-cases/2100359236924637349"><img src="https://jev.info/covers/2100359236924637349.webp" width="260" alt="Computer Use demo"></a> | <a href="https://jev.info/use-cases/2100629073542218203"><img src="https://jev.info/covers/2100629073542218203.webp" width="260" alt="Computer Use demo"></a> | <a href="https://jev.info/use-cases/2100545295201288678"><img src="https://jev.info/covers/2100545295201288678.webp" width="260" alt="Computer Use demo"></a> |
+|:---:|:---:|:---:|
+| [A faster headless Computer Use loop: the LLM keeps memory/context,…](https://jev.info/use-cases/2100359236924637349)<br>@mdlahfir | [AXe pairs the Jev model with natural-language instructions to…](https://jev.info/use-cases/2100629073542218203)<br>@camsoft2000 | [A computer-use agent demo performing interface actions 100x faster…](https://jev.info/use-cases/2100545295201288678)<br>@savboj |
+
+[+ 5 more →](https://jev.info/use-cases/automation)
+
+#### Workflow Guardrails (17) <a id="workflow_guardrails"></a>
+
+| <a href="https://jev.info/use-cases/2100891358223388966"><img src="https://jev.info/covers/2100891358223388966.webp" width="260" alt="Workflow Guardrails demo"></a> | <a href="https://jev.info/use-cases/2101034822760288452"><img src="https://jev.info/covers/2101034822760288452.webp" width="260" alt="Workflow Guardrails demo"></a> | <a href="https://jev.info/use-cases/2101806504416293202"><img src="https://jev.info/covers/2101806504416293202.webp" width="260" alt="Workflow Guardrails demo"></a> |
+|:---:|:---:|:---:|
+| [A native Rust app watches live computer network traffic and flags…](https://jev.info/use-cases/2100891358223388966)<br>@ppweni | [An open-source tool called Jev scores every coding-agent turn against…](https://jev.info/use-cases/2101034822760288452)<br>@OhansEmmanuel | [A safety guardrails demo showing real-time risk warnings that appear…](https://jev.info/use-cases/2101806504416293202)<br>@zhallen122 |
+
+[+ 14 more →](https://jev.info/use-cases/automation)
+
+#### Financial (17) <a id="financial"></a>
+
+| <a href="https://jev.info/use-cases/2100356151468585346"><img src="https://jev.info/covers/2100356151468585346.webp" width="260" alt="Financial demo"></a> | <a href="https://jev.info/use-cases/2100481938016669917"><img src="https://jev.info/covers/2100481938016669917.webp" width="260" alt="Financial demo"></a> | <a href="https://jev.info/use-cases/2100546231554760841"><img src="https://jev.info/covers/2100546231554760841.webp" width="260" alt="Financial demo"></a> |
+|:---:|:---:|:---:|
+| [AI trading agent reads an asset-pair price feed, decides buy/sell,…](https://jev.info/use-cases/2100356151468585346)<br>@jarrodwatts | [Jev demonstrates an AI trading agent that ingests dozens of…](https://jev.info/use-cases/2100481938016669917)<br>@_trou3 | [A demo site built on Jev that ingests every new SEC 8-K filing in…](https://jev.info/use-cases/2100546231554760841)<br>@abhiserjam |
+
+[+ 14 more →](https://jev.info/use-cases/automation)
+
+#### Pipeline Routing (20) <a id="pipeline_routing"></a>
+
+| <a href="https://jev.info/use-cases/2100694549362553153"><img src="https://jev.info/covers/2100694549362553153.webp" width="260" alt="Pipeline Routing demo"></a> | <a href="https://jev.info/use-cases/2101619156483490195"><img src="https://jev.info/covers/2101619156483490195.webp" width="260" alt="Pipeline Routing demo"></a> | <a href="https://jev.info/use-cases/2100278904447475920"><img src="https://jev.info/covers/2100278904447475920.webp" width="260" alt="Pipeline Routing demo"></a> |
+|:---:|:---:|:---:|
+| [Jev replaces prompt-based context compaction with instant relevance…](https://jev.info/use-cases/2100694549362553153)<br>@tamarajtran | [An AI director routes livestream context into real-time camera cuts,…](https://jev.info/use-cases/2101619156483490195)<br>@happycapyai | [A realtime generative-UI demo where an LLM streams JSON-driven…](https://jev.info/use-cases/2100278904447475920)<br>@MartinSWDev |
+
+[+ 17 more →](https://jev.info/use-cases/automation)
+
+### Interaction <a id="interaction"></a>
+
+[Browse all 154 on jev.info →](https://jev.info/use-cases/interaction)
+
+#### Feed Cleanup (19) <a id="feed_cleanup"></a>
+
+| <a href="https://jev.info/use-cases/2100529273186472318"><img src="https://jev.info/covers/2100529273186472318.webp" width="260" alt="Feed Cleanup demo"></a> | <a href="https://jev.info/use-cases/2100625826559537379"><img src="https://jev.info/covers/2100625826559537379.webp" width="260" alt="Feed Cleanup demo"></a> | <a href="https://jev.info/use-cases/2100520134481735729"><img src="https://jev.info/covers/2100520134481735729.webp" width="260" alt="Feed Cleanup demo"></a> |
+|:---:|:---:|:---:|
+| [A typesafe browser extension acts as an undetectable realtime…](https://jev.info/use-cases/2100529273186472318)<br>@iam_zachi | [A Chrome extension that filters the internet in plain English: pick a…](https://jev.info/use-cases/2100625826559537379)<br>@cristicrtu | [A browser extension that hides or collapses X posts via…](https://jev.info/use-cases/2100520134481735729)<br>@marcelpociot |
+
+[+ 16 more →](https://jev.info/use-cases/interaction)
+
+#### Categorization (57) <a id="categorization"></a>
+
+| <a href="https://jev.info/use-cases/2100044305536889015"><img src="https://jev.info/covers/2100044305536889015.webp" width="260" alt="Categorization demo"></a> | <a href="https://jev.info/use-cases/2100230707297878339"><img src="https://jev.info/covers/2100230707297878339.webp" width="260" alt="Categorization demo"></a> | <a href="https://jev.info/use-cases/2100404532119269426"><img src="https://jev.info/covers/2100404532119269426.webp" width="260" alt="Categorization demo"></a> |
+|:---:|:---:|:---:|
+| [Open-sourced Qwen-2.5-1B-RLCD achieves 5x faster on-device inference…](https://jev.info/use-cases/2100044305536889015)<br>@harshagundal | [Drag-and-drop item triage demo that automatically suggests the…](https://jev.info/use-cases/2100230707297878339)<br>@tosa_now | [Jev classified 500 emails in seconds for just 3.5 cents.](https://jev.info/use-cases/2100404532119269426)<br>@rileybrown |
+
+[+ 54 more →](https://jev.info/use-cases/interaction)
+
+#### Ranking & Evaluation (33) <a id="ranking_evaluation"></a>
+
+| <a href="https://jev.info/use-cases/2100413257370800309"><img src="https://jev.info/covers/2100413257370800309.webp" width="260" alt="Ranking & Evaluation demo"></a> | <a href="https://jev.info/use-cases/2100473581251748216"><img src="https://jev.info/covers/2100473581251748216.webp" width="260" alt="Ranking & Evaluation demo"></a> | <a href="https://jev.info/use-cases/2100585126652481915"><img src="https://jev.info/covers/2100585126652481915.webp" width="260" alt="Ranking & Evaluation demo"></a> |
+|:---:|:---:|:---:|
+| [I built a domain name finder with Jev! The brightness of the dot…](https://jev.info/use-cases/2100413257370800309)<br>@theokramer_ | [A live BS meter scored every sentence from both Trump–Kamala debate…](https://jev.info/use-cases/2100473581251748216)<br>@chetaslua | [A PR-review API that scores a pasted diff in ~0.5s for $0.00007 per…](https://jev.info/use-cases/2100585126652481915)<br>@redp314 |
+
+[+ 30 more →](https://jev.info/use-cases/interaction)
+
+#### Search (23) <a id="search"></a>
+
+| <a href="https://jev.info/use-cases/2100679300756435135"><img src="https://jev.info/covers/2100679300756435135.webp" width="260" alt="Search demo"></a> | <a href="https://jev.info/use-cases/2101603743829807489"><img src="https://jev.info/covers/2101603743829807489.webp" width="260" alt="Search demo"></a> | <a href="https://jev.info/use-cases/2101752873302258026"><img src="https://jev.info/covers/2101752873302258026.webp" width="260" alt="Search demo"></a> |
+|:---:|:---:|:---:|
+| [jev(), a PostgreSQL extension, enables natural-language filtering…](https://jev.info/use-cases/2100679300756435135)<br>@iam_zachi | [An experimental "search by intent" prototype built with Jev that can…](https://jev.info/use-cases/2101603743829807489)<br>@bakko178 | [Jev is demoed running semantic search over Mark Rothko's paintings,…](https://jev.info/use-cases/2101752873302258026)<br>@Ibelick |
+
+[+ 20 more →](https://jev.info/use-cases/interaction)
+
+#### Input Assistance (22) <a id="input_assistance"></a>
+
+| <a href="https://jev.info/use-cases/2100534723177263336"><img src="https://jev.info/covers/2100534723177263336.webp" width="260" alt="Input Assistance demo"></a> | <a href="https://jev.info/use-cases/2100587614927741435"><img src="https://jev.info/covers/2100587614927741435.webp" width="260" alt="Input Assistance demo"></a> | <a href="https://jev.info/use-cases/2100858434904109099"><img src="https://jev.info/covers/2100858434904109099.webp" width="260" alt="Input Assistance demo"></a> |
+|:---:|:---:|:---:|
+| [A hacked-together Next Edit Suggestion feature implemented in Jev,…](https://jev.info/use-cases/2100534723177263336)<br>@R0u9h | [A Jev-powered syntax highlighter that can highlight any programming…](https://jev.info/use-cases/2100587614927741435)<br>@imarikchakma | [An AI agent that predicts and suggests the next shell command by…](https://jev.info/use-cases/2100858434904109099)<br>@thorstenball |
+
+[+ 19 more →](https://jev.info/use-cases/interaction)
+
+### Gaming Worlds <a id="gaming"></a>
+
+[Browse all 138 on jev.info →](https://jev.info/use-cases/gaming)
+
+#### Native Play (9) <a id="native_play"></a>
+
+| <a href="https://jev.info/use-cases/2100704841786114215"><img src="https://jev.info/covers/2100704841786114215.webp" width="260" alt="Native Play demo"></a> | <a href="https://jev.info/use-cases/2100953089003921543"><img src="https://jev.info/covers/2100953089003921543.webp" width="260" alt="Native Play demo"></a> | <a href="https://jev.info/use-cases/2101621207842132105"><img src="https://jev.info/covers/2101621207842132105.webp" width="260" alt="Native Play demo"></a> |
+|:---:|:---:|:---:|
+| [An AI agent plays a real-time "Hot or Cold" word game, instantly…](https://jev.info/use-cases/2100704841786114215)<br>@jamiepinheiro | [Jev can generate game levels in real time. Faster and cheaper…](https://jev.info/use-cases/2100953089003921543)<br>@HugoDuprez | [An AI-incanted spellcasting PvP game fusing Genshin-style elemental…](https://jev.info/use-cases/2101621207842132105)<br>@izumisatoshi05 |
+
+[+ 6 more →](https://jev.info/use-cases/gaming)
+
+#### Realtime Gameplay (57) <a id="realtime_gameplay"></a>
+
+| <a href="https://jev.info/use-cases/2100186640149033457"><img src="https://jev.info/covers/2100186640149033457.webp" width="260" alt="Realtime Gameplay demo"></a> | <a href="https://jev.info/use-cases/2100315518930661861"><img src="https://jev.info/covers/2100315518930661861.webp" width="260" alt="Realtime Gameplay demo"></a> | <a href="https://jev.info/use-cases/2100611596859093082"><img src="https://jev.info/covers/2100611596859093082.webp" width="260" alt="Realtime Gameplay demo"></a> |
+|:---:|:---:|:---:|
+| [A coding agent wired a game-playing harness into StarCraft on the…](https://jev.info/use-cases/2100186640149033457)<br>@PhilYoussef | [A real-time demo shows the Jev model playing Tetris, generating moves…](https://jev.info/use-cases/2100315518930661861)<br>@marcus_lowe | [Four AI models compete head-to-head playing Flappy Bird in real time,…](https://jev.info/use-cases/2100611596859093082)<br>@anshnanda |
+
+[+ 54 more →](https://jev.info/use-cases/gaming)
+
+#### Turn Strategy (33) <a id="turn_strategy"></a>
+
+| <a href="https://jev.info/use-cases/2100372930282573876"><img src="https://jev.info/covers/2100372930282573876.webp" width="260" alt="Turn Strategy demo"></a> | <a href="https://jev.info/use-cases/2100360029366784320"><img src="https://jev.info/covers/2100360029366784320.webp" width="260" alt="Turn Strategy demo"></a> | <a href="https://jev.info/use-cases/2100364868733812987"><img src="https://jev.info/covers/2100364868733812987.webp" width="260" alt="Turn Strategy demo"></a> |
+|:---:|:---:|:---:|
+| [A decision-only (non-LLM) model played 5+0 blitz chess at…](https://jev.info/use-cases/2100372930282573876)<br>@aimlapi | [An AI chess engine ("Jev") plays at roughly 950 Elo with sub-second…](https://jev.info/use-cases/2100360029366784320)<br>@ericmartznyc | [A demo where "jev," a single AI model, plays 3D chess against itself…](https://jev.info/use-cases/2100364868733812987)<br>@BuildWithKhalil |
+
+[+ 30 more →](https://jev.info/use-cases/gaming)
+
+#### Virtual Behaviors (39) <a id="virtual_behaviors"></a>
+
+| <a href="https://jev.info/use-cases/2100162790061113634"><img src="https://jev.info/covers/2100162790061113634.webp" width="260" alt="Virtual Behaviors demo"></a> | <a href="https://jev.info/use-cases/2100394212743159944"><img src="https://jev.info/covers/2100394212743159944.webp" width="260" alt="Virtual Behaviors demo"></a> | <a href="https://jev.info/use-cases/2100474943154827344"><img src="https://jev.info/covers/2100474943154827344.webp" width="260" alt="Virtual Behaviors demo"></a> |
+|:---:|:---:|:---:|
+| [A social simulation gave 24 AI agents their own memories,…](https://jev.info/use-cases/2100162790061113634)<br>@arifcodes | [A Claude-driven game where an AI agent replaces traditional utility…](https://jev.info/use-cases/2100394212743159944)<br>@m_iraji | [A persona-simulation pipeline queries 150 synthetic personas with 12…](https://jev.info/use-cases/2100474943154827344)<br>@ytiskw |
+
+[+ 36 more →](https://jev.info/use-cases/gaming)
+
+### Physical Control <a id="physical"></a>
+
+[Browse all 30 on jev.info →](https://jev.info/use-cases/physical)
+
+#### Robotic Arms (13) <a id="robotic_arms"></a>
+
+| <a href="https://jev.info/use-cases/2100545285659480128"><img src="https://jev.info/covers/2100545285659480128.webp" width="260" alt="Robotic Arms demo"></a> | <a href="https://jev.info/use-cases/2100646513412292873"><img src="https://jev.info/covers/2100646513412292873.webp" width="260" alt="Robotic Arms demo"></a> | <a href="https://jev.info/use-cases/2101229393079111800"><img src="https://jev.info/covers/2101229393079111800.webp" width="260" alt="Robotic Arms demo"></a> |
+|:---:|:---:|:---:|
+| [A robot-arm agent autonomously improvised tool use—grabbing a hook to…](https://jev.info/use-cases/2100545285659480128)<br>@gabrycina | [Local "Jev"-style vision inference hack: maps candidate outputs to…](https://jev.info/use-cases/2100646513412292873)<br>@hr98w | [Two LLM agents (Jev vs. GPT-6 Astra) drove a real Agilex PiPER robot…](https://jev.info/use-cases/2101229393079111800)<br>@MichalKubenka |
+
+[+ 10 more →](https://jev.info/use-cases/physical)
+
+#### Autonomous Transit (17) <a id="autonomous_transit"></a>
+
+| <a href="https://jev.info/use-cases/2100347770867458384"><img src="https://jev.info/covers/2100347770867458384.webp" width="260" alt="Autonomous Transit demo"></a> | <a href="https://jev.info/use-cases/2100335978229690683"><img src="https://jev.info/covers/2100335978229690683.webp" width="260" alt="Autonomous Transit demo"></a> | <a href="https://jev.info/use-cases/2100616111771238881"><img src="https://jev.info/covers/2100616111771238881.webp" width="260" alt="Autonomous Transit demo"></a> |
+|:---:|:---:|:---:|
+| [Tesla Full Self-Driving was rebuilt from scratch in under an hour…](https://jev.info/use-cases/2100347770867458384)<br>@jpschroeder | [Jev built a working drone application demo in just 15 minutes for…](https://jev.info/use-cases/2100335978229690683)<br>@RomanSlack1 | [A self-driving car simulator demo where a typed "System One" LLM…](https://jev.info/use-cases/2100616111771238881)<br>@kavehmz |
+
+[+ 14 more →](https://jev.info/use-cases/physical)
+
+### Creative <a id="creative"></a>
+
+[Browse all 30 on jev.info →](https://jev.info/use-cases/creative)
+
+#### Multimodal Generation (13) <a id="multimodal_generation"></a>
+
+| <a href="https://jev.info/use-cases/2100246929611411501"><img src="https://jev.info/covers/2100246929611411501.webp" width="260" alt="Multimodal Generation demo"></a> | <a href="https://jev.info/use-cases/2100281474943779254"><img src="https://jev.info/covers/2100281474943779254.webp" width="260" alt="Multimodal Generation demo"></a> | <a href="https://jev.info/use-cases/2100457458514976840"><img src="https://jev.info/covers/2100457458514976840.webp" width="260" alt="Multimodal Generation demo"></a> |
+|:---:|:---:|:---:|
+| [An image-generation demo that draws pictures by predicting every…](https://jev.info/use-cases/2100246929611411501)<br>@anshuc | [Coaxing a coding assistant into "generating an image" yields a…](https://jev.info/use-cases/2100281474943779254)<br>@rrriviannn | [A probability-picking classifier was steered into composing music:…](https://jev.info/use-cases/2100457458514976840)<br>@svatsa159 |
+
+[+ 10 more →](https://jev.info/use-cases/creative)
+
+#### Text Generation (11) <a id="text_generation"></a>
+
+| <a href="https://jev.info/use-cases/2100141659933856192"><img src="https://jev.info/covers/2100141659933856192.webp" width="260" alt="Text Generation demo"></a> | <a href="https://jev.info/use-cases/2100218045549412499"><img src="https://jev.info/covers/2100218045549412499.webp" width="260" alt="Text Generation demo"></a> | <a href="https://jev.info/use-cases/2100320242895552791"><img src="https://jev.info/covers/2100320242895552791.webp" width="260" alt="Text Generation demo"></a> |
+|:---:|:---:|:---:|
+| [A hack that turns Jev into a conversational agent you can chat with…](https://jev.info/use-cases/2100141659933856192)<br>@princecaarlo | [An LLM built from first principles: a classifier answers 29 yes/no…](https://jev.info/use-cases/2100218045549412499)<br>@ryanvogel | [A 254-token vocabulary derived from a pruned GPT-2 tokenizer…](https://jev.info/use-cases/2100320242895552791)<br>@kylejeong |
+
+[+ 8 more →](https://jev.info/use-cases/creative)
+
+#### Hacks (6) <a id="hacks"></a>
+
+| <a href="https://jev.info/use-cases/2101702454069100620"><img src="https://jev.info/covers/2101702454069100620.webp" width="260" alt="Hacks demo"></a> | <a href="https://jev.info/use-cases/2100451281013969078"><img src="https://jev.info/covers/2100451281013969078.webp" width="260" alt="Hacks demo"></a> | <a href="https://jev.info/use-cases/2100580054401241525"><img src="https://jev.info/covers/2100580054401241525.webp" width="260" alt="Hacks demo"></a> |
+|:---:|:---:|:---:|
+| [An OSS library and x402 API turn Vercel AI Gateway's free Jev into a…](https://jev.info/use-cases/2101702454069100620)<br>@justkrup | [A working Ben Eater–style 8-bit computer where every logic gate is…](https://jev.info/use-cases/2100451281013969078)<br>@dustin_podell | [Shares a mass model exploration demo in Jev, noting that while its…](https://jev.info/use-cases/2100580054401241525)<br>@shion_takk |
+
+[+ 3 more →](https://jev.info/use-cases/creative)
+
+## Contributing
+
+This list is generated from the dataset behind [jev.info](https://jev.info). To add or fix an entry, update the JSON files in `src/data/` (or open an issue) and run `npm run generate:readme`.
+
+---
+
+Each linked project retains its own license. Maintained by the community — not affiliated with TypeSafe AI.

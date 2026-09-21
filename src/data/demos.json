@@ -2065,7 +2065,7 @@
     "createdAt": "2026-09-17T13:38:06.000Z",
     "score": 3,
     "category": "hacks",
-    "description": "Jevでマスモデルの探索デモ\n\n課題が簡素なのでまだまだ実用性についてはわからんけど、最適化探索には良いんじゃないか？\n\nもうちょいいろいろやらないとわからん。 https://t.co/URRFzWMswN",
+    "description": "Shares a mass model exploration demo in Jev, noting that while its practical viability remains to be tested on complex tasks, it looks promising for optimization search.",
     "author": {
       "name": "KOBATAKA｜Vibe Modeling",
       "handle": "shion_takk",
@@ -4249,7 +4249,7 @@
     "createdAt": "2026-09-18T14:32:04.000Z",
     "score": 1,
     "category": "hacks",
-    "description": "JEVでリアルタイム脳内メーカー https://t.co/yb9AXBIvde",
+    "description": "Showcases a real-time brain analyzer demo built in Jev.",
     "author": {
       "name": "ponyo877",
       "handle": "ponyo877",

@@ -10,7 +10,8 @@
     "check": "astro check",
     "deploy:dev": "npm run build && npx wrangler pages deploy ./dist --project-name=jev-info-site --branch=dev",
     "deploy:main": "npm run build && npx wrangler pages deploy ./dist --project-name=jev-info-site --branch=main",
-    "update:metrics": "node --env-file=../.env scripts/update-repository-metrics.mjs"
+    "update:metrics": "node --env-file=../.env scripts/update-repository-metrics.mjs",
+    "generate:readme": "node scripts/generate-readme.mjs"
   },
   "dependencies": {
     "@iconify-json/material-symbols": "^1.2.20",
