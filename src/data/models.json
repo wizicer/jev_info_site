@@ -1,45 +1,15 @@
 [
   {
-    "id": "model_0dc21a05626da629",
-    "name": "Ternary-Bonsai-2-27B-gguf",
-    "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-    "description": "Ternary GGUF builds (PTQ1_0/PQ2_0) of a Qwen3.8-27B-derived reasoning model delivering ~1.72 bits/weight at ~6–7 GB, retaining 98.2% of FP16 intelligence with 262K context, runnable on a laptop or single GPU via a custom llama.cpp fork (CUDA/Metal/CPU)."
-  },
-  {
-    "id": "model_0e4c20f0a9b2802c",
-    "name": "succinct-router",
-    "url": "https://huggingface.co/pmarquees/succinct-router",
-    "description": "Succinct Router is a 14M-parameter MLX decoder-only model that predicts calibrated pass probabilities for three candidate LLM configurations and selects the cheapest one expected to clear a quality threshold, achieving 95% exact-route accuracy and ~85% cost savings versus always using the largest model on synthetic evaluation data."
-  },
-  {
     "id": "model_0fdb3d13bcc9496b",
     "name": "laya",
     "url": "https://huggingface.co/convaiinnovations/laya",
     "description": "Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or JSON states with calibrated probabilities in a single ~33 ms forward pass, auto-routing across three checkpoints covering 100+ languages."
   },
   {
-    "id": "model_19d14546807e402d",
-    "name": "goldworm-v6",
-    "url": "https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6",
-    "description": "GoldWorm v6 provides a 2.76M-parameter byte-level PyTorch causal transformer checkpoint and config for TinyStories text generation, achieving verified full-validation BPC 1.007349 versus GPT-2 124M’s 1.142985 on the same metric."
-  },
-  {
-    "id": "model_276656a74cb6f7af",
-    "name": "gliformer-large-v1",
-    "url": "https://huggingface.co/knowledgator/gliformer-large-v1",
-    "description": "GLiFormer Large v1 is a 575.6M-parameter layout-aware DeBERTa encoder that performs named entity recognition, text classification, joint relation extraction, nested structured extraction, and text embeddings using task labels and schemas provided at inference time."
-  },
-  {
     "id": "model_2b4eef82fb932cad",
     "name": "open-jev-deberta-v3-large",
     "url": "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large",
     "description": "A DeBERTa-v3-large encoder that maps one input state plus any number of typed questions (choice, ordered score, or yes/no) to calibrated per-question probability distributions in a single forward pass, reaching 0.854 in-domain accuracy at 0.022 ECE with zero structured-output errors."
-  },
-  {
-    "id": "model_2d8adaa42d339cb4",
-    "name": "Qwen3-14B-RLCD-Decision-LoRA",
-    "url": "https://huggingface.co/Foodoo1/Qwen3-14B-RLCD-Decision-LoRA",
-    "description": "A QLoRA adapter for Qwen3-14B that specializes it for single-token parallel constrained decoding of multi-field JSON decisions in one broadcast forward pass, lifting reasoning-heavy field accuracy (fraud_risk 64%→95%, overall 85.2%→98.8%) at ~234ms per case."
   },
   {
     "id": "model_388c6a904ddd152e",
@@ -54,58 +24,10 @@
     "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
   },
   {
-    "id": "model_52c7d30d3321c86a",
-    "name": "Bespoke-MiniCheck-7B",
-    "url": "https://huggingface.co/bespokelabs/Bespoke-MiniCheck-7B",
-    "description": "A 7B fact-checking model finetuned from InternLM2.5-7B-Chat on 21K ANLI plus 14K Llama-3.1-405B–generated synthetic examples that scores whether a claim sentence is supported by a grounding document (up to 32K tokens), achieving SOTA on the LLM-AggreFact benchmark."
-  },
-  {
-    "id": "model_583e3783818b2d03",
-    "name": "gliner2.5-multi-v1",
-    "url": "https://huggingface.co/fastino/gliner2.5-multi-v1",
-    "description": "GLiNER2.5-multi-v1 is a 287M-parameter multilingual mDeBERTa-v3-base checkpoint that unifies entity extraction, text classification, structured extraction, span-attribute scoring, and relation extraction in one boundary architecture with schema-constrained decoding."
-  },
-  {
     "id": "model_671e9fa5db7555df",
     "name": "decider-2b",
     "url": "https://huggingface.co/Mapika/decider-2b",
     "description": "decider-2b is a 1.9B-parameter model that returns calibrated probability distributions over explicit option lists for multiple typed questions in one forward pass—no text generation—for fast routing, classification, judgments, and agent decisions."
-  },
-  {
-    "id": "model_7f71daedf17b157a",
-    "name": "gliguard-LLMGuardrails-300M",
-    "url": "https://huggingface.co/fastino/gliguard-LLMGuardrails-300M",
-    "description": "gliguard-LLMGuardrails-300M is a compact 0.3B-parameter encoder guardrail model that scores prompt/response safety, toxicity, jailbreak attacks, and refusals in one schema-conditioned pass, matching guardrails 23–90x larger at up to 16x faster inference on CPU."
-  },
-  {
-    "id": "model_979397339b0668ae",
-    "name": "Qwen-2.5-1B-RLCD",
-    "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
-    "description": "An MLX Qwen2.5-1.5B model for Apple Silicon that evaluates JSON schema fields in parallel via KV-cache broadcasting and logit slicing, delivering 5.6–7x faster structured extraction and classification than autoregressive decoding with guaranteed-valid output and calibrated field confidences."
-  },
-  {
-    "id": "model_a28b7943af97a840",
-    "name": "privacy-filter",
-    "url": "https://huggingface.co/openai/privacy-filter",
-    "description": "A 1.5B-parameter (50M active) bidirectional token-classification model that detects and masks PII across 8 privacy span categories in a single forward pass, offering a 128K context window, tunable precision/recall operating points, and coherent BIOES span decoding for on-premises or browser-based data sanitization."
-  },
-  {
-    "id": "model_b114b3ecc62345fb",
-    "name": "sales-conversion-model-reinf-learning",
-    "url": "https://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning",
-    "description": "A Stable Baselines3 PPO reinforcement-learning model that predicts sales conversion probability turn-by-turn (96.7% accuracy, 85ms inference) from conversation embeddings and LLM-derived engagement/effectiveness metrics, enabling real-time sales coaching and quantitative A/B testing of scripts."
-  },
-  {
-    "id": "model_b22ba780526f83c9",
-    "name": "needle",
-    "url": "https://huggingface.co/Cactus-Compute/needle",
-    "description": "Needle is a 26M-parameter pure-attention (no FFN) encoder-decoder model distilled from Gemini 3.1 for on-device function calling and tool use, reaching 6000 tok/s prefill and 1200 tok/s decode on the Cactus runtime, with open weights and local Mac/PC finetuning support."
-  },
-  {
-    "id": "model_b783be89a3779b10",
-    "name": "Arch-Router-1.5B",
-    "url": "https://huggingface.co/katanemo/Arch-Router-1.5B",
-    "description": "Arch-Router-1.5B is a compact Qwen2.5-1.5B-Instruct-based text-generation model that maps conversation intent to user-defined domain/action routes and outputs JSON route selections, enabling transparent, configurable, low-latency routing to preferred LLMs."
   },
   {
     "id": "model_c342c61f28aaa3bd",
@@ -120,28 +42,10 @@
     "description": "A merged FP32 GLiNER2.5 fine-tune that chooses an action ID, `reobserve`, or `abstain` from a bounded action menu for local macOS CUA automation—without screenshots or tool calls—and is verified on browser DOM and native AppKit fixtures with low-latency MPS inference."
   },
   {
-    "id": "model_d1c27286d44aab59",
-    "name": "potion-base-8M",
-    "url": "https://huggingface.co/minishlab/potion-base-8M",
-    "description": "potion-base-8M is an 8M-parameter static embedding model distilled from bge-base-en-v1.5 via Model2Vec and Tokenlearn, producing sentence embeddings orders of magnitude faster on CPU and GPU while retaining ~92% of all-MiniLM-L6-v2's average MTEB performance for resource-constrained or real-time applications."
-  },
-  {
-    "id": "model_d3949119d53bac57",
-    "name": "laya-vision-smolvlm-256m",
-    "url": "https://huggingface.co/thaitea/laya-vision-smolvlm-256m",
-    "description": "A SmolVLM-256M-based vision-language decision model that produces calibrated multiple-choice and yes/no probabilities for an image plus optional text in one non-generative forward pass, enabling fast confidence-aware visual question answering (~71 ms on an NVIDIA L4)."
-  },
-  {
     "id": "model_d3e32be1a4d88a59",
     "name": "Jeff-1",
     "url": "https://huggingface.co/GestaltLabs/Jeff-1",
     "description": "Jeff-1 is an Apache-2.0 LoRA adapter for Qwen3-4B-Instruct-2507 that scores caller-supplied labels to return typed decisions—choice, yes/no, and ordinal scores with probabilities and confidence—for local inference tasks like fact-checking without parsing generated text."
-  },
-  {
-    "id": "model_d811fe7a3defe5a6",
-    "name": "Bespoke-Nimble-9B",
-    "url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B",
-    "description": "Bespoke-Nimble-9B is a 165 MiB Apache-2.0 LoRA adapter for Qwen3.5-9B that scores allowed boolean, enum, and integer-rubric tokens for context-grounded structured predictions without free-form generation, with tokenizer, prompt builder, inference helper, and evaluation results."
   },
   {
     "id": "model_e4165cc3cb8f1a71",
@@ -156,33 +60,9 @@
     "description": "A chess option scorer that finetunes MiniLM-L6 with an attention head to emit logits for all legal moves from a FEN context in one forward pass, distilled from Stockfish 19 (0.445 teacher agreement, 0.667 on tactics) for fast move ranking rather than verified playing strength."
   },
   {
-    "id": "model_f6b0b70c523bf85e",
-    "name": "gliner2-privacy-filter-PII-multi",
-    "url": "https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi",
-    "description": "A 205M-parameter GLiNER2 fine-tune that detects and masks PII across 42 entity types in 7 languages, achieving the highest span-level F1 and recall on the SPY benchmark for redaction, compliance, and data-hygiene workflows."
-  },
-  {
     "id": "model_f996f125cc8658e3",
     "name": "rlcd-modernbert-151m",
     "url": "https://huggingface.co/heman10x/rlcd-modernbert-151m",
     "description": "A 151M-parameter ModernBERT-based decision engine delivering calibrated choices, scores, and probabilities—plus an explicit abstention slot—in a single ~35ms non-autoregressive forward pass, deployable in-browser via WebGPU/WASM or via ONNX for edge inference."
-  },
-  {
-    "id": "model_fb8a7480d2dad0cf",
-    "name": "gliner2.5-base-v1",
-    "url": "https://huggingface.co/fastino/gliner2.5-base-v1",
-    "description": "GLiNER2.5 Base is a 194M-parameter English DeBERTa-v3-base checkpoint whose boundary architecture unifies schema-driven NER, classification, relation extraction, structured-record parsing, and span-attribute scoring, with constrained decoding and local CPU/CUDA/MPS inference."
-  },
-  {
-    "id": "model_fc6c1d1792b4d4c4",
-    "name": "gliclass-modern-base-v2.0-init",
-    "url": "https://huggingface.co/knowledgator/gliclass-modern-base-v2.0-init",
-    "description": "A 151M-parameter ModernBERT-based GLiClass model that performs efficient zero-shot multi-label text labeling in a single forward pass, supporting topic tagging, sentiment analysis, NLI-style premise–hypothesis scoring, and RAG reranking with cross-encoder-level accuracy at lower compute."
-  },
-  {
-    "id": "model_ff0d38c13ee58578",
-    "name": "Qwen3-4B-Instruct-2507-Decision",
-    "url": "https://huggingface.co/dsif2012/Qwen3-4B-Instruct-2507-Decision",
-    "description": "A low-latency inference interface over Qwen3-4B-Instruct-2507 (no new weights) that resolves BOOLEAN and CHOICE questions via candidate softmax over logits, returning picks with confidence, margin, and rankings via a prefix-cache-optimized vLLM /decision endpoint."
   }
 ]
