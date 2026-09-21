@@ -1,68 +1,68 @@
 [
   {
-    "id": "model_0fdb3d13bcc9496b",
-    "name": "laya",
-    "url": "https://huggingface.co/convaiinnovations/laya",
-    "description": "Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or JSON states with calibrated probabilities in a single ~33 ms forward pass, auto-routing across three checkpoints covering 100+ languages."
-  },
-  {
-    "id": "model_2b4eef82fb932cad",
-    "name": "open-jev-deberta-v3-large",
-    "url": "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large",
-    "description": "A DeBERTa-v3-large encoder that maps one input state plus any number of typed questions (choice, ordered score, or yes/no) to calibrated per-question probability distributions in a single forward pass, reaching 0.854 in-domain accuracy at 0.022 ECE with zero structured-output errors."
-  },
-  {
-    "id": "model_388c6a904ddd152e",
-    "name": "openjev",
-    "url": "https://huggingface.co/AlexWortega/openjev",
-    "description": "openjev fine-tunes Qwen3.5 into a zero-shot NLI cross-encoder (4B text+image v2, plus a 35B-A3B MoE variant) that scores premise–hypothesis pairs as entailment/contradiction/neutral — one primitive for reranking, answer grading, content guarding, and driving real-time game agents like Doom and Minecraft."
-  },
-  {
-    "id": "model_482f7d2641ab3321",
-    "name": "cua-s1-forms",
-    "url": "https://huggingface.co/cua-ai/cua-s1-forms",
-    "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
-  },
-  {
-    "id": "model_671e9fa5db7555df",
-    "name": "decider-2b",
-    "url": "https://huggingface.co/Mapika/decider-2b",
-    "description": "decider-2b is a 1.9B-parameter model that returns calibrated probability distributions over explicit option lists for multiple typed questions in one forward pass—no text generation—for fast routing, classification, judgments, and agent decisions."
-  },
-  {
-    "id": "model_c342c61f28aaa3bd",
-    "name": "laya-grounded",
-    "url": "https://huggingface.co/Luni/laya-grounded",
-    "description": "A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and probability calibration, at the cost of worse phishing detection and option-name routing stability."
-  },
-  {
-    "id": "model_c749a841cc7ce152",
+    "id": "cand_107995efedabd000",
     "name": "gliner2.5-cua-grounder-macos-v1",
     "url": "https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v1",
     "description": "A merged FP32 GLiNER2.5 fine-tune that chooses an action ID, `reobserve`, or `abstain` from a bounded action menu for local macOS CUA automation—without screenshots or tool calls—and is verified on browser DOM and native AppKit fixtures with low-latency MPS inference."
   },
   {
-    "id": "model_d3e32be1a4d88a59",
+    "id": "cand_1147d1da23858f52",
+    "name": "openjev",
+    "url": "https://huggingface.co/AlexWortega/openjev",
+    "description": "openjev fine-tunes Qwen3.5 into a zero-shot NLI cross-encoder (4B text+image v2, plus a 35B-A3B MoE variant) that scores premise–hypothesis pairs as entailment/contradiction/neutral — one primitive for reranking, answer grading, content guarding, and driving real-time game agents like Doom and Minecraft."
+  },
+  {
+    "id": "cand_1415cf843e81d521",
+    "name": "laya-grounded",
+    "url": "https://huggingface.co/Luni/laya-grounded",
+    "description": "A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and probability calibration, at the cost of worse phishing detection and option-name routing stability."
+  },
+  {
+    "id": "cand_53e471fe6351073e",
+    "name": "rlcd-modernbert-151m",
+    "url": "https://huggingface.co/heman10x/rlcd-modernbert-151m",
+    "description": "A 151M-parameter ModernBERT-based decision engine delivering calibrated choices, scores, and probabilities—plus an explicit abstention slot—in a single ~35ms non-autoregressive forward pass, deployable in-browser via WebGPU/WASM or via ONNX for edge inference."
+  },
+  {
+    "id": "cand_56314cd8b72ded8a",
     "name": "Jeff-1",
     "url": "https://huggingface.co/GestaltLabs/Jeff-1",
     "description": "Jeff-1 is an Apache-2.0 LoRA adapter for Qwen3-4B-Instruct-2507 that scores caller-supplied labels to return typed decisions—choice, yes/no, and ordinal scores with probabilities and confidence—for local inference tasks like fact-checking without parsing generated text."
   },
   {
-    "id": "model_e4165cc3cb8f1a71",
-    "name": "jev-schema-scorer-deberta-v3-large",
-    "url": "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large",
-    "description": "A fine-tuned DeBERTa-v3-large encoder with a scalar head that scores (state, question + candidate) pairs, decoding grouped logits via softmax into choice, boolean (noul), and ordinal score answers—reading criteria and option ids at inference time so one checkpoint handles new label sets without retraining."
+    "id": "cand_5d885f2b9705cba0",
+    "name": "laya",
+    "url": "https://huggingface.co/convaiinnovations/laya",
+    "description": "Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or JSON states with calibrated probabilities in a single ~33 ms forward pass, auto-routing across three checkpoints covering 100+ languages."
   },
   {
-    "id": "model_ed6149e37efb290e",
+    "id": "cand_6c5552ed53813d06",
+    "name": "decider-2b",
+    "url": "https://huggingface.co/Mapika/decider-2b",
+    "description": "decider-2b is a 1.9B-parameter model that returns calibrated probability distributions over explicit option lists for multiple typed questions in one forward pass—no text generation—for fast routing, classification, judgments, and agent decisions."
+  },
+  {
+    "id": "cand_721c94bd6f2f3edc",
+    "name": "cua-s1-forms",
+    "url": "https://huggingface.co/cua-ai/cua-s1-forms",
+    "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
+  },
+  {
+    "id": "cand_a7f574d4d7cce5b8",
     "name": "chessjev-minilm-v1",
     "url": "https://huggingface.co/gopalanj/chessjev-minilm-v1",
     "description": "A chess option scorer that finetunes MiniLM-L6 with an attention head to emit logits for all legal moves from a FEN context in one forward pass, distilled from Stockfish 19 (0.445 teacher agreement, 0.667 on tactics) for fast move ranking rather than verified playing strength."
   },
   {
-    "id": "model_f996f125cc8658e3",
-    "name": "rlcd-modernbert-151m",
-    "url": "https://huggingface.co/heman10x/rlcd-modernbert-151m",
-    "description": "A 151M-parameter ModernBERT-based decision engine delivering calibrated choices, scores, and probabilities—plus an explicit abstention slot—in a single ~35ms non-autoregressive forward pass, deployable in-browser via WebGPU/WASM or via ONNX for edge inference."
+    "id": "cand_c7b21da672a4c4e4",
+    "name": "jev-schema-scorer-deberta-v3-large",
+    "url": "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large",
+    "description": "A fine-tuned DeBERTa-v3-large encoder with a scalar head that scores (state, question + candidate) pairs, decoding grouped logits via softmax into choice, boolean (noul), and ordinal score answers—reading criteria and option ids at inference time so one checkpoint handles new label sets without retraining."
+  },
+  {
+    "id": "cand_dd43c35aafec7ca9",
+    "name": "open-jev-deberta-v3-large",
+    "url": "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large",
+    "description": "A DeBERTa-v3-large encoder that maps one input state plus any number of typed questions (choice, ordered score, or yes/no) to calibrated per-question probability distributions in a single forward pass, reaching 0.854 in-domain accuracy at 0.022 ECE with zero structured-output errors."
   }
 ]
