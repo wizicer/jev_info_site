@@ -19,6 +19,10 @@ const huggingFaceToken = process.env.HF_TOKEN;
 const concurrency = 5;
 
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
+const readJsonOrEmpty = async (path) => readJson(path).catch((error) => {
+  if (error?.code === 'ENOENT') return {};
+  throw error;
+});
 
 function repositoryFromUrl(url, host) {
   try {
@@ -68,7 +72,7 @@ function isCount(value) {
 }
 
 async function main() {
-  const [tools, models, awesome, previous] = await Promise.all([readJson(toolsPath), readJson(modelsPath), readJson(awesomePath), readJson(metricsPath)]);
+  const [tools, models, awesome, previous] = await Promise.all([readJson(toolsPath), readJson(modelsPath), readJson(awesomePath), readJsonOrEmpty(metricsPath)]);
   const now = new Date().toISOString();
   const failures = [];
   if (!githubToken) console.warn('Warning: GITHUB_TOKEN is not set. GitHub allows only 60 unauthenticated requests/hour; this catalog has more repositories.');
@@ -100,10 +104,22 @@ async function main() {
       return { id: model.id, metrics: { likes: data.likes, updatedAt: now } };
     } catch (error) { return { id: model.id, error: error.message }; }
   });
-  const next = { version: 1, updatedAt: now, tools: { ...(previous.tools || {}) }, models: { ...(previous.models || {}) }, awesome: { ...(previous.awesome || {}) } };
-  for (const result of toolResults) { if (result.metrics) next.tools[result.id] = result.metrics; else failures.push(`GitHub ${result.error}`); }
-  for (const result of awesomeResults) { if (result.metrics) next.awesome[result.id] = result.metrics; else if (result.error) failures.push(`GitHub ${result.error}`); }
-  for (const result of modelResults) { if (result.metrics) next.models[result.id] = result.metrics; else failures.push(`Hugging Face ${result.error}`); }
+  const next = { version: 1, updatedAt: now, tools: {}, models: {}, awesome: {} };
+  for (const result of toolResults) {
+    const metrics = result.metrics || previous.tools?.[result.id];
+    if (metrics) next.tools[result.id] = metrics;
+    else failures.push(`GitHub ${result.error}`);
+  }
+  for (const result of awesomeResults) {
+    const metrics = result.metrics || previous.awesome?.[result.id];
+    if (metrics) next.awesome[result.id] = metrics;
+    if (result.error) failures.push(`GitHub ${result.error}`);
+  }
+  for (const result of modelResults) {
+    const metrics = result.metrics || previous.models?.[result.id];
+    if (metrics) next.models[result.id] = metrics;
+    else failures.push(`Hugging Face ${result.error}`);
+  }
   const temporaryPath = `${metricsPath}.tmp`;
   await mkdir(dirname(metricsPath), { recursive: true });
   await writeFile(temporaryPath, `${JSON.stringify(next, null, 2)}\n`);
