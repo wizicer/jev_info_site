@@ -30,10 +30,22 @@
     "description": "Jeff-1 is an Apache-2.0 LoRA adapter for Qwen3-4B-Instruct-2507 that scores caller-supplied labels to return typed decisions—choice, yes/no, and ordinal scores with probabilities and confidence—for local inference tasks like fact-checking without parsing generated text."
   },
   {
+    "id": "cand_5aa3f4571ac221e9",
+    "name": "kev-4b",
+    "url": "https://huggingface.co/jaredpalmer/kev-4b",
+    "description": "Kev-4B is a LoRA adapter plus pointer head on Qwen3.5-4B-Base that maps a document and typed questions to calibrated per-question probability distributions in one forward pass—no generation—serving TypeSafe's /v1/systemone decision contract at 0.837 out-of-domain locked-test accuracy."
+  },
+  {
     "id": "cand_5d885f2b9705cba0",
     "name": "laya",
     "url": "https://huggingface.co/convaiinnovations/laya",
     "description": "Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or JSON states with calibrated probabilities in a single ~33 ms forward pass, auto-routing across three checkpoints covering 100+ languages."
+  },
+  {
+    "id": "cand_60397008d42478f0",
+    "name": "zeiger-0.6b",
+    "url": "https://huggingface.co/php-ai/zeiger-0.6b",
+    "description": "Zeiger-0.6B is a 614M-parameter encoder-decision model (Qwen3-0.6B backbone plus 18M scoring head) that, given a web page's element descriptions and an instruction, picks the target element—or answers \"none\"—in one calibrated 32k-context forward pass at up to 1,501 candidates, enabling fast, reliable browser-agent element grounding without generation or chunked tournaments."
   },
   {
     "id": "cand_6c5552ed53813d06",
@@ -58,6 +70,18 @@
     "name": "jev-schema-scorer-deberta-v3-large",
     "url": "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large",
     "description": "A fine-tuned DeBERTa-v3-large encoder with a scalar head that scores (state, question + candidate) pairs, decoding grouped logits via softmax into choice, boolean (noul), and ordinal score answers—reading criteria and option ids at inference time so one checkpoint handles new label sets without retraining."
+  },
+  {
+    "id": "cand_ca0bc421793bd0ee",
+    "name": "NanoJev",
+    "url": "https://huggingface.co/C-Tianyu/NanoJev",
+    "description": "NanoJev is a 0.6B Qwen3-based decision model whose shared backbone and attention Choice head score each state/question-encoded candidate set and return action distributions via softmax—without output-token decoding—for Maze, Snake, ViZDoom Basic, and Predict Position through a structured interface."
+  },
+  {
+    "id": "cand_cbd11d5d4d505d33",
+    "name": "laya-typed-decisions",
+    "url": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
+    "description": "A 421M-parameter non-autoregressive ModernBERT-large model, RLCD-fine-tuned to emit calibrated probability distributions over typed primitives (choice, score, noul) for four workflows—agent observability, customer service, invoicing, security incidents—at 0.766 accuracy."
   },
   {
     "id": "cand_dd43c35aafec7ca9",

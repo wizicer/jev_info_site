@@ -13,6 +13,13 @@
     "favicon": "/favicon/cand_019bead40a52240e.png"
   },
   {
+    "id": "cand_0225471278aa2a20",
+    "name": "Strongly Typed AI News",
+    "url": "https://collected.ga/",
+    "description": "A daily AI newsletter that curates agent-infrastructure news—covering model releases, agent memory, databases, governance platforms, research papers, and funding rounds—through a typed-systems lens, showing engineers and investors where durable boundaries in AI systems are moving.",
+    "favicon": "/favicon/cand_0225471278aa2a20.png"
+  },
+  {
     "id": "cand_17b418cbf2be7a0f",
     "name": "awesome-jev-usecases",
     "url": "https://github.com/anandi1989/awesome-jev-usecases",
@@ -57,6 +64,13 @@
     "favicon": "/favicon/cand_245d34bc8e5588fe.png"
   },
   {
+    "id": "cand_28e74c8168d0b675",
+    "name": "DEV Community",
+    "url": "https://dev.to/",
+    "description": "DEV Community is a blogging and discussion platform for software developers featuring technical articles, tutorials, career advice, tagged topic feeds, challenges, and community threads covering web development, AI, DevOps, and more.",
+    "favicon": "/favicon/cand_28e74c8168d0b675.png"
+  },
+  {
     "id": "cand_2f1ba6ab5e82cf12",
     "name": "Jev Quest — Zero to Expert",
     "url": "https://jev-0-to-expert.netlify.app/",
@@ -96,6 +110,18 @@
     "description": "Jevbox is a toolkit built on Jev, a fast \"common-sense\" judgment model, offering Manyhands for plain-language agentic control of apps, phones, portals, and SSH/MQTT/Home Assistant machines, plus Preflight, a sub-second automated design-review check for AI agents."
   },
   {
+    "id": "cand_5c532c3ca2fc70bc",
+    "name": "jev-docs",
+    "url": "https://github.com/lezgoverci/jev-docs",
+    "description": "A 109-page offline mirror of the TypeSafe AI docs covering the Jev System One model, Choice/Score/Noul question primitives, confidence and architecture patterns, Python/JavaScript SDK and HTTP API references, and cookbooks, with upstream links rewritten to relative paths."
+  },
+  {
+    "id": "cand_5d69ba04ae9f6090",
+    "name": "awesome-typesafe-jev",
+    "url": "https://github.com/AbdelStark/awesome-typesafe-jev",
+    "description": "A community field guide to TypeSafe's Jev, with a runnable SDK starter, patterns for shaping Choice, Score, and Noul questions, guidance on policy thresholds, live example projects, and independent evaluations to test decisions before automating them."
+  },
+  {
     "id": "cand_5da69aecdfdf248c",
     "name": "pg-jev: query Postgres in plain English",
     "url": "https://pgjev.zachi.dev/",
@@ -123,6 +149,13 @@
     "description": "typesafe-arena provides a local Markdown mirror of docs.typesafe.ai plus Lume, a Rust CLI that builds BM25 and tag-graph indexes for offline search across TypeSafe routing, confidence, primitives, cookbooks, demos, and SDK docs."
   },
   {
+    "id": "cand_663f227ea370c17f",
+    "name": "Risetive — Spot AI opportunities. Find the tools to grow.",
+    "url": "https://risetive.com/",
+    "description": "Risetive is a market intelligence platform for AI builders and marketers that tracks 30,000+ products across 860+ active markets, ranks the week's fastest-growing tools by estimated traffic and growth rate, and maps products by task so users can spot AI opportunities and find tools to grow.",
+    "favicon": "/favicon/cand_663f227ea370c17f.png"
+  },
+  {
     "id": "cand_67ce11aba9126f31",
     "name": "The Jev Registry — a daily watch",
     "url": "https://radar.mowglissh.dev/",
@@ -146,6 +179,12 @@
     "name": "awesome-jev-projects",
     "url": "https://github.com/logicrw/awesome-jev-projects",
     "description": "A commit-pinned reference of 326+ open-source implementations showing how TypeSafe Jev delivers sub-100ms typed discrete decisions for tool routing, action dispatch, and safety gates, reducing the latency, cost, and context drift of agent workflows."
+  },
+  {
+    "id": "cand_73fa5630fb64c2eb",
+    "name": "jev-experiments",
+    "url": "https://github.com/nak1b/jev-experiments",
+    "description": "A Next.js/TypeScript monorepo of small Jev experiments—flight search, expense tagging, news filtering—that answer typed questions (Choice, Score, Noul) with probabilities in under a second, exposing per-call cost, tokens, and speed to show batching beats per-item calls."
   },
   {
     "id": "cand_786cb988c3825de1",
@@ -187,6 +226,12 @@
     "favicon": "/favicon/cand_8e0fe62c814cf3f5.png"
   },
   {
+    "id": "cand_9100e3051350fe2d",
+    "name": "awesome-jev",
+    "url": "https://github.com/MrJev/awesome-jev",
+    "description": "A curated list of 208+ verified projects, SDKs, integrations, and tools for Jev (TypeSafe AI's System One model for typed decisions with calibrated confidence), with hands-on reviews documenting what data each tool sends, running findings, alternative-endpoint support, ecosystem changelogs, and weekly trending stats."
+  },
+  {
     "id": "cand_95cc90b7151c5be7",
     "name": "pgjev - ask your Postgres tables questions in plain language",
     "url": "https://pgjev.com/",
@@ -219,6 +264,13 @@
     "description": "Curated index of 356 TypeSafe Jev / System One ecosystem projects — official SDKs, agent skills, game and computer-use agents, MCP connectors, routers, libraries, and benchmarks — plus high-signal X posts and YouTube explainers, mirrored by a searchable site at awesomejev.cc."
   },
   {
+    "id": "cand_b88aa3c3a3c59e82",
+    "name": "Developer news, tutorials &amp; releases · DevFeed",
+    "url": "https://devfeed.tech/",
+    "description": "DevFeed is a developer news aggregator that curates daily articles, tutorials, and release announcements from sources like AWS, NVIDIA, Cisco, and HackerNoon, organized by topic tags (AI, security, hardware, distributed systems) with filtering, search, and source-following features.",
+    "favicon": "/favicon/cand_b88aa3c3a3c59e82.png"
+  },
+  {
     "id": "cand_bdf7d2df7c3ed9b3",
     "name": "Awesome Jev",
     "url": "https://awesomejev.vercel.app/",
@@ -226,10 +278,23 @@
     "favicon": "/favicon/cand_bdf7d2df7c3ed9b3.png"
   },
   {
+    "id": "cand_bef362639cb72fdc",
+    "name": "shipwithjev - a catalog of what people build with Jev",
+    "url": "https://www.shipwithjev.com/",
+    "description": "shipwithjev is a curated, searchable directory of 426 real projects built with Jev — spanning browser agents, real-time games, trading, email triage, and research — with each entry tagged by category and annotated with the author-reported runtime, latency, and token-cost metrics for that build.",
+    "favicon": "/favicon/cand_bef362639cb72fdc.png"
+  },
+  {
     "id": "cand_c0811f0dbc0cce73",
     "name": "awesome-jev",
     "url": "https://github.com/AnotiaWang/awesome-jev",
     "description": "A curated awesome list for Jev, TypeSafe's System One evaluation model, cataloging official docs and API, community SDKs across Python/JS/Rust/Go/Elixir/Swift/Ruby/.NET/PHP/Scala, browser/computer/mobile agents, eval tools, cookbooks, and articles—useful for finding any library, demo, or integration in one place."
+  },
+  {
+    "id": "cand_c1c663c3d7738bda",
+    "name": "JEV Use Cases — Real examples of AI decisions",
+    "url": "https://www.jev-use-cases.com/",
+    "description": "A community-curated directory of 317 real-world JEV use cases — spanning agents, safety review, computer use, search/data, and real-time applications — where each entry links to its source X post with concrete latency, cost, and benchmark metrics, helping builders evaluate how JEV's fast, cheap decision-making performs in production."
   },
   {
     "id": "cand_c5d4359258f3505f",
@@ -239,10 +304,24 @@
     "favicon": "/favicon/cand_c5d4359258f3505f.png"
   },
   {
+    "id": "cand_c7591999a26e5ab7",
+    "name": "Jevslist",
+    "url": "https://jevslist.com/",
+    "description": "Jevslist is a website hosting 37 crowd-submitted ranked lists of favorites—spanning numbers, games, quotes, AI models and tools, stocks, crypto, musicals, food, and more—where each entry shows a top pick alongside scores and item counts.",
+    "favicon": "/favicon/cand_c7591999a26e5ab7.png"
+  },
+  {
     "id": "cand_d075f6be2e137291",
     "name": "awesome-jev-typesafe",
     "url": "https://github.com/valentynkit/awesome-jev-typesafe",
     "description": "A curated awesome list of 325 entries cataloging SDKs, gateways, coding-agent integrations, replicas, and real-world projects built on TypeSafe's Jev, a fast \"System One\" model that answers typed Choice/Score/Noul questions with calibrated probabilities instead of generating text."
+  },
+  {
+    "id": "cand_d18fe6a1a82341e5",
+    "name": "Hermes Agent Docs — Installation, Desktop &amp; Multilingual Guide | hermes-ai.net",
+    "url": "https://hermes-ai.net/",
+    "description": "An unofficial community documentation site for Hermes Agent (Nous Research's self-improving open-source AI agent), offering installation, desktop, skills, MCP, and scheduled-automation guides plus release notes across 20 localized languages.",
+    "favicon": "/favicon/cand_d18fe6a1a82341e5.png"
   },
   {
     "id": "cand_d24026f700b47b7d",
@@ -304,6 +383,12 @@
     "favicon": "/favicon/cand_e3c4e469858dfc1e.png"
   },
   {
+    "id": "cand_e578f65f67df8ed6",
+    "name": "using-typesafe-and-pinecone",
+    "url": "https://github.com/pinecone-io/using-typesafe-and-pinecone",
+    "description": "A collection of self-contained, deployable examples combining TypeSafe's Jev model with Pinecone — currently featuring an NLI reranking demo that filters 200 full-text search candidates down to 10 using natural-language criteria — plus agent skills for integrating TypeSafe judgments into Pinecone retrieval workflows."
+  },
+  {
     "id": "cand_ea1b90f52f17bd9a",
     "name": "awesome-jev",
     "url": "https://github.com/ckaraca/awesome-jev",
@@ -334,5 +419,18 @@
     "url": "https://jevlist.ai/",
     "description": "A reviewed directory of 110 apps, libraries, integrations, and runnable examples built on Jev—TypeSafe AI's typed-decision model—where each guide explains what Jev decides, the shortest real setup path, and the exact upstream commit or commands checked.",
     "favicon": "/favicon/cand_fc34993cf483a45e.png"
+  },
+  {
+    "id": "cand_fe9058b05427ae8c",
+    "name": "Код — журнал Яндекс Практикума о технологиях и программировании",
+    "url": "https://thecode.media/",
+    "description": "Kod is Yandex Practicum's Russian-language online magazine about technology and programming, publishing difficulty-rated articles and videos spanning IT news, AI tools, tutorials, theory explainers, coding exercises, and career advice for learners and working developers.",
+    "favicon": "/favicon/cand_fe9058b05427ae8c.png"
+  },
+  {
+    "id": "cand_ff374c0a37ca2751",
+    "name": "jev-skill",
+    "url": "https://github.com/wuyoscar/jev-skill",
+    "description": "A curated catalog of Jev resources for coding agents: 5 installable skills, 108 worked scenarios with recorded input/output pairs, and 57 linked projects spanning demos, local decision-model alternatives, MCP tools, and evaluation reports for applying Jev's typed choose/score primitives."
   }
 ]
