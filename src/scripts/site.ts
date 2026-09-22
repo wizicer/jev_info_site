@@ -379,7 +379,7 @@ export function initSite() {
     const query = input.value.trim().toLowerCase();
     searchResults.querySelectorAll<HTMLVideoElement>('video').forEach((video) => videoObserver.unobserve(video));
     const matches = query ? demos.filter((demo) =>
-      `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName}`.toLowerCase().includes(query),
+      `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName} ${(demo.tags || []).join(' ')}`.toLowerCase().includes(query),
     ) : [];
     const resultLimit = matchMedia('(max-width: 760px)').matches ? 12 : 16;
     const visible = matches.slice(0, resultLimit);

@@ -11,6 +11,7 @@ export interface Demo {
   createdAt: string;
   score: number;
   category: string;
+  tags?: string[];
   description: string;
   cover: string;
   author: Author;
