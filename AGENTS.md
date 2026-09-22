@@ -1,0 +1,2 @@
+- Files under /src/data except `site-metadata.json` all are generated file, never edit it directly.
+- README.md file is generated and never edit directly, edit /scripts/generate-readme.mjs file instead.
