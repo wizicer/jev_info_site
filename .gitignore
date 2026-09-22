@@ -8,3 +8,4 @@ dist/
 !.env.example
 public/previews/
 public/covers/
+.wrangler
