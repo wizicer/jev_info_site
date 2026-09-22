@@ -4,13 +4,17 @@
     {
       "date": "2026-09-22",
       "metrics": {
+        "https://github.com/Amine-LG/jev-creature-forge": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/nshkrdotcom/typesafe_sdk": {
           "stars": 5,
           "forks": 1
         },
         "https://github.com/ekzhang/openjev-sglang": {
-          "stars": 257,
-          "forks": 32
+          "stars": 258,
+          "forks": 33
         },
         "https://github.com/tlangridge/Alloy": {
           "stars": 2,
@@ -21,15 +25,23 @@
           "forks": 0
         },
         "https://github.com/awlevin/typesafe-computer-use": {
-          "stars": 759,
-          "forks": 59
+          "stars": 764,
+          "forks": 60
         },
         "https://github.com/jonymusky/jev-browser-qa": {
           "stars": 2,
           "forks": 0
         },
+        "https://github.com/Mawfyy/jevflow": {
+          "stars": 5,
+          "forks": 0
+        },
         "https://github.com/moto-taka/vercel-jev-mcp": {
           "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/sunil-sadasivan/jevernetes": {
+          "stars": 9,
           "forks": 0
         },
         "https://github.com/andrueandersoncs/visual-jev": {
@@ -38,7 +50,7 @@
         },
         "https://github.com/davila7/jev-explained": {
           "stars": 23,
-          "forks": 2
+          "forks": 3
         },
         "https://github.com/fatwang2/jev-review-action": {
           "stars": 1,
@@ -47,6 +59,10 @@
         "https://github.com/AmoghCreator/doom-jev": {
           "stars": 4,
           "forks": 2
+        },
+        "https://github.com/LiamSherline/jev-lead-scorer": {
+          "stars": 1,
+          "forks": 0
         },
         "https://github.com/pnthn-ai/polar_llama": {
           "stars": 30,
@@ -64,9 +80,17 @@
           "stars": 3,
           "forks": 1
         },
+        "https://github.com/jagsan-cyber/reflex-gate": {
+          "stars": 6,
+          "forks": 0
+        },
         "https://github.com/Nasrallah-AL/jev-cli": {
           "stars": 18,
           "forks": 1
+        },
+        "https://github.com/daniel4x/JevEmon": {
+          "stars": 3,
+          "forks": 0
         },
         "https://github.com/Peu77/JevFind": {
           "stars": 5,
@@ -104,6 +128,10 @@
           "stars": 7,
           "forks": 1
         },
+        "https://github.com/mizchi/jev-lexer": {
+          "stars": 3,
+          "forks": 0
+        },
         "https://github.com/y0usaf/typesafe-mcp": {
           "stars": 3,
           "forks": 0
@@ -129,7 +157,7 @@
           "forks": 3
         },
         "https://github.com/realZachi/pg-jev": {
-          "stars": 285,
+          "stars": 286,
           "forks": 14
         },
         "https://github.com/Reindeer-AI/pi-jev-guard": {
@@ -148,6 +176,10 @@
           "stars": 10,
           "forks": 1
         },
+        "https://github.com/DevMortimer/pi-typesafe": {
+          "stars": 38,
+          "forks": 4
+        },
         "https://github.com/harshwasan/pi-jev-sentinel": {
           "stars": 8,
           "forks": 1
@@ -164,6 +196,10 @@
           "stars": 81,
           "forks": 5
         },
+        "https://github.com/YosAwed/python-jev-if": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/codeitlikemiley/typesafe-sdk-rust": {
           "stars": 3,
           "forks": 0
@@ -173,11 +209,19 @@
           "forks": 9
         },
         "https://github.com/logan-markewich/jeff": {
-          "stars": 203,
+          "stars": 205,
           "forks": 13
+        },
+        "https://github.com/f/jev-leftpad": {
+          "stars": 73,
+          "forks": 5
         },
         "https://github.com/alterhq/typesafe-sdk-swift": {
           "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/Kylejeong2/jev-judge": {
+          "stars": 0,
           "forks": 0
         },
         "https://github.com/gavinHuang/jevinize": {
@@ -185,14 +229,26 @@
           "forks": 0
         },
         "https://github.com/typesafe-ai/typesafe-sdk-python": {
-          "stars": 186,
+          "stars": 188,
           "forks": 23
+        },
+        "https://github.com/zsiegel92/jevlint": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/muse0509/jev-preflight": {
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/tackaaaada/jev-langfuse-trial": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/gregb100/gavel": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/soderlind/jev-comment-triage": {
           "stars": 1,
           "forks": 0
         },
@@ -209,16 +265,20 @@
           "forks": 11
         },
         "https://github.com/browser-use/jev-ultrafast": {
-          "stars": 16108,
-          "forks": 1009
+          "stars": 16279,
+          "forks": 1022
         },
         "https://github.com/DDnim/jev-tweet-radar": {
           "stars": 1,
           "forks": 0
         },
         "https://github.com/ainame/swift-typesafe": {
-          "stars": 12,
+          "stars": 13,
           "forks": 1
+        },
+        "https://github.com/yamyam-rvc/bonsai-decision-engine": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/daseinlabs/open-jev": {
           "stars": 91,
@@ -244,11 +304,27 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/olivier-motium/jev-doom": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/Prescott-Data/jarviscore-framework": {
           "stars": 14,
           "forks": 1
         },
+        "https://github.com/virajbhartiya/laya-vs-jev": {
+          "stars": 36,
+          "forks": 3
+        },
+        "https://github.com/adiun/jev-clinical-trial-prototype": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/AshutoshVJTI/progressgate": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/jugyo/jev-workflow": {
           "stars": 0,
           "forks": 0
         },
@@ -259,6 +335,10 @@
         "https://github.com/reycn/smart-switch": {
           "stars": 3,
           "forks": 0
+        },
+        "https://github.com/qkal/Canny": {
+          "stars": 29,
+          "forks": 2
         },
         "https://github.com/youyo/decio": {
           "stars": 1,
@@ -274,6 +354,10 @@
         },
         "https://github.com/gamesonrblx/JevML": {
           "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/Yu-Rin-Chi2/auto-form-filler-plugin": {
+          "stars": 2,
           "forks": 0
         },
         "https://github.com/lbotinelly/jev-little-airways": {
@@ -292,6 +376,14 @@
           "stars": 96,
           "forks": 7
         },
+        "https://github.com/stratonext/software-factory": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/dfinke/jev-experiments": {
+          "stars": 2,
+          "forks": 0
+        },
         "https://github.com/Wizhill05/typesafe-image-diffusion": {
           "stars": 0,
           "forks": 0
@@ -305,7 +397,7 @@
           "forks": 0
         },
         "https://github.com/GiesN/typesafe-jev-workflow": {
-          "stars": 6,
+          "stars": 7,
           "forks": 1
         },
         "https://github.com/ari-becker/commentlint": {
@@ -316,24 +408,36 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/kevinbadi/jev-voice": {
+          "stars": 64,
+          "forks": 9
+        },
         "https://github.com/Ezbaze/jevies": {
           "stars": 7,
           "forks": 0
         },
         "https://github.com/JoshuaSP/open-jev": {
-          "stars": 22,
+          "stars": 21,
           "forks": 1
         },
         "https://github.com/bourdainai/site-judge": {
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/michaelpersonal/jev-trade-cc": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/droidrun/mobile-jev": {
-          "stars": 328,
+          "stars": 329,
           "forks": 41
         },
         "https://github.com/fand/jev-emotional-avatar": {
           "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/glud123/jev-assist": {
+          "stars": 3,
           "forks": 0
         },
         "https://github.com/valentynkit/jev-commit": {
@@ -352,6 +456,14 @@
           "stars": 2,
           "forks": 0
         },
+        "https://github.com/RankOneLabs/peaks-notes": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/FranprzDev/Jev-To-Hackathon": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/carlaiau/jev-reranking": {
           "stars": 7,
           "forks": 1
@@ -360,9 +472,25 @@
           "stars": 37,
           "forks": 5
         },
+        "https://github.com/bilune/jev-design": {
+          "stars": 54,
+          "forks": 4
+        },
         "https://github.com/kubet/azdaja": {
           "stars": 10,
           "forks": 0
+        },
+        "https://github.com/azterizm/jev-vs-sovereign-benchmark": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/collapseindex/jev-ultralightspeed": {
+          "stars": 11,
+          "forks": 0
+        },
+        "https://github.com/jev-chat/jev-chat-jarvis": {
+          "stars": 1603,
+          "forks": 547
         },
         "https://github.com/AIsa-team/worth-replying": {
           "stars": 3,
@@ -381,28 +509,32 @@
           "forks": 7
         },
         "https://github.com/NandhaKishorM/laya": {
-          "stars": 11076,
-          "forks": 903
+          "stars": 11438,
+          "forks": 934
         },
         "https://github.com/intikhab49/open-jev-typed-decision-engine": {
-          "stars": 38,
+          "stars": 39,
           "forks": 1
         },
+        "https://github.com/jayanthchandra/jgrep": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/devagrawal09/jev-review": {
-          "stars": 496,
+          "stars": 500,
           "forks": 32
         },
         "https://github.com/ilyamk/jev-gmail-ai-spam-filter-and-labeling": {
           "stars": 14,
-          "forks": 2
+          "forks": 3
         },
         "https://github.com/HisuiKoh/jev-vtuber-ime-core": {
           "stars": 1,
           "forks": 0
         },
         "https://github.com/jaredpalmer/kev": {
-          "stars": 2565,
-          "forks": 131
+          "stars": 2620,
+          "forks": 132
         },
         "https://github.com/runta-dev/jot": {
           "stars": 18,
@@ -413,7 +545,7 @@
           "forks": 0
         },
         "https://github.com/integrate-your-mind/jev-codex-plugin": {
-          "stars": 2,
+          "stars": 3,
           "forks": 0
         },
         "https://github.com/nitoba/questions": {
@@ -432,6 +564,10 @@
           "stars": 4,
           "forks": 0
         },
+        "https://github.com/bhaiG-de/jev-design-test": {
+          "stars": 10,
+          "forks": 0
+        },
         "https://github.com/tacticocc/Jevbridge": {
           "stars": 37,
           "forks": 3
@@ -444,9 +580,17 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/rsensui2/OpenRyoko": {
+          "stars": 23,
+          "forks": 10
+        },
         "https://github.com/pedrogmbh/laterhook": {
           "stars": 1,
           "forks": 0
+        },
+        "https://github.com/spring-ai-community/spring-ai-typesafe": {
+          "stars": 15,
+          "forks": 7
         },
         "https://github.com/Eliovp-BV/Jev-Radar": {
           "stars": 0,
@@ -459,6 +603,14 @@
         "https://github.com/giuliosmall/pg_typesafe": {
           "stars": 81,
           "forks": 1
+        },
+        "https://github.com/khmuhtadin/n8n-nodes-jev-classification": {
+          "stars": 0,
+          "forks": 1
+        },
+        "https://github.com/Growth-Kinetics/jev-context": {
+          "stars": 1,
+          "forks": 0
         },
         "https://github.com/misbahsy/doc-router": {
           "stars": 26,
@@ -480,12 +632,16 @@
           "stars": 3,
           "forks": 0
         },
+        "https://github.com/banjtheman/slay_the_spire_2_agent_harness": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/wotai-dev/typesafe-jev-tools": {
           "stars": 1,
           "forks": 0
         },
         "https://github.com/GhalebDweikat/winnow": {
-          "stars": 54,
+          "stars": 55,
           "forks": 4
         },
         "https://github.com/rorshopping/jev-on-a-laptop": {
@@ -496,13 +652,25 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/VGabriel45/polymarket-btc5m-jev-trading": {
+          "stars": 0,
+          "forks": 1
+        },
         "https://github.com/nishimotz/hello-jev": {
           "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/chengyongru/fastjev": {
+          "stars": 8,
           "forks": 0
         },
         "https://github.com/CompleteTech-LLC-AI-Research/jev-311-heatmap": {
           "stars": 2,
           "forks": 0
+        },
+        "https://github.com/SK-ENT/rakitsu": {
+          "stars": 3,
+          "forks": 1
         },
         "https://github.com/SomeshSampat2/jev-android-super": {
           "stars": 2,
@@ -528,9 +696,17 @@
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/crmne/ruby_llm": {
+          "stars": 4396,
+          "forks": 504
+        },
         "https://github.com/tamaratran/fast-jev-compaction": {
-          "stars": 6014,
-          "forks": 332
+          "stars": 6038,
+          "forks": 333
+        },
+        "https://github.com/xinyao27/jevonian": {
+          "stars": 1,
+          "forks": 0
         },
         "https://github.com/aabolfazl/typesafe-local": {
           "stars": 8,
@@ -551,6 +727,10 @@
         "https://github.com/jerryfane/omp-jev-compaction": {
           "stars": 8,
           "forks": 1
+        },
+        "https://github.com/twilwa/pi-typesafe": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/Twister915/typesafe-ai": {
           "stars": 11,
@@ -577,7 +757,7 @@
           "forks": 1
         },
         "https://github.com/Mapika/decider": {
-          "stars": 277,
+          "stars": 278,
           "forks": 10
         },
         "https://github.com/vtrivedy/jev-plays-games": {
@@ -587,6 +767,10 @@
         "https://github.com/luantak/is-malicious": {
           "stars": 22,
           "forks": 3
+        },
+        "https://github.com/alina-yur/jev-graalvm": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/genai-craft/openvons": {
           "stars": 13,
@@ -616,6 +800,10 @@
           "stars": 95,
           "forks": 19
         },
+        "https://github.com/jamescazzetta/five-lines": {
+          "stars": 2,
+          "forks": 0
+        },
         "https://github.com/superradcompany/mario-never-dies": {
           "stars": 3,
           "forks": 0
@@ -624,9 +812,13 @@
           "stars": 4,
           "forks": 0
         },
+        "https://github.com/jexp/watfile": {
+          "stars": 2,
+          "forks": 0
+        },
         "https://github.com/jkudish/jev-mcp": {
-          "stars": 241,
-          "forks": 25
+          "stars": 245,
+          "forks": 26
         },
         "https://github.com/rhighs/jev-code": {
           "stars": 20,
@@ -648,6 +840,10 @@
           "stars": 2,
           "forks": 0
         },
+        "https://github.com/fazlerocks/jevmail": {
+          "stars": 55,
+          "forks": 3
+        },
         "https://github.com/xAndreiLi/pi-jev-wiki": {
           "stars": 0,
           "forks": 0
@@ -657,6 +853,10 @@
           "forks": 1
         },
         "https://github.com/jagenaujagenau/ground-truth": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/zakkie/jev-dns-filter": {
           "stars": 0,
           "forks": 0
         },
@@ -696,6 +896,10 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/matu79go/jev-hanko": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/chrismoseley/jev-extraction-marker-recovery": {
           "stars": 0,
           "forks": 0
@@ -704,8 +908,12 @@
           "stars": 4,
           "forks": 0
         },
+        "https://github.com/openlayer-ai/jevals": {
+          "stars": 49,
+          "forks": 2
+        },
         "https://github.com/kerpopule/hermes-jev-skills": {
-          "stars": 398,
+          "stars": 400,
           "forks": 36
         },
         "https://github.com/leepokai/jev-guard": {
@@ -713,36 +921,60 @@
           "forks": 2
         },
         "https://github.com/zadescoxp/Jev-Trades": {
-          "stars": 23,
+          "stars": 24,
           "forks": 3
         },
         "https://github.com/DevMortimer/pi-warden": {
-          "stars": 129,
+          "stars": 131,
           "forks": 13
         },
         "https://github.com/enderkus/zammad-jev-dispatcher": {
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/AkashPriyadarshii/jev-curate": {
+          "stars": 19,
+          "forks": 1
+        },
+        "https://github.com/Synxneuos/jevbrain": {
+          "stars": 10,
+          "forks": 0
+        },
         "https://github.com/kyle-pena-nlp/jevchat": {
-          "stars": 76,
-          "forks": 4
+          "stars": 78,
+          "forks": 5
         },
         "https://github.com/Thestral12/pr-sieve": {
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/ktaletsk/jevframe": {
+          "stars": 9,
+          "forks": 2
+        },
         "https://github.com/leftspace89/jevsubrouter": {
           "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/lib-x/typesafe-go": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/uhhfeef/jev-lm": {
+          "stars": 3,
           "forks": 0
         },
         "https://github.com/shantanugoel/ask-jev-skill": {
           "stars": 37,
           "forks": 1
         },
+        "https://github.com/marcosmartinez/jev-acento": {
+          "stars": 0,
+          "forks": 1
+        },
         "https://github.com/jarrodwatts/jev-trader": {
-          "stars": 1871,
-          "forks": 360
+          "stars": 1880,
+          "forks": 364
         },
         "https://github.com/chez-shanpu/typesafeai-go": {
           "stars": 1,
@@ -756,6 +988,10 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/KaLM-Embedding/KaLM-Jev": {
+          "stars": 28,
+          "forks": 1
+        },
         "https://github.com/uehaj/jev-semgrep": {
           "stars": 123,
           "forks": 7
@@ -765,8 +1001,12 @@
           "forks": 0
         },
         "https://github.com/sutro-sh/jev-align": {
-          "stars": 270,
+          "stars": 271,
           "forks": 20
+        },
+        "https://github.com/rishhavv/tabjev": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/CrimsonLuckyLabs/kev": {
           "stars": 4,
@@ -781,8 +1021,12 @@
           "forks": 0
         },
         "https://github.com/featherless-ai/simple-jev": {
-          "stars": 456,
+          "stars": 458,
           "forks": 50
+        },
+        "https://github.com/OpenByteInc/QuantDinger": {
+          "stars": 11957,
+          "forks": 2454
         },
         "https://github.com/Charlyhno-eng/jev-document-classification": {
           "stars": 3,
@@ -791,6 +1035,10 @@
         "https://github.com/coldteadotai/abide": {
           "stars": 207,
           "forks": 12
+        },
+        "https://github.com/akanthed/jev-migrate": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/adrianlerer/jev-legal-instrumentation-latam": {
           "stars": 0,
@@ -812,6 +1060,10 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/eijiaraki/toxic-filter": {
+          "stars": 5,
+          "forks": 0
+        },
         "https://github.com/madeye/pi-jev": {
           "stars": 11,
           "forks": 3
@@ -823,6 +1075,10 @@
         "https://github.com/realZachi/typesafe-adblock": {
           "stars": 68,
           "forks": 5
+        },
+        "https://github.com/mizchi/jev-test-filter": {
+          "stars": 14,
+          "forks": 0
         },
         "https://github.com/Tobi1chi/JevVSPolymarket": {
           "stars": 0,
@@ -836,8 +1092,24 @@
           "stars": 2,
           "forks": 0
         },
+        "https://github.com/shhivv/arc-cua": {
+          "stars": 127,
+          "forks": 13
+        },
+        "https://github.com/baldaworks/callee": {
+          "stars": 74,
+          "forks": 1
+        },
+        "https://github.com/RevocGG/typesafe-jev-bridge": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/karminski/Jev-Quantum": {
+          "stars": 21,
+          "forks": 3
+        },
         "https://github.com/emrickgarrett/OneVOneJev": {
-          "stars": 18,
+          "stars": 19,
           "forks": 1
         },
         "https://github.com/kitze/unclutter": {
@@ -860,9 +1132,17 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/vercel-labs/jev-ai-sdk-form-router": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/yikangy873-gif/jev-desktop": {
           "stars": 60,
           "forks": 2
+        },
+        "https://github.com/ella0333/jev-slot-machine": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/ant4g0nist/joxide": {
           "stars": 0,
@@ -888,6 +1168,22 @@
           "stars": 8,
           "forks": 0
         },
+        "https://github.com/AndrewPrifer/jimothy": {
+          "stars": 14,
+          "forks": 1
+        },
+        "https://github.com/expanso-io/demo-expanso-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/huncijr/Gambler-Jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/clduab11/jev-test": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/caiovicentino/jev-align": {
           "stars": 4,
           "forks": 0
@@ -909,12 +1205,16 @@
           "forks": 0
         },
         "https://github.com/hr98w/jev-visual": {
-          "stars": 219,
+          "stars": 221,
           "forks": 24
         },
         "https://github.com/Knuckles92/OpenWhisper": {
           "stars": 187,
           "forks": 25
+        },
+        "https://github.com/rcrandon/KaLM-Ultrafast": {
+          "stars": 1,
+          "forks": 0
         },
         "https://github.com/win4r/jev-skill-suggester": {
           "stars": 30,
@@ -933,8 +1233,16 @@
           "forks": 0
         },
         "https://github.com/Reisenbug/TerraBlind": {
-          "stars": 63,
+          "stars": 66,
           "forks": 5
+        },
+        "https://github.com/bdauzats/jul": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/badgerbees/jev-oasis": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/GodsBoy/jev-agent-skill-router": {
           "stars": 13,
@@ -948,29 +1256,41 @@
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/jacks3tr/Jev-Desktop": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/fhshaik/typesafe-mario": {
-          "stars": 336,
+          "stars": 338,
           "forks": 33
         },
         "https://github.com/typesafe-ai/skills": {
-          "stars": 1578,
-          "forks": 79
+          "stars": 1605,
+          "forks": 81
+        },
+        "https://github.com/qiaohaojie/Jev-MongoDB": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/Olti1947/jev-java": {
           "stars": 3,
           "forks": 3
         },
         "https://github.com/TheoLeeCJ/SemIf": {
-          "stars": 3320,
+          "stars": 3347,
           "forks": 218
         },
         "https://github.com/Hawxy/TypeSafeAI.Net": {
           "stars": 2,
           "forks": 0
         },
+        "https://github.com/FogMoe/necro": {
+          "stars": 4,
+          "forks": 0
+        },
         "https://github.com/0xNatoshi/jev-codex-router": {
-          "stars": 179,
-          "forks": 18
+          "stars": 183,
+          "forks": 19
         },
         "https://github.com/rivianpratama/JevPixelArt": {
           "stars": 1,
@@ -993,8 +1313,8 @@
           "forks": 0
         },
         "https://github.com/typesafe-ai/system-one-adapter-python": {
-          "stars": 241,
-          "forks": 35
+          "stars": 242,
+          "forks": 36
         },
         "https://github.com/juanegido/jev-pr-judge": {
           "stars": 1,
@@ -1002,6 +1322,10 @@
         },
         "https://github.com/mahlernim/jev-korean-benchmark": {
           "stars": 6,
+          "forks": 0
+        },
+        "https://github.com/danvega/spring-ai-model-router": {
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/Eliran-Turgeman/reaper": {
@@ -1046,7 +1370,7 @@
         },
         "https://github.com/prismhq/jev-router": {
           "stars": 7,
-          "forks": 0
+          "forks": 1
         },
         "https://github.com/dani1005/book-aurora": {
           "stars": 5,
@@ -1064,16 +1388,28 @@
           "stars": 214,
           "forks": 21
         },
+        "https://github.com/afurm/typesafe-sdk-ruby": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/rezoch340/jev-chat-JARVIS-windows": {
+          "stars": 64,
+          "forks": 17
+        },
+        "https://github.com/littlewindy123/jev-weekend-shopping-chrome": {
+          "stars": 6,
+          "forks": 0
+        },
         "https://github.com/Ayush0054/metis": {
           "stars": 1,
           "forks": 0
         },
         "https://github.com/superagents-lab/jev-search": {
-          "stars": 382,
+          "stars": 385,
           "forks": 49
         },
         "https://github.com/hide-G/magi-system-on-jev": {
-          "stars": 0,
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/BeLazy167/typesafe-mod": {
@@ -1100,19 +1436,47 @@
           "stars": 9,
           "forks": 2
         },
+        "https://github.com/RenaGao/jev-dataops": {
+          "stars": 37,
+          "forks": 3
+        },
         "https://github.com/ShivamPansuriya/jev-skill-gate": {
           "stars": 3,
           "forks": 1
         },
         "https://github.com/Sac-Y/Jev-cu": {
-          "stars": 547,
+          "stars": 548,
           "forks": 54
         },
         "https://github.com/hnegishi/typesafe-ai-ruby": {
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/Kadihx/jev-x-kit": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/jevbook/jevscan": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/Bodila51/jev-hft-model-router": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/altanapps/security-sandbox-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/ywchiu/jev_benchmark": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/dedene/jevspin": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/anisselbd/jev-phishing-bench": {
           "stars": 3,
           "forks": 0
         },
@@ -1124,9 +1488,17 @@
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/affirmitv/ghosthands": {
+          "stars": 49,
+          "forks": 7
+        },
         "https://github.com/yusukebe/hono-jev-router": {
           "stars": 45,
           "forks": 2
+        },
+        "https://github.com/st1ne/jev-gem-scan": {
+          "stars": 1,
+          "forks": 0
         },
         "https://github.com/newuser7171/jev-vpn": {
           "stars": 1,
@@ -1152,6 +1524,10 @@
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/codejunkie99/jev-engineering": {
+          "stars": 2,
+          "forks": 0
+        },
         "https://github.com/rchovatiya88/cyber-breach-jev": {
           "stars": 0,
           "forks": 0
@@ -1168,6 +1544,14 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/Robertzu43/system-one-security-triage": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Dreydrey9000/jev-relay": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/thelau/jev-tetris": {
           "stars": 1,
           "forks": 0
@@ -1180,25 +1564,33 @@
           "stars": 2,
           "forks": 1
         },
+        "https://github.com/royalpinto007/jev-msw": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/edwardyen724-g/jev-compactor": {
           "stars": 1,
           "forks": 0
         },
         "https://github.com/githubnext/localjev": {
-          "stars": 702,
+          "stars": 704,
           "forks": 46
         },
         "https://github.com/itsmostafa/typesafe-mcp": {
-          "stars": 225,
+          "stars": 226,
           "forks": 19
         },
         "https://github.com/tumf/jev-cli": {
-          "stars": 10,
+          "stars": 12,
           "forks": 0
         },
         "https://github.com/RomanSlack/jev-drone": {
-          "stars": 117,
+          "stars": 119,
           "forks": 12
+        },
+        "https://github.com/mmastrac/djev": {
+          "stars": 12,
+          "forks": 3
         },
         "https://github.com/y0usaf/pi-jev": {
           "stars": 133,
@@ -1213,16 +1605,20 @@
           "forks": 0
         },
         "https://github.com/danvega/jev-spring-boot-starter": {
-          "stars": 29,
+          "stars": 30,
           "forks": 1
         },
         "https://github.com/ClemensSchartmueller/jev-guard": {
           "stars": 3,
           "forks": 0
         },
+        "https://github.com/Asymptote-Labs/agent-beacon": {
+          "stars": 901,
+          "forks": 64
+        },
         "https://github.com/standardagents/jevpilot": {
-          "stars": 152,
-          "forks": 21
+          "stars": 153,
+          "forks": 22
         },
         "https://github.com/zsoXi/agent-handoff-gate": {
           "stars": 0,
@@ -1232,6 +1628,18 @@
           "stars": 16,
           "forks": 4
         },
+        "https://github.com/kevhill/jev-hierarchy": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/rlaope/jeval": {
+          "stars": 14,
+          "forks": 1
+        },
+        "https://github.com/guoriyue/RoboJev": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/gopalanj/chess-jev": {
           "stars": 0,
           "forks": 0
@@ -1240,8 +1648,20 @@
           "stars": 6,
           "forks": 1
         },
+        "https://github.com/ryana/jevify": {
+          "stars": 92,
+          "forks": 2
+        },
+        "https://github.com/Dimweaker/jev-libero": {
+          "stars": 51,
+          "forks": 1
+        },
         "https://github.com/stas4000/jev-clerk": {
           "stars": 6,
+          "forks": 0
+        },
+        "https://github.com/Aznatkoiny/jev-chess-bench": {
+          "stars": 0,
           "forks": 0
         },
         "https://github.com/brainstormity/Jev-Moderation-Bot": {
@@ -1249,7 +1669,7 @@
           "forks": 4
         },
         "https://github.com/vinnylarouge/jevlike": {
-          "stars": 1169,
+          "stars": 1170,
           "forks": 105
         },
         "https://github.com/obie/ruby_decision_model": {
@@ -1258,6 +1678,14 @@
         },
         "https://github.com/rorshopping/jev-browser-local": {
           "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/50bbx/laya-needle": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/sliday/jev-chess-algo": {
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/typesafeainate/dspy-typesafeify": {
@@ -1284,6 +1712,10 @@
           "stars": 31,
           "forks": 1
         },
+        "https://github.com/AnthusAI/Jev-Flywheel": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/devtooligan/jevscan-evm": {
           "stars": 25,
           "forks": 0
@@ -1293,23 +1725,63 @@
           "forks": 0
         },
         "https://github.com/mmastrac/djev-spark": {
-          "stars": 167,
+          "stars": 168,
           "forks": 13
         },
         "https://github.com/kyotofin/tax-doc-classifier": {
-          "stars": 342,
+          "stars": 348,
           "forks": 38
+        },
+        "https://github.com/sahajamit/jev-lens": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/prasanthj/duckdb-jev": {
+          "stars": 3,
+          "forks": 1
+        },
+        "https://github.com/jerryjliu/docjev": {
+          "stars": 201,
+          "forks": 17
+        },
+        "https://github.com/cristianoliveira/jeq": {
+          "stars": 8,
+          "forks": 1
         },
         "https://github.com/taruo/jev-adblocker": {
           "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/receptron/laya": {
+          "stars": 194,
+          "forks": 18
+        },
+        "https://github.com/sandroandric/JevGram": {
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/24601/Augustus": {
           "stars": 6,
           "forks": 1
         },
+        "https://github.com/fatelei/jev-compact": {
+          "stars": 6,
+          "forks": 0
+        },
         "https://github.com/gemanor/jev-code-review-benchmark": {
           "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/monteduro/killmyidea": {
+          "stars": 74,
+          "forks": 8
+        },
+        "https://github.com/HexyeDEV/JevPR": {
+          "stars": 8,
+          "forks": 2
+        },
+        "https://github.com/kidzik/jiffy": {
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/hideshi/llm-skills": {
@@ -1332,9 +1804,17 @@
           "stars": 2,
           "forks": 0
         },
+        "https://github.com/FrancoisChastel/jev-code": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/tenfingerseddy/voicebind": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/TianyuCodings/NanoJev": {
-          "stars": 1837,
-          "forks": 202
+          "stars": 1852,
+          "forks": 203
         },
         "https://github.com/jvsteiner/jevex": {
           "stars": 3,
@@ -1344,6 +1824,10 @@
           "stars": 2,
           "forks": 0
         },
+        "https://github.com/hazlema/jev-connect4": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/blackopsrepl/jev-team-calendar": {
           "stars": 0,
           "forks": 0
@@ -1351,6 +1835,10 @@
         "https://github.com/carldaws/hunch": {
           "stars": 14,
           "forks": 0
+        },
+        "https://github.com/AustinAWay/Working-Memory-Jev": {
+          "stars": 29,
+          "forks": 5
         },
         "https://github.com/solovieff/tg_accessor": {
           "stars": 0,
@@ -1370,6 +1858,10 @@
         },
         "https://github.com/Gaurav-Gosain/jev-sec-bench": {
           "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/fajarhide/askgrep": {
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/OpenAgentsInc/openagents": {
@@ -1437,7 +1929,7 @@
           "forks": 0
         },
         "https://github.com/ellipsis-dev/blink": {
-          "stars": 50,
+          "stars": 52,
           "forks": 2
         },
         "https://github.com/masa-med-ai/typesafe-screening-mcp": {
@@ -1449,20 +1941,32 @@
           "forks": 0
         },
         "https://github.com/TypeSafeAI/typesafe-playground": {
-          "stars": 18,
+          "stars": 19,
           "forks": 5
         },
         "https://github.com/Clueless-Creations/jev-ios-ultrafast": {
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/mizchi/jev-lint": {
+          "stars": 68,
+          "forks": 0
+        },
         "https://github.com/TheEleventhAvatar/triage-bot": {
           "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/tegersdorfer-collab/jevkit": {
+          "stars": 0,
           "forks": 0
         },
         "https://github.com/youkiti/tiab-review-plugin": {
           "stars": 1,
           "forks": 1
+        },
+        "https://github.com/romaluev/jev-ego": {
+          "stars": 13,
+          "forks": 0
         },
         "https://github.com/haseeb-heaven/jev-system-one": {
           "stars": 4,
@@ -1473,12 +1977,16 @@
           "forks": 0
         },
         "https://github.com/thruwire/foreman": {
-          "stars": 468,
+          "stars": 469,
           "forks": 34
         },
         "https://github.com/collapseindex/jev-builder": {
           "stars": 3,
           "forks": 0
+        },
+        "https://github.com/reticlehq/reticle": {
+          "stars": 808,
+          "forks": 140
         },
         "https://github.com/finetuningsingh/intelliprompter": {
           "stars": 2,
@@ -1490,7 +1998,7 @@
         },
         "https://github.com/mejiasd3v/pi-jev-router": {
           "stars": 12,
-          "forks": 1
+          "forks": 0
         },
         "https://github.com/BorisLeMeec/jev": {
           "stars": 13,
@@ -1500,17 +2008,25 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/enactive/ReckoNim": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/AnshChoudhary/typesafe-ai-firewall": {
           "stars": 2,
           "forks": 0
         },
         "https://github.com/gargpratyush/jev-router": {
-          "stars": 314,
+          "stars": 316,
           "forks": 31
         },
         "https://github.com/razorback16/openjev": {
           "stars": 285,
           "forks": 23
+        },
+        "https://github.com/ninjasweb/jev-mute-words": {
+          "stars": 1,
+          "forks": 0
         },
         "https://github.com/rajdhakad9826/jev-router": {
           "stars": 8,
@@ -1536,17 +2052,37 @@
           "stars": 18,
           "forks": 0
         },
+        "https://github.com/rmalde/minecraft-agent": {
+          "stars": 484,
+          "forks": 45
+        },
         "https://github.com/moritzkremb/jev-voice-browser": {
-          "stars": 212,
+          "stars": 216,
           "forks": 29
+        },
+        "https://github.com/allebee/pytest-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/CTNicholas/jev-workflow-builder": {
+          "stars": 70,
+          "forks": 12
         },
         "https://github.com/choxos/jev-reviewer": {
           "stars": 32,
           "forks": 6
         },
+        "https://github.com/akshayindraganti/crypto-arbitrage-bot": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/AntSeed/antseed": {
           "stars": 57,
           "forks": 29
+        },
+        "https://github.com/kushals256/jevcache": {
+          "stars": 9,
+          "forks": 0
         },
         "https://github.com/jcpsimmons/jev-macos-loop": {
           "stars": 19,
@@ -1580,6 +2116,10 @@
           "stars": 27,
           "forks": 1
         },
+        "https://github.com/abdallahshaban557/jev_test": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/raydocs/egolite-jev": {
           "stars": 2,
           "forks": 1
@@ -1598,14 +2138,22 @@
         },
         "https://github.com/hqman/JevScout": {
           "stars": 29,
-          "forks": 6
+          "forks": 7
         },
         "https://github.com/dnikolayev/typesafe-offload-bench": {
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/ersinkoc/JevBenchmarkLab": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/geilt/typesafe-cli": {
           "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/shaunie2fly/grok-build-Jev": {
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/sorrycc/typesafe-snake": {
@@ -1624,13 +2172,25 @@
           "stars": 8,
           "forks": 0
         },
+        "https://github.com/ashafizullah/jev-triage": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/kataras/jev": {
+          "stars": 1,
+          "forks": 0
+        },
         "https://github.com/kitze/skillbox": {
           "stars": 223,
           "forks": 20
         },
+        "https://github.com/ornab74/naza-jev-research": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/jkudish/jev-browser": {
-          "stars": 229,
-          "forks": 16
+          "stars": 230,
+          "forks": 17
         },
         "https://github.com/lhemerly/mcts-agent": {
           "stars": 5,
@@ -1656,9 +2216,17 @@
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/okinaaudio/live-jev": {
+          "stars": 39,
+          "forks": 3
+        },
         "https://github.com/jexp/neo4jev": {
-          "stars": 79,
+          "stars": 81,
           "forks": 7
+        },
+        "https://github.com/stas4000/jev-geo-audit": {
+          "stars": 1,
+          "forks": 0
         },
         "https://github.com/thesammykins/jev_ampcode": {
           "stars": 1,
@@ -1672,12 +2240,16 @@
           "stars": 0,
           "forks": 0
         },
+        "https://github.com/allebee/jevgrep": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/8dazo/JevFish": {
           "stars": 0,
           "forks": 0
         },
         "https://github.com/sharziki/semdecide": {
-          "stars": 27,
+          "stars": 28,
           "forks": 3
         },
         "https://github.com/nola-lang/nola-typesafe-test": {
@@ -1687,6 +2259,10 @@
         "https://github.com/siroccomask/snake-jev": {
           "stars": 0,
           "forks": 0
+        },
+        "https://github.com/dorkitude/webctl": {
+          "stars": 15,
+          "forks": 1
         },
         "https://github.com/Foadsf/jev-for-engineers": {
           "stars": 2,
@@ -1708,12 +2284,20 @@
           "stars": 4,
           "forks": 0
         },
+        "https://github.com/stas4000/jev-scroll": {
+          "stars": 0,
+          "forks": 0
+        },
         "https://github.com/bnsd55/jevmlx": {
           "stars": 54,
           "forks": 8
         },
         "https://github.com/erhanmeydan/jev2048": {
           "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/peterfriese/jev-foundation-models": {
+          "stars": 9,
           "forks": 0
         },
         "https://github.com/utk2103/jev-studio": {
@@ -1729,24 +2313,32 @@
           "forks": 0
         },
         "https://github.com/BillionsBobby/JevRouter": {
-          "stars": 144,
+          "stars": 145,
           "forks": 11
         },
         "https://github.com/Query-farm/vgi-typesafe": {
           "stars": 3,
           "forks": 0
         },
+        "https://github.com/smithclay/dbt_jev": {
+          "stars": 3,
+          "forks": 0
+        },
         "https://github.com/kavehmz/typesafe-playground": {
           "stars": 11,
-          "forks": 3
+          "forks": 4
+        },
+        "https://github.com/pcarrier/plz": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/Ying-Kai-Liao/jev-browser": {
           "stars": 67,
           "forks": 9
         },
         "https://github.com/cobanov/awesome-jev": {
-          "stars": 314,
-          "forks": 61
+          "stars": 316,
+          "forks": 62
         },
         "https://github.com/anandi1989/awesome-jev-usecases": {
           "stars": 16,
@@ -1756,25 +2348,41 @@
           "stars": 1,
           "forks": 0
         },
+        "https://github.com/lezgoverci/jev-docs": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/AbdelStark/awesome-typesafe-jev": {
+          "stars": 431,
+          "forks": 76
+        },
         "https://github.com/DeepBlueDynamics/typesafe-arena": {
           "stars": 1,
           "forks": 0
         },
         "https://github.com/AppitStudio/awesome-jev": {
-          "stars": 72,
+          "stars": 73,
           "forks": 8
         },
         "https://github.com/logicrw/awesome-jev-projects": {
-          "stars": 330,
-          "forks": 27
+          "stars": 332,
+          "forks": 29
+        },
+        "https://github.com/nak1b/jev-experiments": {
+          "stars": 0,
+          "forks": 0
         },
         "https://github.com/AbdelStark/awesome-typesafe": {
           "stars": 431,
-          "forks": 75
+          "forks": 76
         },
         "https://github.com/Anil-matcha/awesome-jev-by-typesafe": {
-          "stars": 766,
-          "forks": 142
+          "stars": 769,
+          "forks": 143
+        },
+        "https://github.com/MrJev/awesome-jev": {
+          "stars": 9,
+          "forks": 3
         },
         "https://github.com/dabit3/jev-experiments": {
           "stars": 358,
@@ -1789,7 +2397,7 @@
           "forks": 3
         },
         "https://github.com/AnotiaWang/awesome-jev": {
-          "stars": 255,
+          "stars": 257,
           "forks": 54
         },
         "https://github.com/valentynkit/awesome-jev-typesafe": {
@@ -1801,15 +2409,19 @@
           "forks": 40
         },
         "https://github.com/walidboulanouar/awesome-jev-use-cases": {
-          "stars": 79,
+          "stars": 80,
           "forks": 6
         },
         "https://github.com/yibie/awesome-jev": {
-          "stars": 1013,
-          "forks": 137
+          "stars": 1036,
+          "forks": 138
         },
         "https://github.com/AiPersonacademy/Awesome-jev-use": {
           "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/pinecone-io/using-typesafe-and-pinecone": {
+          "stars": 1,
           "forks": 0
         },
         "https://github.com/ckaraca/awesome-jev": {
@@ -1817,18 +2429,22 @@
           "forks": 1
         },
         "https://github.com/hellogumbo/awesome-jev": {
-          "stars": 124,
-          "forks": 42
+          "stars": 127,
+          "forks": 44
         },
         "https://github.com/everyai-com/jev-directory": {
           "stars": 13,
           "forks": 1
         },
+        "https://github.com/wuyoscar/jev-skill": {
+          "stars": 382,
+          "forks": 21
+        },
         "https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v1": {
           "likes": 2
         },
         "https://huggingface.co/AlexWortega/openjev": {
-          "likes": 422
+          "likes": 427
         },
         "https://huggingface.co/Luni/laya-grounded": {
           "likes": 1
@@ -1839,8 +2455,14 @@
         "https://huggingface.co/GestaltLabs/Jeff-1": {
           "likes": 8
         },
+        "https://huggingface.co/jaredpalmer/kev-4b": {
+          "likes": 19
+        },
         "https://huggingface.co/convaiinnovations/laya": {
-          "likes": 1854
+          "likes": 1888
+        },
+        "https://huggingface.co/php-ai/zeiger-0.6b": {
+          "likes": 0
         },
         "https://huggingface.co/Mapika/decider-2b": {
           "likes": 68
@@ -1854,8 +2476,14 @@
         "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large": {
           "likes": 7
         },
+        "https://huggingface.co/C-Tianyu/NanoJev": {
+          "likes": 74
+        },
+        "https://huggingface.co/convaiinnovations/laya-typed-decisions": {
+          "likes": 61
+        },
         "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large": {
-          "likes": 51
+          "likes": 52
         }
       }
     }
