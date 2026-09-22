@@ -1,5 +1,11 @@
 [
   {
+    "id": "cand_02388fe7bd7dcaa9",
+    "name": "jevons-lfm25-1.2b-systemone",
+    "url": "https://huggingface.co/gopalanj/jevons-lfm25-1.2b-systemone",
+    "description": "A LoRA adapter for LiquidAI's LFM2.5-1.2B-Instruct (8-bit MLX) that biases outputs toward option-key, yes/no, and score-digit tokens so the jevons server can logit-score and assemble System One decisions, with a 72.4% holdout modal accuracy at T=1."
+  },
+  {
     "id": "cand_107995efedabd000",
     "name": "gliner2.5-cua-grounder-macos-v1",
     "url": "https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v1",
@@ -16,6 +22,18 @@
     "name": "laya-grounded",
     "url": "https://huggingface.co/Luni/laya-grounded",
     "description": "A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and probability calibration, at the cost of worse phishing detection and option-name routing stability."
+  },
+  {
+    "id": "cand_22cfa98585ee3f03",
+    "name": "Open-Jev-9B",
+    "url": "https://huggingface.co/ZefanCai/Open-Jev-9B",
+    "description": "Open-Jev-9B is a LoRA adapter plus scalar decision head for Qwen3.5-9B that scores caller-supplied candidates and returns typed choice/yes-no/ordinal decisions with calibrated probabilities—without autoregressive generation—via a pinned-revision inference server."
+  },
+  {
+    "id": "cand_3b46bc0d115e3c02",
+    "name": "autojev-27b",
+    "url": "https://huggingface.co/denis-pplx/autojev-27b",
+    "description": "AutoJev-27B is a 27B-parameter multimodal decision model finetuned from Qwen3.8-27B that returns calibrated probabilities for supplied choices in a single forward pass, exposes a TypeSafe-compatible API and playground, and improves benchmark accuracy/ECE/Brier over its base."
   },
   {
     "id": "cand_53e471fe6351073e",
@@ -36,6 +54,12 @@
     "description": "Kev-4B is a LoRA adapter plus pointer head on Qwen3.5-4B-Base that maps a document and typed questions to calibrated per-question probability distributions in one forward pass—no generation—serving TypeSafe's /v1/systemone decision contract at 0.837 out-of-domain locked-test accuracy."
   },
   {
+    "id": "cand_5ad5c7d64869dceb",
+    "name": "spark-s1-1.7b-v3",
+    "url": "https://huggingface.co/abhishek085/spark-s1-1.7b-v3",
+    "description": "spark-s1-1.7b-v3 is a LoRA-tuned Qwen3-1.7B decision model that answers typed questions (choice, boolean, score) over request-time options by softmaxing first-token logits into a probability distribution and confidence in one ~30 ms forward pass, with no text generation."
+  },
+  {
     "id": "cand_5d885f2b9705cba0",
     "name": "laya",
     "url": "https://huggingface.co/convaiinnovations/laya",
@@ -46,6 +70,18 @@
     "name": "zeiger-0.6b",
     "url": "https://huggingface.co/php-ai/zeiger-0.6b",
     "description": "Zeiger-0.6B is a 614M-parameter encoder-decision model (Qwen3-0.6B backbone plus 18M scoring head) that, given a web page's element descriptions and an instruction, picks the target element—or answers \"none\"—in one calibrated 32k-context forward pass at up to 1,501 candidates, enabling fast, reliable browser-agent element grounding without generation or chunked tournaments."
+  },
+  {
+    "id": "cand_6689ca8a6fa97c6c",
+    "name": "agent-jev",
+    "url": "https://huggingface.co/aimeigaoshou/agent-jev",
+    "description": "AgentJev-0.6B turns a 2,048-token state and typed boolean, choice, or score questions into full probability distributions in one forward pass, giving agent loops fast, thresholdable gates, routes, and rubric scores without decoded text, JSON repair, or a larger writer model."
+  },
+  {
+    "id": "cand_68bc419e08750946",
+    "name": "spark-s1-4b-v3",
+    "url": "https://huggingface.co/abhishek085/spark-s1-4b-v3",
+    "description": "spark-s1-4b-v3 is a Qwen3-4B LoRA fine-tune that answers typed questions (choice, boolean, ordered score) about a rendered state by softmaxing first-token logits over option letters—returning a calibrated per-option probability distribution plus confidence in one forward pass with no text generation—for fast local agent decisions."
   },
   {
     "id": "cand_6c5552ed53813d06",
@@ -66,6 +102,12 @@
     "description": "A chess option scorer that finetunes MiniLM-L6 with an attention head to emit logits for all legal moves from a FEN context in one forward pass, distilled from Stockfish 19 (0.445 teacher agreement, 0.667 on tactics) for fast move ranking rather than verified playing strength."
   },
   {
+    "id": "cand_b1689b74d684cea7",
+    "name": "Open-Jev-2B",
+    "url": "https://huggingface.co/ZefanCai/Open-Jev-2B",
+    "description": "A LoRA adapter and scalar decision head for Qwen3.5-2B that directly scores caller-supplied candidates and returns calibrated typed decisions—choice probabilities, yes/no probability, or ordinal expected values—without autoregressive generation, achieving 94.71% test and 86.02% OOD hard accuracy."
+  },
+  {
     "id": "cand_c7b21da672a4c4e4",
     "name": "jev-schema-scorer-deberta-v3-large",
     "url": "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large",
@@ -82,6 +124,18 @@
     "name": "laya-typed-decisions",
     "url": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
     "description": "A 421M-parameter non-autoregressive ModernBERT-large model, RLCD-fine-tuned to emit calibrated probability distributions over typed primitives (choice, score, noul) for four workflows—agent observability, customer service, invoicing, security incidents—at 0.766 accuracy."
+  },
+  {
+    "id": "cand_d9cab0d80dd7c4c7",
+    "name": "MedJev-Qwen3.5-0.8B",
+    "url": "https://huggingface.co/junma/MedJev-Qwen3.5-0.8B",
+    "description": "MedJev-Qwen3.5-0.8B is a LoRA adapter plus pointer head on Qwen3.5-0.8B-Base that extracts 11 predefined clinical variables from free-text clinical notes in a single forward pass (~62 ms per note), returning calibrated probability distributions over allowed answers without text generation, achieving 0.878 micro accuracy against silver GPT-4-derived labels."
+  },
+  {
+    "id": "cand_dbea77c375b17f6d",
+    "name": "ballot",
+    "url": "https://huggingface.co/vigneshlabs/ballot",
+    "description": "ballot-E-v0 is a ~149M-parameter ModernBERT fine-tune that returns per-option probabilities for multiple-choice, yes/no, or rating questions in one non-generative forward pass, structurally guaranteeing order-invariant answers (0.0% flip rate) at 68% held-out accuracy."
   },
   {
     "id": "cand_dd43c35aafec7ca9",

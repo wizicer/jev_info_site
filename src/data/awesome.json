@@ -20,6 +20,19 @@
     "favicon": "/favicon/cand_0225471278aa2a20.png"
   },
   {
+    "id": "cand_0d07801a1445d57c",
+    "name": "awesome-jev",
+    "url": "https://github.com/kraayenjon/awesome-jev",
+    "description": "A curated awesome list for Jev — TypeSafe AI's System One model that returns typed decisions (Choice, Score, Noul) with calibrated probabilities — cataloging its primitives, pricing, SDKs, quick-start code, gateways, benchmarks, MCP tools, and production builds with reported cost/latency."
+  },
+  {
+    "id": "cand_14e418b2142e7420",
+    "name": "VerdictJEV: JEV judges tokens and GitHub repos. Good ones buy, garbage burns.",
+    "url": "https://verdictjev.com/",
+    "description": "VerdictJEV is an on-chain AI judging service for Robinhood Chain tokens and crypto GitHub repos that, for 0.0001 ETH, produces replayable quality/risk verdicts and triggers bounded $VJEV buybacks for strong projects or burns for garbage.",
+    "favicon": "/favicon/cand_14e418b2142e7420.png"
+  },
+  {
     "id": "cand_17b418cbf2be7a0f",
     "name": "awesome-jev-usecases",
     "url": "https://github.com/anandi1989/awesome-jev-usecases",
@@ -64,6 +77,13 @@
     "favicon": "/favicon/cand_245d34bc8e5588fe.png"
   },
   {
+    "id": "cand_27d1fa868e8745f4",
+    "name": "Jev Atlas — ecosystem index",
+    "url": "https://darkseagreen-pelican-791373.hostingersite.com/",
+    "description": "Jev Atlas is a public, interactive index of real projects built with Jev, presented as a zoomable, pannable map for browsing what people are building across the ecosystem.",
+    "favicon": "/favicon/cand_27d1fa868e8745f4.png"
+  },
+  {
     "id": "cand_28e74c8168d0b675",
     "name": "DEV Community",
     "url": "https://dev.to/",
@@ -75,6 +95,18 @@
     "name": "Jev Quest — Zero to Expert",
     "url": "https://jev-0-to-expert.netlify.app/",
     "description": "An interactive, gamified course that teaches the \"Jev\" mental model—separating generation, judgment, and control layers in AI systems—through decision scenarios, an architecture builder, a confidence-threshold calibration simulator, and an eight-question expert test."
+  },
+  {
+    "id": "cand_3052996e048787af",
+    "name": "jev-lab",
+    "url": "https://github.com/gbesse/jev-lab",
+    "description": "59 open-source projects where models return typed decisions—scores, probabilities, or bounded choices with deterministic policies instead of prose—covering rerank APIs, MCP policy firewalls, decision contracts, evaluation tools, and platform integrations, most runnable offline."
+  },
+  {
+    "id": "cand_31654d592b3b74d6",
+    "name": "awesome-jev",
+    "url": "https://github.com/heyjunpenn/awesome-jev",
+    "description": "A community-maintained catalog of 640 verified open-source projects built with Jev (TypeSafe AI's System One model for typed decisions in software) across 11 categories, with each entry citing the concrete decision Jev makes and linking to supporting public evidence."
   },
   {
     "id": "cand_36811419ac121f1b",
@@ -108,6 +140,20 @@
     "name": "Jevbox — a box of tools with common sense",
     "url": "https://jevbox.qolso.com/",
     "description": "Jevbox is a toolkit built on Jev, a fast \"common-sense\" judgment model, offering Manyhands for plain-language agentic control of apps, phones, portals, and SSH/MQTT/Home Assistant machines, plus Preflight, a sub-second automated design-review check for AI agents."
+  },
+  {
+    "id": "cand_48d0de6d5901d882",
+    "name": "Layatown: a thousand minds on one gaming GPU",
+    "url": "https://jevtown.com/",
+    "description": "Layatown is a live simulation of 1,000 citizens whose decisions are made by a 421M-parameter open model fine-tuned on prior behavior, running on a single RTX 3080 Ti with per-decision energy metrics, published failure analyses, and counterfactual voting where visitors predict citizens' actions.",
+    "favicon": "/favicon/cand_48d0de6d5901d882.png"
+  },
+  {
+    "id": "cand_4a4590430010e26b",
+    "name": "What is Jev? TypeSafe AI&#x27;s System One decision model explained",
+    "url": "https://jev-agent.com/",
+    "description": "A developer guide to Jev, TypeSafe AI's \"System One\" decision model that returns structured choices, rubric scores, and yes/no probabilities with confidence values in a single 70–500ms call, covering its three typed primitives, pricing, API shape, benchmarks, and when it beats prompting an LLM for routing and classification.",
+    "favicon": "/favicon/cand_4a4590430010e26b.png"
   },
   {
     "id": "cand_5c532c3ca2fc70bc",
@@ -149,6 +195,12 @@
     "description": "typesafe-arena provides a local Markdown mirror of docs.typesafe.ai plus Lume, a Rust CLI that builds BM25 and tag-graph indexes for offline search across TypeSafe routing, confidence, primitives, cookbooks, demos, and SDK docs."
   },
   {
+    "id": "cand_66221038db339570",
+    "name": "Building Hope-Driven Products",
+    "url": "https://favoyang.com/",
+    "description": "Building Hope-Driven Products provides practical field notes on AI-native building, games, open source, and trade, distilling agent workflows, durable planning, reusable instructions, orchestration, and purpose-built tools into applicable product and engineering patterns."
+  },
+  {
     "id": "cand_663f227ea370c17f",
     "name": "Risetive — Spot AI opportunities. Find the tools to grow.",
     "url": "https://risetive.com/",
@@ -181,6 +233,12 @@
     "description": "A commit-pinned reference of 326+ open-source implementations showing how TypeSafe Jev delivers sub-100ms typed discrete decisions for tool routing, action dispatch, and safety gates, reducing the latency, cost, and context drift of agent workflows."
   },
   {
+    "id": "cand_6eee89a38e3e8dd5",
+    "name": "awesome-jev",
+    "url": "https://github.com/tanxarx/awesome-jev",
+    "description": "A curated index of verified open-source clones, SDKs, agent integrations, routing and guardrail tools, benchmarks, and playbooks for Jev, TypeSafe AI's non-generative model that returns calibrated probabilities over typed candidates in one forward pass."
+  },
+  {
     "id": "cand_73fa5630fb64c2eb",
     "name": "jev-experiments",
     "url": "https://github.com/nak1b/jev-experiments",
@@ -200,6 +258,13 @@
     "favicon": "/favicon/cand_7dc15eb91af43248.png"
   },
   {
+    "id": "cand_7f67ee9a26d09891",
+    "name": "Jev AI Projects &amp; Use Cases | Jev Atlas",
+    "url": "https://jev.events/",
+    "description": "An independent, hourly-synced directory of 220+ Jev AI projects and real-world use cases spanning agents, games, robotics, trading, and dev tools, with filterable video demos, view metrics, and source links for gauging what the model can actually do.",
+    "favicon": "/favicon/cand_7f67ee9a26d09891.png"
+  },
+  {
     "id": "cand_822be0d2c4defe34",
     "name": "awesome-jev-by-typesafe",
     "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
@@ -213,10 +278,24 @@
     "favicon": "/favicon/cand_85826a82faccf25c.png"
   },
   {
+    "id": "cand_8b68706b91691ffc",
+    "name": "JevTracks — see what Jev can actually build",
+    "url": "https://www.jevtracks.com/",
+    "description": "JevTracks is a categorized catalog of 834 verified projects built with TypeSafe AI's Jev agent model — spanning trading bots, browser agents, classifiers, and benchmarks — each tagged with real latency, cost, and performance metrics showing what the model can actually build.",
+    "favicon": "/favicon/cand_8b68706b91691ffc.png"
+  },
+  {
     "id": "cand_8ccc8fca512eb1af",
     "name": "Jev — 100 ציוצים לפי נושאים",
     "url": "https://jev-tweets.surge.sh/",
     "description": "A Hebrew-language guide curating 100 real X posts organized by topic about Jev, TypeSafe AI's \"System One\" decision model that returns typed choices and calibrated probabilities instead of text, covering benchmarks, gateway/platform access, customer support, fraud, agents, and latency/cost comparisons."
+  },
+  {
+    "id": "cand_8df8aecf611cd1e3",
+    "name": "Project directory · JEV Hub",
+    "url": "https://jevhub.cc/",
+    "description": "A multilingual snapshot of 46 Jev/TypeSafe resources—official docs, SDKs, agent and MCP tools, browser/device projects, games, workflow integrations, playgrounds, evaluation notes and directories—with filters, local search, bookmarks, comparisons and source links for practical evaluation.",
+    "favicon": "/favicon/cand_8df8aecf611cd1e3.png"
   },
   {
     "id": "cand_8e0fe62c814cf3f5",
@@ -239,6 +318,13 @@
     "favicon": "/favicon/cand_95cc90b7151c5be7.png"
   },
   {
+    "id": "cand_95f26823b5c2308c",
+    "name": "Jev Trade | Live Jev trading bot on crypto and other assets",
+    "url": "https://www.jev-trade.com/",
+    "description": "Jev Trade is a live trading bot that reads the order book every tick to trade BTC, ETH, SOL, DOGE, and BNB, with a dashboard tracking open/closed positions, long/short calls, trade history, and real-time metrics like entry, mark price, unrealized/realized PnL, ROE, and leverage across 1s–1H intervals.",
+    "favicon": "/favicon/cand_95f26823b5c2308c.png"
+  },
+  {
     "id": "cand_9c2b1588305ca765",
     "name": "jev-experiments",
     "url": "https://github.com/dabit3/jev-experiments",
@@ -251,11 +337,38 @@
     "description": "A link directory aggregating 714 X posts about TypeSafe AI's \"System One\" decision model Jev—226 demo videos, 114 long-form articles, and 374 discussions in five languages—with every entry linking to its original post and a structured posts.json data export."
   },
   {
+    "id": "cand_9dbe6c655ff7c95f",
+    "name": "TradeRank.ai — Live AI Trading Leaderboard, LLM Competition",
+    "url": "https://www.traderank.ai/",
+    "description": "TradeRank.ai is a live benchmark where 17 frontier LLMs each trade $10,000 in simulated capital on real crypto and US equity markets under identical rules, publishing every trade, full reasoning, and daily 16:00 UTC re-ranked standings across seasons.",
+    "favicon": "/favicon/cand_9dbe6c655ff7c95f.png"
+  },
+  {
+    "id": "cand_a1207931485d8a73",
+    "name": "awesome-jev-tools",
+    "url": "https://github.com/v-modal/awesome-jev-tools",
+    "description": "A curated list of production projects and reusable decision patterns built on Jev, TypeSafe AI's low-latency typed-decision model, organized across 14 categories covering routing, guardrails, scoring, and infrastructure, with explicit vetting criteria for evaluating unproven entries."
+  },
+  {
     "id": "cand_a669d78bb1218549",
     "name": "minirouter — pay with crypto, no KYC",
     "url": "https://minirouter.sh/",
     "description": "MiniRouter is an OpenAI-compatible API gateway routing one key to 237+ open models with provider failover and 0% platform fees, payable in USDC, SOL, or any Solana token from $0.50 with no account or KYC.",
     "favicon": "/favicon/cand_a669d78bb1218549.png"
+  },
+  {
+    "id": "cand_af80aa667966932b",
+    "name": "Top 100 Jev Projects — Jev Users",
+    "url": "https://jevusers.com/",
+    "description": "A daily-refreshed directory ranking 400 open-source projects built on Jev—TypeSafe AI's System One model for fast, typed decisions—by GitHub stars, with demo previews, category filters, and current access routes for getting started.",
+    "favicon": "/favicon/cand_af80aa667966932b.png"
+  },
+  {
+    "id": "cand_b02d89ff58a2e59c",
+    "name": "THINKING MEGANE",
+    "url": "https://blog.monochromegane.com/",
+    "description": "Technical blog featuring deep dives into replicating Jev-style decision models via direct-logit and learned decision-head approaches, tmux popup workflows for parallel Claude Code sessions, and a Go CLI tool for scaffolding project skeletons from templates.",
+    "favicon": "/favicon/cand_b02d89ff58a2e59c.png"
   },
   {
     "id": "cand_b1575abe9666b048",
@@ -311,10 +424,24 @@
     "favicon": "/favicon/cand_c7591999a26e5ab7.png"
   },
   {
+    "id": "cand_cc4ffde3c3381ba1",
+    "name": "JEVLAB | Small decisions. Big possibilities. · Jev by TYPESAFE AI",
+    "url": "https://jev-lab.com/",
+    "description": "JEVLAB is an independent, categorized index of roughly 1,300 real-world projects, guides, repositories, and benchmarks demonstrating TypeSafe AI's Jev structured decision model across use cases such as agent routing, game agents, prompt classification, and legal forecasting.",
+    "favicon": "/favicon/cand_cc4ffde3c3381ba1.png"
+  },
+  {
     "id": "cand_d075f6be2e137291",
     "name": "awesome-jev-typesafe",
     "url": "https://github.com/valentynkit/awesome-jev-typesafe",
     "description": "A curated awesome list of 325 entries cataloging SDKs, gateways, coding-agent integrations, replicas, and real-world projects built on TypeSafe's Jev, a fast \"System One\" model that answers typed Choice/Score/Noul questions with calibrated probabilities instead of generating text."
+  },
+  {
+    "id": "cand_d07e5807b55f4c52",
+    "name": "Awesome Jev · 788 个用 Jev 做的开源项目 · PUNK2898",
+    "url": "https://jev.punk2898.xyz/",
+    "description": "A daily-updated, searchable directory of 788 open-source projects verified to actually call Jev in their source code, each backed by inspectable code evidence and browsable by category, with 182 entries runnable directly in the page and a free playground for testing custom decision questions.",
+    "favicon": "/favicon/cand_d07e5807b55f4c52.png"
   },
   {
     "id": "cand_d18fe6a1a82341e5",
@@ -348,6 +475,13 @@
     "name": "awesome-jev-use-cases",
     "url": "https://github.com/walidboulanouar/awesome-jev-use-cases",
     "description": "A ranked catalog of demos built with Jev, TypeSafe's typed-decision model, with per-demo likes, reposts, and reach grouped by application area, plus documented limits, patterns, and cost/latency figures, so builders can see what Jev actually handles before building."
+  },
+  {
+    "id": "cand_da63cf12b5a3a81d",
+    "name": "bestjev: 640 Open Source Jev Projects &amp; Tools",
+    "url": "https://jevbest.com/",
+    "description": "bestjev catalogs 640 verified open-source projects for Jev, TypeSafe's System One typed-decision model, spanning SDKs, agent tooling, browser and computer use, applications, games, benchmarks, and open Jev-like models across 27 languages.",
+    "favicon": "/favicon/cand_da63cf12b5a3a81d.png"
   },
   {
     "id": "cand_dcfdc0856c42fc98",
@@ -395,6 +529,13 @@
     "description": "A curated list of tools, integrations, and experiments built on Jev—TypeSafe AI's System One model that returns typed, confidence-aware decisions in milliseconds—spanning agent frameworks, browser/computer use, mobile robotics, coding agents, MCP servers, observability, trading, and community SDKs."
   },
   {
+    "id": "cand_eba64bc0ca7937aa",
+    "name": "Jev Trader",
+    "url": "https://jev-trader.vercel.app/",
+    "description": "Jev Trader is an AI trading bot that autonomously posts a bid or ask on Kuru's MON/USDC order book every Monad block, with a live dashboard showing each block's buy/sell decision, latency, call counts, fills, and uptime.",
+    "favicon": "/favicon/cand_eba64bc0ca7937aa.png"
+  },
+  {
     "id": "cand_f2f898c30792069b",
     "name": "awesome-jev",
     "url": "https://github.com/hellogumbo/awesome-jev",
@@ -412,6 +553,12 @@
     "name": "jev-directory",
     "url": "https://github.com/everyai-com/jev-directory",
     "description": "A static, browsable directory of 50 runnable Jev judge-model evals with exact prompts and pass-rule manifests plus 1,300+ linked community builds, consumable via a paste-in capability pack, llms.txt, or dependency-free MCP server."
+  },
+  {
+    "id": "cand_f8d234b24ddda013",
+    "name": "Jev Demos, surprise me",
+    "url": "https://jevdemos.netlify.app/",
+    "description": "A browsable gallery of 385 demos and real-world use cases of Jev collected from the developer community on X, with a \"surprise me\" mode that loads a random demo for quickly exploring what the tool can do."
   },
   {
     "id": "cand_fc34993cf483a45e",
