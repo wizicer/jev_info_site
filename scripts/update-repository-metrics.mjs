@@ -35,6 +35,14 @@ function repositoryFromUrl(url, host) {
   }
 }
 
+function metricTarget(url) {
+  const github = repositoryFromUrl(url, 'github.com');
+  if (github) return { platform: 'github', repository: github };
+  const huggingFace = repositoryFromUrl(url, 'huggingface.co');
+  if (huggingFace) return { platform: 'huggingface', repository: huggingFace };
+  return null;
+}
+
 function delay(milliseconds) {
   return new Promise((resolveDelay) => setTimeout(resolveDelay, milliseconds));
 }
@@ -51,6 +59,23 @@ async function fetchJson(url, headers, label) {
     const retryAfter = Number(response.headers.get('retry-after'));
     await delay(Number.isFinite(retryAfter) ? retryAfter * 1000 : 500 * (2 ** attempt));
   }
+}
+
+const githubHeaders = {
+  Accept: 'application/vnd.github+json',
+  'User-Agent': 'jev-info-metrics-updater',
+  ...(githubToken ? { Authorization: `Bearer ${githubToken}` } : {}),
+};
+
+async function fetchMetrics(target) {
+  if (target.platform === 'github') {
+    const data = await fetchJson(`https://api.github.com/repos/${target.repository}`, githubHeaders, target.repository);
+    if (!isCount(data.stargazers_count) || !isCount(data.forks_count)) throw new Error(`${target.repository}: response did not include valid counts`);
+    return { stars: data.stargazers_count, forks: data.forks_count };
+  }
+  const data = await fetchJson(`https://huggingface.co/api/models/${target.repository}`, huggingFaceToken ? { Authorization: `Bearer ${huggingFaceToken}` } : {}, target.repository);
+  if (!isCount(data.likes)) throw new Error(`${target.repository}: response did not include a valid like count`);
+  return { likes: data.likes };
 }
 
 async function mapWithConcurrency(items, worker) {
@@ -73,58 +98,52 @@ function isCount(value) {
 
 async function main() {
   const [tools, models, awesome, previous] = await Promise.all([readJson(toolsPath), readJson(modelsPath), readJson(awesomePath), readJsonOrEmpty(metricsPath)]);
-  const now = new Date().toISOString();
+  const snapshots = Array.isArray(previous?.snapshots) ? previous.snapshots : [];
+  const previousMetrics = {};
+  for (const snapshot of snapshots) Object.assign(previousMetrics, snapshot.metrics);
+  const today = new Date().toISOString().slice(0, 10);
   const failures = [];
   if (!githubToken) console.warn('Warning: GITHUB_TOKEN is not set. GitHub allows only 60 unauthenticated requests/hour; this catalog has more repositories.');
 
-  const toolResults = await mapWithConcurrency(tools, async (tool) => {
-    const repository = repositoryFromUrl(tool.url, 'github.com');
-    if (!repository) return { id: tool.id, error: `Unsupported GitHub URL: ${tool.url}` };
+  const sources = [
+    { items: tools, optional: false },
+    { items: awesome, optional: true },
+    { items: models, optional: false },
+  ];
+  const urls = [...new Set(sources.flatMap((source) => source.items.map((item) => item.url)))];
+  const results = new Map(await mapWithConcurrency(urls, async (url) => {
+    const target = metricTarget(url);
+    if (!target) return [url, null];
     try {
-      const data = await fetchJson(`https://api.github.com/repos/${repository}`, { Accept: 'application/vnd.github+json', 'User-Agent': 'jev-info-metrics-updater', ...(githubToken ? { Authorization: `Bearer ${githubToken}` } : {}) }, repository);
-      if (!isCount(data.stargazers_count) || !isCount(data.forks_count)) throw new Error(`${repository}: response did not include valid counts`);
-      return { id: tool.id, metrics: { stars: data.stargazers_count, forks: data.forks_count, updatedAt: now } };
-    } catch (error) { return { id: tool.id, error: error.message }; }
-  });
-  const awesomeResults = await mapWithConcurrency(awesome, async (resource) => {
-    const repository = repositoryFromUrl(resource.url, 'github.com');
-    if (!repository) return { id: resource.id };
-    try {
-      const data = await fetchJson(`https://api.github.com/repos/${repository}`, { Accept: 'application/vnd.github+json', 'User-Agent': 'jev-info-metrics-updater', ...(githubToken ? { Authorization: `Bearer ${githubToken}` } : {}) }, repository);
-      if (!isCount(data.stargazers_count) || !isCount(data.forks_count)) throw new Error(`${repository}: response did not include valid counts`);
-      return { id: resource.id, metrics: { stars: data.stargazers_count, forks: data.forks_count, updatedAt: now } };
-    } catch (error) { return { id: resource.id, error: error.message }; }
-  });
-  const modelResults = await mapWithConcurrency(models, async (model) => {
-    const repository = repositoryFromUrl(model.url, 'huggingface.co');
-    if (!repository) return { id: model.id, error: `Unsupported Hugging Face URL: ${model.url}` };
-    try {
-      const data = await fetchJson(`https://huggingface.co/api/models/${repository}`, huggingFaceToken ? { Authorization: `Bearer ${huggingFaceToken}` } : {}, repository);
-      if (!isCount(data.likes)) throw new Error(`${repository}: response did not include a valid like count`);
-      return { id: model.id, metrics: { likes: data.likes, updatedAt: now } };
-    } catch (error) { return { id: model.id, error: error.message }; }
-  });
-  const next = { version: 1, updatedAt: now, tools: {}, models: {}, awesome: {} };
-  for (const result of toolResults) {
-    const metrics = result.metrics || previous.tools?.[result.id];
-    if (metrics) next.tools[result.id] = metrics;
-    else failures.push(`GitHub ${result.error}`);
+      return [url, { metrics: await fetchMetrics(target) }];
+    } catch (error) {
+      return [url, { error: error.message }];
+    }
+  }));
+
+  const metrics = {};
+  for (const source of sources) {
+    for (const item of source.items) {
+      const result = results.get(item.url);
+      if (result?.metrics) metrics[item.url] = result.metrics;
+      else if (result?.error) {
+        const retained = previousMetrics[item.url];
+        if (retained) metrics[item.url] = retained;
+        failures.push(result.error);
+      } else if (!source.optional) failures.push(`Unsupported metrics URL: ${item.url}`);
+    }
   }
-  for (const result of awesomeResults) {
-    const metrics = result.metrics || previous.awesome?.[result.id];
-    if (metrics) next.awesome[result.id] = metrics;
-    if (result.error) failures.push(`GitHub ${result.error}`);
-  }
-  for (const result of modelResults) {
-    const metrics = result.metrics || previous.models?.[result.id];
-    if (metrics) next.models[result.id] = metrics;
-    else failures.push(`Hugging Face ${result.error}`);
-  }
+
+  const existing = snapshots.findIndex((snapshot) => snapshot.date === today);
+  if (existing >= 0) snapshots[existing] = { date: today, metrics };
+  else snapshots.push({ date: today, metrics });
+  snapshots.sort((a, b) => a.date.localeCompare(b.date));
+
   const temporaryPath = `${metricsPath}.tmp`;
   await mkdir(dirname(metricsPath), { recursive: true });
-  await writeFile(temporaryPath, `${JSON.stringify(next, null, 2)}\n`);
+  await writeFile(temporaryPath, `${JSON.stringify({ version: 2, snapshots }, null, 2)}\n`);
   await rename(temporaryPath, metricsPath);
-  console.log(`Updated ${toolResults.filter((result) => result.metrics).length}/${tools.length} GitHub repositories and ${modelResults.filter((result) => result.metrics).length} Hugging Face models.`);
+  console.log(`Recorded metrics for ${Object.keys(metrics).length} of ${urls.length} catalog URLs in the ${today} snapshot (${snapshots.length} snapshot(s) on file).`);
   if (failures.length) { console.error(`Completed with ${failures.length} failure(s); previous successful values were retained.`); for (const failure of failures) console.error(`- ${failure}`); process.exitCode = 1; }
 }
 

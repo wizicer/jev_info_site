@@ -1,2334 +1,1863 @@
 {
-  "version": 1,
-  "updatedAt": "2026-09-21T06:55:29.390Z",
-  "tools": {
-    "cand_010425e155cb99e7": {
-      "stars": 5,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_011d816421c59b18": {
-      "stars": 240,
-      "forks": 28,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0140dc516414840a": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_01e16d8a2b301bee": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_02207ca775d47747": {
-      "stars": 677,
-      "forks": 47,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_028686c4faa63f59": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_02cd12fc57916ddb": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_03e04eb8c035f505": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_044d4a6c7551e5a1": {
-      "stars": 17,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0613413e66d3d67f": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_06201fabea05fd82": {
-      "stars": 3,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_06a4e289d20a8682": {
-      "stars": 30,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_076cff5b7cfec62b": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_08f50143985587be": {
-      "stars": 7,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_093432795ecee120": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_099332eb1d8c982d": {
-      "stars": 15,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0a9a63be14dd66cf": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0ac22a38dedc619c": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0b8c09990dd459d9": {
-      "stars": 7,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0bbde22e9103510d": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0bd41003157c00da": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0c1370b2477edc28": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0c250e139a555e46": {
-      "stars": 13,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0ca982ed7bdd38ba": {
-      "stars": 16,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0cff8d848a637dc0": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0e9b24896addffd2": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0f252614ebc8441b": {
-      "stars": 38,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0fa8b4cdbdffa40d": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_0fde6c7fe1d36d1b": {
-      "stars": 12,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_104d1b4533da049b": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1067299dba07cbd8": {
-      "stars": 2,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1152787dfd2eb906": {
-      "stars": 255,
-      "forks": 14,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1157ff28f3928528": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_11db9bb22b374a3a": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_12e19302a1bf1934": {
-      "stars": 40,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_12ffb12a9f8fcb0b": {
-      "stars": 9,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_148570eff60cf033": {
-      "stars": 8,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_14a90830c296904e": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_14e4050e8cdfa704": {
-      "stars": 22,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_15bc777201c698fd": {
-      "stars": 77,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_16f578cf15ef2e0a": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_16ff17da7bba8be1": {
-      "stars": 130,
-      "forks": 8,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_17a7e0b683854528": {
-      "stars": 175,
-      "forks": 12,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_18215ac4661c3162": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_18f9e79689a4ac48": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1918cce4fff7ead5": {
-      "stars": 164,
-      "forks": 17,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_196055c69d6d56cc": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_19c0febc64ca986c": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1ac2f1eb4d8e1331": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1b25dbd8fcc40d35": {
-      "stars": 45,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1b2b62fb66bdcf83": {
-      "stars": 99,
-      "forks": 10,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1b8e35a5a0147eea": {
-      "stars": 13115,
-      "forks": 807,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1bc49f185d899736": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1c61246ce5646627": {
-      "stars": 10,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1d64c1a29566edc8": {
-      "stars": 75,
-      "forks": 15,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1ea10963deeea29a": {
-      "stars": 21,
-      "forks": 4,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1f78673daa5002cd": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1fff2bc8325272c2": {
-      "stars": 12,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_20081ec8b191f638": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2043921334e077e1": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_20c42df54ee74233": {
-      "stars": 13,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_21eb2f2f03957c28": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_22027fcc7d152c01": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_228b1a6f8456ac41": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_22f91470e66c427b": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2316c02362864bf8": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_241866f02b6692e0": {
-      "stars": 0,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2454979b6536bd34": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2493666cf62b7b9a": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_25264016badca232": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2634d7e4106a971d": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_274030f394dfb722": {
-      "stars": 77,
-      "forks": 6,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_29b0d2500f86d946": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_29dbb3dc6e5ef1a2": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_29fba97e80f7e5e4": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2ac7b7f59e2738a2": {
-      "stars": 6,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2b6d5c83622eb3d3": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2be2b9d46df5b18e": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2cdc43a11fcdf36d": {
-      "stars": 6,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2d7f01281b21f6a4": {
-      "stars": 21,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2e0f95bc43306adf": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2e4d5482af896fdf": {
-      "stars": 291,
-      "forks": 37,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2e98962978d0d11f": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_2fc19b1e4642512d": {
-      "stars": 8,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3231e4bcdb459622": {
-      "stars": 1,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_328da2f8bbe0f14d": {
-      "stars": 6,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_336d0244d0f287b0": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_347d6f4b4b91fa48": {
-      "stars": 7,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_34b882a24b67027b": {
-      "stars": 33,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_34e0d430f9e3b837": {
-      "stars": 10,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3639f46597321cba": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_37ae778ce016b83d": {
-      "stars": 128,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_37bbd4d8199cbe9b": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_37c8ffa5a31e4665": {
-      "stars": 65,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_38ffa19f0aa61b7d": {
-      "stars": 5763,
-      "forks": 498,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_393b355a9fcd3f05": {
-      "stars": 27,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3993bfd59c32cde7": {
-      "stars": 429,
-      "forks": 25,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3a37f94c79ef4796": {
-      "stars": 9,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3ac05ba37f3317c8": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3ade20149dbfb11f": {
-      "stars": 1248,
-      "forks": 74,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3b316956e4a3c691": {
-      "stars": 18,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3b783ba284ba4942": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3b822019a91221a2": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3c1da223948f398e": {
-      "stars": 5,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3cb8a0f1303b03d9": {
-      "stars": 39,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3e1e43312b71451b": {
-      "stars": 146,
-      "forks": 15,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3e581b7e6a4c82c4": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3f25e9102ccc87c0": {
-      "stars": 32,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_3f961c3628f1b249": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_40654e8f0f138039": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_418f0b833cc68b8d": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_41f5d20e371103d5": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_454a811265921123": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_454fe84cc986eb33": {
-      "stars": 80,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_472aa3ca5d66bab0": {
-      "stars": 24,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_475062d4bdaeabfb": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_47d44c040ad22411": {
-      "stars": 8,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_47d50df5b3b9db77": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4855dad680c6a3f2": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4974e108ddfde7c7": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4a10225f3841538d": {
-      "stars": 34,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4abfd70a0a39185a": {
-      "stars": 23,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4b0cb085c9723c3e": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4b8b3b58adb1fa22": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4c66142713467199": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4d03e533131a9a27": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4dc4415d373f688a": {
-      "stars": 1,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4e03af95e6c8dae1": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4e0f714d14538d01": {
-      "stars": 10,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_4e72c63ebac761f3": {
-      "stars": 12,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_50187f6b0a880977": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_50c59a00840eee09": {
-      "stars": 5523,
-      "forks": 300,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5185979e0f400e33": {
-      "stars": 7,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_51e477027c799a04": {
-      "stars": 42,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_522b44e219b28c9f": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_52e7b4f7cb2bf910": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5364bbf80e9cf2ff": {
-      "stars": 8,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_53c55518f9aa3de9": {
-      "stars": 11,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_53d1289862127390": {
-      "stars": 19,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_549617450f29ed5d": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_54b80b8b900f3afc": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_54f64dad587e0118": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_55176a0657a8920d": {
-      "stars": 5,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_55731a17abe7f294": {
-      "stars": 173,
-      "forks": 6,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_55b7ce58acf53da4": {
-      "stars": 3,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5698144e96ac4577": {
-      "stars": 18,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_57405c55991256ff": {
-      "stars": 12,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_58a923e98c436ceb": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_58f2f3abcf26134e": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_59457656381b2c9b": {
-      "stars": 3,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_59507508e6559d0a": {
-      "stars": 7,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5a58ed09bd633ea5": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5a77cebeb3cab988": {
-      "stars": 62,
-      "forks": 14,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5cc903b889fcf933": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5cfca1bbc28e1c0a": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5de316bf98027642": {
-      "stars": 183,
-      "forks": 22,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5e0bb8466e8562d3": {
-      "stars": 17,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5e59750b72bbfb3a": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5e74093a773515cf": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5faa0ceb07d1e86a": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_60f1e3b8a6b3b70e": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_626a0596cf85035b": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_633adb70507e0f1f": {
-      "stars": 3,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_641e825fd3447f08": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_64ac65dbdad4ac6b": {
-      "stars": 1,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_64df744a87e2422b": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_64f89af59a6468fc": {
-      "stars": 155,
-      "forks": 11,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_65a326782ec5a12f": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_65d57b7132bb61b7": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_65e1e99d6be10d90": {
-      "stars": 10,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_66085ff0bd507d5a": {
-      "stars": 17,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_666fc60f383a403c": {
-      "stars": 5,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_66826684bd85b54b": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6733fc1cd80af698": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_678b0f9bfd05d5a8": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_67af0a52e93d3345": {
-      "stars": 308,
-      "forks": 25,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_685fbad768f3ce25": {
-      "stars": 16,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6895c2b9ad2e51eb": {
-      "stars": 21,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_68b2a08ecd370320": {
-      "stars": 113,
-      "forks": 12,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_694d790be8d8c988": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6b1a63769769cc47": {
-      "stars": 45,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6bed6efd69f3e467": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6da355717aa4eb05": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6e39a707a1f9d517": {
-      "stars": 37,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6ed4ac380c722096": {
-      "stars": 1626,
-      "forks": 306,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6ef36eec098edc22": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6efd9c63accdf872": {
-      "stars": 13,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6f5f2d14a8637ab6": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_70e14262769cebe7": {
-      "stars": 119,
-      "forks": 6,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_70e7bea113346b8e": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_712b1c1a23816478": {
-      "stars": 249,
-      "forks": 19,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_71cc5fbd2ca65f39": {
-      "stars": 4,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_72a13aae323587a5": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_73a445b3597ffd96": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_74371d898e6f8e4b": {
-      "stars": 417,
-      "forks": 44,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_755163714d002e02": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_75b75a0d6eb1beaa": {
-      "stars": 196,
-      "forks": 11,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_77c94133cce1a49d": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_77c9b6dbf4b03c45": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_78067a6f4541276a": {
-      "stars": 33,
-      "forks": 4,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_786967038b9f5ba6": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_78f7c84dab9e54ef": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_797d0a1ab27e0be1": {
-      "stars": 11,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_79c03c0d572ea533": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_79f46a948ee37a49": {
-      "stars": 63,
-      "forks": 4,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7a1e3fc6b85f9c10": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7b5963e7e8cfe8d6": {
-      "stars": 26,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7bc10994ab33989b": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7caa880be35e216b": {
-      "stars": 7,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7db9c3468185e383": {
-      "stars": 148,
-      "forks": 11,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7dfe4172454f3212": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7ee9b9d083873858": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7f78fa55d47fc9ee": {
-      "stars": 50,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_7f996baa90004d38": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8019558967462321": {
-      "stars": 47,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_807acc046f61e3ff": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_80861d4cacfeaa89": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_80dd7e4097797580": {
-      "stars": 5,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8104972733d00b3a": {
-      "stars": 81,
-      "forks": 11,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_824ad48de3f31b29": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8279f804f367e84a": {
-      "stars": 7,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8429d3000a81fe35": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_84c028577a7b8e2c": {
-      "stars": 2,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_850c2a8a4e7e647f": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_857e4e43348811b6": {
-      "stars": 1,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8654ca269f988f42": {
-      "stars": 19,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_86a169c4d231c98e": {
-      "stars": 186,
-      "forks": 23,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_86e70b83a0ceafd8": {
-      "stars": 187,
-      "forks": 25,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_875cb0489bf22cc3": {
-      "stars": 28,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_87afc28ec38ead09": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_87e60c575d9c820b": {
-      "stars": 3,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8800027a64bd9b8a": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_89b78855eb0733a4": {
-      "stars": 51,
-      "forks": 4,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8a4f618a59e69139": {
-      "stars": 12,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8a7aa6d4b99c1816": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8ac07a777a8db3bb": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8bd8336c5180deba": {
-      "stars": 306,
-      "forks": 31,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8c0c620f5558e9e0": {
-      "stars": 1313,
-      "forks": 61,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8d10298416c371a3": {
-      "stars": 3,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8e504dd30c75f2ce": {
-      "stars": 2624,
-      "forks": 162,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8e90afac37a89b15": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8eed3ffafd41f0ce": {
-      "stars": 109,
-      "forks": 14,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8f00421086584f19": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8f740e9c5b3340ca": {
-      "stars": 8,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8f9bd3903d275e83": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8fa606a2784fe734": {
-      "stars": 77,
-      "forks": 8,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_8fd6300d0816cc41": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9030808704b6bf90": {
-      "stars": 211,
-      "forks": 29,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9031a68a5f9e3aca": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_903db61376ba48ea": {
-      "stars": 6,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_92b6eb81f6edb6ec": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_938bcd2d35b7b02a": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_94ddfb15c691a1df": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_95242ae58dca85bf": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_955da626fc4e74d8": {
-      "stars": 105,
-      "forks": 7,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9601817bbfdc19f1": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_96c31f8e008d7e63": {
-      "stars": 5,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_97023940a28f3f43": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9798275b8ba155ba": {
-      "stars": 26,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_97acfec68d6da8ca": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_985eb9f937e0932e": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_98e2ff87fb75e95d": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_995a28919b3e3ba6": {
-      "stars": 0,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_997983a8121ffd55": {
-      "stars": 1,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9a738539bc17015f": {
-      "stars": 192,
-      "forks": 18,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9b7d07b06784c618": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9c3a66251be49c2b": {
-      "stars": 341,
-      "forks": 45,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9c62d19afc2aedbd": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9ca370f03342a40f": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9cd3cee7f840dd69": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9dbdd2e0db65cfa1": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9dcb6e2cc481982f": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9e45ac73eaf3521f": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9e50f2ed9d86f4fc": {
-      "stars": 8,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9ff37ea665e8e02c": {
-      "stars": 2,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a0dac19dbdde59e3": {
-      "stars": 503,
-      "forks": 50,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a1277aa5992aefad": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a36f97d5547dc2a3": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a65f1fb60c946b76": {
-      "stars": 73,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a667bbfb87424fa0": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a75de884f57c8597": {
-      "stars": 44,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a799ccf7eab473ec": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a79d3de0129a9b55": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a901344d1430a807": {
-      "stars": 3,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a91c2f9cc3ce41f6": {
-      "stars": 3,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a98580474f4c0068": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_aa200873e728fc1f": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_abfcb3058716869f": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ac6b025a70f13268": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ac93465f7efbc315": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ad5ffeb0d06fdd0b": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_af27a78b4324403d": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_af7d033441f51697": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_af89055d86e93f90": {
-      "stars": 2,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_afec9411f6721977": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b0044a139501308e": {
-      "stars": 644,
-      "forks": 42,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b06c9027797821b0": {
-      "stars": 158,
-      "forks": 14,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b0c4dc2ce514ab0e": {
-      "stars": 9,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b15661a8e0cc3f93": {
-      "stars": 90,
-      "forks": 6,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b1ff81995cd5e69d": {
-      "stars": 127,
-      "forks": 7,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b2064f624ef4730f": {
-      "stars": 165,
-      "forks": 12,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b249014169f5ec98": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b2a9093b440c6a0f": {
-      "stars": 19,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b3703ae611288bf7": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b3d69e5f7395e1cf": {
-      "stars": 135,
-      "forks": 20,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b4665dc3dd726c63": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b466bcdc171dd5e5": {
-      "stars": 14,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b64ae31b4b52c8d8": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b68d61db6705e134": {
-      "stars": 5,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b803478d31e43482": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b82801661dee363e": {
-      "stars": 41,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b89f470d06f09dd9": {
-      "stars": 1106,
-      "forks": 97,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b8b35b45a761965a": {
-      "stars": 47,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b9053a6201e7f067": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b9d01f078c41a7d9": {
-      "stars": 61,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ba3832a889adc4c8": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ba7645c89bc0f4e5": {
-      "stars": 2,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_bac7b90cea3a2421": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_badbee24c2db7da1": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_bb00998756c39333": {
-      "stars": 28,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_bb97b82c3daf2655": {
-      "stars": 23,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_bc24ac3729aa8d72": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_bcec53d28c1e098d": {
-      "stars": 145,
-      "forks": 11,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_be0b9685b2b7b171": {
-      "stars": 309,
-      "forks": 30,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c04b4fff93485dba": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c1926f9d0656ab05": {
-      "stars": 6,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c2b7c0ebf3ef97f3": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c569d06b634bf5ee": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c62b412d85dd86fb": {
-      "stars": 3,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c63169a837ee42a0": {
-      "stars": 2,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c65657184a014c66": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c67d26171071864d": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c7e3edff3242b059": {
-      "stars": 1592,
-      "forks": 183,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c83e04b8517e28bf": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c995ca3bfbe6c6bd": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c9bed17252214bcd": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c9c22e52c72da3d0": {
-      "stars": 13,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ca5fa1e98eedc171": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ca85791c0a428f96": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_cd37c156f7da0b0f": {
-      "stars": 7,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_cd74220e9f82c26b": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ce09c6018e89f24a": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ce97d7f5e832bfcf": {
-      "stars": 450,
-      "forks": 60,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_cec5acd381434101": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_cec8fe5c7b9e2a1a": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ced2e753f87749e2": {
-      "stars": 17,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_cff1a5d66383bf53": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d074911e29f322f7": {
-      "stars": 189,
-      "forks": 17,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d0898c75d09fa2fe": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d0d36ee42769519a": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d209334b3db3da0b": {
-      "stars": 60,
-      "forks": 10,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d262c0aedd7b0f3d": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d27ac107658e8949": {
-      "stars": 8,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d2e2bc739ebaed8e": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d35142eb340a6461": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d3a652e1da224790": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d40b3398b61cdd25": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d49974281278776d": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d5e1f389f54eb03f": {
-      "stars": 31,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d6377ecfe8593b6d": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d72cd74e06f9a9af": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d7f4188ff8aae060": {
-      "stars": 16,
-      "forks": 4,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d8289e382f362e1f": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d860d5a05573b421": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d88877c916329e72": {
-      "stars": 1,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d92f2c9df616fdc8": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_da24ce01a184ca43": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_da434feaea4e84d3": {
-      "stars": 443,
-      "forks": 32,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_db7e62d48fcb26ee": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ddd36a4dac02f0ed": {
-      "stars": 2,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ddeccea88faa4214": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_de7467998d3bb690": {
-      "stars": 9,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_deef88aa32e76a96": {
-      "stars": 12,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_dfb6248ef6f991a9": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e019eeea6998e02e": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e0503bec5748fdb0": {
-      "stars": 270,
-      "forks": 27,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e0ea7e03a359b055": {
-      "stars": 234,
-      "forks": 21,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e142394342748203": {
-      "stars": 5,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e17a8b7ea1d0f6a5": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e187051e19c99087": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e1db7a9e9a40591b": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e22151d3ec4724ab": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e27d0c98e4c7a547": {
-      "stars": 18,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e36b1844d58ece2b": {
-      "stars": 181,
-      "forks": 21,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e4bf0115eaaae521": {
-      "stars": 30,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e63adb93ef363ef7": {
-      "stars": 57,
-      "forks": 29,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e66ee65e445e0433": {
-      "stars": 17,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e6ee5cad9d302f7a": {
-      "stars": 41,
-      "forks": 9,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e6fed6ddf80d11a2": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e72a67756b3b6f8c": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e79c4bcdca71991a": {
-      "stars": 19,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e84adc97671b12fd": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e86e89d17d9eee27": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e871e47d11f0b1c5": {
-      "stars": 25,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e9056c5fbfa75dd4": {
-      "stars": 1,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e93ea2d5230bd11a": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e9493914c5563b91": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e94daeefe3ebf7af": {
-      "stars": 25,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_eb96e8b1202883d4": {
-      "stars": 27,
-      "forks": 4,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ebc5f1205862d882": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ec0d2fa03b38be71": {
-      "stars": 3,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_eca57151151d28d7": {
-      "stars": 19,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ecfb52380fe3c333": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ed322851c835617c": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ed85ff566aa99757": {
-      "stars": 7,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ee2ad1edea5a5350": {
-      "stars": 219,
-      "forks": 18,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ef32f6d3f97f6937": {
-      "stars": 202,
-      "forks": 15,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ef331599b2115ec0": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_efe26698a1863f1c": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f03cc99158890d4c": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f04b2b694f608a89": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f090083c340af3bd": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f0937fe288e0125c": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f0fae06dd32e3c6c": {
-      "stars": 55,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f15dc2a994a28f9a": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f164b13787f0bf03": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f18b11fc825cc26e": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f250566306b9925d": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f31446ce8233fbb6": {
-      "stars": 12,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f3310c5d628a591d": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f3abbfa2130645d3": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f3dd2971af85b4f9": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f4aca29526da3aca": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f5fe952122fdd338": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f61e9cf0b023b01b": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f6dfbccd2960789d": {
-      "stars": 4,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f8bd60a6ed47a141": {
-      "stars": 49,
-      "forks": 8,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f9950a267cec6680": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fad583e6d11dd647": {
-      "stars": 13,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fae0c1cf581cd654": {
-      "stars": 0,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fc08a3bba47f01d6": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fc308adec2db090f": {
-      "stars": 124,
-      "forks": 10,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fc467782fa958b7d": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fcc71a5891f196aa": {
-      "stars": 23,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fceb0a94981678ac": {
-      "stars": 11,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_fee05443be30c59f": {
-      "stars": 59,
-      "forks": 5,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
+  "version": 2,
+  "snapshots": [
+    {
+      "date": "2026-09-22",
+      "metrics": {
+        "https://github.com/nshkrdotcom/typesafe_sdk": {
+          "stars": 5,
+          "forks": 1
+        },
+        "https://github.com/ekzhang/openjev-sglang": {
+          "stars": 255,
+          "forks": 32
+        },
+        "https://github.com/tlangridge/Alloy": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/jamesward/zio-evals": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/awlevin/typesafe-computer-use": {
+          "stars": 751,
+          "forks": 59
+        },
+        "https://github.com/jonymusky/jev-browser-qa": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/moto-taka/vercel-jev-mcp": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/andrueandersoncs/visual-jev": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/davila7/jev-explained": {
+          "stars": 23,
+          "forks": 2
+        },
+        "https://github.com/fatwang2/jev-review-action": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/AmoghCreator/doom-jev": {
+          "stars": 4,
+          "forks": 2
+        },
+        "https://github.com/pnthn-ai/polar_llama": {
+          "stars": 30,
+          "forks": 2
+        },
+        "https://github.com/withzombies/jev-go": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/trungdq88/jev-tetris": {
+          "stars": 11,
+          "forks": 5
+        },
+        "https://github.com/konstantinosbotonakis/codex-context-diet": {
+          "stars": 3,
+          "forks": 1
+        },
+        "https://github.com/Nasrallah-AL/jev-cli": {
+          "stars": 18,
+          "forks": 1
+        },
+        "https://github.com/Peu77/JevFind": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/ajensenwaud/hermes-jev-plugin": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/ranjan2829/AskJev": {
+          "stars": 8,
+          "forks": 3
+        },
+        "https://github.com/ClemannD/jev-playground": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/ntedvs/commentcop": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Ethics03/jevspire": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/stephanj/parallelConstraintDecoding": {
+          "stars": 13,
+          "forks": 1
+        },
+        "https://github.com/blakestone-x/jev-mcp": {
+          "stars": 17,
+          "forks": 3
+        },
+        "https://github.com/Nyarlathoteppppp/pi-heed": {
+          "stars": 7,
+          "forks": 1
+        },
+        "https://github.com/y0usaf/typesafe-mcp": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/baggiiiie/pi-stuff": {
+          "stars": 38,
+          "forks": 2
+        },
+        "https://github.com/3clyp50/a0-typesafe-ai": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/shantanugoel/mario-jev": {
+          "stars": 12,
+          "forks": 2
+        },
+        "https://github.com/darvat/jevvy": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/Friedjof/jev-mobile": {
+          "stars": 3,
+          "forks": 3
+        },
+        "https://github.com/realZachi/pg-jev": {
+          "stars": 283,
+          "forks": 14
+        },
+        "https://github.com/Reindeer-AI/pi-jev-guard": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/suraj-phanindra/wellposed": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/pinecone-io/cultivar": {
+          "stars": 40,
+          "forks": 2
+        },
+        "https://github.com/win4r/jev-security-scan": {
+          "stars": 10,
+          "forks": 1
+        },
+        "https://github.com/harshwasan/pi-jev-sentinel": {
+          "stars": 8,
+          "forks": 1
+        },
+        "https://github.com/Gaurav-Gosain/jev-go": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/krzyzanowskim/TypeSafe": {
+          "stars": 27,
+          "forks": 0
+        },
+        "https://github.com/ChetasLua/jevmeter": {
+          "stars": 81,
+          "forks": 5
+        },
+        "https://github.com/codeitlikemiley/typesafe-sdk-rust": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/tamaratran/jev-pruner": {
+          "stars": 133,
+          "forks": 9
+        },
+        "https://github.com/logan-markewich/jeff": {
+          "stars": 203,
+          "forks": 13
+        },
+        "https://github.com/alterhq/typesafe-sdk-swift": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/gavinHuang/jevinize": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/typesafe-ai/typesafe-sdk-python": {
+          "stars": 186,
+          "forks": 23
+        },
+        "https://github.com/muse0509/jev-preflight": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/gregb100/gavel": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/maskjelly/TiVM": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/EliaAlberti/jev-rules": {
+          "stars": 46,
+          "forks": 6
+        },
+        "https://github.com/vinilana/jev-eval-agent": {
+          "stars": 103,
+          "forks": 11
+        },
+        "https://github.com/browser-use/jev-ultrafast": {
+          "stars": 15826,
+          "forks": 989
+        },
+        "https://github.com/DDnim/jev-tweet-radar": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/ainame/swift-typesafe": {
+          "stars": 10,
+          "forks": 1
+        },
+        "https://github.com/daseinlabs/open-jev": {
+          "stars": 89,
+          "forks": 17
+        },
+        "https://github.com/razaanstha/ulka": {
+          "stars": 21,
+          "forks": 4
+        },
+        "https://github.com/MrQuartz99/Qwansh": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/khordoo/jev-reflex-autonomy-lab": {
+          "stars": 13,
+          "forks": 2
+        },
+        "https://github.com/yannip1234/ask-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/gmaxxxie/jev-cli": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Prescott-Data/jarviscore-framework": {
+          "stars": 14,
+          "forks": 1
+        },
+        "https://github.com/AshutoshVJTI/progressgate": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/kevinpita/pi-jev-context": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/reycn/smart-switch": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/youyo/decio": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/coo-quack/jev-pii-checker": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/MrDesjardins/jevrealtimecodecheck": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/gamesonrblx/JevML": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/lbotinelly/jev-little-airways": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/716-Ventures/agentOS": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/softpudding/jev-frontier-100": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/mrnugget/jev-shell-history": {
+          "stars": 95,
+          "forks": 7
+        },
+        "https://github.com/Wizhill05/typesafe-image-diffusion": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/mallahyari/system-one-benchmark": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/afanjul/jev-llm": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/GiesN/typesafe-jev-workflow": {
+          "stars": 6,
+          "forks": 1
+        },
+        "https://github.com/ari-becker/commentlint": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/jpanasuk-netizen/15-min-BTC-JAP": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Ezbaze/jevies": {
+          "stars": 7,
+          "forks": 0
+        },
+        "https://github.com/JoshuaSP/open-jev": {
+          "stars": 22,
+          "forks": 1
+        },
+        "https://github.com/bourdainai/site-judge": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/droidrun/mobile-jev": {
+          "stars": 323,
+          "forks": 41
+        },
+        "https://github.com/fand/jev-emotional-avatar": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/valentynkit/jev-commit": {
+          "stars": 9,
+          "forks": 0
+        },
+        "https://github.com/JGalego/Jevs-Garage": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/AntonioCoppe/jev-harness": {
+          "stars": 9,
+          "forks": 0
+        },
+        "https://github.com/TinyFrontier/wince": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/carlaiau/jev-reranking": {
+          "stars": 7,
+          "forks": 1
+        },
+        "https://github.com/iammrduncan/typesafe-ai-benchmark": {
+          "stars": 37,
+          "forks": 5
+        },
+        "https://github.com/kubet/azdaja": {
+          "stars": 10,
+          "forks": 0
+        },
+        "https://github.com/AIsa-team/worth-replying": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/dbreunig/building-with-jev-skill": {
+          "stars": 128,
+          "forks": 4
+        },
+        "https://github.com/nabendu82/jev-demo": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/Bodila51/grok-bot-jev": {
+          "stars": 74,
+          "forks": 7
+        },
+        "https://github.com/NandhaKishorM/laya": {
+          "stars": 10510,
+          "forks": 864
+        },
+        "https://github.com/intikhab49/open-jev-typed-decision-engine": {
+          "stars": 36,
+          "forks": 1
+        },
+        "https://github.com/devagrawal09/jev-review": {
+          "stars": 488,
+          "forks": 31
+        },
+        "https://github.com/ilyamk/jev-gmail-ai-spam-filter-and-labeling": {
+          "stars": 14,
+          "forks": 2
+        },
+        "https://github.com/HisuiKoh/jev-vtuber-ime-core": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/jaredpalmer/kev": {
+          "stars": 2486,
+          "forks": 128
+        },
+        "https://github.com/runta-dev/jot": {
+          "stars": 18,
+          "forks": 2
+        },
+        "https://github.com/enuminous/JEV-EFMW-Syncretic-Layer": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/integrate-your-mind/jev-codex-plugin": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/nitoba/questions": {
+          "stars": 5,
+          "forks": 1
+        },
+        "https://github.com/AboveColin/HA-Jev": {
+          "stars": 43,
+          "forks": 2
+        },
+        "https://github.com/donvito/ai-backends": {
+          "stars": 146,
+          "forks": 15
+        },
+        "https://github.com/zoidsh/tenet": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/tacticocc/Jevbridge": {
+          "stars": 37,
+          "forks": 3
+        },
+        "https://github.com/LukasCaha/jev-profanity": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/zsoXi/FeedGate": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/pedrogmbh/laterhook": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Eliovp-BV/Jev-Radar": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/FazalAAli/jev-robotics-demo": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/giuliosmall/pg_typesafe": {
+          "stars": 81,
+          "forks": 1
+        },
+        "https://github.com/misbahsy/doc-router": {
+          "stars": 26,
+          "forks": 5
+        },
+        "https://github.com/jyatesdotdev/jev-logtriage": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/hev/reranker": {
+          "stars": 9,
+          "forks": 0
+        },
+        "https://github.com/sanmai/typesafe-ai-php": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/valentynkit/jev-skip": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/wotai-dev/typesafe-jev-tools": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/GhalebDweikat/winnow": {
+          "stars": 51,
+          "forks": 4
+        },
+        "https://github.com/rorshopping/jev-on-a-laptop": {
+          "stars": 23,
+          "forks": 1
+        },
+        "https://github.com/ziyacivan/s1decide": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/nishimotz/hello-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/CompleteTech-LLC-AI-Research/jev-311-heatmap": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/SomeshSampat2/jev-android-super": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/zzsong1023/jev-market-reflex": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/casungo/noflow-runtime": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/shitianfang/jev-use": {
+          "stars": 13,
+          "forks": 1
+        },
+        "https://github.com/pst2154/Nemotron_Jev": {
+          "stars": 12,
+          "forks": 1
+        },
+        "https://github.com/joshlarsen/jev-t-rex-runner": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/tamaratran/fast-jev-compaction": {
+          "stars": 5980,
+          "forks": 332
+        },
+        "https://github.com/aabolfazl/typesafe-local": {
+          "stars": 8,
+          "forks": 0
+        },
+        "https://github.com/achimala/jev-paint": {
+          "stars": 49,
+          "forks": 4
+        },
+        "https://github.com/ThalesAugusto0/typesafe-router-pipeline": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/jkakar/typesafe-sdk-go": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/jerryfane/omp-jev-compaction": {
+          "stars": 8,
+          "forks": 1
+        },
+        "https://github.com/Twister915/typesafe-ai": {
+          "stars": 11,
+          "forks": 2
+        },
+        "https://github.com/Argos1111/jev_local": {
+          "stars": 20,
+          "forks": 0
+        },
+        "https://github.com/saibimajdi/typesafeai-dotnet-sdk": {
+          "stars": 6,
+          "forks": 0
+        },
+        "https://github.com/MartinSWDev/gen-ui": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/the-data-sherpa/project_blackout": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/HalxDocs/dlq_inspector": {
+          "stars": 5,
+          "forks": 1
+        },
+        "https://github.com/Mapika/decider": {
+          "stars": 275,
+          "forks": 10
+        },
+        "https://github.com/vtrivedy/jev-plays-games": {
+          "stars": 3,
+          "forks": 1
+        },
+        "https://github.com/luantak/is-malicious": {
+          "stars": 22,
+          "forks": 3
+        },
+        "https://github.com/genai-craft/openvons": {
+          "stars": 13,
+          "forks": 0
+        },
+        "https://github.com/danielscoffee/AssertLens": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/MM-sheng/jevspeak": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/anxkhn/JevPlaysPokemon": {
+          "stars": 5,
+          "forks": 1
+        },
+        "https://github.com/atharvamhaske/typesafe-sdk-go": {
+          "stars": 12,
+          "forks": 0
+        },
+        "https://github.com/integrate-your-mind/jev-nethack": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/aowang-ai/jev-trade": {
+          "stars": 91,
+          "forks": 19
+        },
+        "https://github.com/superradcompany/mario-never-dies": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/andrelandgraf/safer-with-jev": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/jkudish/jev-mcp": {
+          "stars": 237,
+          "forks": 25
+        },
+        "https://github.com/rhighs/jev-code": {
+          "stars": 20,
+          "forks": 2
+        },
+        "https://github.com/CompleteTech-LLC-AI-Research/jev-prune-kit": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/altryne/twitter-timeline-analyzer": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/sunholo-data/ailang-packages": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/abhixhek/feedwall": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/xAndreiLi/pi-jev-wiki": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/matthewdonsemail-lab/open-typesafe-camoufox": {
+          "stars": 3,
+          "forks": 1
+        },
+        "https://github.com/jagenaujagenau/ground-truth": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/markjaquith/typesafe-ai-playground": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/MaTriXy/jev-browser": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/kunchenguid/compact-adviser": {
+          "stars": 171,
+          "forks": 14
+        },
+        "https://github.com/PromptForcePrime/readybase-public": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/NischalGautam8/Jev-StepPilot": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/anpicasso/hermes-jev-approvals": {
+          "stars": 12,
+          "forks": 2
+        },
+        "https://github.com/shiftynick/jev-axi": {
+          "stars": 17,
+          "forks": 2
+        },
+        "https://github.com/ponyo877/jev-telop-live": {
+          "stars": 5,
+          "forks": 2
+        },
+        "https://github.com/ussyverse/hermes-jev-router": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/chrismoseley/jev-extraction-marker-recovery": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/nrdz-labs/fast-jev-opencode": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/kerpopule/hermes-jev-skills": {
+          "stars": 396,
+          "forks": 35
+        },
+        "https://github.com/leepokai/jev-guard": {
+          "stars": 20,
+          "forks": 2
+        },
+        "https://github.com/zadescoxp/Jev-Trades": {
+          "stars": 23,
+          "forks": 3
+        },
+        "https://github.com/DevMortimer/pi-warden": {
+          "stars": 128,
+          "forks": 12
+        },
+        "https://github.com/enderkus/zammad-jev-dispatcher": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/kyle-pena-nlp/jevchat": {
+          "stars": 72,
+          "forks": 4
+        },
+        "https://github.com/Thestral12/pr-sieve": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/leftspace89/jevsubrouter": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/shantanugoel/ask-jev-skill": {
+          "stars": 37,
+          "forks": 1
+        },
+        "https://github.com/jarrodwatts/jev-trader": {
+          "stars": 1860,
+          "forks": 356
+        },
+        "https://github.com/chez-shanpu/typesafeai-go": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/chopratejas/invalidate": {
+          "stars": 15,
+          "forks": 1
+        },
+        "https://github.com/Tech-Byte-Frontier/jevgate": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/uehaj/jev-semgrep": {
+          "stars": 123,
+          "forks": 7
+        },
+        "https://github.com/this-Mike-guy/jev-compare": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/sutro-sh/jev-align": {
+          "stars": 269,
+          "forks": 20
+        },
+        "https://github.com/CrimsonLuckyLabs/kev": {
+          "stars": 4,
+          "forks": 1
+        },
+        "https://github.com/jolehuit/jev-downloads-sorter": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/rodriveiga01/second-thought": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/featherless-ai/simple-jev": {
+          "stars": 451,
+          "forks": 49
+        },
+        "https://github.com/Charlyhno-eng/jev-document-classification": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/coldteadotai/abide": {
+          "stars": 206,
+          "forks": 12
+        },
+        "https://github.com/adrianlerer/jev-legal-instrumentation-latam": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/chrisXchen/typesafe-cookie-consent": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/burnigtm/jev-mcp": {
+          "stars": 35,
+          "forks": 5
+        },
+        "https://github.com/y0usaf/typesafe-cli": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/Joymfl/dag-jev": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/madeye/pi-jev": {
+          "stars": 11,
+          "forks": 3
+        },
+        "https://github.com/samtay32/jev-system-architect": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/realZachi/typesafe-adblock": {
+          "stars": 68,
+          "forks": 5
+        },
+        "https://github.com/Tobi1chi/JevVSPolymarket": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/TypeLLM/TypeLLM": {
+          "stars": 36,
+          "forks": 2
+        },
+        "https://github.com/Dimesio/typesafe-chess": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/emrickgarrett/OneVOneJev": {
+          "stars": 17,
+          "forks": 1
+        },
+        "https://github.com/kitze/unclutter": {
+          "stars": 172,
+          "forks": 13
+        },
+        "https://github.com/linw1995/dify-plugin-typesafe-ai": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/ishantanu/jevmetrics": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/wobsoriano/oxlint-plugin-jev": {
+          "stars": 55,
+          "forks": 0
+        },
+        "https://github.com/ziyu/system-one-sdk": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/yikangy873-gif/jev-desktop": {
+          "stars": 57,
+          "forks": 1
+        },
+        "https://github.com/ant4g0nist/joxide": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/mgaitan/sqlite-jev": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/opaielsheikh/ai-elo-ranker": {
+          "stars": 5,
+          "forks": 2
+        },
+        "https://github.com/trungdq88/youtube-sponsor-detection": {
+          "stars": 81,
+          "forks": 12
+        },
+        "https://github.com/TheOnlyArtz/TheOnlyArtz.github.io": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/arielweinberger/jev-autopilot": {
+          "stars": 8,
+          "forks": 0
+        },
+        "https://github.com/caiovicentino/jev-align": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/florian-hoenicke/jev-gpt": {
+          "stars": 2,
+          "forks": 1
+        },
+        "https://github.com/wobsoriano/is-jeven": {
+          "stars": 6,
+          "forks": 0
+        },
+        "https://github.com/golergka/jev-plays-starcraft-2": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/brudarko/jev-mac-voice": {
+          "stars": 19,
+          "forks": 0
+        },
+        "https://github.com/hr98w/jev-visual": {
+          "stars": 217,
+          "forks": 24
+        },
+        "https://github.com/Knuckles92/OpenWhisper": {
+          "stars": 187,
+          "forks": 25
+        },
+        "https://github.com/win4r/jev-skill-suggester": {
+          "stars": 30,
+          "forks": 3
+        },
+        "https://github.com/emilwagman/jev-file-search": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/nickthompson480/typesafe-ai-playground": {
+          "stars": 3,
+          "forks": 2
+        },
+        "https://github.com/onehopeA10/jev-x-spam-filter": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Reisenbug/TerraBlind": {
+          "stars": 62,
+          "forks": 5
+        },
+        "https://github.com/GodsBoy/jev-agent-skill-router": {
+          "stars": 13,
+          "forks": 1
+        },
+        "https://github.com/AliceRoselia/Typesafe_chess_eval": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/DomMonte/n8n-nodes-typesafe-ai": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/fhshaik/typesafe-mario": {
+          "stars": 333,
+          "forks": 33
+        },
+        "https://github.com/typesafe-ai/skills": {
+          "stars": 1548,
+          "forks": 77
+        },
+        "https://github.com/Olti1947/jev-java": {
+          "stars": 3,
+          "forks": 3
+        },
+        "https://github.com/TheoLeeCJ/SemIf": {
+          "stars": 3263,
+          "forks": 212
+        },
+        "https://github.com/Hawxy/TypeSafeAI.Net": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/0xNatoshi/jev-codex-router": {
+          "stars": 173,
+          "forks": 18
+        },
+        "https://github.com/rivianpratama/JevPixelArt": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/DECRUX9812/typesafe-skill-router": {
+          "stars": 9,
+          "forks": 2
+        },
+        "https://github.com/raoulmir/plausible-rooms": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/savka777/jev-use": {
+          "stars": 85,
+          "forks": 10
+        },
+        "https://github.com/alviso/jev-precheck": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/typesafe-ai/system-one-adapter-python": {
+          "stars": 241,
+          "forks": 35
+        },
+        "https://github.com/juanegido/jev-pr-judge": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/mahlernim/jev-korean-benchmark": {
+          "stars": 6,
+          "forks": 0
+        },
+        "https://github.com/Eliran-Turgeman/reaper": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/kavehmz/seems-lang": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/guybrush1984/purelink": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/kentaro/jev-shogi": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/Dicklesworthstone/skillranker": {
+          "stars": 108,
+          "forks": 8
+        },
+        "https://github.com/jaewgwon/jevis": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Adityakhalkar/JevNQL": {
+          "stars": 4,
+          "forks": 1
+        },
+        "https://github.com/finetuningsingh/jev-chatbot": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/TypeAR-AI/TypeAR": {
+          "stars": 36,
+          "forks": 2
+        },
+        "https://github.com/alxcrt/is-odd-jev": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/prismhq/jev-router": {
+          "stars": 7,
+          "forks": 0
+        },
+        "https://github.com/dani1005/book-aurora": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/developervariety/Armada": {
+          "stars": 0,
+          "forks": 1
+        },
+        "https://github.com/Sentu-Is/opencode-fast-jev-compaction": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/typesafe-ai/typesafe-sdk-js": {
+          "stars": 214,
+          "forks": 21
+        },
+        "https://github.com/Ayush0054/metis": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/superagents-lab/jev-search": {
+          "stars": 379,
+          "forks": 49
+        },
+        "https://github.com/hide-G/magi-system-on-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/BeLazy167/typesafe-mod": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/aserjam100/jev-firewall": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/willprout/magic-8-ball": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/abeldzan/jev-rs": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/MagicBeansAI/jev-audit": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/reachjalil/jevlogs": {
+          "stars": 9,
+          "forks": 2
+        },
+        "https://github.com/ShivamPansuriya/jev-skill-gate": {
+          "stars": 3,
+          "forks": 1
+        },
+        "https://github.com/Sac-Y/Jev-cu": {
+          "stars": 543,
+          "forks": 54
+        },
+        "https://github.com/hnegishi/typesafe-ai-ruby": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/jevbook/jevscan": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/nekuda-ai/WindTunnel": {
+          "stars": 76,
+          "forks": 5
+        },
+        "https://github.com/vayungodara/jev-lint": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/yusukebe/hono-jev-router": {
+          "stars": 45,
+          "forks": 2
+        },
+        "https://github.com/newuser7171/jev-vpn": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/windymelt/ddskk-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/JordanDalton/jev-mermaid": {
+          "stars": 3,
+          "forks": 1
+        },
+        "https://github.com/Premo-Cloud/typesafe-sdk-java": {
+          "stars": 3,
+          "forks": 3
+        },
+        "https://github.com/NorbertBodziony/guard-jev": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/toganio/jev-word-lab": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/rchovatiya88/cyber-breach-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/akanthed/jev-watch": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/cole-gillespie/typesafe-go": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/iammusham/jev-snake": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/thelau/jev-tetris": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/its-panzer/jev-model-router": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/WebGrga/btc-jev-signal": {
+          "stars": 2,
+          "forks": 1
+        },
+        "https://github.com/edwardyen724-g/jev-compactor": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/githubnext/localjev": {
+          "stars": 698,
+          "forks": 46
+        },
+        "https://github.com/itsmostafa/typesafe-mcp": {
+          "stars": 218,
+          "forks": 18
+        },
+        "https://github.com/tumf/jev-cli": {
+          "stars": 9,
+          "forks": 0
+        },
+        "https://github.com/RomanSlack/jev-drone": {
+          "stars": 115,
+          "forks": 12
+        },
+        "https://github.com/y0usaf/pi-jev": {
+          "stars": 133,
+          "forks": 8
+        },
+        "https://github.com/lakeday-org/perch": {
+          "stars": 167,
+          "forks": 12
+        },
+        "https://github.com/newuser7171/jev-ndr": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/danvega/jev-spring-boot-starter": {
+          "stars": 28,
+          "forks": 1
+        },
+        "https://github.com/ClemensSchartmueller/jev-guard": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/standardagents/jevpilot": {
+          "stars": 152,
+          "forks": 21
+        },
+        "https://github.com/zsoXi/agent-handoff-gate": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/unicodeveloper/jevocks": {
+          "stars": 16,
+          "forks": 4
+        },
+        "https://github.com/gopalanj/chess-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/collapseindex/dinostomp": {
+          "stars": 6,
+          "forks": 1
+        },
+        "https://github.com/stas4000/jev-clerk": {
+          "stars": 6,
+          "forks": 0
+        },
+        "https://github.com/brainstormity/Jev-Moderation-Bot": {
+          "stars": 42,
+          "forks": 4
+        },
+        "https://github.com/vinnylarouge/jevlike": {
+          "stars": 1169,
+          "forks": 105
+        },
+        "https://github.com/obie/ruby_decision_model": {
+          "stars": 49,
+          "forks": 2
+        },
+        "https://github.com/rorshopping/jev-browser-local": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/typesafeainate/dspy-typesafeify": {
+          "stars": 61,
+          "forks": 2
+        },
+        "https://github.com/bebe0307mz/jevs-kitchen-chaos": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/Red5d/jev-cvss": {
+          "stars": 2,
+          "forks": 1
+        },
+        "https://github.com/EnesYilmazcode/FlyJev2048": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/pumpkinredbean/bside": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/samdotmak/jev-recall": {
+          "stars": 31,
+          "forks": 1
+        },
+        "https://github.com/devtooligan/jevscan-evm": {
+          "stars": 25,
+          "forks": 0
+        },
+        "https://github.com/dagmawibabi/jevclassifier": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/mmastrac/djev-spark": {
+          "stars": 164,
+          "forks": 12
+        },
+        "https://github.com/kyotofin/tax-doc-classifier": {
+          "stars": 341,
+          "forks": 37
+        },
+        "https://github.com/taruo/jev-adblocker": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/24601/Augustus": {
+          "stars": 6,
+          "forks": 1
+        },
+        "https://github.com/gemanor/jev-code-review-benchmark": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/hideshi/llm-skills": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/wondertwins/jev-benchmark": {
+          "stars": 5,
+          "forks": 1
+        },
+        "https://github.com/gruggiero/typesafe4s": {
+          "stars": 2,
+          "forks": 1
+        },
+        "https://github.com/alperenerol/jev-1.13-mini-benchmark": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/mykclawd/openclaw-smart-router": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/TianyuCodings/NanoJev": {
+          "stars": 1818,
+          "forks": 201
+        },
+        "https://github.com/jvsteiner/jevex": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/ddalcero/ruleraven": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/blackopsrepl/jev-team-calendar": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/carldaws/hunch": {
+          "stars": 14,
+          "forks": 0
+        },
+        "https://github.com/solovieff/tg_accessor": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/kurogedelic/jev-oscillator-playground": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/jomatsu/zod-jev": {
+          "stars": 7,
+          "forks": 0
+        },
+        "https://github.com/QAInsights/typesafe-java-sdk": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Gaurav-Gosain/jev-sec-bench": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/OpenAgentsInc/openagents": {
+          "stars": 449,
+          "forks": 60
+        },
+        "https://github.com/lukaske/jev-doom-agent": {
+          "stars": 7,
+          "forks": 0
+        },
+        "https://github.com/ufec/jev-block-android-ad": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/colliber/duckdb-jev": {
+          "stars": 20,
+          "forks": 1
+        },
+        "https://github.com/solhosty/last-train-jev": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/NiazMorshed2007/jev-review": {
+          "stars": 196,
+          "forks": 19
+        },
+        "https://github.com/ilkerulusoy/pi-jev-compact": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/prasanth263/maza": {
+          "stars": 0,
+          "forks": 1
+        },
+        "https://github.com/IAmUnbounded/save-token-jev-clean": {
+          "stars": 62,
+          "forks": 10
+        },
+        "https://github.com/AIMacGyver/estack-demo": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/TarunTomar122/jev-askable-arm": {
+          "stars": 9,
+          "forks": 0
+        },
+        "https://github.com/memovai/openevals": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/MithrilMan/your-signal": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/bchaney/jev_speedway": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Melivo/opencode-plugin-variantizer": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/sf-stav/mcp_typesafe": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/ellipsis-dev/blink": {
+          "stars": 48,
+          "forks": 2
+        },
+        "https://github.com/masa-med-ai/typesafe-screening-mcp": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/amr05008/jev-sandbox": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/TypeSafeAI/typesafe-playground": {
+          "stars": 18,
+          "forks": 5
+        },
+        "https://github.com/Clueless-Creations/jev-ios-ultrafast": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/TheEleventhAvatar/triage-bot": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/youkiti/tiab-review-plugin": {
+          "stars": 1,
+          "forks": 1
+        },
+        "https://github.com/haseeb-heaven/jev-system-one": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/Biztactix-Ryan/TypeSafe.Sdk.C-": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/thruwire/foreman": {
+          "stars": 467,
+          "forks": 34
+        },
+        "https://github.com/collapseindex/jev-builder": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/finetuningsingh/intelliprompter": {
+          "stars": 2,
+          "forks": 1
+        },
+        "https://github.com/Charlyhno-eng/jev-codex-pilot": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/mejiasd3v/pi-jev-router": {
+          "stars": 12,
+          "forks": 1
+        },
+        "https://github.com/BorisLeMeec/jev": {
+          "stars": 13,
+          "forks": 0
+        },
+        "https://github.com/kgonia/typesafe-sdk-java": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/AnshChoudhary/typesafe-ai-firewall": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/gargpratyush/jev-router": {
+          "stars": 312,
+          "forks": 31
+        },
+        "https://github.com/razorback16/openjev": {
+          "stars": 281,
+          "forks": 23
+        },
+        "https://github.com/rajdhakad9826/jev-router": {
+          "stars": 8,
+          "forks": 0
+        },
+        "https://github.com/waddle-zoo/signal-weave": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/jamesward/zio-typesafe-ai": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/mateonunez/jod": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/opaielsheikh/typesafe-migration-guard": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/kieranklaassen/ruby_llm-typesafe": {
+          "stars": 18,
+          "forks": 0
+        },
+        "https://github.com/moritzkremb/jev-voice-browser": {
+          "stars": 208,
+          "forks": 27
+        },
+        "https://github.com/choxos/jev-reviewer": {
+          "stars": 32,
+          "forks": 6
+        },
+        "https://github.com/AntSeed/antseed": {
+          "stars": 57,
+          "forks": 29
+        },
+        "https://github.com/jcpsimmons/jev-macos-loop": {
+          "stars": 19,
+          "forks": 0
+        },
+        "https://github.com/ikermoel/open-alternative-jev": {
+          "stars": 47,
+          "forks": 11
+        },
+        "https://github.com/newuser7171/jev-gamepilot": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/latere-ai/typesafe-ai-go-sdk": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/mizchi/jev-playground": {
+          "stars": 20,
+          "forks": 0
+        },
+        "https://github.com/nemke82/jev-ops": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/rishi-raj-jain/pg-redact": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/DanRWilloughby/snifftest": {
+          "stars": 27,
+          "forks": 1
+        },
+        "https://github.com/raydocs/egolite-jev": {
+          "stars": 2,
+          "forks": 1
+        },
+        "https://github.com/santos-sanz/jev-audio-beeper": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/gilljon/typesafe-ai-rs": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/TheoOliveira/pi-jev": {
+          "stars": 31,
+          "forks": 3
+        },
+        "https://github.com/hqman/JevScout": {
+          "stars": 28,
+          "forks": 6
+        },
+        "https://github.com/dnikolayev/typesafe-offload-bench": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/geilt/typesafe-cli": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/sorrycc/typesafe-snake": {
+          "stars": 20,
+          "forks": 2
+        },
+        "https://github.com/thezem/jev-one": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/Alexandre-Borghi/jev-ncr-demo": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/NSStudent/JevSwiftSDK": {
+          "stars": 8,
+          "forks": 0
+        },
+        "https://github.com/kitze/skillbox": {
+          "stars": 222,
+          "forks": 19
+        },
+        "https://github.com/jkudish/jev-browser": {
+          "stars": 229,
+          "forks": 16
+        },
+        "https://github.com/lhemerly/mcts-agent": {
+          "stars": 5,
+          "forks": 0
+        },
+        "https://github.com/ponyo877/jev-realtime-brain-scanner": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/GenieRobot/typesafe-ai-rails": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/jasondotsetHacked/jev-test-1": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/zhuyansen/jev-search-rerank-eval": {
+          "stars": 6,
+          "forks": 0
+        },
+        "https://github.com/geranitin/TYPESAFE_JEV": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/jexp/neo4jev": {
+          "stars": 79,
+          "forks": 7
+        },
+        "https://github.com/thesammykins/jev_ampcode": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/fgn/jevgo": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/pcarrier/skibidu": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/8dazo/JevFish": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/sharziki/semdecide": {
+          "stars": 25,
+          "forks": 3
+        },
+        "https://github.com/nola-lang/nola-typesafe-test": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/siroccomask/snake-jev": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/Foadsf/jev-for-engineers": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/robertfrontend/thiscita-typesafe": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/alexsatch/omp-auto-mode": {
+          "stars": 3,
+          "forks": 1
+        },
+        "https://github.com/sysadarsh/zerosweep": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/minhnghia2k3/jev-k8s-awareness": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/bnsd55/jevmlx": {
+          "stars": 54,
+          "forks": 8
+        },
+        "https://github.com/erhanmeydan/jev2048": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/utk2103/jev-studio": {
+          "stars": 15,
+          "forks": 0
+        },
+        "https://github.com/dtjohnson83/rag-gate": {
+          "stars": 0,
+          "forks": 0
+        },
+        "https://github.com/ShahriarBijoy/eslint-plugin-jev": {
+          "stars": 2,
+          "forks": 0
+        },
+        "https://github.com/BillionsBobby/JevRouter": {
+          "stars": 143,
+          "forks": 11
+        },
+        "https://github.com/Query-farm/vgi-typesafe": {
+          "stars": 3,
+          "forks": 0
+        },
+        "https://github.com/kavehmz/typesafe-playground": {
+          "stars": 11,
+          "forks": 3
+        },
+        "https://github.com/Ying-Kai-Liao/jev-browser": {
+          "stars": 67,
+          "forks": 9
+        },
+        "https://github.com/cobanov/awesome-jev": {
+          "stars": 309,
+          "forks": 62
+        },
+        "https://github.com/anandi1989/awesome-jev-usecases": {
+          "stars": 16,
+          "forks": 3
+        },
+        "https://github.com/evan87863/awesome-jev-examples": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/DeepBlueDynamics/typesafe-arena": {
+          "stars": 1,
+          "forks": 0
+        },
+        "https://github.com/AppitStudio/awesome-jev": {
+          "stars": 72,
+          "forks": 8
+        },
+        "https://github.com/logicrw/awesome-jev-projects": {
+          "stars": 316,
+          "forks": 27
+        },
+        "https://github.com/AbdelStark/awesome-typesafe": {
+          "stars": 428,
+          "forks": 75
+        },
+        "https://github.com/Anil-matcha/awesome-jev-by-typesafe": {
+          "stars": 765,
+          "forks": 141
+        },
+        "https://github.com/dabit3/jev-experiments": {
+          "stars": 357,
+          "forks": 26
+        },
+        "https://github.com/mizzlelover/jev-hub": {
+          "stars": 22,
+          "forks": 4
+        },
+        "https://github.com/daftAI2026/awesome-jev": {
+          "stars": 5,
+          "forks": 3
+        },
+        "https://github.com/AnotiaWang/awesome-jev": {
+          "stars": 252,
+          "forks": 54
+        },
+        "https://github.com/valentynkit/awesome-jev-typesafe": {
+          "stars": 125,
+          "forks": 26
+        },
+        "https://github.com/fatwang2/awesome-jev": {
+          "stars": 187,
+          "forks": 40
+        },
+        "https://github.com/walidboulanouar/awesome-jev-use-cases": {
+          "stars": 76,
+          "forks": 6
+        },
+        "https://github.com/yibie/awesome-jev": {
+          "stars": 987,
+          "forks": 132
+        },
+        "https://github.com/AiPersonacademy/Awesome-jev-use": {
+          "stars": 4,
+          "forks": 0
+        },
+        "https://github.com/ckaraca/awesome-jev": {
+          "stars": 9,
+          "forks": 1
+        },
+        "https://github.com/hellogumbo/awesome-jev": {
+          "stars": 124,
+          "forks": 42
+        },
+        "https://github.com/everyai-com/jev-directory": {
+          "stars": 13,
+          "forks": 1
+        },
+        "https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v1": {
+          "likes": 2
+        },
+        "https://huggingface.co/AlexWortega/openjev": {
+          "likes": 419
+        },
+        "https://huggingface.co/Luni/laya-grounded": {
+          "likes": 1
+        },
+        "https://huggingface.co/heman10x/rlcd-modernbert-151m": {
+          "likes": 24
+        },
+        "https://huggingface.co/GestaltLabs/Jeff-1": {
+          "likes": 8
+        },
+        "https://huggingface.co/convaiinnovations/laya": {
+          "likes": 1782
+        },
+        "https://huggingface.co/Mapika/decider-2b": {
+          "likes": 68
+        },
+        "https://huggingface.co/cua-ai/cua-s1-forms": {
+          "likes": 100
+        },
+        "https://huggingface.co/gopalanj/chessjev-minilm-v1": {
+          "likes": 0
+        },
+        "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large": {
+          "likes": 7
+        },
+        "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large": {
+          "likes": 49
+        }
+      }
     }
-  },
-  "models": {
-    "cand_107995efedabd000": {
-      "likes": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1147d1da23858f52": {
-      "likes": 346,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_1415cf843e81d521": {
-      "likes": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_53e471fe6351073e": {
-      "likes": 17,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_56314cd8b72ded8a": {
-      "likes": 8,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_5d885f2b9705cba0": {
-      "likes": 1278,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6c5552ed53813d06": {
-      "likes": 57,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_721c94bd6f2f3edc": {
-      "likes": 85,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_a7f574d4d7cce5b8": {
-      "likes": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c7b21da672a4c4e4": {
-      "likes": 7,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_dd43c35aafec7ca9": {
-      "likes": 38,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    }
-  },
-  "awesome": {
-    "cand_00ac8a38f48912be": {
-      "stars": 281,
-      "forks": 48,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_17b418cbf2be7a0f": {
-      "stars": 15,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_18149b4e4758d6ba": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_651829b656a35f7b": {
-      "stars": 1,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6802ae62a6aadabf": {
-      "stars": 65,
-      "forks": 7,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_6856b02a961106cb": {
-      "stars": 252,
-      "forks": 21,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_786cb988c3825de1": {
-      "stars": 408,
-      "forks": 65,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_822be0d2c4defe34": {
-      "stars": 731,
-      "forks": 131,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9c2b1588305ca765": {
-      "stars": 350,
-      "forks": 27,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_9daf419a53fe818b": {
-      "stars": 22,
-      "forks": 4,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_b1575abe9666b048": {
-      "stars": 5,
-      "forks": 2,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_c0811f0dbc0cce73": {
-      "stars": 140,
-      "forks": 46,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d075f6be2e137291": {
-      "stars": 113,
-      "forks": 21,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d24026f700b47b7d": {
-      "stars": 185,
-      "forks": 36,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_d7f4e08646b402b7": {
-      "stars": 24,
-      "forks": 3,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_dcfdc0856c42fc98": {
-      "stars": 720,
-      "forks": 104,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_e115279dc39330e9": {
-      "stars": 2,
-      "forks": 0,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_ea1b90f52f17bd9a": {
-      "stars": 8,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f2f898c30792069b": {
-      "stars": 108,
-      "forks": 38,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    },
-    "cand_f61aeae219d04f44": {
-      "stars": 13,
-      "forks": 1,
-      "updatedAt": "2026-09-21T06:55:29.390Z"
-    }
-  }
+  ]
 }

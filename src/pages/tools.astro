@@ -6,8 +6,8 @@ import metricsData from '../data/repository-metrics.json';
 
 type Tool = { id: string; name: string; url: string; description: string; stars: number; forks: number };
 type ToolMetrics = Record<string, { stars: number; forks: number }>;
-const toolMetrics = (metricsData.tools || {}) as ToolMetrics;
-const tools = (toolsData as Tool[]).map((tool) => ({ ...tool, ...toolMetrics[tool.id] })).sort((a, b) => b.stars - a.stars || b.forks - a.forks || a.name.localeCompare(b.name, 'en'));
+const toolMetrics = (metricsData.snapshots?.at(-1)?.metrics ?? {}) as ToolMetrics;
+const tools = (toolsData as Tool[]).map((tool) => ({ ...tool, ...toolMetrics[tool.url] })).sort((a, b) => b.stars - a.stars || b.forks - a.forks || a.name.localeCompare(b.name, 'en'));
 const pageSize = 30;
 const initialTools = tools.slice(0, pageSize);
 const toolJson = JSON.stringify(tools).replaceAll('<', '\\u003c');

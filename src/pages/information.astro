@@ -8,7 +8,7 @@ import siteMetadata from '../data/site-metadata.json';
 
 type Resource = { id: string; name: string; url: string; description: string; featured?: boolean };
 type ResourceMetrics = Record<string, { stars: number; forks: number }>;
-const resourceMetrics = (metricsData.awesome || {}) as ResourceMetrics;
+const resourceMetrics = (metricsData.snapshots?.at(-1)?.metrics ?? {}) as ResourceMetrics;
 const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
 const decodeName = (value: string) => value.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"');
 const faviconIds = new Set(['awesome_10891cc23225ffb6', 'awesome_11ae781c8586e39b', 'awesome_1e65d16fa94d1749', 'awesome_4a7e5475763d0192', 'awesome_6bf2c1edd7dea1f8', 'awesome_7e265230bdf11e22']);
@@ -16,7 +16,7 @@ const primaryResourceId = 'site_jev_info';
 const resources = [siteMetadata.communityResources.primary as Resource, ...(awesomeData as Resource[])]
   .map((resource) => {
     const hostname = new URL(resource.url).hostname.replace(/^www\./, '');
-    return { ...resource, stars: resourceMetrics[resource.id]?.stars ?? -1, forks: resourceMetrics[resource.id]?.forks ?? -1, title: decodeName(resource.name), hostname, displayUrl: resource.url.replace(/^https?:\/\//, '').replace(/\/$/, ''), github: hostname === 'github.com', favicon: resource.id === primaryResourceId ? '/favicon/' + primaryResourceId + '.svg' : faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
+    return { ...resource, stars: resourceMetrics[resource.url]?.stars ?? -1, forks: resourceMetrics[resource.url]?.forks ?? -1, title: decodeName(resource.name), hostname, displayUrl: resource.url.replace(/^https?:\/\//, '').replace(/\/$/, ''), github: hostname === 'github.com', favicon: resource.id === primaryResourceId ? '/favicon/' + primaryResourceId + '.svg' : faviconIds.has(resource.id) ? '/favicon/' + resource.id + '.png' : null };
   })
   .sort((a, b) => Number(a.id !== primaryResourceId) - Number(b.id !== primaryResourceId) || Number(a.github) - Number(b.github) || (!a.github ? a.title.localeCompare(b.title, 'en') : b.stars - a.stars || b.forks - a.forks || a.title.localeCompare(b.title, 'en')));
 ---

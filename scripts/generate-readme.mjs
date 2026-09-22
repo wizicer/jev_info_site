@@ -81,17 +81,15 @@ async function main() {
   };
   const demosForCategory = (code) => sortedDemos.filter((demo) => demo.category === code);
 
-  const toolMetrics = metrics.tools ?? {};
+  const latestMetrics = metrics.snapshots?.at(-1)?.metrics ?? {};
   const sortedTools = [...tools].sort(
-    (a, b) => (toolMetrics[b.id]?.stars ?? b.stars ?? 0) - (toolMetrics[a.id]?.stars ?? a.stars ?? 0),
+    (a, b) => (latestMetrics[b.url]?.stars ?? b.stars ?? 0) - (latestMetrics[a.url]?.stars ?? a.stars ?? 0),
   );
-  const modelMetrics = metrics.models ?? {};
   const sortedModels = [...models].sort(
-    (a, b) => (modelMetrics[b.id]?.likes ?? 0) - (modelMetrics[a.id]?.likes ?? 0),
+    (a, b) => (latestMetrics[b.url]?.likes ?? 0) - (latestMetrics[a.url]?.likes ?? 0),
   );
-  const awesomeMetrics = metrics.awesome ?? {};
   const sortedAwesome = [...awesome].sort(
-    (a, b) => (awesomeMetrics[b.id]?.stars ?? 0) - (awesomeMetrics[a.id]?.stars ?? 0),
+    (a, b) => (latestMetrics[b.url]?.stars ?? 0) - (latestMetrics[a.url]?.stars ?? 0),
   );
 
   const totalUseCases = groups.reduce((sum, group) => sum + demosForGroup(group).length, 0);
@@ -130,7 +128,7 @@ async function main() {
     `Curated lists, articles, and community hubs about Jev — mirrored on [jev.info/information](${siteUrl}/information).`,
     '',
     ...sortedAwesome.map(
-      (resource) => `- [${label(resource.name)}](${resource.url})${starsBadge(awesomeMetrics[resource.id]?.stars)} — ${truncate(resource.description)}`,
+      (resource) => `- [${label(resource.name)}](${resource.url})${starsBadge(latestMetrics[resource.url]?.stars)} — ${truncate(resource.description)}`,
     ),
     '',
     '## Models',
@@ -138,7 +136,7 @@ async function main() {
     `Fine-tunes and derivatives of the Jev family on Hugging Face — mirrored on [jev.info/models](${siteUrl}/models).`,
     '',
     ...sortedModels.map(
-      (model) => `- [${label(model.name)}](${model.url})${modelMetrics[model.id]?.likes ? ` ♥${compactCount(modelMetrics[model.id].likes)}` : ''} — ${truncate(model.description)}`,
+      (model) => `- [${label(model.name)}](${model.url})${latestMetrics[model.url]?.likes ? ` ♥${compactCount(latestMetrics[model.url].likes)}` : ''} — ${truncate(model.description)}`,
     ),
     '',
     '## Tools',
@@ -146,7 +144,7 @@ async function main() {
     `Top ${Math.min(topTools, tools.length)} of ${tools.length} open-source tools and integrations by GitHub stars — browse the full catalog on [jev.info/tools](${siteUrl}/tools).`,
     '',
     ...sortedTools.slice(0, topTools).map(
-      (tool) => `- [${label(tool.name)}](${tool.url})${starsBadge(toolMetrics[tool.id]?.stars ?? tool.stars)} — ${truncate(tool.description)}`,
+      (tool) => `- [${label(tool.name)}](${tool.url})${starsBadge(latestMetrics[tool.url]?.stars ?? tool.stars)} — ${truncate(tool.description)}`,
     ),
     '',
     `→ [All ${tools.length} tools](${siteUrl}/tools)`,

@@ -6,8 +6,8 @@ import metricsData from '../data/repository-metrics.json';
 
 type Model = { id: string; name: string; url: string; description: string };
 type ModelMetrics = Record<string, { likes: number }>;
-const modelMetrics = (metricsData.models || {}) as ModelMetrics;
-const models = [...(modelsData as Model[])].map((model) => ({ ...model, likes: modelMetrics[model.id]?.likes, displayUrl: model.url })).sort((a, b) => (b.likes ?? -1) - (a.likes ?? -1) || a.name.localeCompare(b.name, 'en'));
+const modelMetrics = (metricsData.snapshots?.at(-1)?.metrics ?? {}) as ModelMetrics;
+const models = [...(modelsData as Model[])].map((model) => ({ ...model, likes: modelMetrics[model.url]?.likes, displayUrl: model.url })).sort((a, b) => (b.likes ?? -1) - (a.likes ?? -1) || a.name.localeCompare(b.name, 'en'));
 const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
 ---
 
