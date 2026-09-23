@@ -8,7 +8,6 @@ const { demo, eager = false, searchCard = false } = Astro.props as { demo: Demo;
   href={`/use-cases/${demo.id}`}
   data-case-link
   data-id={demo.id}
-  data-search={`${demo.description} ${demo.author.name} ${demo.author.handle}`.toLowerCase()}
 >
   <div class="media-frame">
     <div class="media-fallback" aria-hidden="true"><span>jev</span></div>
