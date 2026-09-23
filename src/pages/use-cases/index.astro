@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GroupSection from '../../components/GroupSection.astro';
+import demoStats from '../../data/demos-stats.json';
 import { demosForGroup, getLocalizedGroups } from '../../lib/content';
 import { getLocaleFromUrl, useTranslations } from '../../i18n/utils';
 import type { Locale } from '../../i18n/ui';
@@ -12,6 +13,11 @@ interface Props {
 const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const localizedGroups = getLocalizedGroups(locale);
+const curationSummary = t.useCases.curationSummary(
+  demoStats.ingestion.toLocaleString(locale),
+  demoStats.screened.toLocaleString(locale),
+  demoStats.curated.toLocaleString(locale),
+);
 ---
 
 <BaseLayout title={`${t.useCases.title} — jev.info`} description={t.useCases.subtitle} locale={locale}>
@@ -20,6 +26,7 @@ const localizedGroups = getLocalizedGroups(locale);
       <p class="eyebrow">CASE CATALOG</p>
       <h1>{t.useCases.title}</h1>
       <p>{t.useCases.subtitle}</p>
+      <p>{curationSummary}</p>
     </header>
     {localizedGroups.map((group) => <GroupSection group={group} demos={demosForGroup(group, locale)} locale={locale} />)}
   </main>
@@ -30,7 +37,8 @@ const localizedGroups = getLocalizedGroups(locale);
   .directory-intro { max-width: 680px; margin-bottom: 34px; }
   .eyebrow { margin: 0 0 11px; color: var(--muted); font-size: 12px; font-weight: 760; letter-spacing: .15em; text-transform: uppercase; }
   h1 { margin: 0; font-size: clamp(28px, 4vw, 32px); letter-spacing: -.055em; }
-  .directory-intro > p:last-child { max-width: 540px; margin: 13px 0 0; color: var(--muted); line-height: 1.6; }
+  .directory-intro > p:not(.eyebrow) { max-width: 600px; margin: 13px 0 0; color: var(--muted); line-height: 1.6; }
+  .directory-intro > p:last-child { margin-top: 8px; }
   @media (max-width: 720px) {
     .home-main { padding-block: 38px 58px; }
   }

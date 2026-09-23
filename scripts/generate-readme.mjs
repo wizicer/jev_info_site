@@ -51,8 +51,9 @@ function starsBadge(count) {
 }
 
 async function main() {
-  const [demos, taxonomy, tools, models, awesome, metrics] = await Promise.all([
+  const [demos, demoStats, taxonomy, tools, models, awesome, metrics] = await Promise.all([
     readJson('demos.json'),
+    readJson('demos-stats.json'),
     readJson('taxonomy.json'),
     readJson('tools.json'),
     readJson('models.json'),
@@ -152,6 +153,8 @@ async function main() {
     '## Use Cases',
     '',
     `Real-world demos of Jev in action, grouped by application area — browse all ${totalUseCases} with video previews on [jev.info/use-cases](${siteUrl}/use-cases).`,
+    '',
+    `We collected ${demoStats.ingestion.toLocaleString('en')} demos, screened ${demoStats.screened.toLocaleString('en')}, and curated ${demoStats.curated.toLocaleString('en')} use cases for this catalog.`,
   );
 
   for (const group of groups) {

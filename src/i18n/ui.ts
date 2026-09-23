@@ -71,6 +71,7 @@ export interface UIStrings {
   useCases: {
     title: string;
     subtitle: string;
+    curationSummary: (ingestion: string, screened: string, curated: string) => string;
     backToAll: string;
     examplesCount: (count: number) => string;
     groupStats: (subcategories: number, cases: number) => string;
@@ -242,6 +243,7 @@ export const ui: Record<Locale, UIStrings> = {
     useCases: {
       title: 'Use cases',
       subtitle: 'Real-world examples of fast, typed decisions.',
+      curationSummary: (ingestion, screened, curated) => `We collected ${ingestion} demos, screened ${screened}, and curated ${curated} use cases for this catalog.`,
       backToAll: '← All use cases',
       examplesCount: (count: number) => `${count} examples`,
       groupStats: (subcategories: number, cases: number) => `${subcategories} subcategories · ${cases} use cases`,
@@ -411,6 +413,7 @@ export const ui: Record<Locale, UIStrings> = {
     useCases: {
       title: '应用场景',
       subtitle: '快速、类型化决策的真实落地案例与实战代码。',
+      curationSummary: (ingestion, screened, curated) => `我们收集了 ${ingestion} 个演示，筛选了其中 ${screened} 个，最终精选 ${curated} 个应用案例收录于此。`,
       backToAll: '← 全部应用场景',
       examplesCount: (count: number) => `${count} 个案例`,
       groupStats: (subcategories: number, cases: number) => `${subcategories} 个子分类 · ${cases} 个案例`,
@@ -580,6 +583,7 @@ export const ui: Record<Locale, UIStrings> = {
     useCases: {
       title: 'ユースケース',
       subtitle: '高速な型付き意思決定の実際の導入事例。',
+      curationSummary: (ingestion, screened, curated) => `${ingestion} 件のデモを収集し、${screened} 件を精査して、${curated} 件のユースケースをこのカタログに厳選しました。`,
       backToAll: '← すべてのユースケース',
       examplesCount: (count: number) => `${count} 件の事例`,
       groupStats: (subcategories: number, cases: number) => `${subcategories} 個のサブカテゴリー · ${cases} 件の事例`,
