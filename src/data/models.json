@@ -138,6 +138,12 @@
     "description": "A 421M-parameter non-autoregressive ModernBERT-large model, RLCD-fine-tuned to emit calibrated probability distributions over typed primitives (choice, score, noul) for four workflows—agent observability, customer service, invoicing, security incidents—at 0.766 accuracy."
   },
   {
+    "id": "cand_d2bf65e29b39c2ce",
+    "name": "Jev-Omni",
+    "url": "https://huggingface.co/akhilaaa3/Jev-Omni",
+    "description": "Jev-Omni is an Apache-2.0 multimodal decision classifier built on Gemma 4 12B IT that returns calibrated per-option probabilities for text, image, audio, and video questions, scoring 63.10% on MMAU and 53.10% on MVBench with millisecond-scale inference."
+  },
+  {
     "id": "cand_d9cab0d80dd7c4c7",
     "name": "MedJev-Qwen3.5-0.8B",
     "url": "https://huggingface.co/junma/MedJev-Qwen3.5-0.8B",

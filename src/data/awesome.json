@@ -309,6 +309,12 @@
     "description": "A curated index of 72 resources for TypeSafe AI's Jev decision model—official guides, SDKs, cookbooks, and community projects—organized by use cases such as browser automation, coding agents, model routing, moderation, retrieval, and evaluation."
   },
   {
+    "id": "cand_1edab8a507e545bb",
+    "name": "jev-radar",
+    "url": "https://github.com/everyinfra/jev-radar",
+    "description": "An independently maintained field report and live monitor of the Jev ecosystem that re-scans GitHub, X, and five community directories every three hours, providing a 220+-case evidence-graded casebook, a machine-readable registry with A/B/C verification tiers, field-tested usage lessons, and a Jev API access guide."
+  },
+  {
     "id": "cand_3052996e048787af",
     "name": "jev-lab",
     "url": "https://github.com/gbesse/jev-lab",
@@ -381,6 +387,12 @@
     "description": "An evidence-backed community guide to TypeSafe’s Jev System One model, curating practical use cases, decision patterns, prompts, SDK quickstarts, API facts, limits, and integration paths for building typed classification, routing, scoring, verification, and gated automation."
   },
   {
+    "id": "cand_8e4b6b73a73227c6",
+    "name": "awesome-jev",
+    "url": "https://github.com/Ai-trainee/awesome-jev",
+    "description": "An awesome list doubling as an agent-loadable Skill package (with SKILL.md and a JSON index of 68 curated real-world cases across 9 scenarios) that documents practical uses of Jev—a lightweight millisecond-latency execution model paired with large models—so agents can proactively recommend concrete patterns like browser automation, trading, routing, and classification."
+  },
+  {
     "id": "cand_9100e3051350fe2d",
     "name": "awesome-jev",
     "url": "https://github.com/MrJev/awesome-jev",
@@ -415,6 +427,12 @@
     "name": "awesome-jev",
     "url": "https://github.com/daftAI2026/awesome-jev",
     "description": "Curated index of 356 TypeSafe Jev / System One ecosystem projects — official SDKs, agent skills, game and computer-use agents, MCP connectors, routers, libraries, and benchmarks — plus high-signal X posts and YouTube explainers, mirrored by a searchable site at awesomejev.cc."
+  },
+  {
+    "id": "cand_bdaf521c0d453770",
+    "name": "awesome-jev-robustness",
+    "url": "https://github.com/Yifan-Lan/awesome-jev-robustness",
+    "description": "An evidence ledger of 109 independent Jev 1.13.0 robustness tests, grouped by measured property with concrete results on calibration, consistency, wording, injected context, abstention, non-English inputs, and tooling for judging when its probabilities can be trusted."
   },
   {
     "id": "cand_c0811f0dbc0cce73",
