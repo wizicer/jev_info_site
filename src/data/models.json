@@ -96,6 +96,12 @@
     "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
   },
   {
+    "id": "cand_a4c8c4cfa748c62c",
+    "name": "jebadiah-9b-v0",
+    "url": "https://huggingface.co/jbrashear/jebadiah-9b-v0",
+    "description": "Jebadiah-9B-v0 is an Apache-2.0 LoRA adapter on Qwen3.5-9B-Base that answers typed decision questions (choice, yes/no \"noul\", rubric score) by emitting a calibrated probability distribution over option-label tokens instead of generating text, trained on 11,072 public questions and served via AINode's /v1/decide and /v1/systemone routes."
+  },
+  {
     "id": "cand_a7f574d4d7cce5b8",
     "name": "chessjev-minilm-v1",
     "url": "https://huggingface.co/gopalanj/chessjev-minilm-v1",
@@ -106,6 +112,12 @@
     "name": "Open-Jev-2B",
     "url": "https://huggingface.co/ZefanCai/Open-Jev-2B",
     "description": "A LoRA adapter and scalar decision head for Qwen3.5-2B that directly scores caller-supplied candidates and returns calibrated typed decisions—choice probabilities, yes/no probability, or ordinal expected values—without autoregressive generation, achieving 94.71% test and 86.02% OOD hard accuracy."
+  },
+  {
+    "id": "cand_c24e1eead0d04361",
+    "name": "hotdog-27B",
+    "url": "https://huggingface.co/opensporks/hotdog-27B",
+    "description": "hotdog-27B is a rank-16 LoRA adapter on Qwen3.8-27B that answers yes/no questions about text with a probability and binary decision read directly from logits, achieving 98.28% independent-test accuracy and strong calibration without generating reasoning."
   },
   {
     "id": "cand_c7b21da672a4c4e4",
@@ -142,5 +154,17 @@
     "name": "open-jev-deberta-v3-large",
     "url": "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large",
     "description": "A DeBERTa-v3-large encoder that maps one input state plus any number of typed questions (choice, ordered score, or yes/no) to calibrated per-question probability distributions in a single forward pass, reaching 0.854 in-domain accuracy at 0.022 ECE with zero structured-output errors."
+  },
+  {
+    "id": "cand_e176b24ea87ca6f2",
+    "name": "APUS-OpenJev-v1",
+    "url": "https://huggingface.co/apus-ailab/APUS-OpenJev-v1",
+    "description": "APUS-OpenJev-v1 is a family of Qwen3.5-based decision models (4B, 9B, 35B-A3B) that score candidate actions for browser agents and business workflows, offering selectable low/high compute depth, candidate-aware output projection, and English-Chinese support."
+  },
+  {
+    "id": "cand_fd5c946ffe17da35",
+    "name": "ballot-jev-0.5b",
+    "url": "https://huggingface.co/vigneshlabs/ballot-jev-0.5b",
+    "description": "ballot-jev-0.5b is a 506M-parameter CPU-first typed-decision model that returns calibrated full probability distributions for choice, true/false, and ordinal questions, and is structurally permutation-invariant—reordering options provably cannot change its answer."
   }
 ]
