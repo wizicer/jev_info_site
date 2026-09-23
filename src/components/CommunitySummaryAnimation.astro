@@ -1,30 +1,43 @@
+---
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const a = t.information.animation;
+---
+
 <div class="jev-comparison">
-  <div class="figure-credit"><span>by</span><a href="https://x.com/akshay_pachaar/status/2101309986156712025" target="_blank" rel="noreferrer">@akshay_pachaar ↗</a></div>
+  <div class="figure-credit"><span>{a.by}</span><a href="https://x.com/akshay_pachaar/status/2101309986156712025" target="_blank" rel="noreferrer">@akshay_pachaar ↗</a></div>
   <div class="comparison-grid">
     <article class="model-panel llm-panel">
-      <header class="panel-heading"><span class="step llm-step">1</span><h3>Traditional LLM</h3><span class="mode">SEQUENTIAL</span></header>
-      <div class="prompt"><i aria-hidden="true"></i><strong>“The deploy failed twice. Customers see 500s.”</strong></div>
+      <header class="panel-heading"><span class="step llm-step">{a.step1}</span><h3>{a.traditionalLlm}</h3><span class="mode">{a.modeSequential}</span></header>
+      <div class="prompt"><i aria-hidden="true"></i><strong>{a.promptSample}</strong></div>
       <div class="llm-process">
-        <div class="model-node llm-node"><strong>LLM</strong><span>GENERATE</span></div>
+        <div class="model-node llm-node"><strong>LLM</strong><span>{a.llmGenerate}</span></div>
         <svg class="llm-link" viewBox="0 0 90 50" preserveAspectRatio="none" aria-hidden="true">
           <defs><marker id="llm-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10Z" /></marker></defs>
           <path d="M2 25 H88" marker-end="url(#llm-arrow)" />
           <ellipse class="signal llm-signal" rx="6" ry="2.67"><animateMotion dur="8s" repeatCount="indefinite" path="M2 25 H88" keyPoints="0;1;1" keyTimes="0;.1;1" calcMode="linear"/><animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.01;.09;.1;1"/></ellipse>
         </svg>
         <div class="generation-box">
-          <b>ONE TOKEN FOLLOWS ANOTHER</b>
+          <b>{a.llmSub}</b>
           <code aria-label="Generated JSON output" data-typewriter><span class="json-line"></span><span class="json-line"></span><span class="json-line"></span><span class="json-line"></span><span class="json-line"></span><span class="json-line"></span><i class="cursor" aria-hidden="true"></i></code>
           <div class="token-progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         </div>
       </div>
-      <footer><span>Generate text first, then parse it.</span><strong>Generating…</strong></footer>
+      <footer><span>{a.llmFooter}</span><strong>{a.llmStatus}</strong></footer>
     </article>
 
     <article class="model-panel jev-panel">
-      <header class="panel-heading"><span class="step jev-step">2</span><h3>Jev</h3><span class="mode">PARALLEL</span></header>
-      <div class="prompt"><i aria-hidden="true"></i><strong>“The deploy failed twice. Customers see 500s.”</strong></div>
+      <header class="panel-heading"><span class="step jev-step">{a.step2}</span><h3>{a.jev}</h3><span class="mode">{a.modeParallel}</span></header>
+      <div class="prompt"><i aria-hidden="true"></i><strong>{a.promptSample}</strong></div>
       <div class="jev-process">
-        <div class="model-node jev-node"><strong>JEV</strong><span>EVALUATE</span></div>
+        <div class="model-node jev-node"><strong>JEV</strong><span>{a.jevEvaluate}</span></div>
         <svg class="branches" viewBox="0 0 180 216" preserveAspectRatio="none" aria-hidden="true">
           <defs><marker id="jev-arrow" viewBox="0 0 10 10" refX="14" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10Z" /></marker></defs>
           <path d="M2 108 C70 108 68 27 176 27" marker-end="url(#jev-arrow)"/><path d="M2 108 C70 108 68 81 176 81" marker-end="url(#jev-arrow)"/><path d="M2 108 C70 108 68 135 176 135" marker-end="url(#jev-arrow)"/><path d="M2 108 C70 108 68 189 176 189" marker-end="url(#jev-arrow)"/>
@@ -38,15 +51,15 @@
         </svg>
         <div class="decision-list"><div class="decision"><b>Urgency?</b><span class="waiting">waiting</span><strong>yes .96 · no .04</strong></div><div class="decision"><b>Owner?</b><span class="waiting">waiting</span><strong>eng .91 · other .09</strong></div><div class="decision"><b>Risk?</b><span class="waiting">waiting</span><strong>high .88 · lower .12</strong></div><div class="decision"><b>Complete?</b><span class="waiting">waiting</span><strong>no .93 · yes .07</strong></div></div>
       </div>
-      <footer><span>Each answer distribution sums to 1.</span><strong><i>Evaluating…</i><em>4 decisions ready</em></strong></footer>
+      <footer><span>{a.jevFooter}</span><strong><i>{a.jevEvaluating}</i><em>{a.jevReady}</em></strong></footer>
     </article>
   </div>
 
   <div class="time-panel">
-    <div class="time-heading"><strong>Relative completion time</strong><span>Conceptual animation, not benchmark data</span></div>
-    <div class="time-row llm-time"><b>LLM</b><div><i></i><em></em></div><span>generating</span></div>
-    <div class="time-row jev-time"><b>JEV</b><div><i></i><em></em></div><span><i>evaluating</i><em>complete</em></span></div>
-    <div class="time-scale"><span>start</span><span>complete</span></div>
+    <div class="time-heading"><strong>{a.timeHeading}</strong><span>{a.timeSub}</span></div>
+    <div class="time-row llm-time"><b>LLM</b><div><i></i><em></em></div><span>{a.timeGenerating}</span></div>
+    <div class="time-row jev-time"><b>JEV</b><div><i></i><em></em></div><span><i>{a.jevEvaluating}</i><em>{a.timeComplete}</em></span></div>
+    <div class="time-scale"><span>{a.timeStart}</span><span>{a.timeComplete}</span></div>
   </div>
 </div>
 

@@ -1,16 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocaleFromUrl, getLocalizedPath, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
 
-<BaseLayout title="404 — Page not found · jev.info" description="The requested page could not be found.">
+<BaseLayout title={`${t.notFound.eyebrow} — ${t.notFound.title} · jev.info`} description={t.notFound.description} locale={locale}>
   <main class="shell not-found">
     <div class="not-found-content">
-      <span class="status-code">404 Error</span>
-      <h1>Page not found</h1>
-      <p>The page you are looking for doesn't exist, has been removed, or was moved to another location.</p>
+      <span class="status-code">{t.notFound.eyebrow}</span>
+      <h1>{t.notFound.title}</h1>
+      <p>{t.notFound.description}</p>
       <div class="actions">
-        <a href="/" class="btn-primary">← Back to home</a>
-        <a href="/use-cases" class="btn-secondary">Browse use cases ↗</a>
+        <a href={getLocalizedPath('/', locale)} class="btn-primary">← {t.notFound.back}</a>
+        <a href={getLocalizedPath('/use-cases', locale)} class="btn-secondary">{t.home.browseAll} ↗</a>
       </div>
     </div>
   </main>

@@ -3,6 +3,8 @@ import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import CaseDialog from '../components/CaseDialog.astro';
 import { demos } from '../lib/content';
+import { getLocaleFromUrl, getLocalizedPath, stripLocaleFromPath, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
 import '../styles/global.css';
 
 interface Props {
@@ -10,6 +12,7 @@ interface Props {
   description?: string;
   image?: string;
   type?: 'website' | 'article';
+  locale?: Locale;
 }
 
 const {
@@ -17,21 +20,29 @@ const {
   description = 'Explore real-world Jev use cases across software, games, robotics, research, and more.',
   image = '/og-image.png',
   type = 'website',
+  locale: propLocale,
 } = Astro.props;
+
+const locale = propLocale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const socialImage = new URL(image, Astro.site);
 const totalDemos = demos.length;
+const cleanPath = stripLocaleFromPath(Astro.url.pathname);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f7f7f4" data-theme-color />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={new URL(getLocalizedPath(cleanPath, 'en'), Astro.site)} />
+    <link rel="alternate" hreflang="en" href={new URL(getLocalizedPath(cleanPath, 'en'), Astro.site)} />
+    <link rel="alternate" hreflang="zh" href={new URL(getLocalizedPath(cleanPath, 'zh'), Astro.site)} />
+    <link rel="alternate" hreflang="ja" href={new URL(getLocalizedPath(cleanPath, 'ja'), Astro.site)} />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%23171716%22/><text x=%2250%22 y=%2267%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>j</text></svg>" />
     <meta property="og:site_name" content="jev.info" />
@@ -53,24 +64,24 @@ const totalDemos = demos.length;
     </script>
   </head>
   <body>
-    <SiteHeader />
+    <SiteHeader locale={locale} />
     <slot />
-    <SiteFooter />
+    <SiteFooter locale={locale} />
 
-    <CaseDialog />
+    <CaseDialog locale={locale} />
 
     <dialog class="search-dialog" aria-labelledby="search-title">
       <div class="search-bar">
-        <h2 id="search-title">Search use cases</h2>
-        <button class="search-close" type="button" aria-label="Close search">×</button>
+        <h2 id="search-title">{t.searchDialog.title}</h2>
+        <button class="search-close" type="button" aria-label={t.searchDialog.closeAria}>×</button>
         <label>
-          <span class="sr-only">Search use cases</span>
-          <input type="search" placeholder="Search descriptions, authors, or categories…" autocomplete="off" />
+          <span class="sr-only">{t.searchDialog.title}</span>
+          <input type="search" placeholder={t.searchDialog.placeholder} autocomplete="off" />
         </label>
-        <p class="search-status">Search {totalDemos} use cases</p>
+        <p class="search-status">{t.searchDialog.statusCount(totalDemos)}</p>
       </div>
       <div class="search-results"></div>
-      <div class="search-empty">Start typing to find a use case.</div>
+      <div class="search-empty">{t.searchDialog.emptyPrompt}</div>
     </dialog>
 
     <script>

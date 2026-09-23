@@ -1,0 +1,214 @@
+{
+  "groups": {
+    "automation": {
+      "source": "Software Automation",
+      "name": "ソフトウェア自動化"
+    },
+    "interaction": {
+      "source": "Interaction",
+      "name": "インタラクション"
+    },
+    "gaming": {
+      "source": "Gaming Worlds",
+      "name": "ゲームワールド"
+    },
+    "physical": {
+      "source": "Physical Control",
+      "name": "フィジカル制御"
+    },
+    "creative": {
+      "source": "Creative",
+      "name": "クリエイティブ"
+    },
+    "parked": {
+      "source": "Parked",
+      "name": "保留・その他"
+    }
+  },
+  "categories": {
+    "browser_use": {
+      "source": {
+        "name": "Browser Use",
+        "description": "Browser automation, form filling, browser game interaction"
+      },
+      "name": "ブラウザ操作",
+      "description": "ブラウザ自動化、自動フォーム入力、Webゲーム対話"
+    },
+    "computer_use": {
+      "source": {
+        "name": "Computer Use",
+        "description": "Desktop and mobile UI clicks, system app scheduling, quick launcher"
+      },
+      "name": "コンピュータ操作",
+      "description": "デスクトップ・モバイル UI クリック、システムアプリ連携、クイック起動"
+    },
+    "workflow_guardrails": {
+      "source": {
+        "name": "Workflow Guardrails",
+        "description": "Process blocking, permission interception, database protection, code compliance guardrails"
+      },
+      "name": "ワークフローガードレール",
+      "description": "プロセス遮断、権限インターセプト、DB保護、コード規約ガードレール"
+    },
+    "financial": {
+      "source": {
+        "name": "Financial",
+        "description": "High-frequency quant trading, on-chain arbitrage, real-time risk control, market signals"
+      },
+      "name": "金融自動化",
+      "description": "高頻度クオンツ取引、オンチェーン裁定取引、リアルタイムリスク制御"
+    },
+    "pipeline_routing": {
+      "source": {
+        "name": "Pipeline Routing",
+        "description": "Fast/slow model routing, tool pre-calls, sub-agent dispatch"
+      },
+      "name": "パイプラインルーティング",
+      "description": "モデル使い分け、ツール先行呼び出し、サブエージェント振り分け"
+    },
+    "feed_cleanup": {
+      "source": {
+        "name": "Feed Cleanup",
+        "description": "Feed filtering, ad blocking, low-quality post hiding, sensitive content blur"
+      },
+      "name": "フィード浄化",
+      "description": "タイムライン浄化、広告ブロック、低品質投稿の非表示、センシティブ遮蔽"
+    },
+    "categorization": {
+      "source": {
+        "name": "Categorization",
+        "description": "Email triage, bookmark archiving, tweet intent detection, bill classification"
+      },
+      "name": "分類・整理",
+      "description": "メール仕分け、ブックマーク分類、ツイート意図抽出、請求書整理"
+    },
+    "ranking_evaluation": {
+      "source": {
+        "name": "Ranking & Evaluation",
+        "description": "Copy scoring, viral tweet prediction, PR review scoring, domain evaluation"
+      },
+      "name": "ランキング・評価",
+      "description": "文章品質スコアリング、バズ予測、PRレビュー評価、ドメイン選定評価"
+    },
+    "search": {
+      "source": {
+        "name": "Search",
+        "description": "Natural language DB query, semantic file search, contextual reranking"
+      },
+      "name": "検索",
+      "description": "自然言語DBクエリ、セマンティックファイル検索、文脈リランキング"
+    },
+    "input_assistance": {
+      "source": {
+        "name": "Input Assistance",
+        "description": "Voice turn detection, typing suggestion, edit prediction, realtime candidate recommendation"
+      },
+      "name": "入力アシスト",
+      "description": "音声対話制御、タイピング補完、入力予測、リアルタイム候補推薦"
+    },
+    "native_play": {
+      "source": {
+        "name": "Native Play",
+        "description": "Creating AI-native games and new genres rather than playing existing games"
+      },
+      "name": "ネイティブゲーム",
+      "description": "既存ゲームの操作にとどまらない、AIネイティブな新しいゲームプレイの創造"
+    },
+    "realtime_gameplay": {
+      "source": {
+        "name": "Realtime Gameplay",
+        "description": "Pacman, Mario, Tetris real-time control"
+      },
+      "name": "リアルタイム操作",
+      "description": "パックマン、マリオ、テトリス等のリアルタイムゲームプレイ"
+    },
+    "turn_strategy": {
+      "source": {
+        "name": "Turn Strategy",
+        "description": "Chess, card duels, turn-based board games"
+      },
+      "name": "ターン制・戦略",
+      "description": "チェス、カードバトル、ボードゲーム等のターン制意思決定"
+    },
+    "virtual_behaviors": {
+      "source": {
+        "name": "Virtual Behaviors",
+        "description": "Autonomous NPC behavior, multi-agent social simulations, crowd control"
+      },
+      "name": "仮想行動・NPC",
+      "description": "NPC自律行動、マルチエージェント社会シミュレーション、環境制御"
+    },
+    "robotic_arms": {
+      "source": {
+        "name": "Robotic Arms",
+        "description": "Arm grasping, zero-shot tool use, workpiece sorting"
+      },
+      "name": "ロボットアーム",
+      "description": "アーム把持制御、ゼロショットツール活用、部品仕分け"
+    },
+    "autonomous_transit": {
+      "source": {
+        "name": "Autonomous Transit",
+        "description": "Drone flight, autonomous driving path steering, AGV obstacle avoidance"
+      },
+      "name": "自律走行・搬送",
+      "description": "ドローン飛行制御、自動運転経路操舵、搬送車障害物回避"
+    },
+    "multimodal_generation": {
+      "source": {
+        "name": "Multimodal Generation",
+        "description": "Pixel-by-pixel drawing, music and score arrangement, real-time emotion color changes"
+      },
+      "name": "マルチモーダル生成",
+      "description": "ピクセル描画、音楽・楽譜アレンジ、感情に連動したリアルタイム演出"
+    },
+    "text_generation": {
+      "source": {
+        "name": "Text Generation",
+        "description": "Text generation"
+      },
+      "name": "テキスト生成",
+      "description": "テキスト生成"
+    },
+    "hacks": {
+      "source": {
+        "name": "Hacks",
+        "description": "Hacks like wiring decoders to decision models for chat, reverse captchas"
+      },
+      "name": "実験・ハック",
+      "description": "決定モデルへのデコーダ接続による対話生成や逆CAPTCHA等の実験的試み"
+    },
+    "benchmark": {
+      "source": {
+        "name": "Benchmark",
+        "description": "Benchmarking models and systems"
+      },
+      "name": "ベンチマーク",
+      "description": "モデルおよびシステムの性能・精度ベンチマークテスト"
+    },
+    "inference_engineering": {
+      "source": {
+        "name": "Inference Engineering",
+        "description": "Low-level engineering: inference, constrained decoding, lightweight adapter heads"
+      },
+      "name": "推論エンジニアリング",
+      "description": "推論最適化、制約付きデコード、軽量アダプター等の低レベル技術検証"
+    },
+    "tutorial": {
+      "source": {
+        "name": "Tutorials",
+        "description": "Tutorials with concrete use cases"
+      },
+      "name": "チュートリアル",
+      "description": "具体的なユースケースを想定した実践的な解説コンテンツ"
+    },
+    "uncategorized": {
+      "source": {
+        "name": "Uncategorized",
+        "description": "Items not yet categorized"
+      },
+      "name": "未分類",
+      "description": "既存のカテゴリーに分類されていない項目"
+    }
+  }
+}

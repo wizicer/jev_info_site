@@ -3,20 +3,50 @@ import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import modelsData from '../data/models.json';
 import metricsData from '../data/repository-metrics.json';
+import zhModels from '../data/translations/zh/models.json';
+import jaModels from '../data/translations/ja/models.json';
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 
 type Model = { id: string; name: string; url: string; description: string };
 type ModelMetrics = Record<string, { likes: number }>;
 const modelMetrics = (metricsData.snapshots?.at(-1)?.metrics ?? {}) as ModelMetrics;
-const models = [...(modelsData as Model[])].map((model) => ({ ...model, likes: modelMetrics[model.url]?.likes, displayUrl: model.url })).sort((a, b) => (b.likes ?? -1) - (a.likes ?? -1) || a.name.localeCompare(b.name, 'en'));
-const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
+
+const modelsTranslations: Record<string, Record<string, { description?: string }>> = {
+  zh: zhModels as Record<string, { description?: string }>,
+  ja: jaModels as Record<string, { description?: string }>,
+};
+
+const getModelDescription = (model: Model, loc: Locale) => {
+  if (loc === 'en') return model.description;
+  return modelsTranslations[loc]?.[model.id]?.description || model.description;
+};
+
+const models = [...(modelsData as Model[])]
+  .map((model) => ({
+    ...model,
+    description: getModelDescription(model, locale),
+    likes: modelMetrics[model.url]?.likes,
+    displayUrl: model.url,
+  }))
+  .sort((a, b) => (b.likes ?? -1) - (a.likes ?? -1) || a.name.localeCompare(b.name, 'en'));
+
+const formatCount = (value: number) => new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : locale === 'ja' ? 'ja-JP' : 'en').format(value);
 ---
 
-<BaseLayout title="Models — jev.info" description="Models in the Jev ecosystem.">
+<BaseLayout title={`${t.models.title} — jev.info`} description={t.models.description} locale={locale}>
   <main class="models-page shell">
     <header class="models-intro">
-      <p>MODEL CATALOG</p>
-      <h1>Models</h1>
-      <span>{models.length} models</span>
+      <p>{t.models.eyebrow}</p>
+      <h1>{t.models.title}</h1>
+      <span>{t.models.countSummary(models.length)}</span>
     </header>
     <section class="model-grid" aria-label="Models">
       {models.map((model) => (
@@ -26,25 +56,25 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
             <p class="line-clamp-3">{model.description}</p>
             <div class="model-card-footer">
               <span class="model-source">{model.displayUrl}</span>
-              {model.likes !== undefined && <span class="model-likes" title="Hugging Face likes"><Icon name="material-symbols:favorite-rounded" size={15} aria-hidden="true" />{formatCount(model.likes)}</span>}
+              {model.likes !== undefined && <span class="model-likes" title={t.models.likesLabel}><Icon name="material-symbols:favorite-rounded" size={15} aria-hidden="true" />{formatCount(model.likes)}</span>}
             </div>
           </button>
-          <a class="model-external" href={model.url} target="_blank" rel="noreferrer" aria-label={`Open ${model.name} on Hugging Face`}><Icon name="material-symbols:arrow-outward-rounded" size={18} aria-hidden="true" /></a>
+          <a class="model-external" href={model.url} target="_blank" rel="noreferrer" aria-label={t.models.openOnHfAria(model.name)}><Icon name="material-symbols:arrow-outward-rounded" size={18} aria-hidden="true" /></a>
         </article>
       ))}
     </section>
   </main>
 
   <dialog class="model-dialog" data-model-dialog aria-labelledby="model-dialog-title">
-    <button class="model-dialog-close" type="button" data-model-dialog-close aria-label="Close model details">×</button>
-    <p class="dialog-eyebrow">MODEL</p>
+    <button class="model-dialog-close" type="button" data-model-dialog-close aria-label={t.models.dialogCloseAria}>×</button>
+    <p class="dialog-eyebrow">{t.models.dialogEyebrow}</p>
     <h2 id="model-dialog-title" data-model-dialog-title></h2>
     <p class="model-dialog-description" data-model-dialog-description></p>
     <dl>
-      <div><dt>Source</dt><dd><a href="#" data-model-dialog-url target="_blank" rel="noreferrer"></a></dd></div>
-      <div data-model-dialog-likes-row><dt>Likes</dt><dd data-model-dialog-likes></dd></div>
+      <div><dt>{t.models.dialogSource}</dt><dd><a href="#" data-model-dialog-url target="_blank" rel="noreferrer"></a></dd></div>
+      <div data-model-dialog-likes-row><dt>{t.models.dialogLikes}</dt><dd data-model-dialog-likes></dd></div>
     </dl>
-    <a class="model-dialog-open" href="#" data-model-dialog-open target="_blank" rel="noreferrer">Open on Hugging Face ↗</a>
+    <a class="model-dialog-open" href="#" data-model-dialog-open target="_blank" rel="noreferrer">{t.models.openOnHf}</a>
   </dialog>
 
   <script>

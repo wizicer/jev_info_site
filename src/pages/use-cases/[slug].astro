@@ -2,8 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import UseCaseCard from '../../components/UseCaseCard.astro';
 import DetailContent from '../../components/DetailContent.astro';
-import { demos, demosForCategory, demosForGroup, getDemoContext, groups } from '../../lib/content';
+import { demos, demosForCategory, demosForGroup, getDemoContext, getLocalizedDemo, getLocalizedGroup, groups } from '../../lib/content';
+import { getLocaleFromUrl, getLocalizedPath, useTranslations } from '../../i18n/utils';
 import type { Demo, Group } from '../../types';
+import type { Locale } from '../../i18n/ui';
 
 export function getStaticPaths() {
   return [
@@ -12,46 +14,56 @@ export function getStaticPaths() {
   ];
 }
 
-const props = Astro.props as { kind: 'group'; group: Group } | { kind: 'demo'; demo: Demo };
+interface Props {
+  kind: 'group' | 'demo';
+  group?: Group;
+  demo?: Demo;
+  locale?: Locale;
+}
+
+const props = Astro.props as Props;
+const locale = props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 const isGroup = props.kind === 'group';
-const group = isGroup ? props.group : undefined;
-const demo = !isGroup ? props.demo : undefined;
-const context = demo ? getDemoContext(demo) : undefined;
-const title = group ? `${group.enName} use cases — jev.info` : `Use case ${demo?.id} — jev.info`;
-const description = demo?.description ?? `Explore ${group?.enName} use cases built with Jev.`;
+const group = isGroup && props.group ? getLocalizedGroup(props.group, locale) : undefined;
+const demo = !isGroup && props.demo ? getLocalizedDemo(props.demo, locale) : undefined;
+const context = demo ? getDemoContext(demo, locale) : undefined;
+const groupName = group?.name ?? group?.enName;
+const title = group ? `${groupName} — ${t.useCases.title} — jev.info` : `Use case ${demo?.id} — jev.info`;
+const description = demo?.description ?? `Explore ${groupName} use cases built with Jev.`;
 const visibleCategories = group
-  ? group.categories.filter((category) => demosForCategory(category.code).length > 0)
+  ? group.categories.filter((category) => demosForCategory(category.code, locale).length > 0)
   : [];
 ---
 
-<BaseLayout title={title} description={description} image={demo?.cover} type={demo ? 'article' : 'website'}>
+<BaseLayout title={title} description={description} image={demo?.cover} type={demo ? 'article' : 'website'} locale={locale}>
   {group ? (
     <main class="shell group-page">
       <header class="group-header">
-        <a href="/use-cases">← All use cases</a>
-        <p>{demosForGroup(group).length} examples</p>
-        <h1>{group.enName}</h1>
+        <a href={getLocalizedPath('/use-cases', locale)}>{t.useCases.backToAll}</a>
+        <p>{t.useCases.examplesCount(demosForGroup(group, locale).length)}</p>
+        <h1>{groupName}</h1>
       </header>
       <nav class="category-nav" aria-label="Categories in this group">
         {visibleCategories.map((category) => (
-          <a href={`/use-cases/${group.code}#category-${category.code}`}>{category.enName}</a>
+          <a href={`#category-${category.code}`}>{category.name}</a>
         ))}
       </nav>
       {visibleCategories.map((category) => {
-        const items = demosForCategory(category.code);
+        const items = demosForCategory(category.code, locale);
         return items.length > 0 && (
           <section class="category-section" aria-labelledby={`category-${category.code}`}>
             <div class="category-heading">
-              <h2 id={`category-${category.code}`}>{category.enName}</h2>
+              <h2 id={`category-${category.code}`}>{category.name}</h2>
               <span>{items.length}</span>
             </div>
-            <div class="category-grid">{items.map((item) => <UseCaseCard demo={item} />)}</div>
+            <div class="category-grid">{items.map((item) => <UseCaseCard demo={item} locale={locale} />)}</div>
           </section>
         );
       })}
     </main>
   ) : demo ? (
-    <main><DetailContent demo={demo} category={context?.category} group={context?.group} /></main>
+    <main><DetailContent demo={demo} category={context?.category} group={context?.group} locale={locale} /></main>
   ) : null}
 </BaseLayout>
 

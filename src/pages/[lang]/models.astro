@@ -1,0 +1,9 @@
+---
+import ModelsPage from '../models.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'zh' } }, { params: { lang: 'ja' } }];
+}
+---
+
+<ModelsPage />

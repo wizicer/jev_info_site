@@ -1,20 +1,29 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
 
-<BaseLayout title="Sponsor — jev.info" description="Support the jev.info community index.">
+<BaseLayout title={`${t.sponsor.title} — jev.info`} description={t.sponsor.description} locale={locale}>
   <main class="shell policy-page">
-    <p class="eyebrow">Project</p>
-    <h1>Sponsor jev.info</h1>
-    <p class="lede">jev.info is a community index. Sponsorship options are being prepared.</p>
+    <p class="eyebrow">{t.sponsor.eyebrow}</p>
+    <h1>{t.sponsor.title}</h1>
+    <p class="lede">{t.sponsor.lede}</p>
     <section>
-      <h2>What support will fund</h2>
-      <p>Hosting, data maintenance, media delivery, translation, and the ongoing work required to keep the use case archive accurate and accessible.</p>
+      <h2>{t.sponsor.fundTitle}</h2>
+      <p>{t.sponsor.fundDesc}</p>
     </section>
     <section>
-      <h2>Get in touch</h2>
-      <p>Until a sponsorship program is available, you can open a contact request in the project repository.</p>
-      <a class="action" href="https://github.com/wizicer/jev_info_site/issues/new?title=%5BSponsor%5D%20Sponsorship%20enquiry&body=Please%20tell%20us%20a%20little%20about%20your%20organisation%20and%20how%20you%20would%20like%20to%20support%20jev.info." target="_blank" rel="noreferrer">Contact the project ↗</a>
+      <h2>{t.sponsor.contactTitle}</h2>
+      <p>{t.sponsor.contactDesc}</p>
+      <a class="action" href="https://github.com/wizicer/jev_info_site/issues/new?title=%5BSponsor%5D%20Sponsorship%20enquiry&body=Please%20tell%20us%20a%20little%20about%20your%20organisation%20and%20how%20you%20would%20like%20to%20support%20jev.info." target="_blank" rel="noreferrer">{t.sponsor.contactAction}</a>
     </section>
   </main>
 </BaseLayout>

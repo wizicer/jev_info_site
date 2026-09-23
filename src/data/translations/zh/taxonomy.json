@@ -1,0 +1,214 @@
+{
+  "groups": {
+    "automation": {
+      "source": "Software Automation",
+      "name": "软件与工作流"
+    },
+    "interaction": {
+      "source": "Interaction",
+      "name": "人机交互"
+    },
+    "gaming": {
+      "source": "Gaming Worlds",
+      "name": "游戏世界"
+    },
+    "physical": {
+      "source": "Physical Control",
+      "name": "现实与机载控制"
+    },
+    "creative": {
+      "source": "Creative",
+      "name": "创意与极限玩法"
+    },
+    "parked": {
+      "source": "Parked",
+      "name": "待分类"
+    }
+  },
+  "categories": {
+    "browser_use": {
+      "source": {
+        "name": "Browser Use",
+        "description": "网页自动化、自动填表、网页游戏交互"
+      },
+      "name": "网页自动化",
+      "description": "网页自动化、自动填表、网页游戏交互"
+    },
+    "computer_use": {
+      "source": {
+        "name": "Computer Use",
+        "description": "桌面与移动端 UI 点击、系统应用调度、快捷启动"
+      },
+      "name": "计算机操作",
+      "description": "桌面与移动端 UI 点击、系统应用调度、快捷启动"
+    },
+    "workflow_guardrails": {
+      "source": {
+        "name": "Workflow Guardrails",
+        "description": "系统流程阻断、权限拦截、数据库保护、代码合规门禁"
+      },
+      "name": "工作流门禁",
+      "description": "系统流程阻断、权限拦截、数据库保护、代码合规门禁"
+    },
+    "financial": {
+      "source": {
+        "name": "Financial",
+        "description": "高频量化交易、链上套利、实时风控拦截、市场信号转执行"
+      },
+      "name": "金融自动化",
+      "description": "高频量化交易、链上套利、实时风控拦截、市场信号转执行"
+    },
+    "pipeline_routing": {
+      "source": {
+        "name": "Pipeline Routing",
+        "description": "快慢模型分流、工具预调用、子智能体派发"
+      },
+      "name": "管线路由",
+      "description": "快慢模型分流、工具预调用、子智能体派发"
+    },
+    "feed_cleanup": {
+      "source": {
+        "name": "Feed Cleanup",
+        "description": "信息流净化、屏蔽广告、隐藏低质水帖、敏感内容遮盖"
+      },
+      "name": "信息流净化",
+      "description": "信息流净化、屏蔽广告、隐藏低质水帖、敏感内容遮盖"
+    },
+    "categorization": {
+      "source": {
+        "name": "Categorization",
+        "description": "邮件分类、书签归档、推文意图识别、账单清洗归类"
+      },
+      "name": "分类整理",
+      "description": "邮件分类、书签归档、推文意图识别、账单清洗归类"
+    },
+    "ranking_evaluation": {
+      "source": {
+        "name": "Ranking & Evaluation",
+        "description": "文案质量打分、推文爆款概率评分、代码 PR 审核打分、候选域名优劣评判"
+      },
+      "name": "排序与评估",
+      "description": "文案质量打分、推文爆款概率评分、代码 PR 审核打分、候选域名优劣评判"
+    },
+    "search": {
+      "source": {
+        "name": "Search",
+        "description": "自然语言查库、按语义找文件、上下文检索重排"
+      },
+      "name": "搜索",
+      "description": "自然语言查库、按语义找文件、上下文检索重排"
+    },
+    "input_assistance": {
+      "source": {
+        "name": "Input Assistance",
+        "description": "语音控制与轮替检测、键盘输入建议、编辑预测、实时候选推荐、甚至包括图像识别控制"
+      },
+      "name": "输入辅助",
+      "description": "语音控制与轮替检测、键盘输入建议、编辑预测、实时候选推荐、甚至包括图像识别控制"
+    },
+    "native_play": {
+      "source": {
+        "name": "Native Play",
+        "description": "利用 AI 能力创造全新的游戏品类或原生玩法，而不是操控已有游戏"
+      },
+      "name": "原生游戏",
+      "description": "利用 AI 能力创造全新的游戏品类或原生玩法，而不是操控已有游戏"
+    },
+    "realtime_gameplay": {
+      "source": {
+        "name": "Realtime Gameplay",
+        "description": "吃豆人、超级马里奥、俄罗斯方块等即时操控"
+      },
+      "name": "即时游戏",
+      "description": "吃豆人、超级马里奥、俄罗斯方块等即时操控"
+    },
+    "turn_strategy": {
+      "source": {
+        "name": "Turn Strategy",
+        "description": "下棋、卡牌对决、大富翁式回合制决策"
+      },
+      "name": "回合与策略",
+      "description": "下棋、卡牌对决、大富翁式回合制决策"
+    },
+    "virtual_behaviors": {
+      "source": {
+        "name": "Virtual Behaviors",
+        "description": "NPC 自主行为、多智能体社会模拟、环境群控"
+      },
+      "name": "虚拟行为",
+      "description": "NPC 自主行为、多智能体社会模拟、环境群控"
+    },
+    "robotic_arms": {
+      "source": {
+        "name": "Robotic Arms",
+        "description": "机械臂抓取、零样本工具利用、工件分类"
+      },
+      "name": "机械臂",
+      "description": "机械臂抓取、零样本工具利用、工件分类"
+    },
+    "autonomous_transit": {
+      "source": {
+        "name": "Autonomous Transit",
+        "description": "无人机飞控、自驾车路径转向、运载车避障"
+      },
+      "name": "自主运载",
+      "description": "无人机飞控、自驾车路径转向、运载车避障"
+    },
+    "multimodal_generation": {
+      "source": {
+        "name": "Multimodal Generation",
+        "description": "逐像素绘图、音乐与五线谱编排、实时情绪变色"
+      },
+      "name": "多模态生成",
+      "description": "逐像素绘图、音乐与五线谱编排、实时情绪变色"
+    },
+    "text_generation": {
+      "source": {
+        "name": "Text Generation",
+        "description": "文本生成"
+      },
+      "name": "文本生成",
+      "description": "文本生成"
+    },
+    "hacks": {
+      "source": {
+        "name": "Hacks",
+        "description": "给决策模型强行接解码器以生成对话、反向验证码等黑客实验"
+      },
+      "name": "黑客实验",
+      "description": "给决策模型强行接解码器以生成对话、反向验证码等黑客实验"
+    },
+    "benchmark": {
+      "source": {
+        "name": "Benchmark",
+        "description": "模型与系统能力的基准测试"
+      },
+      "name": "基准测试",
+      "description": "模型与系统能力的基准测试"
+    },
+    "inference_engineering": {
+      "source": {
+        "name": "Inference Engineering",
+        "description": "模型推理、约束解码、轻量适配头与决策专用引擎等底层工程实验"
+      },
+      "name": "推理工程",
+      "description": "模型推理、约束解码、轻量适配头与决策专用引擎等底层工程实验"
+    },
+    "tutorial": {
+      "source": {
+        "name": "Tutorials",
+        "description": "具备具体应用场景的教学内容（而不仅是介绍卖点，或单纯说明如何申请账号 / 配置 API Key / 安装 SDK）"
+      },
+      "name": "教程",
+      "description": "具备具体应用场景的教学内容（而不仅是介绍卖点，或单纯说明如何申请账号 / 配置 API Key / 安装 SDK）"
+    },
+    "uncategorized": {
+      "source": {
+        "name": "Uncategorized",
+        "description": "暂时无法归入现有分类的项目"
+      },
+      "name": "未分类",
+      "description": "暂时无法归入现有分类的项目"
+    }
+  }
+}

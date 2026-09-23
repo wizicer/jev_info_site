@@ -1,15 +1,24 @@
 ---
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
 
 <dialog class="case-dialog" aria-labelledby="case-dialog-description">
-  <button class="dialog-close" type="button" aria-label="Close details">×</button>
+  <button class="dialog-close" type="button" aria-label={t.useCases.closeDetails}>×</button>
   <article class="dialog-layout">
-    <section class="dialog-primary" aria-label="Original post">
-      <div class="dialog-primary-label">Original post</div>
+    <section class="dialog-primary" aria-label={t.useCases.originalPost}>
+      <div class="dialog-primary-label">{t.useCases.originalPost}</div>
       <div class="tweet-status-bar" role="status">
         <span class="tweet-status-spinner" aria-hidden="true"></span>
-        <span class="tweet-status-text">Loading original post…</span>
-        <a class="tweet-status-link" href="#" target="_blank" rel="noreferrer">Open on X ↗</a>
+        <span class="tweet-status-text">{t.useCases.loadingPost}</span>
+        <a class="tweet-status-link" href="#" target="_blank" rel="noreferrer">{t.useCases.openOnX}</a>
       </div>
       <div class="dialog-media">
         <div class="dialog-placeholder">jev</div>
@@ -25,8 +34,8 @@
           <div><strong></strong><span></span></div>
         </div>
         <dl>
-          <div><dt>Published</dt><dd class="dialog-date"></dd></div>
-          <div><dt>Source</dt><dd><a class="dialog-source" href="#" target="_blank" rel="noreferrer">View original post ↗</a></dd></div>
+          <div><dt>{t.useCases.published}</dt><dd class="dialog-date"></dd></div>
+          <div><dt>{t.useCases.source}</dt><dd><a class="dialog-source" href="#" target="_blank" rel="noreferrer">{t.useCases.viewOriginalPost}</a></dd></div>
         </dl>
       </div>
     </aside>

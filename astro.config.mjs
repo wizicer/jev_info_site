@@ -10,6 +10,14 @@ export default defineConfig({
   integrations: [icon(), sitemap()],
   site: 'https://jev.info',
   output: 'static',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh', 'ja'],
+    routing: {
+      prefixDefaultLocale: false,
+      redirectToDefaultLocale: false,
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },

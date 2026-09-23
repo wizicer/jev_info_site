@@ -62,11 +62,24 @@ function normalizeDemo(item: CompactItem, cats: Record<string, [string, string, 
   };
 }
 
+function getLang(): string {
+  if (typeof document !== 'undefined') {
+    return document.documentElement.lang || 'en';
+  }
+  return 'en';
+}
+
+function getPrefix(): string {
+  const lang = getLang();
+  return lang === 'en' ? '' : `/${lang}`;
+}
+
 let demosPromise: Promise<{ demos: ClientDemo[]; demoMap: Map<string, ClientDemo> }> | null = null;
 
 function loadDemos(): Promise<{ demos: ClientDemo[]; demoMap: Map<string, ClientDemo> }> {
   if (!demosPromise) {
-    demosPromise = fetch('/cases-data.json')
+    const prefix = getPrefix();
+    demosPromise = fetch(`${prefix}/cases-data.json`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load cases data');
         return res.json() as Promise<CompactPayload>;
@@ -282,7 +295,9 @@ export function initSite() {
     activeDemoId = null;
     body.classList.remove('no-scroll');
     resumeVisiblePreviews();
-    if (restoreHistory && location.pathname.startsWith('/use-cases/')) history.pushState({}, '', previousUrl);
+    const prefix = getPrefix();
+    const casePathPrefix = `${prefix}/use-cases/`;
+    if (restoreHistory && location.pathname.startsWith(casePathPrefix)) history.pushState({}, '', previousUrl);
   };
 
   const setTweetStatus = (state: 'loading' | 'failed' | 'loaded', demo?: ClientDemo | Demo) => {
@@ -291,17 +306,18 @@ export function initSite() {
     if (!statusBar) return;
     const statusText = statusBar.querySelector<HTMLElement>('.tweet-status-text');
     const statusLink = statusBar.querySelector<HTMLAnchorElement>('.tweet-status-link');
+    const lang = getLang();
 
     if (state === 'loading') {
       statusBar.classList.remove('is-failed', 'is-loaded');
       statusBar.hidden = false;
-      if (statusText) statusText.textContent = 'Loading original post…';
+      if (statusText) statusText.textContent = lang === 'zh' ? '正在加载原帖…' : lang === 'ja' ? '元の投稿を読み込み中…' : 'Loading original post…';
       if (statusLink && demo) statusLink.href = demo.url;
     } else if (state === 'failed') {
       statusBar.classList.remove('is-loaded');
       statusBar.classList.add('is-failed');
       statusBar.hidden = false;
-      if (statusText) statusText.textContent = 'Original post unavailable · Showing preview';
+      if (statusText) statusText.textContent = lang === 'zh' ? '原帖暂时无法显示 · 展示预览' : lang === 'ja' ? '元の投稿を表示できません · プレビューを表示中' : 'Original post unavailable · Showing preview';
       if (statusLink && demo) statusLink.href = demo.url;
     } else if (state === 'loaded') {
       statusBar.classList.remove('is-failed');
@@ -325,19 +341,22 @@ export function initSite() {
     if (!caseDialog) return;
     previousUrl = push ? location.pathname : previousUrl;
     activeDemoId = demo.id;
+    const lang = getLang();
+    const prefix = getPrefix();
+    const dateLocale = lang === 'zh' ? 'zh-CN' : lang === 'ja' ? 'ja-JP' : 'en';
 
     caseDialog.querySelector<HTMLElement>('.dialog-description')!.textContent = demo.description;
     caseDialog.querySelector<HTMLImageElement>('.dialog-author img')!.src = demo.author.avatarUrl;
     caseDialog.querySelector<HTMLElement>('.dialog-author strong')!.textContent = demo.author.name;
     caseDialog.querySelector<HTMLElement>('.dialog-author span')!.textContent = `@${demo.author.handle}`;
-    caseDialog.querySelector<HTMLElement>('.dialog-date')!.textContent = new Intl.DateTimeFormat('en', { dateStyle: 'long' }).format(new Date(demo.createdAt));
+    caseDialog.querySelector<HTMLElement>('.dialog-date')!.textContent = new Intl.DateTimeFormat(dateLocale, { dateStyle: 'long' }).format(new Date(demo.createdAt));
     const source = caseDialog.querySelector<HTMLAnchorElement>('.dialog-source')!;
     source.href = demo.url;
     const taxonomy = caseDialog.querySelector<HTMLElement>('.dialog-taxonomy')!;
     taxonomy.replaceChildren();
     if (demo.groupName && demo.groupCode) {
       const groupLink = document.createElement('a');
-      groupLink.href = `/use-cases/${demo.groupCode}`;
+      groupLink.href = `${prefix}/use-cases/${demo.groupCode}`;
       groupLink.textContent = demo.groupName;
       const separator = document.createElement('span');
       separator.textContent = '/';
@@ -360,7 +379,7 @@ export function initSite() {
     if (!caseDialog.open) caseDialog.showModal();
     body.classList.add('no-scroll');
     document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => video.pause());
-    if (push) history.pushState({ caseId: demo.id }, '', `/use-cases/${demo.id}`);
+    if (push) history.pushState({ caseId: demo.id }, '', `${prefix}/use-cases/${demo.id}`);
     loadTweet(demo, embed);
   };
 
@@ -449,9 +468,11 @@ export function initSite() {
       }
       document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => video.pause());
       const descEl = caseDialog?.querySelector<HTMLElement>('.dialog-description');
-      if (descEl) descEl.textContent = 'Loading use case details…';
+      const lang = getLang();
+      if (descEl) descEl.textContent = lang === 'zh' ? '正在加载用例详情…' : lang === 'ja' ? '事例の詳細を読み込み中…' : 'Loading use case details…';
       const embedEl = caseDialog?.querySelector<HTMLElement>('.dialog-embed');
-      if (embedEl) embedEl.innerHTML = '<div class="embed-loading" role="status"><span aria-hidden="true"></span><strong>Loading…</strong></div>';
+      const loadingLabel = lang === 'zh' ? '正在加载…' : lang === 'ja' ? '読み込み中…' : 'Loading…';
+      if (embedEl) embedEl.innerHTML = `<div class="embed-loading" role="status"><span aria-hidden="true"></span><strong>${loadingLabel}</strong></div>`;
     }
 
     try {
@@ -474,7 +495,9 @@ export function initSite() {
   caseDialog?.addEventListener('cancel', (event) => { event.preventDefault(); closeCase(); });
 
   addEventListener('popstate', async () => {
-    const match = location.pathname.match(/^\/use-cases\/(\d+)$/);
+    const prefix = getPrefix();
+    const regex = new RegExp(`^${prefix}/use-cases/(\\d+)$`);
+    const match = location.pathname.match(regex);
     if (match) {
       const { demoMap } = await loadDemos();
       const demo = demoMap.get(match[1]);
@@ -527,9 +550,10 @@ export function initSite() {
   const searchStatus = searchDialog?.querySelector<HTMLElement>('.search-status');
   const searchEmpty = searchDialog?.querySelector<HTMLElement>('.search-empty');
   const createSearchResult = (demo: ClientDemo) => {
+    const prefix = getPrefix();
     const link = document.createElement('a');
     link.className = 'search-result';
-    link.href = `/use-cases/${demo.id}`;
+    link.href = `${prefix}/use-cases/${demo.id}`;
     link.dataset.caseLink = '';
     link.dataset.id = demo.id;
 
@@ -579,18 +603,27 @@ export function initSite() {
   input?.addEventListener('input', async () => {
     if (!searchDialog || !searchResults || !searchStatus || !searchEmpty) return;
     const query = input.value.trim().toLowerCase();
+    const lang = getLang();
     searchResults.querySelectorAll<HTMLVideoElement>('video').forEach((video) => videoObserver.unobserve(video));
 
     if (!query) {
       searchResults.replaceChildren();
       const { demos } = await loadDemos();
-      searchStatus.textContent = `Search ${demos.length || 'all'} use cases`;
-      searchEmpty.textContent = 'Start typing to find a use case.';
+      if (lang === 'zh') {
+        searchStatus.textContent = `搜索 ${demos.length || '全部'} 个用例`;
+        searchEmpty.textContent = '输入关键词以查找用例。';
+      } else if (lang === 'ja') {
+        searchStatus.textContent = `${demos.length || 'すべての'}事例を検索`;
+        searchEmpty.textContent = 'キーワードを入力して事例を検索します。';
+      } else {
+        searchStatus.textContent = `Search ${demos.length || 'all'} use cases`;
+        searchEmpty.textContent = 'Start typing to find a use case.';
+      }
       searchEmpty.hidden = false;
       return;
     }
 
-    searchStatus.textContent = 'Searching…';
+    searchStatus.textContent = lang === 'zh' ? '搜索中…' : lang === 'ja' ? '検索中…' : 'Searching…';
     const { demos } = await loadDemos();
     if (input.value.trim().toLowerCase() !== query) return;
 
@@ -600,8 +633,16 @@ export function initSite() {
     const resultLimit = matchMedia('(max-width: 760px)').matches ? 12 : 16;
     const visible = matches.slice(0, resultLimit);
     searchResults.replaceChildren(...visible.map(createSearchResult));
-    searchStatus.textContent = `${matches.length} use case${matches.length === 1 ? '' : 's'}${matches.length > visible.length ? ` · showing first ${visible.length}` : ''}`;
-    searchEmpty.textContent = 'No use cases found.';
+    if (lang === 'zh') {
+      searchStatus.textContent = `找到 ${matches.length} 个用例${matches.length > visible.length ? ` · 显示前 ${visible.length} 个` : ''}`;
+      searchEmpty.textContent = '未找到匹配的用例。';
+    } else if (lang === 'ja') {
+      searchStatus.textContent = `${matches.length} 件の事例が見つかりました${matches.length > visible.length ? ` · 最初の ${visible.length} 件を表示` : ''}`;
+      searchEmpty.textContent = '該当する事例が見つかりませんでした。';
+    } else {
+      searchStatus.textContent = `${matches.length} use case${matches.length === 1 ? '' : 's'}${matches.length > visible.length ? ` · showing first ${visible.length}` : ''}`;
+      searchEmpty.textContent = 'No use cases found.';
+    }
     searchEmpty.hidden = visible.length !== 0;
   });
 

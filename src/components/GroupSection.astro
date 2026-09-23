@@ -1,21 +1,35 @@
 ---
 import UseCaseCard from './UseCaseCard.astro';
 import type { Demo, Group } from '../types';
-const { group, demos } = Astro.props as { group: Group; demos: Demo[] };
+import { getLocaleFromUrl, getLocalizedPath, useTranslations } from '../i18n/utils';
+import { getLocalizedGroup } from '../lib/content';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  group: Group;
+  demos: Demo[];
+  locale?: Locale;
+}
+
+const { group: rawGroup, demos, locale: propLocale } = Astro.props;
+const locale = propLocale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const group = getLocalizedGroup(rawGroup, locale);
+const groupUrl = getLocalizedPath(`/use-cases/${group.code}`, locale);
 ---
 
 <section class="group-section" aria-labelledby={`group-${group.code}`}>
   <div class="section-heading">
     <div>
-      <span class="section-index">{group.categories.length} subcategories · {demos.length} use cases</span>
-      <h2 id={`group-${group.code}`}><a href={`/use-cases/${group.code}`}>{group.enName}</a></h2>
+      <span class="section-index">{t.useCases.groupStats(group.categories.length, demos.length)}</span>
+      <h2 id={`group-${group.code}`}><a href={groupUrl}>{group.name}</a></h2>
     </div>
-    <a href={`/use-cases/${group.code}`}>
-      View all <span aria-hidden="true">↗</span>
+    <a href={groupUrl}>
+      {t.useCases.viewAll} <span aria-hidden="true">↗</span>
     </a>
   </div>
   <div class="case-grid preview-grid">
-    {demos.slice(0, 4).map((demo, index) => <UseCaseCard demo={demo} eager={index < 2} />)}
+    {demos.slice(0, 4).map((demo, index) => <UseCaseCard demo={demo} eager={index < 2} locale={locale} />)}
   </div>
 </section>
 

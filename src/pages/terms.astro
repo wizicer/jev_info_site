@@ -1,32 +1,41 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
 
-<BaseLayout title="Terms & Conditions — jev.info" description="Terms and conditions for using jev.info.">
+<BaseLayout title={`${t.terms.title} — jev.info`} description={t.terms.description} locale={locale}>
   <main class="shell policy-page">
-    <p class="eyebrow">Last updated · September 19, 2026</p>
-    <h1>Terms & Conditions</h1>
-    <p class="lede">These interim terms describe the basic conditions for using jev.info while the project is under development.</p>
+    <p class="eyebrow">{t.terms.eyebrow}</p>
+    <h1>{t.terms.title}</h1>
+    <p class="lede">{t.terms.lede}</p>
     <section>
-      <h2>Community project</h2>
-      <p>jev.info is a community index and is not an official Jev website. Information is provided for reference and may change as the underlying projects evolve.</p>
+      <h2>{t.terms.communityTitle}</h2>
+      <p>{t.terms.communityDesc}</p>
     </section>
     <section>
-      <h2>Content and attribution</h2>
-      <p>Posts, media, names, trademarks, and other third-party material remain the property of their respective owners. jev.info links to original sources whenever available.</p>
+      <h2>{t.terms.contentTitle}</h2>
+      <p>{t.terms.contentDesc}</p>
     </section>
     <section>
-      <h2>External links</h2>
-      <p>The site links to third-party services, including GitHub and X. We do not control their availability, content, or privacy practices.</p>
+      <h2>{t.terms.externalTitle}</h2>
+      <p>{t.terms.externalDesc}</p>
     </section>
     <section>
-      <h2>No warranty</h2>
-      <p>The site is provided as-is without warranties of accuracy, completeness, availability, or fitness for a particular purpose.</p>
+      <h2>{t.terms.warrantyTitle}</h2>
+      <p>{t.terms.warrantyDesc}</p>
     </section>
     <section>
-      <h2>Changes and questions</h2>
-      <p>These terms may be updated as the project develops. Questions can be submitted through the project’s GitHub issue tracker.</p>
-      <a class="action" href="https://github.com/wizicer/jev_info_site/issues/new?title=%5BContact%5D%20Terms%20question&body=Please%20describe%20your%20question%20about%20the%20jev.info%20terms." target="_blank" rel="noreferrer">Ask a question ↗</a>
+      <h2>{t.terms.changesTitle}</h2>
+      <p>{t.terms.changesDesc}</p>
+      <a class="action" href="https://github.com/wizicer/jev_info_site/issues/new?title=%5BContact%5D%20Terms%20question&body=Please%20describe%20your%20question%20about%20the%20jev.info%20terms." target="_blank" rel="noreferrer">{t.terms.askAction}</a>
     </section>
   </main>
 </BaseLayout>

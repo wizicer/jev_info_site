@@ -1,0 +1,9 @@
+---
+import InformationPage from '../information.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'zh' } }, { params: { lang: 'ja' } }];
+}
+---
+
+<InformationPage />

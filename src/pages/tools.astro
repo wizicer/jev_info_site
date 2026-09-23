@@ -3,49 +3,77 @@ import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import toolsData from '../data/tools.json';
 import metricsData from '../data/repository-metrics.json';
+import zhTools from '../data/translations/zh/tools.json';
+import jaTools from '../data/translations/ja/tools.json';
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 
 type Tool = { id: string; name: string; url: string; description: string; stars: number; forks: number };
 type ToolMetrics = Record<string, { stars: number; forks: number }>;
 const toolMetrics = (metricsData.snapshots?.at(-1)?.metrics ?? {}) as ToolMetrics;
-const tools = (toolsData as Tool[]).map((tool) => ({ ...tool, ...toolMetrics[tool.url] })).sort((a, b) => b.stars - a.stars || b.forks - a.forks || a.name.localeCompare(b.name, 'en'));
+
+const toolsTranslations: Record<string, Record<string, { description?: string }>> = {
+  zh: zhTools as Record<string, { description?: string }>,
+  ja: jaTools as Record<string, { description?: string }>,
+};
+
+const getToolDescription = (tool: Tool, loc: Locale) => {
+  if (loc === 'en') return tool.description;
+  return toolsTranslations[loc]?.[tool.id]?.description || tool.description;
+};
+
+const tools = (toolsData as Tool[]).map((tool) => ({
+  ...tool,
+  ...toolMetrics[tool.url],
+  description: getToolDescription(tool, locale),
+})).sort((a, b) => b.stars - a.stars || b.forks - a.forks || a.name.localeCompare(b.name, 'en'));
+
 const pageSize = 30;
 const initialTools = tools.slice(0, pageSize);
-const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
+const formatCount = (value: number) => new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : locale === 'ja' ? 'ja-JP' : 'en').format(value);
+const toolsEndpoint = locale === 'en' ? '/tools-data.json' : `/${locale}/tools-data.json`;
 ---
 
-<BaseLayout title="Tools — jev.info" description="Open-source tools built with Jev, ranked by GitHub stars and forks.">
+<BaseLayout title={`${t.tools.title} — jev.info`} description={t.tools.description} locale={locale}>
   <main class="tools-page shell">
     <header class="directory-intro">
-      <p class="eyebrow">OPEN-SOURCE CATALOG</p>
-      <h1>Tools</h1>
-      <p>Browse community tools built with Jev. Ranked by GitHub stars, then forks, then name.</p>
+      <p class="eyebrow">{t.tools.eyebrow}</p>
+      <h1>{t.tools.title}</h1>
+      <p>{t.tools.description}</p>
     </header>
-    <section class="tool-directory" aria-labelledby="tools-heading">
+    <section class="tool-directory" aria-labelledby="tools-heading" data-endpoint={toolsEndpoint}>
       <div class="directory-toolbar">
         <label class="tool-search" for="tool-search">
           <Icon name="material-symbols:search-rounded" size={20} aria-hidden="true" />
-          <span class="sr-only">Search tools</span>
-          <input id="tool-search" type="search" placeholder="Search tools…" autocomplete="off" data-tool-search />
+          <span class="sr-only">{t.tools.searchAria}</span>
+          <input id="tool-search" type="search" placeholder={t.tools.searchPlaceholder} autocomplete="off" data-tool-search />
         </label>
-        <p id="tools-heading" data-tool-summary>{tools.length} tools</p>
+        <p id="tools-heading" data-tool-summary>{t.tools.countSummary(tools.length)}</p>
       </div>
       <ol class="tool-list" data-tool-list>
         {initialTools.map((tool) => (
           <li class="tool-row">
             <div class="tool-identity">
               <button class="tool-detail-trigger" type="button"><strong>{tool.name}</strong></button>
-              <a class="tool-external" href={tool.url} target="_blank" rel="noreferrer" aria-label={`Open ${tool.name} repository`}><small>{tool.url}</small><Icon name="material-symbols:arrow-outward-rounded" size={12} aria-hidden="true" /></a>
+              <a class="tool-external" href={tool.url} target="_blank" rel="noreferrer" aria-label={t.tools.openRepoAria(tool.name)}><small>{tool.url}</small><Icon name="material-symbols:arrow-outward-rounded" size={12} aria-hidden="true" /></a>
             </div>
             <p class="tool-description line-clamp-2">{tool.description}</p>
-            <div class="tool-stats" aria-label={formatCount(tool.stars) + ' GitHub stars and ' + formatCount(tool.forks) + ' forks'}>
-              <span title="GitHub stars"><Icon name="material-symbols:star-rounded" size={16} aria-hidden="true" />{formatCount(tool.stars)}</span>
-              <span title="GitHub forks"><Icon name="material-symbols:account-tree-rounded" size={16} aria-hidden="true" />{formatCount(tool.forks)}</span>
+            <div class="tool-stats" aria-label={formatCount(tool.stars) + ' ' + t.tools.starsLabel + ' and ' + formatCount(tool.forks) + ' ' + t.tools.forksLabel}>
+              <span title={t.tools.starsLabel}><Icon name="material-symbols:star-rounded" size={16} aria-hidden="true" />{formatCount(tool.stars)}</span>
+              <span title={t.tools.forksLabel}><Icon name="material-symbols:account-tree-rounded" size={16} aria-hidden="true" />{formatCount(tool.forks)}</span>
             </div>
           </li>
         ))}
       </ol>
       <nav class="pagination" aria-label="Tools pages" data-tool-pagination></nav>
-      <p class="empty-state" data-tool-empty hidden>No tools match that search.</p>
+      <p class="empty-state" data-tool-empty hidden>{t.tools.emptyState}</p>
     </section>
   </main>
   <script>
@@ -58,7 +86,8 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     const loadTools = (): Promise<ClientTool[]> => {
       if (cachedData) return Promise.resolve(cachedData);
       if (!dataPromise) {
-        dataPromise = fetch('/tools-data.json')
+        const endpoint = document.querySelector('[data-endpoint]')?.getAttribute('data-endpoint') || '/tools-data.json';
+        dataPromise = fetch(endpoint)
           .then((res) => {
             if (!res.ok) throw new Error('Failed to load tools');
             return res.json() as Promise<RawToolTuple[]>;

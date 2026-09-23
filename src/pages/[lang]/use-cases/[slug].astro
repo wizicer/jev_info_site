@@ -1,0 +1,16 @@
+---
+import { demos, groups } from '../../../lib/content';
+import UseCaseDetail from '../../use-cases/[slug].astro';
+
+export function getStaticPaths() {
+  const langs = ['zh', 'ja'] as const;
+  return langs.flatMap((lang) => [
+    ...groups.map((group) => ({ params: { lang, slug: group.code }, props: { kind: 'group' as const, group, locale: lang } })),
+    ...demos.map((demo) => ({ params: { lang, slug: demo.id }, props: { kind: 'demo' as const, demo, locale: lang } })),
+  ]);
+}
+
+const props = Astro.props;
+---
+
+<UseCaseDetail {...props} />

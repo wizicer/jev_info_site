@@ -1,11 +1,22 @@
 ---
 import { Icon } from 'astro-icon/components';
-const { name, description } = Astro.props as { name: string; description: string };
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  name: string;
+  description: string;
+  locale?: Locale;
+}
+
+const { name, description, locale: propLocale } = Astro.props;
+const locale = propLocale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
 
 <main class="soon">
   <div class="construction-icon" aria-hidden="true"><Icon name="material-symbols:construction-rounded" size={32} /></div>
-  <span>Coming soon</span>
+  <span>{t.common.comingSoon}</span>
   <h1>{name}</h1>
   <p>{description}</p>
 </main>

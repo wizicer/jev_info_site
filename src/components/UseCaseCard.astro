@@ -1,11 +1,24 @@
 ---
 import type { Demo } from '../types';
-const { demo, eager = false, searchCard = false } = Astro.props as { demo: Demo; eager?: boolean; searchCard?: boolean };
+import { getLocaleFromUrl, getLocalizedPath } from '../i18n/utils';
+import { getLocalizedDemo } from '../lib/content';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  demo: Demo;
+  eager?: boolean;
+  searchCard?: boolean;
+  locale?: Locale;
+}
+
+const { demo: rawDemo, eager = false, searchCard = false, locale: propLocale } = Astro.props;
+const locale = propLocale ?? getLocaleFromUrl(Astro.url);
+const demo = getLocalizedDemo(rawDemo, locale);
 ---
 
 <a
   class:list={['use-case-card', { 'search-card': searchCard }]}
-  href={`/use-cases/${demo.id}`}
+  href={getLocalizedPath(`/use-cases/${demo.id}`, locale)}
   data-case-link
   data-id={demo.id}
 >

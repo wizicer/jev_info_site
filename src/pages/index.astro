@@ -2,41 +2,51 @@
 import { Icon } from 'astro-icon/components';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import UseCaseCard from '../components/UseCaseCard.astro';
-import { demos, demosForGroup, groups } from '../lib/content';
+import { demos, demosForGroup, getLocalizedGroups } from '../lib/content';
+import { getLocaleFromUrl, getLocalizedPath, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const localizedGroups = getLocalizedGroups(locale);
 
 const recent = [...demos]
   .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
   .slice(0, 8);
 ---
 
-<BaseLayout title="jev.info — The Jev information index">
+<BaseLayout title={`jev.info — ${t.home.title}`} locale={locale}>
   <main>
     <section class="shell hero">
-      <p class="eyebrow">A community index</p>
-      <h1>The index of Jev projects and use cases.</h1>
+      <p class="eyebrow">{t.home.eyebrow}</p>
+      <h1>{t.home.title}</h1>
 
-      <button class="hero-search home-search-trigger" type="button" aria-label="Search the Jev use case collection (Press ⌘K or /)">
+      <button class="hero-search home-search-trigger" type="button" aria-label={t.common.searchAria}>
         <Icon name="material-symbols:search-rounded" size={35} />
-        <span class="search-placeholder">What are you looking for?</span>
-        <span class="search-action"><kbd class="hero-kbd">⌘K</kbd>Search <span aria-hidden="true">→</span></span>
+        <span class="search-placeholder">{t.home.searchPlaceholder}</span>
+        <span class="search-action"><kbd class="hero-kbd">{t.common.searchShortcut}</kbd>{t.home.searchAction} <span aria-hidden="true">→</span></span>
       </button>
 
       <div class="collection-links" aria-label="Use case collections">
-        {groups.map((group) => (
-          <a href={'/use-cases/' + group.code}>
-            <span>{group.enName}</span>
-            <small>{demosForGroup(group).length}</small>
+        {localizedGroups.map((group) => (
+          <a href={getLocalizedPath('/use-cases/' + group.code, locale)}>
+            <span>{group.name}</span>
+            <small>{demosForGroup(group, locale).length}</small>
           </a>
         ))}
       </div>
-      <a class="browse-all" href="/use-cases">Browse all use cases <span aria-hidden="true">→</span></a>
+      <a class="browse-all" href={getLocalizedPath('/use-cases', locale)}>{t.home.browseAll} <span aria-hidden="true">→</span></a>
     </section>
 
     <section class="recent shell" aria-labelledby="recent-title">
       <div class="recent-heading">
-        <div><span>Latest additions</span><h2 id="recent-title">Recent</h2></div>
+        <div><span>{t.home.latestAdditions}</span><h2 id="recent-title">{t.home.recentTitle}</h2></div>
       </div>
-      <div class="recent-grid">{recent.map((demo, index) => <UseCaseCard demo={demo} eager={index < 2} />)}</div>
+      <div class="recent-grid">{recent.map((demo, index) => <UseCaseCard demo={demo} eager={index < 2} locale={locale} />)}</div>
     </section>
   </main>
 </BaseLayout>

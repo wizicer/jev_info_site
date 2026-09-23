@@ -1,6 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ComingSoon from '../components/ComingSoon.astro';
+import { getLocaleFromUrl, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 ---
-<BaseLayout title="Recipes — jev.info" description="Practical patterns and implementation guides for Jev."><ComingSoon name="Recipes" description="Practical patterns and implementation guides for Jev." /></BaseLayout>
+<BaseLayout title={t.recipes.title} description={t.recipes.description} locale={locale}><ComingSoon name={t.recipes.title.replace(' — jev.info', '')} description={t.recipes.description} locale={locale} /></BaseLayout>
 

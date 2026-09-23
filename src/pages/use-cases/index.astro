@@ -1,17 +1,27 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GroupSection from '../../components/GroupSection.astro';
-import { demosForGroup, groups } from '../../lib/content';
+import { demosForGroup, getLocalizedGroups } from '../../lib/content';
+import { getLocaleFromUrl, useTranslations } from '../../i18n/utils';
+import type { Locale } from '../../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const localizedGroups = getLocalizedGroups(locale);
 ---
 
-<BaseLayout title="All use cases — jev.info" description="Explore real-world Jev use cases across software, games, robotics, research, and more.">
+<BaseLayout title={`${t.useCases.title} — jev.info`} description={t.useCases.subtitle} locale={locale}>
   <main class="shell home-main">
     <header class="directory-intro">
       <p class="eyebrow">CASE CATALOG</p>
-      <h1>Use cases</h1>
-      <p>Real-world examples of fast, typed decisions.</p>
+      <h1>{t.useCases.title}</h1>
+      <p>{t.useCases.subtitle}</p>
     </header>
-    {groups.map((group) => <GroupSection group={group} demos={demosForGroup(group)} />)}
+    {localizedGroups.map((group) => <GroupSection group={group} demos={demosForGroup(group, locale)} locale={locale} />)}
   </main>
 </BaseLayout>
 

@@ -1,16 +1,30 @@
 ---
 import type { Category, Demo, Group } from '../types';
 import { formatDate } from '../lib/content';
-const { demo, category, group } = Astro.props as { demo: Demo; category?: Category; group?: Group };
+import { getLocaleFromUrl, getLocalizedPath, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  demo: Demo;
+  category?: Category;
+  group?: Group;
+  locale?: Locale;
+}
+
+const { demo, category, group, locale: propLocale } = Astro.props;
+const locale = propLocale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const groupName = group?.name ?? group?.enName;
+const categoryName = category?.name ?? category?.enName;
 ---
 
 <article class="detail-layout" data-detail-root data-id={demo.id} data-src={demo.src} data-cover={demo.cover} data-media-type={demo.mediaType} data-url={demo.url}>
-  <section class="detail-primary" aria-label="Original post">
-    <span class="section-label">Original post</span>
+  <section class="detail-primary" aria-label={t.useCases.originalPost}>
+    <span class="section-label">{t.useCases.originalPost}</span>
     <div class="tweet-status-bar" data-tweet-status role="status">
       <span class="tweet-status-spinner" aria-hidden="true"></span>
-      <span class="tweet-status-text">Loading original post…</span>
-      <a class="tweet-status-link" href={demo.url} target="_blank" rel="noreferrer">Open on X ↗</a>
+      <span class="tweet-status-text">{t.useCases.loadingPost}</span>
+      <a class="tweet-status-link" href={demo.url} target="_blank" rel="noreferrer">{t.useCases.openOnX}</a>
     </div>
     <div class="detail-media" data-detail-media>
       <img src={demo.cover} alt={demo.description} />
@@ -18,15 +32,15 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
     <div class="standalone-tweet" data-standalone-tweet hidden></div>
   </section>
   <aside class="detail-copy">
-    <p class="taxonomy"><a href={'/use-cases/' + group?.code}>{group?.enName}</a> <span>/</span> {category?.enName}</p>
+    <p class="taxonomy"><a href={getLocalizedPath('/use-cases/' + group?.code, locale)}>{groupName}</a> <span>/</span> {categoryName}</p>
     <h1 class="description">{demo.description}</h1>
     <div class="author">
       <img src={demo.author.avatarUrl} alt="" width="44" height="44" />
       <div><strong>{demo.author.name}</strong><span>@{demo.author.handle}</span></div>
     </div>
     <dl>
-      <div><dt>Published</dt><dd>{formatDate(demo.createdAt)}</dd></div>
-      <div><dt>Source</dt><dd><a href={demo.url} target="_blank" rel="noreferrer">View original post ↗</a></dd></div>
+      <div><dt>{t.useCases.published}</dt><dd>{formatDate(demo.createdAt, locale)}</dd></div>
+      <div><dt>{t.useCases.source}</dt><dd><a href={demo.url} target="_blank" rel="noreferrer">{t.useCases.viewOriginalPost}</a></dd></div>
     </dl>
   </aside>
 </article>

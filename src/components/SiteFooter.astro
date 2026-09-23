@@ -1,18 +1,27 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { getLocaleFromUrl, getLocalizedPath, useTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 
 const quickLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Use Cases', href: '/use-cases' },
-  { label: 'Tools', href: '/tools' },
-  { label: 'Models', href: '/models' },
+  { label: t.nav.home, href: getLocalizedPath('/', locale) },
+  { label: t.nav.useCases, href: getLocalizedPath('/use-cases', locale) },
+  { label: t.nav.tools, href: getLocalizedPath('/tools', locale) },
+  { label: t.nav.models, href: getLocalizedPath('/models', locale) },
 ];
 
 const aboutLinks = [
-  { label: 'GitHub', href: 'https://github.com/wizicer/jev_info_site', external: true },
-  { label: 'Information', href: '/information' },
-  { label: 'Sponsor', href: '/sponsor' },
-  { label: 'Terms & Conditions', href: '/terms' },
+  { label: t.footer.github, href: 'https://github.com/wizicer/jev_info_site', external: true },
+  { label: t.footer.information, href: getLocalizedPath('/information', locale) },
+  { label: t.footer.sponsor, href: getLocalizedPath('/sponsor', locale) },
+  { label: t.footer.terms, href: getLocalizedPath('/terms', locale) },
 ];
 
 const bugUrl = 'https://github.com/wizicer/jev_info_site/issues/new?title=%5BBug%5D%20Brief%20description&body=%23%23%20What%20happened%3F%0A%0A%23%23%20Steps%20to%20reproduce%0A1.%20%0A2.%20%0A3.%20%0A%0A%23%23%20Expected%20behaviour%0A%0A%23%23%20Browser%20or%20device%0A';
@@ -22,28 +31,28 @@ const contactUrl = 'https://github.com/wizicer/jev_info_site/issues/new?title=%5
 <footer class="site-footer">
   <div class="shell footer-main">
     <div class="footer-intro">
-      <a class="footer-wordmark" href="/" aria-label="jev.info home">jev.info</a>
-      <p>A community index collecting people, projects, and real-world use cases around Jev.</p>
-      <h2>Stay updated</h2>
+      <a class="footer-wordmark" href={getLocalizedPath('/', locale)} aria-label="jev.info home">jev.info</a>
+      <p>{t.footer.tagline}</p>
+      <h2>{t.footer.stayUpdated}</h2>
       <div class="subscribe-stub">
         <label>
           <span class="sr-only">Email address</span>
-          <input type="email" placeholder="Email updates coming soon" aria-describedby="subscribe-note" disabled />
+          <input type="email" placeholder={t.footer.emailPlaceholder} aria-describedby="subscribe-note" disabled />
         </label>
-        <button type="button" disabled aria-label="Subscriptions are coming soon">
+        <button type="button" disabled aria-label={t.footer.subscribeAria}>
           <Icon name="material-symbols:send-rounded" size={22} />
         </button>
       </div>
-      <small id="subscribe-note">Email updates are coming soon.</small>
+      <small id="subscribe-note">{t.footer.emailNote}</small>
     </div>
 
-    <nav class="footer-column" aria-label="Quick links">
-      <h2>Quick links</h2>
+    <nav class="footer-column" aria-label={t.footer.quickLinks}>
+      <h2>{t.footer.quickLinks}</h2>
       {quickLinks.map((item) => <a href={item.href}>{item.label}</a>)}
     </nav>
 
-    <nav class="footer-column" aria-label="About">
-      <h2>About</h2>
+    <nav class="footer-column" aria-label={t.footer.about}>
+      <h2>{t.footer.about}</h2>
       {aboutLinks.map((item) => (
         <a href={item.href} target={item.external ? '_blank' : undefined} rel={item.external ? 'noreferrer' : undefined}>
           {item.label}{item.external && <Icon name="material-symbols:arrow-outward-rounded" size={16} />}
@@ -52,19 +61,19 @@ const contactUrl = 'https://github.com/wizicer/jev_info_site/issues/new?title=%5
     </nav>
 
     <div class="footer-column">
-      <h2>Contact</h2>
+      <h2>{t.footer.contact}</h2>
       <a class="contact-link bug-link" href={bugUrl} target="_blank" rel="noreferrer">
-        <Icon name="material-symbols:bug-report-outline-rounded" size={19} />Report bug
+        <Icon name="material-symbols:bug-report-outline-rounded" size={19} />{t.footer.reportBug}
       </a>
       <a class="contact-link" href={contactUrl} target="_blank" rel="noreferrer">
-        <Icon name="material-symbols:mail-outline-rounded" size={19} />Contact us
+        <Icon name="material-symbols:mail-outline-rounded" size={19} />{t.footer.contactUs}
       </a>
     </div>
   </div>
 
   <div class="shell footer-bottom">
-    <span>Content links to original posts. Copyright belongs to the respective authors.</span>
-    <span>© 2026 jev.info</span>
+    <span>{t.footer.copyrightNotice}</span>
+    <span>{t.footer.copyright}</span>
   </div>
 </footer>
 

@@ -1,2 +1,4 @@
 - Files under /src/data except `site-metadata.json` all are generated file, never edit it directly.
+- Files under /src/data/translations/ are managed by translation scripts, never edit directly.
+- Multi-language implementation must strictly follow specifications in /docs/i18n-spec.md.
 - README.md file is generated and never edit directly, edit /scripts/generate-readme.mjs file instead.
