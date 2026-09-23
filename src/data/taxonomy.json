@@ -4,192 +4,132 @@
   "layers": [
     {
       "code": "use_cases",
-      "name": "应用场景",
+      "name": "Use Cases",
       "groups": [
         {
           "code": "automation",
-          "name": "软件与工作流",
-          "enName": "Software Automation",
+          "name": "Software Automation",
           "categories": [
             {
               "code": "browser_use",
-              "name": "网页自动化",
-              "enName": "Browser Use",
-              "description": "网页自动化、自动填表、网页游戏交互"
+              "name": "Browser Use",
+              "description": "Web automation, auto form filling, web scraping, browser navigation, and web game interaction"
             },
             {
               "code": "computer_use",
-              "name": "计算机操作",
-              "enName": "Computer Use",
-              "description": "桌面与移动端 UI 点击、系统应用调度、快捷启动"
+              "name": "Computer Use",
+              "description": "Desktop and mobile UI automation, OS clicking, app scheduling, shortcuts, and GUI agent operations"
             },
             {
               "code": "workflow_guardrails",
-              "name": "工作流门禁",
-              "enName": "Workflow Guardrails",
-              "description": "系统流程阻断、权限拦截、数据库保护、代码合规门禁"
+              "name": "Workflow Guardrails",
+              "description": "Workflow gating, permission blocking, database protection, security, and code compliance guardrails"
             },
             {
               "code": "financial",
-              "name": "金融自动化",
-              "enName": "Financial",
-              "description": "高频量化交易、链上套利、实时风控拦截、市场信号转执行"
+              "name": "Financial",
+              "description": "High-frequency quantitative trading, on-chain crypto arbitrage, real-time risk control, and market signal execution"
             },
             {
               "code": "pipeline_routing",
-              "name": "管线路由",
-              "enName": "Pipeline Routing",
-              "description": "快慢模型分流、工具预调用、子智能体派发"
+              "name": "Pipeline Routing",
+              "description": "Fast/slow model routing, tool pre-calling, multi-agent coordination, and sub-agent dispatch"
             }
           ]
         },
         {
           "code": "interaction",
-          "name": "人机交互",
-          "enName": "Interaction",
+          "name": "Interaction",
           "categories": [
             {
               "code": "feed_cleanup",
-              "name": "信息流净化",
-              "enName": "Feed Cleanup",
-              "description": "信息流净化、屏蔽广告、隐藏低质水帖、敏感内容遮盖"
+              "name": "Feed Cleanup",
+              "description": "Social feed curation, ad blocking, spam filtering, low-quality post hiding, and sensitive content masking"
             },
             {
               "code": "categorization",
-              "name": "分类整理",
-              "enName": "Categorization",
-              "description": "邮件分类、书签归档、推文意图识别、账单清洗归类"
+              "name": "Categorization",
+              "description": "Email classification and triage, bookmark archiving, tweet intent detection, and invoice receipt categorization"
             },
             {
               "code": "ranking_evaluation",
-              "name": "排序与评估",
-              "enName": "Ranking & Evaluation",
-              "description": "文案质量打分、推文爆款概率评分、代码 PR 审核打分、候选域名优劣评判"
+              "name": "Ranking & Evaluation",
+              "description": "Content quality scoring, viral tweet prediction, code PR review evaluation, and candidate domain assessment"
             },
             {
               "code": "search",
-              "name": "搜索",
-              "enName": "Search",
-              "description": "自然语言查库、按语义找文件、上下文检索重排"
+              "name": "Search",
+              "description": "Natural language database query, semantic file search, text retrieval, and contextual reranking"
             },
             {
               "code": "input_assistance",
-              "name": "输入辅助",
-              "enName": "Input Assistance",
-              "description": "语音控制与轮替检测、键盘输入建议、编辑预测、实时候选推荐、甚至包括图像识别控制"
+              "name": "Input Assistance",
+              "description": "Voice control and turn detection, keyboard typing suggestions, inline autocomplete, edit prediction, and candidate recommendations"
             }
           ]
         },
         {
           "code": "gaming",
-          "name": "游戏世界",
-          "enName": "Gaming Worlds",
+          "name": "Gaming Worlds",
           "categories": [
             {
               "code": "native_play",
-              "name": "原生游戏",
-              "enName": "Native Play",
-              "description": "利用 AI 能力创造全新的游戏品类或原生玩法，而不是操控已有游戏"
+              "name": "Native Play",
+              "description": "AI-native game mechanics, generative gameplay, and novel interactive game genres powered by AI"
             },
             {
               "code": "realtime_gameplay",
-              "name": "即时游戏",
-              "enName": "Realtime Gameplay",
-              "description": "吃豆人、超级马里奥、俄罗斯方块等即时操控"
+              "name": "Realtime Gameplay",
+              "description": "Real-time game control, arcade games like Pacman, Super Mario, Tetris, FPS, and dynamic reflex action"
             },
             {
               "code": "turn_strategy",
-              "name": "回合与策略",
-              "enName": "Turn Strategy",
-              "description": "下棋、卡牌对决、大富翁式回合制决策"
+              "name": "Turn Strategy",
+              "description": "Turn-based strategy, chess, card battles (CCG), board games, and strategic decision making"
             },
             {
               "code": "virtual_behaviors",
-              "name": "虚拟行为",
-              "enName": "Virtual Behaviors",
-              "description": "NPC 自主行为、多智能体社会模拟、环境群控"
+              "name": "Virtual Behaviors",
+              "description": "Autonomous NPC behaviors, multi-agent social simulations, virtual worlds, and environment swarm control"
             }
           ]
         },
         {
           "code": "physical",
-          "name": "现实与机载控制",
-          "enName": "Physical Control",
+          "name": "Physical Control",
           "categories": [
             {
               "code": "robotic_arms",
-              "name": "机械臂",
-              "enName": "Robotic Arms",
-              "description": "机械臂抓取、零样本工具利用、工件分类"
+              "name": "Robotic Arms",
+              "description": "Robotic arm manipulation, grasping, zero-shot tool use, workpiece sorting, and physical robotics"
             },
             {
               "code": "autonomous_transit",
-              "name": "自主运载",
-              "enName": "Autonomous Transit",
-              "description": "无人机飞控、自驾车路径转向、运载车避障"
+              "name": "Autonomous Transit",
+              "description": "Drone flight control, autonomous driving, path planning, steering, and vehicle obstacle avoidance"
             }
           ]
         },
         {
           "code": "creative",
-          "name": "创意与极限玩法",
-          "enName": "Creative",
+          "name": "Creative",
           "categories": [
             {
               "code": "multimodal_generation",
-              "name": "多模态生成",
-              "enName": "Multimodal Generation",
-              "description": "逐像素绘图、音乐与五线谱编排、实时情绪变色"
+              "name": "Multimodal Generation",
+              "description": "Pixel-level drawing, image generation, music and sheet music composition, and dynamic emotion color palette rendering"
             },
             {
               "code": "text_generation",
-              "name": "文本生成",
-              "enName": "Text Generation",
-              "description": "文本生成"
+              "name": "Text Generation",
+              "description": "Text generation, creative writing, copy generation, and natural language synthesis"
             },
             {
               "code": "hacks",
-              "name": "黑客实验",
-              "enName": "Hacks",
-              "description": "给决策模型强行接解码器以生成对话、反向验证码等黑客实验"
-            },
-            {
-              "code": "benchmark",
-              "name": "基准测试",
-              "enName": "Benchmark",
-              "description": "模型与系统能力的基准测试",
-              "export": false
+              "name": "Hacks",
+              "description": "Experimental hacks, hooking decoders to decision models, reverse captchas, jailbreaks, and unconventional prompt engineering"
             }
           ]
-        },
-        {
-          "code": "parked",
-          "name": "待分类",
-          "enName": "Parked",
-          "categories": [
-            {
-              "code": "inference_engineering",
-              "name": "推理工程",
-              "enName": "Inference Engineering",
-              "description": "模型推理、约束解码、轻量适配头与决策专用引擎等底层工程实验",
-              "export": false
-            },
-            {
-              "code": "tutorial",
-              "name": "教程",
-              "enName": "Tutorials",
-              "description": "具备具体应用场景的教学内容（而不仅是介绍卖点，或单纯说明如何申请账号 / 配置 API Key / 安装 SDK）",
-              "export": false
-            },
-            {
-              "code": "uncategorized",
-              "name": "未分类",
-              "enName": "Uncategorized",
-              "description": "暂时无法归入现有分类的项目",
-              "export": false
-            }
-          ],
-          "export": false
         }
       ]
     }
