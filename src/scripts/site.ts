@@ -6,6 +6,84 @@ type ClientDemo = Demo & {
   groupCode: string;
 };
 
+interface CompactItem {
+  i: string;
+  d: string;
+  t: string;
+  c: string;
+  a: {
+    n: string;
+    h: string;
+    u: string;
+  };
+  url?: string;
+  cov?: string;
+  m?: string;
+  src?: string;
+  w?: number;
+  h?: number;
+}
+
+interface CompactPayload {
+  cats: Record<string, [string, string, string]>;
+  items: CompactItem[];
+}
+
+const TWIMG_AVATAR_PREFIX = 'https://pbs.twimg.com/profile_images/';
+
+function normalizeDemo(item: CompactItem, cats: Record<string, [string, string, string]>): ClientDemo {
+  const mediaType = (item.m as 'video' | 'image') ?? 'video';
+  const cat = cats[item.c] ?? [item.c, '', ''];
+  const avatar = item.a.u.startsWith('http') ? item.a.u : TWIMG_AVATAR_PREFIX + item.a.u;
+  const id = item.i;
+  const handle = item.a.h;
+
+  return {
+    id,
+    description: item.d,
+    createdAt: item.t,
+    category: item.c,
+    categoryName: cat[0],
+    groupName: cat[1],
+    groupCode: cat[2],
+    author: {
+      name: item.a.n,
+      handle,
+      avatarUrl: avatar,
+      isVerified: false,
+    },
+    mediaType,
+    width: item.w ?? 426,
+    height: item.h ?? 240,
+    cover: item.cov ?? `/covers/${id}.webp`,
+    src: item.src ?? `/previews/${id}.${mediaType === 'video' ? 'webm' : 'webp'}`,
+    url: item.url ?? `https://x.com/${handle}/status/${id}`,
+    score: 0,
+  };
+}
+
+let demosPromise: Promise<{ demos: ClientDemo[]; demoMap: Map<string, ClientDemo> }> | null = null;
+
+function loadDemos(): Promise<{ demos: ClientDemo[]; demoMap: Map<string, ClientDemo> }> {
+  if (!demosPromise) {
+    demosPromise = fetch('/cases-data.json')
+      .then((res) => {
+        if (!res.ok) throw new Error('Failed to load cases data');
+        return res.json() as Promise<CompactPayload>;
+      })
+      .then((payload) => {
+        const list = payload.items.map((item) => normalizeDemo(item, payload.cats));
+        const map = new Map(list.map((d) => [d.id, d]));
+        return { demos: list, demoMap: map };
+      })
+      .catch((err) => {
+        console.error('Error loading cases:', err);
+        return { demos: [], demoMap: new Map() };
+      });
+  }
+  return demosPromise;
+}
+
 let initialized = false;
 
 export function initSite() {
@@ -14,14 +92,22 @@ export function initSite() {
 
   const root = document.documentElement;
   const body = document.body;
-  const caseData = document.querySelector<HTMLScriptElement>('#case-data');
-  const demos: ClientDemo[] = caseData ? JSON.parse(caseData.textContent || '[]') : [];
-  const demoMap = new Map(demos.map((demo) => [demo.id, demo]));
   const caseDialog = document.querySelector<HTMLDialogElement>('.case-dialog');
   const searchDialog = document.querySelector<HTMLDialogElement>('.search-dialog');
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let previousUrl = location.pathname;
   let activeDemoId: string | null = null;
+
+  if ('requestIdleCallback' in window) {
+    (window as unknown as { requestIdleCallback: (cb: () => void) => void }).requestIdleCallback(() => { loadDemos(); });
+  } else {
+    setTimeout(() => { loadDemos(); }, 1500);
+  }
+
+  const prefetchDemos = () => { loadDemos(); };
+  document.querySelectorAll('.search-trigger, .home-search-trigger, [data-case-link]').forEach((el) => {
+    el.addEventListener('pointerenter', prefetchDemos, { once: true, passive: true });
+  });
 
   document.querySelectorAll<HTMLImageElement>("img[data-fallback-media]").forEach((image) => {
     image.addEventListener("error", () => { image.hidden = true; });
@@ -284,25 +370,61 @@ export function initSite() {
     }
   }
 
-  document.addEventListener('click', (event) => {
+  document.addEventListener('click', async (event) => {
     const link = (event.target as HTMLElement).closest<HTMLAnchorElement>('[data-case-link]');
     if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    const demo = demoMap.get(link.dataset.id || '');
-    if (!demo) return;
+    const id = link.dataset.id || '';
+    if (!id) return;
     event.preventDefault();
+
     if (searchDialog?.open) closeSearch();
-    openCase(demo);
+
+    if (activeDemoId !== id) {
+      activeDemoId = id;
+      if (!caseDialog?.open) {
+        caseDialog?.showModal();
+        body.classList.add('no-scroll');
+      }
+      document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => video.pause());
+      const descEl = caseDialog?.querySelector<HTMLElement>('.dialog-description');
+      if (descEl) descEl.textContent = 'Loading use case details…';
+      const embedEl = caseDialog?.querySelector<HTMLElement>('.dialog-embed');
+      if (embedEl) embedEl.innerHTML = '<div class="embed-loading" role="status"><span aria-hidden="true"></span><strong>Loading…</strong></div>';
+    }
+
+    try {
+      const { demoMap } = await loadDemos();
+      const demo = demoMap.get(id);
+      if (!demo) {
+        location.href = link.href;
+        return;
+      }
+      if (activeDemoId === id) {
+        openCase(demo);
+      }
+    } catch {
+      location.href = link.href;
+    }
   });
+
   caseDialog?.querySelector('.dialog-close')?.addEventListener('click', () => closeCase());
   caseDialog?.addEventListener('click', (event) => { if (event.target === caseDialog) closeCase(); });
   caseDialog?.addEventListener('cancel', (event) => { event.preventDefault(); closeCase(); });
-  addEventListener('popstate', () => {
+
+  addEventListener('popstate', async () => {
     const match = location.pathname.match(/^\/use-cases\/(\d+)$/);
-    if (match && demoMap.has(match[1])) openCase(demoMap.get(match[1])!, false);
-    else closeCase(false);
+    if (match) {
+      const { demoMap } = await loadDemos();
+      const demo = demoMap.get(match[1]);
+      if (demo) openCase(demo, false);
+      else closeCase(false);
+    } else {
+      closeCase(false);
+    }
   });
 
   const openSearch = () => {
+    loadDemos();
     document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => video.pause());
     searchDialog?.showModal(); body.classList.add('no-scroll');
     input?.dispatchEvent(new Event('input'));
@@ -374,20 +496,32 @@ export function initSite() {
     link.append(frame, context, description);
     return link;
   };
-  input?.addEventListener('input', () => {
+  input?.addEventListener('input', async () => {
     if (!searchDialog || !searchResults || !searchStatus || !searchEmpty) return;
     const query = input.value.trim().toLowerCase();
     searchResults.querySelectorAll<HTMLVideoElement>('video').forEach((video) => videoObserver.unobserve(video));
-    const matches = query ? demos.filter((demo) =>
-      `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName} ${(demo.tags || []).join(' ')}`.toLowerCase().includes(query),
-    ) : [];
+
+    if (!query) {
+      searchResults.replaceChildren();
+      const { demos } = await loadDemos();
+      searchStatus.textContent = `Search ${demos.length || 'all'} use cases`;
+      searchEmpty.textContent = 'Start typing to find a use case.';
+      searchEmpty.hidden = false;
+      return;
+    }
+
+    searchStatus.textContent = 'Searching…';
+    const { demos } = await loadDemos();
+    if (input.value.trim().toLowerCase() !== query) return;
+
+    const matches = demos.filter((demo) =>
+      `${demo.description} ${demo.author.name} ${demo.author.handle} ${demo.categoryName} ${demo.groupName}`.toLowerCase().includes(query),
+    );
     const resultLimit = matchMedia('(max-width: 760px)').matches ? 12 : 16;
     const visible = matches.slice(0, resultLimit);
     searchResults.replaceChildren(...visible.map(createSearchResult));
-    searchStatus.textContent = query
-      ? `${matches.length} use case${matches.length === 1 ? '' : 's'}${matches.length > visible.length ? ` · showing first ${visible.length}` : ''}`
-      : `Search ${demos.length} use cases`;
-    searchEmpty.textContent = query ? 'No use cases found.' : 'Start typing to find a use case.';
+    searchStatus.textContent = `${matches.length} use case${matches.length === 1 ? '' : 's'}${matches.length > visible.length ? ` · showing first ${visible.length}` : ''}`;
+    searchEmpty.textContent = 'No use cases found.';
     searchEmpty.hidden = visible.length !== 0;
   });
 

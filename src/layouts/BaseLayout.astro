@@ -2,7 +2,7 @@
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import CaseDialog from '../components/CaseDialog.astro';
-import { demos, getDemoContext } from '../lib/content';
+import { demos } from '../lib/content';
 import '../styles/global.css';
 
 interface Props {
@@ -15,16 +15,7 @@ const {
   description = 'Explore real-world Jev use cases across software, games, robotics, research, and more.',
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const clientDemos = demos.map((demo) => {
-  const { category, group } = getDemoContext(demo);
-  return {
-    ...demo,
-    categoryName: category?.enName ?? demo.category,
-    groupName: group?.enName ?? '',
-    groupCode: group?.code ?? '',
-  };
-});
-const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
+const totalDemos = demos.length;
 ---
 
 <!doctype html>
@@ -60,13 +51,12 @@ const caseJson = JSON.stringify(clientDemos).replaceAll('<', '\\u003c');
           <span class="sr-only">Search use cases</span>
           <input type="search" placeholder="Search descriptions, authors, or categories…" autocomplete="off" />
         </label>
-        <p class="search-status">Search {clientDemos.length} use cases</p>
+        <p class="search-status">Search {totalDemos} use cases</p>
       </div>
       <div class="search-results"></div>
       <div class="search-empty">Start typing to find a use case.</div>
     </dialog>
 
-    <script id="case-data" type="application/json" set:html={caseJson}></script>
     <script>
       import { initSite } from '../scripts/site';
       initSite();
