@@ -13,6 +13,7 @@ src/
 ├── data/
 │   ├── (原始生成数据，由抓取/同步工作流更新，不得直接手工编辑)
 │   │   ├── awesome.json
+│   │   ├── demos-stats.json
 │   │   ├── demos.json
 │   │   ├── models.json
 │   │   ├── repository-metrics.json
@@ -85,6 +86,7 @@ src/
 | `src/data/awesome.json` | `translations/{lang}/awesome.json` | `item.id`（资源 ID） | `description` (可选: `title`) | `source` |
 | `src/data/site-metadata.json` | `translations/{lang}/site-metadata.json` | `communityResources.primary` | `primary.description` | `source` |
 | `src/data/repository-metrics.json` | *(无需翻译)* | - | - | - |
+| `src/data/demos-stats.json` | *(无需翻译)* | - | - | - |
 
 ### 3.1 `demos.json`
 - **源文件**：`src/data/demos.json`
@@ -143,7 +145,7 @@ src/
 
 涵盖模块：
 1. **全局导航与通用组件**：Header, Navigation, Theme switcher, Language dropdown, Global search (⌘K), Footer.
-2. **首页**：Hero 标题、副标题、分类直达胶囊、近期精选模块.
+2. **首页**：Hero 标题、副标题、案例收集与筛选统计、分类直达胶囊、近期精选模块.
 3. **案例库**：Use Cases 页面标题、卡片统计、详情对话框、来源外链提示.
 4. **工具库**：Tools 页面标题、搜索过滤占位符、排序与空状态提示、Star/Fork 指标.
 5. **模型库**：Models 页面说明、Hugging Face 点赞数、详情对话框.

@@ -28,7 +28,7 @@ const isGroup = props.kind === 'group';
 const group = isGroup && props.group ? getLocalizedGroup(props.group, locale) : undefined;
 const demo = !isGroup && props.demo ? getLocalizedDemo(props.demo, locale) : undefined;
 const context = demo ? getDemoContext(demo, locale) : undefined;
-const groupName = group?.name ?? group?.enName;
+const groupName = group?.name;
 const title = group ? `${groupName} — ${t.useCases.title} — jev.info` : `Use case ${demo?.id} — jev.info`;
 const description = demo?.description ?? `Explore ${groupName} use cases built with Jev.`;
 const visibleCategories = group

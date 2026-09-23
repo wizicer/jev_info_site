@@ -13,11 +13,7 @@ const usedCategoryCodes = new Set(demos.map((demo) => demo.category));
 
 export const groups: Group[] = taxonomyData.layers
   .flatMap((layer) => layer.groups)
-  .filter((group) => group.categories.some((category) => usedCategoryCodes.has(category.code)))
-  .map((group) => ({
-    ...group,
-    enName: group.enName ?? group.name,
-  }));
+  .filter((group) => group.categories.some((category) => usedCategoryCodes.has(category.code)));
 
 export const categories = groups.flatMap((group) => group.categories) as Category[];
 export const categoryByCode = new Map(categories.map((category) => [category.code, category]));
@@ -28,8 +24,8 @@ export const sortedDemos = [...demos].sort((a, b) =>
 );
 
 interface TaxonomyTranslation {
-  groups?: Record<string, { name: string }>;
-  categories?: Record<string, { name: string; description?: string }>;
+  groups?: Record<string, { source?: string; name: string }>;
+  categories?: Record<string, { source?: { name?: string; description?: string }; name: string; description?: string }>;
 }
 
 const taxonomyTranslations: Record<string, TaxonomyTranslation> = {
@@ -56,23 +52,20 @@ export function getLocalizedCategory(category: Category, locale: Locale = 'en'):
   if (locale === 'en') {
     return {
       ...category,
-      name: category.enName ?? category.name,
+      name: category.name,
     };
   }
   const trans = taxonomyTranslations[locale]?.categories?.[category.code];
   return {
     ...category,
-    name: trans?.name || (locale === 'zh' ? category.name : (category.enName ?? category.name)),
-    description: trans?.description || category.description,
+    name: trans?.source?.name === category.name ? (trans.name || category.name) : category.name,
+    description: trans?.source?.description === category.description ? (trans.description || category.description) : category.description,
   };
 }
 
 export function getLocalizedGroup(group: Group, locale: Locale = 'en'): Group {
   const trans = taxonomyTranslations[locale]?.groups?.[group.code];
-  const groupName =
-    locale === 'en'
-      ? (group.enName ?? group.name)
-      : (trans?.name || (locale === 'zh' ? group.name : (group.enName ?? group.name)));
+  const groupName = locale !== 'en' && trans?.source === group.name ? (trans.name || group.name) : group.name;
 
   return {
     ...group,

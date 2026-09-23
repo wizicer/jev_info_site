@@ -24,13 +24,11 @@ export interface Demo {
 export interface Category {
   code: string;
   name: string;
-  enName: string;
   description: string;
 }
 
 export interface Group {
   code: string;
   name: string;
-  enName: string;
   categories: Category[];
 }

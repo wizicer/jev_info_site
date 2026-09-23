@@ -119,8 +119,8 @@ async function main() {
     '- [Tools](#tools)',
     '- [Use Cases](#use-cases)',
     ...groups.flatMap((group) => [
-      `  - [${group.enName}](#${group.code})`,
-      ...group.categories.map((category) => `    - [${category.enName ?? category.name}](#${category.code})`),
+      `  - [${group.name}](#${group.code})`,
+      ...group.categories.map((category) => `    - [${category.name}](#${category.code})`),
     ]),
     '',
     '## Community Resources',
@@ -158,7 +158,7 @@ async function main() {
     const groupDemos = demosForGroup(group);
     push(
       '',
-      `### ${group.enName} <a id="${group.code}"></a>`,
+      `### ${group.name} <a id="${group.code}"></a>`,
       '',
       `[Browse all ${groupDemos.length} on jev.info →](${siteUrl}/use-cases/${group.code})`,
     );
@@ -167,9 +167,9 @@ async function main() {
       const top = categoryDemos.slice(0, topDemosPerCategory);
       push(
         '',
-        `#### ${category.enName ?? category.name} (${categoryDemos.length}) <a id="${category.code}"></a>`,
+        `#### ${category.name} (${categoryDemos.length}) <a id="${category.code}"></a>`,
         '',
-        `| ${top.map((demo) => `<a href="${siteUrl}/use-cases/${demo.id}"><img src="${siteUrl}${demo.cover}" width="260" alt="${category.enName ?? category.name} demo"></a>`).join(' | ')} |`,
+        `| ${top.map((demo) => `<a href="${siteUrl}/use-cases/${demo.id}"><img src="${siteUrl}${demo.cover}" width="260" alt="${category.name} demo"></a>`).join(' | ')} |`,
         `|${top.map(() => ':---:').join('|')}|`,
         `| ${top.map((demo) => `[${truncate(cellText(demo.description), 70)}](${siteUrl}/use-cases/${demo.id})<br>@${demo.author.handle}`).join(' | ')} |`,
       );

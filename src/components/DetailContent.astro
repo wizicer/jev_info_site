@@ -14,8 +14,8 @@ interface Props {
 const { demo, category, group, locale: propLocale } = Astro.props;
 const locale = propLocale ?? getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
-const groupName = group?.name ?? group?.enName;
-const categoryName = category?.name ?? category?.enName;
+const groupName = group?.name;
+const categoryName = category?.name;
 ---
 
 <article class="detail-layout" data-detail-root data-id={demo.id} data-src={demo.src} data-cover={demo.cover} data-media-type={demo.mediaType} data-url={demo.url}>
