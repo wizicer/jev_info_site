@@ -21,9 +21,10 @@ const nav = [
       ))}
     </nav>
     <div class="header-actions">
-      <button class="icon-button search-trigger" type="button" aria-label="Search use cases">
-        <Icon name="material-symbols:search-rounded" size={22} />
+      <button class="icon-button search-trigger" type="button" aria-label="Search use cases (Press ⌘K or /)">
+        <Icon name="material-symbols:search-rounded" size={20} />
         <span class="search-label">Search</span>
+        <kbd class="search-kbd">⌘K</kbd>
       </button>
       <div class="language">
         <button class="text-button" type="button" aria-expanded="false" aria-controls="language-menu">
@@ -63,6 +64,7 @@ const nav = [
   .text-button { gap: 2px; padding: 0 8px; font-size: 13px; font-weight: 650; }
   .search-trigger { gap: 8px; padding-inline: 10px; }
   .search-label { font-size: 13px; color: var(--muted); }
+  .search-kbd { display: inline-flex; align-items: center; padding: 2px 5px; font-size: 11px; font-family: inherit; color: var(--muted); background: var(--surface-soft); border: 1px solid var(--line); border-radius: 4px; line-height: 1.2; }
   .language { position: relative; }
   .language-menu { position: absolute; top: calc(100% + 9px); right: 0; width: 190px; padding: 7px; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 18px 45px rgb(0 0 0 / .14); }
   .language-menu a, .language-menu span { display: flex; justify-content: space-between; padding: 10px; font-size: 13px; }
@@ -83,6 +85,7 @@ const nav = [
     .mobile-nav-toggle { display: inline-flex; }
     .github-link { display: none; }
     .search-label { display: none; }
+    .search-kbd { display: none; }
   }
   @media (max-width: 420px) { .header-inner { gap: 10px; } }
 </style>

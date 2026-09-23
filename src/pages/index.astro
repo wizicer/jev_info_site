@@ -15,10 +15,10 @@ const recent = [...demos]
       <p class="eyebrow">A community index</p>
       <h1>The index of Jev projects and use cases.</h1>
 
-      <button class="hero-search home-search-trigger" type="button" aria-label="Search the Jev use case collection">
+      <button class="hero-search home-search-trigger" type="button" aria-label="Search the Jev use case collection (Press ⌘K or /)">
         <Icon name="material-symbols:search-rounded" size={35} />
         <span class="search-placeholder">What are you looking for?</span>
-        <span class="search-action">Search <span aria-hidden="true">→</span></span>
+        <span class="search-action"><kbd class="hero-kbd">⌘K</kbd>Search <span aria-hidden="true">→</span></span>
       </button>
 
       <div class="collection-links" aria-label="Use case collections">
@@ -48,8 +48,9 @@ const recent = [...demos]
   .hero-search { width: 100%; margin-top: 24px; min-height: 68px; padding: 8px 8px 8px 18px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; border: 1px solid var(--ink); background: transparent; color: var(--ink); text-align: left; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
   .hero-search:hover, .hero-search:focus-visible { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); outline: 0; }
   .search-placeholder { color: var(--muted); font-size: 16px; letter-spacing: -.015em; opacity: .72; }
-  .search-action { height: 50px; padding-inline: 24px; display: inline-flex; align-items: center; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
-  .search-action span { margin-left: 16px; font-size: 18px; }
+  .search-action { height: 50px; padding-inline: 20px; display: inline-flex; align-items: center; background: var(--ink); color: var(--paper); font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+  .hero-kbd { display: inline-flex; align-items: center; padding: 2px 6px; margin-right: 8px; font-size: 11px; font-family: inherit; color: var(--paper); background: rgba(255, 255, 255, 0.18); border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 4px; line-height: 1.2; }
+  .search-action span { margin-left: 12px; font-size: 18px; }
   .collection-links { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
   .collection-links a { min-width: 150px; padding: 14px 16px; border: 1px solid var(--ink); display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; font-size: 12px; font-weight: 720; letter-spacing: .06em; text-transform: uppercase; transition: background .15s, color .15s; }
   .collection-links small { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: 0; transition: color .15s; }

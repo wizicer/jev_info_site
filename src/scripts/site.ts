@@ -269,26 +269,60 @@ export function initSite() {
     if (!caseDialog?.open) return;
     caseDialog.close();
     caseDialog.querySelector('video')?.pause();
-    caseDialog.querySelector('.dialog-media')?.replaceChildren(Object.assign(document.createElement('div'), { className: 'dialog-placeholder', textContent: 'jev' }));
+    const mediaHost = caseDialog.querySelector<HTMLElement>('.dialog-media');
+    if (mediaHost) {
+      mediaHost.style.display = 'none';
+      mediaHost.replaceChildren(Object.assign(document.createElement('div'), { className: 'dialog-placeholder', textContent: 'jev' }));
+    }
+    const embed = caseDialog.querySelector<HTMLElement>('.dialog-embed');
+    if (embed) embed.replaceChildren();
     activeDemoId = null;
     body.classList.remove('no-scroll');
     resumeVisiblePreviews();
     if (restoreHistory && location.pathname.startsWith('/use-cases/')) history.pushState({}, '', previousUrl);
   };
 
-  const showMediaFallback = (demo: Demo, host: HTMLElement) => {
+  const setTweetStatus = (state: 'loading' | 'failed' | 'loaded', demo?: ClientDemo | Demo) => {
     if (!caseDialog) return;
-    caseDialog.classList.add('tweet-failed');
-    host.innerHTML = '<p>Original post could not be embedded. Showing the preview instead.</p>';
+    const statusBar = caseDialog.querySelector<HTMLElement>('.tweet-status-bar');
+    if (!statusBar) return;
+    const statusText = statusBar.querySelector<HTMLElement>('.tweet-status-text');
+    const statusLink = statusBar.querySelector<HTMLAnchorElement>('.tweet-status-link');
+
+    if (state === 'loading') {
+      statusBar.classList.remove('is-failed', 'is-loaded');
+      statusBar.hidden = false;
+      if (statusText) statusText.textContent = 'Loading original post…';
+      if (statusLink && demo) statusLink.href = demo.url;
+    } else if (state === 'failed') {
+      statusBar.classList.remove('is-loaded');
+      statusBar.classList.add('is-failed');
+      statusBar.hidden = false;
+      if (statusText) statusText.textContent = 'Original post unavailable · Showing preview';
+      if (statusLink && demo) statusLink.href = demo.url;
+    } else if (state === 'loaded') {
+      statusBar.classList.remove('is-failed');
+      statusBar.classList.add('is-loaded');
+      statusBar.hidden = true;
+    }
+  };
+
+  const renderCaseMedia = (demo: ClientDemo | Demo, autoplay = true) => {
+    if (!caseDialog) return;
     const mediaHost = caseDialog.querySelector<HTMLElement>('.dialog-media')!;
-    mediaHost.hidden = false;
+    mediaHost.style.display = 'flex';
     const media = demo.mediaType === 'video' ? document.createElement('video') : document.createElement('img');
     media.src = demo.src;
     if (media instanceof HTMLVideoElement) {
-      media.muted = true; media.autoplay = true; media.playsInline = true; media.controls = true;
+      media.muted = true;
+      media.autoplay = autoplay;
+      media.playsInline = true;
+      media.controls = true;
       media.poster = demo.cover;
       attachPlaybackEasing(media);
-    } else media.alt = '';
+    } else {
+      media.alt = demo.description || '';
+    }
     mediaHost.replaceChildren(media);
   };
 
@@ -296,7 +330,7 @@ export function initSite() {
     if (!caseDialog) return;
     previousUrl = push ? location.pathname : previousUrl;
     activeDemoId = demo.id;
-    caseDialog.classList.remove('tweet-failed');
+
     caseDialog.querySelector<HTMLElement>('.dialog-description')!.textContent = demo.description;
     caseDialog.querySelector<HTMLImageElement>('.dialog-author img')!.src = demo.author.avatarUrl;
     caseDialog.querySelector<HTMLElement>('.dialog-author strong')!.textContent = demo.author.name;
@@ -315,8 +349,18 @@ export function initSite() {
       taxonomy.append(groupLink, separator);
     }
     taxonomy.append(document.createTextNode(demo.categoryName));
+
+    // 1. Immediately render the preview / cover
+    renderCaseMedia(demo);
+
+    // 2. Set status bar to loading
+    setTweetStatus('loading', demo);
+
+    // 3. Clear and hide embed until tweet finishes loading
     const embed = caseDialog.querySelector<HTMLElement>('.dialog-embed')!;
-    embed.innerHTML = `<div class="embed-loading" role="status"><span aria-hidden="true"></span><strong>Loading original post…</strong><small>This may take a few seconds.</small><a href="${demo.url}" target="_blank" rel="noreferrer">Open directly ↗</a></div>`;
+    embed.hidden = true;
+    embed.replaceChildren();
+
     if (!caseDialog.open) caseDialog.showModal();
     body.classList.add('no-scroll');
     document.querySelectorAll<HTMLVideoElement>('.case-video').forEach((video) => video.pause());
@@ -340,33 +384,52 @@ export function initSite() {
     jsonpWindow[callback] = () => finish(true);
     script.onerror = () => finish(false);
     script.src = `https://publish.x.com/oembed?url=${encodeURIComponent('https://x.com/i/status/' + id)}&omit_script=true&dnt=true&callback=${callback}`;
-    const timer = window.setTimeout(() => finish(false), 6000);
+    const timer = window.setTimeout(() => finish(false), 3500);
     document.head.append(script);
   });
-  async function loadTweet(demo: Demo, host: HTMLElement) {
+
+  async function loadTweet(demo: Demo | ClientDemo, host: HTMLElement) {
     type TwitterWindow = Window & { twttr?: { widgets: { createVideo: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
     const twitterWindow = window as TwitterWindow;
-    if (!(await tweetExists(demo.id))) { if (activeDemoId === demo.id) showMediaFallback(demo, host); return; }
-    if (!twitterWindow.twttr) {
-      await new Promise<void>((resolve) => {
-        const existing = document.querySelector<HTMLScriptElement>('script[data-twitter-widget]');
-        if (existing) { existing.addEventListener('load', () => resolve(), { once: true }); existing.addEventListener('error', () => resolve(), { once: true }); return; }
-        const script = document.createElement('script');
-        script.src = 'https://platform.twitter.com/widgets.js';
-        script.async = true; script.dataset.twitterWidget = 'true';
-        script.onload = () => resolve();
-        script.onerror = () => resolve();
-        document.head.append(script);
-      });
-    }
+
+    const tweetPromise = (async () => {
+      try {
+        if (!(await tweetExists(demo.id))) return false;
+        if (!twitterWindow.twttr) {
+          await new Promise<void>((resolve) => {
+            const existing = document.querySelector<HTMLScriptElement>('script[data-twitter-widget]');
+            if (existing) { existing.addEventListener('load', () => resolve(), { once: true }); existing.addEventListener('error', () => resolve(), { once: true }); return; }
+            const script = document.createElement('script');
+            script.src = 'https://platform.twitter.com/widgets.js';
+            script.async = true; script.dataset.twitterWidget = 'true';
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.append(script);
+          });
+        }
+        if (!twitterWindow.twttr) return false;
+        const result = await twitterWindow.twttr.widgets.createVideo(demo.id, host, { theme: root.dataset.theme === 'dark' ? 'dark' : 'light', dnt: true });
+        return !!result;
+      } catch {
+        return false;
+      }
+    })();
+
+    const timeoutPromise = new Promise<boolean>((resolve) => setTimeout(() => resolve(false), 5000));
+
+    const ok = await Promise.race([tweetPromise, timeoutPromise]);
     if (activeDemoId !== demo.id) return;
-    host.replaceChildren();
-    if (!twitterWindow.twttr) { showMediaFallback(demo, host); return; }
-    try {
-      const result = await twitterWindow.twttr.widgets.createVideo(demo.id, host, { theme: root.dataset.theme === 'dark' ? 'dark' : 'light', dnt: true });
-      if (!result) throw new Error('Tweet unavailable');
-    } catch {
-      if (activeDemoId === demo.id) showMediaFallback(demo, host);
+
+    if (ok) {
+      setTweetStatus('loaded', demo);
+      const mediaHost = caseDialog?.querySelector<HTMLElement>('.dialog-media');
+      if (mediaHost) {
+        mediaHost.style.display = 'none';
+        mediaHost.querySelector('video')?.pause();
+      }
+      host.hidden = false;
+    } else {
+      setTweetStatus('failed', demo);
     }
   }
 
@@ -442,6 +505,24 @@ export function initSite() {
   };
   searchDialog?.querySelector('.search-close')?.addEventListener('click', closeSearch);
   searchDialog?.addEventListener('cancel', (event) => { event.preventDefault(); closeSearch(); });
+
+  document.addEventListener('keydown', (event) => {
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+      event.preventDefault();
+      if (searchDialog?.open) closeSearch();
+      else openSearch();
+      return;
+    }
+
+    if (event.key === '/' && !searchDialog?.open && !caseDialog?.open) {
+      const activeEl = document.activeElement;
+      const isInput = activeEl instanceof HTMLInputElement || activeEl instanceof HTMLTextAreaElement || (activeEl as HTMLElement)?.isContentEditable;
+      if (!isInput) {
+        event.preventDefault();
+        openSearch();
+      }
+    }
+  });
   const input = searchDialog?.querySelector<HTMLInputElement>('input');
   const searchResults = searchDialog?.querySelector<HTMLElement>('.search-results');
   const searchStatus = searchDialog?.querySelector<HTMLElement>('.search-status');
