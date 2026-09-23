@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 — Page not found · jev.info" description="The requested page could not be found.">
+  <main class="shell not-found">
+    <div class="not-found-content">
+      <span class="status-code">404 Error</span>
+      <h1>Page not found</h1>
+      <p>The page you are looking for doesn't exist, has been removed, or was moved to another location.</p>
+      <div class="actions">
+        <a href="/" class="btn-primary">← Back to home</a>
+        <a href="/use-cases" class="btn-secondary">Browse use cases ↗</a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .not-found {
+    min-height: calc(100dvh - 220px);
+    display: flex;
+    align-items: center;
+    padding-block: clamp(48px, 8vw, 100px);
+  }
+  .not-found-content {
+    max-width: 540px;
+  }
+  .status-code {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+  }
+  h1 {
+    margin: 0 0 16px;
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 580;
+    line-height: 1.05;
+    letter-spacing: -0.06em;
+  }
+  p {
+    margin: 0 0 32px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 18px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 12px;
+    font-weight: 720;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: opacity 0.15s ease;
+  }
+  .btn-primary:hover {
+    opacity: 0.85;
+  }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 18px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 720;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .btn-secondary:hover {
+    border-color: var(--ink);
+  }
+</style>

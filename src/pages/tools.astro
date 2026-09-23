@@ -103,7 +103,7 @@ const formatCount = (value: number) => new Intl.NumberFormat('en').format(value)
     if (input) { input.value = query; input.addEventListener('input', () => { query = input.value; currentPage = 1; render(); }); }
     const toolDialog = document.createElement("dialog");
     toolDialog.className = "tool-quick-dialog";
-    toolDialog.innerHTML = "<button type=\"button\" aria-label=\"Close tool details\">×</button><p>TOOL</p><h2></h2><div class=\"tool-quick-description\"></div><a target=\"_blank\" rel=\"noreferrer\">Open repository ↗</a>";
+    toolDialog.innerHTML = "<button type=\"button\" aria-label=\"Close tool details\">×</button><p>TOOL</p><h2></h2><div class=\"tool-quick-description\"></div><a href=\"#\" target=\"_blank\" rel=\"noreferrer\">Open repository ↗</a>";
     document.body.append(toolDialog);
     const dialogTitle = toolDialog.querySelector("h2");
     const dialogDescription = toolDialog.querySelector(".tool-quick-description");

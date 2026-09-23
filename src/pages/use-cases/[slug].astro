@@ -24,7 +24,7 @@ const visibleCategories = group
   : [];
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} image={demo?.cover} type={demo ? 'article' : 'website'}>
   {group ? (
     <main class="shell group-page">
       <header class="group-header">
