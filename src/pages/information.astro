@@ -6,18 +6,38 @@ import awesomeData from '../data/awesome.json';
 import metricsData from '../data/repository-metrics.json';
 import siteMetadata from '../data/site-metadata.json';
 
-type Resource = { id: string; name: string; url: string; description: string; featured?: boolean; favicon?: string };
+type Resource = { id: string; name: string; url: string; description: string; score?: number; featured?: boolean; favicon?: string };
 type ResourceMetrics = Record<string, { stars: number; forks: number }>;
 const resourceMetrics = (metricsData.snapshots?.at(-1)?.metrics ?? {}) as ResourceMetrics;
 const formatCount = (value: number) => new Intl.NumberFormat('en').format(value);
 const decodeName = (value: string) => value.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"');
 const primaryResourceId = 'site_jev_info';
+const countDots = (hostname: string) => (hostname.match(/\./g) || []).length;
 const resources = [siteMetadata.communityResources.primary as Resource, ...(awesomeData as Resource[])]
   .map((resource) => {
     const hostname = new URL(resource.url).hostname.replace(/^www\./, '');
     return { ...resource, stars: resourceMetrics[resource.url]?.stars ?? -1, forks: resourceMetrics[resource.url]?.forks ?? -1, title: decodeName(resource.name), hostname, displayUrl: resource.url.replace(/^https?:\/\//, '').replace(/\/$/, ''), github: hostname === 'github.com', favicon: resource.favicon ?? (resource.id === primaryResourceId ? '/favicon/' + primaryResourceId + '.svg' : null) };
   })
-  .sort((a, b) => Number(a.id !== primaryResourceId) - Number(b.id !== primaryResourceId) || Number(a.github) - Number(b.github) || (!a.github ? a.title.localeCompare(b.title, 'en') : b.stars - a.stars || b.forks - a.forks || a.title.localeCompare(b.title, 'en')));
+  .sort((a, b) => {
+    if (a.id === primaryResourceId) return -1;
+    if (b.id === primaryResourceId) return 1;
+    if (Number(a.github) !== Number(b.github)) {
+      return Number(a.github) - Number(b.github);
+    }
+    if (!a.github) {
+      const scoreDiff = (b.score ?? 0) - (a.score ?? 0);
+      if (scoreDiff !== 0) return scoreDiff;
+
+      const faviconDiff = Number(!a.favicon) - Number(!b.favicon);
+      if (faviconDiff !== 0) return faviconDiff;
+
+      const dotDiff = countDots(a.hostname) - countDots(b.hostname);
+      if (dotDiff !== 0) return dotDiff;
+
+      return a.title.localeCompare(b.title, 'en');
+    }
+    return b.stars - a.stars || b.forks - a.forks || a.title.localeCompare(b.title, 'en');
+  });
 ---
 
 <BaseLayout title="Information — jev.info" description="References and community resources for the Jev ecosystem.">
