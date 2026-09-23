@@ -18,7 +18,18 @@ import { demosForGroup, groups } from '../../lib/content';
   .home-main { padding-top: clamp(28px, 4vw, 56px); }
   .page-intro { min-height: 72px; padding-bottom: 24px; display: flex; align-items: baseline; gap: 12px; font-size: 14px; }
   .page-intro p { margin: 0; color: var(--muted); }
-  .page-title { margin: 0; font-size: 14px; color: var(--ink); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .page-intro h1,
+  .page-title {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: inherit;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink);
+    display: inline;
+  }
   @media (max-width: 550px) { .page-intro { min-height: 86px; flex-direction: column; justify-content: flex-end; gap: 6px; } .page-intro p { line-height: 1.45; } }
 </style>
 

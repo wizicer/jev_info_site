@@ -45,27 +45,28 @@
   .dialog-close { position: absolute; z-index: 5; top: 12px; right: 14px; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; font-size: 26px; line-height: 1; }
   .dialog-layout { height: 100%; display: grid; grid-template-columns: minmax(520px, 1.55fr) minmax(320px, .75fr); }
   .dialog-primary { min-width: 0; padding: 26px; overflow: auto; display: flex; flex-direction: column; align-items: center; background: var(--surface-soft); border-right: 1px solid var(--line); }
-  .dialog-primary-label { width: 100%; margin-bottom: 14px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .dialog-primary-label { width: min(100%, 590px); margin-bottom: 14px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
   .tweet-status-bar {
-    width: 100%;
+    width: min(100%, 590px);
     margin-bottom: 14px;
-    padding: 8px 12px;
+    padding: 9px 14px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--muted);
+    box-sizing: border-box;
   }
   .tweet-status-spinner {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border: 2px solid var(--line);
     border-top-color: var(--accent);
     border-radius: 50%;
-    animation: embed-spin .8s linear infinite;
+    animation: tweet-spin .8s linear infinite;
     flex-shrink: 0;
   }
   .tweet-status-text {
@@ -80,6 +81,7 @@
     font-weight: 600;
     flex-shrink: 0;
     margin-left: auto;
+    font-size: 13px;
   }
   .tweet-status-bar.is-failed .tweet-status-spinner {
     display: none;
@@ -87,12 +89,12 @@
   .tweet-status-bar.is-loaded {
     display: none;
   }
-  @keyframes embed-spin { to { transform: rotate(360deg); } }
+  @keyframes tweet-spin { to { transform: rotate(360deg); } }
   @media (prefers-reduced-motion: reduce) { .tweet-status-spinner { animation: none; } }
   .dialog-side { min-width: 0; overflow: auto; }
   .dialog-media {
     position: relative;
-    width: 100%;
+    width: min(100%, 590px);
     aspect-ratio: 16 / 9;
     display: flex;
     align-items: center;
@@ -100,10 +102,17 @@
     overflow: hidden;
     background: #090a09;
     border: 1px solid var(--line);
+    border-radius: 4px;
   }
-  .dialog-media img, .dialog-media video { position: relative; width: 100%; height: 100%; object-fit: contain; display: block; }
+  .dialog-media img { position: relative; width: 100%; height: 100%; object-fit: contain; display: block; }
   .dialog-placeholder { color: #30322f; font-size: 32px; font-weight: 750; letter-spacing: -.08em; }
   .dialog-embed { width: min(100%, 590px); display: grid; place-items: center; color: var(--muted); font-size: 12px; }
+  .dialog-embed.is-staging {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
   .dialog-embed :global(.twitter-tweet), .dialog-embed :global(.twitter-tweet-rendered) { margin: 0 auto !important; }
   .dialog-info { padding: 28px 28px 38px; overflow-wrap: anywhere; }
   .dialog-taxonomy { margin-bottom: 17px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }

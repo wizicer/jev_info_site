@@ -13,11 +13,7 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
       <a class="tweet-status-link" href={demo.url} target="_blank" rel="noreferrer">Open on X ↗</a>
     </div>
     <div class="detail-media" data-detail-media>
-      {demo.mediaType === 'video' ? (
-        <video src={demo.src} poster={demo.cover} controls autoplay muted playsinline></video>
-      ) : (
-        <img src={demo.src} alt={demo.description} />
-      )}
+      <img src={demo.cover} alt={demo.description} />
     </div>
     <div class="standalone-tweet" data-standalone-tweet hidden></div>
   </section>
@@ -49,64 +45,70 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
         if (statusText) statusText.textContent = 'Original post unavailable · Showing preview';
       }
       if (mediaEl) mediaEl.hidden = false;
-      if (host) host.hidden = true;
+      if (host) {
+        host.classList.remove('is-staging');
+        host.hidden = true;
+      }
     };
 
-    type TwitterWindow = Window & { twttr?: { widgets: { createVideo: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement> } } };
+    type TwitterWindow = Window & {
+      twttr?: {
+        widgets: {
+          createVideo: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement | undefined>;
+          createTweet: (id: string, host: HTMLElement, options: object) => Promise<HTMLElement | undefined>;
+        };
+      };
+    };
     const twitterWindow = window as TwitterWindow;
 
-    const tweetExists = (id: string) => new Promise<boolean>((resolve) => {
-      const callback = '__jevOembed' + id + Math.random().toString(36).slice(2);
-      const jsonpWindow = window as unknown as Record<string, unknown>;
+    const loadTwitterScript = () => new Promise<void>((resolve) => {
+      if (twitterWindow.twttr) return resolve();
+      const existing = document.querySelector<HTMLScriptElement>('script[data-twitter-widget]');
+      if (existing) {
+        existing.addEventListener('load', () => resolve(), { once: true });
+        existing.addEventListener('error', () => resolve(), { once: true });
+        return;
+      }
       const script = document.createElement('script');
-      let settled = false;
-      const finish = (available: boolean) => {
-        if (settled) return;
-        settled = true;
-        window.clearTimeout(timer);
-        script.remove();
-        delete jsonpWindow[callback];
-        resolve(available);
-      };
-      jsonpWindow[callback] = () => finish(true);
-      script.onerror = () => finish(false);
-      script.src = `https://publish.x.com/oembed?url=${encodeURIComponent('https://x.com/i/status/' + id)}&omit_script=true&dnt=true&callback=${callback}`;
-      const timer = window.setTimeout(() => finish(false), 3500);
+      script.src = 'https://platform.twitter.com/widgets.js';
+      script.async = true;
+      script.dataset.twitterWidget = 'true';
+      script.onload = () => resolve();
+      script.onerror = () => resolve();
       document.head.append(script);
     });
 
     const load = async () => {
+      const tweetId = root.dataset.id ?? '';
+      if (!tweetId) {
+        showFallback();
+        return;
+      }
+
+      host.hidden = false;
+      host.classList.add('is-staging');
+
       const tweetPromise = (async () => {
         try {
-          if (!(await tweetExists(root.dataset.id ?? ''))) return false;
-          if (!twitterWindow.twttr) {
-            await new Promise<void>((resolve) => {
-              const script = document.createElement('script');
-              script.src = 'https://platform.twitter.com/widgets.js';
-              script.async = true;
-              script.onload = () => resolve();
-              script.onerror = () => resolve();
-              document.head.append(script);
-            });
-          }
+          await loadTwitterScript();
           if (!twitterWindow.twttr) return false;
-          const result = await twitterWindow.twttr.widgets.createVideo(root.dataset.id ?? '', host, { dnt: true });
+          let result = await twitterWindow.twttr.widgets.createVideo(tweetId, host, { dnt: true });
+          if (!result) {
+            result = await twitterWindow.twttr.widgets.createTweet(tweetId, host, { dnt: true });
+          }
           return !!result;
         } catch {
           return false;
         }
       })();
 
-      const timeoutPromise = new Promise<boolean>((resolve) => setTimeout(() => resolve(false), 5000));
+      const timeoutPromise = new Promise<boolean>((resolve) => setTimeout(() => resolve(false), 10000));
       const ok = await Promise.race([tweetPromise, timeoutPromise]);
 
       if (ok) {
         if (statusEl) statusEl.classList.add('is-loaded');
-        if (mediaEl) {
-          mediaEl.hidden = true;
-          mediaEl.querySelector('video')?.pause();
-        }
-        host.hidden = false;
+        if (mediaEl) mediaEl.hidden = true;
+        host.classList.remove('is-staging');
       } else {
         showFallback();
       }
@@ -118,9 +120,9 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
 <style>
   .detail-layout { min-height: calc(100dvh - 68px); display: grid; grid-template-columns: minmax(520px, 1.5fr) minmax(320px, .75fr); }
   .detail-primary { padding: 32px; display: flex; flex-direction: column; align-items: center; background: var(--surface-soft); border-right: 1px solid var(--line); }
-  .section-label { width: 100%; margin-bottom: 18px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .section-label { width: min(100%, 590px); margin-bottom: 18px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
   .tweet-status-bar {
-    width: min(100%, 760px);
+    width: min(100%, 590px);
     margin-bottom: 14px;
     padding: 9px 14px;
     display: flex;
@@ -131,6 +133,7 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
     border-radius: 4px;
     font-size: 13px;
     color: var(--muted);
+    box-sizing: border-box;
   }
   .tweet-status-spinner {
     width: 14px;
@@ -153,6 +156,7 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
     font-weight: 600;
     flex-shrink: 0;
     margin-left: auto;
+    font-size: 13px;
   }
   .tweet-status-bar.is-failed .tweet-status-spinner {
     display: none;
@@ -163,7 +167,7 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
   @keyframes tweet-spin { to { transform: rotate(360deg); } }
   @media (prefers-reduced-motion: reduce) { .tweet-status-spinner { animation: none; } }
   .detail-media {
-    width: min(100%, 760px);
+    width: min(100%, 590px);
     aspect-ratio: 16 / 9;
     display: flex;
     align-items: center;
@@ -171,14 +175,21 @@ const { demo, category, group } = Astro.props as { demo: Demo; category?: Catego
     overflow: hidden;
     background: #090a09;
     border: 1px solid var(--line);
+    border-radius: 4px;
   }
-  .detail-media video, .detail-media img {
+  .detail-media img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     display: block;
   }
   .standalone-tweet { width: min(100%, 590px); min-height: 480px; display: grid; place-items: center; color: var(--muted); font-size: 14px; }
+  .standalone-tweet.is-staging {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
   .standalone-tweet :global(.twitter-tweet), .standalone-tweet :global(.twitter-tweet-rendered) { margin: 0 auto !important; }
   .detail-copy { padding: clamp(36px, 5vw, 72px) clamp(24px, 4vw, 52px); }
   .taxonomy { margin: 0 0 24px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
