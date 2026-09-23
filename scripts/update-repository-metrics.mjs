@@ -78,14 +78,17 @@ async function fetchMetrics(target) {
   return { likes: data.likes };
 }
 
-async function mapWithConcurrency(items, worker) {
+async function mapWithConcurrency(items, worker, onProgress) {
   const results = new Array(items.length);
+  let completed = 0;
   let nextIndex = 0;
   const run = async () => {
     while (nextIndex < items.length) {
       const index = nextIndex;
       nextIndex += 1;
       results[index] = await worker(items[index]);
+      completed += 1;
+      onProgress?.(completed, items.length);
     }
   };
   await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, run));
@@ -111,6 +114,8 @@ async function main() {
     { items: models, optional: false },
   ];
   const urls = [...new Set(sources.flatMap((source) => source.items.map((item) => item.url)))];
+  const progressInterval = Math.max(1, Math.ceil(urls.length / 5));
+  console.log(`Fetching metrics for ${urls.length} unique URLs with ${concurrency} concurrent requests…`);
   const results = new Map(await mapWithConcurrency(urls, async (url) => {
     const target = metricTarget(url);
     if (!target) return [url, null];
@@ -119,6 +124,8 @@ async function main() {
     } catch (error) {
       return [url, { error: error.message }];
     }
+  }, (completed, total) => {
+    if (completed === total || completed % progressInterval === 0) console.log(`  ${completed}/${total} URLs fetched`);
   }));
 
   const metrics = {};
