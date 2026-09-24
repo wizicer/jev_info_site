@@ -30,10 +30,22 @@
     "description": "Open-Jev-9B is a LoRA adapter plus scalar decision head for Qwen3.5-9B that scores caller-supplied candidates and returns typed choice/yes-no/ordinal decisions with calibrated probabilities—without autoregressive generation—via a pinned-revision inference server."
   },
   {
+    "id": "cand_28d2c8b7071356b1",
+    "name": "Open-Jev-27B-v1.1",
+    "url": "https://huggingface.co/ZefanCai/Open-Jev-27B-v1.1",
+    "description": "A 15.5M-parameter LoRA adapter and scalar decision head for Qwen3.8-27B that scores supplied candidates and returns typed choice, yes/no, and ordinal-score probabilities without autoregressive generation, scoring 85.28% on 231 public JevBench tasks (72.07% Hard)."
+  },
+  {
     "id": "cand_3b46bc0d115e3c02",
     "name": "autojev-27b",
     "url": "https://huggingface.co/denis-pplx/autojev-27b",
     "description": "AutoJev-27B is a 27B-parameter multimodal decision model finetuned from Qwen3.8-27B that returns calibrated probabilities for supplied choices in a single forward pass, exposes a TypeSafe-compatible API and playground, and improves benchmark accuracy/ECE/Brier over its base."
+  },
+  {
+    "id": "cand_4f59008818083f85",
+    "name": "vera-deberta-v3-large",
+    "url": "https://huggingface.co/NovusEdge/vera-deberta-v3-large",
+    "description": "VERA is a fine-tuned DeBERTa-v3-large model that scores and ranks candidate headline or short-copy variants by predicted click rate in a single forward pass, trained on 62,695 arms from 32,487 real A/B tests to pick higher-performing variants without generation or prompting."
   },
   {
     "id": "cand_53e471fe6351073e",
@@ -166,6 +178,12 @@
     "name": "APUS-OpenJev-v1",
     "url": "https://huggingface.co/apus-ailab/APUS-OpenJev-v1",
     "description": "APUS-OpenJev-v1 is a family of Qwen3.5-based decision models (4B, 9B, 35B-A3B) that score candidate actions for browser agents and business workflows, offering selectable low/high compute depth, candidate-aware output projection, and English-Chinese support."
+  },
+  {
+    "id": "cand_f2ce48452d97b67d",
+    "name": "Jev-Omni-Q4_K_M-GGUF",
+    "url": "https://huggingface.co/Reza2kn/Jev-Omni-Q4_K_M-GGUF",
+    "description": "A Q4_K_M GGUF quantization of the Jev-Omni 12B multimodal decision classifier that, together with its original-precision projector and FP32 decision head, lets llama.cpp return option probabilities over text, image, audio, and video inputs on CPU or GPU."
   },
   {
     "id": "cand_fd5c946ffe17da35",

@@ -453,6 +453,12 @@
     "description": "A curated index of 71 open-source projects built on TypeSafe Jev's typed decision API, spanning SDKs for many languages, framework/MCP/database integrations, and developer tools that use calibrated judgments for code review, commit gating, routing, ranking, and automation."
   },
   {
+    "id": "cand_d33f93b3392ff10a",
+    "name": "jev-projects",
+    "url": "https://github.com/Faiziahmad/jev-projects",
+    "description": "Seven projects built on TypeSafe Jev, an AI model returning calibrated probabilities in a single API call — dev tools for LLM evaluation, probabilistic state machines, SOC alert triage, and pentest classification, plus games showcasing Jev-powered scoring."
+  },
+  {
     "id": "cand_d7f4e08646b402b7",
     "name": "awesome-jev-use-cases",
     "url": "https://github.com/walidboulanouar/awesome-jev-use-cases",
