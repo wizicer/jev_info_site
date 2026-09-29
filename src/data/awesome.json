@@ -291,10 +291,34 @@
     "description": "A source-backed catalog of 100+ projects, SDKs, provider integrations, and tools built on Jev, TypeSafe AI's System One model for typed probabilistic decisions, spanning routing, guardrails, coding agents, and evaluation with documented limitations and reproducible evidence."
   },
   {
+    "id": "cand_0204da2ef5b63e40",
+    "name": "awesome-jev",
+    "url": "https://github.com/kydlikebtc/awesome-jev",
+    "description": "A curated index of 1,200+ public examples of Jev — TypeSafe AI's typed decision model — organized by the decision each makes rather than source, with link verification, per-row primitive usage (choice/score/noul), and independently measured results including negative findings."
+  },
+  {
+    "id": "cand_0c159862c5a9217f",
+    "name": "awesome-jev-typesafe",
+    "url": "https://github.com/hazlema/awesome-jev-typesafe",
+    "description": "A curated catalog of 375+ resources for TypeSafe's Jev System One model—official SDKs, coding-agent integrations, open replicas, gateways, routing, RAG, review and benchmark tooling—plus docs, limits, and known failure modes for building typed, sub-second decision workflows."
+  },
+  {
     "id": "cand_0d07801a1445d57c",
     "name": "awesome-jev",
     "url": "https://github.com/kraayenjon/awesome-jev",
     "description": "A curated awesome list for Jev — TypeSafe AI's System One model that returns typed decisions (Choice, Score, Noul) with calibrated probabilities — cataloging its primitives, pricing, SDKs, quick-start code, gateways, benchmarks, MCP tools, and production builds with reported cost/latency."
+  },
+  {
+    "id": "cand_0e2df26b7e2efe42",
+    "name": "jev-handbook",
+    "url": "https://github.com/Li-Evan/jev-handbook",
+    "description": "A 17-chapter open-source handbook (EPUB/PDF/online) teaching how to apply Jev—a \"System One\" model that answers only typed questions with calibrated probabilities—in real products, covering scenario-by-scenario usage across finance, coding agents, browser control, RAG, safety, and evaluation, plus six design patterns and its known limitations."
+  },
+  {
+    "id": "cand_164368edf466c6aa",
+    "name": "awesome-jev-gallery",
+    "url": "https://github.com/OmniJev/awesome-jev-gallery",
+    "description": "A curated gallery of 143 entries on System One models and Jev, TypeSafe's model that maps state to typed, calibrated option probabilities, covering official docs, 40 open-source reimplementations, 35 Jev-based projects, 24 independent evaluations, commentary, and prior art."
   },
   {
     "id": "cand_17b418cbf2be7a0f",
@@ -315,6 +339,12 @@
     "description": "An independently maintained field report and live monitor of the Jev ecosystem that re-scans GitHub, X, and five community directories every three hours, providing a 220+-case evidence-graded casebook, a machine-readable registry with A/B/C verification tiers, field-tested usage lessons, and a Jev API access guide."
   },
   {
+    "id": "cand_2f6238bafcb18e22",
+    "name": "building-with-typesafe-jev",
+    "url": "https://github.com/aaddrick/building-with-typesafe-jev",
+    "description": "An unofficial agent skill that teaches coding agents to design for TypeSafe's Jev typed-decision model (Choice/Score/Noul answers with calibrated probabilities), bundling 150+ community projects sorted by pattern with code sketches, multi-agent install instructions, optional API-key validation, and benchmarked quality gains."
+  },
+  {
     "id": "cand_3052996e048787af",
     "name": "jev-lab",
     "url": "https://github.com/gbesse/jev-lab",
@@ -331,6 +361,12 @@
     "name": "awesome-jev",
     "url": "https://github.com/Amal-David/awesome-jev",
     "description": "A curated list of 36 reviewed projects and tools built with Jev, the typed-decision API that picks options, returns yes/no probabilities, or scores inputs—spanning SDKs, browser/desktop drivers, agent tools, apps, games, and independent models, plus demos and quick-start code."
+  },
+  {
+    "id": "cand_5af3c7f0cc26981d",
+    "name": "awesome-jev",
+    "url": "https://github.com/THEROCKSSS/awesome-jev",
+    "description": "A community catalog of Jev / TypeSafe System One projects — models, SDKs, agents, MCP tools, and experiments — with a repository list refreshed daily by a GitHub Action and detail pages that load each project's original README live from the GitHub API."
   },
   {
     "id": "cand_5c532c3ca2fc70bc",
@@ -373,6 +409,12 @@
     "name": "jev-experiments",
     "url": "https://github.com/nak1b/jev-experiments",
     "description": "A Next.js/TypeScript monorepo of small Jev experiments—flight search, expense tagging, news filtering—that answer typed questions (Choice, Score, Noul) with probabilities in under a second, exposing per-call cost, tokens, and speed to show batching beats per-item calls."
+  },
+  {
+    "id": "cand_7694cde47ba23cb0",
+    "name": "awesome-jev-projects",
+    "url": "https://github.com/snowfungo/awesome-jev-projects",
+    "description": "A curated multilingual list of 194 projects built with Jev's fast, low-cost decision model, spanning 11 categories—agents, browser extensions, developer tools, games, robotics, and more—each entry linking to its original X post and illustrating real uses like model routing, computer use, and real-time filtering."
   },
   {
     "id": "cand_786cb988c3825de1",
@@ -483,10 +525,28 @@
     "description": "A collection of self-contained, deployable examples combining TypeSafe's Jev model with Pinecone — currently featuring an NLI reranking demo that filters 200 full-text search candidates down to 10 using natural-language criteria — plus agent skills for integrating TypeSafe judgments into Pinecone retrieval workflows."
   },
   {
+    "id": "cand_e70e11812cae736c",
+    "name": "jev-system-one-reference",
+    "url": "https://github.com/sebastianbennis/jev-system-one-reference",
+    "description": "A technical reference for engineers and coding assistants integrating Jev, covering its typed-judgement API, implementation patterns, known limitations, a worked support-ticket routing example with offline tests, and a reusable project handover template."
+  },
+  {
     "id": "cand_ea1b90f52f17bd9a",
     "name": "awesome-jev",
     "url": "https://github.com/ckaraca/awesome-jev",
     "description": "A curated list of tools, integrations, and experiments built on Jev—TypeSafe AI's System One model that returns typed, confidence-aware decisions in milliseconds—spanning agent frameworks, browser/computer use, mobile robotics, coding agents, MCP servers, observability, trading, and community SDKs."
+  },
+  {
+    "id": "cand_f1cc66019261d163",
+    "name": "Jev-Research-Index",
+    "url": "https://github.com/AgenticAPP-Web/Jev-Research-Index",
+    "description": "A bilingual English/Chinese static-site catalogue of papers, SDKs, demos, interviews, and social-media material about Jev, TypeSafe AI's System One typed probabilistic decision model, each record carrying a canonical URL, relationship, evidence level, and verification date."
+  },
+  {
+    "id": "cand_f2b38aedd36193ad",
+    "name": "awesome-jev",
+    "url": "https://github.com/BeatAPI/awesome-jev",
+    "description": "A curated catalogue of 192 source-reviewed JEV projects across 10 types (browser/computer use, SDKs, routing, models, search, safety, dev tools), with task-based scenario guides and fixed-commit code links so you can study real implementations and reuse them."
   },
   {
     "id": "cand_f2f898c30792069b",

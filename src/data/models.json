@@ -1,9 +1,27 @@
 [
   {
+    "id": "cand_019e6ff3bb3ed8f4",
+    "name": "NeoHorse-Jev-4B",
+    "url": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B",
+    "description": "A 4B structured decision model using prefill-only inference to output probabilities over application-defined Choice, Noul, and Score answers, enabling routing, tool selection, and rating in agent workflows, with local deployment via vLLM, SGLang, or native runtimes."
+  },
+  {
     "id": "cand_02388fe7bd7dcaa9",
     "name": "jevons-lfm25-1.2b-systemone",
     "url": "https://huggingface.co/gopalanj/jevons-lfm25-1.2b-systemone",
     "description": "A LoRA adapter for LiquidAI's LFM2.5-1.2B-Instruct (8-bit MLX) that biases outputs toward option-key, yes/no, and score-digit tokens so the jevons server can logit-score and assemble System One decisions, with a 72.4% holdout modal accuracy at T=1."
+  },
+  {
+    "id": "cand_0b272935f82c063d",
+    "name": "CLM-v0.1-8B",
+    "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+    "description": "CLM-v0.1-8B is a contrastive \"System One\" model that trains small state and action projection heads over a frozen Qwen3-8B encoder to score and rank candidates for agentic decision-making, with separable state/action embeddings enabling caching for up to 13× faster inference."
+  },
+  {
+    "id": "cand_0c6929bdf3ba5ef3",
+    "name": "JEV-27B",
+    "url": "https://huggingface.co/autotrust/JEV-27B",
+    "description": "An open dual-mode model serving calibrated typed decisions (yes/no, 2–16-option choice, 0–5 scores) in one forward pass and ordinary Qwen3.8-27B text generation from a single set of weights in one vLLM engine, while reproducing TypeSafe Jev 1.13's output distributions to within ~0.017 KL."
   },
   {
     "id": "cand_107995efedabd000",
@@ -30,16 +48,64 @@
     "description": "Open-Jev-9B is a LoRA adapter plus scalar decision head for Qwen3.5-9B that scores caller-supplied candidates and returns typed choice/yes-no/ordinal decisions with calibrated probabilities—without autoregressive generation—via a pinned-revision inference server."
   },
   {
+    "id": "cand_25e3a22b80677edd",
+    "name": "basal-1.0-4.5B",
+    "url": "https://huggingface.co/Remek/basal-1.0-4.5B",
+    "description": "basal-1.0-4.5B is a 4.5B-parameter Polish/English model that answers typed questions (choice, yes/no, score) about a state by returning calibrated per-option probabilities in one forward pass, enabling fast dynamic classification with confidence-thresholded auto-acceptance."
+  },
+  {
     "id": "cand_28d2c8b7071356b1",
     "name": "Open-Jev-27B-v1.1",
     "url": "https://huggingface.co/ZefanCai/Open-Jev-27B-v1.1",
     "description": "A 15.5M-parameter LoRA adapter and scalar decision head for Qwen3.8-27B that scores supplied candidates and returns typed choice, yes/no, and ordinal-score probabilities without autoregressive generation, scoring 85.28% on 231 public JevBench tasks (72.07% Hard)."
   },
   {
+    "id": "cand_294468ae9fd9c146",
+    "name": "OneJev",
+    "url": "https://huggingface.co/OmniJev/OneJev",
+    "description": "OneJev is a multimodal System One decision model (0.8B–27B) that reads screenshots, photos, video, or text and returns calibrated probabilities for every option of every question in one shared forward pass, serving TypeSafe's System One API for fast GUI-agent decisions."
+  },
+  {
+    "id": "cand_31d8a9b191ed8da0",
+    "name": "Sev-4B",
+    "url": "https://huggingface.co/macmacmacmac/Sev-4B",
+    "description": "Sev-4B is a Qwen3.5-4B LoRA adapter with a decision head that scores candidate answers about security logs and recovered programs—including authorization-policy checks grounded in real code—giving analysts calibrated evidence review (84.0% held-out policy accuracy) without generating text."
+  },
+  {
+    "id": "cand_3623d7a68cb8a9db",
+    "name": "basal-1.0-1.5B",
+    "url": "https://huggingface.co/Remek/basal-1.0-1.5B",
+    "description": "basal-1.0-1.5B is a 1.5B-parameter Polish/English decision model distilled from basal-1.0-4.5B that, given a state and a typed question (choice, yes/no, or score) with options defined in plain language, returns calibrated per-option probabilities in a single forward pass — enabling dynamic, retraining-free classification, routing, and triage at ~2× lower latency than its teacher."
+  },
+  {
+    "id": "cand_39515e35674e3e7b",
+    "name": "JEVision",
+    "url": "https://huggingface.co/divyanshx11/JEVision",
+    "description": "JEVision is a Qwen3.5-0.8B-based System One decision stack with text and visual LoRA adapters, pointer heads, and a local runtime that accepts text plus optional images and returns typed Choice, Noul, or Score answers through one API."
+  },
+  {
     "id": "cand_3b46bc0d115e3c02",
     "name": "autojev-27b",
     "url": "https://huggingface.co/denis-pplx/autojev-27b",
     "description": "AutoJev-27B is a 27B-parameter multimodal decision model finetuned from Qwen3.8-27B that returns calibrated probabilities for supplied choices in a single forward pass, exposes a TypeSafe-compatible API and playground, and improves benchmark accuracy/ECE/Brier over its base."
+  },
+  {
+    "id": "cand_449b48953dd3453e",
+    "name": "jev-control-es",
+    "url": "https://huggingface.co/abhishek085/jev-control-es",
+    "description": "A 149M-parameter ModernBERT-base decision model that scores each option at its own dedicated [MASK] token in a single bidirectional pass, returning calibrated softmax probabilities for agent-harness decision sites (injection gates, tool routing, context ranking, sufficiency, escalation) at ~7.7 ms per decision."
+  },
+  {
+    "id": "cand_4528afcf38aa495a",
+    "name": "Julia-1",
+    "url": "https://huggingface.co/SupersonicLabs/Julia-1",
+    "description": "Julia-1 is a 144.3M-parameter multilingual decision model built on mmBERT-small that maps a state, a typed question, and 2–20 supplied options to a scored choice, rubric score, or Boolean probability for routing and typed-decision workloads."
+  },
+  {
+    "id": "cand_4c76782e4118f514",
+    "name": "lev",
+    "url": "https://huggingface.co/interfaze-ai/lev",
+    "description": "lev is a LoRA adapter on Qwen3.5-4B that answers typed yes/no, choice, and score questions about a state in one batched forward pass, returning calibrated probabilities over your options with zero output tokens for routing, moderation, triage, and gating decisions."
   },
   {
     "id": "cand_4f59008818083f85",
@@ -60,6 +126,12 @@
     "description": "Jeff-1 is an Apache-2.0 LoRA adapter for Qwen3-4B-Instruct-2507 that scores caller-supplied labels to return typed decisions—choice, yes/no, and ordinal scores with probabilities and confidence—for local inference tasks like fact-checking without parsing generated text."
   },
   {
+    "id": "cand_5a393932fa7e3558",
+    "name": "ArseneLupin-mini-v1.0",
+    "url": "https://huggingface.co/IBOU-SEARCH/ArseneLupin-mini-v1.0",
+    "description": "ArseneLupin-mini-v1.0 is a 0.87B-parameter decision model (Qwen3.5-0.8B + merged LoRA and a trained read-out head) that returns calibrated probability distributions for yes/no, choice, and score questions over any input state in one forward pass per option, with no text generation, served via a System One-compatible API in bf16 or GGUF Q8_0."
+  },
+  {
     "id": "cand_5aa3f4571ac221e9",
     "name": "kev-4b",
     "url": "https://huggingface.co/jaredpalmer/kev-4b",
@@ -72,16 +144,34 @@
     "description": "spark-s1-1.7b-v3 is a LoRA-tuned Qwen3-1.7B decision model that answers typed questions (choice, boolean, score) over request-time options by softmaxing first-token logits into a probability distribution and confidence in one ~30 ms forward pass, with no text generation."
   },
   {
+    "id": "cand_5cc28f2ac6284b40",
+    "name": "Winnow-E4B",
+    "url": "https://huggingface.co/EldanRing/Winnow-E4B",
+    "description": "Winnow-E4B is a compact merged-GGUF Gemma 4 E4B fine-tune that scores supplied answer options for yes/no, choice, and score questions over a shared state—returning probabilities without generating text—while keeping chat and image support for fast local decisions."
+  },
+  {
     "id": "cand_5d885f2b9705cba0",
     "name": "laya",
     "url": "https://huggingface.co/convaiinnovations/laya",
     "description": "Laya is an Apache-2.0 multilingual non-autoregressive decision model that answers typed questions (choices, scores, booleans) over text or JSON states with calibrated probabilities in a single ~33 ms forward pass, auto-routing across three checkpoints covering 100+ languages."
   },
   {
+    "id": "cand_5dc3dd2154d2dedf",
+    "name": "jev-berta-base-zeroshot-classifier",
+    "url": "https://huggingface.co/leobitz/jev-berta-base-zeroshot-classifier",
+    "description": "DeBERTa-v3-base model that scores variable-length candidate choices against a context and query, using candidate-set self-attention so each option is judged conditioned on all alternatives, and a JEV adapter mapping state, instructions, and criteria to predictions per question."
+  },
+  {
     "id": "cand_60397008d42478f0",
     "name": "zeiger-0.6b",
     "url": "https://huggingface.co/php-ai/zeiger-0.6b",
     "description": "Zeiger-0.6B is a 614M-parameter encoder-decision model (Qwen3-0.6B backbone plus 18M scoring head) that, given a web page's element descriptions and an instruction, picks the target element—or answers \"none\"—in one calibrated 32k-context forward pass at up to 1,501 candidates, enabling fast, reliable browser-agent element grounding without generation or chunked tournaments."
+  },
+  {
+    "id": "cand_6676dbb47ebbe1e9",
+    "name": "rsi-jev-v2.0-qwen3.5-2b",
+    "url": "https://huggingface.co/shgao/rsi-jev-v2.0-qwen3.5-2b",
+    "description": "rsi-jev-v2.0-qwen3.5-2b is a Qwen3.5-2B typed-decision model that answers yes/no, pick-one, and rubric-score questions about documents in one forward pass, returning calibrated per-option probabilities for trustworthy automated decisions and escalation routing."
   },
   {
     "id": "cand_6689ca8a6fa97c6c",
@@ -102,10 +192,52 @@
     "description": "decider-2b is a 1.9B-parameter model that returns calibrated probability distributions over explicit option lists for multiple typed questions in one forward pass—no text generation—for fast routing, classification, judgments, and agent decisions."
   },
   {
+    "id": "cand_7208da8082aa9f6c",
+    "name": "Jeff-Qwen3.5-0.8B",
+    "url": "https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B",
+    "description": "Jeff-Qwen3.5-0.8B is an Apache-2.0 fine-tune of Qwen3.5-0.8B that turns arbitrary states and plain-language options into calibrated per-option probabilities in a single ~22 ms forward pass, enabling fast local zero-shot classification, routing, and game-playing decisions."
+  },
+  {
     "id": "cand_721c94bd6f2f3edc",
     "name": "cua-s1-forms",
     "url": "https://huggingface.co/cua-ai/cua-s1-forms",
     "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
+  },
+  {
+    "id": "cand_76383b1baea323c1",
+    "name": "Winnow-12B",
+    "url": "https://huggingface.co/EldanRing/Winnow-12B",
+    "description": "Winnow-12B is a GGUF-packaged LoRA fine-tune of Gemma 4 12B IT for local inference, providing typed decisions (noul, choice, score) via shared-state logit reads without generating answer text, plus ordinary chat and vision, in BF16 and Q8_0 variants tested at 64K context on a 16 GB GPU."
+  },
+  {
+    "id": "cand_7992659b5d965fbd",
+    "name": "tasksource-jev-nano-v0",
+    "url": "https://huggingface.co/tasksource/tasksource-jev-nano-v0",
+    "description": "Tasksource-JEV-Nano-v0 is a 149M-parameter ColBERT-style late-interaction model (fine-tuned from LateOn on 512k typed decisions) that picks the best option from a list—choice, yes/no, or graded scoring—with a cacheable situation encoding and permutation-equivariant option scoring instead of a classifier head."
+  },
+  {
+    "id": "cand_79a347c9851004eb",
+    "name": "gev-e2b",
+    "url": "https://huggingface.co/onatm/gev-e2b",
+    "description": "Gev-e2b pairs a LoRA adapter and pointer head on Gemma 4 E2B to score options for choice, yes/no, and ordinal questions, outputting one answer with a calibrated probability distribution (82.9% trained-source, 62.5% new-source accuracy)."
+  },
+  {
+    "id": "cand_7ac9f0ad72c33d79",
+    "name": "ArseneLupinstral-v1.0",
+    "url": "https://huggingface.co/IBOU-SEARCH/ArseneLupinstral-v1.0",
+    "description": "ArseneLupinstral-v1.0 is an Apache-2.0, 8.92B-parameter Mistral Ministral-3-8B decision model whose merged LoRA and trained readout head turn a supplied state and yes/no, choice, or score questions into calibrated probability distributions—one forward pass per option, no generated text—via a System One-style API."
+  },
+  {
+    "id": "cand_7b0b9e689bc5edf1",
+    "name": "jev-control-core",
+    "url": "https://huggingface.co/abhishek085/jev-control-core",
+    "description": "jev-control-core is a fully fine-tuned 0.8B decoder that answers typed choice/score questions at embedded agent-harness decision sites (tool routing, injection gates, triage, escalation) in one restricted-option forward pass, yielding calibrated confidence at ~18.5ms per decision."
+  },
+  {
+    "id": "cand_907827e3ae4f040c",
+    "name": "ArseneLupin-v1.1",
+    "url": "https://huggingface.co/IBOU-SEARCH/ArseneLupin-v1.1",
+    "description": "ArseneLupin-v1.1 is an Apache-2.0 decision model fine-tuned (merged LoRA) from Qwen3.5-4B that returns calibrated probability distributions for typed yes/no, choice, and scored questions over a given state in a single forward pass per option, served via a System One-style API in full bfloat16 (transformers) or 8-bit GGUF (llama.cpp) form."
   },
   {
     "id": "cand_a4c8c4cfa748c62c",
@@ -126,10 +258,28 @@
     "description": "A LoRA adapter and scalar decision head for Qwen3.5-2B that directly scores caller-supplied candidates and returns calibrated typed decisions—choice probabilities, yes/no probability, or ordinal expected values—without autoregressive generation, achieving 94.71% test and 86.02% OOD hard accuracy."
   },
   {
+    "id": "cand_b8021a1d62aee848",
+    "name": "JEV",
+    "url": "https://huggingface.co/autotrust/JEV",
+    "description": "An open-weights 9B decision model (Qwen3.5-9B backbone with a LoRA-tuned 24-slot linear head) distilled from TypeSafe Jev 1.13 that returns calibrated probability distributions for yes/no, 2–16-option choice, and 0–5 score questions in a single forward pass."
+  },
+  {
+    "id": "cand_bb6e7cc070e1c624",
+    "name": "spark-s1-4b-v6",
+    "url": "https://huggingface.co/abhishek085/spark-s1-4b-v6",
+    "description": "spark-s1-4b-v6 is a LoRA-merged Qwen3.5-4B System-1 decision model that, given a state and a typed question, returns calibrated probabilities over lettered options in one forward pass — useful for fast local agent guardrails such as allow/ask/deny tool-call decisions."
+  },
+  {
     "id": "cand_c24e1eead0d04361",
     "name": "hotdog-27B",
     "url": "https://huggingface.co/opensporks/hotdog-27B",
     "description": "hotdog-27B is a rank-16 LoRA adapter on Qwen3.8-27B that answers yes/no questions about text with a probability and binary decision read directly from logits, achieving 98.28% independent-test accuracy and strong calibration without generating reasoning."
+  },
+  {
+    "id": "cand_c50ef99f87ecef80",
+    "name": "On-Fly-Jev",
+    "url": "https://huggingface.co/Quazim0t0/On-Fly-Jev",
+    "description": "On-Fly-Jev is a 96M-parameter PyTorch typed-decision model built on a spiking neural network trunk of 100 real Drosophila MaleCNS connectome neurons, returning calibrated probabilities for choice/score/noul questions in a single forward pass at ~137 decisions per second (7.3 ms p50) with best-in-group 0.045 ECE."
   },
   {
     "id": "cand_c7b21da672a4c4e4",
@@ -150,10 +300,22 @@
     "description": "A 421M-parameter non-autoregressive ModernBERT-large model, RLCD-fine-tuned to emit calibrated probability distributions over typed primitives (choice, score, noul) for four workflows—agent observability, customer service, invoicing, security incidents—at 0.766 accuracy."
   },
   {
+    "id": "cand_cc8588af9663cd5e",
+    "name": "Tev1-4B-experimental",
+    "url": "https://huggingface.co/togethercomputer/Tev1-4B-experimental",
+    "description": "Tev1-4B-experimental is an experimental supervised fine-tune of Qwen3.5-4B that answers structured decision tasks, returning exactly one option letter given a state, question, and 2–24 labeled choices via a standard next-token head under deterministic decoding."
+  },
+  {
     "id": "cand_d2bf65e29b39c2ce",
     "name": "Jev-Omni",
     "url": "https://huggingface.co/akhilaaa3/Jev-Omni",
     "description": "Jev-Omni is an Apache-2.0 multimodal decision classifier built on Gemma 4 12B IT that returns calibrated per-option probabilities for text, image, audio, and video questions, scoring 63.10% on MMAU and 53.10% on MVBench with millisecond-scale inference."
+  },
+  {
+    "id": "cand_d5bdf4a334ae27b3",
+    "name": "JEV-9B",
+    "url": "https://huggingface.co/autotrust/JEV-9B",
+    "description": "JEV-9B is an open dual-mode model that adds a 40.2M-parameter decision adapter to a frozen Qwen3.5-9B backbone, returning calibrated probability distributions for typed decisions (yes/no, 2–16 choices, 0–5 scores) in ~90 ms while leaving base generation byte-identical."
   },
   {
     "id": "cand_d9cab0d80dd7c4c7",
@@ -180,10 +342,22 @@
     "description": "APUS-OpenJev-v1 is a family of Qwen3.5-based decision models (4B, 9B, 35B-A3B) that score candidate actions for browser agents and business workflows, offering selectable low/high compute depth, candidate-aware output projection, and English-Chinese support."
   },
   {
+    "id": "cand_ef96d1a717b6ac8a",
+    "name": "Tev1-0.8B-experimental",
+    "url": "https://huggingface.co/togethercomputer/Tev1-0.8B-experimental",
+    "description": "Tev1-0.8B-experimental is a 0.8B-parameter supervised fine-tune of Qwen3.5-0.8B that, given a structured prompt containing a state, question, and 2–24 labeled options, deterministically returns a single option letter—making it useful as a lightweight decision/classification layer where application code maps letters back to semantic keys."
+  },
+  {
     "id": "cand_f2ce48452d97b67d",
     "name": "Jev-Omni-Q4_K_M-GGUF",
     "url": "https://huggingface.co/Reza2kn/Jev-Omni-Q4_K_M-GGUF",
     "description": "A Q4_K_M GGUF quantization of the Jev-Omni 12B multimodal decision classifier that, together with its original-precision projector and FP32 decision head, lets llama.cpp return option probabilities over text, image, audio, and video inputs on CPU or GPU."
+  },
+  {
+    "id": "cand_fd01a3ff649fb559",
+    "name": "jebadiah-9b-v2",
+    "url": "https://huggingface.co/frontier-infra/jebadiah-9b-v2",
+    "description": "Jebadiah-9b-v2 is a merged bf16 LoRA finetune of Qwen3.5-9B that answers typed choice, yes/no, and rubric-score questions by returning calibrated probability distributions over option labels instead of generating text, served via AINode's /v1/decide and /v1/systemone routes."
   },
   {
     "id": "cand_fd5c946ffe17da35",
