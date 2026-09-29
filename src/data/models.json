@@ -66,6 +66,12 @@
     "description": "OneJev is a multimodal System One decision model (0.8B–27B) that reads screenshots, photos, video, or text and returns calibrated probabilities for every option of every question in one shared forward pass, serving TypeSafe's System One API for fast GUI-agent decisions."
   },
   {
+    "id": "cand_2fcd066834feb771",
+    "name": "laya-GGUF",
+    "url": "https://huggingface.co/mys/laya-GGUF",
+    "description": "GGML-compiled via ggmlc (not llama.cpp-compatible) F16/Q8_0/Q4_K_M weights of the 421M ModernBERT-based Laya English System-1 decision model, scoring typed choice/score/noul questions in one encoder pass for email routing, injection guards, and agent gating."
+  },
+  {
     "id": "cand_31d8a9b191ed8da0",
     "name": "Sev-4B",
     "url": "https://huggingface.co/macmacmacmac/Sev-4B",
@@ -238,6 +244,12 @@
     "name": "ArseneLupin-v1.1",
     "url": "https://huggingface.co/IBOU-SEARCH/ArseneLupin-v1.1",
     "description": "ArseneLupin-v1.1 is an Apache-2.0 decision model fine-tuned (merged LoRA) from Qwen3.5-4B that returns calibrated probability distributions for typed yes/no, choice, and scored questions over a given state in a single forward pass per option, served via a System One-style API in full bfloat16 (transformers) or 8-bit GGUF (llama.cpp) form."
+  },
+  {
+    "id": "cand_99d4493356b629f2",
+    "name": "jeeves",
+    "url": "https://huggingface.co/PostHog/jeeves",
+    "description": "Jeeves-9B is a fused Qwen3.5-9B decision model that writes a reasoning chain for each yes/no, multiple-choice, or rating question about a given state and returns calibrated per-option probabilities, bundled with a pointer head, fitted temperature, and two diffusion drafters for faster serving."
   },
   {
     "id": "cand_a4c8c4cfa748c62c",
