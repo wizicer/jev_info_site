@@ -357,6 +357,12 @@
     "description": "A community-maintained catalog of 640 verified open-source projects built with Jev (TypeSafe AI's System One model for typed decisions in software) across 11 categories, with each entry citing the concrete decision Jev makes and linking to supporting public evidence."
   },
   {
+    "id": "cand_40fe8b49d595adaa",
+    "name": "awesome-jev-live",
+    "url": "https://github.com/wh000wh000/awesome-jev-live",
+    "description": "A self-rebuilding, evidence-graded index of 802 resources for TypeSafe's Jev System One decision model—spanning official SDKs, agent/MCP tooling, routers, benchmarks, and open reproductions—that refreshes every two hours and labels each entry by verification level so you can filter by proven confidence."
+  },
+  {
     "id": "cand_51bcfbd26675d967",
     "name": "awesome-jev",
     "url": "https://github.com/Amal-David/awesome-jev",
@@ -411,6 +417,12 @@
     "description": "A Next.js/TypeScript monorepo of small Jev experiments—flight search, expense tagging, news filtering—that answer typed questions (Choice, Score, Noul) with probabilities in under a second, exposing per-call cost, tokens, and speed to show batching beats per-item calls."
   },
   {
+    "id": "cand_759aaea94f4cc252",
+    "name": "awesome-jev",
+    "url": "https://github.com/onmyway133/awesome-jev",
+    "description": "A curated collection of open-source projects built on Jev, TypeSafe AI's non-chat \"System One Model\" that returns calibrated typed decisions (booleans, choices, scores) for coding agents, browser and desktop automation, model routing, code review, and data labeling."
+  },
+  {
     "id": "cand_7694cde47ba23cb0",
     "name": "awesome-jev-projects",
     "url": "https://github.com/snowfungo/awesome-jev-projects",
@@ -435,10 +447,22 @@
     "description": "An awesome list doubling as an agent-loadable Skill package (with SKILL.md and a JSON index of 68 curated real-world cases across 9 scenarios) that documents practical uses of Jev—a lightweight millisecond-latency execution model paired with large models—so agents can proactively recommend concrete patterns like browser automation, trading, routing, and classification."
   },
   {
+    "id": "cand_90d51f8f62789cd6",
+    "name": "jev-cookbook",
+    "url": "https://github.com/datawhalechina/jev-cookbook",
+    "description": "A runnable Chinese Jupyter-notebook course and knowledge base for Jev, TypeSafe AI's System One judgment model, spanning eleven chapters on Choice/Score/Noul primitives, 18 official recipes, smart-home and agent projects, calibrated evaluation, and RLCD fine-tuning of open-source sibling Laya."
+  },
+  {
     "id": "cand_9100e3051350fe2d",
     "name": "awesome-jev",
     "url": "https://github.com/MrJev/awesome-jev",
     "description": "A curated list of 208+ verified projects, SDKs, integrations, and tools for Jev (TypeSafe AI's System One model for typed decisions with calibrated confidence), with hands-on reviews documenting what data each tool sends, running findings, alternative-endpoint support, ecosystem changelogs, and weekly trending stats."
+  },
+  {
+    "id": "cand_96e2b95a283aa26a",
+    "name": "awesome-ai-plugins",
+    "url": "https://github.com/hashgraph-online/awesome-ai-plugins",
+    "description": "A cross-platform catalog of plugins, skills, MCP servers, apps, and agent tools for AI assistants like Codex, ChatGPT, Claude Code, Gemini CLI, and Cursor, plus a security scanner and trust scores for vetting extensions before installation."
   },
   {
     "id": "cand_97e3a53f1061dcfe",
@@ -463,6 +487,12 @@
     "name": "awesome-jev-tools",
     "url": "https://github.com/v-modal/awesome-jev-tools",
     "description": "A curated list of production projects and reusable decision patterns built on Jev, TypeSafe AI's low-latency typed-decision model, organized across 14 categories covering routing, guardrails, scoring, and infrastructure, with explicit vetting criteria for evaluating unproven entries."
+  },
+  {
+    "id": "cand_a5bf453c0fa707ba",
+    "name": "meta-awesome-jev",
+    "url": "https://github.com/stefanwebb/meta-awesome-jev",
+    "description": "A meta-list merging 106 community \"awesome-jev\" lists into a consensus-ranked guide to Jev-like \"System One\" decision models—typed question-answering over the /v1/systemone API—covering models, SDKs, benchmarks, evidence and design patterns."
   },
   {
     "id": "cand_b1575abe9666b048",
