@@ -300,6 +300,12 @@
     "description": "rsi-jev-v6.0-vl-4b is a 4.69B-parameter vision-language decision model fine-tuned from Qwen3.5-4B-Base that answers typed questions (yes/no, multiple-choice, rubric scores) about text plus up to four images in a single reasoning-free forward pass, returning calibrated per-option probabilities via early-exit heads at layers 16, 20, and 32 for adaptive compute."
   },
   {
+    "id": "cand_82ed428159c76108",
+    "name": "GEV-26B-Decide",
+    "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
+    "description": "A LoRA adapter on Gemma-4-26B-A4B-it (≈4B active parameters) that returns calibrated probabilities for typed decisions—yes/no, 2–256 options, 0–5 ratings—over text and images in one ~45 ms pass, optionally escalating uncertain cases to System 2 reasoning for higher accuracy."
+  },
+  {
     "id": "cand_83158b91097d571e",
     "name": "rsi-jev-v4.0-vl-qwen3.5-2b",
     "url": "https://huggingface.co/shgao/rsi-jev-v4.0-vl-qwen3.5-2b",
@@ -418,6 +424,12 @@
     "name": "clef-flash-4bit",
     "url": "https://huggingface.co/mlx-community/clef-flash-4bit",
     "description": "clef-flash-4bit is a 4-bit MLX quantization of Cloudflare's 9B clef-flash for Apple Silicon whose bundled clef_mlx.py loader (CLI or local SystemOne server) maps a text/JSON/image/video state plus a schema of typed questions to option probabilities in a single forward pass."
+  },
+  {
+    "id": "cand_d49bcbc197ec1402",
+    "name": "Blink-v0.3-26B-A4B-NVFP4",
+    "url": "https://huggingface.co/PixilabAI/Blink-v0.3-26B-A4B-NVFP4",
+    "description": "Blink-v0.3-26B-A4B-NVFP4 is a Gemma-4-based MoE decision model (4B active params, NVFP4, 32k context) that returns calibrated per-option probabilities in a single forward pass, replacing \"ask an LLM and parse prose\" calls for routing, moderation, tagging, gating, dedup, and yes/no checks."
   },
   {
     "id": "cand_d5bdf4a334ae27b3",

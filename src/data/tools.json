@@ -7308,6 +7308,16 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_7c56380146388c14",
+    "name": "jev-highlight-cutter",
+    "url": "https://github.com/gnipbao/jev-highlight-cutter",
+    "description": "jev-highlight-cutter is a Codex skill + Python CLI that scores transcript evidence via the Jev API and uses local FFmpeg to cut long interviews/podcasts into preference-matched, target-duration original-audio highlight reels with local review pages.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_7c710a65d1fb38e3",
     "name": "typesafe-jev-bridge",
     "url": "https://github.com/RevocGG/typesafe-jev-bridge",
@@ -9946,6 +9956,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_a84a9de69fd95572",
+    "name": "reflex",
+    "url": "https://github.com/datadog-labs/reflex",
+    "description": "Reflex is a Rust library for building constraint-enforcing control loops that turns observability data (e.g., Datadog metrics, Toto forecasts) into typed state, lets a judge (AI model or algorithm) recommend actions, and commits only transitions that pass declared guards and invariants—useful for circuit breaking, autoscaling, scheduling, and retries.",
+    "stars": 31,
+    "forks": 1,
+    "type": "integration",
+    "subtype": "sdk_binding"
+  },
+  {
     "id": "cand_a85b9b8f956cd74a",
     "name": "jev-sentinel",
     "url": "https://github.com/shapor/jev-sentinel",
@@ -11800,6 +11820,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_c71a1540d8c3a0c8",
+    "name": "libsemop",
+    "url": "https://github.com/jasonduncan/libsemop",
+    "description": "libsemop is a C++17 library for defining typed semantic questions (boolean, choice, score, enum) once and running them on any System One classifier model, returning \"don't know\" instead of guessing, with flows, filtering, reranking, escalation, timeouts, and benchmarks.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "sdk_binding"
   },
   {
     "id": "cand_c740be22eaba6cb2",
