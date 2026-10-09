@@ -42,6 +42,12 @@
     "description": "A fine-tune of the laya typed-decision model that improves grounding on explicitly stated facts, consistency between logical inverses, and probability calibration, at the cost of worse phishing detection and option-name routing stability."
   },
   {
+    "id": "cand_18210f4eb95b2622",
+    "name": "rsi-jev-v6.1-vl-27b",
+    "url": "https://huggingface.co/shgao/rsi-jev-v6.1-vl-27b",
+    "description": "A 26.66B-parameter typed-decision vision-language model—a weight average of two Qwen3.8-27B fine-tunes—that returns calibrated per-option probabilities for choice/noul/score questions over text and up to four images in one forward pass, early-exiting at layers 48/56/64."
+  },
+  {
     "id": "cand_2114579deb4da911",
     "name": "safe-laya",
     "url": "https://huggingface.co/ottosulin/safe-laya",
@@ -294,6 +300,12 @@
     "description": "vjev-vision is a Qwen3.5-4B-based listwise decision model that, given text and image states plus typed questions (noul, choice, score), returns calibrated probabilities for every option in a single forward pass without text generation."
   },
   {
+    "id": "cand_7f7b33c491175321",
+    "name": "pplx-decider-v1.1-27b",
+    "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b",
+    "description": "Apache-2.0 Qwen3.8-27B finetune for scored candidate decisions, shipping a Qwen3_5Model backbone with a separate BF16 [255,5120] readout, noncausal full-attention behavior, and calibrated predict code that raises Decision Index to 61.56 (v1: 56.4, Jev: 57.9)."
+  },
+  {
     "id": "cand_8239c23f2a7ddf21",
     "name": "rsi-jev-v6.0-vl-4b",
     "url": "https://huggingface.co/shgao/rsi-jev-v6.0-vl-4b",
@@ -348,10 +360,22 @@
     "description": "A chess option scorer that finetunes MiniLM-L6 with an attention head to emit logits for all legal moves from a FEN context in one forward pass, distilled from Stockfish 19 (0.445 teacher agreement, 0.667 on tactics) for fast move ranking rather than verified playing strength."
   },
   {
+    "id": "cand_a8694e5f937f349b",
+    "name": "THX-01",
+    "url": "https://huggingface.co/doofz/THX-01",
+    "description": "THX-01 is a 322M-parameter non-autoregressive multilingual decision model that answers typed natural-language questions—choices, yes/no, ordinal scores, numbers, verbatim excerpts, and citations—about a given document or state in a single ~10 ms pass, returning calibrated probabilities trained via RL on strictly proper scoring rules."
+  },
+  {
     "id": "cand_b1689b74d684cea7",
     "name": "Open-Jev-2B",
     "url": "https://huggingface.co/ZefanCai/Open-Jev-2B",
     "description": "A LoRA adapter and scalar decision head for Qwen3.5-2B that directly scores caller-supplied candidates and returns calibrated typed decisions—choice probabilities, yes/no probability, or ordinal expected values—without autoregressive generation, achieving 94.71% test and 86.02% OOD hard accuracy."
+  },
+  {
+    "id": "cand_b6e26d621f163483",
+    "name": "drex-dlm",
+    "url": "https://huggingface.co/nace-ai/drex-dlm",
+    "description": "Drex DLM is an 8B diffusion-language decision model that answers typed questions—named choices, yes/no, and ordinal scales—about a supplied context in a single forward pass plus pointer head, returning option probabilities for agentic routing and decision tasks."
   },
   {
     "id": "cand_b8021a1d62aee848",
@@ -466,6 +490,12 @@
     "name": "clef",
     "url": "https://huggingface.co/Cloudflare/clef",
     "description": "Clef is a 27B multimodal model post-trained from Qwen3.8-27B that maps a state (text, JSON, images, or video) plus a schema of typed questions (true/false, choice, or score) to per-option probabilities for every question in a single forward pass—no free-form generation or output parsing—via a joint schema head and a Jev/SystemOne-compatible API."
+  },
+  {
+    "id": "cand_ea174ee3929bdc81",
+    "name": "h2o-lightning-4b",
+    "url": "https://huggingface.co/h2oai/h2o-lightning-4b",
+    "description": "H2O-Lightning-4B is a 4B-parameter multimodal decision model (built on Qwen3.5-4B) that answers choice, yes/no, and ordinal-score questions about text records and attached images in one forward pass returning calibrated per-option probabilities, ranking #1 on JevBench's open-weight composite while running on stock vLLM via a lightweight shim at ~$0.021 per 1,000 decisions."
   },
   {
     "id": "cand_ef96d1a717b6ac8a",
