@@ -369,6 +369,12 @@
     "description": "A curated list of 36 reviewed projects and tools built with Jev, the typed-decision API that picks options, returns yes/no probabilities, or scores inputs—spanning SDKs, browser/desktop drivers, agent tools, apps, games, and independent models, plus demos and quick-start code."
   },
   {
+    "id": "cand_53484e682b0ee0d5",
+    "name": "awesome-jev",
+    "url": "https://github.com/Promethe-us/awesome-jev",
+    "description": "A source-verified knowledge map for Jev, TypeSafe AI's System One decision model, cataloging official specs and pricing, gateway/SDK integration paths, arXiv research, benchmarks, community projects, and dated verification notes for building typed agent decision layers."
+  },
+  {
     "id": "cand_5af3c7f0cc26981d",
     "name": "awesome-jev",
     "url": "https://github.com/THEROCKSSS/awesome-jev",

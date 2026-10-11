@@ -210,6 +210,12 @@
     "description": "Zeiger-0.6B is a 614M-parameter encoder-decision model (Qwen3-0.6B backbone plus 18M scoring head) that, given a web page's element descriptions and an instruction, picks the target element—or answers \"none\"—in one calibrated 32k-context forward pass at up to 1,501 candidates, enabling fast, reliable browser-agent element grounding without generation or chunked tournaments."
   },
   {
+    "id": "cand_60d60b989e2c3ba1",
+    "name": "Blink-v0.5-26B-A4B-NVFP4",
+    "url": "https://huggingface.co/PixilabAI/Blink-v0.5-26B-A4B-NVFP4",
+    "description": "An NVFP4-quantized 26B-A4B MoE model that turns a state, question, and options into calibrated per-option probabilities in one forward pass, replacing LLM calls for routing, moderation, tagging, and gating, with optional think-when-unsure reasoning."
+  },
+  {
     "id": "cand_6676dbb47ebbe1e9",
     "name": "rsi-jev-v2.0-qwen3.5-2b",
     "url": "https://huggingface.co/shgao/rsi-jev-v2.0-qwen3.5-2b",
@@ -250,6 +256,12 @@
     "name": "cua-s1-forms",
     "url": "https://huggingface.co/cua-ai/cua-s1-forms",
     "description": "cua-s1-forms is a 706K-parameter single-pass option scorer that maps a GUI form element plus typed candidates (fill each extracted entity, check, click, skip) to per-option probabilities, letting cua-driver fill and submit forms without an autoregressive LLM."
+  },
+  {
+    "id": "cand_736bf1a168bb565e",
+    "name": "PurpleMIST-Flash-1.0",
+    "url": "https://huggingface.co/olaverse/PurpleMIST-Flash-1.0",
+    "description": "PurpleMIST-Flash-1.0 is a 7.9B-parameter decision model that answers typed choice, yes/no, and score questions about unstructured state with calibrated probability distributions in a single forward pass, in English and eight African languages."
   },
   {
     "id": "cand_750cd2d270e16a56",
@@ -324,6 +336,24 @@
     "description": "A 2B typed-decision model built on Qwen3.5-2B-Base with a trained option-scoring head that returns calibrated per-option probabilities for yes/no, pick-one-of-k, and rubric-score questions about a document plus up to four images in a single forward pass, generating no text."
   },
   {
+    "id": "cand_8c26ef58cb4ccd32",
+    "name": "vega-08b-public-intents",
+    "url": "https://huggingface.co/nandakishorm/vega-08b-public-intents",
+    "description": "A local decision model that layers a small trained physics engine over a frozen multimodal Qwen3.5-0.8B backbone, returning calibrated choice/boolean/score answers with conformal sets and abstain flags over 73,728-token contexts in ~22 ms per decision, rivaling hosted APIs."
+  },
+  {
+    "id": "cand_8e72e4d1867b040f",
+    "name": "JEV-35B-NVFP4",
+    "url": "https://huggingface.co/autotrust/JEV-35B-NVFP4",
+    "description": "JEV-35B-NVFP4 is a System 1 decision model that scores up to 256 options with calibrated probabilities in one pass, with its 10,240 routed experts quantized to NVFP4 so it runs in 23 GiB of GPU memory instead of 66 GiB while keeping 96.6% answer agreement and essentially unchanged Decision Index and vision scores."
+  },
+  {
+    "id": "cand_8fa6559cf0e068a5",
+    "name": "WebJev-35B-A3B-GGUF",
+    "url": "https://huggingface.co/emoubarak/WebJev-35B-A3B-GGUF",
+    "description": "GGUF quantizations (Q4_K_M, Q6_K, Q8_0) of WebJev-35B-A3B, a decision model that scores typed-choice options for browser agents in one forward pass, plus a llama.cpp adapter exposing the /v1/systemone route so it runs on home hardware instead of vLLM on an 80 GB GPU."
+  },
+  {
     "id": "cand_907827e3ae4f040c",
     "name": "ArseneLupin-v1.1",
     "url": "https://huggingface.co/IBOU-SEARCH/ArseneLupin-v1.1",
@@ -390,6 +420,12 @@
     "description": "spark-s1-4b-v6 is a LoRA-merged Qwen3.5-4B System-1 decision model that, given a state and a typed question, returns calibrated probabilities over lettered options in one forward pass — useful for fast local agent guardrails such as allow/ask/deny tool-call decisions."
   },
   {
+    "id": "cand_be1d955955934117",
+    "name": "clef-text-0.6b-coreml",
+    "url": "https://huggingface.co/FluidInference/clef-text-0.6b-coreml",
+    "description": "Core ML packages (fp16 decoder + joint schema head, ~1.3 GB) running a 0.70B text decision model distilled from Cloudflare's 9B clef-flash into Qwen3-0.6B, executing fully on Apple Neural Engine or GPU to return typed probabilities for `noul`/`choice`/`score` questions in one ~35–77 ms forward pass at 79.1% average gold accuracy."
+  },
+  {
     "id": "cand_c24e1eead0d04361",
     "name": "hotdog-27B",
     "url": "https://huggingface.co/opensporks/hotdog-27B",
@@ -406,6 +442,12 @@
     "name": "jev-schema-scorer-deberta-v3-large",
     "url": "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large",
     "description": "A fine-tuned DeBERTa-v3-large encoder with a scalar head that scores (state, question + candidate) pairs, decoding grouped logits via softmax into choice, boolean (noul), and ordinal score answers—reading criteria and option ids at inference time so one checkpoint handles new label sets without retraining."
+  },
+  {
+    "id": "cand_c9717395d27a3c9a",
+    "name": "drex-v1.5",
+    "url": "https://huggingface.co/nace-ai/drex-v1.5",
+    "description": "Drex v1.5 is a 9B-parameter decision model that scores typed questions (choice, yes/no, ordinal score) against a text or JSON state, returning per-option probabilities in one non-generative forward pass per question via the TypeSafe-compatible `/v1/systemone` API served from Python, llama.cpp, or Ollama."
   },
   {
     "id": "cand_ca0bc421793bd0ee",
@@ -430,6 +472,12 @@
     "name": "Tev1-4B-experimental",
     "url": "https://huggingface.co/togethercomputer/Tev1-4B-experimental",
     "description": "Tev1-4B-experimental is an experimental supervised fine-tune of Qwen3.5-4B that answers structured decision tasks, returning exactly one option letter given a state, question, and 2–24 labeled choices via a standard next-token head under deterministic decoding."
+  },
+  {
+    "id": "cand_ccb048bb2d46d3c6",
+    "name": "clef-omni",
+    "url": "https://huggingface.co/Cloudflare/clef-omni",
+    "description": "Clef-Omni is a 30B-A3B MoE multimodal model post-trained from Qwen3-Omni that maps a text/JSON/image/audio/video state plus a typed question schema to probabilities for every option of every question in a single forward pass, with no free-form output."
   },
   {
     "id": "cand_d21b01d3c4a7fb9a",
