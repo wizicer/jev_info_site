@@ -180,6 +180,12 @@
     "description": "Intern-Decision-4B is a multimodal Qwen3.5-4B fine-tune that scores every field of a typed decision schema (choice, score, or binary, with up to 8 images) in a single calibrated forward pass—returning per-option probability distributions without generation—achieving a 90.02 benchmark average at ~44 ms per query on an RTX 4090."
   },
   {
+    "id": "cand_5c966551b76880ca",
+    "name": "jev-9b-coreml",
+    "url": "https://huggingface.co/FluidInference/jev-9b-coreml",
+    "description": "A Core ML build of JEV-9B for Apple silicon that makes typed decisions over text and images—yes/no, 0–5 scores, or 2–256-option choices—returning a calibrated probability for every option in a single GPU forward pass, callable via Swift's `JevManager`."
+  },
+  {
     "id": "cand_5cc28f2ac6284b40",
     "name": "Winnow-E4B",
     "url": "https://huggingface.co/EldanRing/Winnow-E4B",
@@ -196,6 +202,12 @@
     "name": "jev-berta-base-zeroshot-classifier",
     "url": "https://huggingface.co/leobitz/jev-berta-base-zeroshot-classifier",
     "description": "DeBERTa-v3-base model that scores variable-length candidate choices against a context and query, using candidate-set self-attention so each option is judged conditioned on all alternatives, and a JEV adapter mapping state, instructions, and criteria to predictions per question."
+  },
+  {
+    "id": "cand_5ee1afdd29a5877f",
+    "name": "d3",
+    "url": "https://huggingface.co/vllm-sr/d3",
+    "description": "d3 is a 27B multimodal decision model that answers choice, yes/no, and score questions about text, JSON, images, or videos in a single call, returning a probability for every option without generating text—built on Qwen3.8-27B for the vLLM Semantic Router."
   },
   {
     "id": "cand_5fe48642e4fce606",
@@ -228,10 +240,22 @@
     "description": "AgentJev-0.6B turns a 2,048-token state and typed boolean, choice, or score questions into full probability distributions in one forward pass, giving agent loops fast, thresholdable gates, routes, and rubric scores without decoded text, JSON repair, or a larger writer model."
   },
   {
+    "id": "cand_67d15392de28b4cc",
+    "name": "mario-student-coreml",
+    "url": "https://huggingface.co/FluidInference/mario-student-coreml",
+    "description": "A 9.0M-parameter MobileNetV3-Large pixel policy (fp16, 17 MB Core ML package, ~0.5 ms/decision on Apple Neural Engine) that plays Super Mario Bros. on NES, trained via imitation learning and DAgger from a beam-search solver to choose among 11 eight-frame moves, clearing 78/96 level-offset combinations with emulator lookahead."
+  },
+  {
     "id": "cand_68bc419e08750946",
     "name": "spark-s1-4b-v3",
     "url": "https://huggingface.co/abhishek085/spark-s1-4b-v3",
     "description": "spark-s1-4b-v3 is a Qwen3-4B LoRA fine-tune that answers typed questions (choice, boolean, ordered score) about a rendered state by softmaxing first-token logits over option letters—returning a calibrated per-option probability distribution plus confidence in one forward pass with no text generation—for fast local agent decisions."
+  },
+  {
+    "id": "cand_6a4d0ae5032ca1d1",
+    "name": "clef-27b-mps-nf4",
+    "url": "https://huggingface.co/solanaclawd/clef-27b-mps-nf4",
+    "description": "Clef is a 27B multimodal model post-trained from Qwen3.8-27B that turns a state (text, JSON, images, or video) and a schema of typed questions into per-option probabilities for all questions in one forward pass, with no free-form generation or parsing."
   },
   {
     "id": "cand_6c5552ed53813d06",
@@ -562,6 +586,12 @@
     "name": "JEV-CPU",
     "url": "https://huggingface.co/Meanblock/JEV-CPU",
     "description": "JEV-CPU is a CPU-only port of the SemIf semantic-if engine that loads Qwen3-0.6B in float32 and returns typed option probabilities read directly from option-letter logits in a single forward pass—no GPU or text generation—exposed via CLI and a dependency-free web UI."
+  },
+  {
+    "id": "cand_f4d46864709eb800",
+    "name": "Quyet-1.0-Large",
+    "url": "https://huggingface.co/chinhnc/Quyet-1.0-Large",
+    "description": "Quyet-1.0-Large is a 31.3B-parameter Apache-2.0 decision model (a Gemma-4-31B-it LoRA fine-tune, English/Vietnamese) that, given a text, JSON, or conversation state plus typed questions—choice, score, or true/false—returns one answer per question with calibrated probabilities."
   },
   {
     "id": "cand_fd01a3ff649fb559",

@@ -1012,6 +1012,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_10c3e5ef4dce2f82",
+    "name": "crawl-hive",
+    "url": "https://github.com/h100envy/crawl-hive",
+    "description": "CrawlHive lets users spawn custom AI crawlers that monitor X, Telegram, and on-chain activity for Solana/EVM memecoin signals, safety-scan every flagged token, deliver private site or Telegram alerts, and rank each crawler by verifiable prediction accuracy.",
+    "stars": 52,
+    "forks": 13,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_1152787dfd2eb906",
     "name": "pg-jev",
     "url": "https://github.com/realZachi/pg-jev",
@@ -3238,6 +3248,16 @@
     "subtype": "code_qa_devops"
   },
   {
+    "id": "cand_3397aa7f73003819",
+    "name": "jev-email-triage",
+    "url": "https://github.com/kallurayaankit/jev-email-triage",
+    "description": "A two-stage email triage pipeline where a classification stage feeds code-enforced rules that decide whether a second drafting stage runs — skipping spam, promotions, and newsletters to save model calls while gating auto-sends behind tunable confidence thresholds for cost, quality, and safety.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_339beb249d9a880b",
     "name": "decision-model-testing",
     "url": "https://github.com/dorkitude/decision-model-testing",
@@ -4828,6 +4848,16 @@
     "subtype": "runtime_infra"
   },
   {
+    "id": "cand_4ed6ac5984cfa5a4",
+    "name": "jev-gate",
+    "url": "https://github.com/lymagics/jev-gate",
+    "description": "A GitHub Action that fails CI pipelines when code violates reader-judgment quality rules defined as yes/no questions in a YAML file, sending tree-sitter-scoped candidates (files, hunks, commits, tests, types, functions, throws, catches, logs) to the Jev model and comparing returned probabilities against per-gate thresholds in diff or full-scan modes.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
+  },
+  {
     "id": "cand_4ee2be45c4c2597d",
     "name": "claude-x-jev",
     "url": "https://github.com/charlesdove977/claude-x-jev",
@@ -4888,6 +4918,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_50184c10a99ea6ee",
+    "name": "jev-mcp",
+    "url": "https://github.com/rashedInt32/jev-mcp",
+    "description": "An MCP server exposing TypeSafe's Jev judgment model as typed tools for classification, scoring, yes/no checks, batched multi-question asks, and root-confined multi-file triage—returning full probability distributions with confidence-gated actions, validated answers, and classified errors, with the API key kept out of arguments and transcripts.",
+    "stars": 7,
+    "forks": 2,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_50187f6b0a880977",
     "name": "jev-t-rex-runner",
     "url": "https://github.com/joshlarsen/jev-t-rex-runner",
@@ -4906,6 +4946,16 @@
     "forks": 504,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_503f773ddd6d3280",
+    "name": "jev-effort-router",
+    "url": "https://github.com/AlphaPerseii3000/jev-effort-router",
+    "description": "A Hermes Agent middleware plugin that uses the TypeSafe Jev decision model to pick both the Ollama:Cloud model and reasoning-effort level for every user turn, rewriting the outgoing provider request accordingly while failing open and leaving other providers untouched.",
+    "stars": 0,
+    "forks": 1,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_50544a8fb4c3a6c2",
@@ -5558,6 +5608,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_59a85e73d027d20e",
+    "name": "bev-train",
+    "url": "https://github.com/avbiswas/bev-train",
+    "description": "Trains Qwen-backbone JEV networks that answer multiple-choice, yes/no, and score questions via an order-invariant choice-scoring attention head with shared position IDs, supporting LoRA fine-tuning, frozen-backbone or full training configs, gradient accumulation, checkpointing, resuming, and accuracy/AUC evaluation on the bev-decision-150K dataset.",
+    "stars": 64,
+    "forks": 12,
+    "type": "extension",
+    "subtype": "devtools"
+  },
+  {
     "id": "cand_59d224ac04fbf893",
     "name": "jev-news",
     "url": "https://github.com/sheng0325/jev-news",
@@ -6134,6 +6194,16 @@
     "subtype": "devtools"
   },
   {
+    "id": "cand_64c7b91e2549d57f",
+    "name": "SpotAsk",
+    "url": "https://github.com/shiquda/SpotAsk",
+    "description": "SpotAsk is a lightweight native macOS menu-bar assistant that answers hotkey-summoned prompts in-app (BYOK) or routes them—manually or via a confidence-scored decision model—to web AI platforms, local CLI agents, and desktop apps, with a text-selection action bar and multimodal inputs.",
+    "stars": 21,
+    "forks": 2,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_64d3d3c8ea6f519f",
     "name": "jev-skill-router",
     "url": "https://github.com/shimo4228/jev-skill-router",
@@ -6470,6 +6540,16 @@
     "forks": 9,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_6885ba6c5ca21587",
+    "name": "composio",
+    "url": "https://github.com/ComposioHQ/composio",
+    "description": "Composio is a TypeScript/Python SDK and CLI that equips AI agents with 1000+ pre-authenticated app toolkits via per-user sessions, runtime tool discovery, triggers, hosted MCP endpoints, a sandbox, and provider adapters for OpenAI, Anthropic, LangChain, and other frameworks.",
+    "stars": 30506,
+    "forks": 4850,
+    "type": "integration",
+    "subtype": "sdk_binding"
   },
   {
     "id": "cand_6895c2b9ad2e51eb",
@@ -7049,6 +7129,16 @@
     "stars": 0,
     "forks": 0,
     "type": "integration",
+    "subtype": "eval_benchmark"
+  },
+  {
+    "id": "cand_725cb3a9e694ebd2",
+    "name": "structured-decision-bench",
+    "url": "https://github.com/zhengbangbo/structured-decision-bench",
+    "description": "A Python CLI (`decision-bench`, stdlib-only) that runs JSONL datasets of choice/noul/score structured-decision tasks against Ollama Qwen3 8B, CoreML ANE Laya, and pinned hosted Jev, reporting accuracy, calibration (log loss, Brier, ECE-10, AUROC, MAE), latency, token-limit failures, and multi-run stability metrics.",
+    "stars": 3,
+    "forks": 0,
+    "type": "extension",
     "subtype": "eval_benchmark"
   },
   {
@@ -12404,6 +12494,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_c5d248be9a24db7a",
+    "name": "jevify",
+    "url": "https://github.com/altryne/jevify",
+    "description": "Jevify is an agent skill that teaches AI agents to delegate bulk semantic judgments—passage selection, ranking, routing—to TypeSafe Jev's fast, inexpensive Choice/Noul/Score primitives, plus dependency-free Python scan helpers, shared-state batching, question design, and product-improvement audits.",
+    "stars": 43,
+    "forks": 3,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_c5e52dbc52faae26",
     "name": "sttp-ai",
     "url": "https://github.com/softwaremill/sttp-ai",
@@ -13182,6 +13282,16 @@
     "subtype": "devtools"
   },
   {
+    "id": "cand_cfe01210f23cb357",
+    "name": "momo-code",
+    "url": "https://github.com/momozi1996/momo-code",
+    "description": "momo-code is an experimental local-first AI coding agent CLI built on opencode, offering an interactive REPL, 25+ LLM providers, a JEV decision layer, three-tier RSI self-evolution loops, recursive subagents, graph-based task DAGs, and momo-bench evaluation.",
+    "stars": 1095,
+    "forks": 6,
+    "type": "integration",
+    "subtype": "agent_automation"
+  },
+  {
     "id": "cand_cff1a5d66383bf53",
     "name": "last-train-jev",
     "url": "https://github.com/solhosty/last-train-jev",
@@ -13396,6 +13506,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "code_qa_devops"
+  },
+  {
+    "id": "cand_d45b69f79a96658c",
+    "name": "text-to-vrma",
+    "url": "https://github.com/Kirakun0328/text-to-vrma",
+    "description": "A browser/Electron app that turns text prompts into VRM Animation (.vrma) files using LLM keyframing (OpenAI, Claude, Codex, compatible APIs) or a local NVIDIA ARDY engine, previewing motion and expressions on VRM avatars with quality checks and GIF/video export.",
+    "stars": 195,
+    "forks": 24,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_d49974281278776d",
@@ -14846,6 +14966,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_ec442d65f39e69ff",
+    "name": "uehaj-marketplace",
+    "url": "https://github.com/uehaj/uehaj-marketplace",
+    "description": "A Claude Code plugin marketplace bundling skills for semantic grep, interactive command execution in side panes, GitHub issue-to-PR mapping, multi-session worker coordination, and Hatena bookmark comment rewriting, plus function-hook experiments for rendering images and the Mandelbrot set in terminal panes.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_ec71c13637318f38",
     "name": "grok-build-Jev",
     "url": "https://github.com/shaunie2fly/grok-build-Jev",
@@ -16090,6 +16220,16 @@
     "forks": 5,
     "type": "integration",
     "subtype": "agent_automation"
+  },
+  {
+    "id": "cand_fefa5cecaeba58c1",
+    "name": "ollajev",
+    "url": "https://github.com/nvkudva/ollajev",
+    "description": "Ollajev is a local server that runs System One decision models from Hugging Face (via PyTorch, llama.cpp, or MLX) behind a TypeSafe Jev-compatible /v1/systemone API, returning calibrated probabilities for typed questions about a state—optionally with image, audio, or video inputs—through Ollama-style CLI commands and a browser playground.",
+    "stars": 13,
+    "forks": 4,
+    "type": "extension",
+    "subtype": "runtime_infra"
   },
   {
     "id": "cand_ff088c24e8c32c9b",
