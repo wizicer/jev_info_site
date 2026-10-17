@@ -357,6 +357,12 @@
     "description": "A community-maintained catalog of 640 verified open-source projects built with Jev (TypeSafe AI's System One model for typed decisions in software) across 11 categories, with each entry citing the concrete decision Jev makes and linking to supporting public evidence."
   },
   {
+    "id": "cand_391f1b9959776873",
+    "name": "Awesome-jev-papers",
+    "url": "https://github.com/Oscar-dzy/Awesome-jev-papers",
+    "description": "A curated, evidence-tiered collection of 174 publications on Jev, TypeSafe AI's closed-weight System One model for typed probabilistic decisions, grouped into nine research domains with verified dates and a searchable atlas, flagging that first-party claims remain unreplicated."
+  },
+  {
     "id": "cand_40fe8b49d595adaa",
     "name": "awesome-jev-live",
     "url": "https://github.com/wh000wh000/awesome-jev-live",

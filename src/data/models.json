@@ -96,6 +96,12 @@
     "description": "Sev-4B is a Qwen3.5-4B LoRA adapter with a decision head that scores candidate answers about security logs and recovered programs—including authorization-policy checks grounded in real code—giving analysts calibrated evidence review (84.0% held-out policy accuracy) without generating text."
   },
   {
+    "id": "cand_34dcacc1dfaec8f3",
+    "name": "JEV-35B",
+    "url": "https://huggingface.co/autotrust/JEV-35B",
+    "description": "JEV-35B is a System 1 decision model fine-tuned from Qwen3.5-35B-A3B (35B MoE, ~3B active) that returns calibrated choices among up to 256 options in one ~200 ms pass for text, vision and control tasks (Decision Index 0.3 public: 59.73)."
+  },
+  {
     "id": "cand_3623d7a68cb8a9db",
     "name": "basal-1.0-1.5B",
     "url": "https://huggingface.co/Remek/basal-1.0-1.5B",
@@ -112,6 +118,12 @@
     "name": "autojev-27b",
     "url": "https://huggingface.co/denis-pplx/autojev-27b",
     "description": "AutoJev-27B is a 27B-parameter multimodal decision model finetuned from Qwen3.8-27B that returns calibrated probabilities for supplied choices in a single forward pass, exposes a TypeSafe-compatible API and playground, and improves benchmark accuracy/ECE/Brier over its base."
+  },
+  {
+    "id": "cand_3f7430ca0d2fe78a",
+    "name": "geppo",
+    "url": "https://huggingface.co/grokked-it/geppo",
+    "description": "Geppo is an Italian semantic-decision model pairing a frozen Emma-6 causal backbone with a 262K-parameter pointer head that scores candidate descriptions to answer choice, yes/no, and ordinal questions locally via a standalone runtime with calibrated probabilities."
   },
   {
     "id": "cand_449b48953dd3453e",
@@ -144,6 +156,12 @@
     "description": "VERA is a fine-tuned DeBERTa-v3-large model that scores and ranks candidate headline or short-copy variants by predicted click rate in a single forward pass, trained on 62,695 arms from 32,487 real A/B tests to pick higher-performing variants without generation or prompting."
   },
   {
+    "id": "cand_50d36f52cbec10aa",
+    "name": "span-02",
+    "url": "https://huggingface.co/respanai/span-02",
+    "description": "Span-02 is an NVFP4/FP8-quantized Gemma 4 26B MoE fine-tune (~4B active params) served by its own Rust/CUDA engine, answering typed questions (choice, yes/no, score, number) about a text/JSON state plus up to 4 images with calibrated probabilities at 33 ms median latency."
+  },
+  {
     "id": "cand_53e471fe6351073e",
     "name": "rlcd-modernbert-151m",
     "url": "https://huggingface.co/heman10x/rlcd-modernbert-151m",
@@ -154,6 +172,18 @@
     "name": "Jeff-1",
     "url": "https://huggingface.co/GestaltLabs/Jeff-1",
     "description": "Jeff-1 is an Apache-2.0 LoRA adapter for Qwen3-4B-Instruct-2507 that scores caller-supplied labels to return typed decisions—choice, yes/no, and ordinal scores with probabilities and confidence—for local inference tasks like fact-checking without parsing generated text."
+  },
+  {
+    "id": "cand_58a3aa3a2c5b267f",
+    "name": "JJ-1-2B",
+    "url": "https://huggingface.co/JurinAI/JJ-1-2B",
+    "description": "JJ-1-2B is a compact Japanese/English decision-classification model that returns choices, yes/no probabilities and scores from text or JSON—reaching 94.63% on business workflows—with BF16/Q8_0 weights plus Transformers, CLI/HTTP and llama.cpp inference code."
+  },
+  {
+    "id": "cand_59e5a250f2f2b9d0",
+    "name": "d3-edge",
+    "url": "https://huggingface.co/vllm-sr/d3-edge",
+    "description": "d3-edge is a 0.59B multimodal decision model that answers choice, yes/no, and score questions over text, images, and video in one call—returning a probability per answer without generating text—at ~6.6 ms median latency, servable via Transformers or vLLM Semantic Router."
   },
   {
     "id": "cand_5a393932fa7e3558",
@@ -226,6 +256,18 @@
     "name": "Blink-v0.5-26B-A4B-NVFP4",
     "url": "https://huggingface.co/PixilabAI/Blink-v0.5-26B-A4B-NVFP4",
     "description": "An NVFP4-quantized 26B-A4B MoE model that turns a state, question, and options into calibrated per-option probabilities in one forward pass, replacing LLM calls for routing, moderation, tagging, and gating, with optional think-when-unsure reasoning."
+  },
+  {
+    "id": "cand_646804af62711566",
+    "name": "StandardOne-3B-SH",
+    "url": "https://huggingface.co/StandardThinking/StandardOne-3B-SH",
+    "description": "StandardOne-3B-SH is a Ministral-3 3B model with a joint schema head that scores every option of every question (choice, yes/no, ordinal) in one pass over up to 32k tokens, returning calibrated probabilities without generating text."
+  },
+  {
+    "id": "cand_646d44decf9b7024",
+    "name": "Lumma-fev-27B",
+    "url": "https://huggingface.co/FrontiersMind/Lumma-fev-27B",
+    "description": "Lumma-Fev-27B is a 27B-parameter decision model fully fine-tuned from Qwen3.8-27B that, given a text or JSON state plus typed questions, returns per-option probabilities in a single forward pass in English, Hindi, Tamil, and Kannada, via the lumma-fev package."
   },
   {
     "id": "cand_6676dbb47ebbe1e9",
