@@ -1,5 +1,11 @@
 [
   {
+    "id": "cand_00442f9778519dc8",
+    "name": "Sieve-31B",
+    "url": "https://huggingface.co/sthanika-ai/Sieve-31B",
+    "description": "Sieve-31B is an Apache-2.0 rank-128 LoRA adapter on Gemma-4-31B-it that reads a text or JSON state plus typed choice/noul/score questions and returns a calibrated probability for every option without generating text, reaching 62.52 on the public Decision Index 0.3."
+  },
+  {
     "id": "cand_019e6ff3bb3ed8f4",
     "name": "NeoHorse-Jev-4B",
     "url": "https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B",
@@ -10,6 +16,12 @@
     "name": "jevons-lfm25-1.2b-systemone",
     "url": "https://huggingface.co/gopalanj/jevons-lfm25-1.2b-systemone",
     "description": "A LoRA adapter for LiquidAI's LFM2.5-1.2B-Instruct (8-bit MLX) that biases outputs toward option-key, yes/no, and score-digit tokens so the jevons server can logit-score and assemble System One decisions, with a 72.4% holdout modal accuracy at T=1."
+  },
+  {
+    "id": "cand_057174e64e5d43d0",
+    "name": "JevAny-Robotics-4B-LoRA",
+    "url": "https://huggingface.co/SimpleJev/JevAny-Robotics-4B-LoRA",
+    "description": "A 4B LoRA on Qwen3.5-4B that judges robot manipulation in one forward pass, returning calibrated per-option probabilities for task progress, rollout scores, success, failure mode, and trajectory preference over real/simulated robot imagery, near-top across evaluated benchmarks."
   },
   {
     "id": "cand_0b272935f82c063d",
@@ -48,6 +60,24 @@
     "description": "A 26.66B-parameter typed-decision vision-language model—a weight average of two Qwen3.8-27B fine-tunes—that returns calibrated per-option probabilities for choice/noul/score questions over text and up to four images in one forward pass, early-exiting at layers 48/56/64."
   },
   {
+    "id": "cand_1897149c0472763b",
+    "name": "serin-4b",
+    "url": "https://huggingface.co/Takzen/serin-4b",
+    "description": "Serin-4B is a 4-bit-runnable QLoRA adapter on Qwen3.5-4B that acts as a local LLM-as-judge for Polish and English chatbot security audits, returning per-option probabilities for typed questions like \"did the attack succeed?\" from a single forward pass without generating text."
+  },
+  {
+    "id": "cand_1ab7d2485632d407",
+    "name": "Mica-v0.5-4B",
+    "url": "https://huggingface.co/sky7350/Mica-v0.5-4B",
+    "description": "Mica-v0.5-4B is an Apache-2.0 4B parameter classification model finetuned from Qwen3.5-4B that returns calibrated probability distributions over up to 255 allowed answers for decision questions on inputs up to 32k tokens in English, Korean, or Chinese, offering order-insensitive predictions, configurable abstention, and sub-20ms latency on a single consumer GPU for guardrails, RAG checks, routing,"
+  },
+  {
+    "id": "cand_1e7d53f4ed072623",
+    "name": "d3-turbo",
+    "url": "https://huggingface.co/vllm-sr/d3-turbo",
+    "description": "d3-turbo is a 26B multimodal decision model that reads text, JSON, images, and video once per request to answer many questions at once—choices, yes/no, scores, object boxes, and video tracks—returning calibrated probabilities without generating text."
+  },
+  {
     "id": "cand_2114579deb4da911",
     "name": "safe-laya",
     "url": "https://huggingface.co/ottosulin/safe-laya",
@@ -78,6 +108,12 @@
     "description": "OneJev is a multimodal System One decision model (0.8B–27B) that reads screenshots, photos, video, or text and returns calibrated probabilities for every option of every question in one shared forward pass, serving TypeSafe's System One API for fast GUI-agent decisions."
   },
   {
+    "id": "cand_2e62e3a262629b54",
+    "name": "AutoTrust-JEV-27B-v1.1",
+    "url": "https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1",
+    "description": "AutoTrust-JEV-27B-v1.1 is a vLLM-served 27B decision model that returns option probabilities for choice and yes/no questions, reaching 67.31 on the 37-benchmark Decision Index public suite, with its strongest results in tool selection, intent detection, and automation decisions."
+  },
+  {
     "id": "cand_2fca604ef19223c0",
     "name": "clef-flash",
     "url": "https://huggingface.co/Cloudflare/clef-flash",
@@ -100,6 +136,12 @@
     "name": "JEV-35B",
     "url": "https://huggingface.co/autotrust/JEV-35B",
     "description": "JEV-35B is a System 1 decision model fine-tuned from Qwen3.5-35B-A3B (35B MoE, ~3B active) that returns calibrated choices among up to 256 options in one ~200 ms pass for text, vision and control tasks (Decision Index 0.3 public: 59.73)."
+  },
+  {
+    "id": "cand_360e27787af3e5d0",
+    "name": "AutoTrust-JEV-27B-v1.1-mlx-8bit",
+    "url": "https://huggingface.co/netprojects/AutoTrust-JEV-27B-v1.1-mlx-8bit",
+    "description": "An 8-bit MLX build (28 GB) of AutoTrust-JEV-27B-v1.1 for Apple Silicon, a decision model that answers each call—a choice among up to 255 options or yes/no—with per-option probabilities in one bidirectional forward pass, matching the bf16 original on all 231 test decisions."
   },
   {
     "id": "cand_3623d7a68cb8a9db",
@@ -342,6 +384,12 @@
     "description": "Winnow-12B is a GGUF-packaged LoRA fine-tune of Gemma 4 12B IT for local inference, providing typed decisions (noul, choice, score) via shared-state logit reads without generating answer text, plus ordinary chat and vision, in BF16 and Q8_0 variants tested at 64K context on a 16 GB GPU."
   },
   {
+    "id": "cand_76b23ac1939f91f0",
+    "name": "openjev",
+    "url": "https://huggingface.co/openjev/openjev",
+    "description": "OpenJev is an open-weights decision model that answers user-defined questions—choice, yes/no probability, or score over up to 52 options—in a single forward pass (~80–210 ms on one H100), delivering calibrated, parse-free decisions for text routing, moderation, model judging, and browser/desktop agent control, with multilingual support and quantized builds."
+  },
+  {
     "id": "cand_7868d2ceeba80acc",
     "name": "verdict",
     "url": "https://huggingface.co/shubhambaid/verdict",
@@ -402,6 +450,12 @@
     "description": "A 2B typed-decision model built on Qwen3.5-2B-Base with a trained option-scoring head that returns calibrated per-option probabilities for yes/no, pick-one-of-k, and rubric-score questions about a document plus up to four images in a single forward pass, generating no text."
   },
   {
+    "id": "cand_870d57526243cc49",
+    "name": "zeiger2-3.5-0.8b",
+    "url": "https://huggingface.co/php-ai/zeiger2-3.5-0.8b",
+    "description": "Zeiger2 3.5-0.8B is an experimental English/German decision model that encodes a web page, instruction, and answer options in one pass and returns calibrated per-option probabilities — for element grounding, yes/no, ordinal, and \"none of these\" questions — scoring 0.838 on held-out web tasks and 17.6 on the Decision Index."
+  },
+  {
     "id": "cand_8c26ef58cb4ccd32",
     "name": "vega-08b-public-intents",
     "url": "https://huggingface.co/nandakishorm/vega-08b-public-intents",
@@ -460,6 +514,12 @@
     "name": "THX-01",
     "url": "https://huggingface.co/doofz/THX-01",
     "description": "THX-01 is a 322M-parameter non-autoregressive multilingual decision model that answers typed natural-language questions—choices, yes/no, ordinal scores, numbers, verbatim excerpts, and citations—about a given document or state in a single ~10 ms pass, returning calibrated probabilities trained via RL on strictly proper scoring rules."
+  },
+  {
+    "id": "cand_a975c7a3aa406509",
+    "name": "Qwen3.5-4B-Judge",
+    "url": "https://huggingface.co/MaziyarPanahi/Qwen3.5-4B-Judge",
+    "description": "A 4B-parameter judge (Qwen3.5-4B + Unsloth LoRA decision head) that returns calibrated probabilities for RAG groundedness and safety/refusal decisions, scoring 87.9% and 90.7% on in-domain tests and 78.4% on unseen MedHallu, all above Jev 1.14's zero-shot results."
   },
   {
     "id": "cand_b1689b74d684cea7",
@@ -546,6 +606,12 @@
     "description": "Clef-Omni is a 30B-A3B MoE multimodal model post-trained from Qwen3-Omni that maps a text/JSON/image/audio/video state plus a typed question schema to probabilities for every option of every question in a single forward pass, with no free-form output."
   },
   {
+    "id": "cand_ceb5b4e615525f87",
+    "name": "basal-omni-1.0-ultra",
+    "url": "https://huggingface.co/Remek/basal-omni-1.0-ultra",
+    "description": "basal-omni-1.0-ultra is an experimental 31B Gemma-4 fine-tune that answers typed questions (choice, yes/no, score, tool selection) over Polish/English text states and zero-shot images by returning a calibrated probability per allowed option—up to 255—in one forward pass, enabling automated decisions with confidence-based deferral."
+  },
+  {
     "id": "cand_d21b01d3c4a7fb9a",
     "name": "noma",
     "url": "https://huggingface.co/BlackdromeAILabs/noma",
@@ -568,6 +634,12 @@
     "name": "Blink-v0.3-26B-A4B-NVFP4",
     "url": "https://huggingface.co/PixilabAI/Blink-v0.3-26B-A4B-NVFP4",
     "description": "Blink-v0.3-26B-A4B-NVFP4 is a Gemma-4-based MoE decision model (4B active params, NVFP4, 32k context) that returns calibrated per-option probabilities in a single forward pass, replacing \"ask an LLM and parse prose\" calls for routing, moderation, tagging, gating, dedup, and yes/no checks."
+  },
+  {
+    "id": "cand_d56df297f7ef99ca",
+    "name": "OpenVerdict-4B",
+    "url": "https://huggingface.co/vinroger/OpenVerdict-4B",
+    "description": "OpenVerdict-4B is an Apache-2.0 LoRA fine-tune of Qwen3.5-4B that returns calibrated probabilities for every option of a stated decision question—via one forward pass or a ~50-token chain-of-thought—across text and image inputs for routing, policy checks, moderation, and tool-use decisions."
   },
   {
     "id": "cand_d5bdf4a334ae27b3",
@@ -628,6 +700,12 @@
     "name": "JEV-CPU",
     "url": "https://huggingface.co/Meanblock/JEV-CPU",
     "description": "JEV-CPU is a CPU-only port of the SemIf semantic-if engine that loads Qwen3-0.6B in float32 and returns typed option probabilities read directly from option-letter logits in a single forward pass—no GPU or text generation—exposed via CLI and a dependency-free web UI."
+  },
+  {
+    "id": "cand_f486d81bf9cb8e0f",
+    "name": "Qwen3.8-Flash-Next-Hybrid-Decision",
+    "url": "https://huggingface.co/lychee888/Qwen3.8-Flash-Next-Hybrid-Decision",
+    "description": "Qwen3.8-Flash-Next NVFP4/FP8-PLE weights packaged with a patched vLLM runtime that adds a typed decision API returning masked-softmax probabilities over 2–256 caller-supplied options or booleans, while serving ordinary chat on the same engine instance."
   },
   {
     "id": "cand_f4d46864709eb800",

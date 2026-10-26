@@ -369,6 +369,12 @@
     "description": "A self-rebuilding, evidence-graded index of 802 resources for TypeSafe's Jev System One decision model—spanning official SDKs, agent/MCP tooling, routers, benchmarks, and open reproductions—that refreshes every two hours and labels each entry by verification level so you can filter by proven confidence."
   },
   {
+    "id": "cand_45ecdfe35f1f0dbe",
+    "name": "awesome-jev",
+    "url": "https://github.com/JohnDotOwl/awesome-jev",
+    "description": "A curated index of 318 projects built on TypeSafe AI's Jev — a System One model that answers typed Choice/Score/Noul questions with calibrated probabilities instead of generating text — spanning community SDKs, database and platform integrations, agent gates and MCP servers, apps, games, and benchmarks."
+  },
+  {
     "id": "cand_51bcfbd26675d967",
     "name": "awesome-jev",
     "url": "https://github.com/Amal-David/awesome-jev",
@@ -409,6 +415,12 @@
     "name": "awesome-jev",
     "url": "https://github.com/AppitStudio/awesome-jev",
     "description": "A curated directory for TypeSafe AI's Jev decision model, collecting official SDKs and API docs, community-built apps and integrations, runnable offline examples and starters, plus cookbooks covering routing, retrieval, extraction, and evaluation patterns."
+  },
+  {
+    "id": "cand_682abbb1f420adf4",
+    "name": "jev-mode",
+    "url": "https://github.com/tiffygk/jev-mode",
+    "description": "Claude Code and Codex skills for building with TypeSafe's Jev model — rubric-driven raters that grade Jev code usage with provenance, a doc-search skill that points agents to authoritative sources before answering, and a five-level study course with quizzes."
   },
   {
     "id": "cand_6856b02a961106cb",
@@ -501,6 +513,12 @@
     "description": "A curated list of production projects and reusable decision patterns built on Jev, TypeSafe AI's low-latency typed-decision model, organized across 14 categories covering routing, guardrails, scoring, and infrastructure, with explicit vetting criteria for evaluating unproven entries."
   },
   {
+    "id": "cand_a18cb7df0d5ea770",
+    "name": "awesome-typesafe-jev",
+    "url": "https://github.com/zhuyansen/awesome-typesafe-jev",
+    "description": "A curated list of 336 open-source projects built on the TypeSafe Jev decision model—agents and computer use, developer tools, SDKs/MCP servers, classification apps, and self-hostable replicas—each security-graded, with quick-start tests showing which run on a Jev API key alone."
+  },
+  {
     "id": "cand_a5bf453c0fa707ba",
     "name": "meta-awesome-jev",
     "url": "https://github.com/stefanwebb/meta-awesome-jev",
@@ -547,6 +565,12 @@
     "name": "awesome-jev-use-cases",
     "url": "https://github.com/walidboulanouar/awesome-jev-use-cases",
     "description": "A ranked catalog of demos built with Jev, TypeSafe's typed-decision model, with per-demo likes, reposts, and reach grouped by application area, plus documented limits, patterns, and cost/latency figures, so builders can see what Jev actually handles before building."
+  },
+  {
+    "id": "cand_da1ad650c9c804da",
+    "name": "jev-cookbook",
+    "url": "https://github.com/paramjeetn/jev-cookbook",
+    "description": "A cookbook of production-ready examples, architectural patterns, and theory for building applications with Jev, TypeSafe AI's ~100ms zero-shot semantic classifier that returns calibrated probability distributions via three primitives (choice, score, noul) instead of generating text."
   },
   {
     "id": "cand_dcfdc0856c42fc98",
