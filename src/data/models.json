@@ -48,6 +48,12 @@
     "description": "openjev fine-tunes Qwen3.5 into a zero-shot NLI cross-encoder (4B text+image v2, plus a 35B-A3B MoE variant) that scores premise–hypothesis pairs as entailment/contradiction/neutral — one primitive for reranking, answer grading, content guarding, and driving real-time game agents like Doom and Minecraft."
   },
   {
+    "id": "cand_13f68d746d993429",
+    "name": "Solar-Decision-JEV-27B-V2-GGUF",
+    "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V2-GGUF",
+    "description": "A GGUF quantization ladder (IQ4_XS through Q8_0, ~10–27 GiB) of the Solar-Decision-JEV-27B-V2 merge for fast llama.cpp chat with speculative-decoding drafter tensors preserved, though calibrated typed decisions still require the bf16 weights in vLLM."
+  },
+  {
     "id": "cand_1415cf843e81d521",
     "name": "laya-grounded",
     "url": "https://huggingface.co/Luni/laya-grounded",
@@ -154,6 +160,12 @@
     "name": "JEVision",
     "url": "https://huggingface.co/divyanshx11/JEVision",
     "description": "JEVision is a Qwen3.5-0.8B-based System One decision stack with text and visual LoRA adapters, pointer heads, and a local runtime that accepts text plus optional images and returns typed Choice, Noul, or Score answers through one API."
+  },
+  {
+    "id": "cand_3b1dfc2dd8c3bbbd",
+    "name": "Sieve-31B-v3",
+    "url": "https://huggingface.co/sthanika-ai/Sieve-31B-v3",
+    "description": "Sieve-31B-v3, a full fine-tune of Gemma-4-31B-it, reads a text or JSON state once and returns calibrated probabilities for every option of typed choice/noul/score questions via bidirectional letter-logit readout—never generating text—scoring 71.68 on Decision Index 0.3."
   },
   {
     "id": "cand_3b46bc0d115e3c02",
@@ -456,6 +468,12 @@
     "description": "Zeiger2 3.5-0.8B is an experimental English/German decision model that encodes a web page, instruction, and answer options in one pass and returns calibrated per-option probabilities — for element grounding, yes/no, ordinal, and \"none of these\" questions — scoring 0.838 on held-out web tasks and 17.6 on the Decision Index."
   },
   {
+    "id": "cand_89c17305fdcf7e28",
+    "name": "MiniCPM-OCR-Jev",
+    "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev",
+    "description": "MiniCPM-OCR Jev is a 2B vision-language model that scores candidate OCR results for text, formula, and table regions from 0 to 1, enabling automatic acceptance of reliable output, human-review routing, and best-of-N selection across OCR models."
+  },
+  {
     "id": "cand_8c26ef58cb4ccd32",
     "name": "vega-08b-public-intents",
     "url": "https://huggingface.co/nandakishorm/vega-08b-public-intents",
@@ -628,6 +646,12 @@
     "name": "clef-flash-4bit",
     "url": "https://huggingface.co/mlx-community/clef-flash-4bit",
     "description": "clef-flash-4bit is a 4-bit MLX quantization of Cloudflare's 9B clef-flash for Apple Silicon whose bundled clef_mlx.py loader (CLI or local SystemOne server) maps a text/JSON/image/video state plus a schema of typed questions to option probabilities in a single forward pass."
+  },
+  {
+    "id": "cand_d424ccd2fa4a6f7b",
+    "name": "MiniCPM-OCR-Jev-gguf",
+    "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev-gguf",
+    "description": "GGUF quantizations (F16 down to IQ3_XS) of the 2B MiniCPM-OCR Jev model plus its required mmproj vision projector for llama.cpp, enabling local 0–1 quality scoring of OCR candidates across text, formula, and table regions."
   },
   {
     "id": "cand_d49bcbc197ec1402",

@@ -466,6 +466,16 @@
     "subtype": "domain_app"
   },
   {
+    "id": "cand_066005fd6487a6d3",
+    "name": "wayfinder",
+    "url": "https://github.com/Mou1z/wayfinder",
+    "description": "Wayfinder is a website search tool that uses the Jev AI model via OpenRouter to send visitors' natural-language queries straight to the single best-matching page from a configured list, with a word-matching fallback, a customizable web component, and no query logging.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "sdk_binding"
+  },
+  {
     "id": "cand_069cf0d88329f635",
     "name": "jevgpt",
     "url": "https://github.com/Bewinxed/jevgpt",
@@ -614,6 +624,16 @@
     "forks": 1,
     "type": "extension",
     "subtype": "devtools"
+  },
+  {
+    "id": "cand_0999dababd0c13db",
+    "name": "x-post-classifier",
+    "url": "https://github.com/aslamdoctor/x-post-classifier",
+    "description": "A Manifest V3 Chrome extension that categorizes x.com feed posts by intent (insight, news, bait, promo, meme, opinion) via TypeSafe's Jev model, badges them beside the author handle, and dims chosen categories to 0.25 opacity—skipping sub-350ms views and caching results to minimize API calls.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_09aebd7b03fba6cb",
@@ -876,6 +896,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_0d1f2ebc8fb50c7a",
+    "name": "minicpm5-2b-jev",
+    "url": "https://github.com/yuting-ai/minicpm5-2b-jev",
+    "description": "MiniCPM5-2B-Jev is a calibrated 2B decision model that maps a shared context and multiple typed questions to option probabilities in one non-autoregressive pass, providing Python/FastAPI serving, LoRA weights, calibration heads, and benchmarking code for low-latency structured decisions.",
+    "stars": 3,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_0d25e43fa49802e5",
     "name": "jev-thread-search",
     "url": "https://github.com/rishiv7/jev-thread-search",
@@ -1098,6 +1128,16 @@
     "description": "CrawlHive lets users spawn custom AI crawlers that monitor X, Telegram, and on-chain activity for Solana/EVM memecoin signals, safety-scan every flagged token, deliver private site or Telegram alerts, and rank each crawler by verifiable prediction accuracy.",
     "stars": 52,
     "forks": 13,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
+    "id": "cand_10ea94b95a765b90",
+    "name": "jevcam",
+    "url": "https://github.com/TheAIMogul/jevcam",
+    "description": "JevCam is a Raspberry Pi 4 + NoIR camera system that streams live 20 fps video, asks TypeSafe Jev once a second whether user-defined plain-English targets are in frame, draws bounding boxes on a local dashboard, and fires an ElevenLabs radio-DJ voice alarm — alongside a PPE monitor app and a full-screen kiosk launcher, all served on the local network.",
+    "stars": 1,
+    "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
   },
@@ -1370,6 +1410,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_15565feaecfda3d0",
+    "name": "jev-paper-trader",
+    "url": "https://github.com/MojoAI-King/jev-paper-trader",
+    "description": "Paper-trades real Polymarket and Kalshi markets with a fake $100,000 bankroll, running Jev forecasts (with optional rationed Claude research) through parallel strategies and a learning loop, to test whether AI predictions beat market prices by Brier score.",
+    "stars": 3,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "eval_benchmark"
   },
   {
     "id": "cand_15859ab75edb1fbb",
@@ -2612,6 +2662,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_247657b9123ae760",
+    "name": "local-jev-mario",
+    "url": "https://github.com/imink/local-jev-mario",
+    "description": "A browser-based NES emulator that plays Super Mario Bros through an AI pipeline (game state → Jev Choice → controller input), with inspectable replay of 32 stages and 6275 decisions, step/speed controls, and local-model or official Jev API backends.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "agent_automation"
+  },
+  {
     "id": "cand_2493666cf62b7b9a",
     "name": "jev-little-airways",
     "url": "https://github.com/lbotinelly/jev-little-airways",
@@ -3638,6 +3698,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_35e71d3b3d3c6032",
+    "name": "pi-typesafe-approve",
+    "url": "https://github.com/Davidasx/pi-typesafe-approve",
+    "description": "A Pi extension that uses a configurable System One model to auto-approve routine Bash commands while escalating suspicious ones, reducing approval fatigue without disabling scrutiny through policy categories, thresholds, timeouts, fail modes, caching, and decision logs.",
+    "stars": 2,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_35eff775ba433a91",
     "name": "jev-chat-jarvis",
     "url": "https://github.com/jev-chat/jev-chat-jarvis",
@@ -3936,6 +4006,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_3aa024af2bdb296e",
+    "name": "kafi-jev-demo",
+    "url": "https://github.com/xdgrulez/kafi-jev-demo",
+    "description": "A modular demo pipeline simulating fresh-food delivery disruptions on Kafi Streams + Jev over real Kafka (or local file emulation): producers feed topics, a topology joins and aggregates them, Jev classifies cause and delivery risk with caching, and results batch to console, DuckDB, and alert stubs.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_3aa197abb0052b88",
@@ -4256,6 +4336,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "code_qa_devops"
+  },
+  {
+    "id": "cand_3eb80c94026f31c9",
+    "name": "contextgem",
+    "url": "https://github.com/shcherbak-ai/contextgem",
+    "description": "ContextGem is an open-source Python framework that extracts structured, validated data from documents with LLMs and decision models—generating prompts from plain-language descriptions, tracing each fact to its source, and scoring closed questions with answer probabilities.",
+    "stars": 2030,
+    "forks": 186,
+    "type": "integration",
+    "subtype": "sdk_binding"
   },
   {
     "id": "cand_3eb89f61e6d8c3f9",
@@ -4788,6 +4878,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_47e3f35a2a55d88f",
+    "name": "polymarket-5min-btc-Jev-trading-bot",
+    "url": "https://github.com/Polytutor-AI-Labs/polymarket-5min-btc-Jev-trading-bot",
+    "description": "A terminal bot for Polymarket’s 5-minute BTC Up/Down markets that combines Gamma/CLOB book data, Binance spot, TypeSafe Jev predictions, strict entry gates, dry-run or opt-in live FOK execution, TUI monitoring, and PnL accounting to automate disciplined trading.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_47ff34c18de8cf01",
     "name": "kev-agent-kit",
     "url": "https://github.com/Busy-Office/kev-agent-kit",
@@ -5146,6 +5246,16 @@
     "forks": 2,
     "type": "extension",
     "subtype": "devtools"
+  },
+  {
+    "id": "cand_4d6234e5c774eba9",
+    "name": "forus",
+    "url": "https://github.com/davidkrider/forus",
+    "description": "A Chrome extension that scores each X post on payload and noise rubrics so it hides outrage-bait, empty chatter, engagement farming, and bot-shaped accounts while keeping blunt but substantive disagreement visible.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_4dc4415d373f688a",
@@ -6098,6 +6208,16 @@
     "subtype": "code_qa_devops"
   },
   {
+    "id": "cand_5a15a871aef0a849",
+    "name": "called-it",
+    "url": "https://github.com/rickmanelius/called-it",
+    "description": "A CLI and slash-command tool that turns a subject’s annual predictions into a replayable scorecard by extracting claims, predefining strict/standard/lenient criteria, gathering sourced evidence, grading each claim against it, and committing all inputs for offline reproduction.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_5a523a578e0a0f86",
     "name": "killdesk",
     "url": "https://github.com/HEADWOPZ/killdesk",
@@ -6296,6 +6416,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_5d8f9fe5b1958cc4",
+    "name": "unified-brain",
+    "url": "https://github.com/DevLoops-ai/unified-brain",
+    "description": "unified-brain is an MCP-compatible perception layer that ingests a repository's full git history into a SQLite database of versioned, embedded symbols, then answers codebase questions via retrieval, a small judge model that scores and follows symbol references, and a single final LLM synthesis call—delivering replicable, low-token, low-cost evidence gathering for coding agents.",
+    "stars": 10,
+    "forks": 4,
+    "type": "integration",
+    "subtype": "code_qa_devops"
   },
   {
     "id": "cand_5dc3d5d4382e74eb",
@@ -6734,6 +6864,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_64fbcdd916ef10e2",
+    "name": "jev-job-matching",
+    "url": "https://github.com/kaucap08/jev-job-matching",
+    "description": "Reproducible benchmark scoring 400 real job postings against 30 trap-laden fictional résumés (12,000 evaluations) via the Jev model, including a 100-posting answer key and offline scripts that show 96/100 top-3 accuracy and expose seniority-mixup and cutoff failures.",
+    "stars": 1,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_656471b7bcbbe703",
     "name": "limpet",
     "url": "https://github.com/noplan-inc/limpet",
@@ -6760,6 +6900,16 @@
     "description": "Validator is a command-line tool that evaluates single-label and multi-label classifiers by comparing expected labels against generated predictions, surfacing missed labels, false alarms, and their underlying cases, and diffing report runs to reveal regressions or improvements hidden behind aggregate metrics like micro-F1.",
     "stars": 1,
     "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
+  },
+  {
+    "id": "cand_65c1bdc7ab927acf",
+    "name": "jev_fsd",
+    "url": "https://github.com/BrendanH18/jev_fsd",
+    "description": "A browser driving simulator that recreates real Canadian neighbourhoods from OpenStreetMap, letting you or AI drivers (rules, decision models, LLMs, custom agents) drive eighteen hazard scenarios amid live traffic, then rewind recordings to see why each decision was made.",
+    "stars": 8,
+    "forks": 3,
     "type": "extension",
     "subtype": "eval_benchmark"
   },
@@ -8438,6 +8588,16 @@
     "subtype": "domain_app"
   },
   {
+    "id": "cand_7d295443bae7c19d",
+    "name": "decision-1-vs-jev",
+    "url": "https://github.com/egarim/decision-1-vs-jev",
+    "description": "A C# client and benchmark that runs 48 labeled support tickets through Microsoft-Decision-1, Jev, and self-hosted open-jev — all sharing the same `/v1/systemone` decision API — to compare routing accuracy, calibration, latency, and cost.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_7d38c2e08d3a67c0",
     "name": "fin-benchmark-jev",
     "url": "https://github.com/ThomasRossi/fin-benchmark-jev",
@@ -8744,6 +8904,16 @@
     "description": "A Chrome extension and companion web app that detect sponsor reads in YouTube videos using TypeSafe's Jev model over transcripts or live audio (via Deepgram), auto-skipping them with code-controlled timestamps and confidence thresholds so model uncertainty never cuts into actual content.",
     "stars": 74,
     "forks": 11,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_811f0ff92d9a9934",
+    "name": "Jev-X-Blocker",
+    "url": "https://github.com/bit-cook/Jev-X-Blocker",
+    "description": "A local-first Chrome MV3 extension that hides high-confidence pornographic and porn-bait posts and comments on x.com behind recoverable placeholders via your TypeSafe Jev API key, with on-device rule decisions, viewport-lazy scanning, caching, and fail-open fallback.",
+    "stars": 1,
+    "forks": 0,
     "type": "integration",
     "subtype": "platform_plugin"
   },
@@ -9216,6 +9386,16 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_873dabbb1337dfe8",
+    "name": "System-One-Computer-Use",
+    "url": "https://github.com/brainstormity/System-One-Computer-Use",
+    "description": "A prototype agent that loops screenshot → JEV vision-model decision → pyautogui action to control a macOS computer or Android phone over adb, with a local dashboard, per-step visual reports, dry-run/step modes, and confidence thresholds that halt uncertain actions.",
+    "stars": 73,
+    "forks": 10,
+    "type": "integration",
+    "subtype": "agent_automation"
+  },
+  {
     "id": "cand_8757d1b11ee26f00",
     "name": "SystemOneHarness",
     "url": "https://github.com/HarnessRouter/SystemOneHarness",
@@ -9602,6 +9782,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_8c964941041a3c41",
+    "name": "alpine_swift",
+    "url": "https://github.com/Iamnanisyam/alpine_swift",
+    "description": "A Hermes Agent plugin that runs fast, code-verified browser tasks in dedicated Chrome on Ubuntu desktop or server—choosing each step via TypeSafe Jev in ~0.1s, filling forms with Mercury 3, keeping secrets in vaults models never see, and offering a live view, parallel tasking, and rate-limit budgeting.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_8ca169de16081ba6",
@@ -10054,6 +10244,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_9366af263a34eb5d",
+    "name": "AReno",
+    "url": "https://github.com/inclusionAI/AReno",
+    "description": "AReno is a self-contained single-node LLM post-training toolkit for RL, SFT/DPO, agentic RL, and OpenAI-compatible serving, with LoRA/QLoRA, multimodal support, and CUDA, Ascend NPU, and Apple Silicon MLX backends—no cluster or external stack required.",
+    "stars": 381,
+    "forks": 132,
+    "type": "integration",
+    "subtype": "sdk_binding"
+  },
+  {
     "id": "cand_9368dadc24b3f012",
     "name": "jev-rogue",
     "url": "https://github.com/dolphin-wood/jev-rogue",
@@ -10280,6 +10480,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_974cc7c5a8ecbca0",
+    "name": "jev-grand-prix",
+    "url": "https://github.com/enoyola/jev-grand-prix",
+    "description": "A browser racing game where TypeSafe's Jev API drives an F1 car through structured decisions (racing line, pedal, trouble probability) executed by local code at 120 Hz, letting you race it and watch a race-engineer loop find faster laps.",
+    "stars": 7,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_9769f05a33c3d654",
@@ -10638,6 +10848,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "agent_automation"
+  },
+  {
+    "id": "cand_9cee8f196bfd89b0",
+    "name": "vd-jev",
+    "url": "https://github.com/ondata/vd-jev",
+    "description": "A VisiData plugin that asks a closed question of each cell in a text column using a decision model (Jev by default, any on OpenRouter), adding typed columns—yes/no probability, label, or scale score—with calibrated confidence, turning free text into sortable, filterable data.",
+    "stars": 2,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_9d03e8189ff9855b",
@@ -11224,6 +11444,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_a5e485e9a060f6e6",
+    "name": "jev-on-air",
+    "url": "https://github.com/valuecodes/jev-on-air",
+    "description": "JevOnAir transcribes YouTube livestreams in real time, merges the transcript with live Alpaca prices (gold, BTC, S&P 500, oil), and lets Jev (TypeSafe AI) turn market-moving statements into simulated trades on a paper portfolio via CLI or dashboard — it never places real orders.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_a6205e81410c8347",
@@ -11850,6 +12080,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_af9fea7c5e1458ff",
+    "name": "typesafe-playground",
+    "url": "https://github.com/matkatmusic/typesafe-playground",
+    "description": "A local Bun-served web playground for submitting TypeSafe questions against a user-provided API key, with versioned state/question sets to compare run outputs, file-based save/open history, placeholder-assisted question editing, and backtick-autocomplete for state key references.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "devtools"
+  },
+  {
     "id": "cand_afa607fbd7a5cfb9",
     "name": "jul",
     "url": "https://github.com/usejul/jul",
@@ -11930,6 +12170,16 @@
     "subtype": "runtime_infra"
   },
   {
+    "id": "cand_b067e8e21bafd52e",
+    "name": "faultline",
+    "url": "https://github.com/ronaldtebrake/faultline",
+    "description": "Faultline is a report-only Jev-powered test-selection tool that analyzes a PR/MR diff and test source to propose RUN/OMIT candidates, explain decisions, estimate inference costs, and evaluate reduced regression detection.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
+  },
+  {
     "id": "cand_b06c9027797821b0",
     "name": "typesafe-mcp",
     "url": "https://github.com/itsmostafa/typesafe-mcp",
@@ -11970,6 +12220,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_b0f0f5acd1a3c2e7",
+    "name": "claude-x-jev",
+    "url": "https://github.com/albertobolio/claude-x-jev",
+    "description": "Claude-x-jev is a free Claude Code skill that front-loads cheap (~$0.04/M tokens), fast (~0.3s), deterministic classification to Jev — a non-generative OpenRouter model returning labels, probabilities, and confidence — via 13 slash commands for triage, routing uncertain items to Claude, gating tool calls, verifying drafts, and cron/n8n automation.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_b15661a8e0cc3f93",
     "name": "jev-drone",
     "url": "https://github.com/RomanSlack/jev-drone",
@@ -11998,6 +12258,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_b1cb0d6ee2a50de9",
+    "name": "JevLight",
+    "url": "https://github.com/usail-hkust/JevLight",
+    "description": "JevLight is a traffic signal controller for SUMO simulations that maps each intersection's state to a typed `state` + `choice`-question request against the Jev decision model, applying the returned phase with confidence-filtered fallback, optional cooperative neighbor context, batching, and camera-image decisions.",
+    "stars": 10,
+    "forks": 2,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_b1ff81995cd5e69d",
@@ -12216,6 +12486,16 @@
     "subtype": "domain_app"
   },
   {
+    "id": "cand_b49848595dc1b579",
+    "name": "jev-vs-parallel",
+    "url": "https://github.com/VedantBhayani/jev-vs-parallel",
+    "description": "Benchmark comparing Jev vs Parallel on two gating tasks—scoring YC companies on HQ, size, hiring, and detecting already-published content—showing Parallel wins on live-web facts while Jev plus a sitemap reaches 97% at ~3% of the cost, with routing guidance and reproducible scripts.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_b4e02ca315d721a0",
     "name": "feedkeeper",
     "url": "https://github.com/Skynet843/feedkeeper",
@@ -12344,6 +12624,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_b6acb4cb8267dabf",
+    "name": "Jevelin",
+    "url": "https://github.com/nickproud/Jevelin",
+    "description": "Jevelin is an unofficial C#/.NET client for TypeSafe AI's Jev decision model, enabling .NET apps to submit state plus named yes/no, multiple-choice, or scored questions and receive probabilities, option picks with confidences, and weighted scores.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "sdk_binding"
   },
   {
     "id": "cand_b6ba00fad458938e",
@@ -13176,6 +13466,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_c31bf630dbd93a38",
+    "name": "derva-ai-gateway",
+    "url": "https://github.com/TomaIjatomi/derva-ai-gateway",
+    "description": "DERVA is a LiteLLM-based AI gateway that screens model requests via typed decision questions and versioned policy, holds effectful tool calls for human approval, records a hash-chained audit log, and includes an evaluation harness for comparing and validating deciders.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "runtime_infra"
+  },
+  {
     "id": "cand_c347e0105a244b8a",
     "name": "jev-fund",
     "url": "https://github.com/erboland/jev-fund",
@@ -13578,6 +13878,16 @@
     "description": "A Python CLI and VOICEVOX-compatible proxy server that corrects Japanese text-to-speech readings by consulting TypeSafe's Jev model over the SystemOne API—using Sudachi/UniDic/JMdict dictionaries to resolve word boundaries, readings, accent phrases, and optional intonation—then rewriting the audio query and re-synthesizing corrected WAV output.",
     "stars": 0,
     "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
+    "id": "cand_c82bb7771b9a1fce",
+    "name": "MiniCPM-OCR",
+    "url": "https://github.com/OpenBMB/MiniCPM-OCR",
+    "description": "MiniCPM-OCR is an open-source OCR model family where MiniCPM-OCR 1.0 (1.3B) parses Chinese/English documents and PDFs—including scans, photos, curved or skewed pages—into text, tables, formulas, and structured data at state-of-the-art accuracy with DSpark-accelerated throughput, while MiniCPM-OCR Jev (2B) scores region-level result quality (0–1) to flag unreliable regions for review; it depl",
+    "stars": 11,
+    "forks": 1,
     "type": "integration",
     "subtype": "domain_app"
   },
@@ -14360,6 +14670,16 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_d2b728107c1ebd21",
+    "name": "modernbert-jev",
+    "url": "https://github.com/KSonny4/modernbert-jev",
+    "description": "modernbert-jev turns a 150M NLI cross-encoder into a decision model, answering typed choice/score/yes-no questions over text or JSON with calibrated probabilities in ~100 ms on 1 CPU and 2 GB RAM via a TypeSafe-compatible /v1/systemone API.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "runtime_infra"
+  },
+  {
     "id": "cand_d2e2bc739ebaed8e",
     "name": "openevals",
     "url": "https://github.com/memovai/openevals",
@@ -14458,6 +14778,16 @@
     "subtype": "code_qa_devops"
   },
   {
+    "id": "cand_d4583719597dbc42",
+    "name": "jev-ids",
+    "url": "https://github.com/jev-sec/jev-ids",
+    "description": "A CLI that detects network intrusions by sending each flow with few-shot labeled examples in one typed request to TypeSafe's Jev model, and benchmarks it on NSL-KDD against LLM, Random Forest, and Isolation Forest baselines.",
+    "stars": 27,
+    "forks": 2,
+    "type": "integration",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_d45b69f79a96658c",
     "name": "text-to-vrma",
     "url": "https://github.com/Kirakun0328/text-to-vrma",
@@ -14496,6 +14826,16 @@
     "forks": 1,
     "type": "integration",
     "subtype": "agent_automation"
+  },
+  {
+    "id": "cand_d50cc853744ece07",
+    "name": "vulnwash-cli",
+    "url": "https://github.com/snyk-labs/vulnwash-cli",
+    "description": "vulnwash-cli pipes Snyk SCA and SAST findings through the Jev structured-decision model for tunable dependency-vulnerability prioritization and true-positive code-finding filtering, adding a live TUI dashboard, idempotent result caching, and cost-free confidence-threshold re-triage.",
+    "stars": 2,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
   },
   {
     "id": "cand_d53beeff8acde7b7",
@@ -14954,6 +15294,16 @@
     "forks": 37,
     "type": "extension",
     "subtype": "eval_benchmark"
+  },
+  {
+    "id": "cand_dbe67f4f4a4d3d12",
+    "name": "pi-durable-news-agent",
+    "url": "https://github.com/disler/pi-durable-news-agent",
+    "description": "A proactive, durable news agent built on pi-durable that runs on a cron schedule to sweep 28 sources for your chosen topics, uses the jev classifier to gate relevance, dedupe stories, and rank items as Hype, Facts, or Signal, then renders the top findings as UI cards—checkpointing all work in SQLite so it survives crashes without repeating paid work.",
+    "stars": 126,
+    "forks": 39,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_dc5de7b805bd5afa",
@@ -15964,6 +16314,16 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_ebabd50ef416c9b3",
+    "name": "lifepot",
+    "url": "https://github.com/tugrulguner/lifepot",
+    "description": "LifePot is an experimental artificial-life game that turns model-proposed ecology into validated, schema-bounded rules executed by a deterministic cellular simulation, with an evidence ledger enabling full inspection and replay of runs without further inference.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_ebc5f1205862d882",
     "name": "typesafe-offload-bench",
     "url": "https://github.com/dnikolayev/typesafe-offload-bench",
@@ -16022,6 +16382,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "agent_automation"
+  },
+  {
+    "id": "cand_ec90b425b01ff902",
+    "name": "jev-effort-router",
+    "url": "https://github.com/hasanzaman22/jev-effort-router",
+    "description": "Claude Code plugin that asks TypeSafe Jev to score each prompt's difficulty, risk, and context-dependence, then sets the lowest safe effort tier (low–xhigh) per request—saving thinking tokens on easy prompts while biasing higher on risky ones.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_eca57151151d28d7",
@@ -16302,6 +16672,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_ef2e43b6aa265fbd",
+    "name": "jevman-benchmark",
+    "url": "https://github.com/opper-ai/jevman-benchmark",
+    "description": "A Pac-Man benchmark tool that pits System One decision models (jev, Clef, GPT-6 Luna Decisions, and others) against the classic arcade ghosts in real-time games, ranking them via `npm run leaderboard` with headless benchmarking, replayable recordings, and a hosted page where visitors can play against AI-steered ghosts or watch live.",
+    "stars": 21,
+    "forks": 12,
+    "type": "extension",
+    "subtype": "eval_benchmark"
   },
   {
     "id": "cand_ef32f6d3f97f6937",
