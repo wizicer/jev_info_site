@@ -746,6 +746,16 @@
     "subtype": "code_qa_devops"
   },
   {
+    "id": "cand_0b8912b8ba014abd",
+    "name": "jev-determinism-and-abstraction",
+    "url": "https://github.com/carollia-99/jev-determinism-and-abstraction",
+    "description": "An abstract-art playground that generates deterministic, seeded canvas-sketch renderings by making parallel probabilistic decisions across 80+ renderer characteristics, letting users compare four generation paths—live field updates, one-shot LLM spec fill, sandboxed custom JavaScript, and direct prompt-to-image—by fidelity, speed, tokens, and cost.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "devtools"
+  },
+  {
     "id": "cand_0b8c09990dd459d9",
     "name": "AskJev",
     "url": "https://github.com/ranjan2829/AskJev",
@@ -954,6 +964,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "devtools"
+  },
+  {
+    "id": "cand_0e86f1e4edb1f639",
+    "name": "agora",
+    "url": "https://github.com/dgiunchi/agora",
+    "description": "Agora orchestrates multiple coding-agent CLIs (Claude Code, Codex, Gemini CLI, Aider, and more) in a bounded plan–review–build–inspect loop, spending only free tiers and existing subscriptions via a quota ledger, bandit allocator, and rate-limit failover—zero API bills.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_0e9b24896addffd2",
@@ -2152,6 +2172,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_1ecc2896c780b47e",
+    "name": "jevit",
+    "url": "https://github.com/Xvectorio/jevit",
+    "description": "JevIt is a Thunderbird add-on that auto-triages email by scoring each message against plain-language yes/no \"recipes\" via the Jev AI model, then tags, stars, marks, or moves matches above configurable thresholds, with corrections that teach the model, cached scores, monthly cost budgets, and privacy safeguards like DMARC-based sender checks.",
+    "stars": 3,
+    "forks": 3,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_1f470bca4a38aa2c",
     "name": "clearbook",
     "url": "https://github.com/professor-12/clearbook",
@@ -2958,6 +2988,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "eval_benchmark"
+  },
+  {
+    "id": "cand_28dfdc298f209fd9",
+    "name": "resenha",
+    "url": "https://github.com/luisroquette-labs/resenha",
+    "description": "Resenha is a free, open-source push-to-talk dictation app for macOS 14+ on Apple Silicon that transcribes speech locally via Metal-accelerated whisper.cpp in Portuguese, English, and Spanish, pasting text into the active field with no cloud, accounts, or analytics.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_293dc9475d378675",
@@ -4996,6 +5036,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "runtime_infra"
+  },
+  {
+    "id": "cand_49b1d8ba4fce4b90",
+    "name": "jev-tos-checker",
+    "url": "https://github.com/shohei81/jev-tos-checker",
+    "description": "A Chrome extension that analyzes any website's terms of service on demand using TypeSafe's Jev model, flagging clauses across eight categories (personal data, terms changes, liability, accounts, disputes, auto-renewal, content rights, fees) that exceed 70% abuse probability and linking each result back to the highlighted source text.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_49ee75b49534ee22",
@@ -7272,6 +7322,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_6a25375bed20dbed",
+    "name": "plugin-typesafe",
+    "url": "https://github.com/kestra-io/plugin-typesafe",
+    "description": "A Kestra plugin that adds TypeSafe evaluation tasks and schemas (`Evaluate`, `EvaluateBatch`, `Question`, `Answer`) so workflows can assess items against calibrated typed questions and route structured answers through retries, branching, notifications, and downstream systems.",
+    "stars": 1,
+    "forks": 2,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_6a2cb6d6009f6258",
     "name": "jev-vs-openai-dicision-api",
     "url": "https://github.com/mantaroh/jev-vs-openai-dicision-api",
@@ -7840,6 +7900,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_729632e22692a115",
+    "name": "btx-skill-jev-judge",
+    "url": "https://github.com/bitranox/btx-skill-jev-judge",
+    "description": "btx-skill-jev-judge is a Claude Code plugin and Python CLI that batch-judges many items—like labeling 600 support tickets—through TypeSafe's Jev API, returning typed answers (yes/no, choice, scale) with probabilities, cost reporting, secret redaction, retries, and rate limiting.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_72a13aae323587a5",
@@ -8428,6 +8498,16 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_7ac06a24ac0b0224",
+    "name": "Jev-reranking",
+    "url": "https://github.com/Mei-TN/Jev-reranking",
+    "description": "Jev-reranking is a Python CLI toolkit implementing mean-span pooling and selective LoRA adaptation of attention and gated DeltaNet projections (excluding FFN adapters) for JEV entailment reranking, providing CPU-runnable verification and planning commands plus GPU-based training of NeoHorse-1-4B models.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "devtools"
+  },
+  {
     "id": "cand_7ae7c58d77115697",
     "name": "jev-frontend-qa",
     "url": "https://github.com/Nainish-Rai/jev-frontend-qa",
@@ -8796,6 +8876,16 @@
     "forks": 5,
     "type": "integration",
     "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_7fe5e32946f21c49",
+    "name": "flama-roja-jev",
+    "url": "https://github.com/pmontp19/flama-roja-jev",
+    "description": "A System One (Jev) harness that plays Pokémon FireRed (Catalan Flama Roja patch) via mGBA: each tick it fires typed questions (Choice/Score/Noul) in parallel over RAM-derived game state, and policy code compiles calibrated answers into button presses—no free-text LLM needed.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_8006103d7ae17a66",
@@ -9346,6 +9436,16 @@
     "forks": 21,
     "type": "extension",
     "subtype": "runtime_infra"
+  },
+  {
+    "id": "cand_86a366eca2676665",
+    "name": "jev-calibrate",
+    "url": "https://github.com/smkrv/jev-calibrate",
+    "description": "A dependency-free Node 20+ CLI that calibrates Jev typed-decision questions (noul, choice, score) against your labelled examples via TypeSafe or OpenRouter, reporting accuracy, confidence, AUC, and run-to-run stability with gate/ranker/unusable verdicts, threshold suggestions, tune/holdout splits, and regression comparison.",
+    "stars": 33,
+    "forks": 1,
+    "type": "extension",
+    "subtype": "eval_benchmark"
   },
   {
     "id": "cand_86aaf892bceafb2f",
@@ -9982,6 +10082,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "devtools"
+  },
+  {
+    "id": "cand_8f4a79230a1538c6",
+    "name": "jev-router",
+    "url": "https://github.com/pyxl-dev/jev-router",
+    "description": "A Claude Code plugin that routes each prompt through a cheap OpenRouter model which rates the reasoning effort it needs (low/medium/high), applying that effort when ≥60% confident while preserving the prompt cache, and displaying the pick, its confidence, and controls to pin or disable auto-routing.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_8f740e9c5b3340ca",
@@ -10732,6 +10842,16 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_9b1b37a0ee996800",
+    "name": "youtube-jev-filter",
+    "url": "https://github.com/Vlad0n1m/youtube-jev-filter",
+    "description": "A Chrome extension (Manifest V3, no build) that hides YouTube clickbait, hype, low-substance videos, and Shorts by scoring each card's metadata with TypeSafe's Jev model on three signals, with adjustable thresholds, per-video answer caching, and an eval script.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_9b1ea38bdc79cc7f",
     "name": "jev-weekend-shopping-chrome",
     "url": "https://github.com/littlewindy123/jev-weekend-shopping-chrome",
@@ -11454,6 +11574,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_a61f09a444b2575c",
+    "name": "judgelint",
+    "url": "https://github.com/jpcamara/judgelint",
+    "description": "judgelint is a command-line linter that checks code against conventions written as plain-English bullets in README-style spec files by asking a decision model whether each file violates each rule, reporting violations with line numbers, confidence scores, severity levels, CI-friendly diff modes, excusable `judgehint:` exceptions, and standard linter exit codes at sub-second latency and sub-cent co",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
   },
   {
     "id": "cand_a6205e81410c8347",
@@ -12606,6 +12736,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_b672dee963ce9390",
+    "name": "people-search",
+    "url": "https://github.com/composio-community/people-search",
+    "description": "AI sourcing agent that turns plain-language hiring briefs into ranked shortlists via Composio Instant—searching Apollo and job boards, scoring candidates with Jev, revealing emails at itemized prices, and drafting warm intros—with OAuth login, per-use wallet billing, and a visible run trace.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_b68d61db6705e134",
     "name": "dinostomp",
     "url": "https://github.com/collapseindex/dinostomp",
@@ -13116,6 +13256,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_bd2bc454de89a058",
+    "name": "jev-triage",
+    "url": "https://github.com/CMaintz/jev-triage",
+    "description": "GitHub Action that auto-labels newly opened issues using TypeSafe AI's Jev, which returns a label with a confidence score and escalates uncertain cases to a human or LLM instead of guessing.",
+    "stars": 1,
+    "forks": 1,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_bd6410a75444ac5e",
     "name": "jev-devtools",
     "url": "https://github.com/diegoag64/jev-devtools",
@@ -13144,6 +13294,16 @@
     "forks": 1,
     "type": "integration",
     "subtype": "code_qa_devops"
+  },
+  {
+    "id": "cand_bdde2d8aa1b2589f",
+    "name": "zu-de-clemens",
+    "url": "https://github.com/hotarumarueng/zu-de-clemens",
+    "description": "A Claude Code plugin whose low-cost judgment model scores each conversation moment and proposes diagrams—comparisons, flows, sequences, session summaries—rendering them as D2 in a side pane only when the user approves.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_bde552e578642525",
@@ -13960,6 +14120,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_c95727aabf3c84ea",
+    "name": "leash",
+    "url": "https://github.com/CMaintz/leash",
+    "description": "Leash is a Claude Code hook tool that uses Jev to check each agent turn against a compiled rubric of un-lintable project rules, baselines existing violations, and blocks only newly introduced repair-band breaks so the agent fixes them before continuing.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_c995ca3bfbe6c6bd",
@@ -15126,6 +15296,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_d924b35bbea9e414",
+    "name": "jev-guide",
+    "url": "https://github.com/theNetworkChuck/jev-guide",
+    "description": "Five-chapter companion to the NetworkChuck video that teaches Jev — TypeSafe's fast, cheap \"System One\" decision model returning probabilities, picks, or scores — from no-code Playground trials through terminal API calls to building a working model router, with runnable example code.",
+    "stars": 59,
+    "forks": 6,
+    "type": "extension",
+    "subtype": "devtools"
+  },
+  {
     "id": "cand_d92f2c9df616fdc8",
     "name": "jev-system-one",
     "url": "https://github.com/haseeb-heaven/jev-system-one",
@@ -15854,6 +16034,16 @@
     "subtype": "devtools"
   },
   {
+    "id": "cand_e46eb4dbd8e44123",
+    "name": "mcpcli",
+    "url": "https://github.com/ConsulTent/mcpcli",
+    "description": "`mcpcli` provides `mcp`, a Go-based command-line MCP client and inspector that connects to any MCP server over stdio or streamable HTTP to inspect capabilities, list and call tools, read resources, fetch prompts, probe protocol-version compatibility, handle OAuth, and run an interactive REPL.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "devtools"
+  },
+  {
     "id": "cand_e4b455264c58cf96",
     "name": "failproofai-sub",
     "url": "https://github.com/shubhasai/failproofai-sub",
@@ -16292,6 +16482,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "runtime_infra"
+  },
+  {
+    "id": "cand_eb054f8ec2888de1",
+    "name": "jev-job-by-job",
+    "url": "https://github.com/WeBuildDatabases/jev-job-by-job",
+    "description": "A plain-English field guide to TypeSafe's Jev model covering the 20 jobs in its official cookbooks, with per-job figures, a narrated video, prompt comparisons, and a reproducible 307-example test suite with cached results for evaluating real-world performance.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
   },
   {
     "id": "cand_eb2119828106204c",
