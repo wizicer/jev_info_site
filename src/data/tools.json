@@ -2592,6 +2592,16 @@
     "subtype": "runtime_infra"
   },
   {
+    "id": "cand_23746973c38c4e68",
+    "name": "agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "description": "A cross-platform CLI and C library that lets AI agents read desktop apps via the OS accessibility tree as JSON snapshots with element refs, then act on them (click, type, scroll, window, clipboard, notification control) headlessly on macOS, Windows, and Linux—no pixel matching.",
+    "stars": 4127,
+    "forks": 293,
+    "type": "integration",
+    "subtype": "agent_automation"
+  },
+  {
     "id": "cand_23c43d4e87920e58",
     "name": "JevScout",
     "url": "https://github.com/yctimlin/JevScout",
