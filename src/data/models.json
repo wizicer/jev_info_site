@@ -84,6 +84,12 @@
     "description": "d3-turbo is a 26B multimodal decision model that reads text, JSON, images, and video once per request to answer many questions at once—choices, yes/no, scores, object boxes, and video tracks—returning calibrated probabilities without generating text."
   },
   {
+    "id": "cand_2078dc967127c86e",
+    "name": "embeddinggemma2-decision-router",
+    "url": "https://huggingface.co/Ajeet-001/embeddinggemma2-decision-router",
+    "description": "An open-source routing model that maps text, image, or audio workflow states to typed, calibrated decisions (choice/score/boolean) in one forward pass via a frozen EmbeddingGemma 2 backbone plus a 3.55M set-equivariant head, offering zero option-order bias, out-of-scope abstention gating, and ~54 ms latency."
+  },
+  {
     "id": "cand_2114579deb4da911",
     "name": "safe-laya",
     "url": "https://huggingface.co/ottosulin/safe-laya",
@@ -112,6 +118,12 @@
     "name": "OneJev",
     "url": "https://huggingface.co/OmniJev/OneJev",
     "description": "OneJev is a multimodal System One decision model (0.8B–27B) that reads screenshots, photos, video, or text and returns calibrated probabilities for every option of every question in one shared forward pass, serving TypeSafe's System One API for fast GUI-agent decisions."
+  },
+  {
+    "id": "cand_2babcf5bf3a80b9e",
+    "name": "llm-jev-qwen3-4b",
+    "url": "https://huggingface.co/Athekunal/llm-jev-qwen3-4b",
+    "description": "A LoRA fine-tuned Qwen3-4B decision model (merged weights plus adapter) that scores numbered answer options for a given document and question through a candidate trie rather than generating text, raising held-out option-selection accuracy from 72.2% to 79.3% while leaving external benchmarks essentially unchanged."
   },
   {
     "id": "cand_2e62e3a262629b54",
@@ -172,6 +184,18 @@
     "name": "autojev-27b",
     "url": "https://huggingface.co/denis-pplx/autojev-27b",
     "description": "AutoJev-27B is a 27B-parameter multimodal decision model finetuned from Qwen3.8-27B that returns calibrated probabilities for supplied choices in a single forward pass, exposes a TypeSafe-compatible API and playground, and improves benchmark accuracy/ECE/Brier over its base."
+  },
+  {
+    "id": "cand_3be15b3325825504",
+    "name": "Sev",
+    "url": "https://huggingface.co/alinia/Sev",
+    "description": "Sev is a Gemma-4-E4B-it LoRA decision model that classifies text against arbitrary plain-language policy questions in one non-generative forward pass, returning answer probabilities from embedding similarity for safety, injection, legal, and tax guardrails."
+  },
+  {
+    "id": "cand_3e91645c2c92682e",
+    "name": "drex-max-v1",
+    "url": "https://huggingface.co/nace-ai/drex-max-v1",
+    "description": "Drex Max is a dense 27B-parameter multimodal decision model that answers typed questions (choice, noul, score) over text, JSON, and image context, returning probabilities for up to 255 options in a single forward pass without generating text."
   },
   {
     "id": "cand_3f7430ca0d2fe78a",
@@ -424,6 +448,12 @@
     "name": "ArseneLupinstral-v1.0",
     "url": "https://huggingface.co/IBOU-SEARCH/ArseneLupinstral-v1.0",
     "description": "ArseneLupinstral-v1.0 is an Apache-2.0, 8.92B-parameter Mistral Ministral-3-8B decision model whose merged LoRA and trained readout head turn a supplied state and yes/no, choice, or score questions into calibrated probability distributions—one forward pass per option, no generated text—via a System One-style API."
+  },
+  {
+    "id": "cand_7ad2213d03a9303b",
+    "name": "llm-jev-qwen3-0.6b",
+    "url": "https://huggingface.co/Athekunal/llm-jev-qwen3-0.6b",
+    "description": "llm-jev-qwen3-0.6b is a Qwen3-0.6B model fine-tuned with a LoRA adapter (merged weights included) that scores numbered answer options via a candidate trie under the LLM-as-Jev method, raising held-out option-selection accuracy from 46.7% to 65.0% over the base model."
   },
   {
     "id": "cand_7b0b9e689bc5edf1",

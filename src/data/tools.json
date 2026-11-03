@@ -406,6 +406,16 @@
     "subtype": "domain_app"
   },
   {
+    "id": "cand_05cddf5442204447",
+    "name": "agastya",
+    "url": "https://github.com/cars3/agastya",
+    "description": "Agastya is a training-free ToC-navigated retriever: a decision model walks a document's table of contents while local embeddings rank surviving leaves, yielding 89.1% gold-section recall at 3.6 leaves per query with auditable pruning and zero empty results on consumer GPUs.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_05da8da9dd090f60",
     "name": "quicke2e",
     "url": "https://github.com/dmoka/quicke2e",
@@ -4758,6 +4768,16 @@
     "subtype": "domain_app"
   },
   {
+    "id": "cand_44bd341b22da7619",
+    "name": "review-action",
+    "url": "https://github.com/usebrainchain/review-action",
+    "description": "A GitHub Action that pays 1 USDC per pull request to a frontier model that reviews the diff, posting the result as a comment only when TypeSafe's Jev decision model accepts it and refunding the payment otherwise, so you pay only for reviews that pass grading.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
+  },
+  {
     "id": "cand_450b9d9dfec3dc8d",
     "name": "jev-childspeak",
     "url": "https://github.com/liora-iyzebhel/jev-childspeak",
@@ -5016,6 +5036,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_4912fa244e7e3d45",
+    "name": "ci-triage",
+    "url": "https://github.com/tejred213/ci-triage",
+    "description": "A CI triage tool that uses an LLM to classify each failed test's cause from JUnit XML, then automatically re-runs flaky/environment failures or files owner-assigned GitHub tickets for regressions, emitting an HTML report and supporting dry-run and any CI via CLI.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
   },
   {
     "id": "cand_495685349272feec",
@@ -6714,6 +6744,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_6192534a8912dd3c",
+    "name": "llm-as-jev",
+    "url": "https://github.com/Athe-kunal/llm-as-jev",
+    "description": "Trains LLMs as Jev decision models with a tree-factorized listwise loss over a candidate trie plus KL anchors, and attributes their answers to context sentences via fast packed-mask ContextCite with fused kernels for ~1.7x speedup.",
+    "stars": 2,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_619fa94522041b4a",
     "name": "jev-lint",
     "url": "https://github.com/zdenham/jev-lint",
@@ -7202,6 +7242,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_67fa93975e24bbe5",
+    "name": "metta",
+    "url": "https://github.com/guru-metta2022/metta",
+    "description": "Open-source monorepo providing a human-facing reflection console and an advisory decision-safety layer that lets applications and AI agents submit proposed actions via REST API, MCP server, or simulation lab and receive structured verdicts before acting.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_68177c7b65c815d8",
     "name": "x-stamp",
     "url": "https://github.com/parker-brown-family/x-stamp",
@@ -7370,6 +7420,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "code_qa_devops"
+  },
+  {
+    "id": "cand_6ad5aee2b6a21e4b",
+    "name": "unorphan",
+    "url": "https://github.com/sushrutkhandelwal/unorphan",
+    "description": "Unorphan tidies a messy folder like Downloads by matching each loose file to your code projects (learned from their READMEs) or custom folders you describe, using an AI model that can interpret screenshots, with review-before-move, undo, CLI, and a browser UI.",
+    "stars": 2,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_6adfb2afdc1d9fb2",
@@ -8436,6 +8496,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "devtools"
+  },
+  {
+    "id": "cand_79ca9cc6e77448b1",
+    "name": "tone-policer",
+    "url": "https://github.com/odbol/tone-policer",
+    "description": "Tone Policer is an Android accessibility service that monitors typing in any app, scores tone severity via pluggable Gemini/Jev/heuristic inference backends with on-screen conversation context, displays a pulsing color-coded border around flagged fields, and offers a \"Fix tone\" button with missed social-cue checklists and three rewrites it can apply directly.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_79cbf34813022c88",
@@ -9754,6 +9824,26 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_8af3175d4d3b9055",
+    "name": "understudy",
+    "url": "https://github.com/Endgame-Labs/understudy",
+    "description": "Drop-in CPU-only proxy for System One leads that trains competing small models on the lead's answers, graduates whichever reaches near-parity to answer that narrow repetitive question locally, and keeps auditing and demoting it, cutting paid lead calls at scale.",
+    "stars": 2,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "runtime_infra"
+  },
+  {
+    "id": "cand_8b1492872374089f",
+    "name": "netizen",
+    "url": "https://github.com/Seheta/netizen",
+    "description": "Netizen simulates how Indonesian netizens will react to a draft post or image before publishing, using weighted personas judged by the Jev model across rounds, reach scenarios, and follow-up episodes, anchored to a library of labeled real comment cases.",
+    "stars": 17,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_8b2af0ee3719297e",
     "name": "JevGPT",
     "url": "https://github.com/idlivada/JevGPT",
@@ -10122,6 +10212,16 @@
     "forks": 3,
     "type": "integration",
     "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_8f976913dc2c6d6b",
+    "name": "jev-email-triage",
+    "url": "https://github.com/byui-library/jev-email-triage",
+    "description": "A guide and repo for non-programmers to pair TypeSafe's Jev judgment model with Claude Code, building a read-only Gmail triage tool that ranks two weeks of email into actionable piles (reply needed, waiting on them, possible phishing) in ~1 second for a fraction of a cent.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_8f9bd3903d275e83",
@@ -11844,6 +11944,16 @@
     "forks": 2,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_a91d6f4e61868a53",
+    "name": "jevmoji",
+    "url": "https://github.com/amscotti/jevmoji",
+    "description": "jevmoji is a Go/HTMX demo app that turns a typed chat message into Slack-style emoji reactions by scoring all 200 catalog emojis as Noul questions in a single TypeSafe Jev `POST /v1/systemone` call, returning the top four at ≥50% probability (plus a fifth at ≥75%), and ships as a single static binary or ~10 MB scratch Docker image deployable to Cloud Run.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_a98580474f4c0068",
@@ -15148,6 +15258,16 @@
     "subtype": "domain_app"
   },
   {
+    "id": "cand_d722be786e04fec7",
+    "name": "juger-vite-bloquer-juste",
+    "url": "https://github.com/lorenzorama/juger-vite-bloquer-juste",
+    "description": "Demo code where a DeepAgents+Claude mail agent faces prompt-injection attacks, with TypeSafe's \"System 1\" model Jev guarding at runtime (quarantining AI-addressed mails, blocking off-scope or secret-leaking drafts) and judging 16 eval scenarios against a golden set.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_d72cd74e06f9a9af",
     "name": "jev-sandbox",
     "url": "https://github.com/amr05008/jev-sandbox",
@@ -15174,6 +15294,16 @@
     "description": "A Next.js playground for TypeSafe AI’s Jev that lets you edit typed-output examples, run A/B evaluations, triage conversations, extract document fields, route tools, inspect policy-gated code decisions, and test interactive simulations locally or against live API calls.",
     "stars": 15,
     "forks": 4,
+    "type": "extension",
+    "subtype": "devtools"
+  },
+  {
+    "id": "cand_d804b708352d6288",
+    "name": "jev-issue-poc",
+    "url": "https://github.com/AmaseCocoa/jev-issue-poc",
+    "description": "jev-issue-poc is a proof-of-concept tool for the AmaseCocoa/jev-issue-poc project, useful for demonstrating or testing the specific issue it targets.",
+    "stars": 0,
+    "forks": 0,
     "type": "extension",
     "subtype": "devtools"
   },
@@ -15326,6 +15456,16 @@
     "subtype": "devtools"
   },
   {
+    "id": "cand_d9acdc164e40a040",
+    "name": "brainchain",
+    "url": "https://github.com/usebrainchain/brainchain",
+    "description": "BrainChain provides the Solidity/Foundry contracts for an Arbitrum Orbit chain settled on Robinhood Chain, where a trusted brain records AI-agent Jev’s hiring, grading, dispute, and governance decisions so escrowed USDG bounties pay registered models only above confidence thresholds and otherwise refund.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_d9b0f9815989ef3c",
     "name": "measuretwice",
     "url": "https://github.com/nibzard/measuretwice",
@@ -15344,6 +15484,16 @@
     "forks": 86,
     "type": "integration",
     "subtype": "platform_plugin"
+  },
+  {
+    "id": "cand_d9de617670a0ef40",
+    "name": "decisium",
+    "url": "https://github.com/andletenkov/decisium",
+    "description": "Decisium runs plain-English Gherkin UI tests in a real Playwright browser with no selectors or step definitions: a decision model picks among enumerated page options while code decides pass/fail, and recorded cassettes enable deterministic CI replay with zero model calls.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_da1926272751effb",
@@ -15640,6 +15790,16 @@
     "description": "Jive is an open-source agent that replaces the linear LLM→tool-call loop with DAG-based \"graph calls\" mixing tool calls and fast System One (Jev) decisions, delivering dramatically faster, more token-efficient bulk evaluation, profiling, and repetitive engineering tasks.",
     "stars": 149,
     "forks": 13,
+    "type": "integration",
+    "subtype": "agent_automation"
+  },
+  {
+    "id": "cand_de206a7998c5f5b1",
+    "name": "jev-embodied-agent",
+    "url": "https://github.com/tourmii/jev-embodied-agent",
+    "description": "jev-embodied-agent turns one instruction into simulator-verified robot skills—LLM-planned navigation plus SmolVLA manipulation in a persistent RoboCasa kitchen with in-place retries—routing routine decisions to TypeSafe's Jev (~0.24 s) to cut planning time ~4× on one GPU.",
+    "stars": 2,
+    "forks": 0,
     "type": "integration",
     "subtype": "agent_automation"
   },
@@ -15962,6 +16122,16 @@
     "forks": 12,
     "type": "extension",
     "subtype": "runtime_infra"
+  },
+  {
+    "id": "cand_e273ed98b1cca8c5",
+    "name": "resume-grader",
+    "url": "https://github.com/ninetyhe-90/resume-grader",
+    "description": "A portable agent skill/CLI that grades resumes (optionally against a JD) as Excellent/Good/Poor by combining reproducible local rule checks with Jev semantic judgments, then applying code-controlled thresholds/caps to produce subscores, triggered caps, and actionable suggestions.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_e27d0c98e4c7a547",
@@ -17948,6 +18118,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_ff345656808f0be9",
+    "name": "bili-intent-filter",
+    "url": "https://github.com/5pr1ng6ridge/bili-intent-filter",
+    "description": "A Chrome extension that scores Bilibili video, live, course, and anime cards against configurable “want/don’t want” intents—using local keyword/type rules, video tags, and Jev/custom models—to blur low-relevance content with caching, thresholds, stats, and hover previews.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_ff36647d2afd1710",
