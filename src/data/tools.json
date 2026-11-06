@@ -1642,6 +1642,16 @@
     "subtype": "runtime_infra"
   },
   {
+    "id": "cand_17f6734c7b360028",
+    "name": "jev-tern",
+    "url": "https://github.com/cyriusweng/jev-tern",
+    "description": "jev-tern is a single-file browser agent engine that executes plain-language web tasks—clicking, typing, popup dismissal, canvas interaction—in a live watchable tab through a six-call bridge and an LLM judge, returning status and per-step evidence.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "agent_automation"
+  },
+  {
     "id": "cand_181e8ab7ee13435f",
     "name": "hunk-triage",
     "url": "https://github.com/morinokami/hunk-triage",
@@ -2822,6 +2832,16 @@
     "subtype": "devtools"
   },
   {
+    "id": "cand_2611c9ef7fadf8ae",
+    "name": "basura-vision",
+    "url": "https://github.com/sipelepis/basura-vision",
+    "description": "A zero-shot video pipeline and Windows desktop app that detects waste items in footage and sorts each into the four bins mandated by Philippine law RA 9003, using OWLv2/YOLO box proposals verified by the Jev vision model (or the free d3 alternative) with no training data required.",
+    "stars": 2,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_2623a188866a4407",
     "name": "jev-banking77-experiment",
     "url": "https://github.com/simonmesmith/jev-banking77-experiment",
@@ -3438,6 +3458,16 @@
     "forks": 1,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_30749b94b80235af",
+    "name": "claude-router",
+    "url": "https://github.com/alexei-led/claude-router",
+    "description": "A Claude Code plugin that routes each conversation turn (and each spawned subagent) to an appropriate model and effort level—choosing per-turn via a configurable prompt classifier (Jev, Cloudflare Clef variants, OpenAI, or local Ollama) across provider profiles like Anthropic, DeepSeek, and others—using tier plus activity labels, mid-task re-evaluation, and a status band and `/router` pane for",
+    "stars": 38,
+    "forks": 4,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_30894b55df9eec11",
@@ -4696,6 +4726,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "eval_benchmark"
+  },
+  {
+    "id": "cand_4349234083a8cedb",
+    "name": "decidekit",
+    "url": "https://github.com/debuffjp/decidekit",
+    "description": "decidekit is a browser/Node text classifier that picks a typed label with calibrated confidence—reaching 93% on BANKING77 after in-tab training or working zero-shot—and can defer low-confidence cases to an LLM whose answers become new training examples, all locally with no server or API key.",
+    "stars": 4,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "sdk_binding"
   },
   {
     "id": "cand_434bd2a46becadc2",
@@ -6702,6 +6742,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "devtools"
+  },
+  {
+    "id": "cand_60ee8c29027134b3",
+    "name": "jev-router",
+    "url": "https://github.com/hyspacex/jev-router",
+    "description": "jev-router is a self-hosted, YAML-configured model router for coding agents and OpenAI-compatible clients that binds each session to one model, provider, and effort level, giving stable sessions, quota-aware admission, and auditable decisions over your existing upstream.",
+    "stars": 12,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "runtime_infra"
   },
   {
     "id": "cand_60f1e3b8a6b3b70e",
@@ -12986,6 +13036,16 @@
     "subtype": "agent_automation"
   },
   {
+    "id": "cand_b7d72da76e457c42",
+    "name": "jevlint",
+    "url": "https://github.com/INDXDev/jevlint",
+    "description": "jevlint is a model-based linter that scores files against chosen principles using AST metrics and calibrated decision-model judgments, ranks the messiest, most-changed files so you know what to refactor first, and generates prompts for coding agents to fix them.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
+  },
+  {
     "id": "cand_b803478d31e43482",
     "name": "jev-clerk",
     "url": "https://github.com/stas4000/jev-clerk",
@@ -13753,6 +13813,16 @@
     "stars": 0,
     "forks": 0,
     "type": "integration",
+    "subtype": "runtime_infra"
+  },
+  {
+    "id": "cand_c3231aa64719a796",
+    "name": "howsure",
+    "url": "https://github.com/Sailaukan/howsure",
+    "description": "howsure is a dependency-free Python CLI that calibrates System One decision model probabilities on labeled examples, picks confidence cutoffs keeping auto-handled errors under a target rate, and serves as a proxy routing low-confidence answers to review.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
     "subtype": "runtime_infra"
   },
   {
@@ -14772,6 +14842,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_cf4ef83bda776fe0",
+    "name": "jev-job-search",
+    "url": "https://github.com/qbeka/jev-job-search",
+    "description": "An open-source Claude Code CLI tool that finds software internships and new-grad roles, auto-fills application forms in a visible Chrome window using JEV for fixed-choice answers, reads every answer back from the page, and submits only what you approve.",
+    "stars": 5,
+    "forks": 5,
+    "type": "integration",
+    "subtype": "agent_automation"
+  },
+  {
     "id": "cand_cf8aaf5b6400b51a",
     "name": "jev-dotnet",
     "url": "https://github.com/kkdev92/jev-dotnet",
@@ -14996,6 +15076,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_d32d8affaaf5aa9d",
+    "name": "juardrails",
+    "url": "https://github.com/abhaybhargav/juardrails",
+    "description": "A Go guardrails service for TypeSafe Jev that batches a policy's Choice, Score, and Noul questions into one provider call, evaluates them under explicit all/any/weighted rules with confidence gating, and exposes policies via REST API, CLI, web UI, YAML, and agent skills.",
+    "stars": 3,
+    "forks": 1,
+    "type": "integration",
+    "subtype": "devtools"
   },
   {
     "id": "cand_d35142eb340a6461",
@@ -15456,6 +15546,16 @@
     "subtype": "devtools"
   },
   {
+    "id": "cand_d965e097ca8c8ec9",
+    "name": "jev-reranker",
+    "url": "https://github.com/vkehfdl1/jev-reranker",
+    "description": "Benchmark suite comparing Jev decision-model reranking (listwise choice vs batched pointwise noul scoring) against dedicated rerankers (voyage, cohere, qwen, nvidia) on MIRACL and JQaRA multilingual data, reporting nDCG/MAP/recall, cost per 1K queries, latency, and bootstrap significance.",
+    "stars": 1,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "eval_benchmark"
+  },
+  {
     "id": "cand_d9acdc164e40a040",
     "name": "brainchain",
     "url": "https://github.com/usebrainchain/brainchain",
@@ -15842,6 +15942,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "eval_benchmark"
+  },
+  {
+    "id": "cand_decafd9cc339c5f1",
+    "name": "typesafe-cascade",
+    "url": "https://github.com/monumei/typesafe-cascade",
+    "description": "A TypeScript/Bun library that routes each request to TypeSafe Jev for a typed label and confidence, then escalates low-confidence, erroneous, or timed-out attempts—plus Jev's attempt—to a stronger System 2, with runtime validation and a GitHub-issue eval harness.",
+    "stars": 0,
+    "forks": 0,
+    "type": "extension",
+    "subtype": "runtime_infra"
   },
   {
     "id": "cand_deef88aa32e76a96",
@@ -16424,6 +16534,16 @@
     "subtype": "domain_app"
   },
   {
+    "id": "cand_e7f98b76dfba31ed",
+    "name": "practical-data",
+    "url": "https://github.com/philrenaud/practical-data",
+    "description": "A Chrome extension that shades comparable columns of HTML tables on any web page green-to-red according to a decision model's judgment of which end is better, parsing messy cells, ranked labels, dates, and log scales while leaving identifiers like years and zip codes plain.",
+    "stars": 3,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_e83a9a7d48c79952",
     "name": "qualm",
     "url": "https://github.com/RoderickQiu/qualm",
@@ -16902,6 +17022,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_edc0fcc7d7266ed2",
+    "name": "nouli",
+    "url": "https://github.com/nouli-ai/nouli",
+    "description": "Nouli is a terminal app, CLI, and Rust library for ledger-backed decision networks that record facts, updates, and model answers as connected histories, letting you continue, branch, blend, and inspect decisions locally or via compatible services.",
+    "stars": 14,
+    "forks": 1,
+    "type": "extension",
+    "subtype": "devtools"
   },
   {
     "id": "cand_edd008b8bf47603d",

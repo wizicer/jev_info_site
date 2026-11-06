@@ -120,6 +120,12 @@
     "description": "OneJev is a multimodal System One decision model (0.8B–27B) that reads screenshots, photos, video, or text and returns calibrated probabilities for every option of every question in one shared forward pass, serving TypeSafe's System One API for fast GUI-agent decisions."
   },
   {
+    "id": "cand_2a0e815a4c1cc6bc",
+    "name": "jev-spam-decision-2b",
+    "url": "https://huggingface.co/abidlabs/jev-spam-decision-2b",
+    "description": "A LoRA adapter for Qwen3.5-2B that answers \"Is this forum message spam?\" by extracting a calibrated P(yes) from next-token logits over `yes`/`no`, reaching 0.9993 accuracy/F1 and 0.001 ECE on the Deysi spam-detection test split, with tuning and usage details included."
+  },
+  {
     "id": "cand_2babcf5bf3a80b9e",
     "name": "llm-jev-qwen3-4b",
     "url": "https://huggingface.co/Athekunal/llm-jev-qwen3-4b",
@@ -468,6 +474,12 @@
     "description": "vjev-vision is a Qwen3.5-4B-based listwise decision model that, given text and image states plus typed questions (noul, choice, score), returns calibrated probabilities for every option in a single forward pass without text generation."
   },
   {
+    "id": "cand_7f0f1831e4ea3faa",
+    "name": "mati-14b",
+    "url": "https://huggingface.co/PSanni/mati-14b",
+    "description": "Mati-14B is a Kev-compatible LoRA adapter and calibrated pointer head for Qwen3-14B-Base that returns temperature-calibrated probability distributions over declared options for decision and ranking workloads."
+  },
+  {
     "id": "cand_7f7b33c491175321",
     "name": "pplx-decider-v1.1-27b",
     "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b",
@@ -718,6 +730,12 @@
     "name": "open-jev-deberta-v3-large",
     "url": "https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large",
     "description": "A DeBERTa-v3-large encoder that maps one input state plus any number of typed questions (choice, ordered score, or yes/no) to calibrated per-question probability distributions in a single forward pass, reaching 0.854 in-domain accuracy at 0.022 ECE with zero structured-output errors."
+  },
+  {
+    "id": "cand_df9ff158f1180eae",
+    "name": "jev-27b-coreai",
+    "url": "https://huggingface.co/okayuji/jev-27b-coreai",
+    "description": "A 4-bit quantized Core AI conversion of JEV-27B that runs locally on Apple silicon Macs, returning a probability for each allowed answer to yes/no, rating, or 2–16-option choice questions through a Swift CLI, with a checksum-verified bundle and documented fidelity measurements."
   },
   {
     "id": "cand_e176b24ea87ca6f2",
