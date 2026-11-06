@@ -576,6 +576,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_085f812197cb58a1",
+    "name": "gmail-jev",
+    "url": "https://github.com/forestwas/gmail-jev",
+    "description": "gmail-jev is a local Python tool that scans your Gmail conversations, asks TypeSafe Jev structured questions to classify them, applies workflow labels like Reply, Clients, or Finance, and can safely remove emails from Inbox—without ever sending mail—with a dry-run mode for previewing changes first.",
+    "stars": 1,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_08f50143985587be",
     "name": "jev-tetris",
     "url": "https://github.com/trungdq88/jev-tetris",
@@ -3160,6 +3170,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_2b59651f46ce31ce",
+    "name": "what-is-a-jetpack",
+    "url": "https://github.com/littletechbird/what-is-a-jetpack",
+    "description": "A jetpack is a headless document library that ingests PDF, Word, HTML, or text files into a SQLite FTS5 keyword index with optional embedding ranking, letting a CLI return fast answers with cited source pages from storage you control.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "runtime_infra"
+  },
+  {
     "id": "cand_2b6d5c83622eb3d3",
     "name": "commentlint",
     "url": "https://github.com/ari-becker/commentlint",
@@ -4066,6 +4086,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_3a116dd1d79f9c20",
+    "name": "orbitrows-cli",
+    "url": "https://github.com/aminesayagh/orbitrows-cli",
+    "description": "OrbitRows CLI turns plain-English requests about your store's CSV data into SQL run locally, asking clarifying questions instead of guessing, with undo/save sessions, JSON output and exit codes designed for AI agents, and export back to the original files.",
+    "stars": 7,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
   },
   {
     "id": "cand_3a253585f988c340",
@@ -6128,6 +6158,16 @@
     "subtype": "sdk_binding"
   },
   {
+    "id": "cand_57ca3ffe7528a6ac",
+    "name": "Jev-Router",
+    "url": "https://github.com/AIAnytime/Jev-Router",
+    "description": "Jev-Router is an OpenAI-compatible endpoint that filters infeasible models, uses typed Jev probabilities and per-request strategies to route models, agents, tools, and guardrails, executes fallbacks, and exposes reasons, traces, cost, and latency for auditable routing.",
+    "stars": 3,
+    "forks": 2,
+    "type": "extension",
+    "subtype": "runtime_infra"
+  },
+  {
     "id": "cand_57d61e3144635c94",
     "name": "JevLaya-GameTest",
     "url": "https://github.com/TinyPandaGame/JevLaya-GameTest",
@@ -7530,6 +7570,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "code_qa_devops"
+  },
+  {
+    "id": "cand_6c01f27aad51a3fc",
+    "name": "deem",
+    "url": "https://github.com/phyro/deem",
+    "description": "deem is a semantic grep: a command-line tool that filters, scores, ranks, classifies, and groups text lines or images by asking a model a question per record—via a hosted API or a local model—matching meaning that keyword search misses.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "devtools"
   },
   {
     "id": "cand_6c133740fea8bdd1",
@@ -12234,6 +12284,16 @@
     "subtype": "platform_plugin"
   },
   {
+    "id": "cand_adcb0bb06c4dbbea",
+    "name": "clefmail-gcloud",
+    "url": "https://github.com/dctanner/clefmail-gcloud",
+    "description": "Clefmail for Google Cloud provides a self-hosted Gmail processing service that applies configurable AI labels and optional archiving to incoming mail while quarantining unknown senders for human verification across up to ten mailboxes.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
     "id": "cand_adcd343a06f3865a",
     "name": "mina-terrarium",
     "url": "https://github.com/kavehmz/mina-terrarium",
@@ -16252,6 +16312,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_e289b2b373e2336e",
+    "name": "shikhu",
+    "url": "https://github.com/arjunpatel7/shikhu",
+    "description": "Shikhu is a CLI tool that turns your coding-agent conversations and code into multiple-choice quizzes, tracks per-file \"knowledge coverage,\" and uses a git pre-push hook to warn or block pushes until changed files are quizzed, countering comprehension debt from agent-written code.",
+    "stars": 13,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
   },
   {
     "id": "cand_e2fee75a952adefc",

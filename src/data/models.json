@@ -510,6 +510,12 @@
     "description": "Zeiger2 3.5-0.8B is an experimental English/German decision model that encodes a web page, instruction, and answer options in one pass and returns calibrated per-option probabilities — for element grounding, yes/no, ordinal, and \"none of these\" questions — scoring 0.838 on held-out web tasks and 17.6 on the Decision Index."
   },
   {
+    "id": "cand_87bc770dbc4a6760",
+    "name": "drex-v2.0",
+    "url": "https://huggingface.co/nace-ai/drex-v2.0",
+    "description": "Drex v2.0 is a 35B-parameter mixture-of-experts decision model that scores typed questions against a given context via a pointer head, returning calibrated probabilities for every option in a single forward pass without generation, runnable locally through Python, llama.cpp, or Ollama."
+  },
+  {
     "id": "cand_89c17305fdcf7e28",
     "name": "MiniCPM-OCR-Jev",
     "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev",
