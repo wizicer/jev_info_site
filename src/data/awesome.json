@@ -549,6 +549,12 @@
     "description": "A curated awesome list of 325 entries cataloging SDKs, gateways, coding-agent integrations, replicas, and real-world projects built on TypeSafe's Jev, a fast \"System One\" model that answers typed Choice/Score/Noul questions with calibrated probabilities instead of generating text."
   },
   {
+    "id": "cand_d1ee54dfd59390c5",
+    "name": "cookbook",
+    "url": "https://github.com/Jev-Engineering/cookbook",
+    "description": "A 100-notebook curriculum of Jupyter recipes for building typed decisions with TypeSafe's Jev model over text and images, using Choice, Noul, Score and Box primitives, runnable offline on fixtures with opt-in live calls, spanning five difficulty levels and fifteen categories."
+  },
+  {
     "id": "cand_d24026f700b47b7d",
     "name": "awesome-jev",
     "url": "https://github.com/fatwang2/awesome-jev",

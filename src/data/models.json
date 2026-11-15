@@ -42,6 +42,12 @@
     "description": "A merged FP32 GLiNER2.5 fine-tune that chooses an action ID, `reobserve`, or `abstain` from a bounded action menu for local macOS CUA automation—without screenshots or tool calls—and is verified on browser DOM and native AppKit fixtures with low-latency MPS inference."
   },
   {
+    "id": "cand_1119bccf7043222d",
+    "name": "ultrabert-jev-380m-softmax-yes",
+    "url": "https://huggingface.co/Athekunal/ultrabert-jev-380m-softmax-yes",
+    "description": "A 380M-parameter UltraBERT encoder that answers multiple-choice questions over up-to-10,240-token inputs in a single forward pass by softmax-scoring each option's mask \" yes\" logit (68.7% mean test accuracy on 13 reasoning datasets), with an optional head scoring evidence tokens."
+  },
+  {
     "id": "cand_1147d1da23858f52",
     "name": "openjev",
     "url": "https://huggingface.co/AlexWortega/openjev",
@@ -150,6 +156,12 @@
     "description": "GGML-compiled via ggmlc (not llama.cpp-compatible) F16/Q8_0/Q4_K_M weights of the 421M ModernBERT-based Laya English System-1 decision model, scoring typed choice/score/noul questions in one encoder pass for email routing, injection guards, and agent gating."
   },
   {
+    "id": "cand_307757e8f1b5d59d",
+    "name": "Qwen3.5-4B-Judge-1M",
+    "url": "https://huggingface.co/MaziyarPanahi/Qwen3.5-4B-Judge-1M",
+    "description": "A 4B-parameter judge built on Qwen3.5-4B with an Unsloth LoRA decision head that outputs calibrated probabilities for fixed-choice decisions such as RAG claim support, safety checks, and task/domain routing, trained on 39,592 rows across 20 task families."
+  },
+  {
     "id": "cand_31d8a9b191ed8da0",
     "name": "Sev-4B",
     "url": "https://huggingface.co/macmacmacmac/Sev-4B",
@@ -226,6 +238,12 @@
     "name": "ModernJEV-Decide-Preview",
     "url": "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview",
     "description": "A 149.6M-parameter ModernBERT cross-encoder fine-tuned on 60,000 agent decisions that scores and ranks user-supplied candidate labels, given a conversation, policy, and tool descriptions, for next-action routing and tool selection within 4,096-token inputs."
+  },
+  {
+    "id": "cand_4680b679d71404bb",
+    "name": "brainsurged-open-jev-qwen3.5-4b",
+    "url": "https://huggingface.co/AIHeikki/brainsurged-open-jev-qwen3.5-4b",
+    "description": "A Q4_K_M GGUF build of Qwen3.5-4B tuned via rank-16 LoRA and zero-gradient roof calibration for schema-constrained JSON decision-making, with archived patches, llama.cpp/Ollama deployment paths, and a CUDA jump-forward serving stack benchmarked on Jevlab tasks."
   },
   {
     "id": "cand_4c76782e4118f514",
@@ -438,6 +456,12 @@
     "description": "Verdict is a small trained head over frozen SigLIP 2 that answers typed image questions—multiple-choice with an \"other\" abstention and true/false statements—in a single forward pass, returning calibrated per-option probabilities with no text generation."
   },
   {
+    "id": "cand_786f5833c2738429",
+    "name": "brainsurged-open-jev-qwen3.5-0.8b",
+    "url": "https://huggingface.co/AIHeikki/brainsurged-open-jev-qwen3.5-0.8b",
+    "description": "A 516.8 MiB Q4_K_M GGUF of Qwen3.5-0.8B, tuned with Rank-16 LoRA and zero-gradient roof calibration for low-latency, schema-constrained triage and routing decisions, with optional Jump-Forward CUDA serving sources and evaluation records."
+  },
+  {
     "id": "cand_7992659b5d965fbd",
     "name": "tasksource-jev-nano-v0",
     "url": "https://huggingface.co/tasksource/tasksource-jev-nano-v0",
@@ -472,6 +496,12 @@
     "name": "vjev-vision",
     "url": "https://huggingface.co/yah01/vjev-vision",
     "description": "vjev-vision is a Qwen3.5-4B-based listwise decision model that, given text and image states plus typed questions (noul, choice, score), returns calibrated probabilities for every option in a single forward pass without text generation."
+  },
+  {
+    "id": "cand_7cbf4350b0b61040",
+    "name": "ultrabert-jev-380m-sigmoid-norm",
+    "url": "https://huggingface.co/Athekunal/ultrabert-jev-380m-sigmoid-norm",
+    "description": "An UltraBERT-380M encoder fine-tuned into a single-forward-pass decision model that picks one option from a list by comparing \"yes\"−\"no\" logits at mask tokens placed before each option (≈72% accuracy on 13 reasoning datasets), plus a token-level evidence-scoring head."
   },
   {
     "id": "cand_7f0f1831e4ea3faa",
@@ -550,6 +580,12 @@
     "name": "Rook-V1",
     "url": "https://huggingface.co/aryanbains/Rook-V1",
     "description": "Rook-V1 is an uncalibrated self-hosted research decision model for bounded choices, routing, and candidate scoring, providing a LoRA adapter, decision head, tokenizer, configs, reload code, integrity manifest, and evaluation artifacts for reconstruction on the pinned Lux 9B."
+  },
+  {
+    "id": "cand_944be7b0e426c89c",
+    "name": "MiniCPM-OCR-Decision-2B-LiteRT",
+    "url": "https://huggingface.co/litert-community/MiniCPM-OCR-Decision-2B-LiteRT",
+    "description": "LiteRT conversion of MiniCPM-OCR-Jev, a 2B vision model that scores OCR candidates 0–1 by comparing a region image, its text, and a rendered image, with bucketed TFLite graphs for desktop and Android GPU/NPU plus a PyTorch-free Python host."
   },
   {
     "id": "cand_99d4493356b629f2",
@@ -756,6 +792,12 @@
     "description": "Clef is a 27B multimodal model post-trained from Qwen3.8-27B that maps a state (text, JSON, images, or video) plus a schema of typed questions (true/false, choice, or score) to per-option probabilities for every question in a single forward pass—no free-form generation or output parsing—via a joint schema head and a Jev/SystemOne-compatible API."
   },
   {
+    "id": "cand_e6cf8e9447431663",
+    "name": "ultrabert-jev-380m-softmax-yesno",
+    "url": "https://huggingface.co/Athekunal/ultrabert-jev-380m-softmax-yesno",
+    "description": "An UltraBERT-380M encoder fine-tuned to pick the correct option in a single forward pass—scoring each mask-prefixed option by its \"yes\"−\"no\" logit—achieving ~73% accuracy across 13 datasets, provided fp32 weights and the exact training prompt are used."
+  },
+  {
     "id": "cand_ea174ee3929bdc81",
     "name": "h2o-lightning-4b",
     "url": "https://huggingface.co/h2oai/h2o-lightning-4b",
@@ -790,6 +832,12 @@
     "name": "Quyet-1.0-Large",
     "url": "https://huggingface.co/chinhnc/Quyet-1.0-Large",
     "description": "Quyet-1.0-Large is a 31.3B-parameter Apache-2.0 decision model (a Gemma-4-31B-it LoRA fine-tune, English/Vietnamese) that, given a text, JSON, or conversation state plus typed questions—choice, score, or true/false—returns one answer per question with calibrated probabilities."
+  },
+  {
+    "id": "cand_f7b24fd3411ddabd",
+    "name": "ultrabert-jev-380m-sqrt-softplus",
+    "url": "https://huggingface.co/Athekunal/ultrabert-jev-380m-sqrt-softplus",
+    "description": "An UltraBERT-380M encoder checkpoint that selects one of several options in a single non-generative forward pass from mask-position \"yes\"−\"no\" logits, trained with square-root-softplus normalization and reaching 73.2% dev / 71.9% test accuracy across 13 reasoning datasets."
   },
   {
     "id": "cand_fd01a3ff649fb559",
