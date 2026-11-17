@@ -846,6 +846,16 @@
     "subtype": "code_qa_devops"
   },
   {
+    "id": "cand_0bde381979951ccf",
+    "name": "ntlint",
+    "url": "https://github.com/L4Ph/ntlint",
+    "description": "ntlint is a multi-language test linter that asks a probability-returning classifier whether each test's body establishes the claim in its name, flagging mismatches — like a `rejects` name over an ordinary value check or a mock supplying the asserted behaviour — that compilers and conventional linters can't see.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
+  },
+  {
     "id": "cand_0c120a35e588dcfe",
     "name": "jev-plays-pokemon-red",
     "url": "https://github.com/valentynkit/jev-plays-pokemon-red",
@@ -1480,6 +1490,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_15018480983766e8",
+    "name": "partway",
+    "url": "https://github.com/tostechbr/partway",
+    "description": "partway is a macOS voice-control app that sends each partial speech transcript to TypeSafe's Jev model so it can open apps, search sites, and type text mid-sentence—before you finish speaking—while keeping speech recognition on-device.",
+    "stars": 32,
+    "forks": 4,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_15565feaecfda3d0",
@@ -2507,6 +2527,16 @@
     "url": "https://github.com/adiun/jev-clinical-trial-prototype",
     "description": "Local web app that screens ~500 synthetic clinical notes against editable trial criteria via TypeSafe's Jev model, streaming per-note results over SSE with hash-based caching, confidence-slider re-rolls, flip tracking, calibration eval, and Claude-compiled criteria.",
     "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "domain_app"
+  },
+  {
+    "id": "cand_21cd318dce9ecb19",
+    "name": "Tweet-Index",
+    "url": "https://github.com/NachikethRamesh/Tweet-Index",
+    "description": "A local search engine for your X likes and bookmarks that captures saves via a userscript into SQLite, enriches posts with image descriptions, link titles and summaries, embeds them locally, and ranks results by relevance, substance and similarity.",
+    "stars": 3,
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
@@ -3620,6 +3650,16 @@
     "subtype": "eval_benchmark"
   },
   {
+    "id": "cand_3196e88a8ef0a632",
+    "name": "hf-second-opinion-triage",
+    "url": "https://github.com/hidefujimori/hf-second-opinion-triage",
+    "description": "A Splunk app that sends Enterprise Security findings to a decision model for a second opinion, returning suggested disposition and urgency with optional LLM explanations written back as Notes while leaving ES fields unchanged for analysts to decide.",
+    "stars": 0,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "platform_plugin"
+  },
+  {
     "id": "cand_31c473ee10c6b0ce",
     "name": "lev",
     "url": "https://github.com/OpenLAIR/lev",
@@ -3686,6 +3726,16 @@
     "forks": 0,
     "type": "extension",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_32f75c94586cac7c",
+    "name": "agent-stack",
+    "url": "https://github.com/JavierBertolino/agent-stack",
+    "description": "Agent Stack is an installable CLI that scaffolds a governed multi-agent delivery workflow—resolver, designer, developer, design-qa, Jev-powered web/mobile QA—across Codex, Claude Code, Cursor, and OpenCode, with OpenSpec specs, optional integrations, and drift checks.",
+    "stars": 7,
+    "forks": 1,
+    "type": "integration",
+    "subtype": "agent_automation"
   },
   {
     "id": "cand_3328d0c78b19208d",
@@ -4446,6 +4496,16 @@
     "forks": 0,
     "type": "integration",
     "subtype": "domain_app"
+  },
+  {
+    "id": "cand_3d062c17d08e0f09",
+    "name": "anti-slop",
+    "url": "https://github.com/K-Mistele/anti-slop",
+    "description": "Oxlint plugins that reject the low-evidence TypeScript coding agents tend to write — unjustified casts, leaking `unknown`, conditional spreads, module mocks — plus Effect-specific rules, Martin Fowler smell bundles, LLM-judged review questions, and diff-level checks, each diagnostic prescribing the fix.",
+    "stars": 27,
+    "forks": 0,
+    "type": "integration",
+    "subtype": "code_qa_devops"
   },
   {
     "id": "cand_3d243ca0f53f1ddd",
@@ -18418,6 +18478,16 @@
     "forks": 8,
     "type": "integration",
     "subtype": "sdk_binding"
+  },
+  {
+    "id": "cand_fa666a39880a90d3",
+    "name": "gatekeeper",
+    "url": "https://github.com/AgriciDaniel/gatekeeper",
+    "description": "Gatekeeper is a Claude Code hook that routes each prompt to the right agent or skill: YAML rulebooks narrow candidates, the Jev model returns a typed choice, and confidence bands yield allow/route/suggest/confirm/escalate/block verdicts, all logged for threshold tuning.",
+    "stars": 25,
+    "forks": 4,
+    "type": "integration",
+    "subtype": "platform_plugin"
   },
   {
     "id": "cand_fabded4bb503ca44",
