@@ -850,5 +850,11 @@
     "name": "ballot-jev-0.5b",
     "url": "https://huggingface.co/vigneshlabs/ballot-jev-0.5b",
     "description": "ballot-jev-0.5b is a 506M-parameter CPU-first typed-decision model that returns calibrated full probability distributions for choice, true/false, and ordinal questions, and is structurally permutation-invariant—reordering options provably cannot change its answer."
+  },
+  {
+    "id": "cand_fe454cea602fcddd",
+    "name": "karpo-decision-31B",
+    "url": "https://huggingface.co/MachinePulseAI/karpo-decision-31B",
+    "description": "A 31.3B multimodal decision model fine-tuned from Gemma 4 31B-it that returns per-option probabilities for typed choice/noul/score questions over text-and-image states in a single forward pass via a linear readout—no text generation—ranked #1 on the Decision Index (Full 73.9)."
   }
 ]
